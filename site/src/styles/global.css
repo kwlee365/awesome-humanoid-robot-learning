@@ -190,6 +190,59 @@ ul.papers .links { font-size: 0.82rem; color: var(--fg-faint); display: flex; ga
 .myidea .hint { color: var(--fg-faint); font-size: 0.85rem; }
 .myidea .empty { color: var(--fg-muted); font-size: 0.93rem; }
 .myidea ul { margin: 0.4rem 0; }
+.myidea .linkish {
+  background: none; border: 0; padding: 0; font: inherit;
+  color: var(--accent); cursor: pointer; text-decoration: none;
+}
+.myidea .linkish:hover { text-decoration: underline; }
+.myidea .editor { margin-top: 0.9rem; }
+.myidea .editor .row { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin-top: 0.6rem; }
+.myidea textarea {
+  width: 100%;
+  font-family: var(--mono);
+  font-size: 0.86rem;
+  line-height: 1.55;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--fg);
+  resize: vertical;
+}
+.myidea button:not(.linkish) {
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--fg);
+  font: inherit;
+  cursor: pointer;
+}
+.myidea button[data-save] { border-color: var(--accent); color: var(--accent); font-weight: 550; }
+.myidea input[type='password'] {
+  flex: 1 1 20rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--mono);
+  font-size: 0.86rem;
+}
+.myidea .token-setup { font-size: 0.9rem; color: var(--fg-muted); }
+.myidea .token-setup ol { margin: 0.5rem 0 0.6rem 1.1rem; padding: 0; }
+.myidea .token-setup li { margin: 0.25rem 0; }
+.myidea .warn {
+  border-left: 3px solid var(--warn);
+  background: var(--warn-soft);
+  color: var(--fg);
+  padding: 0.55rem 0.75rem;
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.myidea .tip { font-size: 0.83rem; color: var(--fg-faint); margin: 0.5rem 0 0; }
+.myidea .status { font-size: 0.87rem; margin: 0.6rem 0 0; min-height: 1.2em; }
+.myidea .status[data-kind='ok'] { color: var(--ok); }
+.myidea .status[data-kind='err'] { color: var(--warn); }
 
 .kv { display: grid; gap: 0.3rem 1rem; margin: 0.8rem 0; font-size: 0.93rem; }
 @media (min-width: 40rem) { .kv { grid-template-columns: max-content 1fr; } }

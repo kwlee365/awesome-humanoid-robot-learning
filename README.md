@@ -13,6 +13,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
   - [Manipulation](#manipulation)
   - [Teleoperation](#teleoperation)
   - [Locomotion](#locomotion)
+  - [Safety-Critical Control](#safety-critical-control)
   - [Navigation](#navigation)
   - [State Estimation](#state-estimation)
   - [Sim-to-Real](#sim-to-real)
@@ -434,6 +435,29 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2025.09](https://generalist-locomotion.github.io/), LocoFormer: Generalist Locomotion via Long-Context Adaptation
 - [2024.10](https://openreview.net/forum?id=O0oK2bVist), Adapting Humanoid Locomotion over Challenging Terrain via Two-Phase Training, [website](https://sites.google.com/view/adapting-humanoid-locomotion/two-phase-training)
 - [2024.10](https://openreview.net/forum?id=wH7Wv0nAm8), Bi-Level Motion Imitation for Humanoid Robots, [website](https://sites.google.com/view/bmi-corl2024)
+
+## Safety-Critical Control
+- [arXiv 2026.08](https://arxiv.org/abs/2608.10220), Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References
+- [arXiv 2026.08](https://arxiv.org/abs/2608.02809) / arXiv 2026.08, Toward Certified Functional Safety for Industrial Humanoid Robots: The Fail-Passive Gap and a Feasibility Study
+- [arXiv 2026.07](https://arxiv.org/abs/2607.28623), PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball, [website](https://lzyang2000.github.io/perceptive_cbf_rl/)
+- 🌟 [arXiv 2026.07](https://arxiv.org/abs/2607.14488) / IROS 2026, Safe Execution of RL Policies via Acceleration-based CBF-QP Constraint Enforcement for Real-World Robotic Deployments, [website](https://safe-rl-qp.github.io/) / [code](https://github.com/safe-rl-qp/safe-rl-qp-mc-rtc-superbuild)
+- [arXiv 2026.04](https://arxiv.org/abs/2604.11447) / arXiv 2026.04, Safe Human-to-Humanoid Motion Imitation Using Control Barrier Functions
+- 🌟 [arXiv 2026.03](https://arxiv.org/abs/2603.23995) / arXiv 2026.03, MIRROR: Visual Motion Imitation via Real-time Retargeting and TeleOperation with Parallel Differential Inverse Kinematics, [website](https://caltech-amber.github.io/mirror/) / [code](https://github.com/junhengl/mirror)
+- [arXiv 2026.03](https://arxiv.org/abs/2603.08619), Embedding Classical Balance Control Principles in Reinforcement Learning for Humanoid Recovery
+- [arXiv 2026.02](https://arxiv.org/abs/2602.16511), VIGOR: Visual Goal-In-Context Inference for Unified Humanoid Fall Safety
+- [arXiv 2025.11](https://arxiv.org/abs/2511.18509), SafeFall: Learning Protective Control for Humanoid Robots
+- [arXiv 2025.11](https://arxiv.org/abs/2511.07407), Unified Humanoid Fall-Safety Policy from a Few Demonstrations
+- [arXiv 2025.10](https://arxiv.org/abs/2510.14959) / ICRA 2026, CBF-RL: Safety Filtering Reinforcement Learning in Training with Control Barrier Functions
+- [arXiv 2025.08](https://arxiv.org/abs/2508.11129), Geometry-Aware Predictive Safety Filters on Humanoids
+- [arXiv 2025.08](https://arxiv.org/abs/2508.07611), End-to-End Humanoid Robot Safe and Comfortable Locomotion Policy
+- [arXiv 2025.05](https://arxiv.org/abs/2505.11494), SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics
+- [arXiv 2025.02](https://arxiv.org/abs/2502.03132), **SPARK**: A Toolbox for Safe Humanoid Autonomy and Teleoperation, [website](https://intelligent-control-lab.github.io/spark/)
+- [arXiv 2024.09](https://arxiv.org/abs/2409.10274) / ICRA 2025, Safety-critical Locomotion of Biped Robots in Infeasible Paths: Overcoming Obstacles during Navigation toward Destination
+- [arXiv 2023.11](https://arxiv.org/abs/2311.08409) / ACC 2024, Safe Whole-Body Task Space Control for Humanoid Robots
+- [arXiv 2022.07](https://arxiv.org/abs/2207.00692) / Humanoids 2022, Humanoid Self-Collision Avoidance Using Whole-Body Control with Control Barrier Functions
+- [arXiv 2022.04](https://arxiv.org/abs/2204.08120) / L4DC 2022, Neural Gaits: Learning Bipedal Locomotion via Control Barrier Functions and Zero Dynamics Policies
+- [arXiv 2020.05](https://arxiv.org/abs/2005.07284) / IEEE TAC 2021, Robust Safety-Critical Control for Dynamic Robotics
+- [arXiv 2019.09](https://arxiv.org/abs/1909.09233) / RA-L 2020, Robust Humanoid Contact Planning with Learned Zero- and One-Step Capturability Prediction
 
 ## Navigation
 - [arXiv 2026.07](https://arxiv.org/abs/2607.27180), HumanCLAW: Can Vision-Language Models Act Through a Body?, [website](https://human-claw.github.io)

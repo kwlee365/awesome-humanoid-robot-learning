@@ -1,6 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
-import { createOnGitHub, editOnGitHub } from '../lib/papers';
+import { createOnGitHub, editOnGitHub, GITHUB_BRANCH, GITHUB_REPO } from '../lib/papers';
 
 interface Props {
   kind: 'topics' | 'papers';
@@ -18,6 +18,10 @@ const entry = entries.find((e) => e.id === slug);
 const Content = entry ? (await render(entry)).Content : null;
 
 const path = `site/src/content/my-ideas/${kind}/${slug}.md`;
+/** Images pasted into the editor are committed here and served from the site root. */
+const imageDir = `site/public/my-ideas/${kind}/${slug}`;
+const imageBase = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/my-ideas/${kind}/${slug}`;
+
 const template = `---
 title: "${subject.replace(/"/g, "'")}"
 updated: ""
@@ -47,34 +51,330 @@ here. The prompts below are optional - delete them and write however you like.
 `;
 ---
 
-<section class="myidea" id="my-idea">
+<section
+  class="myidea"
+  id="my-idea"
+  data-myidea
+  data-repo={GITHUB_REPO}
+  data-branch={GITHUB_BRANCH}
+  data-path={path}
+  data-image-dir={imageDir}
+  data-image-base={imageBase}
+  data-template={template}
+>
   <div class="head">
     <h2>{heading}</h2>
     <span class="hint">
       Your own notes &mdash; never touched by automation.
+      <button type="button" class="linkish" data-edit>Edit here</button>
+      &middot;
       {
         entry ? (
           <a href={editOnGitHub(path)}>Edit on GitHub</a>
         ) : (
-          <a href={createOnGitHub(path, template)}>Create this note on GitHub</a>
+          <a href={createOnGitHub(path, template)}>Create on GitHub</a>
         )
       }
     </span>
   </div>
-  {
-    Content ? (
-      <div class="prose">
-        <Content />
+
+  <div data-view>
+    {
+      Content ? (
+        <div class="prose">
+          <Content />
+        </div>
+      ) : (
+        <div class="empty">
+          <p>
+            No note yet. Press <strong>Edit here</strong> to write one without leaving the page,
+            or use the GitHub link to start it at <code>{path}</code>. The starter template is
+            pre-filled with optional prompts (problem / hypothesis / proposed method / difference
+            from prior work / data &amp; hardware / evaluation / risks / related notes), and you
+            are free to replace all of it.
+          </p>
+        </div>
+      )
+    }
+  </div>
+
+  <div class="editor" data-editor hidden>
+    <div class="token-setup" data-token-setup hidden>
+      <p>
+        Saving from this page commits the note to <code>{GITHUB_REPO}</code> through the GitHub
+        API, so it needs a token with write access to this repository and nothing else.
+      </p>
+      <ol>
+        <li>
+          Open <a href="https://github.com/settings/personal-access-tokens/new" rel="noopener"
+            >github.com/settings/personal-access-tokens/new</a
+          > and create a <strong>fine-grained</strong> token.
+        </li>
+        <li>
+          Under <em>Repository access</em> pick <em>Only select repositories</em> and choose
+          <code>{GITHUB_REPO}</code>.
+        </li>
+        <li>
+          Under <em>Permissions &rarr; Repository permissions</em> set <strong>Contents</strong>
+          to <em>Read and write</em>. Leave every other permission at No access.
+        </li>
+        <li>Generate the token, copy it, and paste it below.</li>
+      </ol>
+      <p class="warn">
+        The token is kept in this browser's local storage, on this device only, and is sent
+        nowhere except api.github.com. If the device is lost or you suspect the token leaked,
+        revoke it on the same GitHub settings page &mdash; that is all it takes to make it
+        useless.
+      </p>
+      <div class="row">
+        <input type="password" data-token-input placeholder="github_pat_..." autocomplete="off" />
+        <button type="button" data-token-save>Save token</button>
+        <button type="button" class="linkish" data-token-cancel>Cancel</button>
       </div>
-    ) : (
-      <div class="empty">
-        <p>
-          No note yet. Use the link above to start one at <code>{path}</code> &mdash; the
-          starter template is pre-filled with optional prompts (problem / hypothesis /
-          proposed method / difference from prior work / data &amp; hardware / evaluation /
-          risks / related notes), and you are free to replace all of it.
-        </p>
+    </div>
+
+    <div class="editing" data-editing hidden>
+      <textarea data-text spellcheck="false" rows="24"></textarea>
+      <div class="row">
+        <button type="button" data-save>Save</button>
+        <button type="button" data-cancel>Cancel</button>
+        <button type="button" data-image>Add image</button>
+        <input type="file" accept="image/*" data-file hidden />
+        <button type="button" class="linkish" data-forget>Forget token</button>
       </div>
-    )
-  }
+      <p class="tip">
+        Markdown. Paste or drop an image straight into the box to upload it, or use
+        <em>Add image</em>. Saving makes a commit, and the published page rebuilds a minute or
+        two later.
+      </p>
+    </div>
+
+    <p class="status" data-status aria-live="polite"></p>
+  </div>
 </section>
+
+<script>
+  const TOKEN_KEY = 'myidea:github-pat';
+  const API = 'https://api.github.com';
+
+  function toBase64(text: string): string {
+    const bytes = new TextEncoder().encode(text);
+    let bin = '';
+    for (const b of bytes) bin += String.fromCharCode(b);
+    return btoa(bin);
+  }
+
+  function fromBase64(b64: string): string {
+    const bin = atob(b64.replace(/\s/g, ''));
+    const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));
+    return new TextDecoder().decode(bytes);
+  }
+
+  function bytesToBase64(buf: ArrayBuffer): string {
+    const bytes = new Uint8Array(buf);
+    let bin = '';
+    for (let i = 0; i < bytes.length; i += 0x8000) {
+      bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
+    }
+    return btoa(bin);
+  }
+
+  function setup(root: HTMLElement) {
+    const repo = root.dataset.repo!;
+    const branch = root.dataset.branch!;
+    const path = root.dataset.path!;
+    const imageDir = root.dataset.imageDir!;
+    const imageBase = root.dataset.imageBase!;
+    const template = root.dataset.template ?? '';
+
+    const view = root.querySelector<HTMLElement>('[data-view]')!;
+    const editor = root.querySelector<HTMLElement>('[data-editor]')!;
+    const tokenSetup = root.querySelector<HTMLElement>('[data-token-setup]')!;
+    const editing = root.querySelector<HTMLElement>('[data-editing]')!;
+    const textarea = root.querySelector<HTMLTextAreaElement>('[data-text]')!;
+    const statusLine = root.querySelector<HTMLElement>('[data-status]')!;
+    const fileInput = root.querySelector<HTMLInputElement>('[data-file]')!;
+
+    let sha: string | null = null;
+    let busy = false;
+
+    const token = () => localStorage.getItem(TOKEN_KEY);
+    const say = (msg: string, kind = '') => {
+      statusLine.textContent = msg;
+      statusLine.dataset.kind = kind;
+    };
+
+    async function api(method: string, endpoint: string, body?: unknown) {
+      const res = await fetch(`${API}${endpoint}`, {
+        method,
+        headers: {
+          Authorization: `Bearer ${token()}`,
+          Accept: 'application/vnd.github+json',
+          ...(body ? { 'Content-Type': 'application/json' } : {}),
+        },
+        body: body ? JSON.stringify(body) : undefined,
+      });
+      if (res.status === 401 || res.status === 403) {
+        throw new Error(
+          'GitHub rejected the token. Check that it has not expired and that it grants ' +
+            'Contents: Read and write on this repository.',
+        );
+      }
+      if (!res.ok && res.status !== 404) {
+        const detail = await res.text();
+        throw new Error(`GitHub returned ${res.status}. ${detail.slice(0, 200)}`);
+      }
+      return res;
+    }
+
+    async function openEditor() {
+      editor.hidden = false;
+      if (!token()) {
+        tokenSetup.hidden = false;
+        editing.hidden = true;
+        say('');
+        return;
+      }
+      tokenSetup.hidden = true;
+      editing.hidden = false;
+      say('Loading the current note from GitHub...');
+      try {
+        const res = await api('GET', `/repos/${repo}/contents/${path}?ref=${branch}`);
+        if (res.status === 404) {
+          sha = null;
+          textarea.value = template;
+          say('New note. Nothing is committed until you press Save.');
+        } else {
+          const json = await res.json();
+          sha = json.sha;
+          textarea.value = fromBase64(json.content);
+          say('');
+        }
+        view.hidden = true;
+        textarea.focus();
+      } catch (e) {
+        say((e as Error).message, 'err');
+        editing.hidden = true;
+        tokenSetup.hidden = false;
+      }
+    }
+
+    function closeEditor() {
+      editor.hidden = true;
+      view.hidden = false;
+      say('');
+    }
+
+    async function save() {
+      if (busy) return;
+      busy = true;
+      say('Committing...');
+      try {
+        const res = await api('PUT', `/repos/${repo}/contents/${path}`, {
+          message: `my-idea: update ${path.split('/').slice(-2).join('/')}`,
+          content: toBase64(textarea.value),
+          branch,
+          ...(sha ? { sha } : {}),
+        });
+        const json = await res.json();
+        sha = json.content?.sha ?? sha;
+        const url = json.commit?.html_url;
+        statusLine.dataset.kind = 'ok';
+        statusLine.textContent = 'Saved. The published page rebuilds in a minute or two.';
+        if (url) {
+          const a = document.createElement('a');
+          a.href = url;
+          a.rel = 'noopener';
+          a.textContent = 'See the commit';
+          statusLine.append(' ', a);
+        }
+      } catch (e) {
+        say((e as Error).message, 'err');
+      } finally {
+        busy = false;
+      }
+    }
+
+    async function uploadImage(file: File) {
+      if (busy) return;
+      if (!file.type.startsWith('image/')) {
+        say('That file is not an image.', 'err');
+        return;
+      }
+      busy = true;
+      const ext = (file.name.split('.').pop() || 'png').toLowerCase().replace(/[^a-z0-9]/g, '');
+      const stem =
+        (file.name.replace(/\.[^.]*$/, '') || 'image')
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-|-$/g, '')
+          .slice(0, 40) || 'image';
+      const name = `${Date.now()}-${stem}.${ext || 'png'}`;
+      say(`Uploading ${name}...`);
+      try {
+        const buf = await file.arrayBuffer();
+        await api('PUT', `/repos/${repo}/contents/${imageDir}/${name}`, {
+          message: `my-idea: add image ${name}`,
+          content: bytesToBase64(buf),
+          branch,
+        });
+        const md = `\n![](${imageBase}/${name})\n`;
+        const at = textarea.selectionStart ?? textarea.value.length;
+        textarea.value = textarea.value.slice(0, at) + md + textarea.value.slice(at);
+        textarea.selectionStart = textarea.selectionEnd = at + md.length;
+        say('Image uploaded and linked. Press Save to commit the note itself.', 'ok');
+      } catch (e) {
+        say((e as Error).message, 'err');
+      } finally {
+        busy = false;
+      }
+    }
+
+    root.querySelector('[data-edit]')!.addEventListener('click', openEditor);
+    root.querySelector('[data-cancel]')!.addEventListener('click', closeEditor);
+    root.querySelector('[data-token-cancel]')!.addEventListener('click', closeEditor);
+    root.querySelector('[data-save]')!.addEventListener('click', save);
+    root.querySelector('[data-image]')!.addEventListener('click', () => fileInput.click());
+
+    fileInput.addEventListener('change', () => {
+      if (fileInput.files?.[0]) uploadImage(fileInput.files[0]);
+      fileInput.value = '';
+    });
+
+    root.querySelector('[data-token-save]')!.addEventListener('click', () => {
+      const input = root.querySelector<HTMLInputElement>('[data-token-input]')!;
+      const value = input.value.trim();
+      if (!value) return;
+      localStorage.setItem(TOKEN_KEY, value);
+      input.value = '';
+      openEditor();
+    });
+
+    root.querySelector('[data-forget]')!.addEventListener('click', () => {
+      localStorage.removeItem(TOKEN_KEY);
+      closeEditor();
+    });
+
+    textarea.addEventListener('paste', (e) => {
+      const item = Array.from(e.clipboardData?.items ?? []).find((i) =>
+        i.type.startsWith('image/'),
+      );
+      const file = item?.getAsFile();
+      if (file) {
+        e.preventDefault();
+        uploadImage(file);
+      }
+    });
+
+    textarea.addEventListener('dragover', (e) => e.preventDefault());
+    textarea.addEventListener('drop', (e) => {
+      const file = e.dataTransfer?.files?.[0];
+      if (file && file.type.startsWith('image/')) {
+        e.preventDefault();
+        uploadImage(file);
+      }
+    });
+  }
+
+  for (const root of document.querySelectorAll<HTMLElement>('[data-myidea]')) setup(root);
+</script>

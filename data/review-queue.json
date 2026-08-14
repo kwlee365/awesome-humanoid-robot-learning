@@ -139,6 +139,90 @@
       "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
       "items": [
         {
+          "key": "loco-manipulation-and-whole-body-control::whole-body-planning-for-humanoids-navigating-confined-spaces-via-self-collision-",
+          "title": "Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2026-08",
+          "line": "- [arXiv 2026.08](https://arxiv.org/abs/2608.10220), Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References"
+        },
+        {
+          "key": "safety-critical-control::whole-body-planning-for-humanoids-navigating-confined-spaces-via-self-collision-",
+          "title": "Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References",
+          "category": "Safety-Critical Control",
+          "date": "2026-08",
+          "line": "- [arXiv 2026.08](https://arxiv.org/abs/2608.10220), Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::pac-man-perception-aware-cbf-rl-for-whole-body-safety-in-humanoid-dodgeball",
+          "title": "PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2026-07",
+          "line": "- [arXiv 2026.07](https://arxiv.org/abs/2607.28623), PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball, [website](https://lzyang2000.github.io/perceptive_cbf_rl/)"
+        },
+        {
+          "key": "safety-critical-control::pac-man-perception-aware-cbf-rl-for-whole-body-safety-in-humanoid-dodgeball",
+          "title": "PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball",
+          "category": "Safety-Critical Control",
+          "date": "2026-07",
+          "line": "- [arXiv 2026.07](https://arxiv.org/abs/2607.28623), PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball, [website](https://lzyang2000.github.io/perceptive_cbf_rl/)"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::embedding-classical-balance-control-principles-in-reinforcement-learning-for-hum",
+          "title": "Embedding Classical Balance Control Principles in Reinforcement Learning for Humanoid Recovery",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2026-03",
+          "line": "- [arXiv 2026.03](https://arxiv.org/abs/2603.08619), Embedding Classical Balance Control Principles in Reinforcement Learning for Humanoid Recovery"
+        },
+        {
+          "key": "safety-critical-control::embedding-classical-balance-control-principles-in-reinforcement-learning-for-hum",
+          "title": "Embedding Classical Balance Control Principles in Reinforcement Learning for Humanoid Recovery",
+          "category": "Safety-Critical Control",
+          "date": "2026-03",
+          "line": "- [arXiv 2026.03](https://arxiv.org/abs/2603.08619), Embedding Classical Balance Control Principles in Reinforcement Learning for Humanoid Recovery"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::vigor-visual-goal-in-context-inference-for-unified-humanoid-fall-safety",
+          "title": "VIGOR: Visual Goal-In-Context Inference for Unified Humanoid Fall Safety",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2026-02",
+          "line": "- [arXiv 2026.02](https://arxiv.org/abs/2602.16511), VIGOR: Visual Goal-In-Context Inference for Unified Humanoid Fall Safety"
+        },
+        {
+          "key": "safety-critical-control::vigor-visual-goal-in-context-inference-for-unified-humanoid-fall-safety",
+          "title": "VIGOR: Visual Goal-In-Context Inference for Unified Humanoid Fall Safety",
+          "category": "Safety-Critical Control",
+          "date": "2026-02",
+          "line": "- [arXiv 2026.02](https://arxiv.org/abs/2602.16511), VIGOR: Visual Goal-In-Context Inference for Unified Humanoid Fall Safety"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
           "key": "loco-manipulation-and-whole-body-control::mosaic-bridging-the-sim-to-real-gap-in-generalist-humanoid-motion-tracking-and-t",
           "title": "MOSAIC: Bridging the Sim-to-Real Gap in Generalist Humanoid Motion Tracking and Teleoperation with Rapid Residual Adaptation",
           "category": "Loco-Manipulation and Whole-Body-Control",
@@ -172,6 +256,48 @@
           "category": "Sim-to-Real",
           "date": "2026-02",
           "line": "- [arXiv 2026.02](https://arxiv.org/abs/2602.00401), ZEST: Zero-shot Embodied Skill Transfer for Athletic Robot Control"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::safefall-learning-protective-control-for-humanoid-robots",
+          "title": "SafeFall: Learning Protective Control for Humanoid Robots",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2025-11",
+          "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.18509), SafeFall: Learning Protective Control for Humanoid Robots"
+        },
+        {
+          "key": "safety-critical-control::safefall-learning-protective-control-for-humanoid-robots",
+          "title": "SafeFall: Learning Protective Control for Humanoid Robots",
+          "category": "Safety-Critical Control",
+          "date": "2025-11",
+          "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.18509), SafeFall: Learning Protective Control for Humanoid Robots"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::unified-humanoid-fall-safety-policy-from-a-few-demonstrations",
+          "title": "Unified Humanoid Fall-Safety Policy from a Few Demonstrations",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2025-11",
+          "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.07407), Unified Humanoid Fall-Safety Policy from a Few Demonstrations"
+        },
+        {
+          "key": "safety-critical-control::unified-humanoid-fall-safety-policy-from-a-few-demonstrations",
+          "title": "Unified Humanoid Fall-Safety Policy from a Few Demonstrations",
+          "category": "Safety-Critical Control",
+          "date": "2025-11",
+          "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.07407), Unified Humanoid Fall-Safety Policy from a Few Demonstrations"
         }
       ],
       "detected_on": "2026-08-14"
@@ -235,6 +361,27 @@
           "category": "Teleoperation",
           "date": "2025-02",
           "line": "- 🌟 [arXiv 2025.02](https://arxiv.org/abs/2502.13013), HOMIE: Humanoid Loco-Manipulation with Isomorphic Exoskeleton Cockpit, [code](https://github.com/OpenRobotLab/OpenHomie)"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::spark-a-toolbox-for-safe-humanoid-autonomy-and-teleoperation",
+          "title": "**SPARK**: A Toolbox for Safe Humanoid Autonomy and Teleoperation",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2025-02",
+          "line": "- [arXiv 2025.02](https://arxiv.org/abs/2502.03132), **SPARK**: A Toolbox for Safe Humanoid Autonomy and Teleoperation, [website](https://intelligent-control-lab.github.io/spark/)"
+        },
+        {
+          "key": "safety-critical-control::spark-a-toolbox-for-safe-humanoid-autonomy-and-teleoperation",
+          "title": "**SPARK**: A Toolbox for Safe Humanoid Autonomy and Teleoperation",
+          "category": "Safety-Critical Control",
+          "date": "2025-02",
+          "line": "- [arXiv 2025.02](https://arxiv.org/abs/2502.03132), **SPARK**: A Toolbox for Safe Humanoid Autonomy and Teleoperation, [website](https://intelligent-control-lab.github.io/spark/)"
         }
       ],
       "detected_on": "2026-08-14"
@@ -454,6 +601,153 @@
       "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
       "items": [
         {
+          "key": "locomotion::geometry-aware-predictive-safety-filters-on-humanoids",
+          "title": "Geometry-Aware Predictive Safety Filters on Humanoids",
+          "category": "Locomotion",
+          "date": "2025-08",
+          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.11129), Geometry-Aware Predictive Safety Filters on Humanoids"
+        },
+        {
+          "key": "safety-critical-control::geometry-aware-predictive-safety-filters-on-humanoids",
+          "title": "Geometry-Aware Predictive Safety Filters on Humanoids",
+          "category": "Safety-Critical Control",
+          "date": "2025-08",
+          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.11129), Geometry-Aware Predictive Safety Filters on Humanoids"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "locomotion::end-to-end-humanoid-robot-safe-and-comfortable-locomotion-policy",
+          "title": "End-to-End Humanoid Robot Safe and Comfortable Locomotion Policy",
+          "category": "Locomotion",
+          "date": "2025-08",
+          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.07611), End-to-End Humanoid Robot Safe and Comfortable Locomotion Policy"
+        },
+        {
+          "key": "safety-critical-control::end-to-end-humanoid-robot-safe-and-comfortable-locomotion-policy",
+          "title": "End-to-End Humanoid Robot Safe and Comfortable Locomotion Policy",
+          "category": "Safety-Critical Control",
+          "date": "2025-08",
+          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.07611), End-to-End Humanoid Robot Safe and Comfortable Locomotion Policy"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "locomotion::shield-safety-on-humanoids-via-cbfs-in-expectation-on-learned-dynamics",
+          "title": "SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics",
+          "category": "Locomotion",
+          "date": "2025-05",
+          "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.11494), SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics"
+        },
+        {
+          "key": "safety-critical-control::shield-safety-on-humanoids-via-cbfs-in-expectation-on-learned-dynamics",
+          "title": "SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics",
+          "category": "Safety-Critical Control",
+          "date": "2025-05",
+          "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.11494), SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::whole-body-planning-for-humanoids-navigating-confined-spaces-via-self-collision-",
+          "title": "Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2026-08",
+          "line": "- [arXiv 2026.08](https://arxiv.org/abs/2608.10220), Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References"
+        },
+        {
+          "key": "safety-critical-control::whole-body-planning-for-humanoids-navigating-confined-spaces-via-self-collision-",
+          "title": "Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References",
+          "category": "Safety-Critical Control",
+          "date": "2026-08",
+          "line": "- [arXiv 2026.08](https://arxiv.org/abs/2608.10220), Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::pac-man-perception-aware-cbf-rl-for-whole-body-safety-in-humanoid-dodgeball",
+          "title": "PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2026-07",
+          "line": "- [arXiv 2026.07](https://arxiv.org/abs/2607.28623), PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball, [website](https://lzyang2000.github.io/perceptive_cbf_rl/)"
+        },
+        {
+          "key": "safety-critical-control::pac-man-perception-aware-cbf-rl-for-whole-body-safety-in-humanoid-dodgeball",
+          "title": "PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball",
+          "category": "Safety-Critical Control",
+          "date": "2026-07",
+          "line": "- [arXiv 2026.07](https://arxiv.org/abs/2607.28623), PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball, [website](https://lzyang2000.github.io/perceptive_cbf_rl/)"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::embedding-classical-balance-control-principles-in-reinforcement-learning-for-hum",
+          "title": "Embedding Classical Balance Control Principles in Reinforcement Learning for Humanoid Recovery",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2026-03",
+          "line": "- [arXiv 2026.03](https://arxiv.org/abs/2603.08619), Embedding Classical Balance Control Principles in Reinforcement Learning for Humanoid Recovery"
+        },
+        {
+          "key": "safety-critical-control::embedding-classical-balance-control-principles-in-reinforcement-learning-for-hum",
+          "title": "Embedding Classical Balance Control Principles in Reinforcement Learning for Humanoid Recovery",
+          "category": "Safety-Critical Control",
+          "date": "2026-03",
+          "line": "- [arXiv 2026.03](https://arxiv.org/abs/2603.08619), Embedding Classical Balance Control Principles in Reinforcement Learning for Humanoid Recovery"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::vigor-visual-goal-in-context-inference-for-unified-humanoid-fall-safety",
+          "title": "VIGOR: Visual Goal-In-Context Inference for Unified Humanoid Fall Safety",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2026-02",
+          "line": "- [arXiv 2026.02](https://arxiv.org/abs/2602.16511), VIGOR: Visual Goal-In-Context Inference for Unified Humanoid Fall Safety"
+        },
+        {
+          "key": "safety-critical-control::vigor-visual-goal-in-context-inference-for-unified-humanoid-fall-safety",
+          "title": "VIGOR: Visual Goal-In-Context Inference for Unified Humanoid Fall Safety",
+          "category": "Safety-Critical Control",
+          "date": "2026-02",
+          "line": "- [arXiv 2026.02](https://arxiv.org/abs/2602.16511), VIGOR: Visual Goal-In-Context Inference for Unified Humanoid Fall Safety"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
           "key": "loco-manipulation-and-whole-body-control::mosaic-bridging-the-sim-to-real-gap-in-generalist-humanoid-motion-tracking-and-t",
           "title": "MOSAIC: Bridging the Sim-to-Real Gap in Generalist Humanoid Motion Tracking and Teleoperation with Rapid Residual Adaptation",
           "category": "Loco-Manipulation and Whole-Body-Control",
@@ -487,6 +781,48 @@
           "category": "Sim-to-Real",
           "date": "2026-02",
           "line": "- [arXiv 2026.02](https://arxiv.org/abs/2602.00401), ZEST: Zero-shot Embodied Skill Transfer for Athletic Robot Control"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::safefall-learning-protective-control-for-humanoid-robots",
+          "title": "SafeFall: Learning Protective Control for Humanoid Robots",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2025-11",
+          "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.18509), SafeFall: Learning Protective Control for Humanoid Robots"
+        },
+        {
+          "key": "safety-critical-control::safefall-learning-protective-control-for-humanoid-robots",
+          "title": "SafeFall: Learning Protective Control for Humanoid Robots",
+          "category": "Safety-Critical Control",
+          "date": "2025-11",
+          "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.18509), SafeFall: Learning Protective Control for Humanoid Robots"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::unified-humanoid-fall-safety-policy-from-a-few-demonstrations",
+          "title": "Unified Humanoid Fall-Safety Policy from a Few Demonstrations",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2025-11",
+          "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.07407), Unified Humanoid Fall-Safety Policy from a Few Demonstrations"
+        },
+        {
+          "key": "safety-critical-control::unified-humanoid-fall-safety-policy-from-a-few-demonstrations",
+          "title": "Unified Humanoid Fall-Safety Policy from a Few Demonstrations",
+          "category": "Safety-Critical Control",
+          "date": "2025-11",
+          "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.07407), Unified Humanoid Fall-Safety Policy from a Few Demonstrations"
         }
       ],
       "detected_on": "2026-08-14"
@@ -550,6 +886,27 @@
           "category": "Teleoperation",
           "date": "2025-02",
           "line": "- 🌟 [arXiv 2025.02](https://arxiv.org/abs/2502.13013), HOMIE: Humanoid Loco-Manipulation with Isomorphic Exoskeleton Cockpit, [code](https://github.com/OpenRobotLab/OpenHomie)"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::spark-a-toolbox-for-safe-humanoid-autonomy-and-teleoperation",
+          "title": "**SPARK**: A Toolbox for Safe Humanoid Autonomy and Teleoperation",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2025-02",
+          "line": "- [arXiv 2025.02](https://arxiv.org/abs/2502.03132), **SPARK**: A Toolbox for Safe Humanoid Autonomy and Teleoperation, [website](https://intelligent-control-lab.github.io/spark/)"
+        },
+        {
+          "key": "safety-critical-control::spark-a-toolbox-for-safe-humanoid-autonomy-and-teleoperation",
+          "title": "**SPARK**: A Toolbox for Safe Humanoid Autonomy and Teleoperation",
+          "category": "Safety-Critical Control",
+          "date": "2025-02",
+          "line": "- [arXiv 2025.02](https://arxiv.org/abs/2502.03132), **SPARK**: A Toolbox for Safe Humanoid Autonomy and Teleoperation, [website](https://intelligent-control-lab.github.io/spark/)"
         }
       ],
       "detected_on": "2026-08-14"
@@ -760,6 +1117,69 @@
           "category": "Human Motion Analysis and Synthesis",
           "date": "2022",
           "line": "- 🌟 [ECCV 2022](https://arxiv.org/abs/2207.13784), AvatarPoser: Articulated Full-Body Pose Tracking from Sparse Motion Sensing, [website](https://siplab.org/projects/AvatarPoser) / [code](https://github.com/eth-siplab/AvatarPoser)"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "locomotion::geometry-aware-predictive-safety-filters-on-humanoids",
+          "title": "Geometry-Aware Predictive Safety Filters on Humanoids",
+          "category": "Locomotion",
+          "date": "2025-08",
+          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.11129), Geometry-Aware Predictive Safety Filters on Humanoids"
+        },
+        {
+          "key": "safety-critical-control::geometry-aware-predictive-safety-filters-on-humanoids",
+          "title": "Geometry-Aware Predictive Safety Filters on Humanoids",
+          "category": "Safety-Critical Control",
+          "date": "2025-08",
+          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.11129), Geometry-Aware Predictive Safety Filters on Humanoids"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "locomotion::end-to-end-humanoid-robot-safe-and-comfortable-locomotion-policy",
+          "title": "End-to-End Humanoid Robot Safe and Comfortable Locomotion Policy",
+          "category": "Locomotion",
+          "date": "2025-08",
+          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.07611), End-to-End Humanoid Robot Safe and Comfortable Locomotion Policy"
+        },
+        {
+          "key": "safety-critical-control::end-to-end-humanoid-robot-safe-and-comfortable-locomotion-policy",
+          "title": "End-to-End Humanoid Robot Safe and Comfortable Locomotion Policy",
+          "category": "Safety-Critical Control",
+          "date": "2025-08",
+          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.07611), End-to-End Humanoid Robot Safe and Comfortable Locomotion Policy"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "locomotion::shield-safety-on-humanoids-via-cbfs-in-expectation-on-learned-dynamics",
+          "title": "SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics",
+          "category": "Locomotion",
+          "date": "2025-05",
+          "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.11494), SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics"
+        },
+        {
+          "key": "safety-critical-control::shield-safety-on-humanoids-via-cbfs-in-expectation-on-learned-dynamics",
+          "title": "SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics",
+          "category": "Safety-Critical Control",
+          "date": "2025-05",
+          "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.11494), SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics"
         }
       ],
       "detected_on": "2026-08-14"
@@ -1069,57 +1489,6 @@
     },
     {
       "kind": "out-of-order",
-      "reason": "in 'Hardware Design', 2024-11 entry is listed after a 2019-04 entry (section must be newest-first)",
-      "items": [
-        {
-          "key": "hardware-design::quasi-direct-drive-for-low-cost-compliant-robotic-manipulation",
-          "title": "Quasi-Direct Drive for Low-Cost Compliant Robotic Manipulation",
-          "line": "- [arXiv 2019.04](https://arxiv.org/abs/1904.03815), Quasi-Direct Drive for Low-Cost Compliant Robotic Manipulation, [website](https://berkeleyopenarms.github.io/)"
-        },
-        {
-          "key": "hardware-design::zeroth-bot",
-          "title": "Zeroth Bot",
-          "line": "- 2024.11, Zeroth Bot, [Github](https://github.com/zeroth-robotics/zeroth-bot)"
-        }
-      ],
-      "detected_on": "2026-08-14"
-    },
-    {
-      "kind": "out-of-order",
-      "reason": "in 'Teleoperation', 2025-08 entry is listed after a 2022-03 entry (section must be newest-first)",
-      "items": [
-        {
-          "key": "teleoperation::icub3-avatar-system-enabling-remote-fully-immersive-embodiment-of-humanoid-robot",
-          "title": "iCub3 Avatar System: Enabling Remote Fully-Immersive Embodiment of Humanoid Robots",
-          "line": "- [arXiv 2022.03](https://arxiv.org/abs/2203.06972), iCub3 Avatar System: Enabling Remote Fully-Immersive Embodiment of Humanoid Robots, [Science Robotics](https://www.science.org/doi/10.1126/scirobotics.adh3834) / [github](https://github.com/ami-iit/paper_dafarra_2024_science-robotics_icub3-avatar-system)"
-        },
-        {
-          "key": "teleoperation::child-controller-for-humanoid-imitation-and-live-demonstration-a-whole-body-huma",
-          "title": "CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System",
-          "line": "- arXiv 2025.08, CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System, [website](https://uiuckimlab.github.io/CHILD-pages/)"
-        }
-      ],
-      "detected_on": "2026-08-14"
-    },
-    {
-      "kind": "out-of-order",
-      "reason": "in 'Teleoperation', 2026-06 entry is listed after a 2025-08 entry (section must be newest-first)",
-      "items": [
-        {
-          "key": "teleoperation::child-controller-for-humanoid-imitation-and-live-demonstration-a-whole-body-huma",
-          "title": "CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System",
-          "line": "- arXiv 2025.08, CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System, [website](https://uiuckimlab.github.io/CHILD-pages/)"
-        },
-        {
-          "key": "teleoperation::humanoid-gpt-scaling-data-and-structure-for-zero-shot-motion-tracking",
-          "title": "Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking",
-          "line": "- 🌟 [arXiv 2026.06](https://arxiv.org/abs/2606.03985), Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking, [code](https://github.com/GalaxyGeneralRobotics/Humanoid-GPT)"
-        }
-      ],
-      "detected_on": "2026-08-14"
-    },
-    {
-      "kind": "out-of-order",
       "reason": "in 'Navigation', 2025-08 entry is listed after a 2025-08 entry (section must be newest-first)",
       "items": [
         {
@@ -1148,6 +1517,91 @@
           "key": "navigation::lovon-legged-open-vocabulary-object-navigator",
           "title": "LOVON: Legged Open-Vocabulary Object Navigator",
           "line": "- arXiv 2025.07, LOVON: Legged Open-Vocabulary Object Navigator, [website](https://daojiepeng.github.io/LOVON/)"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "out-of-order",
+      "reason": "in 'Loco-Manipulation and Whole-Body-Control', 2026-03 entry is listed after a 2026-03 entry (section must be newest-first)",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::latent-learning-athletic-humanoid-tennis-skills-from-imperfect-human-motion-data",
+          "title": "LATENT: Learning Athletic Humanoid Tennis Skills from Imperfect Human Motion Data",
+          "line": "- 🌟 [website 2026.03](https://zzk273.github.io/LATENT/), LATENT: Learning Athletic Humanoid Tennis Skills from Imperfect Human Motion Data"
+        },
+        {
+          "key": "loco-manipulation-and-whole-body-control::0-an-open-foundation-model-towards-universal-humanoid-loco-manipulation",
+          "title": "Ψ₀: An Open Foundation Model Towards Universal Humanoid Loco-Manipulation",
+          "line": "- [arXiv 2026.03](https://arxiv.org/abs/2603.12263), Ψ₀: An Open Foundation Model Towards Universal Humanoid Loco-Manipulation"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "out-of-order",
+      "reason": "in 'Loco-Manipulation and Whole-Body-Control', 2025-10 entry is listed after a 2025-09 entry (section must be newest-first)",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::seec-stable-end-effector-control-with-model-enhanced-residual-learning-for-human",
+          "title": "SEEC: Stable End-Effector Control with Model-Enhanced Residual Learning for Humanoid Loco-Manipulation",
+          "line": "- [arXiv 2025.09](https://arxiv.org/abs/2509.21231), SEEC: Stable End-Effector Control with Model-Enhanced Residual Learning for Humanoid Loco-Manipulation"
+        },
+        {
+          "key": "loco-manipulation-and-whole-body-control::visualmimic-visual-humanoid-loco-manipulation-via-motion-tracking-and-generation",
+          "title": "VisualMimic: Visual Humanoid Loco-Manipulation via Motion Tracking and Generation",
+          "line": "- [arXiv 2025.10](https://arxiv.org/abs/2509.20322), VisualMimic: Visual Humanoid Loco-Manipulation via Motion Tracking and Generation"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "out-of-order",
+      "reason": "in 'Loco-Manipulation and Whole-Body-Control', 2026-03 entry is listed after a 2025-05 entry (section must be newest-first)",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::falcon-learning-force-adaptive-humanoid-loco-manipulation",
+          "title": "FALCON: Learning Force-Adaptive Humanoid Loco-Manipulation",
+          "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.06776), FALCON: Learning Force-Adaptive Humanoid Loco-Manipulation, [website](https://lecar-lab.github.io/falcon-humanoid/)"
+        },
+        {
+          "key": "loco-manipulation-and-whole-body-control::fame-force-adaptive-rl-for-expanding-the-manipulation-envelope-of-a-full-scale-h",
+          "title": "FAME: Force-Adaptive RL for Expanding the Manipulation Envelope of a Full-Scale Humanoid",
+          "line": "- 🌟 [arXiv 2026.03](https://arxiv.org/abs/2603.08961v1), FAME: Force-Adaptive RL for Expanding the Manipulation Envelope of a Full-Scale Humanoid, [website](https://fame10.github.io/Fame/)"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "out-of-order",
+      "reason": "in 'Loco-Manipulation and Whole-Body-Control', 2025-12 entry is listed after a 2022-12 entry (section must be newest-first)",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::predictive-sampling-real-time-behaviour-synthesis-with-mujoco",
+          "title": "Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo",
+          "line": "- [arXiv 2022.12](https://arxiv.org/abs/2212.00541), Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo"
+        },
+        {
+          "key": "loco-manipulation-and-whole-body-control::wholebodyvla-towards-unified-latent-vla-for-whole-body-loco-manipulation-control",
+          "title": "WholeBodyVLA: Towards Unified Latent VLA for Whole-body Loco-manipulation Control",
+          "line": "- [arXiv 2025.12](https://opendrivelab.com/WholeBodyVLA/static/pdf/WholeBodyVLA.pdf), WholeBodyVLA: Towards Unified Latent VLA for Whole-body Loco-manipulation Control"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "out-of-order",
+      "reason": "in 'Hardware Design', 2024-11 entry is listed after a 2019-04 entry (section must be newest-first)",
+      "items": [
+        {
+          "key": "hardware-design::quasi-direct-drive-for-low-cost-compliant-robotic-manipulation",
+          "title": "Quasi-Direct Drive for Low-Cost Compliant Robotic Manipulation",
+          "line": "- [arXiv 2019.04](https://arxiv.org/abs/1904.03815), Quasi-Direct Drive for Low-Cost Compliant Robotic Manipulation, [website](https://berkeleyopenarms.github.io/)"
+        },
+        {
+          "key": "hardware-design::zeroth-bot",
+          "title": "Zeroth Bot",
+          "line": "- 2024.11, Zeroth Bot, [Github](https://github.com/zeroth-robotics/zeroth-bot)"
         }
       ],
       "detected_on": "2026-08-14"
@@ -1222,17 +1676,17 @@
     },
     {
       "kind": "out-of-order",
-      "reason": "in 'Simulation Benchmark', 2025-01 entry is listed after a 2024-03 entry (section must be newest-first)",
+      "reason": "in 'Manipulation', 2026-01 entry is listed after a 2024-03 entry (section must be newest-first)",
       "items": [
         {
-          "key": "simulation-benchmark::humanoidbench-simulated-humanoid-benchmark-for-whole-body-locomotion-and-manipul",
-          "title": "HumanoidBench: Simulated Humanoid Benchmark for Whole-Body Locomotion and Manipulation",
-          "line": "- 🌟 [arXiv 2024.03](https://arxiv.org/abs/2403.10506), HumanoidBench: Simulated Humanoid Benchmark for Whole-Body Locomotion and Manipulation, [website](https://humanoid-bench.github.io/) / [code](https://github.com/carlosferrazza/humanoid-bench)"
+          "key": "manipulation::dexcap-scalable-and-portable-mocap-data-collection-system-for-dexterous-manipula",
+          "title": "DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation",
+          "line": "- 🌟 [arXiv 2024.03](https://arxiv.org/abs/2403.07788), DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation, [website](https://dex-cap.github.io/) / [code](https://github.com/j96w/DexCap)"
         },
         {
-          "key": "simulation-benchmark::mujoco-playground",
-          "title": "MuJoCo Playground",
-          "line": "- 🌟 2025.01, MuJoCo Playground, [github](https://github.com/google-deepmind/mujoco_playground) / [website](https://playground.mujoco.org/)"
+          "key": "manipulation::visual-tactile-pretraining-and-online-multitask-learning-for-humanlike-manipulat",
+          "title": "Visual-tactile pretraining and online multitask learning for humanlike manipulation dexterity",
+          "line": "- [Science Robotics 2026.01](https://www.science.org/doi/10.1126/scirobotics.ady2869), Visual-tactile pretraining and online multitask learning for humanlike manipulation dexterity"
         }
       ],
       "detected_on": "2026-08-14"
@@ -1273,85 +1727,51 @@
     },
     {
       "kind": "out-of-order",
-      "reason": "in 'Manipulation', 2026-01 entry is listed after a 2024-03 entry (section must be newest-first)",
+      "reason": "in 'Teleoperation', 2025-08 entry is listed after a 2022-03 entry (section must be newest-first)",
       "items": [
         {
-          "key": "manipulation::dexcap-scalable-and-portable-mocap-data-collection-system-for-dexterous-manipula",
-          "title": "DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation",
-          "line": "- 🌟 [arXiv 2024.03](https://arxiv.org/abs/2403.07788), DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation, [website](https://dex-cap.github.io/) / [code](https://github.com/j96w/DexCap)"
+          "key": "teleoperation::icub3-avatar-system-enabling-remote-fully-immersive-embodiment-of-humanoid-robot",
+          "title": "iCub3 Avatar System: Enabling Remote Fully-Immersive Embodiment of Humanoid Robots",
+          "line": "- [arXiv 2022.03](https://arxiv.org/abs/2203.06972), iCub3 Avatar System: Enabling Remote Fully-Immersive Embodiment of Humanoid Robots, [Science Robotics](https://www.science.org/doi/10.1126/scirobotics.adh3834) / [github](https://github.com/ami-iit/paper_dafarra_2024_science-robotics_icub3-avatar-system)"
         },
         {
-          "key": "manipulation::visual-tactile-pretraining-and-online-multitask-learning-for-humanlike-manipulat",
-          "title": "Visual-tactile pretraining and online multitask learning for humanlike manipulation dexterity",
-          "line": "- [Science Robotics 2026.01](https://www.science.org/doi/10.1126/scirobotics.ady2869), Visual-tactile pretraining and online multitask learning for humanlike manipulation dexterity"
+          "key": "teleoperation::child-controller-for-humanoid-imitation-and-live-demonstration-a-whole-body-huma",
+          "title": "CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System",
+          "line": "- arXiv 2025.08, CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System, [website](https://uiuckimlab.github.io/CHILD-pages/)"
         }
       ],
       "detected_on": "2026-08-14"
     },
     {
       "kind": "out-of-order",
-      "reason": "in 'Loco-Manipulation and Whole-Body-Control', 2026-03 entry is listed after a 2026-03 entry (section must be newest-first)",
+      "reason": "in 'Teleoperation', 2026-06 entry is listed after a 2025-08 entry (section must be newest-first)",
       "items": [
         {
-          "key": "loco-manipulation-and-whole-body-control::latent-learning-athletic-humanoid-tennis-skills-from-imperfect-human-motion-data",
-          "title": "LATENT: Learning Athletic Humanoid Tennis Skills from Imperfect Human Motion Data",
-          "line": "- 🌟 [website 2026.03](https://zzk273.github.io/LATENT/), LATENT: Learning Athletic Humanoid Tennis Skills from Imperfect Human Motion Data"
+          "key": "teleoperation::child-controller-for-humanoid-imitation-and-live-demonstration-a-whole-body-huma",
+          "title": "CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System",
+          "line": "- arXiv 2025.08, CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System, [website](https://uiuckimlab.github.io/CHILD-pages/)"
         },
         {
-          "key": "loco-manipulation-and-whole-body-control::0-an-open-foundation-model-towards-universal-humanoid-loco-manipulation",
-          "title": "Ψ₀: An Open Foundation Model Towards Universal Humanoid Loco-Manipulation",
-          "line": "- [arXiv 2026.03](https://arxiv.org/abs/2603.12263), Ψ₀: An Open Foundation Model Towards Universal Humanoid Loco-Manipulation"
+          "key": "teleoperation::humanoid-gpt-scaling-data-and-structure-for-zero-shot-motion-tracking",
+          "title": "Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking",
+          "line": "- 🌟 [arXiv 2026.06](https://arxiv.org/abs/2606.03985), Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking, [code](https://github.com/GalaxyGeneralRobotics/Humanoid-GPT)"
         }
       ],
       "detected_on": "2026-08-14"
     },
     {
       "kind": "out-of-order",
-      "reason": "in 'Loco-Manipulation and Whole-Body-Control', 2025-10 entry is listed after a 2025-09 entry (section must be newest-first)",
+      "reason": "in 'Simulation Benchmark', 2025-01 entry is listed after a 2024-03 entry (section must be newest-first)",
       "items": [
         {
-          "key": "loco-manipulation-and-whole-body-control::seec-stable-end-effector-control-with-model-enhanced-residual-learning-for-human",
-          "title": "SEEC: Stable End-Effector Control with Model-Enhanced Residual Learning for Humanoid Loco-Manipulation",
-          "line": "- [arXiv 2025.09](https://arxiv.org/abs/2509.21231), SEEC: Stable End-Effector Control with Model-Enhanced Residual Learning for Humanoid Loco-Manipulation"
+          "key": "simulation-benchmark::humanoidbench-simulated-humanoid-benchmark-for-whole-body-locomotion-and-manipul",
+          "title": "HumanoidBench: Simulated Humanoid Benchmark for Whole-Body Locomotion and Manipulation",
+          "line": "- 🌟 [arXiv 2024.03](https://arxiv.org/abs/2403.10506), HumanoidBench: Simulated Humanoid Benchmark for Whole-Body Locomotion and Manipulation, [website](https://humanoid-bench.github.io/) / [code](https://github.com/carlosferrazza/humanoid-bench)"
         },
         {
-          "key": "loco-manipulation-and-whole-body-control::visualmimic-visual-humanoid-loco-manipulation-via-motion-tracking-and-generation",
-          "title": "VisualMimic: Visual Humanoid Loco-Manipulation via Motion Tracking and Generation",
-          "line": "- [arXiv 2025.10](https://arxiv.org/abs/2509.20322), VisualMimic: Visual Humanoid Loco-Manipulation via Motion Tracking and Generation"
-        }
-      ],
-      "detected_on": "2026-08-14"
-    },
-    {
-      "kind": "out-of-order",
-      "reason": "in 'Loco-Manipulation and Whole-Body-Control', 2026-03 entry is listed after a 2025-05 entry (section must be newest-first)",
-      "items": [
-        {
-          "key": "loco-manipulation-and-whole-body-control::falcon-learning-force-adaptive-humanoid-loco-manipulation",
-          "title": "FALCON: Learning Force-Adaptive Humanoid Loco-Manipulation",
-          "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.06776), FALCON: Learning Force-Adaptive Humanoid Loco-Manipulation, [website](https://lecar-lab.github.io/falcon-humanoid/)"
-        },
-        {
-          "key": "loco-manipulation-and-whole-body-control::fame-force-adaptive-rl-for-expanding-the-manipulation-envelope-of-a-full-scale-h",
-          "title": "FAME: Force-Adaptive RL for Expanding the Manipulation Envelope of a Full-Scale Humanoid",
-          "line": "- 🌟 [arXiv 2026.03](https://arxiv.org/abs/2603.08961v1), FAME: Force-Adaptive RL for Expanding the Manipulation Envelope of a Full-Scale Humanoid, [website](https://fame10.github.io/Fame/)"
-        }
-      ],
-      "detected_on": "2026-08-14"
-    },
-    {
-      "kind": "out-of-order",
-      "reason": "in 'Loco-Manipulation and Whole-Body-Control', 2025-12 entry is listed after a 2022-12 entry (section must be newest-first)",
-      "items": [
-        {
-          "key": "loco-manipulation-and-whole-body-control::predictive-sampling-real-time-behaviour-synthesis-with-mujoco",
-          "title": "Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo",
-          "line": "- [arXiv 2022.12](https://arxiv.org/abs/2212.00541), Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo"
-        },
-        {
-          "key": "loco-manipulation-and-whole-body-control::wholebodyvla-towards-unified-latent-vla-for-whole-body-loco-manipulation-control",
-          "title": "WholeBodyVLA: Towards Unified Latent VLA for Whole-body Loco-manipulation Control",
-          "line": "- [arXiv 2025.12](https://opendrivelab.com/WholeBodyVLA/static/pdf/WholeBodyVLA.pdf), WholeBodyVLA: Towards Unified Latent VLA for Whole-body Loco-manipulation Control"
+          "key": "simulation-benchmark::mujoco-playground",
+          "title": "MuJoCo Playground",
+          "line": "- 🌟 2025.01, MuJoCo Playground, [github](https://github.com/google-deepmind/mujoco_playground) / [website](https://playground.mujoco.org/)"
         }
       ],
       "detected_on": "2026-08-14"

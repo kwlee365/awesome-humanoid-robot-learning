@@ -82,6 +82,7 @@ export const CATEGORY_ORDER = [
   'Manipulation',
   'Teleoperation',
   'Locomotion',
+  'Safety-Critical Control',
   'Navigation',
   'State Estimation',
   'Sim-to-Real',
