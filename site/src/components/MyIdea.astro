@@ -134,7 +134,20 @@ here. The prompts below are optional - delete them and write however you like.
     </div>
 
     <div class="editing" data-editing hidden>
+      <div class="draft-bar" data-draft-bar hidden>
+        <span
+          >This browser has an unsaved draft of this note, newer than the copy on GitHub.</span
+        >
+        <button type="button" class="linkish" data-draft-restore>Restore it</button>
+        <button type="button" class="linkish" data-draft-discard>Discard it</button>
+      </div>
+      <div class="tabs" role="tablist">
+        <button type="button" data-tab="write" class="on" role="tab">Write</button>
+        <button type="button" data-tab="preview" role="tab">Preview</button>
+        <span class="saved-note" data-draft-note></span>
+      </div>
       <textarea data-text spellcheck="false" rows="24"></textarea>
+      <div class="prose preview" data-preview hidden></div>
       <div class="row">
         <button type="button" data-save>Save</button>
         <button type="button" data-cancel>Cancel</button>
@@ -144,8 +157,9 @@ here. The prompts below are optional - delete them and write however you like.
       </div>
       <p class="tip">
         Markdown. Paste or drop an image straight into the box to upload it, or use
-        <em>Add image</em>. Saving makes a commit, and the published page rebuilds a minute or
-        two later.
+        <em>Add image</em>. What you type is kept in this browser as you go, so closing the tab
+        does not lose it. Saving commits the note and renders it here immediately; the published
+        page catches up a minute or two later.
       </p>
     </div>
 
@@ -154,8 +168,21 @@ here. The prompts below are optional - delete them and write however you like.
 </section>
 
 <script>
+  import { marked } from 'marked';
+
   const TOKEN_KEY = 'myidea:github-pat';
+  const DRAFT_PREFIX = 'myidea:draft:';
   const API = 'https://api.github.com';
+
+  /**
+   * Render a note the way the build does: drop the YAML frontmatter, then the
+   * body as markdown. Used for the preview tab and for showing a note the
+   * moment it is saved, so the page does not have to wait for a redeploy.
+   */
+  function renderNote(source: string): string {
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/, '');
+    return marked.parse(body, { async: false }) as string;
+  }
 
   function toBase64(text: string): string {
     const bytes = new TextEncoder().encode(text);
@@ -194,15 +221,49 @@ here. The prompts below are optional - delete them and write however you like.
     const textarea = root.querySelector<HTMLTextAreaElement>('[data-text]')!;
     const statusLine = root.querySelector<HTMLElement>('[data-status]')!;
     const fileInput = root.querySelector<HTMLInputElement>('[data-file]')!;
+    const preview = root.querySelector<HTMLElement>('[data-preview]')!;
+    const draftBar = root.querySelector<HTMLElement>('[data-draft-bar]')!;
+    const draftNote = root.querySelector<HTMLElement>('[data-draft-note]')!;
+    const tabs = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-tab]'));
 
+    const DRAFT_KEY = DRAFT_PREFIX + path;
     let sha: string | null = null;
     let busy = false;
+    let draftTimer = 0;
 
     const token = () => localStorage.getItem(TOKEN_KEY);
     const say = (msg: string, kind = '') => {
       statusLine.textContent = msg;
       statusLine.dataset.kind = kind;
     };
+
+    function showTab(name: string) {
+      for (const t of tabs) t.classList.toggle('on', t.dataset.tab === name);
+      const isPreview = name === 'preview';
+      textarea.hidden = isPreview;
+      preview.hidden = !isPreview;
+      if (isPreview) preview.innerHTML = renderNote(textarea.value);
+    }
+
+    /** Keep what is being typed in this browser so a closed tab loses nothing. */
+    function rememberDraft() {
+      clearTimeout(draftTimer);
+      draftTimer = window.setTimeout(() => {
+        try {
+          localStorage.setItem(DRAFT_KEY, textarea.value);
+          draftNote.textContent = 'draft kept in this browser';
+        } catch {
+          /* storage full or blocked - the editor still works, just without drafts */
+        }
+      }, 400);
+    }
+
+    function clearDraft() {
+      clearTimeout(draftTimer);
+      localStorage.removeItem(DRAFT_KEY);
+      draftNote.textContent = '';
+      draftBar.hidden = true;
+    }
 
     async function api(method: string, endpoint: string, body?: unknown) {
       const res = await fetch(`${API}${endpoint}`, {
@@ -250,6 +311,9 @@ here. The prompts below are optional - delete them and write however you like.
           textarea.value = fromBase64(json.content);
           say('');
         }
+        const draft = localStorage.getItem(DRAFT_KEY);
+        draftBar.hidden = !(draft && draft !== textarea.value);
+        showTab('write');
         view.hidden = true;
         textarea.focus();
       } catch (e) {
@@ -279,8 +343,19 @@ here. The prompts below are optional - delete them and write however you like.
         const json = await res.json();
         sha = json.content?.sha ?? sha;
         const url = json.commit?.html_url;
+
+        // Show the saved note straight away rather than waiting for the
+        // redeploy, so writing here feels immediate.
+        clearDraft();
+        const rendered = document.createElement('div');
+        rendered.className = 'prose';
+        rendered.innerHTML = renderNote(textarea.value);
+        view.replaceChildren(rendered);
+        editor.hidden = true;
+        view.hidden = false;
+
         statusLine.dataset.kind = 'ok';
-        statusLine.textContent = 'Saved. The published page rebuilds in a minute or two.';
+        statusLine.textContent = 'Saved and shown above. The published page catches up shortly.';
         if (url) {
           const a = document.createElement('a');
           a.href = url;
@@ -288,6 +363,7 @@ here. The prompts below are optional - delete them and write however you like.
           a.textContent = 'See the commit';
           statusLine.append(' ', a);
         }
+        root.append(statusLine);
       } catch (e) {
         say((e as Error).message, 'err');
       } finally {
@@ -329,6 +405,19 @@ here. The prompts below are optional - delete them and write however you like.
         busy = false;
       }
     }
+
+    for (const t of tabs) t.addEventListener('click', () => showTab(t.dataset.tab!));
+
+    textarea.addEventListener('input', rememberDraft);
+
+    root.querySelector('[data-draft-restore]')!.addEventListener('click', () => {
+      const draft = localStorage.getItem(DRAFT_KEY);
+      if (draft !== null) textarea.value = draft;
+      draftBar.hidden = true;
+      showTab('write');
+    });
+
+    root.querySelector('[data-draft-discard]')!.addEventListener('click', clearDraft);
 
     root.querySelector('[data-edit]')!.addEventListener('click', openEditor);
     root.querySelector('[data-cancel]')!.addEventListener('click', closeEditor);

@@ -210,6 +210,12 @@ def main() -> int:
         with open(MANUAL, encoding="utf-8") as fh:
             review.extend(json.load(fh).get("findings", []))
 
+    # Several checks iterate over sets, so the order findings are appended in is
+    # not stable between runs. Sort before writing: without this the file's
+    # contents shuffle on every run and each scheduled maintenance run sees a
+    # spurious diff in a file nothing actually changed.
+    review.sort(key=lambda f: json.dumps(f, sort_keys=True, ensure_ascii=False))
+
     with open(REVIEW, "w", encoding="utf-8") as fh:
         json.dump({"generated_on": TODAY.isoformat(),
                    "note": "Ambiguous findings for a human to resolve. Automation never "

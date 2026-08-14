@@ -239,6 +239,34 @@ ul.papers .links { font-size: 0.82rem; color: var(--fg-faint); display: flex; ga
   padding: 0.55rem 0.75rem;
   border-radius: 0 var(--radius) var(--radius) 0;
 }
+.myidea .tabs { display: flex; gap: 0.3rem; align-items: center; margin-bottom: 0.4rem; }
+.myidea .tabs button {
+  padding: 0.25rem 0.7rem;
+  font-size: 0.85rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  background: none;
+  color: var(--fg-faint);
+  cursor: pointer;
+}
+.myidea .tabs button.on { border-color: var(--line); background: var(--bg); color: var(--fg); }
+.myidea .tabs .saved-note { margin-left: auto; font-size: 0.78rem; color: var(--fg-faint); }
+.myidea .preview {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg);
+  padding: 0.8rem 1rem;
+  min-height: 8rem;
+}
+.myidea .draft-bar {
+  display: flex; gap: 0.6rem; align-items: baseline; flex-wrap: wrap;
+  font-size: 0.85rem;
+  border-left: 3px solid var(--accent);
+  background: var(--accent-soft);
+  padding: 0.5rem 0.7rem;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin-bottom: 0.6rem;
+}
 .myidea .tip { font-size: 0.83rem; color: var(--fg-faint); margin: 0.5rem 0 0; }
 .myidea .status { font-size: 0.87rem; margin: 0.6rem 0 0; min-height: 1.2em; }
 .myidea .status[data-kind='ok'] { color: var(--ok); }
