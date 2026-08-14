@@ -40,6 +40,11 @@
 
 * { box-sizing: border-box; }
 
+/* The paper list sets `display: flex` on its <li>, which outranks the user-agent
+   `[hidden] { display: none }` rule, so JS filtering had no visible effect.
+   Keep this ahead of every component rule that sets `display`. */
+[hidden] { display: none !important; }
+
 html { -webkit-text-size-adjust: 100%; }
 
 body {

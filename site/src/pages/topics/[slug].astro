@@ -20,7 +20,6 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const list = papersInCategory(category.name);
 const Content = entry ? (await render(entry)).Content : null;
 const headings = entry ? (await render(entry)).headings.filter((h) => h.depth === 2) : [];
-const recent = list.slice(0, 10);
 ---
 
 <Base
@@ -44,7 +43,6 @@ const recent = list.slice(0, 10);
                 <a href={`#${h.slug}`}>{h.text}</a>
               </li>
             ))}
-            <li><a href="#recent-work">Recent work</a></li>
             <li><a href="#all-papers">Complete paper list ({list.length})</a></li>
             <li><a href="#my-idea">My Idea</a></li>
           </ol>
@@ -64,15 +62,6 @@ const recent = list.slice(0, 10);
         </p>
       )
     }
-
-    <section aria-labelledby="recent-work">
-      <h2 id="recent-work">Recent work</h2>
-      <p class="lede">
-        The newest entries in this area. New papers land here first; the historical narrative
-        above is only revised when a paper represents a real methodological shift.
-      </p>
-      <PaperList papers={recent} id="recent-cat" />
-    </section>
 
     <section aria-labelledby="all-papers">
       <h2 id="all-papers">Complete paper list ({list.length})</h2>
