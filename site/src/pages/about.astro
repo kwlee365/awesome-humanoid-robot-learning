@@ -1,0 +1,113 @@
+---
+import Base from '../layouts/Base.astro';
+import review from '../generated/review-queue.json';
+import { stats } from '../lib/papers';
+
+const findings = (review as { generated_on: string; findings: { kind: string }[] }).findings;
+const counts = new Map<string, number>();
+for (const f of findings) counts.set(f.kind, (counts.get(f.kind) ?? 0) + 1);
+const rows = [...counts.entries()].sort((a, b) => b[1] - a[1]);
+
+const explain: Record<string, string> = {
+  'cross-section-listing':
+    'the same paper is listed in more than one README section — allowed when it genuinely spans topics, so it is reviewed rather than removed',
+  'out-of-order': 'an entry sits out of newest-first order inside its section',
+  'star-without-code':
+    'the entry carries the open-source star but no code repository link could be verified',
+  'code-without-star': 'the entry links a code repository but carries no open-source star',
+  'date-mismatch':
+    'the arXiv id implies a different month than the entry states (often intentional, e.g. a SIGGRAPH publication month)',
+  'undated-entry': 'the entry has no venue/date prefix, so it cannot be sorted or dated',
+  'probable-duplicate': 'two entries have very similar titles and may be the same work',
+  'repeated-project-link': 'two different titles point at the same project page',
+  'exact-duplicate': 'the same paper appears twice in one section',
+};
+---
+
+<Base title="About — Humanoid Robot Learning" description="How this site is built, verified and kept up to date.">
+  <div class="wrap narrow">
+    <h1>About this site</h1>
+    <p class="lede">
+      This is a generated companion to the README of
+      <a href="https://github.com/kwlee365/awesome-humanoid-robot-learning">
+        kwlee365/awesome-humanoid-robot-learning</a
+      >, a fork of
+      <a href="https://github.com/YanjieZe/awesome-humanoid-robot-learning">
+        YanjieZe/awesome-humanoid-robot-learning</a
+      >.
+    </p>
+
+    <h2>Where the data comes from</h2>
+    <p>
+      The README stays the human-facing source of truth for the list. A parser lifts every
+      entry into one structured record set (<code>data/papers.json</code>), which is the single
+      source both the validation scripts and this site read. The parser is round-trip checked:
+      every record must re-render to its exact README line, so a record cannot silently drift
+      away from the list.
+    </p>
+    <p>
+      Records carry the fields needed to identify a work — DOI, arXiv id, title, venue, first
+      public date, publication status, links, category, tags, open-source and real-robot flags
+      — plus enrichment fields (authors, official abstract, overview, verification date) that
+      are filled in only after the primary source has actually been read. Anything not yet
+      verified is shown as missing rather than guessed.
+    </p>
+
+    <h2>What the automation may and may not change</h2>
+    <ul>
+      <li>It adds verified new papers to the README in the existing entry format.</li>
+      <li>It fixes exact duplicates and clear formatting errors.</li>
+      <li>
+        It never rewrites unrelated entries, never reformats the list wholesale, and never
+        commits when nothing verified has changed.
+      </li>
+      <li>
+        It never rewrites, summarises, translates, reorganises or deletes a
+        <a href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/my-ideas`}>My Idea</a> file.
+        A guard script fails the run if any of those files changed outside a human commit.
+      </li>
+      <li>
+        A historical narrative is revised only when a new paper marks a real methodological
+        shift; otherwise the paper is added to the area's “Recent work” and the history is left
+        alone.
+      </li>
+    </ul>
+
+    <h2>Open review queue ({findings.length} findings)</h2>
+    <p>
+      Ambiguous findings are never auto-resolved. They are recorded in
+      <code>data/review-queue.json</code> (regenerated {(review as any).generated_on}) for a
+      human to decide on.
+    </p>
+    <table>
+      <thead><tr><th>Finding</th><th>Count</th><th>What it means</th></tr></thead>
+      <tbody>
+        {
+          rows.map(([kind, n]) => (
+            <tr>
+              <td><code>{kind}</code></td>
+              <td>{n}</td>
+              <td>{explain[kind] ?? ''}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+
+    <h2>Numbers</h2>
+    <ul>
+      <li>{stats.readmeEntries} README entries → {stats.researchRecords} distinct research records</li>
+      <li>{stats.categories} top-level research areas</li>
+      <li>{stats.openSource} records with a verified public code repository</li>
+      <li>Data regenerated {stats.builtAt}</li>
+    </ul>
+
+    <h2>Corrections</h2>
+    <p>
+      Everything here is generated from public sources and can be wrong. Corrections are
+      welcome as issues or pull requests on the
+      <a href="https://github.com/kwlee365/awesome-humanoid-robot-learning">fork</a>. Please do
+      not send this fork's automation changes upstream — upstream has its own review process.
+    </p>
+  </div>
+</Base>

@@ -1,0 +1,98 @@
+---
+import { categories, papers } from '../lib/papers';
+
+interface Props {
+  /** Hide the category dropdown on pages that are already scoped to one category. */
+  showCategory?: boolean;
+  target?: string;
+}
+
+const { showCategory = true, target = '' } = Astro.props;
+const years = [...new Set(papers.map((p) => p.year).filter((y): y is number => y !== null))].sort(
+  (a, b) => b - a,
+);
+const venues = [...new Set(papers.map((p) => p.venue))].sort((a, b) => a.localeCompare(b));
+---
+
+<form class="filters" data-filters data-target={target} role="search" aria-label="Filter papers">
+  <div>
+    <label for="f-q">Search title or author</label>
+    <input id="f-q" name="q" type="search" placeholder="e.g. motion tracking, parkour, MPC" autocomplete="off" />
+  </div>
+  {
+    showCategory && (
+      <div>
+        <label for="f-cat">Category</label>
+        <select id="f-cat" name="category">
+          <option value="">All</option>
+          {categories.map((c) => (
+            <option value={c.name}>{c.name}</option>
+          ))}
+        </select>
+      </div>
+    )
+  }
+  <div>
+    <label for="f-year">Year</label>
+    <select id="f-year" name="year">
+      <option value="">All</option>
+      {years.map((y) => <option value={String(y)}>{y}</option>)}
+    </select>
+  </div>
+  <div>
+    <label for="f-venue">Venue</label>
+    <select id="f-venue" name="venue">
+      <option value="">All</option>
+      {venues.map((v) => <option value={v}>{v}</option>)}
+    </select>
+  </div>
+  <div>
+    <label for="f-flag">Evidence &amp; code</label>
+    <select id="f-flag" name="flag">
+      <option value="">All</option>
+      <option value="open">Open-source only</option>
+      <option value="real">Real-robot validated</option>
+      <option value="sim">Simulation only</option>
+    </select>
+  </div>
+</form>
+<p class="result-count" data-count aria-live="polite"></p>
+
+<script>
+  function apply(form: HTMLFormElement) {
+    const list = document.querySelector<HTMLElement>(
+      form.dataset.target ? `#${form.dataset.target}` : '[data-paper-list]',
+    );
+    if (!list) return;
+    const data = new FormData(form);
+    const q = String(data.get('q') ?? '').trim().toLowerCase();
+    const category = String(data.get('category') ?? '');
+    const year = String(data.get('year') ?? '');
+    const venue = String(data.get('venue') ?? '');
+    const flag = String(data.get('flag') ?? '');
+
+    let shown = 0;
+    for (const li of Array.from(list.children) as HTMLElement[]) {
+      const d = li.dataset;
+      const ok =
+        (!q || (d.title ?? '').includes(q) || (d.authors ?? '').includes(q)) &&
+        (!category || (d.categories ?? '').split('|').includes(category)) &&
+        (!year || d.year === year) &&
+        (!venue || d.venue === venue) &&
+        (flag !== 'open' || d.open === '1') &&
+        (flag !== 'real' || d.real === '1') &&
+        (flag !== 'sim' || d.real === '0');
+      li.hidden = !ok;
+      if (ok) shown++;
+    }
+    const counter = document.querySelector<HTMLElement>('[data-count]');
+    if (counter) counter.textContent = `${shown} of ${list.children.length} papers shown`;
+  }
+
+  for (const form of document.querySelectorAll<HTMLFormElement>('[data-filters]')) {
+    form.addEventListener('input', () => apply(form));
+    form.addEventListener('change', () => apply(form));
+    form.addEventListener('submit', (e) => e.preventDefault());
+    apply(form);
+  }
+</script>

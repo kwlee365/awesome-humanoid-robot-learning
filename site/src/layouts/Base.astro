@@ -1,0 +1,84 @@
+---
+import '../styles/global.css';
+import { stats } from '../lib/papers';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const here = Astro.url.pathname.replace(/\/$/, '');
+const nav = [
+  { href: `${base}/`, label: 'Home' },
+  { href: `${base}/topics`, label: 'Research areas' },
+  { href: `${base}/papers`, label: 'All papers' },
+  { href: `${base}/my-ideas`, label: 'My Idea' },
+  { href: `${base}/about`, label: 'About' },
+];
+const desc =
+  description ??
+  'A research history portal for humanoid robot learning: how each research area developed, where it stands today, and every paper in the Awesome-Humanoid-Robot-Learning list.';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={desc} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>🤖</text></svg>" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site">
+      <div class="wrap inner">
+        <a class="brand" href={`${base}/`}>Humanoid Robot Learning</a>
+        <nav>
+          {
+            nav.map((item) => (
+              <a
+                href={item.href}
+                aria-current={
+                  here === item.href.replace(/\/$/, '') ||
+                  (item.href !== `${base}/` && here.startsWith(item.href))
+                    ? 'page'
+                    : undefined
+                }
+              >
+                {item.label}
+              </a>
+            ))
+          }
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site">
+      <div class="wrap">
+        <p>
+          Generated from
+          <a href="https://github.com/kwlee365/awesome-humanoid-robot-learning">
+            kwlee365/awesome-humanoid-robot-learning</a
+          >, a fork of
+          <a href="https://github.com/YanjieZe/awesome-humanoid-robot-learning">
+            YanjieZe/awesome-humanoid-robot-learning</a
+          >. {stats.researchRecords} research records &middot; data regenerated {stats.builtAt}.
+        </p>
+        <p>
+          Paper metadata is derived from the README and from the papers' own arXiv, publisher
+          and project pages. Abstracts belong to their authors and are reproduced with a link
+          to the official source. <code>My Idea</code> notes are written by the repository
+          owner and are never edited by automation.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+---
+import Base from '../layouts/Base.astro';
+import PaperList from '../components/PaperList.astro';
+import PaperFilters from '../components/PaperFilters.astro';
+import { getCollection } from 'astro:content';
+import { categories, papers, sortNewestFirst, stats } from '../lib/papers';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const recent = sortNewestFirst(papers).slice(0, 12);
+const topicEntries = await getCollection('topics');
+const blurb = new Map(topicEntries.map((t) => [t.data.category, t.data.summary]));
+
+// Activity per year, used for the small sparkline-style bars on each card.
+const years = [...new Set(papers.map((p) => p.year).filter((y): y is number => y !== null))]
+  .sort((a, b) => a - b)
+  .slice(-8);
+
+function seriesFor(category: string) {
+  const inCat = papers.filter((p) => p.categories.includes(category));
+  const counts = years.map((y) => inCat.filter((p) => p.year === y).length);
+  const max = Math.max(1, ...counts);
+  return counts.map((c, i) => ({ year: years[i]!, count: c, pct: Math.round((c / max) * 100) }));
+}
+
+const perYear = years.map((y) => ({ year: y, count: papers.filter((p) => p.year === y).length }));
+const maxYear = Math.max(1, ...perYear.map((p) => p.count));
+const openShare = Math.round((stats.openSource / stats.researchRecords) * 100);
+---
+
+<Base title="Humanoid Robot Learning — research history and paper index">
+  <div class="wrap">
+    <h1>Humanoid robot learning, area by area</h1>
+    <p class="lede">
+      This site is the reading companion to the
+      <a href="https://github.com/kwlee365/awesome-humanoid-robot-learning">
+        Awesome-Humanoid-Robot-Learning</a
+      > list. For every research area it explains how the field got here, what the dominant
+      approaches are today, and what is still unsolved — and it gives every paper in the list
+      its own page. {stats.researchRecords} research records across {stats.categories} areas.
+    </p>
+
+    <section aria-labelledby="what-is">
+      <h2 id="what-is">What the field is about</h2>
+      <p>
+        Humanoid robot learning is the study of how a legged, roughly human-shaped robot can
+        acquire whole-body behaviour — balance, walking, running, carrying, manipulating,
+        interacting with people — from data rather than from hand-designed control laws
+        alone. The practical problem is that a humanoid is high-dimensional, underactuated
+        and makes and breaks contact with the world constantly, so its dynamics are
+        discontinuous and its failure modes are expensive.
+      </p>
+      <p>
+        Most current work therefore combines three ingredients: large-scale simulation to
+        gather experience cheaply, human motion data to supply a prior on what "reasonable"
+        whole-body behaviour looks like, and some mechanism — domain randomisation, system
+        identification, residual learning, online adaptation — to survive the transfer to
+        physical hardware. The area pages below trace how each of those ingredients arrived
+        and how they were combined.
+      </p>
+    </section>
+
+    <section aria-labelledby="map">
+      <h2 id="map">Research areas</h2>
+      <div class="grid cols-3">
+        {
+          categories.map((c) => (
+            <a class="card cat-card" href={`${base}/topics/${c.slug}`}>
+              <span class="name">{c.name}</span>
+              <span class="count"> · {c.count} papers</span>
+              <span
+                class="spark"
+                aria-hidden="true"
+                style="display:flex;gap:2px;align-items:flex-end;height:22px;margin-top:.5rem"
+              >
+                {seriesFor(c.name).map((s) => (
+                  <span
+                    title={`${s.year}: ${s.count}`}
+                    style={`flex:1;background:var(--accent);opacity:.55;border-radius:2px;height:${Math.max(2, s.pct)}%`}
+                  />
+                ))}
+              </span>
+              <span class="blurb">
+                {blurb.get(c.name) ?? 'Definition, history, milestones and open problems.'}
+              </span>
+            </a>
+          ))
+        }
+      </div>
+      <p class="result-count">
+        Bars show how many records in that area carry each of the last {years.length} years
+        ({years[0]}–{years[years.length - 1]}).
+      </p>
+    </section>
+
+    <section aria-labelledby="trends">
+      <h2 id="trends">What the list itself shows</h2>
+      <p>
+        These are descriptive statistics of the list, not a claim about the field as a whole —
+        the list is curated and prefers papers with real-robot experiments.
+      </p>
+      <div class="grid cols-2">
+        <div class="card">
+          <strong>Records per year</strong>
+          <div style="display:flex;gap:4px;align-items:flex-end;height:90px;margin-top:.6rem">
+            {
+              perYear.map((p) => (
+                <div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:.2rem">
+                  <span style="font-size:.7rem;color:var(--fg-faint)">{p.count}</span>
+                  <span
+                    style={`width:100%;background:var(--accent);opacity:.6;border-radius:3px;height:${Math.max(2, Math.round((p.count / maxYear) * 100))}%`}
+                  />
+                  <span style="font-size:.7rem;color:var(--fg-faint)">{String(p.year).slice(2)}</span>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+        <div class="card">
+          <strong>Where the work concentrates</strong>
+          <p style="margin-top:.5rem">
+            {categories[0]!.name} is by far the largest area ({categories[0]!.count} records),
+            ahead of {categories.slice(1).sort((a, b) => b.count - a.count)[0]!.name} (
+            {categories.slice(1).sort((a, b) => b.count - a.count)[0]!.count}). {openShare}% of
+            records carry a verified public code repository.
+          </p>
+          <p>
+            Read the area pages for the interpretation — <a href={`${base}/topics`}>all areas</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="recent">
+      <h2 id="recent">Recently added</h2>
+      <PaperList papers={recent} id="recent-list" />
+      <p class="result-count"><a href={`${base}/papers`}>Browse and filter all {stats.researchRecords} papers →</a></p>
+    </section>
+
+    <section aria-labelledby="search">
+      <h2 id="search">Search the whole list</h2>
+      <PaperFilters target="all-list" />
+      <PaperList papers={sortNewestFirst(papers)} id="all-list" />
+    </section>
+  </div>
+</Base>

@@ -1,0 +1,96 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PaperList from '../../components/PaperList.astro';
+import PaperFilters from '../../components/PaperFilters.astro';
+import MyIdea from '../../components/MyIdea.astro';
+import { categories, editOnGitHub, papersInCategory } from '../../lib/papers';
+
+export const getStaticPaths = (async () => {
+  const topics = await getCollection('topics');
+  return categories.map((c) => ({
+    params: { slug: c.slug },
+    props: { category: c, entry: topics.find((t) => t.data.category === c.name) ?? null },
+  }));
+}) satisfies GetStaticPaths;
+
+const { category, entry } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const list = papersInCategory(category.name);
+const Content = entry ? (await render(entry)).Content : null;
+const headings = entry ? (await render(entry)).headings.filter((h) => h.depth === 2) : [];
+const recent = list.slice(0, 10);
+---
+
+<Base
+  title={`${category.name} — Humanoid Robot Learning`}
+  description={entry?.data.summary}
+>
+  <div class="wrap">
+    <p class="breadcrumb">
+      <a href={`${base}/topics`}>Research areas</a> / {category.name}
+    </p>
+    <h1>{category.name}</h1>
+    <p class="lede">{entry?.data.summary}</p>
+
+    {
+      headings.length > 0 && (
+        <nav class="card toc" aria-label="On this page">
+          <strong>On this page</strong>
+          <ol>
+            {headings.map((h) => (
+              <li>
+                <a href={`#${h.slug}`}>{h.text}</a>
+              </li>
+            ))}
+            <li><a href="#recent-work">Recent work</a></li>
+            <li><a href="#all-papers">Complete paper list ({list.length})</a></li>
+            <li><a href="#my-idea">My Idea</a></li>
+          </ol>
+        </nav>
+      )
+    }
+
+    {
+      Content ? (
+        <article class="prose narrow">
+          <Content />
+        </article>
+      ) : (
+        <p class="notice">
+          The narrative for this area has not been written yet. The complete paper list is
+          below.
+        </p>
+      )
+    }
+
+    <section aria-labelledby="recent-work">
+      <h2 id="recent-work">Recent work</h2>
+      <p class="lede">
+        The newest entries in this area. New papers land here first; the historical narrative
+        above is only revised when a paper represents a real methodological shift.
+      </p>
+      <PaperList papers={recent} id="recent-cat" />
+    </section>
+
+    <section aria-labelledby="all-papers">
+      <h2 id="all-papers">Complete paper list ({list.length})</h2>
+      <PaperFilters showCategory={false} target="cat-list" />
+      <PaperList papers={list} id="cat-list" />
+    </section>
+
+    <MyIdea kind="topics" slug={category.slug} subject={category.name} />
+
+    {
+      entry && (
+        <p class="result-count">
+          Narrative last updated {entry.data.updated}. ·{' '}
+          <a href={editOnGitHub(`site/src/content/topics/${category.slug}.md`)}>
+            Suggest an edit to this narrative
+          </a>
+        </p>
+      )
+    }
+  </div>
+</Base>

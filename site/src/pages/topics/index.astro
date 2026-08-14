@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { categories } from '../../lib/papers';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const topics = await getCollection('topics');
+const blurb = new Map(topics.map((t) => [t.data.category, t.data.summary]));
+---
+
+<Base
+  title="Research areas — Humanoid Robot Learning"
+  description="Every research area in the humanoid robot learning list, with its definition, history, milestones, current frontier and open problems."
+>
+  <div class="wrap">
+    <h1>Research areas</h1>
+    <p class="lede">
+      Each area page is an analytical history: what the problem is, how the assumptions,
+      representations, data sources and evaluation practices changed over time, which papers
+      marked those changes, and what remains unsolved. Every page ends with the complete
+      paper list for that area and with your own <code>My Idea</code> space.
+    </p>
+    <div class="grid cols-2">
+      {
+        categories.map((c) => (
+          <a class="card cat-card" href={`${base}/topics/${c.slug}`}>
+            <span class="name">{c.name}</span>
+            <span class="count"> · {c.count} papers</span>
+            <span class="blurb">{blurb.get(c.name) ?? 'Area page.'}</span>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</Base>

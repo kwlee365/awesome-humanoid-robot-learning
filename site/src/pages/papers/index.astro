@@ -1,0 +1,23 @@
+---
+import Base from '../../layouts/Base.astro';
+import PaperList from '../../components/PaperList.astro';
+import PaperFilters from '../../components/PaperFilters.astro';
+import { papers, sortNewestFirst, stats } from '../../lib/papers';
+
+const all = sortNewestFirst(papers);
+---
+
+<Base
+  title="All papers — Humanoid Robot Learning"
+  description="Search and filter every paper in the humanoid robot learning list by category, year, venue, real-robot validation and open-source availability."
+>
+  <div class="wrap">
+    <h1>All papers</h1>
+    <p class="lede">
+      {stats.researchRecords} research records, newest first. A paper the README lists in
+      several sections appears once here, with all of its categories.
+    </p>
+    <PaperFilters target="all-list" />
+    <PaperList papers={all} id="all-list" />
+  </div>
+</Base>

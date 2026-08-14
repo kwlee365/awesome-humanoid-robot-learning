@@ -1,0 +1,104 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { categories, editOnGitHub, paperBySlug } from '../../lib/papers';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const topicNotes = await getCollection('myIdeaTopics');
+// Files whose name starts with "_" are folder documentation, not notes.
+const paperNotes = (await getCollection('myIdeaPapers')).filter((n) => !n.id.startsWith('_'));
+const bySlug = new Map(categories.map((c) => [c.slug, c]));
+---
+
+<Base
+  title="My Idea — Humanoid Robot Learning"
+  description="A permanent, user-owned notebook: one free-form note per research area and per paper, never edited by automation."
+>
+  <div class="wrap narrow">
+    <h1>My Idea</h1>
+    <p class="lede">
+      A permanent space for your own research notes. Every research area has one, and every
+      paper page can have one. These files are yours: the maintenance automation may create a
+      blank file when one is missing, but it never rewrites, summarises, translates,
+      reorganises or deletes anything you write.
+    </p>
+
+    <h2>How it works</h2>
+    <ul>
+      <li>
+        Area notes live in <code>site/src/content/my-ideas/topics/&lt;area-slug&gt;.md</code>.
+      </li>
+      <li>
+        Paper notes live in <code>site/src/content/my-ideas/papers/&lt;paper-slug&gt;.md</code>
+        and are created on demand from the “Create this note on GitHub” link on any paper page.
+      </li>
+      <li>
+        Notes are free-form Markdown. The starter template suggests prompts — problem,
+        hypothesis, proposed method, difference from prior work, data and hardware, evaluation
+        plan, risks, related notes — and you can delete every one of them.
+      </li>
+      <li>
+        Generated summaries are never merged into these files; they live in
+        <code>site/src/content/topics/</code> instead.
+      </li>
+    </ul>
+
+    <h2>Area notes</h2>
+    <ul class="papers">
+      {
+        categories.map((c) => {
+          const note = topicNotes.find((n) => n.id === c.slug);
+          return (
+            <li>
+              <span class="body">
+                <a class="title" href={`${base}/topics/${c.slug}#my-idea`}>
+                  {c.name}
+                </a>
+                <span class="meta">
+                  <span class="badge">{note ? 'note started' : 'empty'}</span>
+                  <span class="links">
+                    <a href={editOnGitHub(`site/src/content/my-ideas/topics/${c.slug}.md`)}>
+                      edit on GitHub
+                    </a>
+                  </span>
+                </span>
+              </span>
+            </li>
+          );
+        })
+      }
+    </ul>
+
+    <h2>Paper notes ({paperNotes.length})</h2>
+    {
+      paperNotes.length === 0 ? (
+        <p class="notice">
+          No paper notes yet. Open any paper page and use “Create this note on GitHub”.
+        </p>
+      ) : (
+        <ul class="papers">
+          {paperNotes.map((n) => {
+            const p = paperBySlug.get(n.id);
+            return (
+              <li>
+                <span class="body">
+                  <a class="title" href={`${base}/papers/${n.id}#my-idea`}>
+                    {p?.title ?? n.data.title ?? n.id}
+                  </a>
+                  <span class="meta">
+                    <span class="links">
+                      <a href={editOnGitHub(`site/src/content/my-ideas/papers/${n.id}.md`)}>
+                        edit on GitHub
+                      </a>
+                    </span>
+                  </span>
+                </span>
+              </li>
+            );
+          })}
+        </ul>
+      )
+    }
+    <p class="result-count">{bySlug.size} research areas tracked.</p>
+  </div>
+</Base>

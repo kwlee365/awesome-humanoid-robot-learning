@@ -1,0 +1,82 @@
+name: Build and deploy research site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - 'data/**'
+      - 'site/**'
+      - 'scripts/**'
+      - '.github/workflows/deploy-site.yml'
+  workflow_dispatch:
+
+# One deployment at a time; never cancel a run that is already publishing.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Regenerate metadata from README and validate
+        run: |
+          python3 scripts/parse_readme.py
+          python3 scripts/validate.py
+
+      - name: Fail if the committed metadata is stale
+        run: |
+          if ! git diff --quiet -- data/papers.json; then
+            echo "::error::data/papers.json is out of date with README.md."
+            echo "Run: python3 scripts/parse_readme.py && python3 scripts/validate.py"
+            git --no-pager diff --stat -- data/papers.json
+            exit 1
+          fi
+
+      - name: Guard user-owned My Idea notes
+        run: python3 scripts/my_ideas.py --check
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install site dependencies
+        working-directory: site
+        run: npm ci
+
+      - name: Build site
+        working-directory: site
+        run: npm run build
+
+      - name: Check for broken internal links
+        run: python3 scripts/check_site_links.py
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

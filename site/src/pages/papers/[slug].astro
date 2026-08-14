@@ -1,0 +1,216 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Base from '../../layouts/Base.astro';
+import MyIdea from '../../components/MyIdea.astro';
+import { formatDate, papers, relatedPapers } from '../../lib/papers';
+import { slugify } from '../../lib/slug';
+
+export const getStaticPaths = (() =>
+  papers.flatMap((p) => [
+    { params: { slug: p.slug }, props: { paper: p } },
+    // A work the README listed under two title variants keeps both URLs working.
+    ...p.aliases.map((alias) => ({ params: { slug: alias }, props: { paper: p } })),
+  ])) satisfies GetStaticPaths;
+
+const { paper } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const isAlias = Astro.params.slug !== paper.slug;
+const related = relatedPapers(paper);
+
+const links: { label: string; url: string }[] = [];
+if (paper.paperUrl) links.push({ label: 'Paper', url: paper.paperUrl });
+if (paper.arxivId) links.push({ label: `arXiv:${paper.arxivId}`, url: `https://arxiv.org/abs/${paper.arxivId}` });
+if (paper.doi) links.push({ label: `DOI ${paper.doi}`, url: `https://doi.org/${paper.doi}` });
+if (paper.projectUrl) links.push({ label: 'Project page', url: paper.projectUrl });
+if (paper.codeUrl) links.push({ label: 'Code', url: paper.codeUrl });
+if (paper.videoUrl) links.push({ label: 'Video', url: paper.videoUrl });
+if (paper.datasetUrl) links.push({ label: 'Dataset', url: paper.datasetUrl });
+for (const extra of paper.extraLinks) links.push({ label: extra.label, url: extra.url });
+
+const seen = new Set<string>();
+const uniqueLinks = links.filter((l) => (seen.has(l.url) ? false : (seen.add(l.url), true)));
+
+/** Sections we only render when the record actually carries verified content. */
+const analysis: { id: string; heading: string; body: string | null }[] = [
+  { id: 'overview', heading: 'Overview', body: paper.overview },
+];
+const verified = paper.verifiedOn !== null;
+---
+
+<Base title={`${paper.title} — Humanoid Robot Learning`} description={paper.abstract ?? paper.title}>
+  <div class="wrap narrow">
+    <p class="breadcrumb">
+      <a href={`${base}/papers`}>Papers</a> /
+      {
+        paper.categories.map((c, i) => (
+          <>
+            {i > 0 && <span> · </span>}
+            <a href={`${base}/topics/${slugify(c)}`}>{c}</a>
+          </>
+        ))
+      }
+    </p>
+    <h1>{paper.title}</h1>
+    {
+      isAlias && (
+        <p class="notice">
+          The README lists this work under more than one title. Its canonical page is{' '}
+          <a href={`${base}/papers/${paper.slug}`}>{paper.title}</a>.
+        </p>
+      )
+    }
+
+    <div class="badges" style="margin:.6rem 0">
+      <span class="badge">{paper.venueRaw}</span>
+      {paper.altVenue && <span class="badge">{paper.altVenue}</span>}
+      <span class="badge">{paper.publicationStatus}</span>
+      {paper.openSource ? (
+        <span class="badge ok">open-source code</span>
+      ) : (
+        <span class="badge">no verified public code</span>
+      )}
+      {paper.realRobot === true && <span class="badge accent">real-robot experiments</span>}
+      {paper.realRobot === false && <span class="badge">simulation only</span>}
+      {paper.realRobot === null && <span class="badge warn">real-robot status unverified</span>}
+    </div>
+
+    <dl class="kv">
+      <dt>Authors</dt>
+      <dd>
+        {
+          paper.authors.length > 0
+            ? paper.authors.join(', ')
+            : 'Not yet recorded — see the paper link below for the author list.'
+        }
+      </dd>
+      <dt>First public</dt>
+      <dd>{formatDate(paper)}{paper.publicationStatus === 'preprint' ? ' (preprint)' : ''}</dd>
+      <dt>Venue / status</dt>
+      <dd>{paper.venue}{paper.altVenue ? ` · ${paper.altVenue}` : ''} — {paper.publicationStatus}</dd>
+      <dt>Category</dt>
+      <dd>
+        {
+          paper.categories.map((c, i) => (
+            <>
+              {i > 0 && ', '}
+              <a href={`${base}/topics/${slugify(c)}`}>{c}</a>
+            </>
+          ))
+        }
+      </dd>
+      {paper.tags.length > 0 && (
+        <>
+          <dt>Tags</dt>
+          <dd>{paper.tags.join(', ')}</dd>
+        </>
+      )}
+      <dt>Links</dt>
+      <dd>
+        {
+          uniqueLinks.length > 0
+            ? uniqueLinks.map((l, i) => (
+                <>
+                  {i > 0 && ' · '}
+                  <a href={l.url}>{l.label}</a>
+                </>
+              ))
+            : 'No link recorded in the README entry.'
+        }
+      </dd>
+    </dl>
+
+    <section aria-labelledby="abstract">
+      <h2 id="abstract">Abstract</h2>
+      {
+        paper.abstract ? (
+          <>
+            <blockquote>{paper.abstract}</blockquote>
+            <p class="result-count">
+              Official abstract, reproduced from{' '}
+              <a href={paper.abstractSource ?? paper.paperUrl ?? '#'}>the authors' own page</a>. It
+              belongs to the authors; this site reproduces it for reference only.
+            </p>
+          </>
+        ) : (
+          <p class="notice">
+            The official abstract has not been fetched for this record yet. Read it at{' '}
+            {paper.paperUrl ? <a href={paper.paperUrl}>the source page</a> : 'the source page'}.
+            This site does not paraphrase abstracts it has not read.
+          </p>
+        )
+      }
+    </section>
+
+    {
+      analysis.map(
+        (s) =>
+          s.body && (
+            <section aria-labelledby={s.id}>
+              <h2 id={s.id}>{s.heading}</h2>
+              <p>{s.body}</p>
+            </section>
+          ),
+      )
+    }
+
+    {
+      !paper.overview && (
+        <section aria-labelledby="overview">
+          <h2 id="overview">Overview</h2>
+          <p class="notice">
+            No overview has been written for this record yet. Overviews on this site are
+            written only from the paper itself or from an authoritative project page, never
+            from the title — so this section stays empty until the record has been read and
+            verified. The record is in the enrichment queue.
+          </p>
+        </section>
+      )
+    }
+
+    <section aria-labelledby="related">
+      <h2 id="related">Related papers in this repository</h2>
+      {
+        related.length > 0 ? (
+          <ul class="papers">
+            {related.map((r) => (
+              <li>
+                <span class="date">{formatDate(r)}</span>
+                <span class="body">
+                  <a class="title" href={`${base}/papers/${r.slug}`}>
+                    {r.title}
+                  </a>
+                  <span class="meta">
+                    <span class="badge">{r.categories[0]}</span>
+                  </span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="notice">No closely related record found in the list.</p>
+        )
+      }
+      <p class="result-count">
+        Suggested automatically from shared research area and overlapping title terms — not an
+        editorial statement about influence.
+      </p>
+    </section>
+
+    <section aria-labelledby="sources">
+      <h2 id="sources">Source attribution</h2>
+      <dl class="kv">
+        <dt>Record derived from</dt>
+        <dd>
+          the README entry
+          {paper.readmeLines.map((l) => (
+            <><br /><code>{l}</code></>
+          ))}
+        </dd>
+        <dt>Metadata verified</dt>
+        <dd>{verified ? paper.verifiedOn : 'not yet independently verified against the primary source'}</dd>
+      </dl>
+    </section>
+
+    <MyIdea kind="papers" slug={paper.slug} subject={paper.title} heading="My Idea on this paper" />
+  </div>
+</Base>

@@ -1,0 +1,80 @@
+---
+import { getCollection, render } from 'astro:content';
+import { createOnGitHub, editOnGitHub } from '../lib/papers';
+
+interface Props {
+  kind: 'topics' | 'papers';
+  slug: string;
+  /** Human-readable subject, used only in the starter template. */
+  subject: string;
+  heading?: string;
+}
+
+const { kind, slug, subject, heading = 'My Idea' } = Astro.props;
+
+const collection = kind === 'topics' ? 'myIdeaTopics' : 'myIdeaPapers';
+const entries = await getCollection(collection);
+const entry = entries.find((e) => e.id === slug);
+const Content = entry ? (await render(entry)).Content : null;
+
+const path = `site/src/content/my-ideas/${kind}/${slug}.md`;
+const template = `---
+title: "${subject.replace(/"/g, "'")}"
+updated: ""
+---
+
+<!--
+This file is yours. Automation may create it when it is missing, but it will
+never rewrite, summarise, translate, reorganise or delete anything you write
+here. The prompts below are optional - delete them and write however you like.
+-->
+
+## Problem / research gap
+
+## My hypothesis
+
+## Proposed method
+
+## Difference from prior work
+
+## Required data or hardware
+
+## Evaluation plan
+
+## Risks and open questions
+
+## Related notes
+`;
+---
+
+<section class="myidea" id="my-idea">
+  <div class="head">
+    <h2>{heading}</h2>
+    <span class="hint">
+      Your own notes &mdash; never touched by automation.
+      {
+        entry ? (
+          <a href={editOnGitHub(path)}>Edit on GitHub</a>
+        ) : (
+          <a href={createOnGitHub(path, template)}>Create this note on GitHub</a>
+        )
+      }
+    </span>
+  </div>
+  {
+    Content ? (
+      <div class="prose">
+        <Content />
+      </div>
+    ) : (
+      <div class="empty">
+        <p>
+          No note yet. Use the link above to start one at <code>{path}</code> &mdash; the
+          starter template is pre-filled with optional prompts (problem / hypothesis /
+          proposed method / difference from prior work / data &amp; hardware / evaluation /
+          risks / related notes), and you are free to replace all of it.
+        </p>
+      </div>
+    )
+  }
+</section>

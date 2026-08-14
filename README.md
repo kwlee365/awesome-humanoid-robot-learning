@@ -4,6 +4,8 @@
 
 Feel free to pull a request for new papers/codes about humanoid robot learning.
 
+**Fork note.** This fork also publishes a research history portal built from this list: **[kwlee365.github.io/awesome-humanoid-robot-learning](https://kwlee365.github.io/awesome-humanoid-robot-learning/)** — how each research area developed, a page per paper, search and filtering, and a personal `My Idea` notebook. See [`docs/MAINTENANCE.md`](docs/MAINTENANCE.md) for how it is kept up to date.
+
 ![Word Cloud](assets/wordcloud.png)
 
 - [Awesome-Humanoid-Robot-Learning    ](#awesome-humanoid-robot-learning----)

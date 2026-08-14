@@ -1,0 +1,19 @@
+{
+  "name": "awesome-humanoid-robot-learning-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Research history portal for the Awesome-Humanoid-Robot-Learning paper list",
+  "scripts": {
+    "sync": "node scripts/sync-data.mjs",
+    "prebuild": "npm run sync",
+    "predev": "npm run sync",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "astro": "^5.18.2"
+  }
+}
