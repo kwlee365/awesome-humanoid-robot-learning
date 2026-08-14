@@ -16,6 +16,9 @@ way you like.
 
 ## Problem / research gap
 
+평지에서 동적 장애물 회피를 위한 휴머노이드 보행 제어기 
+계단 및 3차원 공간에서의 동적 장애물 회피를 위한 휴머노이드 보행 제어기
+
 ## My hypothesis
 
 ## Proposed method
