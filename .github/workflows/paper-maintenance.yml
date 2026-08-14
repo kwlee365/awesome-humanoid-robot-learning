@@ -1,0 +1,65 @@
+name: Paper list maintenance
+
+# Twice a day, Claude researches newly released humanoid robot learning papers,
+# adds the verified ones to README.md and data/papers.json, refreshes the site
+# content, and commits and pushes the result.
+#
+# This runs here rather than as a Cowork scheduled task because a Cowork cloud
+# session cannot push to this repository: its git proxy only injects credentials
+# for repositories in the task's authorized set, and the device bridge it uses to
+# reach a local clone cannot unlink, which jams git's lockfile protocol. A GitHub
+# Actions runner has neither limitation.
+
+on:
+  schedule:
+    # 01:00 and 13:00 UTC = 10:00 and 22:00 KST. GitHub may delay a scheduled
+    # run under load, so treat the time as approximate.
+    - cron: '0 1,13 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: paper-maintenance
+  cancel-in-progress: false
+
+permissions:
+  contents: write      # commit and push the maintenance commit
+  id-token: write      # required for the action's GitHub App authentication
+  actions: read
+
+jobs:
+  maintain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          # Full history: the run reads previous content updates to work out
+          # which window to search.
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Git identity for the maintenance commit
+        run: |
+          git config user.name "Claude"
+          git config user.email "noreply@anthropic.com"
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          # Subscription auth. Generate with `claude setup-token` and store as a
+          # repository secret. Do not add a `github_token:` line: without one the
+          # action authenticates as the Claude GitHub App, and only then does its
+          # push trigger deploy-site.yml. A push made with the default
+          # GITHUB_TOKEN does not start another workflow.
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: "/paper-maintenance"
+          claude_args: |
+            --max-turns 300

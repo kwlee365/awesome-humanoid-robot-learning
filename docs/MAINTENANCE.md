@@ -102,7 +102,7 @@ never edits `README.md`, and a payload without `verified_on` is rejected.
 
 `site/src/content/topics/<area>.md` holds the analytical history for each area.
 A new paper does **not** automatically qualify as a milestone. Add the paper,
-let it appear in the area's generated "Recent work" list, and only revise the
+let it appear in the area's generated complete paper list, and only revise the
 narrative when the paper marks a genuine methodological shift, a new research
 paradigm, or an important demonstrated capability. Every substantive historical
 claim in these files must carry a link.

@@ -91,9 +91,29 @@ README-derived fields, edit `README.md` instead.
   `scripts/my_ideas.py --check` enforces this and the deploy workflow runs it.
 - Revise a category narrative in `site/src/content/topics/` only when a new paper
   marks a real methodological shift. Otherwise the paper just joins that area's
-  "Recent work" list, which is generated from the data.
+  complete paper list, which is generated from the data.
 
 See `docs/MAINTENANCE.md` for the full run procedure.
+
+## Running as an agent on this repository
+
+Git needs a shell that can `unlink`. In a Cowork **cloud** task this repository
+is reached through the device bridge, which supports write and rename but not
+unlink. Git's lockfile protocol then leaves `.git/index.lock` behind and jams
+every later git command, and `git push` is refused by the git proxy with 403
+unless this repository was added to the task's sources.
+
+So either add this repository as a source when starting the task, or run the
+task on the user's computer. If neither applies: edit files only, write the
+commit message to `claude/COMMIT_MSG.txt`, and leave git to the user - do not
+run `git add`, `git commit` or `git reset` through the bridge, because the first
+one succeeds and every one after it fails until the user removes the lock by
+hand. `claude/` is untracked scratch space and `claude/push.sh` does the
+commit-and-push from the user's own shell.
+
+The user's shell is zsh with `interactive_comments` off, so never put `#`
+comments inside a command block written for them to paste - the comment text is
+passed to the command as arguments.
 
 ## Commit Style
 
