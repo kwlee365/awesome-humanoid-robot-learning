@@ -1086,51 +1086,17 @@
     },
     {
       "kind": "out-of-order",
-      "reason": "in 'Teleoperation', 2025-08 entry is listed after a 2022-03 entry (section must be newest-first)",
+      "reason": "in 'Hardware Design', 2024-11 entry is listed after a 2019-04 entry (section must be newest-first)",
       "items": [
         {
-          "key": "teleoperation::icub3-avatar-system-enabling-remote-fully-immersive-embodiment-of-humanoid-robot",
-          "title": "iCub3 Avatar System: Enabling Remote Fully-Immersive Embodiment of Humanoid Robots",
-          "line": "- [arXiv 2022.03](https://arxiv.org/abs/2203.06972), iCub3 Avatar System: Enabling Remote Fully-Immersive Embodiment of Humanoid Robots, [Science Robotics](https://www.science.org/doi/10.1126/scirobotics.adh3834) / [github](https://github.com/ami-iit/paper_dafarra_2024_science-robotics_icub3-avatar-system)"
+          "key": "hardware-design::quasi-direct-drive-for-low-cost-compliant-robotic-manipulation",
+          "title": "Quasi-Direct Drive for Low-Cost Compliant Robotic Manipulation",
+          "line": "- [arXiv 2019.04](https://arxiv.org/abs/1904.03815), Quasi-Direct Drive for Low-Cost Compliant Robotic Manipulation, [website](https://berkeleyopenarms.github.io/)"
         },
         {
-          "key": "teleoperation::child-controller-for-humanoid-imitation-and-live-demonstration-a-whole-body-huma",
-          "title": "CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System",
-          "line": "- arXiv 2025.08, CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System, [website](https://uiuckimlab.github.io/CHILD-pages/)"
-        }
-      ],
-      "detected_on": "2026-08-14"
-    },
-    {
-      "kind": "out-of-order",
-      "reason": "in 'Teleoperation', 2026-06 entry is listed after a 2025-08 entry (section must be newest-first)",
-      "items": [
-        {
-          "key": "teleoperation::child-controller-for-humanoid-imitation-and-live-demonstration-a-whole-body-huma",
-          "title": "CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System",
-          "line": "- arXiv 2025.08, CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System, [website](https://uiuckimlab.github.io/CHILD-pages/)"
-        },
-        {
-          "key": "teleoperation::humanoid-gpt-scaling-data-and-structure-for-zero-shot-motion-tracking",
-          "title": "Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking",
-          "line": "- 🌟 [arXiv 2026.06](https://arxiv.org/abs/2606.03985), Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking, [code](https://github.com/GalaxyGeneralRobotics/Humanoid-GPT)"
-        }
-      ],
-      "detected_on": "2026-08-14"
-    },
-    {
-      "kind": "out-of-order",
-      "reason": "in 'Manipulation', 2026-01 entry is listed after a 2024-03 entry (section must be newest-first)",
-      "items": [
-        {
-          "key": "manipulation::dexcap-scalable-and-portable-mocap-data-collection-system-for-dexterous-manipula",
-          "title": "DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation",
-          "line": "- 🌟 [arXiv 2024.03](https://arxiv.org/abs/2403.07788), DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation, [website](https://dex-cap.github.io/) / [code](https://github.com/j96w/DexCap)"
-        },
-        {
-          "key": "manipulation::visual-tactile-pretraining-and-online-multitask-learning-for-humanlike-manipulat",
-          "title": "Visual-tactile pretraining and online multitask learning for humanlike manipulation dexterity",
-          "line": "- [Science Robotics 2026.01](https://www.science.org/doi/10.1126/scirobotics.ady2869), Visual-tactile pretraining and online multitask learning for humanlike manipulation dexterity"
+          "key": "hardware-design::zeroth-bot",
+          "title": "Zeroth Bot",
+          "line": "- 2024.11, Zeroth Bot, [Github](https://github.com/zeroth-robotics/zeroth-bot)"
         }
       ],
       "detected_on": "2026-08-14"
@@ -1165,23 +1131,6 @@
           "key": "navigation::lovon-legged-open-vocabulary-object-navigator",
           "title": "LOVON: Legged Open-Vocabulary Object Navigator",
           "line": "- arXiv 2025.07, LOVON: Legged Open-Vocabulary Object Navigator, [website](https://daojiepeng.github.io/LOVON/)"
-        }
-      ],
-      "detected_on": "2026-08-14"
-    },
-    {
-      "kind": "out-of-order",
-      "reason": "in 'Hardware Design', 2024-11 entry is listed after a 2019-04 entry (section must be newest-first)",
-      "items": [
-        {
-          "key": "hardware-design::quasi-direct-drive-for-low-cost-compliant-robotic-manipulation",
-          "title": "Quasi-Direct Drive for Low-Cost Compliant Robotic Manipulation",
-          "line": "- [arXiv 2019.04](https://arxiv.org/abs/1904.03815), Quasi-Direct Drive for Low-Cost Compliant Robotic Manipulation, [website](https://berkeleyopenarms.github.io/)"
-        },
-        {
-          "key": "hardware-design::zeroth-bot",
-          "title": "Zeroth Bot",
-          "line": "- 2024.11, Zeroth Bot, [Github](https://github.com/zeroth-robotics/zeroth-bot)"
         }
       ],
       "detected_on": "2026-08-14"
@@ -1256,40 +1205,6 @@
     },
     {
       "kind": "out-of-order",
-      "reason": "in 'Locomotion', 2025-10 entry is listed after a 2025-10 entry (section must be newest-first)",
-      "items": [
-        {
-          "key": "locomotion::learning-a-vision-based-footstep-planner-for-hierarchical-walking-control",
-          "title": "Learning a Vision-Based Footstep Planner for Hierarchical Walking Control",
-          "line": "- [arXiv 2025.10](https://arxiv.org/abs/2510.12215), Learning a Vision-Based Footstep Planner for Hierarchical Walking Control"
-        },
-        {
-          "key": "locomotion::phuma-physically-grounded-humanoid-locomotion-dataset",
-          "title": "PHUMA: Physically-Grounded Humanoid Locomotion Dataset",
-          "line": "- [arXiv 2025.10](https://arxiv.org/abs/2510.26236), PHUMA: Physically-Grounded Humanoid Locomotion Dataset"
-        }
-      ],
-      "detected_on": "2026-08-14"
-    },
-    {
-      "kind": "out-of-order",
-      "reason": "in 'Locomotion', 2025-09 entry is listed after a 2023-02 entry (section must be newest-first)",
-      "items": [
-        {
-          "key": "locomotion::robust-and-versatile-bipedal-jumping-control-through-reinforcement-learning",
-          "title": "Robust and Versatile Bipedal Jumping Control through Reinforcement Learning",
-          "line": "- [arXiv 2023.02](https://arxiv.org/abs/2302.09450), Robust and Versatile Bipedal Jumping Control through Reinforcement Learning"
-        },
-        {
-          "key": "locomotion::locoformer-generalist-locomotion-via-long-context-adaptation",
-          "title": "LocoFormer: Generalist Locomotion via Long-Context Adaptation",
-          "line": "- [arXiv 2025.09](https://generalist-locomotion.github.io/), LocoFormer: Generalist Locomotion via Long-Context Adaptation"
-        }
-      ],
-      "detected_on": "2026-08-14"
-    },
-    {
-      "kind": "out-of-order",
       "reason": "in 'Human Motion Analysis and Synthesis', 2025-12 entry is listed after a 2025-12 entry (section must be newest-first)",
       "items": [
         {
@@ -1352,6 +1267,91 @@
           "key": "human-motion-analysis-and-synthesis::climbingcap-multi-modal-dataset-and-method-for-rock-climbing-in-world-coordinate",
           "title": "ClimbingCap: Multi-Modal Dataset and Method for Rock Climbing in World Coordinate",
           "line": "- [arXiv 2025.03](https://arxiv.org/abs/2503.21268), ClimbingCap: Multi-Modal Dataset and Method for Rock Climbing in World Coordinate"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "out-of-order",
+      "reason": "in 'Teleoperation', 2025-08 entry is listed after a 2022-03 entry (section must be newest-first)",
+      "items": [
+        {
+          "key": "teleoperation::icub3-avatar-system-enabling-remote-fully-immersive-embodiment-of-humanoid-robot",
+          "title": "iCub3 Avatar System: Enabling Remote Fully-Immersive Embodiment of Humanoid Robots",
+          "line": "- [arXiv 2022.03](https://arxiv.org/abs/2203.06972), iCub3 Avatar System: Enabling Remote Fully-Immersive Embodiment of Humanoid Robots, [Science Robotics](https://www.science.org/doi/10.1126/scirobotics.adh3834) / [github](https://github.com/ami-iit/paper_dafarra_2024_science-robotics_icub3-avatar-system)"
+        },
+        {
+          "key": "teleoperation::child-controller-for-humanoid-imitation-and-live-demonstration-a-whole-body-huma",
+          "title": "CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System",
+          "line": "- arXiv 2025.08, CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System, [website](https://uiuckimlab.github.io/CHILD-pages/)"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "out-of-order",
+      "reason": "in 'Teleoperation', 2026-06 entry is listed after a 2025-08 entry (section must be newest-first)",
+      "items": [
+        {
+          "key": "teleoperation::child-controller-for-humanoid-imitation-and-live-demonstration-a-whole-body-huma",
+          "title": "CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System",
+          "line": "- arXiv 2025.08, CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System, [website](https://uiuckimlab.github.io/CHILD-pages/)"
+        },
+        {
+          "key": "teleoperation::humanoid-gpt-scaling-data-and-structure-for-zero-shot-motion-tracking",
+          "title": "Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking",
+          "line": "- 🌟 [arXiv 2026.06](https://arxiv.org/abs/2606.03985), Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking, [code](https://github.com/GalaxyGeneralRobotics/Humanoid-GPT)"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "out-of-order",
+      "reason": "in 'Locomotion', 2025-10 entry is listed after a 2025-10 entry (section must be newest-first)",
+      "items": [
+        {
+          "key": "locomotion::learning-a-vision-based-footstep-planner-for-hierarchical-walking-control",
+          "title": "Learning a Vision-Based Footstep Planner for Hierarchical Walking Control",
+          "line": "- [arXiv 2025.10](https://arxiv.org/abs/2510.12215), Learning a Vision-Based Footstep Planner for Hierarchical Walking Control"
+        },
+        {
+          "key": "locomotion::phuma-physically-grounded-humanoid-locomotion-dataset",
+          "title": "PHUMA: Physically-Grounded Humanoid Locomotion Dataset",
+          "line": "- [arXiv 2025.10](https://arxiv.org/abs/2510.26236), PHUMA: Physically-Grounded Humanoid Locomotion Dataset"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "out-of-order",
+      "reason": "in 'Locomotion', 2025-09 entry is listed after a 2023-02 entry (section must be newest-first)",
+      "items": [
+        {
+          "key": "locomotion::robust-and-versatile-bipedal-jumping-control-through-reinforcement-learning",
+          "title": "Robust and Versatile Bipedal Jumping Control through Reinforcement Learning",
+          "line": "- [arXiv 2023.02](https://arxiv.org/abs/2302.09450), Robust and Versatile Bipedal Jumping Control through Reinforcement Learning"
+        },
+        {
+          "key": "locomotion::locoformer-generalist-locomotion-via-long-context-adaptation",
+          "title": "LocoFormer: Generalist Locomotion via Long-Context Adaptation",
+          "line": "- [arXiv 2025.09](https://generalist-locomotion.github.io/), LocoFormer: Generalist Locomotion via Long-Context Adaptation"
+        }
+      ],
+      "detected_on": "2026-08-14"
+    },
+    {
+      "kind": "out-of-order",
+      "reason": "in 'Manipulation', 2026-01 entry is listed after a 2024-03 entry (section must be newest-first)",
+      "items": [
+        {
+          "key": "manipulation::dexcap-scalable-and-portable-mocap-data-collection-system-for-dexterous-manipula",
+          "title": "DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation",
+          "line": "- 🌟 [arXiv 2024.03](https://arxiv.org/abs/2403.07788), DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation, [website](https://dex-cap.github.io/) / [code](https://github.com/j96w/DexCap)"
+        },
+        {
+          "key": "manipulation::visual-tactile-pretraining-and-online-multitask-learning-for-humanlike-manipulat",
+          "title": "Visual-tactile pretraining and online multitask learning for humanlike manipulation dexterity",
+          "line": "- [Science Robotics 2026.01](https://www.science.org/doi/10.1126/scirobotics.ady2869), Visual-tactile pretraining and online multitask learning for humanlike manipulation dexterity"
         }
       ],
       "detected_on": "2026-08-14"
