@@ -1,0 +1,35 @@
+{
+  "note": "Findings raised by verification passes that the offline validator cannot detect on its own. validate.py merges these into data/review-queue.json. Each entry stays here until a human resolves it and deletes the entry.",
+  "findings": [
+    {
+      "kind": "possible-title-mismatch",
+      "reason": "During the 2026-08-14 enrichment pass the abstract fetched from the arXiv page did not read like the title recorded in the README. This may be a wrong arXiv id in the README entry, a renamed paper, or an artefact of how the abstract page was fetched (the fetcher returns abstract text only, not the title header), so it must be confirmed by opening the arXiv page by hand before anything is changed.",
+      "detected_on": "2026-08-14",
+      "items": [
+        { "arxiv_id": "2603.27756", "title": "Heracles: Bridging Precise Tracking and Generative Synthesis for General Humanoid Control" },
+        { "arxiv_id": "2603.23983", "title": "SafeFlow: Real-Time Text-Driven Humanoid Whole-Body Control via Physics-Guided Rectified Flow and Selective Safety Gating" },
+        { "arxiv_id": "2603.12185", "title": "ComFree-Sim: A GPU-Parallelized Analytical Contact Physics Engine for Scalable Contact-Rich Robotics Simulation and Control" },
+        { "arxiv_id": "2603.10306", "title": "SteadyTray: Learning Object Balancing Tasks in Humanoid Tray Transport via Residual Reinforcement Learning" },
+        { "arxiv_id": "2603.09170", "title": "ZeroWBC: Learning Natural Visuomotor Humanoid Control Directly from Human Egocentric Video" }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "The 2026-08-14 discovery pass could not paginate arXiv monthly listings (query parameters are dropped) and hit repeated HTTP 429 rate limits, so coverage of 2026-07 and 2026-08 is keyword-search driven rather than exhaustive. Later scheduled runs should re-sweep this window rather than assuming it is complete.",
+      "detected_on": "2026-08-14",
+      "items": [
+        { "window": "2026-05-01..2026-08-14", "note": "re-sweep on a later run" }
+      ]
+    },
+    {
+      "kind": "unverified-candidate",
+      "reason": "Seen in an arXiv listing during discovery but not confirmable from a primary source before the run ended. Not added to the README. Re-check on a later run.",
+      "detected_on": "2026-08-14",
+      "items": [
+        { "arxiv_id": "2608.00554", "title": "DexMani (listing sighting only)" },
+        { "arxiv_id": "2606.00252", "title": "HOIST (listing sighting only)" },
+        { "arxiv_id": "2606.10244", "title": "YUBI (listing sighting only)" }
+      ]
+    }
+  ]
+}
