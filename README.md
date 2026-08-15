@@ -32,21 +32,26 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.08](https://arxiv.org/abs/2608.00208), Developing Combined Manipulation and Locomotion Skills with Interaction Representation and Skill Composition
 - [arXiv 2026.07](https://arxiv.org/abs/2607.28623), PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball, [website](https://lzyang2000.github.io/perceptive_cbf_rl/)
 - [arXiv 2026.07](https://arxiv.org/abs/2607.18016), Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation
+- 🌟 [arXiv 2026.07](https://arxiv.org/abs/2607.08742), ContactMimic: Humanoid Object Interaction via Contact Control, [website](https://lixinyao11.github.io/contactmimic-page/) / [code](https://github.com/lixinyao11/ContactMimic)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.30645), VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes, [website](https://vision-language-kinematics.github.io)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.29209), AnyBody: Free-Form Whole-Body Humanoid Control from Arbitrary Keypoint Guidance, [website](https://hazel-hammer.github.io/anybody-project-page/)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.27676), CWI: Composite Humanoid Whole-Body Imitation System for Loco-manipulation, [website](https://cwi-ral.github.io/CWI-RAL-Webpage)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.27581), SceneBot: Contact-Prompted General Humanoid Whole Body Tracking with Scene-Interaction, [website](https://ericcsr.github.io/scenebot/)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.26741), PressMimic: Pressure-Guided Motion Capture and Control for Humanoid Robot Imitation, [website](https://yeelou.github.io/PressMimic/)
+- [arXiv 2026.06](https://arxiv.org/abs/2606.26201), OmniContact: Chaining Meta-Skills via Contact Flow for Generalizable Humanoid Loco-Manipulation
 - [arXiv 2026.06](https://arxiv.org/abs/2606.23680), CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation, [website](https://skevinci.github.io/coordex/)
 - 🌟 [arXiv 2026.06](https://arxiv.org/abs/2606.22174), OpenHLM: An Empirical Recipe for Whole-Body Humanoid Loco-Manipulation, [website](https://openhlm-project.github.io/) / [code](https://github.com/OpenHLM-project/OpenHLM)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.18772), HALOMI: Learning Humanoid Loco-Manipulation with Active Perception from Human Demonstrations, [website](https://halomi-humanoid.github.io)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.16696), VENOM: Versatile Embodied Network for Omni-bodied Motion tracking
+- [arXiv 2026.06](https://arxiv.org/abs/2606.12995), GenHOI: Contact-Aware Humanoid-Object Interaction by Imitating Generated Videos without Task-Specific Training
+- [arXiv 2026.06](https://arxiv.org/abs/2606.09286), VAIC: Vision-Guided Humanoid Agile Object Interaction Control via Decoupled Commands, [website](https://vaic-humanoid.github.io/)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.09215), MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation
 - [arXiv 2026.06](https://arxiv.org/abs/2606.08548), OASIS: From Simulation Data Collection to Real-World Humanoid Loco-Manipulation, [website](https://oasis-humanoid.github.io/)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.06493), HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers, [website](https://lzyang2000.github.io/HANDOFF/)
 - 🌟 [arXiv 2026.06](https://arxiv.org/abs/2606.05687), Accelerating and Scaling MPC-Guided Reinforcement Learning for Humanoid Locomotion and Manipulation, [code](https://github.com/junhengl/mpc-rl)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.05160), GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors, [website](https://research.nvidia.com/labs/dair/grail/)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.03297), SplitAdapter: Load-Aware Humanoid Loco-Manipulation via Factorized Adaptation, [website](https://splitadapter.github.io/)
+- [arXiv 2026.05](https://arxiv.org/abs/2606.00252), HOIST: Humanoid Optimized with Imitation and Sample-efficient Tuning for Manipulating Suspended Loads
 - [arXiv 2026.05](https://arxiv.org/abs/2605.27724), HumanoidMimicGen: Data Generation for Loco-Manipulation via Whole-Body Planning, [website](https://humanoidmimicgen.github.io/)
 - [arXiv 2026.05](https://arxiv.org/abs/2605.23762), Direct Dynamic Retargeting for Humanoid Imitation Learning from Videos
 - 🌟 [arXiv 2026.05](https://arxiv.org/abs/2605.20373), SUGAR: A Scalable Human-Video-Driven Generalizable Humanoid Loco-Manipulation Learning Framework, [website](https://tianshuwu.github.io/sugar-humanoid/) / [code](https://github.com/tianshuwu/SUGAR)
@@ -228,6 +233,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.08](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/), VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters, [website](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/)
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
+- [arXiv 2026.08](https://arxiv.org/abs/2608.11769), Policy-Induced Hand Priors in Humanoid Dual-Arm Manipulation: Diagnosing and Mitigating Initial-Pose Dependence
 - [arXiv 2026.07](https://arxiv.org/abs/2607.11874), A Minimalist Retargeting-Guided Reinforcement Learning Recipe for Dexterous Manipulation, [website](https://yunhaifeng.com/REGRIND)
 - 🌟 [arXiv 2026.03](https://arxiv.org/abs/2603.12260), HumDex: Humanoid Dexterous Manipulation Made Easy
 - [arXiv 2026.03](https://arxiv.org/abs/2603.05493), cuRoboV2: Dynamics-Aware Motion Generation with Depth-Fused Distance Fields for High-DoF Robots
@@ -292,6 +298,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Teleoperation
 - [arXiv 2026.08](https://arxiv.org/abs/2608.01834), Teleopit: A Full-Embodiment Humanoid Teleoperation System, [website](https://botrunner64.github.io/teleopit-page)
+- [arXiv 2026.07](https://arxiv.org/abs/2607.20399), Towards Miniature Humanoid Tele-Loco-Manipulation Using Virtual Reality and Reinforcement Learning
 - [arXiv 2026.07](https://arxiv.org/abs/2607.02332), HEFT: Heavy-Payload Full-size Humanoid Teleoperation with Privileged Motion Guidance and Windowed Payload Curriculum, [website](https://heft.axell.top/)
 - [arXiv 2026.05](https://arxiv.org/abs/2605.12347), Real-Time Whole-Body Teleoperation of a Humanoid Robot Using IMU-Based Motion Capture with Sim2Sim and Sim2Real Validation
 - [arXiv 2026.02](https://arxiv.org/abs/2602.15060), CLOT: Closed-Loop Global Motion Tracking for Whole-Body Humanoid Teleoperation
@@ -337,7 +344,10 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.07](https://arxiv.org/abs/2607.24083), Learning Reusable Hybrid Motion Priors for Humanoid Locomotion from Motion Imitation
 - [arXiv 2026.07](https://arxiv.org/abs/2607.12114), GaitSpan: Growing Humanoid Locomotion from Walking to Running, [website](https://gaitspan2026.github.io/)
 - [arXiv 2026.07](https://arxiv.org/abs/2607.10815) / CLAWAR 2026, Learning Roller-Skating Motions of Humanoid Robots Based on Adversarial Motion Priors
+- [arXiv 2026.07](https://arxiv.org/abs/2607.07830), Physics-Guided Biomechanical Gait Adaptation for Humanoid Locomotion on Extreme Sloped Terrains
+- [arXiv 2026.06](https://arxiv.org/abs/2606.31807) / IROS 2026, Reinforcement Learning-Based Control for an Inline Skating Humanoid Robot
 - [arXiv 2026.06](https://arxiv.org/abs/2606.27813), Booster Lab: A Data-Centric Pipeline for Learning Deployable Humanoid Locomotion Policies
+- [arXiv 2026.06](https://arxiv.org/abs/2606.20645), TACT-ful: Multi-Channel Terrain Affordance and Compliance Training for Payload-Robust Perceptive Humanoid Locomotion, [website](https://fai-rl-tech.github.io/tact-locomotion.github.io/)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.10449), GuideWalk: Learning Unified Autonomous Navigation and Locomotion for Humanoid Robots across Versatile Terrains, [website](https://GuideWalk.github.io)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.08922), UniReLo: Learning a Unified Humanoid Policy from Fall Recovery to Locomotion across Diverse Terrains, [website](https://vsislab.github.io/UniReLo/)
 - [arXiv 2026.05](https://arxiv.org/abs/2605.09944), Explicit Stair Geometry Conditioning for Robust Humanoid Locomotion
@@ -441,6 +451,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.08](https://arxiv.org/abs/2608.02809) / arXiv 2026.08, Toward Certified Functional Safety for Industrial Humanoid Robots: The Fail-Passive Gap and a Feasibility Study
 - [arXiv 2026.07](https://arxiv.org/abs/2607.28623), PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball, [website](https://lzyang2000.github.io/perceptive_cbf_rl/)
 - 🌟 [arXiv 2026.07](https://arxiv.org/abs/2607.14488) / IROS 2026, Safe Execution of RL Policies via Acceleration-based CBF-QP Constraint Enforcement for Real-World Robotic Deployments, [website](https://safe-rl-qp.github.io/) / [code](https://github.com/safe-rl-qp/safe-rl-qp-mc-rtc-superbuild)
+- 🌟 [arXiv 2026.05](https://arxiv.org/abs/2605.25546), Safety-Critical Whole-Body Control for Humanoid Robots via Input-to-State Safe Control Barrier Functions, [website](https://kwlee365.github.io/SafeWBC-Website/) / [code](https://github.com/dyroshumanoid/safeWBC/tree/nightly)
 - [arXiv 2026.04](https://arxiv.org/abs/2604.11447) / arXiv 2026.04, Safe Human-to-Humanoid Motion Imitation Using Control Barrier Functions
 - 🌟 [arXiv 2026.03](https://arxiv.org/abs/2603.23995) / arXiv 2026.03, MIRROR: Visual Motion Imitation via Real-time Retargeting and TeleOperation with Parallel Differential Inverse Kinematics, [website](https://caltech-amber.github.io/mirror/) / [code](https://github.com/junhengl/mirror)
 - [arXiv 2026.03](https://arxiv.org/abs/2603.08619), Embedding Classical Balance Control Principles in Reinforcement Learning for Humanoid Recovery
@@ -461,6 +472,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Navigation
 - [arXiv 2026.07](https://arxiv.org/abs/2607.27180), HumanCLAW: Can Vision-Language Models Act Through a Body?, [website](https://human-claw.github.io)
+- [arXiv 2026.07](https://arxiv.org/abs/2607.15701), RAVEN: Reinforcement-Adaptive Visibility-Graph Planning for Robust Humanoid Navigation with Collision-Free MPC
 - [arXiv 2026.02](https://arxiv.org/abs/2602.04515), EgoActor: Grounding Task Planning into Spatial-aware Egocentric Actions for Humanoid Robots via Visual-Language Models
 - [arXiv 2026.01](https://arxiv.org/abs/2601.12790), FocusNav: Spatial Selective Attention with Waypoint Guidance for Humanoid Local Navigation
 - 🌟 [arXiv 2025.12](https://arxiv.org/abs/2506.01046), STATE-NAV: Stability-Aware Traversability Estimation for Bipedal Navigation on Rough Terrain, [code](https://github.com/yzwfromk/STATE-NAV)
@@ -481,7 +493,9 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - arXiv 2025.07, LOVON: Legged Open-Vocabulary Object Navigator, [website](https://daojiepeng.github.io/LOVON/)
 
 ## State Estimation
+- [arXiv 2026.08](https://arxiv.org/abs/2608.05647), KILVO: Kinematic-Inertial-LiDAR-Visual Odometry with Robust Multimodal Adaptation for Humanoid Robots
 - [arXiv 2026.06](https://arxiv.org/abs/2606.19512), Proprioceptive Invariant State Estimation for Humanoid Robots on Non-Inertial Ground
+- [arXiv 2026.05](https://arxiv.org/abs/2605.17681), PRIME: Physically-consistent Robotic Inertial and Motion Estimation for Legged and Humanoid Robots
 - [arXiv 2025.11](https://arxiv.org/abs/2511.18857), AutoOdom: Learning Auto-regressive Proprioceptive Odometry for Legged Locomotion
 - [arXiv 2025.11](https://arxiv.org/abs/2511.16306), InEKFormer: A Hybrid State Estimator for Humanoid Robots
 - [arXiv 2025.07](https://arxiv.org/abs/2507.10105), Physics-Informed Neural Networks with Unscented Kalman Filter for Sensorless Joint Torque Estimation
@@ -496,6 +510,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Sim-to-Real
+- [arXiv 2026.07](https://arxiv.org/abs/2607.02205), Actuator Reality Shaping for Zero-Shot Sim-to-Real Robot Learning, [website](https://syamamori.github.io/ActuatorRealityShaping.github.io/)
+- [arXiv 2026.06](https://arxiv.org/abs/2606.28476), FADA: Few-Shot Domain Adaptation via Dynamics Alignment for Humanoid Control, [website](https://lecar-lab.github.io/FADA-humanoid/)
 - [arXiv 2026.02](https://arxiv.org/abs/2602.08594), MOSAIC: Bridging the Sim-to-Real Gap in Generalist Humanoid Motion Tracking and Teleoperation with Rapid Residual Adaptation
 - [arXiv 2026.02](https://arxiv.org/abs/2602.01515), RAPT: Model-Predictive Out-of-Distribution Detection and Failure Diagnosis for Sim-to-Real Humanoid Robots
 - [arXiv 2026.02](https://arxiv.org/abs/2602.00401), ZEST: Zero-shot Embodied Skill Transfer for Athletic Robot Control
@@ -511,6 +527,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2019.01](https://arxiv.org/abs/1901.08652), Learning Agile and Dynamic Motor Skills for Legged Robots
 
 ## Hardware Design
+- [arXiv 2026.08](https://arxiv.org/abs/2608.02080), Toward Geometry-Scalable Whole-Body Touch for Humanoids: A 3D-Printed Conformal EIT Skin
 - [arXiv 2026.07](https://arxiv.org/abs/2607.16187), Handroid: Bridging Dexterous Hand and Humanoid, [website](https://handroid.org)
 - [arXiv 2026.02](https://arxiv.org/abs/2602.08518), Characteristics, Management, and Utilization of Muscles in Musculoskeletal Humanoids
 - [arXiv 2026.01](https://arxiv.org/abs/2601.18963), Fauna Sprout: A lightweight, approachable, developer-ready humanoid robot
@@ -552,11 +569,13 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [TRO 2017](https://ieeexplore.ieee.org/document/7827048), Proprioceptive actuator design in the MIT Cheetah: Impact mitigation and high‑bandwidth physical interaction for dynamic legged robots
 
 ## Simulation Benchmark
+- [arXiv 2026.08](https://arxiv.org/abs/2608.12860), HumanoidVLN: A Physics-Grounded Simulator and Benchmark for Vision-Language Navigation Across Diverse Humanoid Embodiments, [website](https://humanoid-vln.github.io/)
 - [arXiv 2026.07](https://arxiv.org/abs/2607.19903), What Matters in Humanoid General Motion Tracking? An Empirical Study
 - [arXiv 2026.07](https://arxiv.org/abs/2607.13059) / IROS 2026, GPUSimBench: Towards Scalable and Reliable GPU-Accelerated Simulators in Embodied AI
 - [arXiv 2026.07](https://arxiv.org/abs/2607.06052), ThorArena: Benchmarking Humanoid Physical Interaction with Human Motion-Force Demonstrations
 - [arXiv 2026.06](https://arxiv.org/abs/2606.31037), Labimus: A Simulation and Benchmark for Humanoid Dexterous Manipulation in Chemical Laboratory
 - [arXiv 2026.06](https://arxiv.org/abs/2606.17833), HumanoidArena: Benchmarking Egocentric Hierarchical Whole-body Learning, [website](https://humanoidarena.github.io)
+- 🌟 [arXiv 2026.06](https://arxiv.org/abs/2606.08278), SIMPLE: Simulation-Based Policy Learning and Evaluation for Humanoid Loco-manipulation, [website](https://psi-lab.ai/SIMPLE/) / [code](https://github.com/physical-superintelligence-lab/SIMPLE)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.03551), NVIDIA Isaac Sim: Enabling Scalable, GPU-Accelerated Simulation for Robotics
 - 🌟 [arXiv 2026.05](https://arxiv.org/abs/2605.31481), Batched Differentiable Rigid Body Dynamics in PyTorch for GPU-Accelerated Robot Learning, [code](https://github.com/YueWang996/bard-pytorch-dynamics)
 - 🌟 [arXiv 2026.05](https://arxiv.org/abs/2605.30313), UniLab: A Heterogeneous Architecture for Robot RL Beyond GPU-Dominant Paradigms, [website](https://unilabsim.github.io) / [code](https://github.com/unilabsim/UniLab)
@@ -587,6 +606,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [SIGGRAPH 2010](https://dl.acm.org/doi/abs/10.1145/1833349.1778770?casa_token=j3esx-hx0GAAAAAA:OvRU6YYrNo2ZP9IyXGVDryWJqHmvU-oVhnzog8RFKKySQJjganzaAmHff6CQ4a0qzfJZu-J6Buf4Ug), Spatial relationship preserving character motion adaptation
 - [arXiv 2026.08](https://arxiv.org/abs/2608.03528), Tired Actor: Fatigue-Informed Character Control
 - [arXiv 2026.06](https://arxiv.org/abs/2606.29148), GPC: Large-Scale Generative Pretraining for Transferable Motor Control
+- [arXiv 2026.06](https://arxiv.org/abs/2606.25056), BFMTrack: Latent Sequence Optimization for Physics-Based Motion Tracking with Behavioral Foundation Models
 - [arXiv 2026.02](https://arxiv.org/abs/2602.21599), Iterative Closed-Loop Motion Synthesis for Scaling the Capabilities of Humanoid Control
 - [arXiv 2026.02](https://arxiv.org/abs/2602.06035), InterPrior: Scaling Generative Control for Physics-Based Human-Object Interactions
 - [arXiv 2025.12](https://arxiv.org/abs/2512.14696), CRISP: Contact-Guided Real2Sim from Monocular Video with Planar Scene Primitives
@@ -625,8 +645,10 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Human Motion Analysis and Synthesis
+- [arXiv 2026.08](https://arxiv.org/abs/2608.13555), HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark
 - [arXiv 2026.08](https://arxiv.org/abs/2608.01410), GenTrack: Physical Alignment for Robot-Native Motion Generation and Zero-Shot Humanoid Tracking
 - [arXiv 2026.07](https://arxiv.org/abs/2607.15868) / ECCV 2026, EgoExoMoCap: Distributed Ego-Exo Human Motion Capture, [website](https://siplab.org/projects/EgoExoMoCap)
+- [arXiv 2026.07](https://arxiv.org/abs/2607.13472), EgoHTR: Egocentric 4D Demonstrations of Human Terrain Traversal, [website](https://egohtr.github.io)
 - [arXiv 2026.07](https://arxiv.org/abs/2607.08741) / SIGGRAPH 2026, ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation, [website](https://research.nvidia.com/labs/sil/projects/ardy/)
 - [arXiv 2026.07](https://arxiv.org/abs/2607.05938), Prior-First, Condition-Second: Scalable and Controllable Hand Motion Completion, [website](https://AIGAnimation.github.io/HandPrior/)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.22998), TEXEDO : Test Time Scaling for Controller-aware Language-conditioned Humanoid Motion Generation, [website](https://jianuocao.github.io/TEXEDO/)
