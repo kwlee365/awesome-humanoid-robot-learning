@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-08-15",
+  "generated_on": "2026-08-19",
   "note": "Ambiguous findings for a human to resolve. Automation never edits or deletes these entries on its own.",
   "findings": [
     {
@@ -30,32 +30,25 @@
       ]
     },
     {
-      "kind": "unverified-candidate",
-      "reason": "Seen in an arXiv listing during discovery but not confirmable from a primary source before the run ended. Not added to the README. Re-check on a later run.",
-      "detected_on": "2026-08-14",
+      "kind": "borderline-scope",
+      "reason": "arXiv 2608.01826 'Multi-View Unified Camera Fields: Geometry-Shaped Action-Facing Representations for RGB-Only Multi-Camera VLA Policies' is primarily a general multi-camera VLA representation-learning paper; its substantive quantitative results (98.9% LIBERO, +22.4 LIBERO-Plus, +23.3 pts across six RoboTwin tasks, all under a GR00T-N1.6 backbone) are on non-humanoid simulated tabletop/dual-arm benchmarks. The abstract's only humanoid-related claim is one trailing, detail-free sentence ('Real-world humanoid experiments further provide evidence of its practical effectiveness under RGB-only deployment') with no platform name, task description, or metric. Not added to the README because the humanoid contribution could not be substantiated as primary from the abstract alone; a human should check the full paper before deciding whether it belongs in the list.",
+      "detected_on": "2026-08-19",
       "items": [
         {
-          "arxiv_id": "2608.00554",
-          "title": "DexMani (listing sighting only)"
-        },
-        {
-          "arxiv_id": "2606.00252",
-          "title": "HOIST (listing sighting only)"
-        },
-        {
-          "arxiv_id": "2606.10244",
-          "title": "YUBI (listing sighting only)"
+          "arxiv_id": "2608.01826",
+          "title": "Multi-View Unified Camera Fields: Geometry-Shaped Action-Facing Representations for RGB-Only Multi-Camera VLA Policies"
         }
       ]
     },
     {
-      "kind": "discovery-coverage-gap",
-      "reason": "The 2026-08-14 discovery pass could not paginate arXiv monthly listings (query parameters are dropped) and hit repeated HTTP 429 rate limits, so coverage of 2026-07 and 2026-08 is keyword-search driven rather than exhaustive. Later scheduled runs should re-sweep this window rather than assuming it is complete.",
-      "detected_on": "2026-08-14",
+      "kind": "possible-duplicate-followon",
+      "reason": "arXiv 2608.16195 'RoboStriker: Latent-Space Strategic Games for Autonomous Humanoid Boxing' (submitted 2026-08) is textually and structurally very close to the already-listed arXiv 2601.22517 'RoboStriker: Hierarchical Decision-Making for Autonomous Humanoid Boxing' (submitted 2026-01, README.md line ~91), with an overlapping author team (Kangning Yin, Zhe Cao, Wentao Dong, Weishuai Zeng, Tianyi Zhang, Qiang Zhang, Jingbo Wang, Jiangmiao Pang, Ming Zhou, Weinan Zhang). Both use the same project name, near-identical phrasing ('hierarchical framework', 'distills ... into a structured latent manifold', 'Latent-Space Neural Fictitious Self-Play', 'available at RoboStriker'), and 2608.16195 reads like an expanded/rewritten resubmission of the same project (with an added theoretical Nash-game framing) rather than an independent new paper. Not added to the README pending a human decision on whether to treat it as an update to the existing 2601.22517 record, a second distinct entry, or a replacement.",
+      "detected_on": "2026-08-19",
       "items": [
         {
-          "window": "2026-05-01..2026-08-14",
-          "note": "re-sweep on a later run"
+          "arxiv_id": "2608.16195",
+          "title": "RoboStriker: Latent-Space Strategic Games for Autonomous Humanoid Boxing",
+          "compare_to_arxiv_id": "2601.22517"
         }
       ]
     },
@@ -78,7 +71,7 @@
           "line": "- [arXiv 2024.03](https://arxiv.org/abs/2403.04436), Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation, [website](https://human2humanoid.com/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -99,7 +92,7 @@
           "line": "- [arXiv 2024.03](https://arxiv.org/abs/2403.04436), Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation, [website](https://human2humanoid.com/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -120,7 +113,7 @@
           "line": "- 🌟 [arXiv 2024.06](https://arxiv.org/abs/2406.10454), HumanPlus: Humanoid Shadowing and Imitation from Humans, [website](https://humanoid-ai.github.io/) / [code](https://github.com/MarkFzp/humanplus)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -141,7 +134,7 @@
           "line": "- 🌟 [arXiv 2024.06](https://arxiv.org/abs/2406.10454), HumanPlus: Humanoid Shadowing and Imitation from Humans, [website](https://humanoid-ai.github.io/) / [code](https://github.com/MarkFzp/humanplus)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -162,7 +155,7 @@
           "line": "- 🌟 [arXiv 2024.06](https://arxiv.org/abs/2406.08858), OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning, [website](https://omni.human2humanoid.com/) / [code](https://github.com/LeCAR-Lab/human2humanoid)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -183,7 +176,7 @@
           "line": "- 🌟 [arXiv 2024.06](https://arxiv.org/abs/2406.08858), OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning, [website](https://omni.human2humanoid.com/) / [code](https://github.com/LeCAR-Lab/human2humanoid)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -204,7 +197,7 @@
           "line": "- [arXiv 2024.12](https://arxiv.org/abs/2412.07773), Mobile-TeleVision: Predictive Motion Priors for Humanoid Whole-Body Control"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -225,7 +218,7 @@
           "line": "- [arXiv 2024.12](https://arxiv.org/abs/2412.07773), Mobile-TeleVision: Predictive Motion Priors for Humanoid Whole-Body Control"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -246,7 +239,7 @@
           "line": "- 🌟 [arXiv 2025.02](https://arxiv.org/abs/2502.13013), HOMIE: Humanoid Loco-Manipulation with Isomorphic Exoskeleton Cockpit, [code](https://github.com/OpenRobotLab/OpenHomie)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -267,7 +260,7 @@
           "line": "- 🌟 [arXiv 2025.02](https://arxiv.org/abs/2502.13013), HOMIE: Humanoid Loco-Manipulation with Isomorphic Exoskeleton Cockpit, [code](https://github.com/OpenRobotLab/OpenHomie)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -288,7 +281,7 @@
           "line": "- [arXiv 2025.02](https://arxiv.org/abs/2502.03132), **SPARK**: A Toolbox for Safe Humanoid Autonomy and Teleoperation, [website](https://intelligent-control-lab.github.io/spark/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -309,7 +302,7 @@
           "line": "- [arXiv 2025.02](https://arxiv.org/abs/2502.03132), **SPARK**: A Toolbox for Safe Humanoid Autonomy and Teleoperation, [website](https://intelligent-control-lab.github.io/spark/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -330,7 +323,7 @@
           "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.02833), TWIST: Teleoperated Whole-Body Imitation System"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -351,7 +344,7 @@
           "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.02833), TWIST: Teleoperated Whole-Body Imitation System"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "probable-duplicate",
@@ -372,7 +365,7 @@
           "line": "- arXiv 2025.06, General Motion Tracking for Humanoid Whole-Body Control, [website](https://gmt-humanoid.github.io/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "probable-duplicate",
@@ -393,7 +386,7 @@
           "line": "- [arXiv 2025.10](https://taohuang13.github.io/adamimic.github.io/), AdaMimic: Towards Adaptable Humanoid Control via Adaptive Motion Tracking"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -414,7 +407,7 @@
           "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.18509), SafeFall: Learning Protective Control for Humanoid Robots"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -435,7 +428,7 @@
           "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.18509), SafeFall: Learning Protective Control for Humanoid Robots"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -456,7 +449,7 @@
           "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.02832), TWIST2: Scalable, Portable, and Holistic Humanoid Data Collection System"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -477,7 +470,7 @@
           "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.02832), TWIST2: Scalable, Portable, and Holistic Humanoid Data Collection System"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -498,7 +491,7 @@
           "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.07407), Unified Humanoid Fall-Safety Policy from a Few Demonstrations"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -519,7 +512,7 @@
           "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.07407), Unified Humanoid Fall-Safety Policy from a Few Demonstrations"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -540,7 +533,7 @@
           "line": "- [arXiv 2026.02](https://arxiv.org/abs/2602.08594), MOSAIC: Bridging the Sim-to-Real Gap in Generalist Humanoid Motion Tracking and Teleoperation with Rapid Residual Adaptation"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -561,7 +554,7 @@
           "line": "- [arXiv 2026.02](https://arxiv.org/abs/2602.08594), MOSAIC: Bridging the Sim-to-Real Gap in Generalist Humanoid Motion Tracking and Teleoperation with Rapid Residual Adaptation"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -582,7 +575,7 @@
           "line": "- [arXiv 2026.02](https://arxiv.org/abs/2602.16511), VIGOR: Visual Goal-In-Context Inference for Unified Humanoid Fall Safety"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -603,7 +596,7 @@
           "line": "- [arXiv 2026.02](https://arxiv.org/abs/2602.16511), VIGOR: Visual Goal-In-Context Inference for Unified Humanoid Fall Safety"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -624,7 +617,7 @@
           "line": "- [arXiv 2026.02](https://arxiv.org/abs/2602.00401), ZEST: Zero-shot Embodied Skill Transfer for Athletic Robot Control"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -645,7 +638,7 @@
           "line": "- [arXiv 2026.02](https://arxiv.org/abs/2602.00401), ZEST: Zero-shot Embodied Skill Transfer for Athletic Robot Control"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -666,7 +659,7 @@
           "line": "- [arXiv 2026.03](https://arxiv.org/abs/2603.08619), Embedding Classical Balance Control Principles in Reinforcement Learning for Humanoid Recovery"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -687,7 +680,7 @@
           "line": "- [arXiv 2026.03](https://arxiv.org/abs/2603.08619), Embedding Classical Balance Control Principles in Reinforcement Learning for Humanoid Recovery"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -708,7 +701,7 @@
           "line": "- [arXiv 2026.07](https://arxiv.org/abs/2607.28623), PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball, [website](https://lzyang2000.github.io/perceptive_cbf_rl/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -729,7 +722,7 @@
           "line": "- [arXiv 2026.07](https://arxiv.org/abs/2607.28623), PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball, [website](https://lzyang2000.github.io/perceptive_cbf_rl/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -750,7 +743,7 @@
           "line": "- [arXiv 2026.08](https://arxiv.org/abs/2608.10220), Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -771,7 +764,7 @@
           "line": "- [arXiv 2026.08](https://arxiv.org/abs/2608.10220), Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -792,7 +785,7 @@
           "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.11494), SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -813,7 +806,7 @@
           "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.11494), SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -834,7 +827,7 @@
           "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.07611), End-to-End Humanoid Robot Safe and Comfortable Locomotion Policy"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -855,7 +848,7 @@
           "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.07611), End-to-End Humanoid Robot Safe and Comfortable Locomotion Policy"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -876,7 +869,7 @@
           "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.11129), Geometry-Aware Predictive Safety Filters on Humanoids"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -897,7 +890,7 @@
           "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.11129), Geometry-Aware Predictive Safety Filters on Humanoids"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -918,7 +911,7 @@
           "line": "- 🌟 [arXiv 2024.07](https://arxiv.org/abs/2407.03162), Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning, [website](https://dingry.github.io/projects/bunny_visionpro.html) / [code](https://github.com/Dingry/BunnyVisionPro)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -939,7 +932,7 @@
           "line": "- 🌟 [arXiv 2024.07](https://arxiv.org/abs/2407.03162), Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning, [website](https://dingry.github.io/projects/bunny_visionpro.html) / [code](https://github.com/Dingry/BunnyVisionPro)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -960,7 +953,7 @@
           "line": "- 🌟 [arXiv 2024.07](https://arxiv.org/abs/2407.01512), Open-TeleVision: Teleoperation with Immersive Active Visual Feedback, [website](https://robot-tv.github.io/) / [code](https://github.com/OpenTeleVision/TeleVision)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -981,7 +974,7 @@
           "line": "- 🌟 [arXiv 2024.07](https://arxiv.org/abs/2407.01512), Open-TeleVision: Teleoperation with Immersive Active Visual Feedback, [website](https://robot-tv.github.io/) / [code](https://github.com/OpenTeleVision/TeleVision)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -1002,7 +995,7 @@
           "line": "- 🌟 [arXiv 2024.08](https://arxiv.org/abs/2408.11805), ACE: A Cross-Platform Visual-Exoskeletons System for Low-Cost Dexterous Teleoperation, [website](https://ace-teleop.github.io/) / [code](https://github.com/ACETeleop/ACETeleop)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -1023,7 +1016,7 @@
           "line": "- 🌟 [arXiv 2024.08](https://arxiv.org/abs/2408.11805), ACE: A Cross-Platform Visual-Exoskeletons System for Low-Cost Dexterous Teleoperation, [website](https://ace-teleop.github.io/) / [code](https://github.com/ACETeleop/ACETeleop)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -1044,7 +1037,7 @@
           "line": "- 🌟 [arXiv 2024.10](https://arxiv.org/abs/2410.10803), Generalizable Humanoid Manipulation with 3D Diffusion Policies, [website](https://humanoid-manipulation.github.io/) / [code](https://github.com/YanjieZe/Improved-3D-Diffusion-Policy)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "repeated-project-link",
@@ -1065,7 +1058,7 @@
           "line": "- 🌟 [arXiv 2024.10](https://arxiv.org/abs/2410.10803), Generalizable Humanoid Manipulation with 3D Diffusion Policies, [website](https://humanoid-manipulation.github.io/) / [code](https://github.com/YanjieZe/Improved-3D-Diffusion-Policy)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -1086,7 +1079,7 @@
           "line": "- [arXiv 2025.10](https://arxiv.org/abs/2510.08807), Humanoid Everyday: A Comprehensive Robotic Dataset for Open-World Humanoid Manipulation"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -1107,7 +1100,7 @@
           "line": "- 🌟 [ECCV 2022](https://arxiv.org/abs/2207.13784), AvatarPoser: Articulated Full-Body Pose Tracking from Sparse Motion Sensing, [website](https://siplab.org/projects/AvatarPoser) / [code](https://github.com/eth-siplab/AvatarPoser)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -1128,7 +1121,7 @@
           "line": "- 🌟 [ECCV 2022](https://arxiv.org/abs/2207.13784), AvatarPoser: Articulated Full-Body Pose Tracking from Sparse Motion Sensing, [website](https://siplab.org/projects/AvatarPoser) / [code](https://github.com/eth-siplab/AvatarPoser)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -1149,7 +1142,7 @@
           "line": "- 🌟 [ECCV 2024](https://arxiv.org/pdf/2308.06493), EgoPoser: Robust Real-Time Egocentric Pose Estimation from Sparse and Intermittent Observations Everywhere, [website](https://siplab.org/projects/EgoPoser) / [code](https://github.com/eth-siplab/EgoPoser)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "cross-section-listing",
@@ -1170,7 +1163,7 @@
           "line": "- 🌟 [ECCV 2024](https://arxiv.org/pdf/2308.06493), EgoPoser: Robust Real-Time Egocentric Pose Estimation from Sparse and Intermittent Observations Everywhere, [website](https://siplab.org/projects/EgoPoser) / [code](https://github.com/eth-siplab/EgoPoser)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "undated-entry",
@@ -1182,7 +1175,7 @@
           "line": "- [github](https://github.com/TetherIA/aero-hand-open/tree/main), Aero Hand Open"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "undated-entry",
@@ -1194,7 +1187,7 @@
           "line": "- [website](https://bytewrist.github.io/), ByteWrist: A Parallel Robotic Wrist Enabling Flexible and Anthropomorphic Motion for Confined Spaces"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "undated-entry",
@@ -1206,7 +1199,7 @@
           "line": "- [website](https://dexwrist.csail.mit.edu/), DexWrist: A Robotic Wrist for Constrained and Dynamic Manipulation"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "undated-entry",
@@ -1218,7 +1211,7 @@
           "line": "- [github](https://github.com/MuShibo/Micro-Wheeled_leg-Robot), Micro-Wheeled_leg-Robot"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1235,7 +1228,7 @@
           "line": "- 2024.11, Zeroth Bot, [Github](https://github.com/zeroth-robotics/zeroth-bot)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "code-without-star",
@@ -1247,7 +1240,7 @@
           "line": "- 2024.11, Zeroth Bot, [Github](https://github.com/zeroth-robotics/zeroth-bot)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1264,7 +1257,7 @@
           "line": "- [arXiv 2025.04](https://arxiv.org/abs/2504.10414), HUMOTO: A 4D Dataset of Mocap Human Object Interactions, [website](https://jiaxin-lu.github.io/humoto/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1281,7 +1274,7 @@
           "line": "- [arXiv 2025.04](https://arxiv.org/abs/2504.17695), PICO: Reconstructing 3D People In Contact with Objects"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1298,7 +1291,7 @@
           "line": "- [arXiv 2025.12](https://arxiv.org/abs/2512.00960), Efficient and Scalable Monocular Human-Object Interaction Motion Reconstruction"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1315,7 +1308,7 @@
           "line": "- [arXiv 2025.03](https://arxiv.org/abs/2503.21268), ClimbingCap: Multi-Modal Dataset and Method for Rock Climbing in World Coordinate"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "star-without-code",
@@ -1327,7 +1320,7 @@
           "line": "- 🌟 [arXiv 2025.03](https://arxiv.org/abs/2503.05652), BEHAVIOR Robot Suite: Streamlining Real-World Whole-Body Manipulation for Everyday Household Activities, [websie](https://behavior-robot-suite.github.io/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1344,7 +1337,7 @@
           "line": "- 🌟 [arXiv 2026.03](https://arxiv.org/abs/2603.08961v1), FAME: Force-Adaptive RL for Expanding the Manipulation Envelope of a Full-Scale Humanoid, [website](https://fame10.github.io/Fame/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "star-without-code",
@@ -1356,7 +1349,7 @@
           "line": "- 🌟 [arXiv 2026.03](https://arxiv.org/abs/2603.08961v1), FAME: Force-Adaptive RL for Expanding the Manipulation Envelope of a Full-Scale Humanoid, [website](https://fame10.github.io/Fame/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "date-mismatch",
@@ -1368,7 +1361,7 @@
           "line": "- [arXiv 2026.05](https://arxiv.org/abs/2606.00252), HOIST: Humanoid Optimized with Imitation and Sample-efficient Tuning for Manipulating Suspended Loads"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1385,7 +1378,7 @@
           "line": "- [arXiv 2026.03](https://arxiv.org/abs/2603.12263), Ψ₀: An Open Foundation Model Towards Universal Humanoid Loco-Manipulation"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "star-without-code",
@@ -1397,7 +1390,7 @@
           "line": "- 🌟 [website 2026.03](https://zzk273.github.io/LATENT/), LATENT: Learning Athletic Humanoid Tennis Skills from Imperfect Human Motion Data"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1414,7 +1407,7 @@
           "line": "- [arXiv 2025.12](https://opendrivelab.com/WholeBodyVLA/static/pdf/WholeBodyVLA.pdf), WholeBodyVLA: Towards Unified Latent VLA for Whole-body Loco-manipulation Control"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1431,7 +1424,7 @@
           "line": "- [arXiv 2025.10](https://arxiv.org/abs/2509.20322), VisualMimic: Visual Humanoid Loco-Manipulation via Motion Tracking and Generation"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "star-without-code",
@@ -1443,7 +1436,7 @@
           "line": "- 🌟 [arXiv 2025.06](https://arxiv.org/abs/2506.04147), SLAC: Simulation-Pretrained Latent Action Space for Whole-Body Real-World Reinforcement Learning, [websie](https://robo-rl.github.io/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "date-mismatch",
@@ -1455,7 +1448,7 @@
           "line": "- [arXiv 2025.10](https://arxiv.org/abs/2509.20322), VisualMimic: Visual Humanoid Loco-Manipulation via Motion Tracking and Generation"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1472,7 +1465,7 @@
           "line": "- [arXiv 2025.10](https://arxiv.org/abs/2510.26236), PHUMA: Physically-Grounded Humanoid Locomotion Dataset"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1489,7 +1482,7 @@
           "line": "- [arXiv 2025.09](https://generalist-locomotion.github.io/), LocoFormer: Generalist Locomotion via Long-Context Adaptation"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "undated-entry",
@@ -1501,7 +1494,7 @@
           "line": "- [website](https://co-training-lbm.github.io/), A Systematic Study of Data Modalities and Strategies for Co-training Large Behavior Models for Robot Manipulation"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "code-without-star",
@@ -1513,7 +1506,7 @@
           "line": "- [arXiv 2025.07](https://arxiv.org/abs/2507.15597), Being-H0: Vision-Language-Action Pretraining from Large-Scale Human Videos, [website](https://beingbeyond.github.io/Being-H0/) / [code](https://github.com/BeingBeyond/Being-H0) / [model](https://huggingface.co/collections/BeingBeyond/being-h0-688dcc58cbd6b452f16bd7ec)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1530,7 +1523,7 @@
           "line": "- [Science Robotics 2026.01](https://www.science.org/doi/10.1126/scirobotics.ady2869), Visual-tactile pretraining and online multitask learning for humanlike manipulation dexterity"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "undated-entry",
@@ -1542,7 +1535,7 @@
           "line": "- [website](https://dreamzero0.github.io/), DreamZero: World Action Models are Zero-shot Policies"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "star-without-code",
@@ -1554,7 +1547,7 @@
           "line": "- 🌟 [arXiv 2026.03](https://arxiv.org/abs/2603.12260), HumDex: Humanoid Dexterous Manipulation Made Easy"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "undated-entry",
@@ -1566,7 +1559,7 @@
           "line": "- [website](https://lego-grasp.github.io/), Learning to Grasp Anything by Playing with Random Toys"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1583,7 +1576,7 @@
           "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.14466), LookOut: Real-World Humanoid Egocentric Navigation"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1600,7 +1593,7 @@
           "line": "- arXiv 2025.07, LOVON: Legged Open-Vocabulary Object Navigator, [website](https://daojiepeng.github.io/LOVON/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "date-mismatch",
@@ -1612,7 +1605,7 @@
           "line": "- 🌟 [arXiv 2025.12](https://arxiv.org/abs/2506.01046), STATE-NAV: Stability-Aware Traversability Estimation for Bipedal Navigation on Rough Terrain, [code](https://github.com/yzwfromk/STATE-NAV)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "date-mismatch",
@@ -1624,7 +1617,7 @@
           "line": "- 🌟 [arXiv 2021.08](https://arxiv.org/abs/2104.02180), AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control, [website](https://xbpeng.github.io/projects/AMP/index.html) / [code](https://github.com/xbpeng/DeepMimic)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "date-mismatch",
@@ -1636,7 +1629,7 @@
           "line": "- 🌟 [arXiv 2022.08](https://arxiv.org/abs/2205.01906), ASE: Large-Scale Reusable Adversarial Skill Embeddings for Physically Simulated Characters, [website](https://xbpeng.github.io/projects/ASE/index.html) / [code](https://github.com/nv-tlabs/ASE/?tab=readme-ov-file)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "date-mismatch",
@@ -1648,7 +1641,7 @@
           "line": "- 🌟 [arXiv 2018.08](https://arxiv.org/abs/1804.02717), DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills, [website](https://xbpeng.github.io/projects/DeepMimic/index.html) / [code](https://github.com/xbpeng/DeepMimic)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "star-without-code",
@@ -1660,7 +1653,7 @@
           "line": "- 🌟 [arXiv 2024.09](https://arxiv.org/abs/2409.14393), MaskedMimic: Unified Physics-Based Character Control Through Masked Motion Inpainting, [website](https://research.nvidia.com/labs/par/maskedmimic/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "star-without-code",
@@ -1672,7 +1665,7 @@
           "line": "- 🌟 [arXiv 2025.03](https://arxiv.org/abs/2503.19901) / CVPR 2025 Oral, TokenHSI: Unified Synthesis of Physical Human-Scene Interactions through Task Tokenization, [website](https://liangpan99.github.io/TokenHSI/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "star-without-code",
@@ -1684,7 +1677,7 @@
           "line": "- 🌟 [arXiv 2023.09](https://arxiv.org/abs/2309.07918), Unified Human-Scene Interaction via Prompted Chain-of-Contacts, [website](https://xizaoqu.github.io/unihsi/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "code-without-star",
@@ -1696,7 +1689,7 @@
           "line": "- arXiv 2024.12, **Genesis**: A Generative and Universal Physics Engine for Robotics and Beyond, [code](https://github.com/Genesis-Embodied-AI/Genesis) / [website](https://genesis-embodied-ai.github.io/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1713,7 +1706,7 @@
           "line": "- 🌟 2025.01, MuJoCo Playground, [github](https://github.com/google-deepmind/mujoco_playground) / [website](https://playground.mujoco.org/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "star-without-code",
@@ -1725,7 +1718,7 @@
           "line": "- 🌟 [arXiv 2025.07](https://arxiv.org/abs/2507.00833), HumanoidGen: Data Generation for Bimanual Dexterous Manipulation via LLM Reasoning, [website](https://openhumanoidgen.github.io/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "star-without-code",
@@ -1737,7 +1730,7 @@
           "line": "- 🌟 [arXiv 2024.12](https://arxiv.org/abs/2412.13211), **ManiSkill-HAB**: A Benchmark for Low-Level Manipulation in Home Rearrangement Tasks, [website](https://arth-shukla.github.io/mshab/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "undated-entry",
@@ -1749,7 +1742,7 @@
           "line": "- [website](https://gtsam.org/), GTSAM: Factor graphs for Sensor Fusion in Robotics"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "undated-entry",
@@ -1761,7 +1754,7 @@
           "line": "- [github](https://github.com/MIT-SPARK/Kimera), Kimera: an Open-Source Library for Real-Time Metric-Semantic Localization and Mapping"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "date-mismatch",
@@ -1773,7 +1766,7 @@
           "line": "- [arXiv 2017.05](https://arxiv.org/abs/1712.05873), Legged Robot State-Estimation Through Combined Forward Kinematic and Preintegrated Contact Factors"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "undated-entry",
@@ -1785,7 +1778,7 @@
           "line": "- [github](https://github.com/UZ-SLAMLab/ORB_SLAM3), ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "undated-entry",
@@ -1797,7 +1790,7 @@
           "line": "- [github](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion), VINS-Fusion: An optimization-based multi-sensor state estimator"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1814,7 +1807,7 @@
           "line": "- 🌟 [arXiv 2026.06](https://arxiv.org/abs/2606.03985), Humanoid-GPT: Scaling Data and Structure for Zero-Shot Motion Tracking, [code](https://github.com/GalaxyGeneralRobotics/Humanoid-GPT)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "out-of-order",
@@ -1831,7 +1824,7 @@
           "line": "- arXiv 2025.08, CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System, [website](https://uiuckimlab.github.io/CHILD-pages/)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
     },
     {
       "kind": "code-without-star",
@@ -1843,7 +1836,18 @@
           "line": "- [arXiv 2022.03](https://arxiv.org/abs/2203.06972), iCub3 Avatar System: Enabling Remote Fully-Immersive Embodiment of Humanoid Robots, [Science Robotics](https://www.science.org/doi/10.1126/scirobotics.adh3834) / [github](https://github.com/ami-iit/paper_dafarra_2024_science-robotics_icub3-avatar-system)"
         }
       ],
-      "detected_on": "2026-08-15"
+      "detected_on": "2026-08-19"
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "The 2026-08-19 AM discovery pass re-swept 2026-05-01..2026-08-14 per the prior run's flag, plus 2026-08-01..2026-08-19, but arXiv rate-limiting again prevented exhaustively opening every listing hit - roughly 50 cs.RO 'humanoid' listing entries from the July 2026 portion of the window, and anything beyond page 2 of the search results, were seen in listings but not individually opened and verified against a primary source, so they were not evaluated as candidates. Later scheduled runs should re-sweep this window rather than assuming it is complete.",
+      "detected_on": "2026-08-19",
+      "items": [
+        {
+          "window": "2026-07-01..2026-08-19",
+          "note": "re-sweep on a later run; ~50 cs.RO listing hits not individually opened due to rate limiting"
+        }
+      ]
     }
   ]
 }
