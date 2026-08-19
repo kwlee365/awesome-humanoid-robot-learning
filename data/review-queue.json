@@ -30,6 +30,22 @@
       ]
     },
     {
+      "kind": "coverage-resweep-note",
+      "reason": "The 2026-08-19 PM run re-swept the window flagged incomplete by the AM run (2026-07-01..2026-08-19) using arXiv's advanced search (cs.RO, query \"humanoid\", sorted by announced date) and paginated fully through four pages without hitting rate limiting, down past 2607.00642 into 2606.xxxxx ids (confirming no July/August entries were skipped this time). Of 66 arXiv ids not yet in data/papers.json, 2 were left untouched because they are already tracked above (2608.16195 possible-duplicate-followon, 2608.01826 borderline-scope), 25 were excluded on unambiguous out-of-scope titles alone (pure social-HRI/psychology studies, a legged-robots survey, cybersecurity policy, quadruped-only, non-robot talking-head generation, etc.) without opening the primary source page, and the remaining 37 were each opened and verified against their arXiv abstract page by independent review agents. Of those 37, 22 were judged in-scope; 21 were added to the README and data/papers.json (2607.18737, a NICO self-organising-map motor-primitive paper, was judged in-scope by its reviewer but withheld by the maintenance run as too weak a fit for any of the 12 sections and flagged here instead). A human may want to spot-check the 25 title-only exclusions and reconsider 2607.18737.",
+      "detected_on": "2026-08-19",
+      "items": [
+        {
+          "arxiv_id": "2607.18737",
+          "title": "Motion Primitive Discovery in a Humanoid Robot via Self-Organising Maps for Phase Recognition",
+          "note": "in-scope per reviewer, not added: no section fits well (simulated-only NICO motor-primitive/phase-recognition study using SOM+ESN, not modern RL/VLA-style humanoid learning)"
+        },
+        {
+          "window": "2026-07-01..2026-08-19",
+          "note": "arXiv search pagination completed without rate-limiting this run; the discovery-coverage-gap entry above (detected_on 2026-08-19, AM run) can likely be deleted by a human once this note is reviewed"
+        }
+      ]
+    },
+    {
       "kind": "borderline-scope",
       "reason": "arXiv 2608.01826 'Multi-View Unified Camera Fields: Geometry-Shaped Action-Facing Representations for RGB-Only Multi-Camera VLA Policies' is primarily a general multi-camera VLA representation-learning paper; its substantive quantitative results (98.9% LIBERO, +22.4 LIBERO-Plus, +23.3 pts across six RoboTwin tasks, all under a GR00T-N1.6 backbone) are on non-humanoid simulated tabletop/dual-arm benchmarks. The abstract's only humanoid-related claim is one trailing, detail-free sentence ('Real-world humanoid experiments further provide evidence of its practical effectiveness under RGB-only deployment') with no platform name, task description, or metric. Not added to the README because the humanoid contribution could not be substantiated as primary from the abstract alone; a human should check the full paper before deciding whether it belongs in the list.",
       "detected_on": "2026-08-19",

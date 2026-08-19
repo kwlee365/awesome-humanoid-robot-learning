@@ -6,11 +6,26 @@
       "reason": "During the 2026-08-14 enrichment pass the abstract fetched from the arXiv page did not read like the title recorded in the README. This may be a wrong arXiv id in the README entry, a renamed paper, or an artefact of how the abstract page was fetched (the fetcher returns abstract text only, not the title header), so it must be confirmed by opening the arXiv page by hand before anything is changed.",
       "detected_on": "2026-08-14",
       "items": [
-        { "arxiv_id": "2603.27756", "title": "Heracles: Bridging Precise Tracking and Generative Synthesis for General Humanoid Control" },
-        { "arxiv_id": "2603.23983", "title": "SafeFlow: Real-Time Text-Driven Humanoid Whole-Body Control via Physics-Guided Rectified Flow and Selective Safety Gating" },
-        { "arxiv_id": "2603.12185", "title": "ComFree-Sim: A GPU-Parallelized Analytical Contact Physics Engine for Scalable Contact-Rich Robotics Simulation and Control" },
-        { "arxiv_id": "2603.10306", "title": "SteadyTray: Learning Object Balancing Tasks in Humanoid Tray Transport via Residual Reinforcement Learning" },
-        { "arxiv_id": "2603.09170", "title": "ZeroWBC: Learning Natural Visuomotor Humanoid Control Directly from Human Egocentric Video" }
+        {
+          "arxiv_id": "2603.27756",
+          "title": "Heracles: Bridging Precise Tracking and Generative Synthesis for General Humanoid Control"
+        },
+        {
+          "arxiv_id": "2603.23983",
+          "title": "SafeFlow: Real-Time Text-Driven Humanoid Whole-Body Control via Physics-Guided Rectified Flow and Selective Safety Gating"
+        },
+        {
+          "arxiv_id": "2603.12185",
+          "title": "ComFree-Sim: A GPU-Parallelized Analytical Contact Physics Engine for Scalable Contact-Rich Robotics Simulation and Control"
+        },
+        {
+          "arxiv_id": "2603.10306",
+          "title": "SteadyTray: Learning Object Balancing Tasks in Humanoid Tray Transport via Residual Reinforcement Learning"
+        },
+        {
+          "arxiv_id": "2603.09170",
+          "title": "ZeroWBC: Learning Natural Visuomotor Humanoid Control Directly from Human Egocentric Video"
+        }
       ]
     },
     {
@@ -18,7 +33,10 @@
       "reason": "The 2026-08-19 AM discovery pass re-swept 2026-05-01..2026-08-14 per the prior run's flag, plus 2026-08-01..2026-08-19, but arXiv rate-limiting again prevented exhaustively opening every listing hit - roughly 50 cs.RO 'humanoid' listing entries from the July 2026 portion of the window, and anything beyond page 2 of the search results, were seen in listings but not individually opened and verified against a primary source, so they were not evaluated as candidates. Later scheduled runs should re-sweep this window rather than assuming it is complete.",
       "detected_on": "2026-08-19",
       "items": [
-        { "window": "2026-07-01..2026-08-19", "note": "re-sweep on a later run; ~50 cs.RO listing hits not individually opened due to rate limiting" }
+        {
+          "window": "2026-07-01..2026-08-19",
+          "note": "re-sweep on a later run; ~50 cs.RO listing hits not individually opened due to rate limiting"
+        }
       ]
     },
     {
@@ -26,7 +44,11 @@
       "reason": "arXiv 2608.16195 'RoboStriker: Latent-Space Strategic Games for Autonomous Humanoid Boxing' (submitted 2026-08) is textually and structurally very close to the already-listed arXiv 2601.22517 'RoboStriker: Hierarchical Decision-Making for Autonomous Humanoid Boxing' (submitted 2026-01, README.md line ~91), with an overlapping author team (Kangning Yin, Zhe Cao, Wentao Dong, Weishuai Zeng, Tianyi Zhang, Qiang Zhang, Jingbo Wang, Jiangmiao Pang, Ming Zhou, Weinan Zhang). Both use the same project name, near-identical phrasing ('hierarchical framework', 'distills ... into a structured latent manifold', 'Latent-Space Neural Fictitious Self-Play', 'available at RoboStriker'), and 2608.16195 reads like an expanded/rewritten resubmission of the same project (with an added theoretical Nash-game framing) rather than an independent new paper. Not added to the README pending a human decision on whether to treat it as an update to the existing 2601.22517 record, a second distinct entry, or a replacement.",
       "detected_on": "2026-08-19",
       "items": [
-        { "arxiv_id": "2608.16195", "title": "RoboStriker: Latent-Space Strategic Games for Autonomous Humanoid Boxing", "compare_to_arxiv_id": "2601.22517" }
+        {
+          "arxiv_id": "2608.16195",
+          "title": "RoboStriker: Latent-Space Strategic Games for Autonomous Humanoid Boxing",
+          "compare_to_arxiv_id": "2601.22517"
+        }
       ]
     },
     {
@@ -34,7 +56,26 @@
       "reason": "arXiv 2608.01826 'Multi-View Unified Camera Fields: Geometry-Shaped Action-Facing Representations for RGB-Only Multi-Camera VLA Policies' is primarily a general multi-camera VLA representation-learning paper; its substantive quantitative results (98.9% LIBERO, +22.4 LIBERO-Plus, +23.3 pts across six RoboTwin tasks, all under a GR00T-N1.6 backbone) are on non-humanoid simulated tabletop/dual-arm benchmarks. The abstract's only humanoid-related claim is one trailing, detail-free sentence ('Real-world humanoid experiments further provide evidence of its practical effectiveness under RGB-only deployment') with no platform name, task description, or metric. Not added to the README because the humanoid contribution could not be substantiated as primary from the abstract alone; a human should check the full paper before deciding whether it belongs in the list.",
       "detected_on": "2026-08-19",
       "items": [
-        { "arxiv_id": "2608.01826", "title": "Multi-View Unified Camera Fields: Geometry-Shaped Action-Facing Representations for RGB-Only Multi-Camera VLA Policies" }
+        {
+          "arxiv_id": "2608.01826",
+          "title": "Multi-View Unified Camera Fields: Geometry-Shaped Action-Facing Representations for RGB-Only Multi-Camera VLA Policies"
+        }
+      ]
+    },
+    {
+      "kind": "coverage-resweep-note",
+      "reason": "The 2026-08-19 PM run re-swept the window flagged incomplete by the AM run (2026-07-01..2026-08-19) using arXiv's advanced search (cs.RO, query \"humanoid\", sorted by announced date) and paginated fully through four pages without hitting rate limiting, down past 2607.00642 into 2606.xxxxx ids (confirming no July/August entries were skipped this time). Of 66 arXiv ids not yet in data/papers.json, 2 were left untouched because they are already tracked above (2608.16195 possible-duplicate-followon, 2608.01826 borderline-scope), 25 were excluded on unambiguous out-of-scope titles alone (pure social-HRI/psychology studies, a legged-robots survey, cybersecurity policy, quadruped-only, non-robot talking-head generation, etc.) without opening the primary source page, and the remaining 37 were each opened and verified against their arXiv abstract page by independent review agents. Of those 37, 22 were judged in-scope; 21 were added to the README and data/papers.json (2607.18737, a NICO self-organising-map motor-primitive paper, was judged in-scope by its reviewer but withheld by the maintenance run as too weak a fit for any of the 12 sections and flagged here instead). A human may want to spot-check the 25 title-only exclusions and reconsider 2607.18737.",
+      "detected_on": "2026-08-19",
+      "items": [
+        {
+          "arxiv_id": "2607.18737",
+          "title": "Motion Primitive Discovery in a Humanoid Robot via Self-Organising Maps for Phase Recognition",
+          "note": "in-scope per reviewer, not added: no section fits well (simulated-only NICO motor-primitive/phase-recognition study using SOM+ESN, not modern RL/VLA-style humanoid learning)"
+        },
+        {
+          "window": "2026-07-01..2026-08-19",
+          "note": "arXiv search pagination completed without rate-limiting this run; the discovery-coverage-gap entry above (detected_on 2026-08-19, AM run) can likely be deleted by a human once this note is reviewed"
+        }
       ]
     }
   ]
