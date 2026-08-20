@@ -63,6 +63,17 @@
       ]
     },
     {
+      "kind": "borderline-scope",
+      "reason": "arXiv 2608.09762 'Efficient Real-World Online Reinforcement Learning for Robot Manipulation via Centralized Training and Critic Decomposition' evaluates its centralized-training/critic-decomposition RL method mainly on two physical (non-humanoid) robotic arms doing pick-and-place and pot-reset tasks under large domain randomization; a simulated humanoid appears only as one additional validation environment, not the primary platform. Not added to the README because the humanoid contribution is a minor secondary result on a tabletop-arm-primary paper; a human should check the full paper to confirm how substantive the humanoid results are before deciding whether it belongs.",
+      "detected_on": "2026-08-20",
+      "items": [
+        {
+          "arxiv_id": "2608.09762",
+          "title": "Efficient Real-World Online Reinforcement Learning for Robot Manipulation via Centralized Training and Critic Decomposition"
+        }
+      ]
+    },
+    {
       "kind": "coverage-resweep-note",
       "reason": "The 2026-08-19 PM run re-swept the window flagged incomplete by the AM run (2026-07-01..2026-08-19) using arXiv's advanced search (cs.RO, query \"humanoid\", sorted by announced date) and paginated fully through four pages without hitting rate limiting, down past 2607.00642 into 2606.xxxxx ids (confirming no July/August entries were skipped this time). Of 66 arXiv ids not yet in data/papers.json, 2 were left untouched because they are already tracked above (2608.16195 possible-duplicate-followon, 2608.01826 borderline-scope), 25 were excluded on unambiguous out-of-scope titles alone (pure social-HRI/psychology studies, a legged-robots survey, cybersecurity policy, quadruped-only, non-robot talking-head generation, etc.) without opening the primary source page, and the remaining 37 were each opened and verified against their arXiv abstract page by independent review agents. Of those 37, 22 were judged in-scope; 21 were added to the README and data/papers.json (2607.18737, a NICO self-organising-map motor-primitive paper, was judged in-scope by its reviewer but withheld by the maintenance run as too weak a fit for any of the 12 sections and flagged here instead). A human may want to spot-check the 25 title-only exclusions and reconsider 2607.18737.",
       "detected_on": "2026-08-19",

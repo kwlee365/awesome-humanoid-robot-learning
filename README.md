@@ -26,6 +26,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.08](https://arxiv.org/abs/2608.18234), GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction, [website](https://shepherd1226.github.io/gigabrain-wbc-0.5/)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.17584), HODAgent: Towards On-Demand, Responsive Humanoids for Physical World Human Interaction
 - [arXiv 2026.08](https://arxiv.org/abs/2608.17027), FetchMan: Learning Visual Humanoid Loco-Manipulation Policies from Simulated Experiences, [website](https://orayyan.com/fetchman)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.16837), HAF: Adapting Generalist VLAs to Humanoid Whole-Body Loco-manipulation via Hierarchical Action Flow and Spectral Latent RL, [website](https://grange007.github.io/HAF)
@@ -248,6 +249,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.08](https://arxiv.org/abs/2608.17453), EATR-Stereo: Embodiment-Aware Routing of Paired Stereo Evidence for Humanoid Vision-Language-Action Control
 - [arXiv 2026.08](https://arxiv.org/abs/2608.16642), Throwing a Tight Spiral American Football by a Humanoid Robot
 - [arXiv 2026.08](https://arxiv.org/abs/2608.11769), Policy-Induced Hand Priors in Humanoid Dual-Arm Manipulation: Diagnosing and Mitigating Initial-Pose Dependence
+- [arXiv 2026.08](https://arxiv.org/abs/2608.07573), Projection-Retraction MPPI: Exact Constraint-Manifold Control for Manipulators, [website](https://rcilab.github.io/prmppi)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.03387), RoboReact: Agentic Skill Distillation from Generated Egocentric Videos for Generalizable Whole-Body Manipulation
 - [arXiv 2026.08](https://arxiv.org/abs/2608.01600), Perception-and-action system for humanoid robot task execution in construction
 - [arXiv 2026.07](https://arxiv.org/abs/2607.29172), CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning
