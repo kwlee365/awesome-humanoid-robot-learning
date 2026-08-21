@@ -88,6 +88,31 @@
           "note": "arXiv search pagination completed without rate-limiting this run; the discovery-coverage-gap entry above (detected_on 2026-08-19, AM run) can likely be deleted by a human once this note is reviewed"
         }
       ]
+    },
+    {
+      "kind": "enrichment-source-blocked",
+      "reason": "During the 2026-08-21 PM enrichment pass, the science.org DOI page for this record returned HTTP 403 on every attempt, so the verbatim abstract could not be fetched from the primary source and was left unset rather than filled from a secondary source (Semantic Scholar API metadata and TechXplore news coverage were read but not applied as the verbatim abstract). No arXiv preprint of this exact paper could be found. A human with journal access should fetch the abstract directly and hand it to enrich.py, or confirm no accessible primary source exists.",
+      "detected_on": "2026-08-21",
+      "items": [
+        {
+          "title": "Visual-tactile pretraining and online multitask learning for humanlike manipulation dexterity",
+          "doi": "10.1126/scirobotics.ady2869",
+          "paper_url": "https://www.science.org/doi/10.1126/scirobotics.ady2869"
+        }
+      ]
+    },
+    {
+      "kind": "readme-link-outdated",
+      "reason": "During the 2026-08-21 PM enrichment pass, the README's OpenReview link for this record (https://openreview.net/forum?id=tQJYKwc3n4) could not be fetched (blocked by an anti-bot challenge on every attempt, including API endpoints). The same paper was located as arXiv preprint 2603.04356 (ICLR 2026), which was reachable and used to supply the verified abstract/authors now in data/papers.json. A human should decide whether to update the README line to link the arXiv preprint (or add it alongside the OpenReview link) so data/papers.json can be linked to the correct arxiv_id.",
+      "detected_on": "2026-08-21",
+      "items": [
+        {
+          "title": "RoboCasa365: A Large-Scale Simulation Framework for Training and Benchmarking Generalist Robots",
+          "current_readme_url": "https://openreview.net/forum?id=tQJYKwc3n4",
+          "discovered_arxiv_id": "2603.04356",
+          "discovered_arxiv_url": "https://arxiv.org/abs/2603.04356"
+        }
+      ]
     }
   ]
 }

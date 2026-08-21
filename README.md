@@ -26,6 +26,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- 🌟 [arXiv 2026.08](https://arxiv.org/abs/2608.20087), Towards Professional Tennis Styles for Humanoid Robots with Adaptive Motion Planning and Tracking, [website](https://humanoidtennis.github.io/AdaPT/) / [code](https://github.com/noitom-robotics/AdaPT)
+- [arXiv 2026.08](https://arxiv.org/abs/2608.19443), Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control
 - [arXiv 2026.08](https://arxiv.org/abs/2608.18234), GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction, [website](https://shepherd1226.github.io/gigabrain-wbc-0.5/)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.17584), HODAgent: Towards On-Demand, Responsive Humanoids for Physical World Human Interaction
 - [arXiv 2026.08](https://arxiv.org/abs/2608.17027), FetchMan: Learning Visual Humanoid Loco-Manipulation Policies from Simulated Experiences, [website](https://orayyan.com/fetchman)
@@ -400,7 +402,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2025.12](https://arxiv.org/abs/2512.23650), Do You Have Freestyle? Expressive Humanoid Locomotion via Audio Control
 - [arXiv 2025.12](https://arxiv.org/abs/2512.23649), RoboMirror: Understand Before You Imitate for Video to Humanoid Locomotion
 - [arXiv 2025.12](https://arxiv.org/abs/2512.16446), E-SDS: Environment-aware See it, Do it, Sorted - Automated Environment-Aware Reinforcement Learning for Humanoid Locomotion
-- [arXiv 2025.12](https://arxiv.org/abs/2512.12230), Learning to Get Up Across Morphologies: Zero-Shot Recovery with a Unified Humanoid Policy
+- 🌟 [arXiv 2025.12](https://arxiv.org/abs/2512.12230), Learning to Get Up Across Morphologies: Zero-Shot Recovery with a Unified Humanoid Policy, [code](https://github.com/utra-robosoccer/unified-humanoid-getup)
 - [arXiv 2025.12](https://arxiv.org/abs/2512.10477), Symphony: A Heuristic Normalized Calibrated Advantage Actor and Critic Algorithm in application for Humanoid Robots
 - [arXiv 2025.12](https://arxiv.org/abs/2512.09431), A Hierarchical, Model-Based System for High-Performance Humanoid Soccer
 - [arXiv 2025.12](https://arxiv.org/abs/2512.07464), Gait-Adaptive Perceptive Humanoid Locomotion with Real-Time Under-Base Terrain Reconstruction
