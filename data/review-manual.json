@@ -102,6 +102,28 @@
       ]
     },
     {
+      "kind": "borderline-scope",
+      "reason": "arXiv 2608.07002 'A Haptic Robot Finger Designed for Guqin Instrument Playing' presents a biomimetic tactile-sensing fingertip validated on guqin string-contact tasks. The abstract motivates the work by referencing 'the rapid advancement of humanoid robotics' and other instrument-playing robots, but never states that the finger is mounted on or evaluated with a full humanoid platform - it is presented as a standalone robotic finger, and a follow-up read of the abstract could not confirm the robot embodiment used for validation. Not added to the README because the humanoid connection could not be substantiated as more than motivating context; a human should check the full paper to confirm whether the finger is part of a humanoid hand/platform before deciding whether it belongs (candidate section would be Hardware Design).",
+      "detected_on": "2026-08-22",
+      "items": [
+        {
+          "arxiv_id": "2608.07002",
+          "title": "A Haptic Robot Finger Designed for Guqin Instrument Playing"
+        }
+      ]
+    },
+    {
+      "kind": "coverage-resweep-note",
+      "reason": "The 2026-08-22 AM run swept arXiv cs.RO/all, query \"humanoid\", sorted by submitted date descending, from the newest entry (2608.20087, already in data/papers.json from the prior run) down through 2608.00500 without hitting rate limiting - a window fully overlapping and extending past the last content update (2608.20087) and the required two-week overlap. All ids in this range not already present in data/papers.json were opened and checked against their arXiv abstract page. Of those, 2608.16195 and 2608.09762 were already tracked above (possible-duplicate-followon, borderline-scope); 2608.07002 was newly flagged borderline-scope above; the remaining new ids (2608.16049 Pluralistic HRI design framework, 2608.14462 THRIVE therapeutic robot platform, 2608.14243 zero-shot skeleton action anticipation on NTU RGB+D, 2608.05989 generic DeepMind-Control-Suite visual RL, 2608.01895 quadruped-only virtual agents) were excluded as unambiguously out of scope (no robot-learning contribution, or human-motion/CV-only, or quadruped-only) after reading their abstracts. No new papers were added to the README this run.",
+      "detected_on": "2026-08-22",
+      "items": [
+        {
+          "window": "2608.00500..2608.20087",
+          "note": "fully re-swept without rate limiting; no in-scope additions found beyond what was already in data/papers.json"
+        }
+      ]
+    },
+    {
       "kind": "readme-link-outdated",
       "reason": "During the 2026-08-21 PM enrichment pass, the README's OpenReview link for this record (https://openreview.net/forum?id=tQJYKwc3n4) could not be fetched (blocked by an anti-bot challenge on every attempt, including API endpoints). The same paper was located as arXiv preprint 2603.04356 (ICLR 2026), which was reachable and used to supply the verified abstract/authors now in data/papers.json. A human should decide whether to update the README line to link the arXiv preprint (or add it alongside the OpenReview link) so data/papers.json can be linked to the correct arxiv_id.",
       "detected_on": "2026-08-21",
