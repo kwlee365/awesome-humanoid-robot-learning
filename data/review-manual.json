@@ -146,6 +146,17 @@
           "note": "arXiv cs.RO recent listing (2026-08-20 through 2026-08-21, the last pre-weekend business day) fully read; no additional humanoid-robot-learning titles found"
         }
       ]
+    },
+    {
+      "kind": "coverage-resweep-note",
+      "reason": "The 2026-08-24 run continued from the last tracked id (2608.20087) using arxiv.org/list/cs.RO/recent, which returned the two arXiv business days since then (Thu 2026-08-20 through Mon 2026-08-24, ids up to roughly 2608.21083) without hitting rate limiting. Every title in that window was scanned for a humanoid connection. Three were opened and verified against their arXiv abstract pages: 2608.20852 and 2608.20823 (both RL-based humanoid stand-up/sit-to-stand motion synthesis, simulation only) were judged in-scope and added to the Locomotion section; 2608.20433 'Humanoid Musical Robots as Experimental Interfaces for Music-Evoked Emotion' was excluded as a music-cognition/HRI position paper with no robot-learning contribution (uses an existing saxophonist robot as a measurement instrument, not a control-learning result). 2608.21083 'Teaching is a Process: The TOSS Framework...' was excluded on title/abstract alone as a general human-robot teaching-interaction study with no humanoid-specific or robot-learning content.",
+      "detected_on": "2026-08-24",
+      "items": [
+        {
+          "window": "2608.20087..2608.21083",
+          "note": "arXiv cs.RO recent listing (2026-08-20 through 2026-08-24) fully read; 2 papers added, 2 excluded as out of scope, no other humanoid-robot-learning titles found"
+        }
+      ]
     }
   ]
 }
