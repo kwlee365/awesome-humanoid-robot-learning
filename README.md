@@ -369,6 +369,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ## Locomotion
 - [arXiv 2026.08](https://arxiv.org/abs/2608.20852), Demonstration-Guided Humanoid Stand-Up on an Emulated Deformable Surface
 - [arXiv 2026.08](https://arxiv.org/abs/2608.20823), Natural Sit-to-Stand Motion Synthesis For Humanoids via Guided Assistance Curricula and Staged Rewards
+- [arXiv 2026.08](https://arxiv.org/abs/2608.19955), MILD: Tractable Terrain Modeling for Learning Improved Bipedal Locomotion on Deformable Surfaces
 - [arXiv 2026.08](https://arxiv.org/abs/2608.15766), Tac4Loco: Learning Spatiotemporal Plantar Pressure Representations for Humanoid Locomotion
 - [arXiv 2026.08](https://arxiv.org/abs/2608.03234), Learning Context-Aware Motion Priors for Humanoid Control
 - [arXiv 2026.08](https://arxiv.org/abs/2608.02653), Light-Loco-Parkour: Versatile Perceptive Whole-Body Locomotion via Multi-Skill Distillation, [website](https://light-loco-parkour.github.io/)

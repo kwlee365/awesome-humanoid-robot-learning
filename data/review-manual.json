@@ -157,6 +157,22 @@
           "note": "arXiv cs.RO recent listing (2026-08-20 through 2026-08-24) fully read; 2 papers added, 2 excluded as out of scope, no other humanoid-robot-learning titles found"
         }
       ]
+    },
+    {
+      "kind": "keyword-search-blind-spot",
+      "reason": "The 2026-08-25 run swept forward from the last tracked id (2608.20852) using the full, unfiltered arxiv.org/list/cs.RO/recent listing (title-by-title, not a 'humanoid' keyword search) and, in the course of spot-checking ambiguous bipedal-sounding titles, found arXiv 2608.19955 'MILD: Tractable Terrain Modeling for Learning Improved Bipedal Locomotion on Deformable Surfaces' - a paper validated on the EngineAI SA01 humanoid platform that was verified in-scope and added to Locomotion. Its title contains neither 'humanoid' nor any robot brand name, only 'bipedal', and its arXiv id (2608.19955) falls inside the 2608.00500..2608.20087 window that the 2026-08-22 AM run already reported as fully covered using an arXiv 'humanoid' keyword search - meaning that keyword search missed it. This indicates prior and possibly future keyword-only 'humanoid' searches can systematically miss in-scope papers that describe themselves as 'bipedal' (or other non-'humanoid' phrasing) without the word 'humanoid' in the title. A full-listing title scan (not just a keyword search) is more reliable but far more expensive over a multi-month window. This run only did a full-listing scan of two windows, not the entire historical range: (1) arxiv.org/list/cs.RO/recent, covering roughly 2608.19661..2608.21358 (2026-08-19..2026-08-24), and (2) one page of arxiv.org/list/cs.RO/2026-08?skip=300&show=250, covering roughly 2608.09112..2608.13396 (2026-08-05..2026-08-11) - the page was requested at 250 entries but the fetch tool's summary was truncated partway through, so even that window was not exhaustively confirmed title-by-title. The range roughly 2608.13397..2608.19660 (approx. 2026-08-12..2026-08-18) and all of July 2026 were NOT full-listing re-scanned this run and rely only on the earlier keyword-search coverage recorded above. A human (or a future run with a larger time budget) should run a full-listing (not keyword-only) resweep of the remaining July-August 2026 cs.RO range to check for other 'humanoid'-keyword-blind entries.",
+      "detected_on": "2026-08-25",
+      "items": [
+        {
+          "arxiv_id": "2608.19955",
+          "title": "MILD: Tractable Terrain Modeling for Learning Improved Bipedal Locomotion on Deformable Surfaces",
+          "note": "added to Locomotion this run; the finding is the search-methodology gap that let it sit unnoticed since 2026-08-20, not the paper itself"
+        },
+        {
+          "window": "2608.13397..2608.19660 (approx. 2026-08-12..2026-08-18) and all of July 2026",
+          "note": "not full-listing re-scanned this run; only covered by earlier keyword ('humanoid') searches, which are now known to be able to miss non-'humanoid'-worded bipedal-platform papers"
+        }
+      ]
     }
   ]
 }
