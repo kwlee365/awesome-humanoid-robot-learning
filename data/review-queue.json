@@ -190,6 +190,39 @@
       ]
     },
     {
+      "kind": "borderline-scope",
+      "reason": "arXiv 2607.07972 'In vivo feasibility study of humanoid robots in surgery' (Zekai Liang et al., UC San Diego) develops a humanoid-based laparoscopic teleoperation framework and evaluates it through benchtop tests, dry-lab user studies, and in vivo porcine studies. Real humanoid hardware and teleoperation are involved, but the paper is framed and structured as a clinical feasibility/readiness evaluation against established surgical platforms (da Vinci) rather than as a robot-learning method contribution, so it does not clearly fit any of the 12 README sections. Not added; a human should decide whether it belongs under Teleoperation.",
+      "detected_on": "2026-08-26",
+      "items": [
+        {
+          "arxiv_id": "2607.07972",
+          "title": "In vivo feasibility study of humanoid robots in surgery"
+        }
+      ]
+    },
+    {
+      "kind": "borderline-scope",
+      "reason": "arXiv 2608.16555 'Co-design of Neural and Muscle Network based on Embodied Perceptron Representation' (Siyuan Tao, Yoichi Masuda, Hiroyuki Nabae, Masato Ishikawa; submitted 2026-08-17) co-optimizes a control policy and muscle configuration on what the abstract calls only a 'musculoskeletal robot', without stating whether the platform is a full humanoid (legs/torso) or a smaller limb/arm test rig. Nabae's lab has published on both humanoid and non-humanoid musculoskeletal designs, and the PDF could not be read to confirm the platform. Not added pending a human check of the full paper or a project page.",
+      "detected_on": "2026-08-26",
+      "items": [
+        {
+          "arxiv_id": "2608.16555",
+          "title": "Co-design of Neural and Muscle Network based on Embodied Perceptron Representation"
+        }
+      ]
+    },
+    {
+      "kind": "borderline-scope",
+      "reason": "arXiv 2608.17320 'Robust Brachiation on a Life-Sized Dual-Arm Robot Using Waypoint-Guided Reinforcement Learning' (Ayumu Iwata, Kento Kawaharazuka, Keita Yoneda, Takahiro Hattori, Kei Okada; University of Tokyo JSK lab; accepted to IROS 2026) demonstrates sim-to-real reinforcement learning for brachiation on a 'life-sized dual-arm robot' with hardware experiments, but the abstract and an attempted PDF read did not confirm whether the platform has legs/a torso (i.e. is humanoid) or is an arms-only rig built specifically for brachiation. Not added pending a human check of the full paper or project page for the robot's morphology.",
+      "detected_on": "2026-08-26",
+      "items": [
+        {
+          "arxiv_id": "2608.17320",
+          "title": "Robust Brachiation on a Life-Sized Dual-Arm Robot Using Waypoint-Guided Reinforcement Learning"
+        }
+      ]
+    },
+    {
       "kind": "cross-section-listing",
       "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
       "items": [
@@ -1974,6 +2007,21 @@
         }
       ],
       "detected_on": "2026-08-26"
+    },
+    {
+      "kind": "coverage-resweep-note",
+      "reason": "The 2026-08-26 PM run performed a full-listing (not keyword-only) title scan of arxiv.org/list/cs.RO/2026-08, continuously covering ids 2608.13397 through 2608.24885 (approx. 2026-08-12 through 2026-08-26), which closes the window the 2026-08-25 run flagged as not full-listing re-scanned (2608.13397..2608.19660) and connects it to the already-covered forward frontier. The same run also performed a full-listing title scan of the entire arxiv.org/list/cs.RO/2026-07 month (1175 entries, ids 2607.00020..2607.29559), closing the 'all of July 2026' gap noted by the 2026-08-25 keyword-search-blind-spot finding and the 2026-08-19 discovery-coverage-gap finding. Two papers were found that a 'humanoid' keyword search would plausibly have missed and were added to the README/data/papers.json: 2607.07430 'Immersive Social Interaction with VR and LLM-Assisted Humanoids' (Teleoperation; Unitree H1) and 2607.11855 'Robust bipedal locomotion on flowable slopes via foot-driven terrain manipulation' (Locomotion; bipedal robophysical platforms, title says 'bipedal' not 'humanoid'). A third paper, 2608.23258 'Progressively Learning Heterogeneous Skills in a Unified Latent Space' (HetSkills), was added to Physics-Based Character Animation. A human may want to delete the now-superseded 2026-08-19 discovery-coverage-gap entry and the 2026-08-25 keyword-search-blind-spot entry above once this note is reviewed, since both windows they flagged are now fully covered.",
+      "detected_on": "2026-08-26",
+      "items": [
+        {
+          "window": "2608.13397..2608.24885",
+          "note": "full-listing (title-by-title) re-scan completed; 0 additional candidates beyond what was already covered by the 2608.13397..2608.19660 sub-range check below"
+        },
+        {
+          "window": "2607.00020..2607.29559 (all of cs.RO July 2026, 1175 entries)",
+          "note": "full-listing (title-by-title) re-scan completed; 2 candidates found and added (2607.07430, 2607.11855) that a 'humanoid'-keyword-only search had missed"
+        }
+      ]
     }
   ]
 }

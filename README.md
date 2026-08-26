@@ -329,6 +329,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.08](https://arxiv.org/abs/2608.01834), Teleopit: A Full-Embodiment Humanoid Teleoperation System, [website](https://botrunner64.github.io/teleopit-page)
 - [arXiv 2026.07](https://arxiv.org/abs/2607.29227), Event-Based Upper-Body Humanoid Teleoperation Under Challenging Illumination
 - [arXiv 2026.07](https://arxiv.org/abs/2607.20399), Towards Miniature Humanoid Tele-Loco-Manipulation Using Virtual Reality and Reinforcement Learning
+- [arXiv 2026.07](https://arxiv.org/abs/2607.07430), Immersive Social Interaction with VR and LLM-Assisted Humanoids
 - [arXiv 2026.07](https://arxiv.org/abs/2607.02332), HEFT: Heavy-Payload Full-size Humanoid Teleoperation with Privileged Motion Guidance and Windowed Payload Curriculum, [website](https://heft.axell.top/)
 - [arXiv 2026.05](https://arxiv.org/abs/2605.12347), Real-Time Whole-Body Teleoperation of a Humanoid Robot Using IMU-Based Motion Capture with Sim2Sim and Sim2Real Validation
 - [arXiv 2026.02](https://arxiv.org/abs/2602.15060), CLOT: Closed-Loop Global Motion Tracking for Whole-Body Humanoid Teleoperation
@@ -381,6 +382,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.07](https://arxiv.org/abs/2607.24083), Learning Reusable Hybrid Motion Priors for Humanoid Locomotion from Motion Imitation
 - [arXiv 2026.07](https://arxiv.org/abs/2607.20110), Extreme-RGMT: Continual Learning of Highly Dynamic Skills for Robust Generalist Humanoid Control
 - [arXiv 2026.07](https://arxiv.org/abs/2607.12114), GaitSpan: Growing Humanoid Locomotion from Walking to Running, [website](https://gaitspan2026.github.io/)
+- [arXiv 2026.07](https://arxiv.org/abs/2607.11855), Robust bipedal locomotion on flowable slopes via foot-driven terrain manipulation
 - [arXiv 2026.07](https://arxiv.org/abs/2607.10815) / CLAWAR 2026, Learning Roller-Skating Motions of Humanoid Robots Based on Adversarial Motion Priors
 - [arXiv 2026.07](https://arxiv.org/abs/2607.07830), Physics-Guided Biomechanical Gait Adaptation for Humanoid Locomotion on Extreme Sloped Terrains
 - [arXiv 2026.07](https://arxiv.org/abs/2607.03454), ADP: Adversarial Dynamics Priors for Physically Grounded Humanoid Locomotion
@@ -648,6 +650,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Physics-Based Character Animation
 - [SIGGRAPH 2010](https://dl.acm.org/doi/abs/10.1145/1833349.1778770?casa_token=j3esx-hx0GAAAAAA:OvRU6YYrNo2ZP9IyXGVDryWJqHmvU-oVhnzog8RFKKySQJjganzaAmHff6CQ4a0qzfJZu-J6Buf4Ug), Spatial relationship preserving character motion adaptation
+- [arXiv 2026.08](https://arxiv.org/abs/2608.23258), Progressively Learning Heterogeneous Skills in a Unified Latent Space
 - [arXiv 2026.08](https://arxiv.org/abs/2608.03528), Tired Actor: Fatigue-Informed Character Control
 - [arXiv 2026.08](https://arxiv.org/abs/2608.03227), PFM-HR: Pose Flow Matching for Humanoid Robots
 - [arXiv 2026.07](https://arxiv.org/abs/2607.06438) / ECCV 2026, WristMimic: Full-Body Humanoid Control with Wrist-Guided Manipulation
