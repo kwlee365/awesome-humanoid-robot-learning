@@ -173,6 +173,20 @@
           "note": "not full-listing re-scanned this run; only covered by earlier keyword ('humanoid') searches, which are now known to be able to miss non-'humanoid'-worded bipedal-platform papers"
         }
       ]
+    },
+    {
+      "kind": "possible-title-mismatch",
+      "reason": "During the 2026-08-26 enrichment pass (Locomotion section, README line ~418), the abstract fetched from https://arxiv.org/abs/2510.12215 - the arXiv id recorded for the README/data/papers.json entry titled 'Learning a Vision-Based Footstep Planner for Hierarchical Walking Control' - was for a completely different paper ('Learning Social Navigation from Positive and Negative Demonstrations and Rule-Based Specifications' by Chanwoo Kim et al., re-fetched twice to rule out a transient fetch error). A web search located the actual paper under a different id: arXiv 2508.06779 (Minku Kim, Brian Acosta, Pratik Chaudhari, Michael Posa; IEEE Humanoids 2025; validated on the bipedal robot Cassie), first submitted 2025-08, not 2025-10. This looks like a wrong arXiv id was recorded for this README entry in an earlier run. Not auto-corrected because fixing it changes the entry's URL, month, and sort position (Aug vs Oct) - a human should confirm and then either hand-edit the README line to https://arxiv.org/abs/2508.06779 (arXiv 2025.08) and re-run parse_readme.py, or decide otherwise. The enrichment payload for this arXiv id was withheld this run rather than being applied under the existing (mismatched) title.",
+      "detected_on": "2026-08-26",
+      "items": [
+        {
+          "arxiv_id": "2510.12215",
+          "readme_title": "Learning a Vision-Based Footstep Planner for Hierarchical Walking Control",
+          "actual_title_at_that_id": "Learning Social Navigation from Positive and Negative Demonstrations and Rule-Based Specifications",
+          "likely_correct_arxiv_id": "2508.06779",
+          "likely_correct_first_public_date": "2025-08"
+        }
+      ]
     }
   ]
 }
