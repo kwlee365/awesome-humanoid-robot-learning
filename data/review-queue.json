@@ -257,6 +257,29 @@
       ]
     },
     {
+      "kind": "enrichment-note",
+      "reason": "During the 2026-08-27 PM enrichment pass, the existing Sim-to-Real record arXiv 2509.06342 'Towards bridging the gap: Systematic sim-to-real transfer for diverse legged robots' (RSL/ETH Zurich) was re-verified: the arXiv abstract page alone does not mention any humanoid platform and centers entirely on the ANYmal quadruped (32% Cost of Transport reduction is the headline result), which on its own would read as quadruped-only and out of scope. Reading the arXiv HTML full text (arxiv.org/html/2509.06342v1) confirmed the paper's 'ten additional robots' deployment set includes Fourier's GR-1 humanoid alongside several quadrupeds and dexterous hands, so the entry is retained and was enriched (real_robot: true) rather than flagged for removal. Recorded here so a future run does not re-flag this record as quadruped-only from the abstract alone without checking the full text.",
+      "detected_on": "2026-08-27",
+      "items": [
+        {
+          "arxiv_id": "2509.06342",
+          "title": "Towards bridging the gap: Systematic sim-to-real transfer for diverse legged robots",
+          "note": "confirmed in-scope via full-text check (GR-1 humanoid is one of the deployed platforms); abstract alone is quadruped-only and would mislead a title/abstract-only check"
+        }
+      ]
+    },
+    {
+      "kind": "borderline-scope",
+      "reason": "arXiv 2608.26058 'One Policy, Many Embodiments: Unified Camera-Centric Action Geometry Pre-training for Heterogeneous Embodied Manipulation' (UCAG-P) explicitly lists 'robot arms, humanoids, and human hands' as the embodiment types its shared camera-centric action representation is designed to unify, but all reported quantitative results (98.3% LIBERO, 88.7/89.2% RoboTwin Easy/Hard, 82.0% LIBERO-Plus zero-shot, 62.0% RoboCasa GR-1) are on general tabletop/dual-arm simulation benchmarks with no humanoid-specific platform named or humanoid-specific result reported. This mirrors the earlier-logged 2608.01826 case: a general cross-embodiment manipulation paper whose humanoid claim is not substantiated by a named platform or dedicated metric. Not added; a human should check the full paper for any humanoid-specific real-robot result before deciding whether it belongs (candidate section would be Manipulation).",
+      "detected_on": "2026-08-27",
+      "items": [
+        {
+          "arxiv_id": "2608.26058",
+          "title": "One Policy, Many Embodiments: Unified Camera-Centric Action Geometry Pre-training for Heterogeneous Embodied Manipulation"
+        }
+      ]
+    },
+    {
       "kind": "cross-section-listing",
       "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
       "items": [
@@ -2053,6 +2076,17 @@
         }
       ],
       "detected_on": "2026-08-27"
+    },
+    {
+      "kind": "coverage-resweep-note",
+      "reason": "The 2026-08-27 PM run continued from the last tracked ids (2608.25405, 2608.25547, added by the same-day AM run) using arxiv.org/list/cs.RO/recent (ids up to 2608.26105, 2026-08-27) and its second page (ids down to 2608.21631, overlapping the already-covered 2608.13397..2608.24885 range from the 2026-08-26 PM run without gaps). Every title in the new delta window (2608.24905..2608.26105) was read; roughly 20 manipulation/VLA/world-model titles that could plausibly hide an unstated humanoid platform were opened and checked against their arXiv abstracts (2608.26076, 2608.26058, 2608.26053, 2608.25874, 2608.25872, 2608.25864, 2608.25798, 2608.25757, 2608.25666, 2608.25659, 2608.25641, 2608.25572, 2608.25585, 2608.25284, 2608.25222, 2608.25196, 2608.25162, 2608.24959, plus the already-tracked 2608.25405/2608.25547). None confirmed a humanoid embodiment; most either omit the platform entirely or explicitly use arms/hands (UR5e, dual UR5e, Allegro Hand + Xarm) or a non-humanoid device (bionic-hand prosthetic). No new papers were added to the README this run.",
+      "detected_on": "2026-08-27",
+      "items": [
+        {
+          "window": "2608.24905..2608.26105",
+          "note": "full delta window since the same-day AM run; 0 additional humanoid-robot-learning candidates found beyond the one borderline case logged separately below"
+        }
+      ]
     }
   ]
 }
