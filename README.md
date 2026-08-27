@@ -26,6 +26,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.08](https://arxiv.org/abs/2608.25405), LAC: Linear and Angular Compliance for Humanoid Whole-body Control, [website](https://lac-humanoid.github.io/)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.22278) / IROS 2026, DreamMimic: Learning Visuomotor Whole-Body Loco-Manipulation via World Model
 - [arXiv 2026.08](https://arxiv.org/abs/2608.21550), GOLEM: Modular Humanoid Autonomy Towards Electric Vehicle Battery Disassembly, [website](https://golem-humanoid.github.io)
 - 🌟 [arXiv 2026.08](https://arxiv.org/abs/2608.20087), Towards Professional Tennis Styles for Humanoid Robots with Adaptive Motion Planning and Tracking, [website](https://humanoidtennis.github.io/AdaPT/) / [code](https://github.com/noitom-robotics/AdaPT)
@@ -571,6 +572,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2019.01](https://arxiv.org/abs/1901.08652), Learning Agile and Dynamic Motor Skills for Legged Robots
 
 ## Hardware Design
+- [arXiv 2026.08](https://arxiv.org/abs/2608.25547), A Tendon-Driven Five-Fingered Hand with Distributed Tactile Perception for Dexterous Manipulation
 - [arXiv 2026.08](https://arxiv.org/abs/2608.23304) / IROS 2026, Design of a Biomimetic Joint-Covering Skin with Tissue-Like Structure to Enhance Proprioception in a Musculoskeletal Humanoid
 - [arXiv 2026.08](https://arxiv.org/abs/2608.02080), Toward Geometry-Scalable Whole-Body Touch for Humanoids: A 3D-Printed Conformal EIT Skin
 - [arXiv 2026.07](https://arxiv.org/abs/2607.16187), Handroid: Bridging Dexterous Hand and Humanoid, [website](https://handroid.org)

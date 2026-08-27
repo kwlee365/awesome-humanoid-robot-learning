@@ -235,6 +235,37 @@
           "title": "In vivo feasibility study of humanoid robots in surgery"
         }
       ]
+    },
+    {
+      "kind": "possible-duplicate-followon",
+      "reason": "During the 2026-08-27 enrichment pass, the README/project-page-only entry titled 'AdaMimic: Towards Adaptable Humanoid Control via Adaptive Motion Tracking' (Loco-Manipulation and Whole-Body-Control, linked only to https://taohuang13.github.io/adamimic.github.io/) was confirmed to be the exact same paper as the already-listed arXiv 2510.14454 'Towards Adaptable Humanoid Control via Adaptive Motion Tracking' (same section) - the arXiv abstract page for 2510.14454 itself links out to the taohuang13.github.io/adamimic.github.io project page. This is the same underlying paper listed twice under two different display titles, confirming with certainty the 'probable-duplicate' (title similarity 0.933) already auto-detected by validate.py. A human should merge these two README lines into one (e.g. the arXiv link plus a website link) rather than two separate entries.",
+      "detected_on": "2026-08-27",
+      "items": [
+        {
+          "title": "AdaMimic: Towards Adaptable Humanoid Control via Adaptive Motion Tracking",
+          "duplicate_of_arxiv_id": "2510.14454",
+          "duplicate_of_title": "Towards Adaptable Humanoid Control via Adaptive Motion Tracking"
+        }
+      ]
+    },
+    {
+      "kind": "possible-title-mismatch",
+      "reason": "During the 2026-08-27 enrichment pass, two README entries were confirmed (via the actual arXiv abstract page, including full version history) to carry a title that never matches any version of the paper's real arXiv title, even though the arXiv id is correct and the abstract content clearly is the right paper (unlike the 2510.12215 case above, where the id pointed to a completely unrelated paper). Not auto-corrected because changing a title is a content edit outside what automation should silently rewrite; a human should decide whether to update the README title text (this does not change the arXiv id, month, or sort position for either entry).",
+      "detected_on": "2026-08-27",
+      "items": [
+        {
+          "arxiv_id": "2509.21690",
+          "readme_title": "Towards Versatile Humanoid Table Tennis: Unified Reinforcement Learning with Prediction Augmentation",
+          "actual_arxiv_title": "PACE: Physics Augmentation for Coordinated End-to-end Reinforcement Learning toward Versatile Humanoid Table Tennis",
+          "note": "title unchanged across all 5 arXiv versions (v1 2025-09-25 through v5 2026-08-03); same paper, abstract content matches the README entry's topic"
+        },
+        {
+          "arxiv_id": "2509.22578",
+          "readme_title": "EgoDemoGen: Novel Egocentric Demonstration Generation Enables Viewpoint-Robust Manipulation",
+          "actual_arxiv_title": "EgoDemoGen: Egocentric Demonstration Generation for Viewpoint Generalization in Robotic Manipulation",
+          "note": "title unchanged between v1 (2025-09-26) and v2 (2026-03-30); same paper, abstract content matches the README entry's topic"
+        }
+      ]
     }
   ]
 }
