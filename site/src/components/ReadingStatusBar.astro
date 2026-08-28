@@ -1,0 +1,186 @@
+---
+/**
+ * Reading-status summary for the list on this page, plus the one action the
+ * browser copy cannot do on its own: commit it to `data/reading-status.json` so
+ * the other devices see it after the next deploy.
+ */
+import { GITHUB_BRANCH, GITHUB_REPO } from '../lib/papers';
+import { READING_STATUS_PATH } from '../lib/reading-status';
+
+interface Props {
+  /** id of the paper list the counts describe. Defaults to the page's only list. */
+  target?: string;
+}
+
+const { target = '' } = Astro.props;
+---
+
+<div
+  class="rs-bar"
+  data-rs-bar
+  data-target={target}
+  data-repo={GITHUB_REPO}
+  data-branch={GITHUB_BRANCH}
+  data-path={READING_STATUS_PATH}
+>
+  <span class="rs-counts" data-rs-counts aria-live="polite"></span>
+  <button type="button" class="linkish" data-rs-sync>Sync to GitHub</button>
+
+  <div class="rs-token" data-rs-token hidden>
+    <p>
+      Syncing commits <code>{READING_STATUS_PATH}</code> to <code>{GITHUB_REPO}</code> through the
+      GitHub API, so it needs the same fine-grained token as <em>My Idea</em>: Contents
+      <em>Read and write</em> on this repository and nothing else. It is kept in this browser, on
+      this device only, and is sent nowhere except api.github.com.
+    </p>
+    <div class="row">
+      <input type="password" data-rs-token-input placeholder="github_pat_..." autocomplete="off" />
+      <button type="button" data-rs-token-save>Save token</button>
+      <button type="button" class="linkish" data-rs-token-cancel>Cancel</button>
+    </div>
+    <p class="tip">
+      Create one at <a href="https://github.com/settings/personal-access-tokens/new" rel="noopener"
+        >github.com/settings/personal-access-tokens/new</a
+      >. Marking papers works without it — the token is only needed to carry the marks to your
+      other devices.
+    </p>
+  </div>
+
+  <p class="status" data-rs-status aria-live="polite"></p>
+</div>
+
+<script>
+  import { fromBase64, githubApi, githubToken, setGithubToken, toBase64 } from '../lib/github';
+  import {
+    mergeStatuses,
+    READING_STATUS_EVENT,
+    READING_STATUSES,
+    sanitizeStatuses,
+    toReadingStatusFile,
+    type ReadingStatuses,
+  } from '../lib/reading-status';
+  import { allStatuses, replaceStatuses } from '../lib/reading-status-store';
+
+  function setup(bar: HTMLElement) {
+    const repo = bar.dataset.repo!;
+    const branch = bar.dataset.branch!;
+    const path = bar.dataset.path!;
+
+    const counts = bar.querySelector<HTMLElement>('[data-rs-counts]')!;
+    const statusLine = bar.querySelector<HTMLElement>('[data-rs-status]')!;
+    const tokenPanel = bar.querySelector<HTMLElement>('[data-rs-token]')!;
+    const tokenInput = bar.querySelector<HTMLInputElement>('[data-rs-token-input]')!;
+    let busy = false;
+
+    const say = (msg: string, kind = '') => {
+      statusLine.replaceChildren(msg);
+      statusLine.dataset.kind = kind;
+    };
+
+    const list = () =>
+      document.querySelector<HTMLElement>(
+        bar.dataset.target ? `#${bar.dataset.target}` : '[data-paper-list]',
+      );
+
+    function recount() {
+      const rows = list()?.children;
+      if (!rows) {
+        counts.textContent = '';
+        return;
+      }
+      const tally = new Map<string, number>();
+      for (const row of Array.from(rows) as HTMLElement[]) {
+        const value = row.dataset.reading;
+        if (value) tally.set(value, (tally.get(value) ?? 0) + 1);
+      }
+      const marked = READING_STATUSES.filter((s) => tally.get(s.id)).map(
+        (s) => `${s.label} ${tally.get(s.id)}`,
+      );
+      counts.textContent = marked.length
+        ? `${marked.join(' · ')} — of ${rows.length} papers here`
+        : 'No reading status set here yet. Pick one next to any paper.';
+    }
+
+    async function sync() {
+      if (busy) return;
+      if (!githubToken()) {
+        tokenPanel.hidden = false;
+        say('');
+        tokenInput.focus();
+        return;
+      }
+      busy = true;
+      say('Reading the committed file from GitHub...');
+      try {
+        const res = await githubApi('GET', `/repos/${repo}/contents/${path}?ref=${branch}`);
+        let sha: string | null = null;
+        let remote: ReadingStatuses = {};
+        if (res.status !== 404) {
+          const json = await res.json();
+          sha = json.sha;
+          remote = sanitizeStatuses(JSON.parse(fromBase64(json.content)));
+        }
+
+        // The remote may hold marks made on another device since this page was
+        // built, so merge rather than overwrite - newest write per paper wins.
+        const merged = mergeStatuses(remote, allStatuses());
+        const before = JSON.stringify(toReadingStatusFile(remote, null).statuses);
+        const after = JSON.stringify(toReadingStatusFile(merged, null).statuses);
+        if (before === after) {
+          replaceStatuses(merged);
+          say('Already in sync — nothing to commit.', 'ok');
+          return;
+        }
+
+        const content =
+          JSON.stringify(toReadingStatusFile(merged, new Date().toISOString()), null, 2) + '\n';
+        const put = await githubApi('PUT', `/repos/${repo}/contents/${path}`, {
+          message: 'reading: sync reading status',
+          content: toBase64(content),
+          branch,
+          ...(sha ? { sha } : {}),
+        });
+        const saved = await put.json();
+        replaceStatuses(merged);
+
+        const tracked = Object.values(merged).filter((e) => e.status !== null).length;
+        say(`Synced. ${tracked} paper${tracked === 1 ? '' : 's'} marked in total.`, 'ok');
+        const url = saved.commit?.html_url;
+        if (url) {
+          const link = document.createElement('a');
+          link.href = url;
+          link.rel = 'noopener';
+          link.textContent = 'See the commit';
+          statusLine.append(' ', link);
+        }
+      } catch (e) {
+        say((e as Error).message, 'err');
+      } finally {
+        busy = false;
+      }
+    }
+
+    bar.querySelector('[data-rs-sync]')!.addEventListener('click', sync);
+    bar.querySelector('[data-rs-token-cancel]')!.addEventListener('click', () => {
+      tokenPanel.hidden = true;
+      tokenInput.value = '';
+    });
+    bar.querySelector('[data-rs-token-save]')!.addEventListener('click', () => {
+      const value = tokenInput.value.trim();
+      if (!value) return;
+      if (!setGithubToken(value)) {
+        say('This browser is refusing to store anything, so the token cannot be kept. '
+          + 'Marking papers still works; only syncing needs it.', 'err');
+        return;
+      }
+      tokenInput.value = '';
+      tokenPanel.hidden = true;
+      sync();
+    });
+
+    document.addEventListener(READING_STATUS_EVENT, recount);
+    recount();
+  }
+
+  for (const bar of document.querySelectorAll<HTMLElement>('[data-rs-bar]')) setup(bar);
+</script>

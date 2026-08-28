@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import ReadingStatusRuntime from '../components/ReadingStatusRuntime.astro';
 import { stats } from '../lib/papers';
 
 interface Props {
@@ -80,5 +81,6 @@ const desc =
         </p>
       </div>
     </footer>
+    <ReadingStatusRuntime />
   </body>
 </html>

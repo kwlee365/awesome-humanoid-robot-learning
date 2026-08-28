@@ -26,6 +26,19 @@ for (const [from, to] of copies) {
   copyFileSync(src, resolve(out, to));
 }
 
+// Reading status is written by the site itself rather than by the parser, and a
+// checkout that has never synced one legitimately has no file yet - so this one
+// is optional, and its absence means "nothing marked" rather than an error.
+const readingStatus = resolve(repoRoot, 'data/reading-status.json');
+if (existsSync(readingStatus)) {
+  copyFileSync(readingStatus, resolve(out, 'reading-status.json'));
+} else {
+  writeFileSync(
+    resolve(out, 'reading-status.json'),
+    JSON.stringify({ version: 1, updated: null, statuses: {} }, null, 2) + '\n',
+  );
+}
+
 // A tiny build stamp so pages can show when the data was last regenerated.
 const papers = JSON.parse(readFileSync(resolve(out, 'papers.json'), 'utf8'));
 writeFileSync(

@@ -67,6 +67,11 @@ const explain: Record<string, string> = {
         A guard script fails the run if any of those files changed outside a human commit.
       </li>
       <li>
+        It never touches reading status. The To&nbsp;Find / In&nbsp;Progress / Done mark next
+        to each paper is set by the reader, kept in that reader's browser, and committed to
+        <code>data/reading-status.json</code> only when they press <em>Sync to GitHub</em>.
+      </li>
+      <li>
         A historical narrative is revised only when a new paper marks a real methodological
         shift; otherwise the paper is added to the area's paper list and the history is left
         alone.

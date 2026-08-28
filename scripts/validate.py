@@ -28,6 +28,8 @@ from parse_readme import DATA, REPO, render_entry  # noqa: E402
 
 REVIEW = os.path.join(REPO, "data", "review-queue.json")
 MANUAL = os.path.join(REPO, "data", "review-manual.json")
+READING = os.path.join(REPO, "data", "reading-status.json")
+READING_STATES = {"to-find", "in-progress", "done", None}
 TODAY = dt.date.today()
 
 errors: list[str] = []
@@ -195,6 +197,38 @@ def check_ordering(papers: list[dict]) -> None:
                       {"key": b["key"], "title": b["title"], "line": b["readme_line"]}])
 
 
+def check_reading_status() -> None:
+    """Structure only.
+
+    `data/reading-status.json` is the reader's, not ours: the site writes it and
+    the site is free to hold a status for a slug this validator knows nothing
+    about. All that is checked here is that the file still parses and still has
+    the shape the site build imports, because a malformed file breaks the build
+    rather than degrading gracefully. Its contents are never corrected.
+    """
+    if not os.path.exists(READING):
+        return
+    try:
+        with open(READING, encoding="utf-8") as fh:
+            data = json.load(fh)
+    except (OSError, json.JSONDecodeError) as exc:
+        err(f"data/reading-status.json is not readable JSON: {exc}")
+        return
+    statuses = data.get("statuses") if isinstance(data, dict) else None
+    if not isinstance(statuses, dict):
+        err('data/reading-status.json has no "statuses" object')
+        return
+    for slug, entry in statuses.items():
+        if not isinstance(entry, dict) or entry.get("status", "missing") not in READING_STATES:
+            err(f"data/reading-status.json entry {slug!r} is not a valid reading status")
+        elif not entry.get("updated"):
+            # Merging is by timestamp, so an entry without one always loses and
+            # the edit would be silently undone on the next sync from a browser.
+            err(f"data/reading-status.json entry {slug!r} has no 'updated' timestamp; "
+                f"add one (UTC ISO, e.g. {TODAY.isoformat()}T00:00:00.000Z) or the "
+                f"next sync will quietly discard it")
+
+
 def main() -> int:
     papers = load()
     check_round_trip(papers)
@@ -203,6 +237,7 @@ def main() -> int:
     check_links(papers)
     check_dates(papers)
     check_ordering(papers)
+    check_reading_status()
 
     # Findings raised by online verification passes, which this offline validator
     # cannot rediscover on its own.

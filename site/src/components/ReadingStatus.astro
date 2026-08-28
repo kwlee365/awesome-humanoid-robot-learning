@@ -1,0 +1,24 @@
+---
+/**
+ * The per-paper reading-status control. Rendered empty and filled in by
+ * ReadingStatusRuntime once the browser's stored status is known, so it costs
+ * the build nothing and works the same in every list.
+ */
+import { READING_STATUSES } from '../lib/reading-status';
+
+interface Props {
+  /** Canonical paper slug - the key the status is stored under. */
+  slug: string;
+  /** Only used for the accessible name, so the control is not just "combo box". */
+  title: string;
+}
+
+const { slug, title } = Astro.props;
+---
+
+<span class="rs" data-rs data-value="">
+  <select class="rs-select" data-rs-slug={slug} aria-label={`Reading status: ${title}`}>
+    <option value="">Not set</option>
+    {READING_STATUSES.map((s) => <option value={s.id}>{s.label}</option>)}
+  </select>
+</span>

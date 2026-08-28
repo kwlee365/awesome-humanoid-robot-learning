@@ -2,6 +2,7 @@
 import type { GetStaticPaths } from 'astro';
 import Base from '../../layouts/Base.astro';
 import MyIdea from '../../components/MyIdea.astro';
+import ReadingStatus from '../../components/ReadingStatus.astro';
 import { formatDate, papers, relatedPapers } from '../../lib/papers';
 import { slugify } from '../../lib/slug';
 
@@ -73,6 +74,11 @@ const verified = paper.verifiedOn !== null;
       {paper.realRobot === false && <span class="badge">simulation only</span>}
       {paper.realRobot === null && <span class="badge warn">real-robot status unverified</span>}
     </div>
+
+    <p class="rs-line">
+      <span>Reading status</span>
+      <ReadingStatus slug={paper.slug} title={paper.title} />
+    </p>
 
     <dl class="kv">
       <dt>Authors</dt>

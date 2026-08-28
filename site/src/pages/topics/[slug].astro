@@ -4,6 +4,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import PaperList from '../../components/PaperList.astro';
 import PaperFilters from '../../components/PaperFilters.astro';
+import ReadingStatusBar from '../../components/ReadingStatusBar.astro';
 import MyIdea from '../../components/MyIdea.astro';
 import { categories, editOnGitHub, papersInCategory } from '../../lib/papers';
 
@@ -66,6 +67,7 @@ const headings = entry ? (await render(entry)).headings.filter((h) => h.depth ==
     <section aria-labelledby="all-papers">
       <h2 id="all-papers">Complete paper list ({list.length})</h2>
       <PaperFilters showCategory={false} target="cat-list" />
+      <ReadingStatusBar target="cat-list" />
       <PaperList papers={list} id="cat-list" />
     </section>
 

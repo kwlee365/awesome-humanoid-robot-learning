@@ -169,10 +169,17 @@ here. The prompts below are optional - delete them and write however you like.
 
 <script>
   import { marked } from 'marked';
+  import {
+    bytesToBase64,
+    forgetGithubToken,
+    fromBase64,
+    githubApi as api,
+    githubToken as token,
+    setGithubToken,
+    toBase64,
+  } from '../lib/github';
 
-  const TOKEN_KEY = 'myidea:github-pat';
   const DRAFT_PREFIX = 'myidea:draft:';
-  const API = 'https://api.github.com';
 
   /**
    * Render a note the way the build does: drop the YAML frontmatter, then the
@@ -182,28 +189,6 @@ here. The prompts below are optional - delete them and write however you like.
   function renderNote(source: string): string {
     const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/, '');
     return marked.parse(body, { async: false }) as string;
-  }
-
-  function toBase64(text: string): string {
-    const bytes = new TextEncoder().encode(text);
-    let bin = '';
-    for (const b of bytes) bin += String.fromCharCode(b);
-    return btoa(bin);
-  }
-
-  function fromBase64(b64: string): string {
-    const bin = atob(b64.replace(/\s/g, ''));
-    const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));
-    return new TextDecoder().decode(bytes);
-  }
-
-  function bytesToBase64(buf: ArrayBuffer): string {
-    const bytes = new Uint8Array(buf);
-    let bin = '';
-    for (let i = 0; i < bytes.length; i += 0x8000) {
-      bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
-    }
-    return btoa(bin);
   }
 
   function setup(root: HTMLElement) {
@@ -231,7 +216,6 @@ here. The prompts below are optional - delete them and write however you like.
     let busy = false;
     let draftTimer = 0;
 
-    const token = () => localStorage.getItem(TOKEN_KEY);
     const say = (msg: string, kind = '') => {
       statusLine.textContent = msg;
       statusLine.dataset.kind = kind;
@@ -263,29 +247,6 @@ here. The prompts below are optional - delete them and write however you like.
       localStorage.removeItem(DRAFT_KEY);
       draftNote.textContent = '';
       draftBar.hidden = true;
-    }
-
-    async function api(method: string, endpoint: string, body?: unknown) {
-      const res = await fetch(`${API}${endpoint}`, {
-        method,
-        headers: {
-          Authorization: `Bearer ${token()}`,
-          Accept: 'application/vnd.github+json',
-          ...(body ? { 'Content-Type': 'application/json' } : {}),
-        },
-        body: body ? JSON.stringify(body) : undefined,
-      });
-      if (res.status === 401 || res.status === 403) {
-        throw new Error(
-          'GitHub rejected the token. Check that it has not expired and that it grants ' +
-            'Contents: Read and write on this repository.',
-        );
-      }
-      if (!res.ok && res.status !== 404) {
-        const detail = await res.text();
-        throw new Error(`GitHub returned ${res.status}. ${detail.slice(0, 200)}`);
-      }
-      return res;
     }
 
     async function openEditor() {
@@ -434,13 +395,17 @@ here. The prompts below are optional - delete them and write however you like.
       const input = root.querySelector<HTMLInputElement>('[data-token-input]')!;
       const value = input.value.trim();
       if (!value) return;
-      localStorage.setItem(TOKEN_KEY, value);
+      if (!setGithubToken(value)) {
+        say('This browser is refusing to store anything, so the token cannot be kept. '
+          + 'Use the "Edit on GitHub" link instead.', 'err');
+        return;
+      }
       input.value = '';
       openEditor();
     });
 
     root.querySelector('[data-forget]')!.addEventListener('click', () => {
-      localStorage.removeItem(TOKEN_KEY);
+      forgetGithubToken();
       closeEditor();
     });
 

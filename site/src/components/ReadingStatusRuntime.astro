@@ -1,0 +1,40 @@
+---
+/**
+ * Makes every reading-status control on the page live. It sits in the layout, so
+ * any page that renders a control gets the behaviour; on a page without one it
+ * does nothing.
+ */
+---
+
+<script>
+  import { isReadingStatus, READING_STATUS_EVENT } from '../lib/reading-status';
+  import { setStatus, statusOf, subscribe } from '../lib/reading-status-store';
+
+  function render() {
+    for (const select of document.querySelectorAll<HTMLSelectElement>('[data-rs-slug]')) {
+      const value = statusOf(select.dataset.rsSlug!) ?? '';
+      select.value = value;
+      // The wrapper colours the pill, and the row carries the value so the
+      // filters can read it like any other facet.
+      const wrap = select.closest<HTMLElement>('[data-rs]');
+      if (wrap) wrap.dataset.value = value;
+      const row = select.closest<HTMLElement>('[data-rs-host]');
+      if (row) row.dataset.reading = value;
+    }
+    // Announced after painting, never before: the filters and the counts read
+    // the rows this pass just wrote.
+    document.dispatchEvent(new CustomEvent(READING_STATUS_EVENT));
+  }
+
+  // Delegated, so a list of several hundred papers costs one listener.
+  document.addEventListener('change', (event) => {
+    const select = event.target;
+    if (!(select instanceof HTMLSelectElement)) return;
+    const slug = select.dataset.rsSlug;
+    if (!slug) return;
+    setStatus(slug, isReadingStatus(select.value) ? select.value : null);
+  });
+
+  subscribe(render);
+  render();
+</script>

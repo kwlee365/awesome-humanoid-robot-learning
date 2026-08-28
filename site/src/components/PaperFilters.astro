@@ -1,5 +1,6 @@
 ---
 import { categories, papers } from '../lib/papers';
+import { READING_STATUSES } from '../lib/reading-status';
 
 interface Props {
   /** Hide the category dropdown on pages that are already scoped to one category. */
@@ -47,6 +48,14 @@ const venues = [...new Set(papers.map((p) => p.venue))].sort((a, b) => a.localeC
     </select>
   </div>
   <div>
+    <label for="f-reading">Reading status</label>
+    <select id="f-reading" name="reading">
+      <option value="">All</option>
+      {READING_STATUSES.map((s) => <option value={s.id}>{s.label}</option>)}
+      <option value="none">Not set</option>
+    </select>
+  </div>
+  <div>
     <label for="f-flag">Evidence &amp; code</label>
     <select id="f-flag" name="flag">
       <option value="">All</option>
@@ -59,6 +68,15 @@ const venues = [...new Set(papers.map((p) => p.venue))].sort((a, b) => a.localeC
 <p class="result-count" data-count aria-live="polite"></p>
 
 <script>
+  import { READING_STATUS_EVENT } from '../lib/reading-status';
+
+  /**
+   * Reading status is stored in the browser, so the rows do not carry it yet
+   * when this script first runs. Browsers restore a <select> across a reload,
+   * so without this a restored "Done" would match nothing and hide every paper.
+   */
+  let readingReady = false;
+
   function apply(form: HTMLFormElement) {
     const list = document.querySelector<HTMLElement>(
       form.dataset.target ? `#${form.dataset.target}` : '[data-paper-list]',
@@ -70,6 +88,7 @@ const venues = [...new Set(papers.map((p) => p.venue))].sort((a, b) => a.localeC
     const year = String(data.get('year') ?? '');
     const venue = String(data.get('venue') ?? '');
     const flag = String(data.get('flag') ?? '');
+    const reading = readingReady ? String(data.get('reading') ?? '') : '';
 
     let shown = 0;
     for (const li of Array.from(list.children) as HTMLElement[]) {
@@ -81,7 +100,10 @@ const venues = [...new Set(papers.map((p) => p.venue))].sort((a, b) => a.localeC
         (!venue || d.venue === venue) &&
         (flag !== 'open' || d.open === '1') &&
         (flag !== 'real' || d.real === '1') &&
-        (flag !== 'sim' || d.real === '0');
+        (flag !== 'sim' || d.real === '0') &&
+        // Written onto the row by the reading-status runtime, so this facet is
+        // held inert until that has painted at least once.
+        (!reading || (reading === 'none' ? !d.reading : d.reading === reading));
       li.hidden = !ok;
       if (ok) shown++;
     }
@@ -93,6 +115,12 @@ const venues = [...new Set(papers.map((p) => p.venue))].sort((a, b) => a.localeC
     form.addEventListener('input', () => apply(form));
     form.addEventListener('change', () => apply(form));
     form.addEventListener('submit', (e) => e.preventDefault());
+    // Reading status is stored in the browser, so it lands on the rows after
+    // this script has already run once, and again whenever a status changes.
+    document.addEventListener(READING_STATUS_EVENT, () => {
+      readingReady = true;
+      apply(form);
+    });
     apply(form);
   }
 </script>

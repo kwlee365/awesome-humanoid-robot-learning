@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "note": "Reading status per paper slug, owned by the reader and written by the site’s \"Sync to GitHub\" button. Automation must never rewrite, reorder or delete entries here. An entry with \"status\": null is a cleared status, kept so that clearing one on a device also clears it on the others.",
+  "updated": null,
+  "statuses": {}
+}
