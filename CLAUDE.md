@@ -46,6 +46,10 @@ source under `data/`. `README.md` is still the source of truth for the *list*.
 data/papers.json         single structured record set, regenerated from README.md
 data/review-queue.json   generated: ambiguous findings for a human to resolve
 data/review-manual.json  hand/verification-pass findings the offline checks cannot see
+data/reading-status.json user-owned: reading status per paper, written by the site
+data/discovery-state.json which month each discovery channel first swept
+data/discovery-candidates.json unverified candidate queue, carried between runs
+scripts/discover.py      enumerate candidate papers from arXiv/Crossref/OpenAlex/S2
 scripts/parse_readme.py  README.md  -> data/papers.json (round-trip checked)
 scripts/validate.py      duplicates, dates, links, ordering, required metadata
 scripts/add_papers.py    insert verified new papers into README.md + metadata
@@ -79,6 +83,8 @@ README-derived fields, edit `README.md` instead.
 - Only add a paper after reading a primary source (arXiv abs page, publisher
   page, or the authors' own project page). Never from a title or a search
   snippet. Never invent abstracts, venues, project pages, code links or results.
+  `scripts/discover.py` finds candidates but verifies nothing: its output carries
+  no `verified_on`, which is exactly why `add_papers.py` refuses it unread.
 - For preprints record the FIRST arXiv submission month, not the latest revision.
 - Apply the open-source star only when a public code repository has been verified.
   A project page alone does not qualify.
@@ -86,6 +92,10 @@ README-derived fields, edit `README.md` instead.
   ambiguous goes to `data/review-queue.json`; never delete or rewrite it.
 - Do not reformat unrelated entries and do not reorder a section wholesale during
   a routine paper update.
+- **`data/reading-status.json` is user-owned.** The reader marks papers To Find /
+  In Progress / Done on the site and the site's "Sync to GitHub" button commits
+  the file. Automation never writes, reorders or prunes it - not even for a slug
+  that no longer matches a paper, because the slug may come back.
 - **`site/src/content/my-ideas/**` is user-owned.** Automation may create a
   missing blank note and nothing else: never rewrite, summarise, translate,
   reorganise or delete an existing one, and never merge generated text into one.

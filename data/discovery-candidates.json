@@ -1,0 +1,11 @@
+{
+  "generated_on": null,
+  "note": "Unverified candidates, most promising first. Written by scripts/discover.py and carried between runs: an entry leaves only when the paper is added to the list or a human deletes it. Empty until the first sweep.",
+  "windows": [],
+  "channels": [],
+  "counts": {},
+  "per_channel_raw": {},
+  "failures": [],
+  "candidates": [],
+  "similar_to_listed": []
+}

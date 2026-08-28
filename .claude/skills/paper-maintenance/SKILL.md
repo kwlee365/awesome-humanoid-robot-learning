@@ -28,22 +28,64 @@ Read `data/review-queue.json`. Do not auto-resolve anything in it.
 
 ## 2. Find new papers
 
-Work out the newest first-public date already present per section from
-`data/papers.json`, then search for humanoid-robot-learning papers made public
-since the last content update, plus a two-week overlap window to catch delayed
-indexing. Re-sweep any window `data/review-manual.json` records as incompletely
-covered.
+Enumeration is a script, not a search. Run it first:
 
-Sources in order of preference: arXiv; RSS / CoRL / ICRA / IROS / Humanoids /
-RA-L / T-RO / IJRR proceedings; IEEE Xplore; PMLR; official author or lab project
-pages; official code repositories; DOI and publisher metadata.
+```bash
+python3 scripts/discover.py                 # -> data/discovery-candidates.json
+```
 
-For every candidate, open a primary source page and record: exact title; authors;
-first public date (for preprints the FIRST arXiv submission month, not the latest
-revision); publication status; arXiv id and/or DOI; paper URL; project URL; code
-URL; whether real-robot experiments were run; primary category (one of the 11
-README sections, unchanged); secondary tags; the official abstract verbatim with
-the URL it came from; and a 3-5 sentence overview written from the paper.
+It sweeps the current and previous month across arXiv, Crossref and OpenAlex,
+plus one older month that has never been swept, and records what it covered in
+`data/discovery-state.json`. That ledger is why a window missed once comes back:
+each run walks one month further back until it reaches the floor. Add `--channels
+arxiv,crossref,openalex,s2` for a fourth source, `--month YYYY-MM` to re-sweep a
+specific window, and `--mailto <address>` only if the maintainer has given one.
+`--no-simulators` drops the lowest-precision path if the candidate list is too
+long to work through.
+
+Do not widen the term lists in `discover.py` casually. They were measured against
+the papers already curated, and two of the choices look wrong but are not:
+`exoskeleton` is a negative term, and `dexterous` is absent on purpose.
+
+Read `data/discovery-candidates.json`. It is a queue, not a snapshot: unactioned
+candidates from earlier runs are carried forward with a `carried_over_since` date
+and only leave when the paper is added or a human deletes the entry. So its count
+is a backlog, not this run's yield - say so when reporting. Work down it as far
+as time allows; the rest waits. It holds:
+
+- `candidates` - not in the list, ranked by relevance, each with `relevance.why`
+  explaining what caught it, `sources` naming which channels saw it, and `urls`
+  giving every link known for it
+- `similar_to_listed` - a title close to something already listed. Often a
+  genuine follow-up paper, sometimes the same work renamed on acceptance. Decide
+  by reading both, and never delete an entry to resolve it
+- `failures` - any channel that errored or returned an incomplete window. Those
+  months are deliberately left unmarked in the ledger so a later run sweeps them
+  again, and the run must say so in the report and in `data/review-manual.json`
+
+**A candidate is a pointer, not a paper.** It carries no `verified_on`, and
+`add_papers.py` rejects any record without one, so nothing here can reach
+`README.md` unread. For each candidate you intend to add, open a primary source -
+the arXiv abs page, the publisher page, or the authors' project page - and record:
+exact title; authors; first public date (for preprints the FIRST arXiv submission
+month, not the latest revision); publication status; arXiv id and/or DOI; paper
+URL; project URL; code URL; whether real-robot experiments were run; primary
+category (one of the 12 README sections, unchanged); secondary tags; the official
+abstract verbatim with the URL it came from; and a 3-5 sentence overview written
+from the paper.
+
+Two fields need care because the script cannot settle them:
+
+- `first_public_date` - trust it only when `date_basis` is `arxiv-v1`. A
+  `crossref-created` or `openalex-publication-date` value is when an index
+  learned of the paper, which can be months after it went public, and an IEEE
+  issue date can even be in the future.
+- `venue` - for anything not on arXiv this string becomes the whole README head
+  and must carry the year, e.g. `RA-L 2026`, `CoRL 2025`.
+
+A venue-published candidate often has an arXiv twin, which the script resolves
+where it can. Where it did not, look for one before giving up on the abstract:
+ieeexplore blocks automated fetching, and the twin's abs page does not.
 
 Never create an entry from a title, a social-media post or a search snippet.
 Never invent abstracts, venues, project pages, code links, authors or results.
@@ -51,21 +93,31 @@ Apply the open-source star only when a public code repository has been verified 
 a project page alone does not qualify. Anything you cannot verify goes into
 `data/review-manual.json` with the reason, not into the README.
 
-Deduplicate against `data/papers.json` and `README.md` by DOI, then normalised
-arXiv id, then exact normalised title, then fuzzy title with overlapping authors.
-If a paper already in the list has since been published at a venue, update the
-existing record rather than adding a second entry.
+The script already deduplicates against `data/papers.json` by arXiv id, DOI and
+normalised title, and flags fuzzy title matches separately. If a paper already in
+the list has since been published at a venue, update the existing record rather
+than adding a second entry.
 
-Before adding, run an independent verification pass over your own candidates:
-re-fetch each abstract from the primary source and compare it, re-check the arXiv
-id month, and drop anything out of scope. Quadruped-only, wheeled-base-only or
-tabletop-arm-only work does not belong in a humanoid list.
+Within the archives and venues it covers, the sweep is exhaustive rather than
+keyword-driven, so a web search is normally a supplement: use it to confirm a
+project page or a code repository. Two cases still need one:
+
+- `failures` is non-empty, or a channel returned an incomplete window. Coverage
+  for that run is NOT complete, whatever the candidate count suggests. Search that
+  window by hand and record the gap in `data/review-manual.json`.
+- A paper reaches you some other way and is not in the queue. Add it by the usual
+  verification route and record how you found it, so the term list can grow.
 
 ## 3. Add them
 
+Write the records you verified into a NEW file - `verified.json`, in the shape
+`docs/MAINTENANCE.md` documents - each carrying the `verified_on` date you added
+it on. Do not pass `data/discovery-candidates.json` here: that is the unverified
+queue, it carries no `verified_on`, and every record in it would be rejected.
+
 ```bash
-python3 scripts/add_papers.py --candidates candidates.json --dry-run
-python3 scripts/add_papers.py --candidates candidates.json
+python3 scripts/add_papers.py --candidates verified.json --dry-run
+python3 scripts/add_papers.py --candidates verified.json
 ```
 
 The script inserts each entry in the README's own format at its correct
@@ -97,15 +149,18 @@ superlatives such as "the first" or "state of the art".
 
 ```bash
 python3 scripts/my_ideas.py --ensure     # only creates missing blank notes
-python3 scripts/my_ideas.py --check      # must report no existing note modified
+python3 scripts/my_ideas.py --check      # must report nothing modified
 ```
 
 Never rewrite, summarise, translate, reorganise or delete an existing note under
-`site/src/content/my-ideas/`, and never merge generated text into one.
+`site/src/content/my-ideas/`, and never merge generated text into one. The same
+`--check` guards `data/reading-status.json`, which the reader writes from the
+site: automation may not change it at all.
 
 ## 7. Validate, build, commit, push
 
 ```bash
+git add data/discovery-state.json data/discovery-candidates.json  # coverage + queue
 python3 scripts/parse_readme.py && python3 scripts/validate.py   # 0 errors
 cd site && npm ci && npm run build && cd ..
 python3 scripts/check_site_links.py                              # 0 broken links

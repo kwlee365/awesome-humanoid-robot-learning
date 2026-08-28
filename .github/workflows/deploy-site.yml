@@ -6,6 +6,11 @@ on:
     paths:
       - 'README.md'
       - 'data/**'
+      # Discovery bookkeeping: a work queue and a coverage ledger. They change on
+      # their own schedule, they change nothing the site renders, and rebuilding
+      # for them would mean a deploy twice a day that publishes nothing new.
+      - '!data/discovery-candidates.json'
+      - '!data/discovery-state.json'
       - 'site/**'
       - 'scripts/**'
       - '.github/workflows/deploy-site.yml'

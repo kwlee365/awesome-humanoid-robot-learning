@@ -40,22 +40,87 @@ What the validator checks:
 
 ## 2. Find new papers
 
-Search window: everything made public since the last successful content update,
-plus a two-week overlap to catch delayed indexing.
+```bash
+python3 scripts/discover.py                 # -> discovery-candidates.json
+python3 scripts/discover.py --channels arxiv,crossref,openalex,s2
+python3 scripts/discover.py --month 2026-06 --dry-run   # re-sweep one window
+```
 
-Sources, in order of preference: arXiv; official conference and journal
-proceedings (RSS, CoRL, ICRA, IROS, Humanoids, RA-L, T-RO, IJRR); IEEE Xplore;
-PMLR; the authors' own project pages; official code repositories; DOI/publisher
-metadata.
+`discover.py` enumerates; it never adds. Four channels, each reaching something
+the others cannot:
 
-For every candidate, load a primary source page and record: exact title,
-authors, first public date, publication status, arXiv id and/or DOI, paper URL,
-project URL, code URL, whether real-robot experiments were run, category and
-tags, and the official abstract with the URL it came from.
+| Channel | What it sees | How it is queried |
+| --- | --- | --- |
+| `arxiv` | every cs.RO and cs.GR submission in a month, plus a term query reaching cs.CV/cs.AI/cs.LG | the full listing, no keyword; `submittedDate` and `<published>` are both the v1 date |
+| `crossref` | venue-published work, including IEEE | RA-L and T-RO enumerated whole by ISSN; IEEE proceedings one keyword per request |
+| `openalex` | the same venue half by topic, plus the long tail, with abstracts | two filter-only calls: four robotics topics, then four venue ids (RA-L, T-RO, Science Robotics, IJRR), to stay inside the daily credit budget |
+| `s2` | one merged record per work, joining a preprint to its published version | the bulk search endpoint, unauthenticated |
+
+Three properties matter and are worth not breaking:
+
+**The query contains no keyword.** Relevance is decided locally, over title and
+abstract, along five paths (`core`, `task`, `axis-a+b`, `motion-corpus`,
+`sim-infra` in the script), each recorded on the candidate as `relevance.path`
+and `relevance.why`. That is what a keyword search cannot do. Measured against
+the papers a human curated out of the 2026-06 and 2026-07 cs.RO listings, it cuts
+2685 records to 281 and those 281 contain all 81 curated papers. `--no-simulators`
+drops the lowest-precision path: 225 candidates, 79 of the 81.
+
+Two term choices are counter-intuitive and were measured, so do not "fix" them:
+`exoskeleton` is a negative, because lower-limb exoskeleton control belongs to
+none of the twelve sections, and `dexterous` is absent, because it is nearly all
+tabletop hand work. A hard negative in the *title* rejects the paper outright
+unless the title also names a humanoid.
+
+cs.RO alone is not enough: three of the thirty-nine papers curated from June 2026 are
+not in cs.RO at all, one of them in cs.AI only. Hence cs.GR in full (~150 papers
+a month) and one `ANDNOT cat:cs.RO` term query for the archives that are too
+large to enumerate.
+
+**Coverage is recorded, and both records are committed.** `data/discovery-state.json`
+says which month each channel first swept; `data/discovery-candidates.json` is the
+work queue. Every run sweeps the recent months plus one month nobody has swept
+yet, walking backwards to `floor` - which is what the 2026-08-19
+`discovery-coverage-gap` finding asked for.
+
+Both files must be committed, and neither triggers a site deploy (they are
+excluded in `deploy-site.yml`). This matters more than it looks:
+
+- A scheduled run starts from a fresh checkout. If the ledger is not committed,
+  every run re-plans the same three months and backfill never moves.
+- Candidates accumulate in the queue and only leave it when the paper is added or
+  a human deletes the entry, each carrying `carried_over_since`. So work down the
+  list as far as time allows; what you do not reach is still there next run. If
+  the queue is not committed, everything below the line a run stopped at is
+  swept once and lost, because its month is already marked done.
+- Re-sweeping a month does not rewrite the ledger - a date there is the *first*
+  sweep - so these files stay still unless coverage or the queue actually moved.
+
+`--floor YYYY-MM` bounds one run. `--set-floor` changes the floor recorded in the
+ledger for every run after it.
+
+**Dates are labelled, not assumed.** Each candidate carries `date_basis`. Only
+`arxiv-v1` is a real first-public date; Crossref's `created` and OpenAlex's
+`publication_date` say when an index learned of the paper. The RA-L paper missed
+here was created in Crossref in 2026-07, issued 2026-09, and had been on arXiv
+since 2026-04.
+
+For a candidate with a DOI but no abstract - IEEE deposits none, and ieeexplore
+refuses automated requests - the script asks Semantic Scholar for the arXiv twin
+in one batched request, which usually turns an unreadable candidate into a
+readable one. When that fails it says so and the candidate stays venue-only.
+
+Then verify, as before. For every candidate you intend to add, load a primary
+source page and record: exact title, authors, first public date, publication
+status, arXiv id and/or DOI, paper URL, project URL, code URL, whether real-robot
+experiments were run, category and tags, and the official abstract with the URL
+it came from.
 
 Never create an entry from a title, a social-media post or a search snippet.
 Anything that cannot be verified goes to `data/review-manual.json` instead of
-into the list.
+into the list. Candidates carry no `verified_on`, and `add_papers.py` rejects any
+record lacking one, so an unverified candidate cannot reach the README even by
+mistake.
 
 ## 3. Add what survived verification
 
@@ -118,6 +183,17 @@ python3 scripts/my_ideas.py --check     # fail if an existing note changed
 create a missing blank note. It must never rewrite, summarise, translate,
 reorganise or delete an existing one, and must never merge generated text into
 one. `--check` is part of the deploy workflow.
+
+`data/reading-status.json` belongs to the repository owner in the same way, and
+the same `--check` guards it: the run fails if that file was modified or deleted
+in the working tree. Only creating it when missing is allowed.
+
+`data/reading-status.json` belongs to the repository owner in the same way. The
+reader marks a paper To Find / In Progress / Done on the site, the browser keeps
+that immediately, and the site's "Sync to GitHub" button commits the merged file.
+Automation never writes, reorders or prunes it. An entry whose slug no longer
+matches a paper is left alone: the slug may come back, and a status is cheap to
+keep and impossible to reconstruct.
 
 ## 7. Build, verify, commit
 
