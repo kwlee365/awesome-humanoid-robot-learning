@@ -4,7 +4,7 @@
 
 Feel free to pull a request for new papers/codes about humanoid robot learning.
 
-**Fork note.** This fork also publishes a research history portal built from this list: **[kwlee365.github.io/awesome-humanoid-robot-learning](https://kwlee365.github.io/awesome-humanoid-robot-learning/)** — how each research area developed, a page per paper, search and filtering, and a personal `My Idea` notebook. See [`docs/MAINTENANCE.md`](docs/MAINTENANCE.md) for how it is kept up to date.
+**Fork note.** This fork also publishes a research history portal built from this list: **[kwlee365.github.io/awesome-humanoid-robot-learning](https://kwlee365.github.io/awesome-humanoid-robot-learning/)** — how each research area developed, a page per paper, search and filtering, and a per-paper reading status. See [`docs/MAINTENANCE.md`](docs/MAINTENANCE.md) for how it is kept up to date.
 
 ![Word Cloud](assets/wordcloud.png)
 
@@ -14,13 +14,13 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
   - [Teleoperation](#teleoperation)
   - [Locomotion](#locomotion)
   - [Safety-Critical Control](#safety-critical-control)
+  - [Sampling-based MPC](#sampling-based-mpc)
   - [Navigation](#navigation)
   - [State Estimation](#state-estimation)
   - [Sim-to-Real](#sim-to-real)
   - [Hardware Design](#hardware-design)
   - [Simulation Benchmark](#simulation-benchmark)
   - [Physics-Based Character Animation](#physics-based-character-animation)
-  - [Human Motion Analysis and Synthesis](#human-motion-analysis-and-synthesis)
 - [Contact](#contact)
 
 ---
@@ -523,6 +523,13 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2020.05](https://arxiv.org/abs/2005.07284) / IEEE TAC 2021, Robust Safety-Critical Control for Dynamic Robotics
 - [arXiv 2019.09](https://arxiv.org/abs/1909.09233) / RA-L 2020, Robust Humanoid Contact Planning with Learned Zero- and One-Step Capturability Prediction
 
+## Sampling-based MPC
+- [arXiv 2026.08](https://arxiv.org/abs/2608.19443), Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control
+- [arXiv 2026.08](https://arxiv.org/abs/2608.07573), Projection-Retraction MPPI: Exact Constraint-Manifold Control for Manipulators, [website](https://rcilab.github.io/prmppi)
+- [arXiv 2025.11](https://arxiv.org/abs/2511.19204), Reference-Free Sampling-Based Model Predictive Control
+- [arXiv 2024.09](https://arxiv.org/abs/2409.15610), Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing
+- [arXiv 2022.12](https://arxiv.org/abs/2212.00541), Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo
+
 ## Navigation
 - [arXiv 2026.07](https://arxiv.org/abs/2607.27180), HumanCLAW: Can Vision-Language Models Act Through a Body?, [website](https://human-claw.github.io)
 - 🌟 [arXiv 2026.07](https://arxiv.org/abs/2607.20061), ReferTrack: Referring Then Tracking for Embodied Visual Tracking, [code](https://github.com/MedlarTea/referTrack)
@@ -709,56 +716,6 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [TOG 2023](https://dl.acm.org/doi/abs/10.1145/3592447), Composite Motion Learning with Task Control
 
 
-
-## Human Motion Analysis and Synthesis
-- [arXiv 2026.08](https://arxiv.org/abs/2608.16222), HiPHI: A Large-Scale Benchmark for High-Precision Human Motion and Object-Interaction
-- [arXiv 2026.08](https://arxiv.org/abs/2608.13555), HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark
-- [arXiv 2026.08](https://arxiv.org/abs/2608.01410), GenTrack: Physical Alignment for Robot-Native Motion Generation and Zero-Shot Humanoid Tracking
-- [arXiv 2026.07](https://arxiv.org/abs/2607.17769), From Sign Language Generation to Humanoid Execution: Vision-Language Guided Retargeting with Collision Mitigation
-- [arXiv 2026.07](https://arxiv.org/abs/2607.15868) / ECCV 2026, EgoExoMoCap: Distributed Ego-Exo Human Motion Capture, [website](https://siplab.org/projects/EgoExoMoCap)
-- [arXiv 2026.07](https://arxiv.org/abs/2607.13646), Human4K: A Large-Scale 4K Multi-View Mocap Dataset for Whole-Body 3D Human Reconstruction
-- [arXiv 2026.07](https://arxiv.org/abs/2607.13472), EgoHTR: Egocentric 4D Demonstrations of Human Terrain Traversal, [website](https://egohtr.github.io)
-- [arXiv 2026.07](https://arxiv.org/abs/2607.08741) / SIGGRAPH 2026, ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation, [website](https://research.nvidia.com/labs/sil/projects/ardy/)
-- [arXiv 2026.07](https://arxiv.org/abs/2607.05938), Prior-First, Condition-Second: Scalable and Controllable Hand Motion Completion, [website](https://AIGAnimation.github.io/HandPrior/)
-- [arXiv 2026.06](https://arxiv.org/abs/2606.22998), TEXEDO : Test Time Scaling for Controller-aware Language-conditioned Humanoid Motion Generation, [website](https://jianuocao.github.io/TEXEDO/)
-- [arXiv 2026.06](https://arxiv.org/abs/2606.20731) / CASAXR 2026, XmoPipe: A Pipeline for Large-Scale In-the-Wild Human Motion Dataset Construction
-- [arXiv 2026.06](https://arxiv.org/abs/2606.19935), PhysDrift: Bridging the Embodiment Gap in Humanoid Co-Speech Motion Generation
-- [arXiv 2026.06](https://arxiv.org/abs/2606.08495), EgoPriMo: Egocentric Motion Generation for Interactive Humanoid Control
-- [arXiv 2026.06](https://arxiv.org/abs/2606.03536), Bionic Human-Motion Style Transfer for Physically Executable Whole-Body Control of Humanoid Robots, [website](https://huangtc233.github.io/bionic-style-transfer/)
-- [arXiv 2026.06](https://arxiv.org/abs/2606.03476), Human2Humanoid: Physics-Aware Cross-Morphology Motion Retargeting for Humanoid Robots, [website](https://huangtc233.github.io/human2humanoid_website/)
-- [arXiv 2026.05](https://arxiv.org/abs/2605.26241) / CVPR 2026, RoMo: A Large-Scale, Richly Organized Dataset and Semantic Taxonomy for Human Motion Generation
-- [arXiv 2026.05](https://arxiv.org/abs/2605.19620) / CVPR 2026, Bézier Degradation Modeling for LiDAR-based Human Motion Capture
-- [arXiv 2026.05](https://arxiv.org/abs/2605.01036) / CVPR 2026, InterPhys: Physics-aware Human Motion Synthesis in a Dynamic Scene
-- [arXiv 2026.05](https://arxiv.org/abs/2605.00517), PhysiGen: Integrating Collision-Aware Physical Constraints for High-Fidelity Human-Human Interaction Generation
-- [website 2026.03](https://research.nvidia.com/labs/sil/projects/kimodo/), Kimodo: Scaling Controllable Human Motion Generation
-- [arXiv 2026.02](https://arxiv.org/abs/2602.23205), EmbodMocap: In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents
-- [arXiv 2026.02](https://arxiv.org/abs/2602.22209), WHOLE: World-Grounded Hand-Object Lifted from Egocentric Videos, [website](https://judyye.github.io/whole-www/)
-- [arXiv 2025.12](https://arxiv.org/abs/2512.17900), Diffusion Forcing for Multi-Agent Interaction Sequence Modeling
-- [SIGGRAPH Asia 2025.12](https://dl.acm.org/doi/abs/10.1145/3763319), Control Operators for Interactive Character Animation
-- [website 2025.12](https://studios.disneyresearch.com/2025/12/03/implicit-bezier-motion-model-for-precise-spatial-and-temporal-control/), Implicit Bézier Motion Model for Precise Spatial and Temporal Control
-- [arXiv 2025.12](https://arxiv.org/abs/2512.00960), Efficient and Scalable Monocular Human-Object Interaction Motion Reconstruction
-- [arXiv 2025.08](https://arxiv.org/abs/2508.07863), Being-M0.5: A Real-Time Controllable Vision-Language-Motion Model, [website](https://beingbeyond.github.io/Being-M0.5/)
-- arXiv 2025.07, Go to Zero: Towards Zero-shot Motion Generation with Million-scale Data, [website](https://vankouf.github.io/MotionMillion/)
-- [arXiv 2025.05](https://arxiv.org/abs/2505.01425), GENMO: A GENeralist Model for Human MOtion, [website](https://research.nvidia.com/labs/dair/genmo/)
-- [arXiv 2025.03](https://arxiv.org/abs/2503.23094), FRAME: Floor-aligned Representation for Avatar Motion from Egocentric Video, [website](https://vcai.mpi-inf.mpg.de/projects/FRAME/)
-- [arXiv 2025.04](https://arxiv.org/abs/2504.10414), HUMOTO: A 4D Dataset of Mocap Human Object Interactions, [website](https://jiaxin-lu.github.io/humoto/)
-- [arXiv 2025.04](https://arxiv.org/abs/2504.17695), PICO: Reconstructing 3D People In Contact with Objects
-- arXiv 2025.04, Climber Force and Motion Estimation from Video, [website](https://rihat99.github.io/climb_force/)
-- [arXiv 2025.03](https://arxiv.org/abs/2503.17544), PRIMAL Physically Reactive and Interactive Motor Model for Avatar Learning
-- [arXiv 2025.03](https://arxiv.org/abs/2503.21268), ClimbingCap: Multi-Modal Dataset and Method for Rock Climbing in World Coordinate
-- [arXiv 2024.10](https://arxiv.org/abs/2410.03311), Scaling Large Motion Models with Million-Level Human Motions
-- [arXiv 2024.05](https://arxiv.org/abs/2405.11126), Flexible Motion In-betweening with Diffusion Models
-- [arXiv 2024.04](https://arxiv.org/abs/2404.15121), Taming Diffusion Probabilistic Models for Character Control
-- [arXiv 2023.10](https://arxiv.org/abs/2310.08580), OmniControl: Control Any Joint at Any Time for Human Motion Generation
-- [arXiv 2023.07](https://arxiv.org/abs/2307.15042), TEDi: Temporally-Entangled Diffusion for Long-Term Motion Synthesis
-- [arXiv 2023.06](https://arxiv.org/abs/2306.00378), Example-based Motion Synthesis via Generative Motion Matching
-- [arXiv 2023.05](https://arxiv.org/abs/2305.12577), Guided Motion Diffusion for Controllable Human Motion Synthesis
-- [arXiv 2022.12](https://arxiv.org/abs/2212.02500), PhysDiff: Physics-Guided Human Motion Diffusion Model, [website](https://nvlabs.github.io/PhysDiff/)
-- [CVPR 2022](https://openaccess.thecvf.com/content/CVPR2022/html/Guo_Generating_Diverse_and_Natural_3D_Human_Motions_From_Text_CVPR_2022_paper.html), Generating Diverse and Natural 3D Human Motions From Text
-- [ECCV 2024](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/00194.pdf), MANIKIN: Biomechanically Accurate Neural Inverse Kinematics for Human Motion Estimation
-- 🌟 [ECCV 2024](https://arxiv.org/pdf/2308.06493), EgoPoser: Robust Real-Time Egocentric Pose Estimation from Sparse and Intermittent Observations Everywhere, [website](https://siplab.org/projects/EgoPoser) / [code](https://github.com/eth-siplab/EgoPoser)
-- 🌟 [ECCV 2022](https://arxiv.org/abs/2207.13784), AvatarPoser: Articulated Full-Body Pose Tracking from Sparse Motion Sensing, [website](https://siplab.org/projects/AvatarPoser) / [code](https://github.com/eth-siplab/AvatarPoser)
-- [SIGGRAPH 2020](https://dl.acm.org/doi/abs/10.1145/3386569.3392440), Learned motion matching
 
 ---
 # Contact

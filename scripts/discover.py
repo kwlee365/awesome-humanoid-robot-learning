@@ -76,8 +76,7 @@ STATE_NOTE = (
 #   TASK    tasks that only exist for a humanoid-shaped or simulated-human body.
 #   AXIS A/B  a full articulated body, crossed with our method vocabulary. One
 #           from each is required: either alone is most of robotics.
-#   MOTION  the human-motion corpus, for the two sections that have no robot
-#           vocabulary at all. Counted by distinct concept, not by term.
+#   METHOD  control machinery this list tracks by method rather than by task.
 #   SIM     simulator and benchmark infrastructure. Low precision, kept because
 #           two curated papers contain no other signal.
 #
@@ -147,22 +146,19 @@ AXIS_METHOD_TERMS = (
     "teleoperation", "teleoperated", "teleoperator", "sim to real", "sim2real",
 )
 
-# For Human Motion Analysis and Physics-Based Character Animation, which need no
-# robot at all. Grouped so that "motion prior" and "motion priors" count once:
-# counting them separately let a single phrase qualify a paper on its own.
-MOTION_GROUPS = (
-    ("human-motion", ("human motion", "human motions")),
-    ("mocap", ("motion capture", "mocap", "amass")),
-    ("body-model", ("smpl", "smpl x", "human body model")),
-    ("motion-dataset", ("motion dataset", "motion datasets")),
-    ("motion-synthesis", ("motion synthesis", "motion generation", "motion diffusion")),
-    ("motion-prior", ("motion prior", "motion priors")),
-    ("body-pose", ("human pose", "body pose", "full body pose")),
-    ("body-motion", ("full body motion", "whole body motion")),
-    ("motion-tracking", ("motion tracking",)),
-    ("retargeting", ("retargeting", "retarget", "retargeted", "motion retargeting")),
+# Sampling-based MPC is tracked as a method rather than a task, so it needs its
+# own vocabulary: none of the platform or task terms above fire on a paper whose
+# subject is how the samples are drawn.
+METHOD_TERMS = (
+    "sampling based mpc", "sampling based model predictive", "predictive sampling",
+    "model predictive path integral", "mppi", "cross entropy method",
+    "sample based mpc", "derivative free mpc", "gradient free mpc",
+    "stochastic optimal control", "diffusion style annealing",
 )
 
+# A method paper still has to be about a body this list covers, so METHOD needs a
+# second signal rather than standing alone - "MPPI" on its own is most of mobile
+# robotics.
 SIM_TERMS = (
     "isaac sim", "isaac lab", "isaacgym", "isaac gym", "mujoco", "mjx", "genesis",
     "sapien", "pybullet", "gpu accelerated simulat*", "massively parallel simulation",
@@ -202,7 +198,7 @@ SOFT_NEGATIVE_TERMS = (
 
 # How much each path is trusted, used to rank the candidate list so the
 # verification pass reads the most likely papers first.
-PATH_WEIGHT = {"core": 100, "task": 80, "motion-corpus": 60, "axis-a+b": 50, "sim-infra": 10}
+PATH_WEIGHT = {"core": 100, "task": 80, "method": 70, "axis-a+b": 50, "sim-infra": 10}
 
 
 def _normalise(text: str) -> str:
@@ -231,11 +227,6 @@ def _hits(text: str, terms) -> list:
     return found
 
 
-def _motion_groups(text: str) -> list:
-    return [name for name, variants in MOTION_GROUPS
-            if any(" " + v + " " in text for v in variants)]
-
-
 def score(title: str, abstract: str, include_simulators: bool = True) -> dict:
     """Decide whether a paper is worth opening, and say which rule caught it.
 
@@ -250,7 +241,7 @@ def score(title: str, abstract: str, include_simulators: bool = True) -> dict:
     task = _hits(text, TASK_TERMS)
     body = _hits(text, AXIS_BODY_TERMS)
     method = _hits(text, AXIS_METHOD_TERMS)
-    motion = _motion_groups(text)
+    control = _hits(text, METHOD_TERMS)
     sim = _hits(text, SIM_TERMS)
     sim_context = _hits(text, SIM_CONTEXT_TERMS)
     hard = _hits(text, HARD_NEGATIVE_TERMS)
@@ -268,8 +259,11 @@ def score(title: str, abstract: str, include_simulators: bool = True) -> dict:
         path, why = "task", "a task specific to a humanoid body"
     elif body and method and not hard and len(soft) < 2:
         path, why = "axis-a+b", "a full body, and our method vocabulary"
-    elif len(motion) >= 2 and not hard:
-        path, why = "motion-corpus", "human-motion work in two distinct senses"
+    elif control and not hard:
+        # The hard negatives carry this one: "MPPI" plus "autonomous racing",
+        # "quadruped", "franka" or "drone" is not our list, and everything left
+        # is a predictive-control paper about a body we do cover.
+        path, why = "method", "sampling-based predictive control"
     elif sim and sim_context and include_simulators:
         path, why = "sim-infra", "simulation or benchmark infrastructure"
     else:
@@ -280,9 +274,9 @@ def score(title: str, abstract: str, include_simulators: bool = True) -> dict:
         "path": path,
         "why": why,
         "score": (PATH_WEIGHT.get(path, 0) + 2 * len(core) + 2 * len(task)
-                  + len(body) + len(method) + 2 * len(motion) - 2 * len(hard) - len(soft)),
+                  + len(body) + len(method) + 2 * len(control) - 2 * len(hard) - len(soft)),
         "core": core, "task": task, "body": body, "method": method,
-        "motion": motion, "sim": sim, "hard_negative": hard, "soft_negative": soft,
+        "control": control, "sim": sim, "hard_negative": hard, "soft_negative": soft,
     }
 
 

@@ -11,13 +11,13 @@ A curated list of academic papers about **humanoid robot learning**, maintained 
 3. Teleoperation
 4. Locomotion
 5. Safety-Critical Control
-6. Navigation
-7. State Estimation
-8. Sim-to-Real
-9. Hardware Design
-10. Simulation Benchmark
-11. Physics-Based Character Animation
-12. Human Motion Analysis and Synthesis
+6. Sampling-based MPC
+7. Navigation
+8. State Estimation
+9. Sim-to-Real
+10. Hardware Design
+11. Simulation Benchmark
+12. Physics-Based Character Animation
 
 ## Adding a Paper
 

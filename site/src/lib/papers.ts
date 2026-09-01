@@ -83,13 +83,13 @@ export const CATEGORY_ORDER = [
   'Teleoperation',
   'Locomotion',
   'Safety-Critical Control',
+  'Sampling-based MPC',
   'Navigation',
   'State Estimation',
   'Sim-to-Real',
   'Hardware Design',
   'Simulation Benchmark',
   'Physics-Based Character Animation',
-  'Human Motion Analysis and Synthesis',
 ];
 
 const records = (raw as { papers: ReadmeRecord[] }).papers;

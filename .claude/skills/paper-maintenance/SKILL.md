@@ -87,6 +87,15 @@ A venue-published candidate often has an arXiv twin, which the script resolves
 where it can. Where it did not, look for one before giving up on the abstract:
 ieeexplore blocks automated fetching, and the twin's abs page does not.
 
+Two scope notes the sweep cannot enforce for you:
+
+- **Human Motion Analysis and Synthesis no longer exists.** A pure human-motion
+  paper - a mocap dataset, a motion-synthesis model, a pose estimator with no
+  robot in it - now has no section, so reject it rather than filing it elsewhere.
+- **Sampling-based MPC is tracked by method, not by task.** It belongs there only
+  when the sampling scheme is the contribution; a policy that merely calls an
+  MPPI solver goes in the section for its task.
+
 Never create an entry from a title, a social-media post or a search snippet.
 Never invent abstracts, venues, project pages, code links, authors or results.
 Apply the open-source star only when a public code repository has been verified -

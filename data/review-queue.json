@@ -331,6 +331,48 @@
       "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
       "items": [
         {
+          "key": "loco-manipulation-and-whole-body-control::predictive-sampling-real-time-behaviour-synthesis-with-mujoco",
+          "title": "Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2022-12",
+          "line": "- [arXiv 2022.12](https://arxiv.org/abs/2212.00541), Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo"
+        },
+        {
+          "key": "sampling-based-mpc::predictive-sampling-real-time-behaviour-synthesis-with-mujoco",
+          "title": "Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo",
+          "category": "Sampling-based MPC",
+          "date": "2022-12",
+          "line": "- [arXiv 2022.12](https://arxiv.org/abs/2212.00541), Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo"
+        }
+      ],
+      "detected_on": "2026-09-01"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::predictive-sampling-real-time-behaviour-synthesis-with-mujoco",
+          "title": "Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2022-12",
+          "line": "- [arXiv 2022.12](https://arxiv.org/abs/2212.00541), Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo"
+        },
+        {
+          "key": "sampling-based-mpc::predictive-sampling-real-time-behaviour-synthesis-with-mujoco",
+          "title": "Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo",
+          "category": "Sampling-based MPC",
+          "date": "2022-12",
+          "line": "- [arXiv 2022.12](https://arxiv.org/abs/2212.00541), Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo"
+        }
+      ],
+      "detected_on": "2026-09-01"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
           "key": "loco-manipulation-and-whole-body-control::learning-human-to-humanoid-real-time-whole-body-teleoperation",
           "title": "Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation",
           "category": "Loco-Manipulation and Whole-Body-Control",
@@ -448,6 +490,48 @@
           "category": "Teleoperation",
           "date": "2024-06",
           "line": "- 🌟 [arXiv 2024.06](https://arxiv.org/abs/2406.08858), OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning, [website](https://omni.human2humanoid.com/) / [code](https://github.com/LeCAR-Lab/human2humanoid)"
+        }
+      ],
+      "detected_on": "2026-09-01"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::full-order-sampling-based-mpc-for-torque-level-locomotion-control-via-diffusion-",
+          "title": "Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2024-09",
+          "line": "- [arXiv 2024.09](https://arxiv.org/abs/2409.15610), Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing"
+        },
+        {
+          "key": "sampling-based-mpc::full-order-sampling-based-mpc-for-torque-level-locomotion-control-via-diffusion-",
+          "title": "Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing",
+          "category": "Sampling-based MPC",
+          "date": "2024-09",
+          "line": "- [arXiv 2024.09](https://arxiv.org/abs/2409.15610), Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing"
+        }
+      ],
+      "detected_on": "2026-09-01"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::full-order-sampling-based-mpc-for-torque-level-locomotion-control-via-diffusion-",
+          "title": "Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2024-09",
+          "line": "- [arXiv 2024.09](https://arxiv.org/abs/2409.15610), Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing"
+        },
+        {
+          "key": "sampling-based-mpc::full-order-sampling-based-mpc-for-torque-level-locomotion-control-via-diffusion-",
+          "title": "Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing",
+          "category": "Sampling-based MPC",
+          "date": "2024-09",
+          "line": "- [arXiv 2024.09](https://arxiv.org/abs/2409.15610), Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing"
         }
       ],
       "detected_on": "2026-09-01"
@@ -1003,6 +1087,48 @@
       "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
       "items": [
         {
+          "key": "loco-manipulation-and-whole-body-control::hybrid-feedback-sampling-for-sample-efficient-model-predictive-control",
+          "title": "Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2026-08",
+          "line": "- [arXiv 2026.08](https://arxiv.org/abs/2608.19443), Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control"
+        },
+        {
+          "key": "sampling-based-mpc::hybrid-feedback-sampling-for-sample-efficient-model-predictive-control",
+          "title": "Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control",
+          "category": "Sampling-based MPC",
+          "date": "2026-08",
+          "line": "- [arXiv 2026.08](https://arxiv.org/abs/2608.19443), Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control"
+        }
+      ],
+      "detected_on": "2026-09-01"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::hybrid-feedback-sampling-for-sample-efficient-model-predictive-control",
+          "title": "Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control",
+          "category": "Loco-Manipulation and Whole-Body-Control",
+          "date": "2026-08",
+          "line": "- [arXiv 2026.08](https://arxiv.org/abs/2608.19443), Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control"
+        },
+        {
+          "key": "sampling-based-mpc::hybrid-feedback-sampling-for-sample-efficient-model-predictive-control",
+          "title": "Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control",
+          "category": "Sampling-based MPC",
+          "date": "2026-08",
+          "line": "- [arXiv 2026.08](https://arxiv.org/abs/2608.19443), Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control"
+        }
+      ],
+      "detected_on": "2026-09-01"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
           "key": "loco-manipulation-and-whole-body-control::whole-body-planning-for-humanoids-navigating-confined-spaces-via-self-collision-",
           "title": "Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References",
           "category": "Loco-Manipulation and Whole-Body-Control",
@@ -1162,6 +1288,48 @@
           "category": "Safety-Critical Control",
           "date": "2025-08",
           "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.11129), Geometry-Aware Predictive Safety Filters on Humanoids"
+        }
+      ],
+      "detected_on": "2026-09-01"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "locomotion::reference-free-sampling-based-model-predictive-control",
+          "title": "Reference-Free Sampling-Based Model Predictive Control",
+          "category": "Locomotion",
+          "date": "2025-11",
+          "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.19204), Reference-Free Sampling-Based Model Predictive Control"
+        },
+        {
+          "key": "sampling-based-mpc::reference-free-sampling-based-model-predictive-control",
+          "title": "Reference-Free Sampling-Based Model Predictive Control",
+          "category": "Sampling-based MPC",
+          "date": "2025-11",
+          "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.19204), Reference-Free Sampling-Based Model Predictive Control"
+        }
+      ],
+      "detected_on": "2026-09-01"
+    },
+    {
+      "kind": "cross-section-listing",
+      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
+      "items": [
+        {
+          "key": "locomotion::reference-free-sampling-based-model-predictive-control",
+          "title": "Reference-Free Sampling-Based Model Predictive Control",
+          "category": "Locomotion",
+          "date": "2025-11",
+          "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.19204), Reference-Free Sampling-Based Model Predictive Control"
+        },
+        {
+          "key": "sampling-based-mpc::reference-free-sampling-based-model-predictive-control",
+          "title": "Reference-Free Sampling-Based Model Predictive Control",
+          "category": "Sampling-based MPC",
+          "date": "2025-11",
+          "line": "- [arXiv 2025.11](https://arxiv.org/abs/2511.19204), Reference-Free Sampling-Based Model Predictive Control"
         }
       ],
       "detected_on": "2026-09-01"
@@ -1360,18 +1528,18 @@
       "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
       "items": [
         {
-          "key": "teleoperation::avatarposer-articulated-full-body-pose-tracking-from-sparse-motion-sensing",
-          "title": "AvatarPoser: Articulated Full-Body Pose Tracking from Sparse Motion Sensing",
-          "category": "Teleoperation",
-          "date": "2022",
-          "line": "- 🌟 [ECCV 2022](https://arxiv.org/abs/2207.13784), AvatarPoser: Articulated Full-Body Pose Tracking from Sparse Motion Sensing, [website](https://siplab.org/projects/AvatarPoser) / [code](https://github.com/eth-siplab/AvatarPoser)"
+          "key": "manipulation::projection-retraction-mppi-exact-constraint-manifold-control-for-manipulators",
+          "title": "Projection-Retraction MPPI: Exact Constraint-Manifold Control for Manipulators",
+          "category": "Manipulation",
+          "date": "2026-08",
+          "line": "- [arXiv 2026.08](https://arxiv.org/abs/2608.07573), Projection-Retraction MPPI: Exact Constraint-Manifold Control for Manipulators, [website](https://rcilab.github.io/prmppi)"
         },
         {
-          "key": "human-motion-analysis-and-synthesis::avatarposer-articulated-full-body-pose-tracking-from-sparse-motion-sensing",
-          "title": "AvatarPoser: Articulated Full-Body Pose Tracking from Sparse Motion Sensing",
-          "category": "Human Motion Analysis and Synthesis",
-          "date": "2022",
-          "line": "- 🌟 [ECCV 2022](https://arxiv.org/abs/2207.13784), AvatarPoser: Articulated Full-Body Pose Tracking from Sparse Motion Sensing, [website](https://siplab.org/projects/AvatarPoser) / [code](https://github.com/eth-siplab/AvatarPoser)"
+          "key": "sampling-based-mpc::projection-retraction-mppi-exact-constraint-manifold-control-for-manipulators",
+          "title": "Projection-Retraction MPPI: Exact Constraint-Manifold Control for Manipulators",
+          "category": "Sampling-based MPC",
+          "date": "2026-08",
+          "line": "- [arXiv 2026.08](https://arxiv.org/abs/2608.07573), Projection-Retraction MPPI: Exact Constraint-Manifold Control for Manipulators, [website](https://rcilab.github.io/prmppi)"
         }
       ],
       "detected_on": "2026-09-01"
@@ -1381,60 +1549,18 @@
       "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
       "items": [
         {
-          "key": "teleoperation::avatarposer-articulated-full-body-pose-tracking-from-sparse-motion-sensing",
-          "title": "AvatarPoser: Articulated Full-Body Pose Tracking from Sparse Motion Sensing",
-          "category": "Teleoperation",
-          "date": "2022",
-          "line": "- 🌟 [ECCV 2022](https://arxiv.org/abs/2207.13784), AvatarPoser: Articulated Full-Body Pose Tracking from Sparse Motion Sensing, [website](https://siplab.org/projects/AvatarPoser) / [code](https://github.com/eth-siplab/AvatarPoser)"
+          "key": "manipulation::projection-retraction-mppi-exact-constraint-manifold-control-for-manipulators",
+          "title": "Projection-Retraction MPPI: Exact Constraint-Manifold Control for Manipulators",
+          "category": "Manipulation",
+          "date": "2026-08",
+          "line": "- [arXiv 2026.08](https://arxiv.org/abs/2608.07573), Projection-Retraction MPPI: Exact Constraint-Manifold Control for Manipulators, [website](https://rcilab.github.io/prmppi)"
         },
         {
-          "key": "human-motion-analysis-and-synthesis::avatarposer-articulated-full-body-pose-tracking-from-sparse-motion-sensing",
-          "title": "AvatarPoser: Articulated Full-Body Pose Tracking from Sparse Motion Sensing",
-          "category": "Human Motion Analysis and Synthesis",
-          "date": "2022",
-          "line": "- 🌟 [ECCV 2022](https://arxiv.org/abs/2207.13784), AvatarPoser: Articulated Full-Body Pose Tracking from Sparse Motion Sensing, [website](https://siplab.org/projects/AvatarPoser) / [code](https://github.com/eth-siplab/AvatarPoser)"
-        }
-      ],
-      "detected_on": "2026-09-01"
-    },
-    {
-      "kind": "cross-section-listing",
-      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
-      "items": [
-        {
-          "key": "teleoperation::egoposer-robust-real-time-egocentric-pose-estimation-from-sparse-and-intermitten",
-          "title": "EgoPoser: Robust Real-Time Egocentric Pose Estimation from Sparse and Intermittent Observations Everywhere",
-          "category": "Teleoperation",
-          "date": "2024",
-          "line": "- 🌟 [ECCV 2024](https://arxiv.org/pdf/2308.06493), EgoPoser: Robust Real-Time Egocentric Pose Estimation from Sparse and Intermittent Observations Everywhere, [website](https://siplab.org/projects/EgoPoser) / [code](https://github.com/eth-siplab/EgoPoser)"
-        },
-        {
-          "key": "human-motion-analysis-and-synthesis::egoposer-robust-real-time-egocentric-pose-estimation-from-sparse-and-intermitten",
-          "title": "EgoPoser: Robust Real-Time Egocentric Pose Estimation from Sparse and Intermittent Observations Everywhere",
-          "category": "Human Motion Analysis and Synthesis",
-          "date": "2024",
-          "line": "- 🌟 [ECCV 2024](https://arxiv.org/pdf/2308.06493), EgoPoser: Robust Real-Time Egocentric Pose Estimation from Sparse and Intermittent Observations Everywhere, [website](https://siplab.org/projects/EgoPoser) / [code](https://github.com/eth-siplab/EgoPoser)"
-        }
-      ],
-      "detected_on": "2026-09-01"
-    },
-    {
-      "kind": "cross-section-listing",
-      "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
-      "items": [
-        {
-          "key": "teleoperation::egoposer-robust-real-time-egocentric-pose-estimation-from-sparse-and-intermitten",
-          "title": "EgoPoser: Robust Real-Time Egocentric Pose Estimation from Sparse and Intermittent Observations Everywhere",
-          "category": "Teleoperation",
-          "date": "2024",
-          "line": "- 🌟 [ECCV 2024](https://arxiv.org/pdf/2308.06493), EgoPoser: Robust Real-Time Egocentric Pose Estimation from Sparse and Intermittent Observations Everywhere, [website](https://siplab.org/projects/EgoPoser) / [code](https://github.com/eth-siplab/EgoPoser)"
-        },
-        {
-          "key": "human-motion-analysis-and-synthesis::egoposer-robust-real-time-egocentric-pose-estimation-from-sparse-and-intermitten",
-          "title": "EgoPoser: Robust Real-Time Egocentric Pose Estimation from Sparse and Intermittent Observations Everywhere",
-          "category": "Human Motion Analysis and Synthesis",
-          "date": "2024",
-          "line": "- 🌟 [ECCV 2024](https://arxiv.org/pdf/2308.06493), EgoPoser: Robust Real-Time Egocentric Pose Estimation from Sparse and Intermittent Observations Everywhere, [website](https://siplab.org/projects/EgoPoser) / [code](https://github.com/eth-siplab/EgoPoser)"
+          "key": "sampling-based-mpc::projection-retraction-mppi-exact-constraint-manifold-control-for-manipulators",
+          "title": "Projection-Retraction MPPI: Exact Constraint-Manifold Control for Manipulators",
+          "category": "Sampling-based MPC",
+          "date": "2026-08",
+          "line": "- [arXiv 2026.08](https://arxiv.org/abs/2608.07573), Projection-Retraction MPPI: Exact Constraint-Manifold Control for Manipulators, [website](https://rcilab.github.io/prmppi)"
         }
       ],
       "detected_on": "2026-09-01"
@@ -1525,74 +1651,6 @@
           "key": "hardware-design::zeroth-bot",
           "title": "Zeroth Bot",
           "line": "- 2024.11, Zeroth Bot, [Github](https://github.com/zeroth-robotics/zeroth-bot)"
-        }
-      ],
-      "detected_on": "2026-09-01"
-    },
-    {
-      "kind": "out-of-order",
-      "reason": "in 'Human Motion Analysis and Synthesis', 2025-04 entry is listed after a 2025-03 entry (section must be newest-first)",
-      "items": [
-        {
-          "key": "human-motion-analysis-and-synthesis::frame-floor-aligned-representation-for-avatar-motion-from-egocentric-video",
-          "title": "FRAME: Floor-aligned Representation for Avatar Motion from Egocentric Video",
-          "line": "- [arXiv 2025.03](https://arxiv.org/abs/2503.23094), FRAME: Floor-aligned Representation for Avatar Motion from Egocentric Video, [website](https://vcai.mpi-inf.mpg.de/projects/FRAME/)"
-        },
-        {
-          "key": "human-motion-analysis-and-synthesis::humoto-a-4d-dataset-of-mocap-human-object-interactions",
-          "title": "HUMOTO: A 4D Dataset of Mocap Human Object Interactions",
-          "line": "- [arXiv 2025.04](https://arxiv.org/abs/2504.10414), HUMOTO: A 4D Dataset of Mocap Human Object Interactions, [website](https://jiaxin-lu.github.io/humoto/)"
-        }
-      ],
-      "detected_on": "2026-09-01"
-    },
-    {
-      "kind": "out-of-order",
-      "reason": "in 'Human Motion Analysis and Synthesis', 2025-04 entry is listed after a 2025-04 entry (section must be newest-first)",
-      "items": [
-        {
-          "key": "human-motion-analysis-and-synthesis::humoto-a-4d-dataset-of-mocap-human-object-interactions",
-          "title": "HUMOTO: A 4D Dataset of Mocap Human Object Interactions",
-          "line": "- [arXiv 2025.04](https://arxiv.org/abs/2504.10414), HUMOTO: A 4D Dataset of Mocap Human Object Interactions, [website](https://jiaxin-lu.github.io/humoto/)"
-        },
-        {
-          "key": "human-motion-analysis-and-synthesis::pico-reconstructing-3d-people-in-contact-with-objects",
-          "title": "PICO: Reconstructing 3D People In Contact with Objects",
-          "line": "- [arXiv 2025.04](https://arxiv.org/abs/2504.17695), PICO: Reconstructing 3D People In Contact with Objects"
-        }
-      ],
-      "detected_on": "2026-09-01"
-    },
-    {
-      "kind": "out-of-order",
-      "reason": "in 'Human Motion Analysis and Synthesis', 2025-12 entry is listed after a 2025-12 entry (section must be newest-first)",
-      "items": [
-        {
-          "key": "human-motion-analysis-and-synthesis::implicit-bezier-motion-model-for-precise-spatial-and-temporal-control",
-          "title": "Implicit Bézier Motion Model for Precise Spatial and Temporal Control",
-          "line": "- [website 2025.12](https://studios.disneyresearch.com/2025/12/03/implicit-bezier-motion-model-for-precise-spatial-and-temporal-control/), Implicit Bézier Motion Model for Precise Spatial and Temporal Control"
-        },
-        {
-          "key": "human-motion-analysis-and-synthesis::efficient-and-scalable-monocular-human-object-interaction-motion-reconstruction",
-          "title": "Efficient and Scalable Monocular Human-Object Interaction Motion Reconstruction",
-          "line": "- [arXiv 2025.12](https://arxiv.org/abs/2512.00960), Efficient and Scalable Monocular Human-Object Interaction Motion Reconstruction"
-        }
-      ],
-      "detected_on": "2026-09-01"
-    },
-    {
-      "kind": "out-of-order",
-      "reason": "in 'Human Motion Analysis and Synthesis', 2025-03 entry is listed after a 2025-03 entry (section must be newest-first)",
-      "items": [
-        {
-          "key": "human-motion-analysis-and-synthesis::primal-physically-reactive-and-interactive-motor-model-for-avatar-learning",
-          "title": "PRIMAL Physically Reactive and Interactive Motor Model for Avatar Learning",
-          "line": "- [arXiv 2025.03](https://arxiv.org/abs/2503.17544), PRIMAL Physically Reactive and Interactive Motor Model for Avatar Learning"
-        },
-        {
-          "key": "human-motion-analysis-and-synthesis::climbingcap-multi-modal-dataset-and-method-for-rock-climbing-in-world-coordinate",
-          "title": "ClimbingCap: Multi-Modal Dataset and Method for Rock Climbing in World Coordinate",
-          "line": "- [arXiv 2025.03](https://arxiv.org/abs/2503.21268), ClimbingCap: Multi-Modal Dataset and Method for Rock Climbing in World Coordinate"
         }
       ],
       "detected_on": "2026-09-01"
