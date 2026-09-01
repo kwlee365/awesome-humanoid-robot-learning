@@ -29,7 +29,7 @@ from parse_readme import DATA, REPO, render_entry  # noqa: E402
 REVIEW = os.path.join(REPO, "data", "review-queue.json")
 MANUAL = os.path.join(REPO, "data", "review-manual.json")
 READING = os.path.join(REPO, "data", "reading-status.json")
-READING_STATES = {"to-find", "in-progress", "done", None}
+READING_STATES = {"to-find", "in-progress", "done", "not-reading", None}
 TODAY = dt.date.today()
 
 errors: list[str] = []

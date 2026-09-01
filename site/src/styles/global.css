@@ -181,7 +181,7 @@ ul.papers .links { font-size: 0.82rem; color: var(--fg-faint); display: flex; ga
   background: var(--bg-inset);
   color: currentColor;
   cursor: pointer;
-  max-width: 8.5rem;
+  max-width: 11rem;
 }
 .rs-select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 .rs[data-value='to-find'] { color: var(--warn); }
@@ -190,6 +190,19 @@ ul.papers .links { font-size: 0.82rem; color: var(--fg-faint); display: flex; ga
 .rs[data-value='in-progress'] .rs-select { background: var(--accent-soft); border-color: transparent; }
 .rs[data-value='done'] { color: var(--ok); }
 .rs[data-value='done'] .rs-select { background: var(--ok-soft); border-color: transparent; }
+/* Set aside on purpose: struck through rather than coloured, because it is the
+   one status that means "stop showing me this". */
+.rs[data-value='not-reading'] { color: var(--fg-faint); }
+.rs[data-value='not-reading'] .rs-select {
+  background: var(--bg-inset);
+  border-color: transparent;
+  text-decoration: line-through;
+}
+/* The row itself recedes, so a decided-against paper stops competing for
+   attention even when the filter is showing everything. */
+ul.papers > li[data-reading='not-reading'] { opacity: 0.5; }
+ul.papers > li[data-reading='not-reading']:hover,
+ul.papers > li[data-reading='not-reading']:focus-within { opacity: 1; }
 
 .rs-line { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--fg-faint); }
 .rs-line .rs { margin-left: 0; }

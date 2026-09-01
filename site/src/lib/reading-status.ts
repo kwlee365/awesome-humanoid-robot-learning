@@ -1,7 +1,14 @@
 /**
  * Reading status: the one piece of per-paper state the reader owns rather than
- * the README. Three values, in the order a paper moves through them - "To Find",
- * "In Progress", "Done" - plus "not set" for everything untouched.
+ * the README. Three values follow a paper through the queue - "To Find",
+ * "In Progress", "Done" - and a fourth, "Decide Not To Read", takes it out of
+ * the queue deliberately. Everything untouched is "not set".
+ *
+ * That fourth state is the site's answer to "can I just delete this paper?".
+ * The list itself is the README's, shared with everyone and rebuilt twice a day
+ * from it, so deleting an entry there would only invite the discovery sweep to
+ * propose it again. Deciding not to read it is a judgement about your own
+ * reading, it is yours, it survives, and the filter can hide those rows.
  *
  * It is kept in two places. The browser holds the fast copy: a click is written
  * to localStorage immediately, with no token and no network. The committed
@@ -17,6 +24,7 @@ export const READING_STATUSES = [
   { id: 'to-find', label: 'To Find' },
   { id: 'in-progress', label: 'In Progress' },
   { id: 'done', label: 'Done' },
+  { id: 'not-reading', label: 'Decide Not To Read' },
 ] as const;
 
 export type ReadingStatusId = (typeof READING_STATUSES)[number]['id'];

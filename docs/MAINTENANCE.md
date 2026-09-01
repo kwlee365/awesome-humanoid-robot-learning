@@ -184,6 +184,12 @@ create a missing blank note. It must never rewrite, summarise, translate,
 reorganise or delete an existing one, and must never merge generated text into
 one. `--check` is part of the deploy workflow.
 
+The reader marks papers To Find / In Progress / Done / Decide Not To Read on the
+site. The fourth is how a paper leaves their queue without being read: it dims
+the row and the filter can hide it, but it never touches `README.md`, because
+removing an entry there would simply let the next discovery sweep propose it
+again.
+
 `data/reading-status.json` belongs to the repository owner in the same way, and
 the same `--check` guards it: the run fails if that file was modified or deleted
 in the working tree. Only creating it when missing is allowed.
