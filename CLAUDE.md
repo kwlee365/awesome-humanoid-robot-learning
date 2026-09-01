@@ -50,6 +50,7 @@ data/reading-status.json user-owned: reading status per paper, written by the si
 data/discovery-state.json which month each discovery channel first swept
 data/discovery-candidates.json unverified candidate queue, carried between runs
 scripts/discover.py      enumerate candidate papers from arXiv/Crossref/OpenAlex/S2
+scripts/apply_promotions.py  update entries whose preprint has since been published
 scripts/parse_readme.py  README.md  -> data/papers.json (round-trip checked)
 scripts/validate.py      duplicates, dates, links, ordering, required metadata
 scripts/add_papers.py    insert verified new papers into README.md + metadata
@@ -85,6 +86,11 @@ README-derived fields, edit `README.md` instead.
   snippet. Never invent abstracts, venues, project pages, code links or results.
   `scripts/discover.py` finds candidates but verifies nothing: its output carries
   no `verified_on`, which is exactly why `add_papers.py` refuses it unread.
+- Authors and abstracts may be taken verbatim from arXiv's own API by
+  `discover.py --refresh`, which records the abs page as `abstract_source`. That
+  is a primary source read by machine rather than by eye, and it is the only such
+  exception: `overview`, `real_robot` and `tags` still require somebody to read
+  the paper, and no venue is ever written from an index alone.
 - For preprints record the FIRST arXiv submission month, not the latest revision.
 - Apply the open-source star only when a public code repository has been verified.
   A project page alone does not qualify.

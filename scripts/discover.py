@@ -938,6 +938,212 @@ CHANNELS = {c.name: c for c in (ArxivChannel(), CrossrefChannel(),
                                 OpenAlexChannel(), SemanticScholarChannel())}
 
 
+# --------------------------------------------------------------------------
+# Refreshing what is already listed
+#
+# Discovery answers "what is new". This answers the other question the list gets
+# wrong over time: an entry added as a preprint stays a preprint in the README
+# for ever, because nothing ever goes back to look. Nearly every entry here is
+# filed as `arXiv YYYY.MM` and a good share of them have since appeared at RA-L,
+# IROS, Humanoids or CoRL.
+#
+# Two facts are fetched, and only two, because only these can be taken from an
+# API without a judgement call:
+#
+#   * the authors and the abstract, verbatim from arXiv's own API. This is the
+#     primary source - the same text the abs page shows - so the record carries
+#     the abs URL as `abstract_source` and a `verified_on` date. What is NOT
+#     filled is `overview`, `real_robot` and `tags`: those need somebody to read
+#     the paper and decide, and inventing them is exactly what the repository
+#     rules forbid.
+#   * the venue, when Semantic Scholar or arXiv's own `journal_ref` says the
+#     preprint has been published somewhere that is not arXiv. That changes a
+#     README line, so it is reported for a human to apply rather than applied.
+# --------------------------------------------------------------------------
+
+ARXIV_BATCH = 100
+S2_BATCH = 400
+
+#: Long venue names as this README writes them. Anything not here is reported
+#: raw, because inventing an abbreviation is how a list starts disagreeing with
+#: itself about what "RA-L" is called.
+VENUE_SHORT = (
+    ("ieee robotics and automation letters", "RA-L"),
+    ("ieee transactions on robotics", "T-RO"),
+    ("international conference on robotics and automation", "ICRA"),
+    ("international conference on intelligent robots and systems", "IROS"),
+    ("international conference on humanoid robots", "Humanoids"),
+    ("conference on robot learning", "CoRL"),
+    ("robotics: science and systems", "RSS"),
+    ("international journal of robotics research", "IJRR"),
+    ("science robotics", "Science Robotics"),
+    ("advanced intelligent mechatronics", "AIM"),
+    ("international conference on learning representations", "ICLR"),
+    ("neural information processing systems", "NeurIPS"),
+    ("computer vision and pattern recognition", "CVPR"),
+    ("international conference on computer vision", "ICCV"),
+    ("european conference on computer vision", "ECCV"),
+)
+
+
+def _batched(items: list, size: int):
+    for start in range(0, len(items), size):
+        yield items[start:start + size]
+
+
+def _venue_year(doi: str):
+    """The year a conference DOI carries, which beats any index's date field.
+
+    Semantic Scholar's publicationDate is often the arXiv date, so trusting it
+    produces confident nonsense - "ICRA 2017" for a paper whose DOI plainly says
+    ICRA.2018. A DOI that carries no year yields None, and the venue is then
+    reported without one for a human to fill in.
+    """
+    if not doi:
+        return None
+    for token in re.findall(r"(?<!\d)(19|20)(\d{2})(?!\d)", doi):
+        year = int(token[0] + token[1])
+        if 1990 <= year <= TODAY.year + 1:
+            return year
+    return None
+
+
+def _short_venue(name: str, doi: str) -> str:
+    """The README's own name for a venue, or None if we do not know one."""
+    lowered = (name or "").lower()
+    for needle, short in VENUE_SHORT:
+        if needle in lowered:
+            year = _venue_year(doi)
+            return f"{short} {year}" if year else short
+    return None
+
+
+def arxiv_metadata(http: Http, ids: list, cfg: dict) -> dict:
+    """Authors, abstract and any journal reference, straight from arXiv."""
+    out = {}
+    channel = ArxivChannel()
+    for chunk in _batched(ids, ARXIV_BATCH):
+        params = urllib.parse.urlencode({"id_list": ",".join(chunk), "max_results": len(chunk)})
+        body = http.get(f"{channel.ENDPOINT}?{params}",
+                        spacing=cfg.get("arxiv_spacing", 5.0), stop_on_429=True)
+        root = ET.fromstring(body)
+        for entry in root.findall(f"{channel.ATOM}entry"):
+            record = channel._entry(entry)
+            if record:
+                out[record["arxiv_id"]] = record
+    return out
+
+
+def s2_metadata(http: Http, ids: list) -> dict:
+    """Where Semantic Scholar thinks each preprint was finally published."""
+    out = {}
+    for chunk in _batched(ids, S2_BATCH):
+        try:
+            found = http.post_json(
+                "https://api.semanticscholar.org/graph/v1/paper/batch"
+                "?fields=externalIds,venue,publicationTypes,publicationDate",
+                {"ids": [f"ARXIV:{i}" for i in chunk]})
+            found = json.loads(found)
+        except Exception as exc:                          # noqa: BLE001 - optional
+            print(f"  ! semantic scholar batch failed ({exc}); "
+                  f"{len(chunk)} record(s) not checked for a venue")
+            continue
+        if not isinstance(found, list):
+            print("  ! semantic scholar answered with an error object; skipping this batch")
+            continue
+        for arxiv_id, match in zip(chunk, found):
+            if match:
+                out[arxiv_id] = match
+    return out
+
+
+def _published_venue(arxiv_record, s2_record) -> tuple:
+    """(venue name, doi, which source said so), or (None, None, None).
+
+    A DOI under the 10.48550 prefix is arXiv's own, and a venue of "arXiv.org"
+    is Semantic Scholar's way of saying "still a preprint" - neither is a
+    publication, and treating them as one would mark the whole list as published.
+    """
+    if s2_record:
+        venue = (s2_record.get("venue") or "").strip()
+        doi = ((s2_record.get("externalIds") or {}).get("DOI") or "").strip()
+        if venue and venue.lower() not in ("arxiv.org", "arxiv"):
+            return venue, doi or None, "semantic-scholar"
+    if arxiv_record:
+        journal = (arxiv_record.get("venue_hint") or "").strip()
+        doi = (arxiv_record.get("doi") or "").strip()
+        if journal:
+            return journal, doi or None, "arxiv-journal-ref"
+    return None, None, None
+
+
+def refresh(http: Http, papers: list, cfg: dict, limit: int = 0) -> dict:
+    """Re-check listed records against the sources that can correct them."""
+    wanted = [p for p in papers if p.get("arxiv_id")]
+    if limit:
+        # Oldest first: those have had the most time to be published and are the
+        # least likely to have been looked at recently.
+        wanted = sorted(wanted, key=lambda p: p.get("first_public_date") or "")[:limit]
+    ids = sorted({p["arxiv_id"] for p in wanted})
+    print(f"refreshing {len(ids)} listed record(s) with an arXiv id")
+
+    from_arxiv = arxiv_metadata(http, ids, cfg)
+    print(f"  arxiv      {len(from_arxiv):5} record(s)")
+    from_s2 = s2_metadata(http, ids)
+    print(f"  s2         {len(from_s2):5} record(s)")
+
+    enrichment, promotions = [], []
+    for paper in wanted:
+        arxiv_id = paper["arxiv_id"]
+        a, s2 = from_arxiv.get(arxiv_id), from_s2.get(arxiv_id)
+
+        if a:
+            payload = {"arxiv_id": arxiv_id}
+            if a.get("authors") and not paper.get("authors"):
+                payload["authors"] = a["authors"]
+            if a.get("abstract") and not paper.get("abstract"):
+                payload["abstract"] = a["abstract"]
+                payload["abstract_source"] = f"https://arxiv.org/abs/{arxiv_id}"
+            if len(payload) > 1:
+                # Verbatim from arXiv's API, with the abs page recorded as the
+                # source. Nothing here is written, summarised or inferred.
+                payload["verified_on"] = TODAY.isoformat()
+                enrichment.append(payload)
+
+        # Only a record still filed as a preprint can be promoted. One already
+        # showing a venue - as its own prefix or as an alt venue - is not news.
+        already_published = (paper.get("alt_venue")
+                             or paper.get("publication_status") != "preprint")
+        venue, doi, source = _published_venue(a, s2)
+        if venue and not already_published:
+            short = _short_venue(venue, doi)
+            promotions.append({
+                "arxiv_id": arxiv_id,
+                "title": paper["title"],
+                "readme_line": paper["readme_line"],
+                "listed_as": paper.get("venue_raw"),
+                "published_venue": venue,
+                "suggested_venue": short,
+                "doi": doi,
+                "source": source,
+                "note": ("insert ' / <venue>' after the arXiv link in the README line, "
+                         "and confirm the venue string against the DOI before writing it"),
+            })
+
+    return {
+        "generated_on": TODAY.isoformat(),
+        "note": "Re-checked metadata for records already in the list. `enrichment` is "
+                "ready for `scripts/enrich.py --apply`: authors and abstracts verbatim "
+                "from arXiv's API, with the abs page as their source. `promotions` "
+                "changes README lines and is deliberately NOT applied automatically - "
+                "confirm each venue against its DOI first.",
+        "counts": {"checked": len(wanted), "enrichment": len(enrichment),
+                   "promotions": len(promotions)},
+        "enrichment": enrichment,
+        "promotions": promotions,
+    }
+
+
 def resolve_twins(http: Http, candidates: list) -> int:
     """Find the arXiv twin of a candidate that arrived without a readable source.
 
@@ -1157,6 +1363,12 @@ def main() -> int:
     ap.add_argument("--arxiv-spacing", type=float, default=5.0)
     ap.add_argument("--openalex-floor", type=int, default=50,
                     help="stop the OpenAlex sweep with this many daily credits left")
+    ap.add_argument("--refresh", action="store_true",
+                    help="instead of sweeping for new papers, re-check the records "
+                         "already listed: fill missing authors and abstracts from "
+                         "arXiv, and report preprints that have since been published")
+    ap.add_argument("--refresh-limit", type=int, default=0,
+                    help="check only the N oldest listed records (0 = all)")
     ap.add_argument("--no-resolve", action="store_true",
                     help="skip looking up the arXiv twin of venue-only candidates")
     ap.add_argument("--dry-run", action="store_true", help="do not write the sweep ledger")
@@ -1178,6 +1390,22 @@ def main() -> int:
         "openalex_floor": args.openalex_floor,
     }
 
+    with open(DATA, encoding="utf-8") as fh:
+        listed = json.load(fh)["papers"]
+
+    if args.refresh:
+        http = Http(verbose=args.verbose)
+        report = refresh(http, listed, cfg, args.refresh_limit)
+        out = args.out
+        if out.endswith("discovery-candidates.json"):
+            # Do not overwrite the candidate queue with a different kind of file.
+            out = os.path.join(REPO, "metadata-refresh.json")
+        write_json(out, report)
+        print(f"{report['counts']['enrichment']} record(s) can be enriched from arXiv, "
+              f"{report['counts']['promotions']} preprint(s) look published")
+        print(f"written to {out}")
+        return 0
+
     state = load_state(args.state)
     if args.set_floor:
         state["floor"] = args.set_floor
@@ -1186,8 +1414,7 @@ def main() -> int:
     planning = dict(state, floor=args.floor) if args.floor else state
     months = args.month or plan_months(planning, channels, args.recent, args.backfill)
 
-    with open(DATA, encoding="utf-8") as fh:
-        known = Known(json.load(fh)["papers"])
+    known = Known(listed)
 
     print(f"sweeping {', '.join(months)} across {', '.join(names)}")
     http = Http(verbose=args.verbose)

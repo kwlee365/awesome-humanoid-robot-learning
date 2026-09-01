@@ -172,6 +172,33 @@ narrative when the paper marks a genuine methodological shift, a new research
 paradigm, or an important demonstrated capability. Every substantive historical
 claim in these files must carry a link.
 
+## 5b. Refreshing entries that have gone stale
+
+```bash
+python3 scripts/discover.py --refresh          # -> metadata-refresh.json
+python3 scripts/apply_promotions.py --dry-run
+python3 scripts/apply_promotions.py
+```
+
+Discovery answers "what is new". This answers the question the list gets wrong
+over time: an entry added as a preprint never learns that it was published.
+
+`--refresh` takes two things and only two, because only these can come from an
+API without a judgement call. Authors and abstracts come verbatim from arXiv's
+own API, with the abs page recorded as `abstract_source` - a primary source read
+by machine rather than by eye. Venues come from Semantic Scholar or arXiv's
+`journal-ref`, and are only ever *reported*.
+
+`apply_promotions.py` writes a venue only when the DOI corroborates it
+independently: `10.1109/Humanoids65713.2025.*` says both the venue and the year
+without anyone's help. Roughly half of them qualify. The rest - CoRL, RSS,
+NeurIPS, ICLR, Science Robotics, ACM TOG, whose DOIs carry no year - stay in the
+report for a human, because guessing a venue string is how a curated list starts
+contradicting itself.
+
+What is never filled automatically: `overview`, `real_robot` and `tags`. Those
+need the paper read, and `enrich.py --queue` exists for exactly that.
+
 ## 6. Reader-owned files
 
 ```bash

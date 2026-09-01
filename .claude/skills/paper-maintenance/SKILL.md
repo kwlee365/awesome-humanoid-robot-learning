@@ -134,15 +134,40 @@ newest-first position and copies the verified metadata into `data/papers.json`.
 If nothing survives verification it writes nothing: leave `README.md` unchanged
 and do not create an empty commit.
 
-## 4. Enrich a batch of older records
+## 4. Refresh what is already listed
+
+An entry added as a preprint stays a preprint for ever unless something goes back
+to look, and most of this list is filed as `arXiv YYYY.MM`.
 
 ```bash
+python3 scripts/discover.py --refresh          # -> metadata-refresh.json
+python3 scripts/apply_promotions.py --dry-run  # read this before running it
+python3 scripts/apply_promotions.py
+```
+
+`--refresh` fills missing authors and abstracts verbatim from arXiv's API and
+reports preprints that Semantic Scholar or arXiv's own `journal-ref` says have
+been published. `apply_promotions.py` writes only the promotions whose DOI
+corroborates both the venue and the year - `10.1109/LRA.2026.*` says RA-L and
+2026 by itself - and leaves everything else in the report.
+
+The rest of the report is yours to judge. CoRL, RSS, NeurIPS, ICLR, Science
+Robotics and ACM TOG DOIs carry no year, so those never auto-apply; confirm the
+venue against the DOI and edit the README line by hand. Do not invent a short
+venue name this list has not used before.
+
+Then apply the enrichment, and take a batch of older records further:
+
+```bash
+python3 -c "import json;d=json.load(open('metadata-refresh.json'));json.dump(d['enrichment'],open('enrich.json','w'))"
+python3 scripts/enrich.py --apply enrich.json
 python3 scripts/enrich.py --queue 20 > queue.json
 ```
 
-Read each primary source, then `python3 scripts/enrich.py --apply records.json`.
-A payload without a `verified_on` date is rejected. Never write an abstract you
-did not read.
+`--queue` lists the records that most need what a machine cannot supply: the
+`overview`, the real-robot flag and the tags. Read each primary source, then
+`python3 scripts/enrich.py --apply records.json`. A payload without a
+`verified_on` date is rejected. Never write an overview you did not read.
 
 ## 5. Narratives
 

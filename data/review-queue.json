@@ -377,14 +377,14 @@
           "title": "Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation",
           "category": "Loco-Manipulation and Whole-Body-Control",
           "date": "2024-03",
-          "line": "- 🌟 [arXiv 2024.03](https://arxiv.org/abs/2403.04436), Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation, [website](https://human2humanoid.com/) / [code](https://github.com/LeCAR-Lab/human2humanoid)"
+          "line": "- 🌟 [arXiv 2024.03](https://arxiv.org/abs/2403.04436) / IROS 2024, Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation, [website](https://human2humanoid.com/) / [code](https://github.com/LeCAR-Lab/human2humanoid)"
         },
         {
           "key": "teleoperation::learning-human-to-humanoid-real-time-whole-body-teleoperation",
           "title": "Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation",
           "category": "Teleoperation",
           "date": "2024-03",
-          "line": "- [arXiv 2024.03](https://arxiv.org/abs/2403.04436), Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation, [website](https://human2humanoid.com/)"
+          "line": "- [arXiv 2024.03](https://arxiv.org/abs/2403.04436) / IROS 2024, Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation, [website](https://human2humanoid.com/)"
         }
       ],
       "detected_on": "2026-09-01"
@@ -398,14 +398,14 @@
           "title": "Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation",
           "category": "Loco-Manipulation and Whole-Body-Control",
           "date": "2024-03",
-          "line": "- 🌟 [arXiv 2024.03](https://arxiv.org/abs/2403.04436), Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation, [website](https://human2humanoid.com/) / [code](https://github.com/LeCAR-Lab/human2humanoid)"
+          "line": "- 🌟 [arXiv 2024.03](https://arxiv.org/abs/2403.04436) / IROS 2024, Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation, [website](https://human2humanoid.com/) / [code](https://github.com/LeCAR-Lab/human2humanoid)"
         },
         {
           "key": "teleoperation::learning-human-to-humanoid-real-time-whole-body-teleoperation",
           "title": "Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation",
           "category": "Teleoperation",
           "date": "2024-03",
-          "line": "- [arXiv 2024.03](https://arxiv.org/abs/2403.04436), Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation, [website](https://human2humanoid.com/)"
+          "line": "- [arXiv 2024.03](https://arxiv.org/abs/2403.04436) / IROS 2024, Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation, [website](https://human2humanoid.com/)"
         }
       ],
       "detected_on": "2026-09-01"
@@ -503,14 +503,14 @@
           "title": "Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing",
           "category": "Loco-Manipulation and Whole-Body-Control",
           "date": "2024-09",
-          "line": "- [arXiv 2024.09](https://arxiv.org/abs/2409.15610), Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing"
+          "line": "- [arXiv 2024.09](https://arxiv.org/abs/2409.15610) / ICRA 2025, Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing"
         },
         {
           "key": "sampling-based-mpc::full-order-sampling-based-mpc-for-torque-level-locomotion-control-via-diffusion-",
           "title": "Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing",
           "category": "Sampling-based MPC",
           "date": "2024-09",
-          "line": "- [arXiv 2024.09](https://arxiv.org/abs/2409.15610), Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing"
+          "line": "- [arXiv 2024.09](https://arxiv.org/abs/2409.15610) / ICRA 2025, Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing"
         }
       ],
       "detected_on": "2026-09-01"
@@ -524,14 +524,14 @@
           "title": "Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing",
           "category": "Loco-Manipulation and Whole-Body-Control",
           "date": "2024-09",
-          "line": "- [arXiv 2024.09](https://arxiv.org/abs/2409.15610), Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing"
+          "line": "- [arXiv 2024.09](https://arxiv.org/abs/2409.15610) / ICRA 2025, Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing"
         },
         {
           "key": "sampling-based-mpc::full-order-sampling-based-mpc-for-torque-level-locomotion-control-via-diffusion-",
           "title": "Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing",
           "category": "Sampling-based MPC",
           "date": "2024-09",
-          "line": "- [arXiv 2024.09](https://arxiv.org/abs/2409.15610), Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing"
+          "line": "- [arXiv 2024.09](https://arxiv.org/abs/2409.15610) / ICRA 2025, Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing"
         }
       ],
       "detected_on": "2026-09-01"
@@ -545,14 +545,14 @@
           "title": "**Mobile-TeleVision**: Predictive Motion Priors for Humanoid Whole-Body Control",
           "category": "Loco-Manipulation and Whole-Body-Control",
           "date": "2024-12",
-          "line": "- [arXiv 2024.12](https://arxiv.org/abs/2412.07773), **Mobile-TeleVision**: Predictive Motion Priors for Humanoid Whole-Body Control, [website](https://mobile-tv.github.io/)"
+          "line": "- [arXiv 2024.12](https://arxiv.org/abs/2412.07773) / ICRA 2025, **Mobile-TeleVision**: Predictive Motion Priors for Humanoid Whole-Body Control, [website](https://mobile-tv.github.io/)"
         },
         {
           "key": "teleoperation::mobile-television-predictive-motion-priors-for-humanoid-whole-body-control",
           "title": "Mobile-TeleVision: Predictive Motion Priors for Humanoid Whole-Body Control",
           "category": "Teleoperation",
           "date": "2024-12",
-          "line": "- [arXiv 2024.12](https://arxiv.org/abs/2412.07773), Mobile-TeleVision: Predictive Motion Priors for Humanoid Whole-Body Control"
+          "line": "- [arXiv 2024.12](https://arxiv.org/abs/2412.07773) / ICRA 2025, Mobile-TeleVision: Predictive Motion Priors for Humanoid Whole-Body Control"
         }
       ],
       "detected_on": "2026-09-01"
@@ -566,14 +566,14 @@
           "title": "**Mobile-TeleVision**: Predictive Motion Priors for Humanoid Whole-Body Control",
           "category": "Loco-Manipulation and Whole-Body-Control",
           "date": "2024-12",
-          "line": "- [arXiv 2024.12](https://arxiv.org/abs/2412.07773), **Mobile-TeleVision**: Predictive Motion Priors for Humanoid Whole-Body Control, [website](https://mobile-tv.github.io/)"
+          "line": "- [arXiv 2024.12](https://arxiv.org/abs/2412.07773) / ICRA 2025, **Mobile-TeleVision**: Predictive Motion Priors for Humanoid Whole-Body Control, [website](https://mobile-tv.github.io/)"
         },
         {
           "key": "teleoperation::mobile-television-predictive-motion-priors-for-humanoid-whole-body-control",
           "title": "Mobile-TeleVision: Predictive Motion Priors for Humanoid Whole-Body Control",
           "category": "Teleoperation",
           "date": "2024-12",
-          "line": "- [arXiv 2024.12](https://arxiv.org/abs/2412.07773), Mobile-TeleVision: Predictive Motion Priors for Humanoid Whole-Body Control"
+          "line": "- [arXiv 2024.12](https://arxiv.org/abs/2412.07773) / ICRA 2025, Mobile-TeleVision: Predictive Motion Priors for Humanoid Whole-Body Control"
         }
       ],
       "detected_on": "2026-09-01"
@@ -1175,14 +1175,14 @@
           "title": "SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics",
           "category": "Locomotion",
           "date": "2025-05",
-          "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.11494), SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics"
+          "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.11494) / IROS 2025, SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics"
         },
         {
           "key": "safety-critical-control::shield-safety-on-humanoids-via-cbfs-in-expectation-on-learned-dynamics",
           "title": "SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics",
           "category": "Safety-Critical Control",
           "date": "2025-05",
-          "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.11494), SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics"
+          "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.11494) / IROS 2025, SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics"
         }
       ],
       "detected_on": "2026-09-01"
@@ -1196,14 +1196,14 @@
           "title": "SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics",
           "category": "Locomotion",
           "date": "2025-05",
-          "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.11494), SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics"
+          "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.11494) / IROS 2025, SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics"
         },
         {
           "key": "safety-critical-control::shield-safety-on-humanoids-via-cbfs-in-expectation-on-learned-dynamics",
           "title": "SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics",
           "category": "Safety-Critical Control",
           "date": "2025-05",
-          "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.11494), SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics"
+          "line": "- [arXiv 2025.05](https://arxiv.org/abs/2505.11494) / IROS 2025, SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics"
         }
       ],
       "detected_on": "2026-09-01"
@@ -1259,14 +1259,14 @@
           "title": "Geometry-Aware Predictive Safety Filters on Humanoids",
           "category": "Locomotion",
           "date": "2025-08",
-          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.11129), Geometry-Aware Predictive Safety Filters on Humanoids"
+          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.11129) / Humanoids 2025, Geometry-Aware Predictive Safety Filters on Humanoids"
         },
         {
           "key": "safety-critical-control::geometry-aware-predictive-safety-filters-on-humanoids",
           "title": "Geometry-Aware Predictive Safety Filters on Humanoids",
           "category": "Safety-Critical Control",
           "date": "2025-08",
-          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.11129), Geometry-Aware Predictive Safety Filters on Humanoids"
+          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.11129) / Humanoids 2025, Geometry-Aware Predictive Safety Filters on Humanoids"
         }
       ],
       "detected_on": "2026-09-01"
@@ -1280,14 +1280,14 @@
           "title": "Geometry-Aware Predictive Safety Filters on Humanoids",
           "category": "Locomotion",
           "date": "2025-08",
-          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.11129), Geometry-Aware Predictive Safety Filters on Humanoids"
+          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.11129) / Humanoids 2025, Geometry-Aware Predictive Safety Filters on Humanoids"
         },
         {
           "key": "safety-critical-control::geometry-aware-predictive-safety-filters-on-humanoids",
           "title": "Geometry-Aware Predictive Safety Filters on Humanoids",
           "category": "Safety-Critical Control",
           "date": "2025-08",
-          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.11129), Geometry-Aware Predictive Safety Filters on Humanoids"
+          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.11129) / Humanoids 2025, Geometry-Aware Predictive Safety Filters on Humanoids"
         }
       ],
       "detected_on": "2026-09-01"
@@ -1343,14 +1343,14 @@
           "title": "Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning",
           "category": "Manipulation",
           "date": "2024-07",
-          "line": "- 🌟 [arXiv 2024.07](https://arxiv.org/abs/2407.03162), Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning, [website](https://dingry.github.io/projects/bunny_visionpro.html) / [code](https://github.com/Dingry/BunnyVisionPro)"
+          "line": "- 🌟 [arXiv 2024.07](https://arxiv.org/abs/2407.03162) / IROS 2025, Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning, [website](https://dingry.github.io/projects/bunny_visionpro.html) / [code](https://github.com/Dingry/BunnyVisionPro)"
         },
         {
           "key": "teleoperation::bunny-visionpro-real-time-bimanual-dexterous-teleoperation-for-imitation-learnin",
           "title": "Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning",
           "category": "Teleoperation",
           "date": "2024-07",
-          "line": "- 🌟 [arXiv 2024.07](https://arxiv.org/abs/2407.03162), Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning, [website](https://dingry.github.io/projects/bunny_visionpro.html) / [code](https://github.com/Dingry/BunnyVisionPro)"
+          "line": "- 🌟 [arXiv 2024.07](https://arxiv.org/abs/2407.03162) / IROS 2025, Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning, [website](https://dingry.github.io/projects/bunny_visionpro.html) / [code](https://github.com/Dingry/BunnyVisionPro)"
         }
       ],
       "detected_on": "2026-09-01"
@@ -1364,14 +1364,14 @@
           "title": "Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning",
           "category": "Manipulation",
           "date": "2024-07",
-          "line": "- 🌟 [arXiv 2024.07](https://arxiv.org/abs/2407.03162), Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning, [website](https://dingry.github.io/projects/bunny_visionpro.html) / [code](https://github.com/Dingry/BunnyVisionPro)"
+          "line": "- 🌟 [arXiv 2024.07](https://arxiv.org/abs/2407.03162) / IROS 2025, Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning, [website](https://dingry.github.io/projects/bunny_visionpro.html) / [code](https://github.com/Dingry/BunnyVisionPro)"
         },
         {
           "key": "teleoperation::bunny-visionpro-real-time-bimanual-dexterous-teleoperation-for-imitation-learnin",
           "title": "Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning",
           "category": "Teleoperation",
           "date": "2024-07",
-          "line": "- 🌟 [arXiv 2024.07](https://arxiv.org/abs/2407.03162), Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning, [website](https://dingry.github.io/projects/bunny_visionpro.html) / [code](https://github.com/Dingry/BunnyVisionPro)"
+          "line": "- 🌟 [arXiv 2024.07](https://arxiv.org/abs/2407.03162) / IROS 2025, Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning, [website](https://dingry.github.io/projects/bunny_visionpro.html) / [code](https://github.com/Dingry/BunnyVisionPro)"
         }
       ],
       "detected_on": "2026-09-01"
@@ -1469,14 +1469,14 @@
           "title": "Generalizable Humanoid Manipulation with Improved 3D Diffusion Policies",
           "category": "Manipulation",
           "date": "2024-10",
-          "line": "- 🌟 [arXiv 2024.10](https://arxiv.org/abs/2410.10803), Generalizable Humanoid Manipulation with Improved 3D Diffusion Policies, [website](https://humanoid-manipulation.github.io/) / [code](https://github.com/YanjieZe/Improved-3D-Diffusion-Policy)"
+          "line": "- 🌟 [arXiv 2024.10](https://arxiv.org/abs/2410.10803) / IROS 2025, Generalizable Humanoid Manipulation with Improved 3D Diffusion Policies, [website](https://humanoid-manipulation.github.io/) / [code](https://github.com/YanjieZe/Improved-3D-Diffusion-Policy)"
         },
         {
           "key": "teleoperation::generalizable-humanoid-manipulation-with-3d-diffusion-policies",
           "title": "Generalizable Humanoid Manipulation with 3D Diffusion Policies",
           "category": "Teleoperation",
           "date": "2024-10",
-          "line": "- 🌟 [arXiv 2024.10](https://arxiv.org/abs/2410.10803), Generalizable Humanoid Manipulation with 3D Diffusion Policies, [website](https://humanoid-manipulation.github.io/) / [code](https://github.com/YanjieZe/Improved-3D-Diffusion-Policy)"
+          "line": "- 🌟 [arXiv 2024.10](https://arxiv.org/abs/2410.10803) / IROS 2025, Generalizable Humanoid Manipulation with 3D Diffusion Policies, [website](https://humanoid-manipulation.github.io/) / [code](https://github.com/YanjieZe/Improved-3D-Diffusion-Policy)"
         }
       ],
       "detected_on": "2026-09-01"
@@ -1490,14 +1490,14 @@
           "title": "Generalizable Humanoid Manipulation with Improved 3D Diffusion Policies",
           "category": "Manipulation",
           "date": "2024-10",
-          "line": "- 🌟 [arXiv 2024.10](https://arxiv.org/abs/2410.10803), Generalizable Humanoid Manipulation with Improved 3D Diffusion Policies, [website](https://humanoid-manipulation.github.io/) / [code](https://github.com/YanjieZe/Improved-3D-Diffusion-Policy)"
+          "line": "- 🌟 [arXiv 2024.10](https://arxiv.org/abs/2410.10803) / IROS 2025, Generalizable Humanoid Manipulation with Improved 3D Diffusion Policies, [website](https://humanoid-manipulation.github.io/) / [code](https://github.com/YanjieZe/Improved-3D-Diffusion-Policy)"
         },
         {
           "key": "teleoperation::generalizable-humanoid-manipulation-with-3d-diffusion-policies",
           "title": "Generalizable Humanoid Manipulation with 3D Diffusion Policies",
           "category": "Teleoperation",
           "date": "2024-10",
-          "line": "- 🌟 [arXiv 2024.10](https://arxiv.org/abs/2410.10803), Generalizable Humanoid Manipulation with 3D Diffusion Policies, [website](https://humanoid-manipulation.github.io/) / [code](https://github.com/YanjieZe/Improved-3D-Diffusion-Policy)"
+          "line": "- 🌟 [arXiv 2024.10](https://arxiv.org/abs/2410.10803) / IROS 2025, Generalizable Humanoid Manipulation with 3D Diffusion Policies, [website](https://humanoid-manipulation.github.io/) / [code](https://github.com/YanjieZe/Improved-3D-Diffusion-Policy)"
         }
       ],
       "detected_on": "2026-09-01"
@@ -1633,7 +1633,7 @@
         {
           "key": "hardware-design::quasi-direct-drive-for-low-cost-compliant-robotic-manipulation",
           "title": "Quasi-Direct Drive for Low-Cost Compliant Robotic Manipulation",
-          "line": "- [arXiv 2019.04](https://arxiv.org/abs/1904.03815), Quasi-Direct Drive for Low-Cost Compliant Robotic Manipulation, [website](https://berkeleyopenarms.github.io/)"
+          "line": "- [arXiv 2019.04](https://arxiv.org/abs/1904.03815) / ICRA 2019, Quasi-Direct Drive for Low-Cost Compliant Robotic Manipulation, [website](https://berkeleyopenarms.github.io/)"
         },
         {
           "key": "hardware-design::zeroth-bot",
@@ -1913,12 +1913,12 @@
         {
           "key": "navigation::learning-social-navigation-from-positive-and-negative-demonstrations-and-rule-ba",
           "title": "Learning Social Navigation from Positive and Negative Demonstrations and Rule-Based Specifications",
-          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.06779), Learning Social Navigation from Positive and Negative Demonstrations and Rule-Based Specifications"
+          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.06779) / Humanoids 2025, Learning Social Navigation from Positive and Negative Demonstrations and Rule-Based Specifications"
         },
         {
           "key": "navigation::lookout-real-world-humanoid-egocentric-navigation",
           "title": "LookOut: Real-World Humanoid Egocentric Navigation",
-          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.14466), LookOut: Real-World Humanoid Egocentric Navigation"
+          "line": "- [arXiv 2025.08](https://arxiv.org/abs/2508.14466) / ICCV 2025, LookOut: Real-World Humanoid Egocentric Navigation"
         }
       ],
       "detected_on": "2026-09-01"
@@ -1930,7 +1930,7 @@
         {
           "key": "navigation::nomad-goal-masked-diffusion-policies-for-navigation-and-exploration",
           "title": "NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration",
-          "line": "- [arXiv 2023.10](https://arxiv.org/abs/2310.07896), NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration"
+          "line": "- [arXiv 2023.10](https://arxiv.org/abs/2310.07896) / ICRA 2024, NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration"
         },
         {
           "key": "navigation::lovon-legged-open-vocabulary-object-navigator",
@@ -1947,7 +1947,7 @@
         {
           "key": "navigation::state-nav-stability-aware-traversability-estimation-for-bipedal-navigation-on-ro",
           "title": "STATE-NAV: Stability-Aware Traversability Estimation for Bipedal Navigation on Rough Terrain",
-          "line": "- 🌟 [arXiv 2025.12](https://arxiv.org/abs/2506.01046), STATE-NAV: Stability-Aware Traversability Estimation for Bipedal Navigation on Rough Terrain, [code](https://github.com/yzwfromk/STATE-NAV)"
+          "line": "- 🌟 [arXiv 2025.12](https://arxiv.org/abs/2506.01046) / RA-L 2025, STATE-NAV: Stability-Aware Traversability Estimation for Bipedal Navigation on Rough Terrain, [code](https://github.com/yzwfromk/STATE-NAV)"
         }
       ],
       "detected_on": "2026-09-01"
@@ -2108,7 +2108,7 @@
         {
           "key": "state-estimation::legged-robot-state-estimation-through-combined-forward-kinematic-and-preintegrat",
           "title": "Legged Robot State-Estimation Through Combined Forward Kinematic and Preintegrated Contact Factors",
-          "line": "- [arXiv 2017.05](https://arxiv.org/abs/1712.05873), Legged Robot State-Estimation Through Combined Forward Kinematic and Preintegrated Contact Factors"
+          "line": "- [arXiv 2017.05](https://arxiv.org/abs/1712.05873) / ICRA 2018, Legged Robot State-Estimation Through Combined Forward Kinematic and Preintegrated Contact Factors"
         }
       ],
       "detected_on": "2026-09-01"
