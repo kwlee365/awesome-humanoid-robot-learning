@@ -172,41 +172,31 @@ narrative when the paper marks a genuine methodological shift, a new research
 paradigm, or an important demonstrated capability. Every substantive historical
 claim in these files must carry a link.
 
-## 6. My Idea notes
+## 6. Reader-owned files
 
 ```bash
-python3 scripts/my_ideas.py --ensure    # create blank notes for new areas
-python3 scripts/my_ideas.py --check     # fail if an existing note changed
+python3 scripts/guard_user_files.py --check   # fail if a reader-owned file changed
 ```
 
-`site/src/content/my-ideas/**` belongs to the repository owner. Automation may
-create a missing blank note. It must never rewrite, summarise, translate,
-reorganise or delete an existing one, and must never merge generated text into
-one. `--check` is part of the deploy workflow.
+`data/reading-status.json` belongs to the repository owner. The reader marks
+papers To Find / In Progress / Done / Skipped on the site and the site's "Sync to
+GitHub" button commits the merged file. Automation never writes, reorders or
+prunes it - not even an entry whose slug no longer matches a paper, since the
+slug may come back and the mark cannot be reconstructed. Creating the file when
+it is missing is allowed; nothing else is. `--check` is part of the deploy
+workflow.
 
-The reader marks papers To Find / In Progress / Done / Decide Not To Read on the
-site. The fourth is how a paper leaves their queue without being read: it dims
-the row and the filter can hide it, but it never touches `README.md`, because
-removing an entry there would simply let the next discovery sweep propose it
-again.
-
-`data/reading-status.json` belongs to the repository owner in the same way, and
-the same `--check` guards it: the run fails if that file was modified or deleted
-in the working tree. Only creating it when missing is allowed.
-
-`data/reading-status.json` belongs to the repository owner in the same way. The
-reader marks a paper To Find / In Progress / Done on the site, the browser keeps
-that immediately, and the site's "Sync to GitHub" button commits the merged file.
-Automation never writes, reorders or prunes it. An entry whose slug no longer
-matches a paper is left alone: the slug may come back, and a status is cheap to
-keep and impossible to reconstruct.
+The fourth status is how a paper leaves the reader's queue without being read.
+It dims the row and the filter can hide it, but it never touches `README.md`,
+because removing an entry there would only let the next discovery sweep propose
+it again.
 
 ## 7. Build, verify, commit
 
 ```bash
 cd site && npm ci && npm run build && cd ..
 python3 scripts/check_site_links.py     # must print "0 broken internal link(s)"
-python3 scripts/my_ideas.py --check
+python3 scripts/guard_user_files.py --check
 git --no-pager diff                     # read it; look for unrelated changes
 ```
 

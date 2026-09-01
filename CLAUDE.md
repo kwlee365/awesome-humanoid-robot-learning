@@ -54,7 +54,7 @@ scripts/parse_readme.py  README.md  -> data/papers.json (round-trip checked)
 scripts/validate.py      duplicates, dates, links, ordering, required metadata
 scripts/add_papers.py    insert verified new papers into README.md + metadata
 scripts/enrich.py        attach verified abstracts/overviews to existing records
-scripts/my_ideas.py      create missing My Idea notes; guard existing ones
+scripts/guard_user_files.py  fail if automation touched a reader-owned file
 scripts/check_site_links.py  broken internal links in the built site
 site/                    Astro + TypeScript static site, deployed by GitHub Actions
 ```
@@ -66,7 +66,7 @@ python3 scripts/parse_readme.py
 python3 scripts/validate.py          # must report 0 errors
 cd site && npm ci && npm run build
 python3 scripts/check_site_links.py  # must report 0 broken links
-python3 scripts/my_ideas.py --check  # must report no modified note
+python3 scripts/guard_user_files.py --check  # must report nothing modified
 ```
 
 `data/papers.json` carries enrichment fields (`authors`, `abstract`, `overview`,
@@ -96,10 +96,7 @@ README-derived fields, edit `README.md` instead.
   In Progress / Done on the site and the site's "Sync to GitHub" button commits
   the file. Automation never writes, reorders or prunes it - not even for a slug
   that no longer matches a paper, because the slug may come back.
-- **`site/src/content/my-ideas/**` is user-owned.** Automation may create a
-  missing blank note and nothing else: never rewrite, summarise, translate,
-  reorganise or delete an existing one, and never merge generated text into one.
-  `scripts/my_ideas.py --check` enforces this and the deploy workflow runs it.
+  `scripts/guard_user_files.py --check` enforces this and both workflows run it.
 - Revise a category narrative in `site/src/content/topics/` only when a new paper
   marks a real methodological shift. Otherwise the paper just joins that area's
   complete paper list, which is generated from the data.

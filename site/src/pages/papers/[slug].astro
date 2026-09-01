@@ -1,7 +1,6 @@
 ---
 import type { GetStaticPaths } from 'astro';
 import Base from '../../layouts/Base.astro';
-import MyIdea from '../../components/MyIdea.astro';
 import ReadingStatus from '../../components/ReadingStatus.astro';
 import { formatDate, papers, relatedPapers } from '../../lib/papers';
 import { slugify } from '../../lib/slug';
@@ -217,6 +216,5 @@ const verified = paper.verifiedOn !== null;
       </dl>
     </section>
 
-    <MyIdea kind="papers" slug={paper.slug} subject={paper.title} heading="My Idea on this paper" />
   </div>
 </Base>

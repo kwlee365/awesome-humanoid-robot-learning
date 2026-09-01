@@ -5,7 +5,6 @@ import Base from '../../layouts/Base.astro';
 import PaperList from '../../components/PaperList.astro';
 import PaperFilters from '../../components/PaperFilters.astro';
 import ReadingStatusBar from '../../components/ReadingStatusBar.astro';
-import MyIdea from '../../components/MyIdea.astro';
 import { categories, editOnGitHub, papersInCategory } from '../../lib/papers';
 
 export const getStaticPaths = (async () => {
@@ -45,7 +44,6 @@ const headings = entry ? (await render(entry)).headings.filter((h) => h.depth ==
               </li>
             ))}
             <li><a href="#all-papers">Complete paper list ({list.length})</a></li>
-            <li><a href="#my-idea">My Idea</a></li>
           </ol>
         </nav>
       )
@@ -71,7 +69,6 @@ const headings = entry ? (await render(entry)).headings.filter((h) => h.depth ==
       <PaperList papers={list} id="cat-list" />
     </section>
 
-    <MyIdea kind="topics" slug={category.slug} subject={category.name} />
 
     {
       entry && (

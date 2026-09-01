@@ -50,8 +50,8 @@ jobs:
             exit 1
           fi
 
-      - name: Guard user-owned My Idea notes
-        run: python3 scripts/my_ideas.py --check
+      - name: Guard user-owned files
+        run: python3 scripts/guard_user_files.py --check
 
       - uses: actions/setup-node@v4
         with:

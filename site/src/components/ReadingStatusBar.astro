@@ -29,9 +29,9 @@ const { target = '' } = Astro.props;
   <div class="rs-token" data-rs-token hidden>
     <p>
       Syncing commits <code>{READING_STATUS_PATH}</code> to <code>{GITHUB_REPO}</code> through the
-      GitHub API, so it needs the same fine-grained token as <em>My Idea</em>: Contents
-      <em>Read and write</em> on this repository and nothing else. It is kept in this browser, on
-      this device only, and is sent nowhere except api.github.com.
+      GitHub API, so it needs a fine-grained token with Contents <em>Read and write</em> on
+      this repository and nothing else. It is kept in this browser, on this device only, and is
+      sent nowhere except api.github.com.
     </p>
     <div class="row">
       <input type="password" data-rs-token-input placeholder="github_pat_..." autocomplete="off" />

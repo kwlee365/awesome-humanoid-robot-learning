@@ -62,16 +62,12 @@ const explain: Record<string, string> = {
         commits when nothing verified has changed.
       </li>
       <li>
-        It never rewrites, summarises, translates, reorganises or deletes a
-        <a href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/my-ideas`}>My Idea</a> file.
-        A guard script fails the run if any of those files changed outside a human commit.
-      </li>
-      <li>
         It never touches reading status. The To&nbsp;Find / In&nbsp;Progress / Done /
-        Decide&nbsp;Not&nbsp;To&nbsp;Read mark next to each paper is set by the reader, kept in
-        that reader's browser, and committed to <code>data/reading-status.json</code> only when
-        they press <em>Sync to GitHub</em>. Deciding not to read a paper dims it and lets the
-        filter hide it; it never removes it from the list, which belongs to everyone.
+        Skipped mark next to each paper is set by the reader, kept in that reader's browser,
+        and committed to <code>data/reading-status.json</code> only when they press
+        <em>Sync to GitHub</em>. A guard script fails the run if that file changed outside a
+        human commit. Skipping a paper dims it and lets the filter hide it; it never removes
+        it from the list, which belongs to everyone.
       </li>
       <li>
         A historical narrative is revised only when a new paper marks a real methodological

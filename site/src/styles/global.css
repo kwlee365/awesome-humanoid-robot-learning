@@ -35,6 +35,14 @@
     --ok-soft: #14291f;
     --warn: #e0b571;
     --warn-soft: #2b2213;
+    --rs-find: #e0b571;
+    --rs-find-soft: #33280f;
+    --rs-doing: #7ea2f5;
+    --rs-doing-soft: #16233d;
+    --rs-done: #6fd39b;
+    --rs-done-soft: #10301f;
+    --rs-skip: #d49ad2;
+    --rs-skip-soft: #2e1c2d;
   }
 }
 
@@ -184,25 +192,47 @@ ul.papers .links { font-size: 0.82rem; color: var(--fg-faint); display: flex; ga
   max-width: 11rem;
 }
 .rs-select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
-.rs[data-value='to-find'] { color: var(--warn); }
-.rs[data-value='to-find'] .rs-select { background: var(--warn-soft); border-color: transparent; }
-.rs[data-value='in-progress'] { color: var(--accent); }
-.rs[data-value='in-progress'] .rs-select { background: var(--accent-soft); border-color: transparent; }
-.rs[data-value='done'] { color: var(--ok); }
-.rs[data-value='done'] .rs-select { background: var(--ok-soft); border-color: transparent; }
-/* Set aside on purpose: struck through rather than coloured, because it is the
-   one status that means "stop showing me this". */
-.rs[data-value='not-reading'] { color: var(--fg-faint); }
-.rs[data-value='not-reading'] .rs-select {
-  background: var(--bg-inset);
-  border-color: transparent;
+/* One colour per status, each with a matching border: a pale background alone
+   is easy to miss on a row that is mostly text. */
+.rs[data-value='to-find'] { color: var(--rs-find); }
+.rs[data-value='to-find'] .rs-select {
+  background: var(--rs-find-soft);
+  border-color: var(--rs-find);
+  font-weight: 550;
+}
+.rs[data-value='in-progress'] { color: var(--rs-doing); }
+.rs[data-value='in-progress'] .rs-select {
+  background: var(--rs-doing-soft);
+  border-color: var(--rs-doing);
+  font-weight: 550;
+}
+.rs[data-value='done'] { color: var(--rs-done); }
+.rs[data-value='done'] .rs-select {
+  background: var(--rs-done-soft);
+  border-color: var(--rs-done);
+  font-weight: 550;
+}
+.rs[data-value='skipped'] { color: var(--rs-skip); }
+.rs[data-value='skipped'] .rs-select {
+  background: var(--rs-skip-soft);
+  border-color: var(--rs-skip);
+  font-weight: 550;
   text-decoration: line-through;
 }
-/* The row itself recedes, so a decided-against paper stops competing for
-   attention even when the filter is showing everything. */
-ul.papers > li[data-reading='not-reading'] { opacity: 0.5; }
-ul.papers > li[data-reading='not-reading']:hover,
-ul.papers > li[data-reading='not-reading']:focus-within { opacity: 1; }
+
+/* A stripe down the row, so status is readable while scanning several hundred
+   papers rather than only when looking straight at a control. */
+ul.papers > li[data-reading] { border-left: 3px solid transparent; padding-left: 0.6rem; }
+ul.papers > li[data-reading='to-find'] { border-left-color: var(--rs-find); }
+ul.papers > li[data-reading='in-progress'] { border-left-color: var(--rs-doing); }
+ul.papers > li[data-reading='done'] { border-left-color: var(--rs-done); }
+ul.papers > li[data-reading='skipped'] { border-left-color: var(--rs-skip); }
+
+/* Skipped recedes as well as being coloured - it is the one status that means
+   "stop showing me this" - but returns on hover so it stays readable. */
+ul.papers > li[data-reading='skipped'] { opacity: 0.45; }
+ul.papers > li[data-reading='skipped']:hover,
+ul.papers > li[data-reading='skipped']:focus-within { opacity: 1; }
 
 .rs-line { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--fg-faint); }
 .rs-line .rs { margin-left: 0; }

@@ -1,8 +1,8 @@
 /**
  * Reading status: the one piece of per-paper state the reader owns rather than
  * the README. Three values follow a paper through the queue - "To Find",
- * "In Progress", "Done" - and a fourth, "Decide Not To Read", takes it out of
- * the queue deliberately. Everything untouched is "not set".
+ * "In Progress", "Done" - and a fourth, "Skipped", takes it out of the queue
+ * deliberately. Everything untouched is "not set".
  *
  * That fourth state is the site's answer to "can I just delete this paper?".
  * The list itself is the README's, shared with everyone and rebuilt twice a day
@@ -24,7 +24,7 @@ export const READING_STATUSES = [
   { id: 'to-find', label: 'To Find' },
   { id: 'in-progress', label: 'In Progress' },
   { id: 'done', label: 'Done' },
-  { id: 'not-reading', label: 'Decide Not To Read' },
+  { id: 'skipped', label: 'Skipped' },
 ] as const;
 
 export type ReadingStatusId = (typeof READING_STATUSES)[number]['id'];
@@ -60,6 +60,9 @@ export const READING_STATUS_NOTE =
 
 const IDS = new Set<string>(READING_STATUSES.map((s) => s.id));
 
+/** Ids this store used to write. Read, migrated, and never written again. */
+const RENAMED: Record<string, ReadingStatusId> = { 'not-reading': 'skipped' };
+
 export function isReadingStatus(value: unknown): value is ReadingStatusId {
   return typeof value === 'string' && IDS.has(value);
 }
@@ -79,8 +82,9 @@ export function sanitizeStatuses(raw: unknown): ReadingStatuses {
   for (const [slug, value] of Object.entries(statuses as Record<string, unknown>)) {
     if (!slug || typeof value !== 'object' || value === null) continue;
     const { status, updated } = value as Partial<ReadingEntry>;
-    if (status !== null && !isReadingStatus(status)) continue;
-    out[slug] = { status: status ?? null, updated: typeof updated === 'string' ? updated : '' };
+    const migrated = typeof status === 'string' && RENAMED[status] ? RENAMED[status] : status;
+    if (migrated !== null && !isReadingStatus(migrated)) continue;
+    out[slug] = { status: migrated ?? null, updated: typeof updated === 'string' ? updated : '' };
   }
   return out;
 }

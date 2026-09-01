@@ -145,17 +145,17 @@ capability. Otherwise preserve the existing historical explanation. Every
 substantive historical claim you add must carry a link. Avoid unsupported
 superlatives such as "the first" or "state of the art".
 
-## 6. My Idea files are user-owned
+## 6. Reading status is the reader's
 
 ```bash
-python3 scripts/my_ideas.py --ensure     # only creates missing blank notes
-python3 scripts/my_ideas.py --check      # must report nothing modified
+python3 scripts/guard_user_files.py --check   # must report nothing modified
 ```
 
-Never rewrite, summarise, translate, reorganise or delete an existing note under
-`site/src/content/my-ideas/`, and never merge generated text into one. The same
-`--check` guards `data/reading-status.json`, which the reader writes from the
-site: automation may not change it at all.
+`data/reading-status.json` holds the reader's To Find / In Progress / Done /
+Skipped mark against each paper. The site writes it through the GitHub API; this
+run must never write it, reorder it or prune it - not even an entry whose slug no
+longer matches a paper, because the slug may come back and the mark cannot be
+reconstructed.
 
 ## 7. Validate, build, commit, push
 
@@ -164,7 +164,7 @@ git add data/discovery-state.json data/discovery-candidates.json  # coverage + q
 python3 scripts/parse_readme.py && python3 scripts/validate.py   # 0 errors
 cd site && npm ci && npm run build && cd ..
 python3 scripts/check_site_links.py                              # 0 broken links
-python3 scripts/my_ideas.py --check
+python3 scripts/guard_user_files.py --check
 git --no-pager diff                                              # read it
 ```
 
@@ -191,6 +191,6 @@ Cover: run time in KST; new papers added grouped by category; existing records
 updated; duplicates detected or removed; candidates skipped for review and why;
 which historical pages changed and why; website build and validation results; the
 deployment URL https://kwlee365.github.io/awesome-humanoid-robot-learning/ ; the
-commit hash or branch name; and explicit confirmation that no existing My Idea
-content was modified. If nothing verified was found, say so plainly and confirm
+commit hash or branch name; and explicit confirmation that no reader-owned file
+was modified. If nothing verified was found, say so plainly and confirm
 that no commit was created.

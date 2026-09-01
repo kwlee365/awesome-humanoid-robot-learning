@@ -1,16 +1,20 @@
 /**
- * The slice of the GitHub contents API that the two write-back features on this
- * site share: My Idea notes and reading-status sync.
+ * The slice of the GitHub contents API the site needs in order to write back:
+ * today that is reading-status sync and nothing else.
  *
- * One token serves both. It is a fine-grained personal access token with
- * Contents: Read and write on this repository and nothing else, held in this
- * browser's local storage and sent nowhere except api.github.com. Browser only -
- * nothing here runs at build time.
+ * The token is a fine-grained personal access token with Contents: Read and
+ * write on this repository and nothing else, held in this browser's local
+ * storage and sent nowhere except api.github.com. Browser only - nothing here
+ * runs at build time.
  */
 
 const API = 'https://api.github.com';
 
-/** Named for My Idea, which introduced it. Kept so an existing token still works. */
+/**
+ * The key is named for My Idea, the feature that introduced it and has since been
+ * removed. It stays as it is so a token already saved in someone's browser keeps
+ * working; renaming it would silently log them out.
+ */
 export const GITHUB_TOKEN_KEY = 'myidea:github-pat';
 
 export function githubToken(): string | null {
