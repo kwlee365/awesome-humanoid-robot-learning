@@ -300,6 +300,54 @@
           "note": "confirmed in-scope via full-text check (GR-1 humanoid is one of the deployed platforms); abstract alone is quadruped-only and would mislead a title/abstract-only check"
         }
       ]
+    },
+    {
+      "kind": "readme-link-outdated",
+      "reason": "During the 2026-09-01 AM enrichment pass, the README/project-page-only entry 'LocoFormer: Generalist Locomotion via Long-Context Adaptation' (Locomotion, currently linked only to https://generalist-locomotion.github.io/, first_public_date 2025-09) was confirmed to have an arXiv preprint: 2509.23745, same title and authors, first submitted 2025-09-30, accepted to CoRL 2025 (Best Paper Award Finalist per the project page). The abstract/authors/overview were enriched via title match (enrich.py cannot change arxiv_id or paper_url, only abstract-family fields), but the README line itself still points only at the project page. A human should decide whether to hand-edit the README line to link https://arxiv.org/abs/2509.23745 (arXiv 2025.09) alongside or instead of the project page, then re-run parse_readme.py so data/papers.json picks up the arxiv_id.",
+      "detected_on": "2026-09-01",
+      "items": [
+        {
+          "title": "LocoFormer: Generalist Locomotion via Long-Context Adaptation",
+          "current_readme_url": "https://generalist-locomotion.github.io/",
+          "discovered_arxiv_id": "2509.23745",
+          "discovered_arxiv_url": "https://arxiv.org/abs/2509.23745"
+        }
+      ]
+    },
+    {
+      "kind": "possible-title-mismatch",
+      "reason": "During the 2026-09-01 AM enrichment pass, the arXiv abstract page for 2508.16943 (README title 'HumanoidVerse: A Versatile Humanoid for Vision-Language Guided Multi-Object Rearrangement') was found to now default to v3 (submitted 2026-07-07), which carries a different title ('LHM-Humanoid: Long-Horizon Human Motion Control for Continuous Object Transport in Cluttered Scenes') and an added author (Angelo Cangelosi) not present in v1. v1 (2025-08-23) matches the README's recorded title, authors and abstract exactly, so the enrichment payload for this run was taken from v1 rather than being withheld, and the README entry was left unchanged. A human should check whether v3 is still substantively the same paper (a renamed revision) or a broadened scope change, and decide whether the README title should be updated to track the current arXiv version.",
+      "detected_on": "2026-09-01",
+      "items": [
+        {
+          "arxiv_id": "2508.16943",
+          "readme_title": "HumanoidVerse: A Versatile Humanoid for Vision-Language Guided Multi-Object Rearrangement",
+          "v3_title": "LHM-Humanoid: Long-Horizon Human Motion Control for Continuous Object Transport in Cluttered Scenes",
+          "note": "v1 (2025-08-23) matches the README exactly; v3 (2026-07-07) is a retitled, re-scoped revision with an added author"
+        }
+      ]
+    },
+    {
+      "kind": "coverage-resweep-note",
+      "reason": "The 2026-09-01 AM run was the first-ever execution of scripts/discover.py in this repo. It swept 2026-09, 2026-08 and 2026-07 across arxiv, crossref and openalex (no prior ledger existed, so all three months counted as unswept): 6788 raw records, 813 passed the relevance filter, 504 distinct works after merging, 409 new candidates (0 similar-to-listed, 95 already-listed), 0 channel failures. This is a first-run backlog, not this run's yield: only the top 24 candidates (by relevance score, all 'core'-path arXiv items with a clean arxiv-v1 date basis) were opened against their arXiv abstract pages and verified by independent review passes this run. Of those 24: 16 were confirmed in-scope, verified, and added to the README/data/papers.json (2607.13646 Human4K, 2607.17977 RynnBrain 1.1, 2607.18154 World Translation, 2607.20061 ReferTrack, 2608.03116 Shooting for Contact, 2608.25308 V-Link, 2608.26505 Closing the Loop on the Poppy Humanoid, 2608.26583 SOLO, 2608.27406 CLAP, 2608.27550 Beyond Data Scaling/VLAct, 2608.28090 Stay Seated, 2608.28213 PAMoR, 2608.29242 AnyWorld, 2608.29487 Blind Dexterity, 2608.29769 Learning Agile Perceptive Traversal, 2608.30832 Dual-Cam PEA Humanoid Ankles). 8 were excluded as out of scope after reading their abstracts: 2607.07420 (Initiation Safety, HRI/social-robot consent paper, no robot-learning contribution), 2607.20834 (Offline RL with Hierarchical Action Chunking, 'humanoid-giant' is just an OGBench maze-task name, no robot platform), 2607.22997 (Real2Sim2Real AMD ROCm, primarily a Franka-arm hardware-stack demo, humanoid mentioned only in passing with no platform/result detail), 2607.25798 (Transformer Transformer robot co-design, hardware validation is a bimanual ALOHA rig, no humanoid-specific result), 2607.26985 (SymmGrid, humanoid is a forward-looking aspiration only, real experiments are arm-manipulation), 2608.16978 (VLCP, no robot platform named at all), 2608.22657 (Physical Agentic AI, LLM orchestration architecture paper, not a learned humanoid control method), 2607.19190 (Agentic Real2Sim, borderline - see separate item below). The remaining 385 candidates (queued in data/discovery-candidates.json, sorted by relevance) were not reached this run and are carried forward; they include many DOI-only Crossref/OpenAlex records (some clearly low-quality/predatory-looking Zenodo preprints mixed in with legitimate venue papers) that still need per-record triage. Both data/discovery-state.json and the trimmed data/discovery-candidates.json (24 handled candidates removed) are committed.",
+      "detected_on": "2026-09-01",
+      "items": [
+        {
+          "window": "2026-07, 2026-08, 2026-09 across arxiv/crossref/openalex",
+          "note": "first-ever discover.py run; 409 new candidates found, 16 added, 8 confidently excluded, 385 remain queued for future runs"
+        }
+      ]
+    },
+    {
+      "kind": "borderline-scope",
+      "reason": "arXiv 2607.19190 'Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents' was flagged out-of-scope by this run's verification pass because its abstract's only humanoid-adjacent language is a vague reference to 'humanoid motion scenes' among several evaluated domains, without confirming whether this means a physical humanoid robot (as opposed to human motion-capture/animation data) or naming any specific platform or result. The reviewing agent did not return full abstract/author details for this one (fetch may have been cut short rather than exhaustively read), so the exclusion is lower-confidence than the other 7 exclusions from the same run. A human should re-check the full abstract before confirming exclusion.",
+      "detected_on": "2026-09-01",
+      "items": [
+        {
+          "arxiv_id": "2607.19190",
+          "title": "Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents"
+        }
+      ]
     }
   ]
 }

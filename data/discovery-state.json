@@ -2,5 +2,21 @@
   "version": 1,
   "note": "Which month was first swept for new papers, by which channel, on what date. scripts/discover.py reads this to decide what to sweep next: the recent months every run, plus the newest month nobody has swept yet, walking backwards to `floor`. Delete a month's entry to have it swept again. A date here is the first sweep, not the last: re-sweeping a month leaves the file unchanged, so this file only moves when coverage genuinely grows.",
   "floor": "2024-01",
-  "months": {}
+  "months": {
+    "2026-09": {
+      "arxiv": "2026-09-01",
+      "crossref": "2026-09-01",
+      "openalex": "2026-09-01"
+    },
+    "2026-08": {
+      "arxiv": "2026-09-01",
+      "crossref": "2026-09-01",
+      "openalex": "2026-09-01"
+    },
+    "2026-07": {
+      "arxiv": "2026-09-01",
+      "crossref": "2026-09-01",
+      "openalex": "2026-09-01"
+    }
+  }
 }
