@@ -23,7 +23,6 @@ export interface ReadmeRecord {
   real_robot: boolean | null;
   abstract: string | null;
   abstract_source: string | null;
-  overview: string | null;
   verified_on: string | null;
   related: string[];
   readme_order: number;
@@ -70,7 +69,6 @@ export interface Paper {
   realRobot: boolean | null;
   abstract: string | null;
   abstractSource: string | null;
-  overview: string | null;
   verifiedOn: string | null;
   related: string[];
   readmeLines: string[];
@@ -148,7 +146,6 @@ function merge(group: ReadmeRecord[]): Paper {
     realRobot: group.map((r) => r.real_robot).find((v) => v !== null) ?? null,
     abstract: first((r) => r.abstract),
     abstractSource: first((r) => r.abstract_source),
-    overview: first((r) => r.overview),
     verifiedOn: first((r) => r.verified_on),
     related: group.flatMap((r) => r.related).filter((v, i, a) => a.indexOf(v) === i),
     readmeLines: group.map((r) => r.readme_line),

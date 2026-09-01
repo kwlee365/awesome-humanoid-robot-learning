@@ -56,12 +56,10 @@ const venues = [...new Set(papers.map((p) => p.venue))].sort((a, b) => a.localeC
     </select>
   </div>
   <div>
-    <label for="f-flag">Evidence &amp; code</label>
+    <label for="f-flag">Code</label>
     <select id="f-flag" name="flag">
       <option value="">All</option>
       <option value="open">Open-source only</option>
-      <option value="real">Real-robot validated</option>
-      <option value="sim">Simulation only</option>
     </select>
   </div>
 </form>
@@ -99,8 +97,6 @@ const venues = [...new Set(papers.map((p) => p.venue))].sort((a, b) => a.localeC
         (!year || d.year === year) &&
         (!venue || d.venue === venue) &&
         (flag !== 'open' || d.open === '1') &&
-        (flag !== 'real' || d.real === '1') &&
-        (flag !== 'sim' || d.real === '0') &&
         // Written onto the row by the reading-status runtime, so this facet is
         // held inert until that has painted at least once.
         (!reading || (reading === 'none' ? !d.reading : d.reading === reading));

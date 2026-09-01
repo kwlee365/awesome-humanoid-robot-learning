@@ -30,10 +30,6 @@ for (const extra of paper.extraLinks) links.push({ label: extra.label, url: extr
 const seen = new Set<string>();
 const uniqueLinks = links.filter((l) => (seen.has(l.url) ? false : (seen.add(l.url), true)));
 
-/** Sections we only render when the record actually carries verified content. */
-const analysis: { id: string; heading: string; body: string | null }[] = [
-  { id: 'overview', heading: 'Overview', body: paper.overview },
-];
 const verified = paper.verifiedOn !== null;
 ---
 
@@ -71,7 +67,6 @@ const verified = paper.verifiedOn !== null;
       )}
       {paper.realRobot === true && <span class="badge accent">real-robot experiments</span>}
       {paper.realRobot === false && <span class="badge">simulation only</span>}
-      {paper.realRobot === null && <span class="badge warn">real-robot status unverified</span>}
     </div>
 
     <p class="rs-line">
@@ -145,32 +140,6 @@ const verified = paper.verifiedOn !== null;
         )
       }
     </section>
-
-    {
-      analysis.map(
-        (s) =>
-          s.body && (
-            <section aria-labelledby={s.id}>
-              <h2 id={s.id}>{s.heading}</h2>
-              <p>{s.body}</p>
-            </section>
-          ),
-      )
-    }
-
-    {
-      !paper.overview && (
-        <section aria-labelledby="overview">
-          <h2 id="overview">Overview</h2>
-          <p class="notice">
-            No overview has been written for this record yet. Overviews on this site are
-            written only from the paper itself or from an authoritative project page, never
-            from the title — so this section stays empty until the record has been read and
-            verified. The record is in the enrichment queue.
-          </p>
-        </section>
-      )
-    }
 
     <section aria-labelledby="related">
       <h2 id="related">Related papers in this repository</h2>

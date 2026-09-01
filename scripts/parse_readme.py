@@ -161,7 +161,6 @@ def parse_entry(line: str, section: str, order: int) -> dict[str, Any] | None:
         "real_robot": None,
         "abstract": None,
         "abstract_source": None,
-        "overview": None,
         "verified_on": None,
         "related": [],
         "readme_order": order,
@@ -262,7 +261,7 @@ def load_existing() -> dict[str, dict[str, Any]]:
     return {r["key"]: r for r in blob.get("papers", [])}
 
 
-ENRICHED_FIELDS = ("authors", "abstract", "abstract_source", "overview", "verified_on",
+ENRICHED_FIELDS = ("authors", "abstract", "abstract_source", "verified_on",
                    "real_robot", "tags", "related", "video_url", "dataset_url", "doi")
 
 
@@ -288,7 +287,7 @@ def main() -> int:
         "generated_from": "README.md",
         "note": "Single source of truth for the website and the validation scripts. "
                 "Regenerated from README.md by scripts/parse_readme.py; enrichment "
-                "fields (authors/abstract/overview/...) are preserved across runs.",
+                "fields (authors/abstract/tags/...) are preserved across runs.",
         "papers": records,
         "unparsed_readme_lines": unparsed,
     }

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Attach verified enrichment (authors, official abstract, overview, real-robot
-flag) to existing records in data/papers.json.
+"""Attach verified enrichment (authors, official abstract, real-robot flag) to
+existing records in data/papers.json.
 
 The README is the source of the *list*; this script only fills in the fields the
 README cannot carry. It never edits README.md.
@@ -8,7 +8,7 @@ README cannot carry. It never edits README.md.
   --queue N   print the N records that most need enrichment (newest first) as
               JSON, ready to hand to a verification pass
   --apply F   apply a JSON array of {arxiv_id|title, authors, abstract,
-              abstract_source, overview, real_robot, tags, verified_on}
+              abstract_source, real_robot, tags, verified_on}
 
 Records are matched by arXiv id first, then by normalised title. A record is
 only written if the payload carries a `verified_on` date, so nothing unverified
@@ -24,7 +24,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from parse_readme import DATA, normalize_title  # noqa: E402
 
-FIELDS = ("authors", "abstract", "abstract_source", "overview", "real_robot",
+FIELDS = ("authors", "abstract", "abstract_source", "real_robot",
           "tags", "verified_on", "video_url", "dataset_url", "doi")
 
 
@@ -40,7 +40,7 @@ def save(data: dict) -> None:
 
 
 def needs_enrichment(rec: dict) -> bool:
-    return not rec.get("abstract") or not rec.get("overview")
+    return not rec.get("abstract")
 
 
 def queue(n: int) -> int:

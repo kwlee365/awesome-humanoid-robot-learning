@@ -12,7 +12,7 @@ What it does:
   * inserts it at the correct newest-first position inside its section, touching
     no other line
   * re-parses the README and copies the verified enrichment fields (authors,
-    abstract, overview, real-robot flag, tags, verification date) onto the new
+    abstract, real-robot flag, tags, verification date) onto the new
     records in data/papers.json
 
 If no record survives deduplication it writes nothing at all, so a scheduled run
@@ -188,7 +188,7 @@ def main() -> int:
             by_id.setdefault(rec["arxiv_id"], []).append(rec)
         by_id.setdefault(rec["norm_title"], []).append(rec)
 
-    fields = ("authors", "abstract", "abstract_source", "overview", "real_robot",
+    fields = ("authors", "abstract", "abstract_source", "real_robot",
               "tags", "verified_on", "video_url", "dataset_url", "doi")
     patched = 0
     for rec in accepted:

@@ -54,7 +54,7 @@ scripts/apply_promotions.py  update entries whose preprint has since been publis
 scripts/parse_readme.py  README.md  -> data/papers.json (round-trip checked)
 scripts/validate.py      duplicates, dates, links, ordering, required metadata
 scripts/add_papers.py    insert verified new papers into README.md + metadata
-scripts/enrich.py        attach verified abstracts/overviews to existing records
+scripts/enrich.py        attach verified abstracts and authors to existing records
 scripts/guard_user_files.py  fail if automation touched a reader-owned file
 scripts/check_site_links.py  broken internal links in the built site
 site/                    Astro + TypeScript static site, deployed by GitHub Actions
@@ -70,8 +70,10 @@ python3 scripts/check_site_links.py  # must report 0 broken links
 python3 scripts/guard_user_files.py --check  # must report nothing modified
 ```
 
-`data/papers.json` carries enrichment fields (`authors`, `abstract`, `overview`,
-`real_robot`, `tags`, `verified_on`) that the README cannot express.
+`data/papers.json` carries enrichment fields (`authors`, `abstract`,
+`real_robot`, `tags`, `verified_on`) that the README cannot express. A paper page
+shows the official abstract and nothing written on top of it: there is no
+generated summary of a paper anywhere on this site, by design.
 `parse_readme.py` preserves them across regenerations - never hand-edit a record's
 README-derived fields, edit `README.md` instead.
 
@@ -89,8 +91,8 @@ README-derived fields, edit `README.md` instead.
 - Authors and abstracts may be taken verbatim from arXiv's own API by
   `discover.py --refresh`, which records the abs page as `abstract_source`. That
   is a primary source read by machine rather than by eye, and it is the only such
-  exception: `overview`, `real_robot` and `tags` still require somebody to read
-  the paper, and no venue is ever written from an index alone.
+  exception: `real_robot` and `tags` still require somebody to read the paper,
+  and no venue is ever written from an index alone.
 - For preprints record the FIRST arXiv submission month, not the latest revision.
 - Apply the open-source star only when a public code repository has been verified.
   A project page alone does not qualify.

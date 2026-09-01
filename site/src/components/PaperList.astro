@@ -23,7 +23,6 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         data-venue={p.venue}
         data-status={p.publicationStatus}
         data-open={p.openSource ? '1' : '0'}
-        data-real={p.realRobot === true ? '1' : p.realRobot === false ? '0' : ''}
       >
         <span class="date">{formatDate(p)}</span>
         <span class="body">

@@ -40,11 +40,59 @@ DOI_EVIDENCE = {
     "IJRR": r"10\.1177/0278364",
 }
 
+#: Venue names as the authors write them in an arXiv comment, and as this README
+#: writes them. HRI is deliberately absent: its Late Breaking Report track shares
+#: the acronym with the main conference, and writing "HRI 2026" for an LBR would
+#: overstate what the paper is.
+COMMENT_ALIASES = (
+    ("RSS", r"\bRSS\b|Robotics:?\s*Science and Systems"),
+    ("CoRL", r"\bCoRL\b|Conference on Robot Learning"),
+    ("ICLR", r"\bICLR\b|International Conference on Learning Representations"),
+    ("NeurIPS", r"\bNeurIPS\b|\bNIPS\b|Neural Information Processing Systems"),
+    ("AAAI", r"\bAAAI\b"),
+    ("IJRR", r"\bIJRR\b|International Journal of Robotics Research"),
+    ("ICRA", r"\bICRA\b"),
+    ("IROS", r"\bIROS\b"),
+    ("Humanoids", r"\bHumanoids\b"),
+    ("CVPR", r"\bCVPR\b"),
+    ("ICCV", r"\bICCV\b"),
+    ("ECCV", r"\bECCV\b"),
+    ("ICML", r"\bICML\b"),
+    ("T-RO", r"\bT-?RO\b|Transactions on Robotics"),
+    ("RA-L", r"\bRA-?L\b|Robotics and Automation Letters"),
+)
+
 #: `- 🌟 [venue YYYY.MM](url)` followed by `, Title...`
 ENTRY_RE = re.compile(r"^(?P<head>- (?:🌟\s*)?\[[^\]]+\]\([^)]+\))(?P<rest>,\s*.*)$")
 
 
-def corroborated(promotion: dict) -> str:
+def by_comment(promotion: dict) -> str:
+    """The venue an author announced on arXiv, when the index agrees with them.
+
+    Half the venues this list cares about issue DOIs that carry no year - CoRL,
+    RSS, NeurIPS, ICLR - so the DOI test can never clear them. But authors
+    routinely write "Accepted at CoRL 2024" in the arXiv comment, and that is a
+    statement by the people who would know. Requiring the index to name the same
+    venue keeps it from being a single unchecked source.
+    """
+    comment = promotion.get("arxiv_comment") or ""
+    reported = promotion.get("published_venue") or ""
+    if not comment:
+        return None
+    for short, alias in COMMENT_ALIASES:
+        group = "(?:" + alias + ")"
+        if not re.search(group, comment, re.I):
+            continue
+        if not re.search(group, reported, re.I):
+            continue
+        year = (re.search(group + r"[^0-9]{0,20}((?:19|20)\d{2})", comment, re.I)
+                or re.search(r"((?:19|20)\d{2})[^0-9]{0,20}" + group, comment, re.I))
+        if year:
+            return f"{short} {year.group(1)}"
+    return None
+
+
+def by_doi(promotion: dict) -> str:
     """The venue string to write, or None when the DOI does not back it up."""
     venue, doi = promotion.get("suggested_venue"), (promotion.get("doi") or "").lower()
     if not venue or not doi:
@@ -57,6 +105,11 @@ def corroborated(promotion: dict) -> str:
     if re.search(pattern, doi) and year in doi:
         return venue
     return None
+
+
+def corroborated(promotion: dict) -> str:
+    """Two independent sources naming the same venue, or nothing."""
+    return by_doi(promotion) or by_comment(promotion)
 
 
 def main() -> int:

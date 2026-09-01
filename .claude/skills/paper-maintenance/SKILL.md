@@ -71,8 +71,9 @@ exact title; authors; first public date (for preprints the FIRST arXiv submissio
 month, not the latest revision); publication status; arXiv id and/or DOI; paper
 URL; project URL; code URL; whether real-robot experiments were run; primary
 category (one of the 12 README sections, unchanged); secondary tags; the official
-abstract verbatim with the URL it came from; and a 3-5 sentence overview written
-from the paper.
+and the official abstract verbatim with the URL it came from. Do not write a
+summary of the paper: there is no `overview` field, and the site shows the
+authors' abstract on its own.
 
 Two fields need care because the script cannot settle them:
 
@@ -164,10 +165,10 @@ python3 scripts/enrich.py --apply enrich.json
 python3 scripts/enrich.py --queue 20 > queue.json
 ```
 
-`--queue` lists the records that most need what a machine cannot supply: the
-`overview`, the real-robot flag and the tags. Read each primary source, then
-`python3 scripts/enrich.py --apply records.json`. A payload without a
-`verified_on` date is rejected. Never write an overview you did not read.
+`--queue` lists the records still missing an abstract - the ones with no arXiv id,
+where the text has to come from a publisher or project page. Read each primary
+source, then `python3 scripts/enrich.py --apply records.json`. A payload without a
+`verified_on` date is rejected. Never write an abstract you did not read.
 
 ## 5. Narratives
 

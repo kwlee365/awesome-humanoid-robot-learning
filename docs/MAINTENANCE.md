@@ -146,7 +146,6 @@ Candidate JSON shape:
   "real_robot": true, "open_source": false,
   "primary_category": "Locomotion", "tags": ["..."],
   "abstract": "<verbatim>", "abstract_source": "https://...",
-  "overview": "<written from the paper, not the title>",
   "verified_on": "YYYY-MM-DD"
 }
 ```
@@ -159,7 +158,7 @@ python3 scripts/enrich.py --queue 20 > queue.json   # oldest gaps, newest first
 python3 scripts/enrich.py --apply records.json
 ```
 
-Enrichment only ever fills `authors`, `abstract`, `abstract_source`, `overview`,
+Enrichment only ever fills `authors`, `abstract`, `abstract_source`,
 `real_robot`, `tags`, `verified_on`, `video_url`, `dataset_url` and `doi`. It
 never edits `README.md`, and a payload without `verified_on` is rejected.
 
@@ -196,8 +195,13 @@ NeurIPS, ICLR, Science Robotics, ACM TOG, whose DOIs carry no year - stay in the
 report for a human, because guessing a venue string is how a curated list starts
 contradicting itself.
 
-What is never filled automatically: `overview`, `real_robot` and `tags`. Those
-need the paper read, and `enrich.py --queue` exists for exactly that.
+What is never filled automatically: `real_robot` and `tags`. Those need the
+paper read, and `enrich.py --queue` exists for exactly that.
+
+There is no `overview` field. A paper page shows the authors' own abstract and
+nothing written on top of it - a generated summary sitting beside the abstract it
+was written from said the same thing twice, and made it impossible to tell a
+record somebody had read from one nobody had.
 
 ## 6. Reader-owned files
 

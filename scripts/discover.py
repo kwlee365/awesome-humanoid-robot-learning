@@ -622,6 +622,7 @@ class ArxivChannel(Channel):
                    for a in entry.findall(f"{self.ATOM}author")]
         doi = entry.findtext(f"{self.ARXIV}doi")
         journal = entry.findtext(f"{self.ARXIV}journal_ref")
+        comment = entry.findtext(f"{self.ARXIV}comment")
         primary = entry.find(f"{self.ARXIV}primary_category")
         return {
             "source": self.name,
@@ -636,6 +637,9 @@ class ArxivChannel(Channel):
             "paper_url": f"https://arxiv.org/abs/{arxiv_id}",
             "venue": "arXiv",
             "venue_hint": journal.strip() if journal else None,
+            # The authors' own note, which is where an acceptance is usually
+            # announced long before any index catches up.
+            "arxiv_comment": " ".join(comment.split()) if comment else None,
             "publication_status": "published" if journal else "preprint",
             "first_public_date": published[:7] if published else None,
             "date_basis": "arxiv-v1",
@@ -953,9 +957,8 @@ CHANNELS = {c.name: c for c in (ArxivChannel(), CrossrefChannel(),
 #   * the authors and the abstract, verbatim from arXiv's own API. This is the
 #     primary source - the same text the abs page shows - so the record carries
 #     the abs URL as `abstract_source` and a `verified_on` date. What is NOT
-#     filled is `overview`, `real_robot` and `tags`: those need somebody to read
-#     the paper and decide, and inventing them is exactly what the repository
-#     rules forbid.
+#     filled is `real_robot` or `tags`: those need somebody to read the paper
+#     and decide, and inventing them is exactly what the repository rules forbid.
 #   * the venue, when Semantic Scholar or arXiv's own `journal_ref` says the
 #     preprint has been published somewhere that is not arXiv. That changes a
 #     README line, so it is reported for a human to apply rather than applied.
@@ -1124,6 +1127,7 @@ def refresh(http: Http, papers: list, cfg: dict, limit: int = 0) -> dict:
                 "listed_as": paper.get("venue_raw"),
                 "published_venue": venue,
                 "suggested_venue": short,
+                "arxiv_comment": (a or {}).get("arxiv_comment"),
                 "doi": doi,
                 "source": source,
                 "note": ("insert ' / <venue>' after the arXiv link in the README line, "

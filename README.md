@@ -187,7 +187,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2025.06](https://arxiv.org/abs/2506.15146) / RA-L 2025, TACT: Humanoid Whole-body Contact Manipulation through Deep Imitation Learning with Tactile Modality
 - [arXiv 2025.06](https://arxiv.org/abs/2506.14770), GMT: General Motion Tracking for Humanoid Whole-Body Control
 - [arXiv 2025.06](https://arxiv.org/abs/2506.13751), LeVERB: Humanoid Whole-Body Control with Latent Vision-Language Instruction, [website](https://ember-lab-berkeley.github.io/LeVERB-Website/)
-- [arXiv 2025.06](https://arxiv.org/abs/2506.12851), KungfuBot: Physics-Based Humanoid Whole-Body Control for Learning Highly-Dynamic Skills, [website](https://kungfu-bot.github.io/)
+- [arXiv 2025.06](https://arxiv.org/abs/2506.12851) / NeurIPS 2025, KungfuBot: Physics-Based Humanoid Whole-Body Control for Learning Highly-Dynamic Skills, [website](https://kungfu-bot.github.io/)
 - [arXiv 2025.06](https://arxiv.org/abs/2506.12779), From Experts to a Generalist: Toward General Whole-Body Control for Humanoid Robots, [website](https://beingbeyond.github.io/BumbleBee/)
 - [arXiv 2025.06](https://arxiv.org/abs/2506.09366), SkillBlender: Towards Versatile Humanoid Whole-Body Loco-Manipulation via Skill Blending
 - 🌟 [arXiv 2025.06](https://arxiv.org/abs/2506.04147), SLAC: Simulation-Pretrained Latent Action Space for Whole-Body Real-World Reinforcement Learning, [websie](https://robo-rl.github.io/)
@@ -209,7 +209,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2025.05](https://arxiv.org/abs/2505.02833), **TWIST: Teleoperated Whole-Body Imitation System**
 - [arXiv 2025.04](https://arxiv.org/abs/2504.21738), LangWBC: Language-directed Humanoid Whole-Body Control via End-to-end Learning
 - [arXiv 2025.04](https://arxiv.org/abs/2504.16843v1) / Humanoids 2025, Physically Consistent Humanoid Loco-Manipulation using Latent Diffusion Models
-- [arXiv 2025.04](https://arxiv.org/abs/2504.14305), Adversarial Locomotion and Motion Imitation for Humanoid Policy Learning, [website](https://almi-humanoid.github.io/)
+- [arXiv 2025.04](https://arxiv.org/abs/2504.14305) / NeurIPS 2025, Adversarial Locomotion and Motion Imitation for Humanoid Policy Learning, [website](https://almi-humanoid.github.io/)
 - [arXiv 2025.04](https://arxiv.org/pdf/2504.09532), [website],Embodied Chain of Action Reasoning with Multi-Modal Foundation Model for Humanoid Loco-manipulation,[website](https://humanoid-coa.github.io/)
 - [arXiv 2025.03](https://arxiv.org/abs/2503.22249), FLAM: Foundation Model-Based Body Stabilization for Humanoid Locomotion and Manipulation
 - [arXiv 2025.03](https://arxiv.org/abs/2503.12533), Being-0: A Humanoid Robotic Agent with Vision-Language Models and Modular Skills, [website](https://beingbeyond.github.io/being-0/)
@@ -448,7 +448,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2025.08](https://arxiv.org/abs/2508.10423), MASH: Cooperative-Heterogeneous Multi-Agent RL for Single Humanoid Robot Locomotion
 - [arXiv 2025.08](https://arxiv.org/abs/2508.07611), End-to-End Humanoid Robot Safe and Comfortable Locomotion Policy
 - [arXiv 2025.08](https://arxiv.org/abs/2508.03070) / ICRA 2023, Optimizing Bipedal Locomotion for The 100m Dash With Comparison to Human Running
-- [arXiv 2025.08](https://arxiv.org/abs/2508.01247), Coordinated Humanoid Robot Locomotion with Symmetry Equivariant Reinforcement Learning Policy
+- [arXiv 2025.08](https://arxiv.org/abs/2508.01247) / AAAI 2026, Coordinated Humanoid Robot Locomotion with Symmetry Equivariant Reinforcement Learning Policy
 - [arXiv 2025.07](https://arxiv.org/abs/2507.18883), Success in Humanoid Reinforcement Learning under Partial Observation
 - [arXiv 2025.07](https://www.arxiv.org/abs/2507.04140) / RA-L 2025, Learning Humanoid Arm Motion via Centroidal Momentum Regularized Multi-Agent Reinforcement Learning
 - 🌟 [arXiv 2025.07](https://arxiv.org/abs/2507.00273) / Humanoids 2025, Mechanical Intelligence-Aware Curriculum Reinforcement Learning for Humanoids with Parallel Actuation, [code](https://github.com/alvister88/og_bruce)
@@ -485,8 +485,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - 🌟 [arXiv 2024.11](https://arxiv.org/abs/2411.01919) / Humanoids 2024, Real-Time Polygonal Semantic Mapping for Humanoid Robot Stair Climbing, [code](https://github.com/BTFrontier/polygon_mapping)
 - 🌟 [arXiv 2024.10](https://arxiv.org/abs/2410.11825) / IROS 2025, Learning Smooth Humanoid Locomotion through Lipschitz-Constrained Policies, [website](https://lipschitz-constrained-policy.github.io/) / [code](https://github.com/zixuan417/smooth-humanoid-locomotion)
 - [arXiv 2024.10](https://arxiv.org/abs/2410.03654), Learning Humanoid Locomotion over Challenging Terrain, [website](https://humanoid-challenging-terrain.github.io/)
-- [arXiv 2024.08](https://arxiv.org/abs/2408.14472), Advancing Humanoid Locomotion: Mastering Challenging Terrains with Denoising World Model Learning
-- [arXiv 2024.06](https://arxiv.org/abs/2406.10759), Humanoid Parkour Learning, [website](https://humanoid4parkour.github.io/)
+- [arXiv 2024.08](https://arxiv.org/abs/2408.14472) / RSS 2024, Advancing Humanoid Locomotion: Mastering Challenging Terrains with Denoising World Model Learning
+- [arXiv 2024.06](https://arxiv.org/abs/2406.10759) / CoRL 2024, Humanoid Parkour Learning, [website](https://humanoid4parkour.github.io/)
 - [arXiv 2024.04](https://arxiv.org/abs/2404.17070), Deep Reinforcement Learning for Bipedal Locomotion: A Brief Survey
 - [arXiv 2024.02](https://arxiv.org/abs/2402.19469), Humanoid Locomotion as Next Token Prediction, [website](https://humanoid-next-token-prediction.github.io/)
 - [arXiv 2024.02](https://arxiv.org/abs/2402.18294) / IROS 2024, Whole-body Humanoid Robot Locomotion with Human Reference, [website](https://greatsjk.github.io/Adam-PNDbotics/)
@@ -494,7 +494,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2023.09](https://arxiv.org/abs/2309.12784) / IROS 2024, Learning to Walk and Fly with Adversarial Motion Priors
 - [arXiv 2023.07](https://arxiv.org/abs/2307.10142) / ICRA 2023, Benchmarking **Potential Based Rewards** for Learning Humanoid Locomotion
 - [arXiv 2023.03](https://arxiv.org/abs/2303.03381), Real-World Humanoid Locomotion with Reinforcement Learning, [website](https://learning-humanoid-locomotion.github.io/)
-- [arXiv 2023.02](https://arxiv.org/abs/2302.09450), Robust and Versatile Bipedal Jumping Control through Reinforcement Learning
+- [arXiv 2023.02](https://arxiv.org/abs/2302.09450) / RSS 2023, Robust and Versatile Bipedal Jumping Control through Reinforcement Learning
 - [arXiv 2025.09](https://generalist-locomotion.github.io/), LocoFormer: Generalist Locomotion via Long-Context Adaptation
 - [2024.10](https://openreview.net/forum?id=O0oK2bVist), Adapting Humanoid Locomotion over Challenging Terrain via Two-Phase Training, [website](https://sites.google.com/view/adapting-humanoid-locomotion/two-phase-training)
 - [2024.10](https://openreview.net/forum?id=wH7Wv0nAm8), Bi-Level Motion Imitation for Humanoid Robots, [website](https://sites.google.com/view/bmi-corl2024)
@@ -696,7 +696,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2025.05](https://arxiv.org/abs/2505.19086), MaskedManipulator: Versatile Whole-Body Control for Loco-Manipulation
 - [arXiv 2025.05](https://arxiv.org/abs/2505.12278), Emergent Active Perception and Dexterity of Simulated Humanoids from Visual Reinforcement Learning, [website](https://www.zhengyiluo.com/PDC-Site/)
 - [arXiv 2025.05](https://arxiv.org/abs/2505.04961v1), ADD: Physics-Based Motion Imitation with Adversarial Differential Discriminators
-- [arXiv 2025.04](https://arxiv.org/abs/2504.11054), Zero-Shot Whole-Body Humanoid Control via Behavioral Foundation Models
+- [arXiv 2025.04](https://arxiv.org/abs/2504.11054) / ICLR 2025, Zero-Shot Whole-Body Humanoid Control via Behavioral Foundation Models
 - 🌟 [arXiv 2025.03](https://arxiv.org/abs/2503.19901) / CVPR 2025 Oral, TokenHSI: Unified Synthesis of Physical Human-Scene Interactions through Task Tokenization, [website](https://liangpan99.github.io/TokenHSI/)
 - 🌟 [arXiv 2025.02](https://arxiv.org/abs/2502.20390) / CVPR 2025, InterMimic: Towards Universal Whole-Body Control for Physics-Based Human-Object Interactions, [website](https://sirui-xu.github.io/InterMimic/), [code](https://github.com/Sirui-Xu/InterMimic)
 - [arXib 2024.10](https://arxiv.org/abs/2410.03441), CLoSD: Closing the Loop between Simulation and Diffusion for multi-task character control, [website](https://guytevet.github.io/CLoSD-page/)
@@ -707,7 +707,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - 🌟 [arXiv 2023.05](https://arxiv.org/abs/2305.06456) / ICCV 2023, Perpetual Humanoid Control for Real-time Simulated Avatars, [code](https://github.com/ZhengyiLuo/PHC)
 - 🌟 [arXiv 2022.08](https://arxiv.org/abs/2205.01906), ASE: Large-Scale Reusable Adversarial Skill Embeddings for Physically Simulated Characters, [website](https://xbpeng.github.io/projects/ASE/index.html) / [code](https://github.com/nv-tlabs/ASE/?tab=readme-ov-file)
 - 🌟 [arXiv 2021.08](https://arxiv.org/abs/2104.02180), AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control, [website](https://xbpeng.github.io/projects/AMP/index.html) / [code](https://github.com/xbpeng/DeepMimic)
-- [arXiv 2018.11](https://arxiv.org/abs/1811.09656), Hierarchical visuomotor control of humanoids
+- [arXiv 2018.11](https://arxiv.org/abs/1811.09656) / ICLR 2019, Hierarchical visuomotor control of humanoids
 - [arXiv 2018.09](https://arxiv.org/abs/1809.04474), Multi-task Deep Reinforcement Learning with PopArt
 - 🌟 [arXiv 2018.08](https://arxiv.org/abs/1804.02717), DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills, [website](https://xbpeng.github.io/projects/DeepMimic/index.html) / [code](https://github.com/xbpeng/DeepMimic)
 - [arXiv 2018.01](https://arxiv.org/abs/1801.08093), Learning Symmetric and Low-energy Locomotion
