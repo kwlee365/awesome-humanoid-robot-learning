@@ -231,6 +231,11 @@ ul.papers .links { font-size: 0.82rem; color: var(--fg-faint); display: flex; ga
 }
 .rs-token .tip { margin: 0.6rem 0 0; font-size: 0.82rem; color: var(--fg-faint); }
 
+/* The "start a topic of your own" box reuses the token panel's framing, but it
+   is always visible rather than revealed, and its input is prose not a secret. */
+.newtopic { margin: 0.8rem 0 1rem; }
+.newtopic input { font-family: inherit; font-size: 0.95rem; }
+
 .filters { display: grid; gap: 0.6rem; margin: 1rem 0 0.4rem; }
 @media (min-width: 52rem) { .filters { grid-template-columns: 2fr repeat(5, 1fr); align-items: end; } }
 .filters label { display: block; font-size: 0.78rem; color: var(--fg-faint); margin-bottom: 0.2rem; }
