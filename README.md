@@ -466,6 +466,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2025.05](https://arxiv.org/abs/2505.11494) / IROS 2025, SHIELD: Safety on Humanoids via CBFs In Expectation on Learned Dynamics
 - [arXiv 2025.05](https://arxiv.org/abs/2505.06218) / CVPR 2025, Let Humanoids Hike! Integrative Skill Development on Complex Trails
 - [arXiv 2025.05](https://arxiv.org/abs/2505.03729), VideoMimic: Visual imitation enables contextual humanoid control, [website](https://www.videomimic.net/)
+- [RiTA 2025](https://hal.science/hal-05072198), Learning to Walk with Hybrid Serial-Parallel Linkages: a Case Study on the Kangaroo Robot
 - [arXiv 2025.04](https://arxiv.org/abs/2504.20808), SoccerDiffusion: Toward Learning End-to-End Humanoid Robot Soccer from Gameplay Recordings
 - [arXiv 2025.04](https://arxiv.org/abs/2504.13619) / Humanoids 2024, Robust Humanoid Walking on Compliant and Uneven Terrain with Deep RL
 - [arXiv 2025.04](https://arxiv.org/abs/2504.09833) / RA-L 2025, PPF: Pre-training and Preservative Fine-tuning of Humanoid Locomotion
@@ -587,6 +588,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2025.08](https://arxiv.org/abs/2508.12252), Robot Trains Robot: Automatic Real-World Policy Adaptation and Learning for Humanoids
 - [arXiv 2025.05](https://arxiv.org/abs/2505.24068) / RA-L 2025, DiffCoTune: Differentiable Co-Tuning for Cross-domain Robot Control
 - [arXiv 2025.05](https://arxiv.org/abs/2505.14266), Sampling-Based System Identification with Active Exploration for Legged Robot Sim2Real Learning
+- [RiTA 2025](https://hal.science/hal-05072198), Learning to Walk with Hybrid Serial-Parallel Linkages: a Case Study on the Kangaroo Robot
 - [arXiv 2025.04](https://arxiv.org/abs/2504.06585), Sim-to-Real of Humanoid Locomotion Policies via Joint Torque Space Perturbation Injection
 - [arXiv 2025.02](https://arxiv.org/abs/2502.10894), Bridging the Sim-to-Real Gap for Athletic Loco-Manipulation
 - [arXiv 2019.01](https://arxiv.org/abs/1901.08652), Learning Agile and Dynamic Motor Skills for Legged Robots
