@@ -197,8 +197,12 @@ def main() -> int:
             for f in fields:
                 if rec.get(f) not in (None, [], ""):
                     target[f] = rec[f]
-            if rec["venue"].lower() != "arxiv":
-                target["publication_status"] = rec.get("publication_status", target["publication_status"])
+            # publication_status is NOT written here. parse_readme derives it from
+            # the entry's own venue prefix, and does not preserve it across runs,
+            # so anything written here silently reverts on the next regeneration
+            # and leaves data/papers.json permanently disagreeing with README.md.
+            # An arXiv-linked entry accepted somewhere carries that venue as its
+            # alt_venue, which is how this list has always expressed it.
             patched += 1
     with open(P.DATA, "w", encoding="utf-8") as fh:
         json.dump(data, fh, ensure_ascii=False, indent=2)
