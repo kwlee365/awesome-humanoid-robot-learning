@@ -325,6 +325,17 @@ def load_state(path: str) -> dict:
     return state
 
 
+def queue_depth(path: str) -> int:
+    """How many candidates are still waiting to be verified."""
+    if not os.path.exists(path):
+        return 0
+    try:
+        with open(path, encoding="utf-8") as fh:
+            return len(json.load(fh).get("candidates") or [])
+    except (OSError, ValueError):
+        return 0
+
+
 def write_json(path: str, payload: dict) -> None:
     """Write via a temporary file, so an interrupted run cannot truncate the real one.
 
@@ -1373,6 +1384,10 @@ def main() -> int:
                     help="how many recent months to sweep every run (default 2)")
     ap.add_argument("--backfill", type=int, default=1,
                     help="how many never-swept older months to also sweep (default 1)")
+    ap.add_argument("--queue-limit", type=int, default=400,
+                    help="pause backfill while this many candidates are already waiting "
+                         "(0 disables). Finding new papers never pauses; only the "
+                         "archaeology does, until verification has caught up.")
     ap.add_argument("--month", action="append", default=[],
                     help="sweep this YYYY-MM instead of the planned window; repeatable")
     ap.add_argument("--floor", help="do not backfill past this YYYY-MM, for this run only")
@@ -1446,7 +1461,19 @@ def main() -> int:
     # --floor applies to this run and is deliberately not persisted: a flag typed
     # once should not quietly govern every scheduled run after it.
     planning = dict(state, floor=args.floor) if args.floor else state
-    months = args.month or plan_months(planning, channels, args.recent, args.backfill)
+
+    # A backfilled month yields a couple of hundred candidates and a verification
+    # pass gets through a few dozen, so backfilling every run buries the queue
+    # faster than anyone can read it - and a candidate nobody reaches is no better
+    # than one never found. Sweeping the recent months is never skipped, so no new
+    # paper is missed; only the walk backwards waits.
+    backfill = args.backfill
+    waiting = queue_depth(args.out)
+    if backfill and args.queue_limit and waiting >= args.queue_limit and not args.month:
+        print(f"  {waiting} candidate(s) already waiting (limit {args.queue_limit}); "
+              f"backfill paused until the queue is worked down")
+        backfill = 0
+    months = args.month or plan_months(planning, channels, args.recent, backfill)
 
     known = Known(listed)
 

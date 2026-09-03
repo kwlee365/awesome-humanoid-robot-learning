@@ -77,6 +77,17 @@ not in cs.RO at all, one of them in cs.AI only. Hence cs.GR in full (~150 papers
 a month) and one `ANDNOT cat:cs.RO` term query for the archives that are too
 large to enumerate.
 
+**Backfill waits for verification.** A backfilled month produces a couple of
+hundred candidates and a verification pass gets through a few dozen, so
+backfilling every run would bury the queue faster than anyone could read it -
+and a candidate nobody reaches is no better than one never found. `--queue-limit`
+(default 400) pauses the walk backwards while that many candidates are already
+waiting. The recent months are swept regardless, so no new paper is missed.
+
+A candidate that is read and rejected must be recorded in
+`data/review-manual.json` under kind `out-of-scope`, or it keeps its relevance
+score, stays at the top of the queue and is read again by every later run.
+
 **Coverage is recorded, and both records are committed.** `data/discovery-state.json`
 says which month each channel first swept; `data/discovery-candidates.json` is the
 work queue. Every run sweeps the recent months plus one month nobody has swept

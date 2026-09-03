@@ -50,8 +50,7 @@ the papers already curated, and two of the choices look wrong but are not:
 Read `data/discovery-candidates.json`. It is a queue, not a snapshot: unactioned
 candidates from earlier runs are carried forward with a `carried_over_since` date
 and only leave when the paper is added or a human deletes the entry. So its count
-is a backlog, not this run's yield - say so when reporting. Work down it as far
-as time allows; the rest waits. It holds:
+is a backlog, not this run's yield - say so when reporting. It holds:
 
 - `candidates` - not in the list, ranked by relevance, each with `relevance.why`
   explaining what caught it, `sources` naming which channels saw it, and `urls`
@@ -62,6 +61,16 @@ as time allows; the rest waits. It holds:
 - `failures` - any channel that errored or returned an incomplete window. Those
   months are deliberately left unmarked in the ledger so a later run sweeps them
   again, and the run must say so in the report and in `data/review-manual.json`
+
+**Aim to clear at least 15 candidates from the top of the queue every run**, by
+adding them or by rejecting them. Rejecting counts: a candidate read and judged
+out of scope goes into `data/review-manual.json` under kind `out-of-scope` with
+its arXiv id, and `discover.py` then stops proposing it. Skipping one silently
+does not count - it keeps its score, stays at the top, and the next run reads it
+again.
+
+Backfill pauses on its own while more than 400 candidates are waiting, so the
+queue converges rather than growing. Sweeping the recent months never pauses.
 
 **A candidate is a pointer, not a paper.** It carries no `verified_on`, and
 `add_papers.py` rejects any record without one, so nothing here can reach
