@@ -68,6 +68,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.06](https://arxiv.org/abs/2606.09286), VAIC: Vision-Guided Humanoid Agile Object Interaction Control via Decoupled Commands, [website](https://vaic-humanoid.github.io/)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.09215), MotionWAM: Towards Foundation World Action Models for Real-Time Humanoid Loco-Manipulation
 - [arXiv 2026.06](https://arxiv.org/abs/2606.08548), OASIS: From Simulation Data Collection to Real-World Humanoid Loco-Manipulation, [website](https://oasis-humanoid.github.io/)
+- [arXiv 2026.06](https://arxiv.org/abs/2606.08059), Perceptive Behavior Foundation Model: Adapting Human Motion Priors to Robot-Centric Terrain
 - [arXiv 2026.06](https://arxiv.org/abs/2606.06493), HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers, [website](https://lzyang2000.github.io/HANDOFF/)
 - 🌟 [arXiv 2026.06](https://arxiv.org/abs/2606.05687), Accelerating and Scaling MPC-Guided Reinforcement Learning for Humanoid Locomotion and Manipulation, [code](https://github.com/junhengl/mpc-rl)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.05160), GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors, [website](https://research.nvidia.com/labs/dair/grail/)
