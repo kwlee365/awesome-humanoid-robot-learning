@@ -348,6 +348,53 @@
           "title": "Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read from the arXiv abstract during the 2026-09-03 queue pass and judged outside this list. Recorded so the discovery sweep stops re-proposing them: scripts/discover.py treats an arXiv id listed under this kind as already decided. Delete an entry here to put that paper back in the queue.",
+      "detected_on": "2026-09-03",
+      "items": [
+        {
+          "arxiv_id": "2606.12153",
+          "title": "TopoCap: Learning Topology-Agnostic Motion Priors for Monocular Video-to-Animation",
+          "note": "monocular video-to-animation retargeting; no robot, and the Human Motion Analysis section it would have needed was removed"
+        },
+        {
+          "arxiv_id": "2606.26425",
+          "title": "A System for Fast, Resilient, and Adaptable Loco-Manipulation Behaviors on Humanoid Robots",
+          "note": "a thesis, not a paper"
+        },
+        {
+          "arxiv_id": "2606.13222",
+          "title": "Proprioceptive-visual correspondence enables self-other distinction in humanoid robots",
+          "note": "self-other distinction from proprioceptive-visual correspondence; a cognition/HRI result that fits none of the twelve sections"
+        },
+        {
+          "arxiv_id": "2606.20990",
+          "title": "Duet: Dual-Robot Understanding via Efficient Teaching",
+          "note": "dual-robot collaborative transport; nothing in the abstract makes it humanoid"
+        },
+        {
+          "arxiv_id": "2606.05254",
+          "title": "Flash-WAM: Modality-Aware Distillation for World Action Models",
+          "note": "world-action model step distillation, evaluated on manipulation benchmarks; not humanoid-specific"
+        },
+        {
+          "arxiv_id": "2608.26058",
+          "title": "One Policy, Many Embodiments: Unified Camera-Centric Action Geometry Pre-training for Heterogeneous Embodied M",
+          "note": "generalist VLA pre-training across embodiments; not humanoid-specific"
+        },
+        {
+          "arxiv_id": "2607.13060",
+          "title": "A Bayesian framework for the uncanny valley in humanoid robot design",
+          "note": "a Bayesian account of the uncanny valley; perception of design rather than robot learning"
+        },
+        {
+          "arxiv_id": "2606.19769",
+          "title": "Data Standards for Humanoid Robotics: The Missing Infrastructure for Physical AI",
+          "note": "a position piece on ISO data standards, not a research contribution"
+        }
+      ]
     }
   ]
 }

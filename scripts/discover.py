@@ -42,6 +42,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from parse_readme import DATA, REPO, normalize_title  # noqa: E402
 
 STATE = os.path.join(REPO, "data", "discovery-state.json")
+MANUAL = os.path.join(REPO, "data", "review-manual.json")
 TODAY = dt.date.today()
 
 # Identifies the client to every API it touches. No address by default: the
@@ -373,6 +374,32 @@ def plan_months(state: dict, channels: list, recent: int, backfill: int) -> list
 # What is already known
 # --------------------------------------------------------------------------
 
+def decided_against() -> set:
+    """arXiv ids a human has already read and rejected.
+
+    Without this a rejected candidate keeps its high relevance score and sits at
+    the top of the queue for ever, so every verification pass spends its first
+    minutes re-reading the same papers it threw out last time. Recorded in
+    data/review-manual.json under kind "out-of-scope"; deleting an entry there
+    puts the paper back in the queue.
+    """
+    if not os.path.exists(MANUAL):
+        return set()
+    try:
+        with open(MANUAL, encoding="utf-8") as fh:
+            findings = json.load(fh).get("findings", [])
+    except (OSError, ValueError):
+        return set()
+    out = set()
+    for finding in findings:
+        if finding.get("kind") != "out-of-scope":
+            continue
+        for item in finding.get("items", []):
+            if item.get("arxiv_id"):
+                out.add(item["arxiv_id"])
+    return out
+
+
 class Known:
     """The identity of every paper already in the list, for deduplication.
 
@@ -384,11 +411,14 @@ class Known:
 
     def __init__(self, records: list) -> None:
         self.arxiv = {r["arxiv_id"] for r in records if r.get("arxiv_id")}
+        self.rejected = decided_against()
         self.doi = {r["doi"].lower() for r in records if r.get("doi")}
         self.titles = {r["norm_title"]: r["title"] for r in records}
 
     def verdict(self, arxiv_id, doi, title) -> tuple:
         """Return (state, detail) where state is known / similar / new."""
+        if arxiv_id and arxiv_id in self.rejected:
+            return "known", "read and judged out of scope; see data/review-manual.json"
         if arxiv_id and arxiv_id in self.arxiv:
             return "known", "arXiv id already listed"
         if doi and doi.lower() in self.doi:
