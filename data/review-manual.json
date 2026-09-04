@@ -395,6 +395,84 @@
           "note": "a position piece on ISO data standards, not a research contribution"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read from the primary source during the 2026-09-04 queue pass and judged outside this list. Recorded so the discovery sweep stops re-proposing them.",
+      "detected_on": "2026-09-04",
+      "items": [
+        {
+          "doi": "10.1184/r1/32620404.v1",
+          "title": "Scalable Sim-to-Real Learning for General-Purpose Humanoid Skills",
+          "note": "CMU KiltHub PhD thesis repository record, not a standalone paper (same category of exclusion as arXiv 2606.26425 above)"
+        },
+        {
+          "doi": "10.1184/r1/33063809",
+          "title": "Designing and Teaching Dexterous Robot Hands",
+          "note": "CMU KiltHub PhD thesis repository record, not a standalone paper"
+        },
+        {
+          "arxiv_id": "2608.16222",
+          "title": "HiPHI: A Large-Scale Benchmark for High-Precision Human Motion and Object-Interaction",
+          "note": "a 600+ hour optical mocap dataset of human motion and human-object interaction with no robot in it; the Human Motion Analysis and Synthesis section it would have needed was removed"
+        }
+      ]
+    },
+    {
+      "kind": "enrichment-source-blocked",
+      "reason": "During the 2026-09-04 queue pass, MDPI journal pages (mdpi.com) returned HTTP 400/403 to both direct fetch and WebFetch on every attempt, so the verbatim abstract could not be read from the primary source. Left in the discovery queue rather than added or rejected; a human with working MDPI access (or a later run with different network conditions) should read these directly.",
+      "detected_on": "2026-09-04",
+      "items": [
+        {
+          "doi": "10.3390/bdcc10080246",
+          "title": "Visual Safe Human-to-Humanoid Motion Imitation",
+          "paper_url": "https://www.mdpi.com/2504-2289/10/8/246"
+        },
+        {
+          "doi": "10.3390/biomimetics11070484",
+          "title": "Whole-Body Offline-to-Online Planning for Robust Jumping of Full-Sized Humanoid Robot",
+          "paper_url": "https://www.mdpi.com/2313-7673/11/7/484"
+        }
+      ]
+    },
+    {
+      "kind": "readme-link-outdated",
+      "reason": "During the 2026-09-04 enrichment pass, three README entries linked only to a project-page website were confirmed to have arXiv preprints, and their abstracts/authors were enriched into data/papers.json via enrich.py (matched by title, which is unaffected by this since the fields enriched carry no README link). The README lines themselves still lack the arXiv link. A human should hand-edit each line to add the arXiv URL (and re-run parse_readme.py so data/papers.json picks up the arxiv_id) rather than have automation touch README.md's list formatting.",
+      "detected_on": "2026-09-04",
+      "items": [
+        {
+          "title": "LOVON: Legged Open-Vocabulary Object Navigator",
+          "current_readme_line": "- arXiv 2025.07, LOVON: Legged Open-Vocabulary Object Navigator, [website](https://daojiepeng.github.io/LOVON/)",
+          "discovered_arxiv_id": "2507.06747",
+          "discovered_arxiv_url": "https://arxiv.org/abs/2507.06747"
+        },
+        {
+          "title": "DexUMI: Using Human Hand as the Universal Manipulation Interface for Dexterous Manipulation",
+          "current_readme_line": "- arXiv 2025.05, DexUMI: Using Human Hand as the Universal Manipulation Interface for Dexterous Manipulation, [website](https://dex-umi.github.io/)",
+          "discovered_arxiv_id": "2505.21864",
+          "discovered_arxiv_url": "https://arxiv.org/abs/2505.21864"
+        },
+        {
+          "title": "Sim-to-Real Reinforcement Learning for Vision-Based Dexterous Manipulation on Humanoids",
+          "current_readme_line": "- arXiv 2025.02, Sim-to-Real Reinforcement Learning for Vision-Based Dexterous Manipulation on Humanoids, [website](https://toruowo.github.io/recipe/)",
+          "discovered_arxiv_id": "2502.20396",
+          "discovered_arxiv_url": "https://arxiv.org/abs/2502.20396"
+        }
+      ]
+    },
+    {
+      "kind": "possible-title-mismatch",
+      "reason": "During the 2026-09-04 enrichment pass, the README entry 'CLONE: Holistic Closed-Loop Whole-Body Teleoperation for Long-Horizon Humanoid Control' (Loco-Manipulation and Whole-Body-Control, linked only to https://humanoidclone.github.io/CLONE.github.io/) was traced to arXiv 2506.08931, whose title has read 'CLONE: Closed-Loop Whole-Body Humanoid Teleoperation for Long-Horizon Tasks' since v1 (2025-06-10, unchanged through v2 2025-08-30) - never the README's wording. The subject matter matches (same MoE-based closed-loop whole-body teleoperation system using head/hand MR-headset tracking, same project page), so this looks like the same paper recorded under a paraphrased title rather than a wrong id, but it was not auto-corrected or enriched under the mismatched title. A human should confirm and hand-edit the README line to add the arXiv link (and align the title if appropriate) before re-running parse_readme.py.",
+      "detected_on": "2026-09-04",
+      "items": [
+        {
+          "readme_title": "CLONE: Holistic Closed-Loop Whole-Body Teleoperation for Long-Horizon Humanoid Control",
+          "current_readme_line": "- arXiv 2025.06, CLONE: Holistic Closed-Loop Whole-Body Teleoperation for Long-Horizon Humanoid Control, [website](https://humanoidclone.github.io/CLONE.github.io/)",
+          "discovered_arxiv_id": "2506.08931",
+          "discovered_arxiv_title": "CLONE: Closed-Loop Whole-Body Humanoid Teleoperation for Long-Horizon Tasks",
+          "discovered_arxiv_url": "https://arxiv.org/abs/2506.08931"
+        }
+      ]
     }
   ]
 }
