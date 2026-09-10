@@ -26,6 +26,10 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.09](https://arxiv.org/abs/2609.09918), ViBe: Visual Behavior Adaptation for Perceptive Humanoid Whole-Body Control, [website](https://lok-i.github.io/vibe-control/)
+- [arXiv 2026.09](https://arxiv.org/abs/2609.08511), PGMT: Perceptive General Motion Tracking for Humanoid Robots, [website](https://luyili.github.io/pgmt/)
+- [arXiv 2026.09](https://arxiv.org/abs/2609.06718), SkillX: Unified Multi-Skill Policy Learning for Humanoid Soccer, [website](https://yzc0731.github.io/SkillX/)
+- [arXiv 2026.09](https://arxiv.org/abs/2609.05994), GLoRI: Closed-Loop Whole-Body Tracking with Global-Local Reference Interaction for Humanoid Loco-Manipulation
 - [arXiv 2026.09](https://arxiv.org/abs/2609.02134), Unified Motion Retargeting for Humanoids with Learned Point Cloud Correspondence
 - [arXiv 2026.09](https://arxiv.org/abs/2609.01518), A System for Fast, Resilient, and Adaptable Loco-Manipulation Behaviors on Humanoid Robots
 - [arXiv 2026.09](https://arxiv.org/abs/2609.00677), ADAPT: Agile Diffusion Action Priors for Robust and Steerable Online Text-Driven Humanoid Control, [website](https://wuyan01.github.io/ADAPT-project/)
@@ -365,6 +369,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [1999](https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(99)01327-3), Is imitation learning the route to humanoid robots?
 
 ## Teleoperation
+- [arXiv 2026.09](https://arxiv.org/abs/2609.07933), SPOT: Spatial Perception-Oriented Long-Horizon Humanoid Teleoperation
 - [arXiv 2026.08](https://arxiv.org/abs/2608.01834), Teleopit: A Full-Embodiment Humanoid Teleoperation System, [website](https://botrunner64.github.io/teleopit-page)
 - [arXiv 2026.07](https://arxiv.org/abs/2607.29227), Event-Based Upper-Body Humanoid Teleoperation Under Challenging Illumination
 - [arXiv 2026.07](https://arxiv.org/abs/2607.20399) / Humanoids 2025, Towards Miniature Humanoid Tele-Loco-Manipulation Using Virtual Reality and Reinforcement Learning
@@ -410,6 +415,9 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.09](https://arxiv.org/abs/2609.10283), SwingBot: Learning Whole-Body Brachiation for Humanoid Robots
+- [arXiv 2026.09](https://arxiv.org/abs/2609.07544), Anti-Gravity Walking by a Flying Humanoid Robot via Thrust-Rate Input Whole-Body Model Predictive Control
+- [arXiv 2026.09](https://arxiv.org/abs/2609.07096), RoboDreamer: Anticipatory Humanoid Locomotion with Predictive State-Space Models
 - [arXiv 2026.09](https://arxiv.org/abs/2609.02542), World-Model-Augmented Visual Locomotion for Humanoids on Foothold-Constrained Terrain
 - [arXiv 2026.08](https://arxiv.org/abs/2608.29769), Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids
 - [arXiv 2026.08](https://arxiv.org/abs/2608.28090), Stay Seated: Learning Omnidirectional Humanoid Locomotion on a Passive Mobile Chair with Casters
@@ -548,6 +556,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.08](https://arxiv.org/abs/2608.02809) / arXiv 2026.08, Toward Certified Functional Safety for Industrial Humanoid Robots: The Fail-Passive Gap and a Feasibility Study
 - [arXiv 2026.07](https://arxiv.org/abs/2607.28623), PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball, [website](https://lzyang2000.github.io/perceptive_cbf_rl/)
 - 🌟 [arXiv 2026.07](https://arxiv.org/abs/2607.14488) / IROS 2026, Safe Execution of RL Policies via Acceleration-based CBF-QP Constraint Enforcement for Real-World Robotic Deployments, [website](https://safe-rl-qp.github.io/) / [code](https://github.com/safe-rl-qp/safe-rl-qp-mc-rtc-superbuild)
+- [arXiv 2026.06](https://arxiv.org/abs/2606.16022), λ-Reachability: Geometric-Horizon Safety Bellman Equations for Humanoid Safety
 - [arXiv 2026.06](https://arxiv.org/abs/2606.14270) / RA-L 2026, Robust Fall Recovery for Armless Bipedal-Wheeled Robots Via Force-Guided Learning
 - 🌟 [arXiv 2026.05](https://arxiv.org/abs/2605.25546), Safety-Critical Whole-Body Control for Humanoid Robots via Input-to-State Safe Control Barrier Functions, [website](https://kwlee365.github.io/SafeWBC-Website/) / [code](https://github.com/dyroshumanoid/safeWBC/tree/nightly)
 - [arXiv 2026.04](https://arxiv.org/abs/2604.11447) / arXiv 2026.04, Safe Human-to-Humanoid Motion Imitation Using Control Barrier Functions
@@ -577,6 +586,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2022.12](https://arxiv.org/abs/2212.00541), Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo
 
 ## Navigation
+- [arXiv 2026.09](https://arxiv.org/abs/2609.09158), TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model
 - [arXiv 2026.07](https://arxiv.org/abs/2607.27180), HumanCLAW: Can Vision-Language Models Act Through a Body?, [website](https://human-claw.github.io)
 - 🌟 [arXiv 2026.07](https://arxiv.org/abs/2607.20061), ReferTrack: Referring Then Tracking for Embodied Visual Tracking, [code](https://github.com/MedlarTea/referTrack)
 - [arXiv 2026.07](https://arxiv.org/abs/2607.18200), Learning Adaptive Safety Margins for Visual Navigation
@@ -639,9 +649,10 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [RiTA 2025](https://hal.science/hal-05072198), Learning to Walk with Hybrid Serial-Parallel Linkages: a Case Study on the Kangaroo Robot
 - [arXiv 2025.04](https://arxiv.org/abs/2504.06585), Sim-to-Real of Humanoid Locomotion Policies via Joint Torque Space Perturbation Injection
 - [arXiv 2025.02](https://arxiv.org/abs/2502.10894), Bridging the Sim-to-Real Gap for Athletic Loco-Manipulation
-- [arXiv 2019.01](https://arxiv.org/abs/1901.08652), Learning Agile and Dynamic Motor Skills for Legged Robots
+- [arXiv 2019.01](https://arxiv.org/abs/1901.08652) / Science Robotics 2019, Learning Agile and Dynamic Motor Skills for Legged Robots
 
 ## Hardware Design
+- [arXiv 2026.09](https://arxiv.org/abs/2609.08905), Visible-Reachable Workspace for Perception-Aware Humanoid Design, [website](https://generalroboticslab.com/DukeHumanoidv2)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.03497), BRIDGE: An Open-Source Humanoid Platform via Morphology-Control Co-Design for Physical AI, [website](https://sites.google.com/view/bridgerobot)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.30832), A Dual-Cam Parallel Elastic Actuator with Shared Gas-Spring Compensation for Humanoid Ankles
 - [arXiv 2026.08](https://arxiv.org/abs/2608.25547), A Tendon-Driven Five-Fingered Hand with Distributed Tactile Perception for Dexterous Manipulation
@@ -729,6 +740,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Physics-Based Character Animation
 - [SIGGRAPH 2010](https://dl.acm.org/doi/abs/10.1145/1833349.1778770?casa_token=j3esx-hx0GAAAAAA:OvRU6YYrNo2ZP9IyXGVDryWJqHmvU-oVhnzog8RFKKySQJjganzaAmHff6CQ4a0qzfJZu-J6Buf4Ug), Spatial relationship preserving character motion adaptation
+- [arXiv 2026.09](https://arxiv.org/abs/2609.06591), Unifying Physics-Based Humanoid Interaction with a Context-Conditioned Interaction Prior, [website](https://jiann-li.github.io/chip-project/)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.23258), Progressively Learning Heterogeneous Skills in a Unified Latent Space
 - [arXiv 2026.08](https://arxiv.org/abs/2608.03528), Tired Actor: Fatigue-Informed Character Control
 - [arXiv 2026.08](https://arxiv.org/abs/2608.03227), PFM-HR: Pose Flow Matching for Humanoid Robots
@@ -765,7 +777,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2018.11](https://arxiv.org/abs/1811.09656) / ICLR 2019, Hierarchical visuomotor control of humanoids
 - [arXiv 2018.09](https://arxiv.org/abs/1809.04474), Multi-task Deep Reinforcement Learning with PopArt
 - 🌟 [arXiv 2018.08](https://arxiv.org/abs/1804.02717), DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills, [website](https://xbpeng.github.io/projects/DeepMimic/index.html) / [code](https://github.com/xbpeng/DeepMimic)
-- [arXiv 2018.01](https://arxiv.org/abs/1801.08093), Learning Symmetric and Low-energy Locomotion
+- [arXiv 2018.01](https://arxiv.org/abs/1801.08093) / ACM TOG 2018, Learning Symmetric and Low-energy Locomotion
 - 🌟 SIGGRAPH 2025, PARC: Physics-based Augmentation with Reinforcement Learning for Character Controllers, [website](https://michaelx.io/parc/index.html) / [github](https://github.com/mshoe/PARC)
 - [TOG 2023](https://dl.acm.org/doi/abs/10.1145/3618375), AdaptNet: Policy Adaptation for Physics-Based Character Control
 - [TOG 2023](https://dl.acm.org/doi/abs/10.1145/3592447), Composite Motion Learning with Task Control

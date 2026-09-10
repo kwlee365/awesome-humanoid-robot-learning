@@ -473,6 +473,88 @@
           "discovered_arxiv_url": "https://arxiv.org/abs/2506.08931"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read from the arXiv abstract during the 2026-09-10 AM queue pass (top of data/discovery-candidates.json after the 638-candidate carryover plus a fresh sweep) and judged outside this list. Recorded so the discovery sweep stops re-proposing them.",
+      "detected_on": "2026-09-10",
+      "items": [
+        {
+          "arxiv_id": "2606.18747",
+          "title": "Generating Natural and Expressive Robot Gestures through Iterative Reinforcement Learning with Human Feedback using LLMs",
+          "note": "abstract confirms the platform is the Pepper social robot, not a full humanoid; contribution is co-speech hand/arm gesture generation for HRI, not whole-body humanoid control"
+        },
+        {
+          "arxiv_id": "2607.18197",
+          "title": "Imitation of Arm Gestures by the Semi-Humanoid Robot NICO",
+          "note": "abstract confirms NICO is explicitly called 'semi-humanoid'; method is a non-learned analytical geometry + off-the-shelf pose-estimator mapping, a preliminary HRI study rather than a robot-learning contribution (same category as the 2026-08-19 NICO SOM exclusion above)"
+        },
+        {
+          "arxiv_id": "2608.14462",
+          "title": "THRIVE: Therapeutic Humanoid Robot In Virtual Environment",
+          "note": "abstract confirms this is a robot-agnostic clinical/at-home rehabilitation platform for children with upper-limb impairments; no robot-learning or control-policy contribution (formalizes the informal exclusion already noted in the 2026-08-22 coverage-resweep-note above)"
+        },
+        {
+          "arxiv_id": "2607.17042",
+          "title": "Articulated Humanoid Head for a Robot Receptionist Capable of Natural Human Interaction",
+          "note": "abstract confirms this is a mechanical head design (21-DoF, silicone skin) evaluated by a human-likeness user study for a receptionist role; no robot-learning contribution and not a full-body humanoid, so it does not fit Hardware Design as used elsewhere in this list"
+        },
+        {
+          "arxiv_id": "2606.11109",
+          "title": "EM-Fall: Embodied mmWave Sensing for Day-and-Night Fall Detection on Humanoid Robots",
+          "note": "abstract confirms this is a sensing/perception system for detecting falls in humans (elderly care) using a mobile humanoid as a sensor carrier; not a learned control or safety policy for the robot itself"
+        },
+        {
+          "arxiv_id": "2606.17574",
+          "title": "DeepInsight: A Unified Evaluation Infrastructure Across the Physical AI Stack",
+          "note": "abstract confirms this is an internal evaluation/benchmarking runtime (episode driver, resource-handle protocol, trace identity scheme) deployed across an embodied humanoid stack; it is tooling for running other people's benchmarks, not a robot-learning method or a benchmark suite itself, so it does not fit Simulation Benchmark or any other section"
+        },
+        {
+          "arxiv_id": "2607.15579",
+          "title": "PACE: Persona Adaptation through Conversational Elicitation in Human-Robot Interaction",
+          "note": "title-only exclusion: social-HRI conversational-persona study, no robot-learning or humanoid control contribution"
+        },
+        {
+          "arxiv_id": "2606.20748",
+          "title": "Toward Machine Risk Perception: Integrating Trust Calibration and Precursor-Based Risk Estimation for Humanoid",
+          "note": "title-only exclusion: trust-calibration/risk-perception HRI-psychology study, no robot-learning contribution"
+        },
+        {
+          "arxiv_id": "2607.11633",
+          "title": "Breaking the 15% Barrier: A Real-World Data-Driven System for Proactive Social Robot Triggered by User Nonverbal Cues",
+          "note": "title-only exclusion: proactive social-robot triggering study, no humanoid control or robot-learning contribution"
+        },
+        {
+          "arxiv_id": "2607.09323",
+          "title": "Effects of Robotic Touch on Older Users During Walking Guidance by a Humanoid Robot",
+          "note": "title-only exclusion: HRI/psychology user study on touch perception, no robot-learning contribution"
+        },
+        {
+          "arxiv_id": "2607.12206",
+          "title": "RegHead: Non-Humanoid Head Blendshapes via Feed-Forward Registration",
+          "note": "title-only exclusion: title explicitly says 'Non-Humanoid'"
+        },
+        {
+          "arxiv_id": "2607.16299",
+          "title": "Algorithmic Accuracy as a Motivational Driver in Robot-Mediated Learning: A Comparative Study of Cross-Correlation and CNN-Based Sound Detection in an Interactive Quiz Game",
+          "note": "title-only exclusion: educational HRI quiz-game study, no humanoid robot-learning contribution"
+        },
+        {
+          "arxiv_id": "2607.14809",
+          "title": "An LLM-Based Automatic Sportscast Solution for Robot Soccer Matches",
+          "note": "title-only exclusion: LLM commentary/sportscast generation, not a robot-learning or control contribution"
+        },
+        {
+          "arxiv_id": "2606.24445",
+          "title": "Legible and Intuitive Multi-modal Robot State and Intent Communication Validated in Online and Real-world Studies",
+          "note": "title-only exclusion: human-robot communication/legibility study, no robot-learning or humanoid control contribution"
+        },
+        {
+          "arxiv_id": "2606.19728",
+          "title": "Bidirectional Tutoring for Developmental Motor Learning in Robots: Co-Developed Interaction Dynamics Support Stable Learning",
+          "note": "title-only exclusion: developmental-robotics/HRI motor-learning-interaction study, not humanoid whole-body control or manipulation learning"
+        }
+      ]
     }
   ]
 }
