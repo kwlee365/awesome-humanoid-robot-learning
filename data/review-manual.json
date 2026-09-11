@@ -420,18 +420,13 @@
     },
     {
       "kind": "enrichment-source-blocked",
-      "reason": "During the 2026-09-04 queue pass, MDPI journal pages (mdpi.com) returned HTTP 400/403 to both direct fetch and WebFetch on every attempt, so the verbatim abstract could not be read from the primary source. Left in the discovery queue rather than added or rejected; a human with working MDPI access (or a later run with different network conditions) should read these directly.",
+      "reason": "During the 2026-09-04 queue pass, MDPI journal pages (mdpi.com) returned HTTP 400/403 to both direct fetch and WebFetch on every attempt, so the verbatim abstract could not be read from the primary source. Left in the discovery queue rather than added or rejected; a human with working MDPI access (or a later run with different network conditions) should read these directly. (2026-09-11: the biomimetics11070484 item was successfully fetched this run and added to README.md; removed from this list. The bdcc10080246 item remains blocked.)",
       "detected_on": "2026-09-04",
       "items": [
         {
           "doi": "10.3390/bdcc10080246",
           "title": "Visual Safe Human-to-Humanoid Motion Imitation",
           "paper_url": "https://www.mdpi.com/2504-2289/10/8/246"
-        },
-        {
-          "doi": "10.3390/biomimetics11070484",
-          "title": "Whole-Body Offline-to-Online Planning for Robust Jumping of Full-Sized Humanoid Robot",
-          "paper_url": "https://www.mdpi.com/2313-7673/11/7/484"
         }
       ]
     },
@@ -553,6 +548,136 @@
           "arxiv_id": "2606.19728",
           "title": "Bidirectional Tutoring for Developmental Motor Learning in Robots: Co-Developed Interaction Dynamics Support Stable Learning",
           "note": "title-only exclusion: developmental-robotics/HRI motor-learning-interaction study, not humanoid whole-body control or manipulation learning"
+        }
+      ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read from a primary source during the 2026-09-11 scheduled maintenance run and judged outside this list. discover.py's out-of-scope suppression only keys on arxiv_id, so the DOI-only items below (no arxiv_id) will keep resurfacing in future sweeps until a human either adds an arXiv id here or extends the suppression logic; they are recorded for reference regardless. Delete an entry here to put that paper back in the queue.",
+      "detected_on": "2026-09-11",
+      "items": [
+        {
+          "arxiv_id": "2609.10982",
+          "title": "ReCHOIR: Contact-guided Human Object Interaction Retargeting to Diverse Characters",
+          "note": "Pure kinematic motion retargeting for CG humanoid characters (KAIST Visual Media Lab); no physics-based simulation control and no physical robot involved."
+        },
+        {
+          "doi": "10.5281/zenodo.21964663",
+          "title": "FWL-ThinkingLM v4.1: A Complete Axiom System Unifying Robot Underlying Logic — FWL Manifold Principle",
+          "note": "Self-uploaded Zenodo record (since removed by the author) using invented pseudo-axiomatic terminology with no genuine methodology or experiments."
+        },
+        {
+          "doi": "10.5281/zenodo.21272840",
+          "title": "HCRGD‑Robotics: II — A Geometric‑Energy Coupling Framework for Locomotion Dynamics Control of Humanoid Robots",
+          "note": "Self-published pseudo-physics manifesto by a single author, explicitly stating no simulation or hardware testing has been done."
+        },
+        {
+          "doi": "10.5281/zenodo.21982376",
+          "title": "Kinematic Optimization, Trajectory Retargeting, and Validation Pipelines for Humanoid Robot Motion Generation",
+          "note": "7-page self-uploaded document with no institution/advisor/committee, no citations, and no actual experimental data despite claiming 'experimental evaluations'."
+        },
+        {
+          "doi": "10.67119/sx6qp420",
+          "title": "Humanoid Robots 2026: A Comprehensive Review of Technical Foundations, Market Dynamics, and Research Challenges",
+          "note": "Explicit market/bibliometric review comparing commercial platforms (Tesla Optimus, Figure, Atlas, etc.), not a research contribution."
+        },
+        {
+          "doi": "10.5281/zenodo.21886079",
+          "title": "A Whole-Body Control Framework for Humanoid Robots via Inertial Parameter Modulation",
+          "note": "Self-published single-author Zenodo thesis with no experiments or simulation results; 'real-robot deployment validation' is explicitly listed as future work."
+        },
+        {
+          "doi": "10.1088/1748-3190/ae91be",
+          "title": "Design features in human joints with recommendations for humanoid robot design",
+          "note": "Biomechanics topical review of human joint anatomy with design recommendations; no robot was built or tested."
+        },
+        {
+          "doi": "10.1126/scirobotics.aek7970",
+          "title": "From acrobatics to generality: Humanoid robots at an inflection point",
+          "note": "Single-author editorial/perspective piece for a Science Robotics special issue, not a research paper."
+        },
+        {
+          "doi": "10.1109/cros69211.2026.11565712",
+          "title": "Integration of Local Generative Language Models in Humanoid Robots: An Approach with the NAO Robot and DeepSeek-LLM",
+          "note": "Conversational-AI/speech-recognition HRI demo on a NAO robot; no locomotion, manipulation or control learning, fits none of the 12 sections."
+        }
+      ]
+    },
+    {
+      "kind": "borderline-scope",
+      "reason": "Nazarbayev University bachelor's thesis (CoppeliaSim biped simulation with RL-based balance control), read during the 2026-09-11 run. The primary source is readable but is unreviewed undergraduate coursework rather than a peer-reviewed or arXiv-vetted research contribution, so its rigor cannot be assessed with confidence. A human should decide whether student theses belong in this list at all.",
+      "detected_on": "2026-09-11",
+      "items": [
+        {
+          "title": "Humanoid Biped Robot Simulation with Upper-Body Motion",
+          "paper_url": "https://nur.nu.edu.kz/handle/123456789/19007"
+        }
+      ]
+    },
+    {
+      "kind": "borderline-scope",
+      "reason": "Self-published Zenodo preprint by a single independent author, read during the 2026-09-11 run. It has a genuine methodology (PD balance controller, IK-based foot placement, theoretical analysis) but only 2 of 4 planned experiments were completed, one yielding insufficient data, and there is no peer review. Ambiguous between a legitimate independent contribution and an unfinished self-upload; a human should read the full PDF before deciding.",
+      "detected_on": "2026-09-11",
+      "items": [
+        {
+          "doi": "10.5281/zenodo.22105365",
+          "title": "Torque-Balanced Procedural Locomotion for Physically Simulated Ragdoll Bipeds in Unity 3D: Architecture, Theoretical Analysis, and an Evaluation Protocol for a Real-Time, Non-Learned Control System"
+        }
+      ]
+    },
+    {
+      "kind": "borderline-scope",
+      "reason": "Confirmed via Crossref abstract, read during the 2026-09-11 run, that this is a peer-reviewed Science Robotics survey ('This survey positions humanoid control...') by prominent researchers (Gu, Shi, Ames, Sreenath, et al.) rather than a primary-research paper with new results. Legitimate and on-topic, but it is a review article, and the list otherwise contains original-research entries. Scope rules exclude 'position pieces', which could reasonably be read to include surveys; needs a human call on whether survey/review papers should be listed at all (and if so, in which section).",
+      "detected_on": "2026-09-11",
+      "items": [
+        {
+          "doi": "10.1126/scirobotics.aed3973",
+          "title": "Evolution of humanoid locomotion control"
+        }
+      ]
+    },
+    {
+      "kind": "borderline-scope",
+      "reason": "Read during the 2026-09-11 run. The venue (journaljerr.com, 'Journal of Engineering Research and Reports') is in the same family of rapid-turnaround OJS journals historically associated with the SCIENCEDOMAIN/predatory-publisher cluster. The paper itself is a fully simulated 12-DOF toy-model study compared only against a naive fixed-gain PD baseline, with suspiciously over-precise statistics (e.g. MAE 0.165825 -> 0.039224 rad) and an explicit admission that 'physical-robot experiments remain necessary for external validation'. Plausible as a genuine but weak study; the venue's legitimacy and the paper's rigor are uncertain enough to need a human call rather than a forced add or reject.",
+      "detected_on": "2026-09-11",
+      "items": [
+        {
+          "doi": "10.9734/jerr/2026/v28i81983",
+          "title": "Humanoid Robot Motion Tracking Control Method Integrating Adaptive PID, Kalman Filtering and Feedforward Compensation"
+        }
+      ]
+    },
+    {
+      "kind": "enrichment-source-blocked",
+      "reason": "During the 2026-09-11 run, ScienceDirect and Elsevier linkinghub landing pages returned 403/blocked on every attempt, and Crossref's metadata for this DOI contains no abstract, so despite confirming title, authors (Haozhou Liu, Xuechao Chen, Kehong Chen, Tianyue Ou, Zhangguo Yu, Qiang Huang, Awais Yasin) and venue (Biomimetic Intelligence and Robotics) via Crossref, the actual abstract could not be read from any accessible primary source.",
+      "detected_on": "2026-09-11",
+      "items": [
+        {
+          "doi": "10.1016/j.birob.2026.100368",
+          "title": "LARR: A Leg-Arm Reuse Robot for cost-effective mobility and manipulation"
+        }
+      ]
+    },
+    {
+      "kind": "enrichment-source-blocked",
+      "reason": "During the 2026-09-11 run, title, authors (Guanqun Chen, Teng Zhang, Fusheng Zha, Lianzhao Zhang, Pengfei Wang, Lining Sun; Harbin Institute of Technology), venue (Journal of Bionic Engineering) and date (published online 2026-07-31) were confirmed via Crossref/Semantic Scholar, but the abstract text is paywalled everywhere checked (Springer login-gated; the journal's own jbe.jlu.edu.cn page is JS-rendered and returned empty); no open-access copy or arXiv twin was found.",
+      "detected_on": "2026-09-11",
+      "items": [
+        {
+          "doi": "10.1007/s42235-026-00965-z",
+          "title": "A Bio-inspired Integrated Framework for Disturbance Rejection Whole-Body Control of Humanoid Robots"
+        }
+      ]
+    },
+    {
+      "kind": "possible-duplicate-followon",
+      "reason": "'Visual Safe Human-to-Humanoid Motion Imitation' (BDCC, doi:10.3390/bdcc10080246) may be the published version of the already-listed arXiv 2604.11447 'Safe Human-to-Humanoid Motion Imitation Using Control Barrier Functions' (same CBF-QP / 8-DoF upper-body framework, near-identical title). This run could not independently confirm it: the MDPI abstract page returned HTTP 403 to WebFetch, and the arXiv abs page for 2604.11447 carries no comment/journal-ref pointing at BDCC (this DOI is the same one already flagged blocked in the 2026-09-04 enrichment-source-blocked finding above). Separately, the existing README.md line for 2604.11447 (line ~562) reads '[arXiv 2026.04](...) / arXiv 2026.04, Safe Human-to-Humanoid...' - the alt-venue suffix duplicates the arXiv head instead of naming a venue, which looks like a pre-existing formatting slip. A human with MDPI access should confirm the BDCC venue and fix the README line in one pass (either promote it to '/ BDCC 2026' or otherwise correct the suffix).",
+      "detected_on": "2026-09-11",
+      "items": [
+        {
+          "doi": "10.3390/bdcc10080246",
+          "title": "Visual Safe Human-to-Humanoid Motion Imitation",
+          "compare_to_arxiv_id": "2604.11447"
         }
       ]
     }
