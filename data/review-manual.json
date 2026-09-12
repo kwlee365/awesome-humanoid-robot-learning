@@ -2,6 +2,16 @@
   "note": "Findings raised by verification passes that the offline validator cannot detect on its own. validate.py merges these into data/review-queue.json. Each entry stays here until a human resolves it and deletes the entry.",
   "findings": [
     {
+      "kind": "enrichment-source-blocked",
+      "reason": "The 2026-09-13 scheduled run's `scripts/discover.py --refresh` pass (step 4, enriching stale preprint records and checking for venue promotions) failed outright: export.arxiv.org returned HTTP 429 to this run's very first request and the script deliberately backs off rather than retrying (by design, to avoid extending the block). A retry with --refresh-limit 30 a short time later hit the same 429. This is most likely because the same run's earlier discover.py sweep (step 2) had already made roughly 1787+1302 arXiv API requests for the 2026-09/2026-08 windows against the same egress IP. No preprint-to-published promotions were checked or applied this run as a result; apply_promotions.py was not invoked. A later run (ideally one that skips or delays --refresh right after a large discover.py sweep) should retry step 4.",
+      "detected_on": "2026-09-13",
+      "items": [
+        {
+          "note": "scripts/discover.py --refresh and apply_promotions.py both skipped this run due to export.arxiv.org rate-limiting; no promotions were checked"
+        }
+      ]
+    },
+    {
       "kind": "possible-title-mismatch",
       "reason": "During the 2026-08-14 enrichment pass the abstract fetched from the arXiv page did not read like the title recorded in the README. This may be a wrong arXiv id in the README entry, a renamed paper, or an artefact of how the abstract page was fetched (the fetcher returns abstract text only, not the title header), so it must be confirmed by opening the arXiv page by hand before anything is changed.",
       "detected_on": "2026-08-14",
@@ -678,6 +688,93 @@
           "doi": "10.3390/bdcc10080246",
           "title": "Visual Safe Human-to-Humanoid Motion Imitation",
           "compare_to_arxiv_id": "2604.11447"
+        }
+      ]
+    },
+    {
+      "kind": "enrichment-note",
+      "reason": "During the 2026-09-13 queue pass, two top-of-queue discovery candidates ('RobotDancing: Residual-Action Reinforcement Learning Enables Robust Long-Horizon Humanoid Motion Tracking', DOI 10.1109/lra.2026.3723309; 'HuMam: Humanoid Motion Control via End-to-End Deep Reinforcement Learning with Mamba', DOI 10.1109/cis-ram71614.2026.11668512) were found via WebSearch to already be in README.md/data/papers.json under arXiv ids 2509.20717 and 2509.18046 respectively, each already carrying its RA-L 2026 / CIS-RAM 2026 alt-venue promotion. Neither discover.py's arxiv_id dedup nor its title-normalisation dedup caught them because the candidate records (built from Crossref/OpenAlex, no arxiv_id populated) used the un-abbreviated 'Reinforcement Learning' where the README title uses 'RL', so normalised titles differ, and the existing papers.json records carry no doi field for either to match against. Not re-added. Their doi fields were backfilled into data/papers.json via enrich.py this run so future dedup-by-doi will catch them.",
+      "detected_on": "2026-09-13",
+      "items": [
+        {
+          "arxiv_id": "2509.20717",
+          "doi": "10.1109/lra.2026.3723309",
+          "note": "already listed as RobotDancing (Loco-Manipulation and Whole-Body-Control); doi backfilled"
+        },
+        {
+          "arxiv_id": "2509.18046",
+          "doi": "10.1109/cis-ram71614.2026.11668512",
+          "note": "already listed as HuMam (Locomotion); doi backfilled"
+        }
+      ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read from a primary source during the 2026-09-13 scheduled maintenance run and judged outside this list. discover.py's out-of-scope suppression only keys on arxiv_id, so these DOI-only items will keep resurfacing in future sweeps until a human either adds an arXiv id here or extends the suppression logic; also removed from data/discovery-candidates.json this run so they are not re-read immediately. Delete an entry here to put a paper back in the queue.",
+      "detected_on": "2026-09-13",
+      "items": [
+        {
+          "doi": "10.1002/advs.76736",
+          "title": "Leading the Pack: Next‐Generation Batteries for Humanoid Robotics",
+          "note": "Advanced Science review article on battery energy/power-density requirements for humanoid deployment; no original robot, control, or learning contribution."
+        },
+        {
+          "doi": "10.1126/scirobotics.aed4106",
+          "title": "Robot in a crib: How a playing robot helps us understand sensorimotor contingency learning",
+          "note": "Developmental-psychology/cognitive-science study using an iCub as a measurement instrument for infant sensorimotor-contingency theory; no robot-learning method or control contribution, fits none of the 12 sections (same category as the 2026-08-19 self-other-distinction exclusion)."
+        },
+        {
+          "doi": "10.3390/app16157388",
+          "title": "Robustness-Aware Physical AI for Multi-Functional Humanoid Robot Team Concurrency Control Under Imperfect Digital Twin Information",
+          "note": "DRL-based task-assignment/shared-resource scheduling (priority ceiling protocol) for a simulated multi-humanoid manufacturing fleet; an operations-research/scheduling contribution, not humanoid motion, manipulation, navigation, perception, or whole-body control, so it fits none of the 12 sections."
+        },
+        {
+          "doi": "10.1201/9788743810704-10",
+          "title": "Securing the Humanoid Ecosystem",
+          "note": "Book chapter on cybersecurity practices across the humanoid robot lifecycle; a policy/security-process piece with no research method or results, fits none of the 12 sections (same category as the 2026-09-11 'Securing...'-style exclusions)."
+        },
+        {
+          "doi": "10.5281/zenodo.20648048",
+          "title": "Why Biomimetic Humanoid Robotics: A Research Brief",
+          "note": "Self-published Zenodo position/introduction piece motivating a future 'NeuroSilk' soft-rigid materials research program; explicitly not a study with original experimental results, and invites collaboration on open questions rather than reporting findings."
+        }
+      ]
+    },
+    {
+      "kind": "borderline-scope",
+      "reason": "'Multimodal Contact-Semantic Extraction and Structural Consistency Learning via Embodied Closed-Loop Feedback for Humanoid Robot Assembly' (World Scientific, doi:10.1142/s0219843626400281) proposes EFSC-Learn, a multimodal (RGB-D/tactile/force-torque/proprioception) closed-loop framework for contact-rich assembly. The title names humanoid robot assembly and the abstract opens with 'Humanoid robots increasingly rely on...', but the reported evaluation is against ACT, Diffusion Policy, Octo and OpenVLA on 'four public robotic manipulation datasets' - generic manipulation benchmarks, with no humanoid platform named and no humanoid-specific real-robot result in the abstract. This mirrors the 2608.01826 / 2608.26058 pattern already excluded twice above: a general manipulation-policy paper whose humanoid framing is not substantiated by a named platform or dedicated metric. Not added; a human should check the full paper for a named humanoid embodiment before deciding whether it belongs (candidate section would be Manipulation).",
+      "detected_on": "2026-09-13",
+      "items": [
+        {
+          "doi": "10.1142/s0219843626400281",
+          "title": "Multimodal Contact-Semantic Extraction and Structural Consistency Learning via Embodied Closed-Loop Feedback for Humanoid Robot Assembly"
+        }
+      ]
+    },
+    {
+      "kind": "enrichment-source-blocked",
+      "reason": "During the 2026-09-13 run, the following RA-L/book-chapter candidates had confirmed titles and authors (via Semantic Scholar and/or Crossref metadata) but no verbatim abstract could be located from any accessible primary source: IEEE Xplore returns an empty JS-rendered page to WebFetch for both RA-L items, neither has an arXiv twin, and Semantic Scholar's record for the MPC-footstep paper carries no abstract text (openAccessPdf points back at the same blocked ieeexplore URL). Both Springer book chapters return only bibliographic metadata (no 'abstract' field) from Crossref and OpenAlex, and link.springer.com/idp.springer.com redirects to a login wall. Left in the discovery queue rather than added or rejected; a human with IEEE Xplore or Springer access should read these directly.",
+      "detected_on": "2026-09-13",
+      "items": [
+        {
+          "doi": "10.1109/lra.2026.3723320",
+          "title": "Feasibility-Based Convexification of MPC Footstep Constraints for Humanoid Gait Generation",
+          "note": "authors confirmed via Semantic Scholar: Andrew S. Habib, Nicola Scianca, L. Lanari, Giuseppe Oriolo (Sapienza University of Rome, IS-MPC humanoid gait group)"
+        },
+        {
+          "doi": "10.1109/lra.2026.3732845",
+          "title": "LNP: Liquid Network Policy for Humanoid Whole-Body Motion Tracking",
+          "note": "authors confirmed via Crossref: Yaoxiang Pu, Yishuai Cai, Yuanheng Zhu, Zhe Hu; no Semantic Scholar record found at all"
+        },
+        {
+          "doi": "10.1007/978-981-95-7904-4_84",
+          "title": "Sim-to-Real Transfer for Humanoid Robot Locomotion Using Linear Joints and Reinforcement Learning",
+          "note": "Mechanisms and Machine Science (Springer), ICMD 2025 Hangzhou conference paper; authors confirmed via Crossref/OpenAlex: Tian Xia, YuChen Lin, Mengdi Wang, Tao Ding, Yuhao Zhang, Xingwei Zhao, Bo Tao"
+        },
+        {
+          "doi": "10.1007/978-981-92-3441-7_33",
+          "title": "A Deep Reinforcement Learning Enhanced Central Pattern Generator for Gait Generation of Humanoid Robots",
+          "note": "authors confirmed via Crossref/OpenAlex: Weibing Li, Shan Zhang, Yehui Li, Yongping Pan, Kai Huang; WebSearch snippets describe a two-layer (rhythm-generator + pattern-formation) CPG modulated by a DRL agent, validated in simulation and on a physical NAO robot, but this could not be confirmed against the actual abstract text"
         }
       ]
     }

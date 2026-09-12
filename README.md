@@ -458,6 +458,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [IJRR 2026](https://doi.org/10.1177/02783649261445462), Grounding the three-dimensional divergent component of motion: Geometric analysis of contact and dynamic stability and its application to humanoid push recovery
 - [IJDC 2026](https://doi.org/10.1007/s40435-026-02231-w), Gait selection and analysis of biped robots on different terrains under unified control
 - [Robot Learning 2026](https://doi.org/10.55092/rl20260023), Impact-aware compliant foot placement for quiet humanoid locomotion via reinforcement learning
+- [Scientific Reports 2026](https://doi.org/10.1038/s41598-026-63117-7), Stability analysis of the zero moment point–center of pressure algorithm for biped robots in unstructured environments
 - [arXiv 2026.06](https://arxiv.org/abs/2606.31807) / IROS 2026, Reinforcement Learning-Based Control for an Inline Skating Humanoid Robot
 - [arXiv 2026.06](https://arxiv.org/abs/2606.27813), Booster Lab: A Data-Centric Pipeline for Learning Deployable Humanoid Locomotion Policies
 - [arXiv 2026.06](https://arxiv.org/abs/2606.20645), TACT-ful: Multi-Channel Terrain Affordance and Compliance Training for Payload-Robust Perceptive Humanoid Locomotion, [website](https://fai-rl-tech.github.io/tact-locomotion.github.io/)
@@ -472,6 +473,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.06](https://arxiv.org/abs/2606.05873), LadderMan: Learning Humanoid Perceptive Ladder Climbing
 - [arXiv 2026.06](https://arxiv.org/abs/2606.04718), CoRe-MoE: Contrastive Reweighted Mixture of Experts for Multi-Terrain Humanoid Locomotion with Gait Adaptation
 - [IJECES 2026](https://doi.org/10.32985/ijeces.17.6.2), Optimization of humanoid robot locomotion behavior using hybrid technique combines between preview control algorithm and discrete algebraic Riccati equation (DARE)
+- [Scientia Sinica Technologica 2026](https://doi.org/10.1360/sst-2025-0267), Multi-terrain adaptive walking control of bipedal robots using passive artificial tendons
 - [arXiv 2026.05](https://arxiv.org/abs/2605.09944), Explicit Stair Geometry Conditioning for Robust Humanoid Locomotion
 - [arXiv 2026.04](https://arxiv.org/abs/2604.17335) / RA-L 2026, Learning Whole-Body Humanoid Locomotion via Motion Generation and Motion Tracking
 - [arXiv 2026.02](https://arxiv.org/abs/2602.21666), Biomechanical Comparisons Reveal Divergence of Human and Humanoid Gaits
@@ -655,6 +657,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Sim-to-Real
+- [Preprints.org 2026](https://doi.org/10.20944/preprints202609.0605.v1), A Validated Modelling and Simulation Framework for a 12-DoF Biped Robot with Deep Reinforcement Learning Locomotion
 - [arXiv 2026.07](https://arxiv.org/abs/2607.18210) / ICANN 2026, Optimization of sim-to-real transfer in the humanoid robot NICO
 - [arXiv 2026.07](https://arxiv.org/abs/2607.18154), World Translation: Minimizing Sim-to-Real Gap with Backward Dynamics Extraction and Unpaired Domain Translation
 - [arXiv 2026.07](https://arxiv.org/abs/2607.02205), Actuator Reality Shaping for Zero-Shot Sim-to-Real Robot Learning, [website](https://syamamori.github.io/ActuatorRealityShaping.github.io/)
