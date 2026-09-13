@@ -425,6 +425,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.09](https://arxiv.org/abs/2609.11553), CAP: Continuously Adaptive Perception-Blind Humanoid Locomotion via Learned Denoising
 - [arXiv 2026.09](https://arxiv.org/abs/2609.10283), SwingBot: Learning Whole-Body Brachiation for Humanoid Robots
 - [arXiv 2026.09](https://arxiv.org/abs/2609.07544), Anti-Gravity Walking by a Flying Humanoid Robot via Thrust-Rate Input Whole-Body Model Predictive Control
 - [arXiv 2026.09](https://arxiv.org/abs/2609.07096), RoboDreamer: Anticipatory Humanoid Locomotion with Predictive State-Space Models
@@ -445,6 +446,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [Journal of Mechanisms and Robotics 2026](https://doi.org/10.1115/1.4072666), Weighted Task-Priority Based Angular Momentum Control for Cyclic Gait of a Humanoid Robot on Deformable Terrain
 - [ADECP 2026](https://doi.org/10.59400/adecp4582), GRF-based trajectory planning and application for bipedal motion
 - [Proc IMechE Part C 2026](https://doi.org/10.1177/09544062261477854), Gait planning and stability optimization for three-dimensional walking of biped robots
+- [RA-L 2026](https://doi.org/10.1109/lra.2026.3723320), Feasibility-Based Convexification of MPC Footstep Constraints for Humanoid Gait Generation
 - 🌟 [arXiv 2026.07](https://arxiv.org/abs/2607.25541), P3: Probabilistic Policy Propagation for Stable VAE-Based Robot Learning, [code](https://github.com/ylyem9x/P3_Open)
 - [arXiv 2026.07](https://arxiv.org/abs/2607.24083), Learning Reusable Hybrid Motion Priors for Humanoid Locomotion from Motion Imitation
 - [arXiv 2026.07](https://arxiv.org/abs/2607.20110), Extreme-RGMT: Continual Learning of Highly Dynamic Skills for Robust Generalist Humanoid Control

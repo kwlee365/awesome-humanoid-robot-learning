@@ -777,6 +777,149 @@
           "note": "authors confirmed via Crossref/OpenAlex: Weibing Li, Shan Zhang, Yehui Li, Yongping Pan, Kai Huang; WebSearch snippets describe a two-layer (rhythm-generator + pattern-formation) CPG modulated by a DRL agent, validated in simulation and on a physical NAO robot, but this could not be confirmed against the actual abstract text"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read from a primary source during the 2026-09-13 PM scheduled maintenance run and judged outside this list. Recorded so the discovery sweep stops re-proposing them (arXiv-id items only; DOI-only items will resurface per the known arxiv_id-only suppression limitation noted above).",
+      "detected_on": "2026-09-13",
+      "items": [
+        {
+          "url": "https://nur.nu.edu.kz/handle/123456789/19007",
+          "title": "Humanoid Biped Robot Simulation with Upper-Body Motion",
+          "note": "confirmed via the repository page to be a Nazarbayev University bachelor's thesis/capstone project, not a published paper"
+        },
+        {
+          "doi": "10.5281/zenodo.22105365",
+          "title": "Torque-Balanced Procedural Locomotion for Physically Simulated Ragdoll Bipeds in Unity 3D",
+          "note": "title itself states 'Non-Learned Control System'; a solo-developer Unity3D game-engine ragdoll character project, not a humanoid robot, no learning component"
+        },
+        {
+          "doi": "10.9734/jerr/2026/v28i81983",
+          "title": "Humanoid Robot Motion Tracking Control Method Integrating Adaptive PID, Kalman Filtering and Feedforward Compensation",
+          "note": "classical PID+Kalman+feedforward controller validated only via a 20-trial Monte Carlo numerical simulation in a lower-tier journal (Journal of Engineering Research and Reports); no learning component, no real robot, no fit with any section's established scope for non-learning classical control"
+        },
+        {
+          "doi": "10.1126/scirobotics.aed3973",
+          "title": "Evolution of humanoid locomotion control",
+          "note": "confirmed via WebSearch/PubMed that this Science Robotics piece is explicitly a survey ('This survey positions humanoid control at a turning point...'); surveys/reviews are out of scope"
+        },
+        {
+          "doi": "10.1109/aiea70743.2026.11633108",
+          "title": "Adaptive Gait Control for Humanoid Robots Using Deep Reinforcement Learning in Dynamic Environments",
+          "note": "obscure IEEE workshop-tier conference (AIEA 2026); abstract shows paper-mill red flags (invented undefined metrics like 'gait stability score', suspiciously uniform fabricated-looking confidence intervals, generic PPO+Isaac Gym+G1 boilerplate with no identifiable novel contribution); no arXiv twin, no independent author track record found"
+        },
+        {
+          "doi": "10.1007/s40435-026-02226-7",
+          "title": "Disturbance estimation-based robust balance and walking control of humanoid robot",
+          "note": "classical UDE-augmented 3D-LIPM controller validated only in numerical/multiphysics simulation on a NAO humanoid; no real hardware, and NAO is an explicitly excluded low-DoF platform per prior precedent"
+        },
+        {
+          "doi": "10.1109/iicc69623.2026.11582645",
+          "title": "Edge-Enhanced XR Teleoperation for Humanoid Robots using Jetson and Real-Time Digital Twin",
+          "note": "abstract confirms the robot is a Pepper unit ('Pepper's lightweight Atom processor...'); Pepper is an explicitly excluded low-DoF simple robot, and the contribution is a networking/latency engineering demo with no RL/VLA/learning component"
+        },
+        {
+          "url": "https://hdl.handle.net/1807/153695",
+          "title": "Gait Synthesis for Planar Bipedal Robots via Virtual Holonomic Constraints",
+          "note": "the record's own abstract begins 'This thesis investigates...' - a TSpace/University of Toronto thesis repository record, not a standalone paper, same category as prior thesis exclusions"
+        }
+      ]
+    },
+    {
+      "kind": "enrichment-note",
+      "reason": "During the 2026-09-13 PM queue pass, discovery candidate 'Booster Gym: An End-to-End Reinforcement Learning Framework for Humanoid Robot Locomotion' (Lecture Notes in Electrical Engineering book chapter, DOI 10.1007/978-981-95-6825-3_19) was found to be a later book-chapter republication of the paper already listed under arXiv 2506.15132 ('Booster Gym: An End-to-End RL Framework for Humanoid Robot Locomotion', Locomotion section) with the same verified GitHub repo (github.com/BoosterRobotics/booster_gym). Not re-added. The book-chapter DOI was backfilled onto the existing data/papers.json record via enrich.py so future DOI-based dedup catches it; the README venue string was left unchanged (arXiv) since the book chapter's DOI does not independently corroborate a distinct year/venue worth citing over the arXiv preprint, per the apply_promotions.py rule against inventing venue strings.",
+      "detected_on": "2026-09-13",
+      "items": [
+        {
+          "arxiv_id": "2506.15132",
+          "doi": "10.1007/978-981-95-6825-3_19",
+          "note": "already listed as Booster Gym (Locomotion); book-chapter DOI backfilled"
+        }
+      ]
+    },
+    {
+      "kind": "enrichment-note",
+      "reason": "During the 2026-09-13 PM queue pass, discovery candidate 'Visual Safe Human-to-Humanoid Motion Imitation' (Big Data and Cognitive Computing, MDPI, DOI 10.3390/bdcc10080246) was found via WebSearch to be the same underlying work as the already-listed arXiv 2604.11447 'Safe Human-to-Humanoid Motion Imitation Using Control Barrier Functions' (same authors: Cai, Abanes, Evangeliou, Tzes), possibly an extended version with added real-robot experiments. Not added as a new entry and not merged into the existing record, because the MDPI page itself could not be opened to confirm the abstract text or the real-robot claim from a primary source (only corroborated via WebSearch snippets). A human with access should read the MDPI article and, if it is confirmed to be the same work with new results, update the README line for arXiv 2604.11447 (currently 'Safety-Critical Control' section) to add the MDPI venue and refresh real_robot/abstract in data/papers.json accordingly, rather than creating a duplicate entry.",
+      "detected_on": "2026-09-13",
+      "items": [
+        {
+          "arxiv_id": "2604.11447",
+          "doi": "10.3390/bdcc10080246",
+          "note": "possible preprint-to-journal promotion with expanded real-robot results; unverified, needs a human read of the MDPI page"
+        }
+      ]
+    },
+    {
+      "kind": "enrichment-source-blocked",
+      "reason": "During the 2026-09-13 PM queue pass, these candidates were confirmed to be real, matching papers (title/authors/venue verified via Semantic Scholar, OpenAlex, and/or Unpaywall metadata) but their abstract text could not be read from an accessible primary source: ScienceDirect, Springer, World Scientific and IEEE Xplore all blocked or paywalled every fetch attempt (direct WebFetch, redirect-follow, Google cache/search, and proxy attempts), and no arXiv twin exists for any of them. Per the rule that only arXiv's own API is an accepted machine-read exception for abstracts, none of these could be added on Crossref/OpenAlex/Semantic-Scholar-sourced text alone. Not added; a human with institutional access should read the primary source directly.",
+      "detected_on": "2026-09-13",
+      "items": [
+        {
+          "doi": "10.1016/j.birob.2026.100368",
+          "title": "LARR: A Leg-Arm Reuse Robot for cost-effective mobility and manipulation",
+          "note": "ScienceDirect gold-OA article, otherwise a good Hardware Design fit; blocked by ScienceDirect's access gate/CAPTCHA"
+        },
+        {
+          "doi": "10.1007/s42235-026-00965-z",
+          "title": "A Bio-inspired Integrated Framework for Disturbance Rejection Whole-Body Control of Humanoid Robots",
+          "note": "Journal of Bionic Engineering; Springer authentication wall, abstract elided by publisher in Crossref/OpenAlex/Semantic Scholar"
+        },
+        {
+          "doi": "10.1109/lra.2026.3732845",
+          "title": "LNP: Liquid Network Policy for Humanoid Whole-Body Motion Tracking",
+          "note": "IEEE RA-L; no arXiv twin found, ieeexplore blocks fetching, abstract absent from Crossref/OpenAlex/Semantic Scholar"
+        },
+        {
+          "doi": "10.1142/s0219843626400281",
+          "title": "Multimodal Contact-Semantic Extraction and Structural Consistency Learning via Embodied Closed-Loop Feedback for Humanoid Robot Assembly",
+          "note": "International Journal of Humanoid Robotics; worldscientific.com returns 403 on direct fetch, abstract only available via Semantic Scholar's index, not confirmed on the publisher page itself"
+        },
+        {
+          "doi": "10.1007/s42235-026-00905-x",
+          "title": "Biomimetic Stable Walking of Bipedal Robots Based on 3D Divergent Component of Motion",
+          "note": "Journal of Bionic Engineering; link.springer.com redirects to an authentication wall on every attempt, could not independently confirm abstract text on the primary source page"
+        },
+        {
+          "doi": "10.1109/icca69928.2026.11618175",
+          "title": "Closed-Chain Sim2Sim Gait Transfer for Linear-Actuator Driven Humanoid Robot on Complex Terrains",
+          "note": "IEEE ICCA 2026; ieeexplore blocks fetching, no arXiv twin, abstract text only available via Crossref/OpenAlex, not read from the publisher page itself"
+        },
+        {
+          "doi": "10.1007/978-981-95-7904-4_52",
+          "title": "Design Optimization for Enhanced Shoulder Joint Load-Bearing Capacity and Hose-less Upper Body Integration in a Hydraulic Humanoid Robot",
+          "note": "Springer book chapter (Mechanisms and Machine Science); paywalled/login-gated, no abstract available via Crossref or Semantic Scholar"
+        },
+        {
+          "doi": "10.1109/siu71813.2026.11636595",
+          "title": "Frequency-Based Gait Synthesis for Humanoid Robots: Extension from 2D to 3D",
+          "note": "IEEE SIU 2026; ieeexplore blocks fetching, Semantic Scholar explicitly reports the abstract as elided by the publisher, no arXiv twin"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "The 2026-09-13 PM run's arXiv channel (export.arxiv.org) was rate-limited for the entire run: both the scheduled sweep (2026-09 and 2026-08 windows) and the separate `discover.py --refresh` pass (which fetches authors/abstracts/journal-ref for all 665 already-listed arXiv records to detect promotions) failed outright with HTTP 429, so `metadata-refresh.json` was never produced and `apply_promotions.py` could not run this cycle - no preprint-to-venue promotions were checked this run. To compensate for the sweep gap, a hand spot-check of arXiv's own search/listing pages (arxiv.org/search, arxiv.org/list) for 'humanoid' across 2026-08 and 2026-09 (via WebFetch, which was not itself rate-limited) reviewed roughly 100 titles and found only one arXiv id not already in README.md or the discovery queue: 2609.10982 (see the borderline-scope entry below); three other keyword hits were checked and confirmed correctly out of scope (pure human-mocap benchmark, arm-only manipulation with a secondary humanoid sim, and a generic DeepMind-Control-Suite RL paper using 'humanoid' only as an environment name). This spot-check is not exhaustive, so a future run should still re-sweep 2026-08/2026-09 with the API once it is unblocked, and should re-run `--refresh` to catch this cycle's missed promotions.",
+      "detected_on": "2026-09-13",
+      "items": [
+        {
+          "window": "2026-08-01..2026-09-13",
+          "note": "arXiv API (export.arxiv.org) fully rate-limited all day; spot-checked by hand instead, see reason"
+        },
+        {
+          "note": "discover.py --refresh could not run at all this cycle (HTTP 429 on first request); no promotion pass was possible"
+        }
+      ]
+    },
+    {
+      "kind": "borderline-scope",
+      "reason": "arXiv 2609.10982 'ReCHOIR: Contact-guided Human Object Interaction Retargeting to Diverse Characters' (submitted ~2026-09-09) surfaced during the hand spot-check of the arXiv-outage window above. Abstract describes a physics-based motion-retargeting method (Part-Aware Motion Embedding + contact-guided module) for transferring human-object-interaction motion across virtual characters - no physical robot embodiment, but structurally similar to existing Physics-Based Character Animation entries (e.g. virtual-character motion-tracking papers already in that section). Not verified or added this run (only the abstract was skimmed, not a full verification pass); a human or a future run should decide whether it fits Physics-Based Character Animation.",
+      "detected_on": "2026-09-13",
+      "items": [
+        {
+          "arxiv_id": "2609.10982",
+          "title": "ReCHOIR: Contact-guided Human Object Interaction Retargeting to Diverse Characters"
+        }
+      ]
     }
   ]
 }
