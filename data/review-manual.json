@@ -1284,6 +1284,53 @@
           "note": "scripts/discover.py --refresh and apply_promotions.py both skipped this run due to export.arxiv.org rate-limiting (HTTP 406); no promotions were checked"
         }
       ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "The 2026-09-20 AM scheduled run's `scripts/discover.py` sweep failed to query the arXiv API directly for both the 2026-09 and 2026-08 windows: export.arxiv.org returned HTTP 406 Not Acceptable to both requests (a different failure mode than the HTTP 429 rate-limiting seen on 2026-09-13). Crossref and OpenAlex succeeded for both windows (216+348 and 1462+1884 records respectively), so venue-published work for these months was still swept, but arXiv-native preprints not also indexed by Crossref/OpenAlex could have been missed. As a compensating spot-check, arxiv.org/list/cs.RO/2026-09 was fetched by hand via WebFetch (not itself blocked) and covered roughly the first ~130 listing entries (ids 2609.00001-2609.02134); the two humanoid-titled papers found there (2609.00677, 2609.02134) plus one more found in the same range (2609.01518) were already present in README.md from earlier runs, so this partial spot-check found no gap, but it does not cover the rest of September or any of August. A future run should re-sweep 2026-09 and 2026-08 through the arXiv API once the 406 clears, or extend the by-hand listing spot-check further into each month.",
+      "detected_on": "2026-09-20",
+      "items": [
+        {
+          "window": "2026-09",
+          "note": "arxiv channel: HTTP 406 Not Acceptable; Crossref/OpenAlex succeeded; hand spot-check covered only ids up to ~2609.02134"
+        },
+        {
+          "window": "2026-08",
+          "note": "arxiv channel: HTTP 406 Not Acceptable; Crossref/OpenAlex succeeded; no hand spot-check performed for this window"
+        }
+      ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read from the primary source (arXiv abs page via WebFetch, or the discover.py-resolved abstract for the Zenodo item) during the 2026-09-20 scheduled maintenance run's verification pass over the top of data/discovery-candidates.json, and judged outside this list. The two arXiv items are recorded so the sweep stops re-proposing them.",
+      "detected_on": "2026-09-20",
+      "items": [
+        {
+          "arxiv_id": "2609.13236",
+          "title": "Self-Evolving AI for Humanoids: Mechanisms, Safety, and Evaluation of Post-Deployment Self-Improvement",
+          "note": "Confirmed via arXiv abs page to be a survey organizing existing literature into a taxonomy of self-evolution mechanisms; no original method or experiments of its own."
+        },
+        {
+          "arxiv_id": "2609.14647",
+          "title": "Skill Composition for Legged Robot Reinforcement Learning",
+          "note": "Confirmed via arXiv abs page to be a position/perspective paper arguing that skill composition deserves dedicated research attention; no concrete method, benchmark, or experimental results in the abstract."
+        },
+        {
+          "doi": "10.5281/zenodo.22827682",
+          "title": "Additive Manufacturing of Humanoid Robot Components Using eSUN PA-CF and FlexOne 55A Elastic Resin",
+          "note": "Materials-characterization/manufacturing report (filament and resin mechanical properties for 3D-printed parts), not a robot-learning contribution; self-deposited on Zenodo."
+        }
+      ]
+    },
+    {
+      "kind": "enrichment-source-blocked",
+      "reason": "The 2026-09-20 AM scheduled run's `scripts/discover.py --refresh` pass (step 4, refreshing authors/abstracts on already-listed arXiv preprints and checking for venue promotions) failed outright: export.arxiv.org returned HTTP 406 Not Acceptable on its very first request, the same failure mode seen in this run's earlier discover.py sweep of the 2026-09/2026-08 windows (see the discovery-coverage-gap entry above), so this is one underlying block rather than two separate incidents. metadata-refresh.json was never produced, apply_promotions.py was not invoked, and no preprint-to-published promotions were checked or applied this run. A later run should retry step 4 once export.arxiv.org stops returning 406 to this environment.",
+      "detected_on": "2026-09-20",
+      "items": [
+        {
+          "note": "scripts/discover.py --refresh and apply_promotions.py both skipped this run due to export.arxiv.org returning HTTP 406; no promotions were checked"
+        }
+      ]
     }
   ]
 }

@@ -26,8 +26,11 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.09](https://arxiv.org/abs/2609.20558), Learning Slope-Adaptive Whole-Body Locomotion for Humanoid Robots in Roofing Construction
+- [arXiv 2026.09](https://arxiv.org/abs/2609.19340), ViLoMan: Learning Visual-Proprioceptive Whole-Body Loco-Manipulation Skills for Humanoid Robots, [website](https://viloman-anonymous.pages.dev)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.18930), Learning Holistic Whole-Body Loco-Manipulation with a Bipedal Mobile Manipulator
 - [arXiv 2026.09](https://arxiv.org/abs/2609.18869), KINO: A Keyframe Interface for VLM Planning and Whole-Body Control in Humanoid Loco-Manipulation
+- [arXiv 2026.09](https://arxiv.org/abs/2609.18197), WholeBodyWAM: Learning Whole-Body World Action Models with Scalable Motion Priors, [website](https://zbzyjya.github.io/WholeBodyWAM/)
 - 🌟 [arXiv 2026.09](https://arxiv.org/abs/2609.16683), Weave: Learning Whole-Body Dexterous Loco-Manipulation from Human-Object Interactions, [website](https://xiaohu-art.github.io/Weave/) / [code](https://github.com/xiaohu-art/Weave)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.16644), WholeBodyWAM: Generalizing Pre-trained World-Action Priors to Humanoid Loco-Manipulation via WBC-Grounded Coordination, [website](https://wholebodywam.github.io/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.16405), Collision-Aware Humanoid Whole-Body Control under Imperfect Tracking Targets
@@ -311,6 +314,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.08](https://arxiv.org/abs/2608.07573), Projection-Retraction MPPI: Exact Constraint-Manifold Control for Manipulators, [website](https://rcilab.github.io/prmppi)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.03387), RoboReact: Agentic Skill Distillation from Generated Egocentric Videos for Generalizable Whole-Body Manipulation
 - [arXiv 2026.08](https://arxiv.org/abs/2608.01600), Perception-and-action system for humanoid robot task execution in construction
+- [International Journal of Humanoid Robotics 2026](https://doi.org/10.1142/s0219843626400281), Multimodal Contact-Semantic Extraction and Structural Consistency Learning via Embodied Closed-Loop Feedback for Humanoid Robot Assembly
 - [arXiv 2026.07](https://arxiv.org/abs/2607.29172), CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning
 - [arXiv 2026.07](https://arxiv.org/abs/2607.26567), Speech2Grasp: Data-Efficient Transfer of Text-Conditioned Grasp Detection to Speech in Humanoid Robots
 - [arXiv 2026.07](https://arxiv.org/abs/2607.25593), When Does Legacy Data Start to Help? Emergent Transfer in Cross-Configuration Robot Learning
@@ -386,6 +390,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [1999](https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(99)01327-3), Is imitation learning the route to humanoid robots?
 
 ## Teleoperation
+- [arXiv 2026.09](https://arxiv.org/abs/2609.18763), Gated Residual Body-Hand Coordination for Whole-Body Humanoid Teleoperation
 - [arXiv 2026.09](https://arxiv.org/abs/2609.07933), SPOT: Spatial Perception-Oriented Long-Horizon Humanoid Teleoperation
 - [arXiv 2026.08](https://arxiv.org/abs/2608.01834), Teleopit: A Full-Embodiment Humanoid Teleoperation System, [website](https://botrunner64.github.io/teleopit-page)
 - [arXiv 2026.07](https://arxiv.org/abs/2607.29227), Event-Based Upper-Body Humanoid Teleoperation Under Challenging Illumination
@@ -434,6 +439,9 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.09](https://arxiv.org/abs/2609.20570), Walking on the Slope: Stable Bipedal Gaits with Genetic-Algorithm-Optimized Trajectories
+- [arXiv 2026.09](https://arxiv.org/abs/2609.18732), PASSAGE: Scaling Scene-Aligned Motion Learning for Perceptive Humanoid Traversal in Cluttered Environments
+- [arXiv 2026.09](https://arxiv.org/abs/2609.15631), Flow-Matched Motion Priors: Online Optimal-Transport Rewards for Imitation Learning
 - [arXiv 2026.09](https://arxiv.org/abs/2609.14432), EMoG: Emotion-Modulated Gait Generation for Expressive Humanoid Locomotion
 - [arXiv 2026.09](https://arxiv.org/abs/2609.12347), DWMP: Leveraging Dual World Models for Humanoid Obstacle Traversal
 - [arXiv 2026.09](https://arxiv.org/abs/2609.11553), CAP: Continuously Adaptive Perception-Blind Humanoid Locomotion via Learned Denoising
@@ -441,6 +449,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.09](https://arxiv.org/abs/2609.07544), Anti-Gravity Walking by a Flying Humanoid Robot via Thrust-Rate Input Whole-Body Model Predictive Control
 - [arXiv 2026.09](https://arxiv.org/abs/2609.07096), RoboDreamer: Anticipatory Humanoid Locomotion with Predictive State-Space Models
 - [arXiv 2026.09](https://arxiv.org/abs/2609.02542), World-Model-Augmented Visual Locomotion for Humanoids on Foothold-Constrained Terrain
+- [ISCER 2026](https://ieeexplore.ieee.org/document/11681877/), Morphology-Aware Stair Locomotion for the Unitree H1 Humanoid via Foothold-Aware Reinforcement Learning
 - [arXiv 2026.08](https://arxiv.org/abs/2608.29769), Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids
 - [arXiv 2026.08](https://arxiv.org/abs/2608.28090), Stay Seated: Learning Omnidirectional Humanoid Locomotion on a Passive Mobile Chair with Casters
 - [arXiv 2026.08](https://arxiv.org/abs/2608.26583), SOLO: Stable Omni-terrain Long-Horizon Perceptive Humanoid Locomotion, [website](https://sunpihai-up.github.io/solo/)
@@ -652,6 +661,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - arXiv 2025.07, LOVON: Legged Open-Vocabulary Object Navigator, [website](https://daojiepeng.github.io/LOVON/)
 
 ## State Estimation
+- [arXiv 2026.09](https://arxiv.org/abs/2609.19582), OmniCalib: Target-Free, Task-Structured Self-Calibration for Humanoid Robots
 - [arXiv 2026.09](https://arxiv.org/abs/2609.02306), Contact-Constrained Lower-Limb Joint-Offset Calibration for Humanoid Robots
 - [arXiv 2026.09](https://arxiv.org/abs/2609.02222), FOCUS: Foot Observation Confidence for Robust Humanoid Proprioceptive Odometry
 - [Research Square 2026](https://doi.org/10.21203/rs.3.rs-8936961/v1), Approach to Robust Visual Relocalization for Humanoid Robots via Mixture-of-Experts with Hierarchical Distillation
@@ -701,6 +711,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.08](https://arxiv.org/abs/2608.25547), A Tendon-Driven Five-Fingered Hand with Distributed Tactile Perception for Dexterous Manipulation
 - [arXiv 2026.08](https://arxiv.org/abs/2608.23304) / IROS 2026, Design of a Biomimetic Joint-Covering Skin with Tissue-Like Structure to Enhance Proprioception in a Musculoskeletal Humanoid
 - [arXiv 2026.08](https://arxiv.org/abs/2608.02080), Toward Geometry-Scalable Whole-Body Touch for Humanoids: A 3D-Printed Conformal EIT Skin
+- [Biomimetic Intelligence and Robotics 2026](https://doi.org/10.1016/j.birob.2026.100368), LARR: A Leg-Arm Reuse Robot for cost-effective mobility and manipulation
 - [arXiv 2026.07](https://arxiv.org/abs/2607.16187), Handroid: Bridging Dexterous Hand and Humanoid, [website](https://handroid.org)
 - [arXiv 2026.07](https://arxiv.org/abs/2607.11690) / IROS 2026, Requirement-Driven Design of Whole-Body Social Tactile Sensing via Virtual Human-Robot Interaction
 - [arXiv 2026.06](https://arxiv.org/abs/2606.25348), Self Capacitive Tactile Sensor System designed for Companion Robots
@@ -787,6 +798,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Physics-Based Character Animation
 - [SIGGRAPH 2010](https://dl.acm.org/doi/abs/10.1145/1833349.1778770?casa_token=j3esx-hx0GAAAAAA:OvRU6YYrNo2ZP9IyXGVDryWJqHmvU-oVhnzog8RFKKySQJjganzaAmHff6CQ4a0qzfJZu-J6Buf4Ug), Spatial relationship preserving character motion adaptation
+- [arXiv 2026.09](https://arxiv.org/abs/2609.19688), LYRIC: Language-Driven Physics-Based Character Control for Contact-Rich Whole-Body Object Interaction, [website](https://neu-vi.github.io/LYRIC/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.06591), Unifying Physics-Based Humanoid Interaction with a Context-Conditioned Interaction Prior, [website](https://jiann-li.github.io/chip-project/)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.23258), Progressively Learning Heterogeneous Skills in a Unified Latent Space
 - [arXiv 2026.08](https://arxiv.org/abs/2608.03528), Tired Actor: Fatigue-Informed Character Control
