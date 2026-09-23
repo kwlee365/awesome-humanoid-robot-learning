@@ -26,6 +26,11 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.09](https://arxiv.org/abs/2609.23968), Opt2VLA: Force-Aware Vision-Language-Action for Contact-Rich Humanoid Whole-Body Manipulation, [website](https://opt2vla.github.io/)
+- [arXiv 2026.09](https://arxiv.org/abs/2609.23483), STRIDER: Stepping-Enabled Multi-Gait Hierarchical 3D Loco-Manipulation Framework for Humanoid Robots
+- [arXiv 2026.09](https://arxiv.org/abs/2609.22829), Whole-Body UMI: Transferring UMI Manipulation Skills to Humanoid Whole-Body Manipulation via Real-Time Motion Generation, [website](https://wholebody-umi.github.io/)
+- [arXiv 2026.09](https://arxiv.org/abs/2609.22611), HIGenNTO: Scalable Humanoid Interaction Generation via Noise-Space Trajectory Optimization
+- [arXiv 2026.09](https://arxiv.org/abs/2609.21467), Learning Distance-Conditioned Object Transport for Humanoid Loco-Manipulation from a Single Motion Clip
 - [arXiv 2026.09](https://arxiv.org/abs/2609.20558), Learning Slope-Adaptive Whole-Body Locomotion for Humanoid Robots in Roofing Construction
 - [arXiv 2026.09](https://arxiv.org/abs/2609.19340), ViLoMan: Learning Visual-Proprioceptive Whole-Body Loco-Manipulation Skills for Humanoid Robots, [website](https://viloman-anonymous.pages.dev)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.18930), Learning Holistic Whole-Body Loco-Manipulation with a Bipedal Mobile Manipulator
@@ -439,6 +444,10 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.09](https://arxiv.org/abs/2609.24552), Smoothness as a Constraint for Stable Humanoid Locomotion
+- [arXiv 2026.09](https://arxiv.org/abs/2609.23666), UniPoint: Unified Point-Level Sensor Fusion for Humanoid Locomotion Across Challenging Terrains
+- [arXiv 2026.09](https://arxiv.org/abs/2609.21185), When to Waddle: A Comparative Study of Bipedal Torso-Stabilization on Low-Friction Surfaces
+- [arXiv 2026.09](https://arxiv.org/abs/2609.21107), Learning Scene-Aware Humanoid Locomotion through 3D Clutter from Immersive Human Demonstrations
 - [arXiv 2026.09](https://arxiv.org/abs/2609.20570), Walking on the Slope: Stable Bipedal Gaits with Genetic-Algorithm-Optimized Trajectories
 - [arXiv 2026.09](https://arxiv.org/abs/2609.18732), PASSAGE: Scaling Scene-Aligned Motion Learning for Perceptive Humanoid Traversal in Cluttered Environments
 - [arXiv 2026.09](https://arxiv.org/abs/2609.15631), Flow-Matched Motion Priors: Online Optimal-Transport Rewards for Imitation Learning

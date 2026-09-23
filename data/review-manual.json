@@ -1331,6 +1331,91 @@
           "note": "scripts/discover.py --refresh and apply_promotions.py both skipped this run due to export.arxiv.org returning HTTP 406; no promotions were checked"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read from a primary source during the 2026-09-24 AM scheduled maintenance run's verification pass over the top of data/discovery-candidates.json and judged outside this list. discover.py's out-of-scope suppression only keys on arxiv_id, so the DOI-only items below will keep resurfacing until a human either adds an arXiv id here or extends the suppression logic.",
+      "detected_on": "2026-09-24",
+      "items": [
+        {
+          "doi": "10.5281/zenodo.21964663",
+          "title": "FWL-ThinkingLM v4.1: A Complete Axiom System Unifying Robot Underlying Logic — FWL Manifold Principle",
+          "note": "Zenodo record now returns HTTP 410 Gone (removed by Zenodo). No verifiable content; title pattern matches self-published pseudo-scientific 'axiom system' content, not a robotics paper."
+        },
+        {
+          "doi": "10.5281/zenodo.21272840",
+          "title": "HCRGD‑Robotics: II — A Geometric‑Energy Coupling Framework for Locomotion Dynamics Control of Humanoid Robots",
+          "note": "Self-published Zenodo preprint by a single author, explicitly a theory-only 'Part II' with numerical simulation and hardware testing still pending; no institutional affiliation, no peer review, no learning component. Same self-published-theory-mill pattern as the FWL-ThinkingLM entry above."
+        },
+        {
+          "doi": "10.67119/sx6qp420",
+          "title": "Humanoid Robots 2026: A Comprehensive Review of Technical Foundations, Market Dynamics, and Research Challenges",
+          "note": "Published in the International Journal of Artificial Intelligence and Green Manufacturing (Hope Embark / hopeembark.org), an obscure open-journal-systems venue with no indexing, impact metrics, or clear editorial process found; reads as a market-analysis/bibliometric review rather than a research contribution to humanoid robot learning."
+        },
+        {
+          "doi": "10.5281/zenodo.22105365",
+          "title": "Torque-Balanced Procedural Locomotion for Physically Simulated Ragdoll Bipeds in Unity 3D: Architecture, Theoretical Analysis, and an Evaluation Protocol for a Real-Time, Non-Learned Control System",
+          "note": "Confirmed via the Zenodo record: a hand-tuned PD+IK balance controller for a Unity 3D game ragdoll, explicitly positioned as an alternative to reinforcement learning (title says 'Non-Learned Control System'). No robot, no learning; out of scope for a robot-learning list."
+        },
+        {
+          "doi": "10.9734/jerr/2026/v28i81983",
+          "title": "Humanoid Robot Motion Tracking Control Method Integrating Adaptive PID, Kalman Filtering and Feedforward Compensation",
+          "note": "Title and venue (Journal of Engineering Research and Reports) indicate a classical control pipeline (PID + Kalman filter + feedforward), not a learning-based method; out of scope for this list regardless of venue quality."
+        },
+        {
+          "doi": "10.3390/electronics15184161",
+          "title": "Design of Dancing Robot Based on Machine Vision",
+          "note": "MDPI page returned HTTP 403 (blocked); per a secondary summary the work is a lightweight custom robot combining pose-estimation-based vision with mechanical motion imitation, not clearly a humanoid platform and not primarily a learning contribution. Rejected on scope grounds; revisit if direct access to the publisher page becomes available."
+        }
+      ]
+    },
+    {
+      "kind": "candidate-source-blocked",
+      "reason": "During the 2026-09-24 AM scheduled maintenance run's verification pass, these candidates could not be read from a primary source well enough to record a verbatim abstract, so they were left out of README.md rather than added on a paraphrase. Revisit when the source becomes reachable.",
+      "detected_on": "2026-09-24",
+      "items": [
+        {
+          "doi": "10.1126/scirobotics.aed3973",
+          "title": "Evolution of humanoid locomotion control",
+          "note": "Science Robotics survey (Gu, Shi, Shi, Chang, Wang, Cheng, Olkin, Lopez-Sanchez, Feng, Zhang, Ames, Su, Sreenath; published 2026-08-19). science.org returned HTTP 403 and no arXiv twin could be found via search, so no verbatim abstract could be obtained. Topically in scope (this list already carries other locomotion-control surveys) and worth adding once a readable primary source is found."
+        },
+        {
+          "doi": "10.5281/zenodo.21982376",
+          "title": "Kinematic Optimization, Trajectory Retargeting, and Validation Pipelines for Humanoid Robot Motion Generation",
+          "note": "Zenodo thesis record (Jeremy Newman, 2026-08-17) carries no abstract/description and the PDF file URL returned HTTP 404; 6 views / 1 download recorded. Cannot verify scope or content without reading the actual thesis text."
+        },
+        {
+          "doi": "10.5281/zenodo.21886079",
+          "title": "A Whole-Body Control Framework for Humanoid Robots via Inertial Parameter Modulation",
+          "note": "Zenodo thesis record (Tom Liu, v2 2026-08-11) carries no abstract/description on the landing page; PDF not fetched. Cannot verify content without reading the full thesis."
+        },
+        {
+          "doi": "10.3390/fi18090498",
+          "title": "A Subsystem-Level Validation and Simulation Framework for a 12-DoF Biped Robot with Deep Reinforcement Learning Locomotion",
+          "note": "MDPI Future Internet 18(9):498 (accepted 2026-09-18, published 2026-09-21); publisher page returned HTTP 403. A secondary summary indicates PyBullet simulation with Soft Actor-Critic training, which would be in scope, but no verbatim abstract could be obtained and no real-robot claim was found. Revisit with direct MDPI access."
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "The 2026-09-24 AM scheduled run's `scripts/discover.py` sweep again failed to query the arXiv API directly for both the 2026-09 and 2026-08 windows: export.arxiv.org returned HTTP 406 Not Acceptable to both requests, the same failure mode seen on 2026-09-20 AM (see that entry above) and now recurring for a second consecutive run. Crossref and OpenAlex succeeded for both windows (222+348 and 1684+1886 records respectively) and also resolved 5 venue-only candidates to their arXiv twin, so venue-published work and much arXiv-adjacent work was still swept, but an arXiv-native preprint invisible to both Crossref and OpenAlex could have been missed. As a compensating spot-check, arxiv.org/list/cs.RO/2026-09 (the web listing, not the export API) was fetched by hand via WebFetch, which was not blocked; the humanoid-titled entries visible on its first page (ADAPT, A System for Fast Resilient and Adaptable Loco-Manipulation, Unified Motion Retargeting for Humanoids) were all already present in data/papers.json, suggesting the recent-month gap is small, but the check covered only the first page and is not exhaustive.",
+      "detected_on": "2026-09-24",
+      "items": [
+        {
+          "window": "2026-08-01..2026-09-24",
+          "note": "export.arxiv.org HTTP 406 on both months for a second consecutive run (also seen 2026-09-20 AM); Crossref/OpenAlex covered the gap partially, spot-check of arxiv.org/list/cs.RO/2026-09 page 1 found no misses but was not exhaustive"
+        }
+      ]
+    },
+    {
+      "kind": "enrichment-source-blocked",
+      "reason": "The 2026-09-24 AM scheduled run's `scripts/discover.py --refresh` pass (step 4, refreshing authors/abstracts on already-listed arXiv preprints and checking for venue promotions) failed outright: export.arxiv.org returned HTTP 406 Not Acceptable on the very first request (699 ids batched), and a retry after a 15s pause with --refresh-limit 30 hit the same 406. This is the third consecutive scheduled run (after 2026-09-20 AM's sweep-stage 406 and refresh-stage 406) where export.arxiv.org has been unreachable from this environment; it no longer looks like transient rate-limiting and more like a standing block on this egress path. metadata-refresh.json was not produced, so apply_promotions.py was not invoked and no preprint-to-venue promotions were checked this run.",
+      "detected_on": "2026-09-24",
+      "items": [
+        {
+          "note": "scripts/discover.py --refresh and apply_promotions.py both skipped this run due to export.arxiv.org HTTP 406; third consecutive run with this failure mode on export.arxiv.org, worth investigating as a possibly persistent block rather than transient rate-limiting"
+        }
+      ]
     }
   ]
 }
