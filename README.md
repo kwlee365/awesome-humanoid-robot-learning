@@ -26,10 +26,12 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.09](https://arxiv.org/abs/2609.24840), PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control
 - [arXiv 2026.09](https://arxiv.org/abs/2609.23968), Opt2VLA: Force-Aware Vision-Language-Action for Contact-Rich Humanoid Whole-Body Manipulation, [website](https://opt2vla.github.io/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.23483), STRIDER: Stepping-Enabled Multi-Gait Hierarchical 3D Loco-Manipulation Framework for Humanoid Robots
 - [arXiv 2026.09](https://arxiv.org/abs/2609.22829), Whole-Body UMI: Transferring UMI Manipulation Skills to Humanoid Whole-Body Manipulation via Real-Time Motion Generation, [website](https://wholebody-umi.github.io/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.22611), HIGenNTO: Scalable Humanoid Interaction Generation via Noise-Space Trajectory Optimization
+- [arXiv 2026.09](https://arxiv.org/abs/2609.22274), CHOREO: Every Humanoid Skill as a Trajectory
 - [arXiv 2026.09](https://arxiv.org/abs/2609.21467), Learning Distance-Conditioned Object Transport for Humanoid Loco-Manipulation from a Single Motion Clip
 - [arXiv 2026.09](https://arxiv.org/abs/2609.20558), Learning Slope-Adaptive Whole-Body Locomotion for Humanoid Robots in Roofing Construction
 - [arXiv 2026.09](https://arxiv.org/abs/2609.19340), ViLoMan: Learning Visual-Proprioceptive Whole-Body Loco-Manipulation Skills for Humanoid Robots, [website](https://viloman-anonymous.pages.dev)
@@ -120,7 +122,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - 🌟 [arXiv 2026.06](https://arxiv.org/abs/2606.05687), Accelerating and Scaling MPC-Guided Reinforcement Learning for Humanoid Locomotion and Manipulation, [code](https://github.com/junhengl/mpc-rl)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.05160), GRAIL: Generating Humanoid Loco-Manipulation from 3D Assets and Video Priors, [website](https://research.nvidia.com/labs/dair/grail/)
 - 🌟 [arXiv 2026.06](https://arxiv.org/abs/2606.04829) / RA-L 2026, M3imic: Learning a Versatile Whole-Body Controller for Multimodal Motion Mimicking, [code](https://github.com/Renforce-Dynamics/MultiModalWBC)
-- [arXiv 2026.06](https://arxiv.org/abs/2606.03536), Bionic Human-Motion Style Transfer for Physically Executable Whole-Body Control of Humanoid Robots
+- [arXiv 2026.06](https://arxiv.org/abs/2606.03536) / Journal of Bionic Engineering 2026, Bionic Human-Motion Style Transfer for Physically Executable Whole-Body Control of Humanoid Robots
 - [arXiv 2026.06](https://arxiv.org/abs/2606.03476), Human2Humanoid: Physics-Aware Cross-Morphology Motion Retargeting for Humanoid Robots
 - [arXiv 2026.06](https://arxiv.org/abs/2606.03297), SplitAdapter: Load-Aware Humanoid Loco-Manipulation via Factorized Adaptation, [website](https://splitadapter.github.io/)
 - [MIDA 2026](https://doi.org/10.3233/atde260449), Energy-Efficient Multi-Joint Cooperative Motion Planning for Unitree G1 Humanoid Robot in Complex Dance Scenarios
@@ -446,6 +448,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ## Locomotion
 - [arXiv 2026.09](https://arxiv.org/abs/2609.24552), Smoothness as a Constraint for Stable Humanoid Locomotion
 - [arXiv 2026.09](https://arxiv.org/abs/2609.23666), UniPoint: Unified Point-Level Sensor Fusion for Humanoid Locomotion Across Challenging Terrains
+- [arXiv 2026.09](https://arxiv.org/abs/2609.21447), FootQuery: Future-Touchdown-Guided Retrieval from Depth History for Perceptive Humanoid Locomotion
 - [arXiv 2026.09](https://arxiv.org/abs/2609.21185), When to Waddle: A Comparative Study of Bipedal Torso-Stabilization on Low-Friction Surfaces
 - [arXiv 2026.09](https://arxiv.org/abs/2609.21107), Learning Scene-Aware Humanoid Locomotion through 3D Clutter from Immersive Human Demonstrations
 - [arXiv 2026.09](https://arxiv.org/abs/2609.20570), Walking on the Slope: Stable Bipedal Gaits with Genetic-Algorithm-Optimized Trajectories
@@ -459,6 +462,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.09](https://arxiv.org/abs/2609.07096), RoboDreamer: Anticipatory Humanoid Locomotion with Predictive State-Space Models
 - [arXiv 2026.09](https://arxiv.org/abs/2609.02542), World-Model-Augmented Visual Locomotion for Humanoids on Foothold-Constrained Terrain
 - [ISCER 2026](https://ieeexplore.ieee.org/document/11681877/), Morphology-Aware Stair Locomotion for the Unitree H1 Humanoid via Foothold-Aware Reinforcement Learning
+- [Journal of Korea Robotics Society 2026](https://doi.org/10.7746/jkros.2026.21.3.269), Contact Force Estimation-Guided Reinforcement Learning Framework for Compliant Humanoid Bipedal Walking
 - [arXiv 2026.08](https://arxiv.org/abs/2608.29769), Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids
 - [arXiv 2026.08](https://arxiv.org/abs/2608.28090), Stay Seated: Learning Omnidirectional Humanoid Locomotion on a Passive Mobile Chair with Casters
 - [arXiv 2026.08](https://arxiv.org/abs/2608.26583), SOLO: Stable Omni-terrain Long-Horizon Perceptive Humanoid Locomotion, [website](https://sunpihai-up.github.io/solo/)
@@ -606,6 +610,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Safety-Critical Control
 - [Biomimetics 2026](https://doi.org/10.3390/biomimetics11090644), Passive-Active Cooperative Design Method for Fall Protection in Humanoid Robot
+- [arXiv 2026.09](https://arxiv.org/abs/2609.22075), LIMBO: Learning and Internalizing Model-Free Barrier Objectives for Agile and Safe Whole-Body Control
 - [arXiv 2026.09](https://arxiv.org/abs/2609.15988), ResSafe: Learning Safety Filtering with Residual Reinforcement Learning for Humanoids
 - [arXiv 2026.08](https://arxiv.org/abs/2608.10220), Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References
 - [arXiv 2026.08](https://arxiv.org/abs/2608.02809) / arXiv 2026.08, Toward Certified Functional Safety for Industrial Humanoid Robots: The Fail-Passive Gap and a Feasibility Study
@@ -641,6 +646,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2022.12](https://arxiv.org/abs/2212.00541), Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo
 
 ## Navigation
+- [arXiv 2026.09](https://arxiv.org/abs/2609.19272), Learning Safe Humanoid Navigation from Reduced Order Models, [website](https://wdc3iii.github.io/rom-nav/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.09158), TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model
 - [Robotica 2026](https://doi.org/10.1017/s0263574726103865), Adaptive Dragonfly Algorithm for AI-enabled path planning of humanoid robots in obstacle-constrained environments
 - [arXiv 2026.07](https://arxiv.org/abs/2607.27180), HumanCLAW: Can Vision-Language Models Act Through a Body?, [website](https://human-claw.github.io)

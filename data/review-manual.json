@@ -1416,6 +1416,368 @@
           "note": "scripts/discover.py --refresh and apply_promotions.py both skipped this run due to export.arxiv.org HTTP 406; third consecutive run with this failure mode on export.arxiv.org, worth investigating as a possibly persistent block rather than transient rate-limiting"
         }
       ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "The 2026-09-24 PM scheduled run's scripts/discover.py sweep again failed to query the arXiv API directly for both the 2026-09 and 2026-08 windows: export.arxiv.org returned HTTP 406 Not Acceptable. Isolated by hand with curl/urllib outside the script: plain queries like search_query=cat:cs.RO succeed (HTTP 200), but any query containing a submittedDate:[...] range consistently returns 406 regardless of start/max_results/date-span size, reproduced five times over several minutes. This is not the rate-limit pattern (HTTP 429) the script already handles; it looks like a standing block on the submittedDate range query shape specifically, and is now the fourth consecutive scheduled run with an export.arxiv.org failure (2026-09-20 AM, 2026-09-24 AM sweep and refresh stages, now 2026-09-24 PM). Crossref and OpenAlex both succeeded for 2026-09 and 2026-08 (235+348 and 1684+1886 records respectively). As a compensating check: fetched arxiv.org/list/cs.RO/2026-09 (the web listing, not the export API) by hand, which was not blocked, but it lists the month in oldest-first order so it only re-confirmed the same three early-September titles the 2026-09-20 AM run already found, all already in data/papers.json. Also ran three WebSearch queries for recent (2026-09) humanoid robot learning arXiv preprints; the only new-looking hit (2609.19340 ViLoMan) was already listed, and 2609.14647 was already in this file's out-of-scope-pending-human-read backlog. No evidence of a missed paper found, but this spot-check is not exhaustive and cannot substitute for the full monthly sweep.",
+      "detected_on": "2026-09-24",
+      "items": [
+        {
+          "window": "2026-08-01..2026-09-24",
+          "note": "export.arxiv.org HTTP 406 on both months for a fourth consecutive run; isolated to the submittedDate range query shape specifically (plain cat: queries succeed); Crossref/OpenAlex covered the gap partially; WebSearch and web-listing spot-checks found no misses but are not exhaustive"
+        }
+      ]
+    },
+    {
+      "kind": "enrichment-source-blocked",
+      "reason": "The 2026-09-24 PM scheduled run's scripts/discover.py --refresh pass failed outright, same as the AM run earlier today: export.arxiv.org returned HTTP 406 on the very first id_list request. Isolated by hand: a bare search_query=cat:cs.RO query succeeds (HTTP 200) reliably, but id_list queries (even a single id, no comma) return 406 every time, as do any search_query containing a submittedDate:[...] range. This is the fifth consecutive scheduled run (2026-09-20 AM, 2026-09-24 AM sweep stage, 2026-09-24 AM refresh stage, 2026-09-24 PM sweep stage, now 2026-09-24 PM refresh stage) with an export.arxiv.org failure, and it now looks structural rather than transient rate-limiting: plain category queries work, but id_list and date-range queries do not. Worth a human checking whether export.arxiv.org has changed its API contract or is filtering these specific query shapes from this runner's egress path. metadata-refresh.json was not produced, so apply_promotions.py was not run and no preprint-to-venue promotions were checked from the API this run; one promotion (Bionic Human-Motion Style Transfer for Physically Executable Whole-Body Control of Humanoid Robots, arXiv:2606.03536, to Journal of Bionic Engineering 2026, DOI 10.1007/s42235-026-00986-8) was instead found and applied by hand via the discovery queue's similar_to_listed list and confirmed by comparing author lists on the arXiv abs page.",
+      "detected_on": "2026-09-24",
+      "items": [
+        {
+          "note": "scripts/discover.py --refresh fails with HTTP 406 on export.arxiv.org id_list queries specifically; plain search_query=cat:X queries still succeed. Fifth consecutive run affected."
+        }
+      ]
+    },
+    {
+      "kind": "possible-duplicate-followon",
+      "reason": "During the 2026-09-24 PM enrichment pass, two Teleoperation entries were found to each duplicate an existing entry with a differently-worded title, missed by validate.py's fuzzy-title check because the wording differs enough (acronym expanded/reordered) to fall under the 0.92 similarity threshold: (1) the project-page-only entry 'CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System' (linked only to https://uiuckimlab.github.io/CHILD-pages/) is the same paper as the already-listed arXiv-linked entry 'CHILD: a Whole-Body Humanoid Teleoperation System' (arXiv:2508.00162, https://arxiv.org/abs/2508.00162) - same UIUC KIM Lab project, same acronym, same baby-carrier teleoperation device. (2) the project-page-only entry 'CLONE: Holistic Closed-Loop Whole-Body Teleoperation for Long-Horizon Humanoid Control' (linked only to https://humanoidclone.github.io/CLONE.github.io/) is the same paper as the already-listed arXiv-linked entry 'CLONE: Closed-Loop Whole-Body Humanoid Teleoperation for Long-Horizon Tasks' (arXiv:2506.08931, https://arxiv.org/abs/2506.08931) - identical CLONE acronym and project scope. A human should delete the project-page-only duplicate line for each and keep the arXiv-linked entry, which already carries a working paper_url.",
+      "detected_on": "2026-09-24",
+      "items": [
+        {
+          "duplicate_title": "CHILD: Controller for Humanoid Imitation and Live Demonstration a Whole-Body Humanoid Teleoperation System",
+          "keep_title": "CHILD: a Whole-Body Humanoid Teleoperation System",
+          "keep_url": "https://arxiv.org/abs/2508.00162"
+        },
+        {
+          "duplicate_title": "CLONE: Holistic Closed-Loop Whole-Body Teleoperation for Long-Horizon Humanoid Control",
+          "keep_title": "CLONE: Closed-Loop Whole-Body Humanoid Teleoperation for Long-Horizon Tasks",
+          "keep_url": "https://arxiv.org/abs/2506.08931"
+        }
+      ]
+    },
+    {
+      "kind": "readme-link-outdated",
+      "reason": "During the 2026-09-24 PM enrichment pass, three project-page-only README entries were confirmed to have arXiv preprints, and their abstracts/authors were enriched into data/papers.json via enrich.py (matched by title; enrich.py cannot change the README line or arxiv_id/paper_url). A human should hand-edit each README line to add the arXiv link and re-run parse_readme.py so data/papers.json picks up the arxiv_id.",
+      "detected_on": "2026-09-24",
+      "items": [
+        {
+          "title": "**ASAP**: Aligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills",
+          "current_readme_url": "https://agile.human2humanoid.com/",
+          "discovered_arxiv_id": "2502.01143",
+          "discovered_arxiv_url": "https://arxiv.org/abs/2502.01143"
+        },
+        {
+          "title": "MuJoCo Playground",
+          "current_readme_url": "https://playground.mujoco.org/",
+          "discovered_arxiv_id": "2502.08844",
+          "discovered_arxiv_url": "https://arxiv.org/abs/2502.08844"
+        },
+        {
+          "title": "PARC: Physics-based Augmentation with Reinforcement Learning for Character Controllers",
+          "current_readme_url": "https://michaelx.io/parc/index.html",
+          "discovered_arxiv_id": "2505.04002",
+          "discovered_arxiv_url": "https://arxiv.org/abs/2505.04002"
+        }
+      ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Candidates read and judged out of scope during the 2026-09-24 PM scheduled run's verification pass over data/discovery-candidates.json (indices 0-19 and 40-59): surveys/reviews, opinion pieces, self-published non-credible Zenodo documents, pure hardware/manufacturing trade notes with no research contribution, and off-topic application demos (dancing, sign language, puppetry, chatbot integration, education). Recorded here so scripts/discover.py stops re-proposing them.",
+      "detected_on": "2026-09-24",
+      "items": [
+        {
+          "title": "Kinematic Optimization, Trajectory Retargeting, and Validation Pipelines for Humanoid Robot Motion Generation",
+          "doi_or_arxiv": "10.5281/zenodo.21982376",
+          "reason": "Self-published single-author Zenodo 'thesis' (no institutional affiliation, no abstract listed). PDF text obtained via fetch reads as a descriptive engineering write-up of standard IK/trajectory-retargeting techniques with no reported hardware and no stated quantitative benchmark results - not a genuine research contribution."
+        },
+        {
+          "title": "Torque-Balanced Procedural Locomotion for Physically Simulated Ragdoll Bipeds in Unity 3D",
+          "doi_or_arxiv": "10.5281/zenodo.22105365",
+          "reason": "Self-published solo-developer Zenodo report on a non-learned procedural Unity game-character controller; only 2 of 4 planned experiments completed, no robot involved, not a peer-reviewed or substantive research contribution."
+        },
+        {
+          "title": "Evolution of humanoid locomotion control",
+          "doi_or_arxiv": "10.1126/scirobotics.aed3973",
+          "reason": "Explicitly a survey positioning humanoid control research; not a novel research contribution."
+        },
+        {
+          "title": "FWL-ThinkingLM v4.1: A Complete Axiom System Unifying Robot Underlying Logic - FWL Manifold Principle",
+          "doi_or_arxiv": "10.5281/zenodo.21964663",
+          "reason": "Self-published Zenodo document with grandiose, unsubstantiated claims typical of non-credible work; not a verifiable genuine research contribution."
+        },
+        {
+          "title": "HCRGD-Robotics: II - A Geometric-Energy Coupling Framework for Locomotion Dynamics Control of Humanoid Robots",
+          "doi_or_arxiv": "10.5281/zenodo.21272840",
+          "reason": "Self-published theoretical document stating only the derivation is finished and 'numerical simulation and hardware testing will be implemented' in future - no experiments performed yet."
+        },
+        {
+          "title": "Humanoid Robots 2026: A Comprehensive Review of Technical Foundations, Market Dynamics, and Research Challenges",
+          "doi_or_arxiv": "10.67119/sx6qp420",
+          "reason": "Explicitly a comprehensive review plus market analysis of commercial platforms, not a research contribution."
+        },
+        {
+          "title": "Design of Dancing Robot Based on Machine Vision",
+          "doi_or_arxiv": "10.3390/electronics15184161",
+          "reason": "A dancing-robot demo reproducing human dance moves via pose imitation; matches the explicitly excluded dancing-demo category."
+        },
+        {
+          "title": "Humanoid Robot Motion Tracking Control Method Integrating Adaptive PID, Kalman Filtering and Feedforward Compensation",
+          "doi_or_arxiv": "10.9734/jerr/2026/v28i81983",
+          "reason": "Classical (non-learned) PID+Kalman+feedforward controller tuned via Monte Carlo simulation only on a simplified model; no learning component and no real-robot validation."
+        },
+        {
+          "title": "Additive Manufacturing of Humanoid Robot Components Using eSUN PA-CF and FlexOne 55A Elastic Resin",
+          "doi_or_arxiv": "10.5281/zenodo.22827682",
+          "reason": "A materials-vendor application note from a trade show; abstract explicitly states it is not an independent robot-level performance validation - pure manufacturing/materials trade content."
+        },
+        {
+          "title": "Design features in human joints with recommendations for humanoid robot design",
+          "doi_or_arxiv": "10.1088/1748-3190/ae91be",
+          "reason": "A descriptive/tabulated review of human joint anatomy with bioinspired design recommendations; no robot built or evaluated."
+        },
+        {
+          "title": "From acrobatics to generality: Humanoid robots at an inflection point",
+          "doi_or_arxiv": "10.1126/scirobotics.aek7970",
+          "reason": "A special-issue editorial/perspective piece, not a research paper."
+        },
+        {
+          "title": "Integration of Local Generative Language Models in Humanoid Robots: An Approach with the NAO Robot and DeepSeek-LLM",
+          "doi_or_arxiv": "10.1109/cros69211.2026.11565712",
+          "reason": "LLM chatbot integration demo on the NAO robot with no robotics/learning research contribution - matches the explicitly excluded LLM-chatbot-demo category."
+        },
+        {
+          "title": "Wheeled Biped Robot for Reconnaissance and Tactical Support: A Battlefield-Oriented Advanced Prototype",
+          "doi_or_arxiv": "10.33564/ijeast.2026.v11i03.003",
+          "reason": "Hobbyist/educational 3D-printed hardware prototype write-up with no learning, control, or research contribution beyond mechanical build description."
+        },
+        {
+          "title": "3D Printing in Humanoid Robots: Component Integration and Proportion Analysis",
+          "doi_or_arxiv": "10.1109/mesa70578.2026.11684131",
+          "reason": "Self-described review/synthesis of existing open-source humanoid platforms; no novel research contribution, a manufacturing trade/survey piece."
+        },
+        {
+          "title": "A Bio-Inspired Edge-Cloud Collaborative Framework for Privacy-Aware Face Recognition on Humanoid Robots",
+          "doi_or_arxiv": "10.1109/icccr69988.2026.11642700",
+          "reason": "Privacy-preserving face recognition/edge-cloud system paper; does not fit any of the 12 sections."
+        },
+        {
+          "title": "A Nuclear-Powered Humanoid Robot Concept for Long-Duration Deep-Sea Operations",
+          "doi_or_arxiv": "10.1109/oceans66983.2026.11616853",
+          "reason": "Conceptual power-system/mechanical design proposal with no experiments or results reported."
+        },
+        {
+          "title": "A Plug-and-Play Shadow Puppetry Performance Framework for General-Purpose Humanoid Robots",
+          "doi_or_arxiv": "10.1109/mrai70020.2026.11621518",
+          "reason": "Art/cultural-heritage puppetry performance demo; explicitly out-of-scope entertainment application."
+        },
+        {
+          "title": "A Review of Research on Flexible Actuated Bionic Robots",
+          "doi_or_arxiv": "10.54254/2755-2721/2026.ad34255",
+          "reason": "Explicit survey/review article on flexible-driven bionic robots."
+        },
+        {
+          "title": "American Sign Language Humanoid Robot",
+          "doi_or_arxiv": "10.1109/aiiot68874.2026.11569523",
+          "reason": "Accessibility/assistive ASL interpretation demo using humanoid hardware; explicitly out-of-scope application demo."
+        },
+        {
+          "title": "An event-triggered linear time-varying model predictive control framework for physiologically meaningful bipedal walking",
+          "doi_or_arxiv": "10.1177/01423312261462985",
+          "reason": "Simulation-only study of a simplified 2-link compass-gait model; not a humanoid robot platform."
+        },
+        {
+          "title": "Are humanoid robots in 2035 more fiction than science?",
+          "doi_or_arxiv": "10.1126/scirobotics.aek6923",
+          "reason": "Opinion/perspective piece on humanoid robot hype vs. reality, not a research contribution."
+        },
+        {
+          "title": "Bridging TurboWarp and NAO: API Architecture for Block-Based Humanoid Robot Programming",
+          "doi_or_arxiv": "10.1109/cros69211.2026.11565578",
+          "reason": "Educational block-based programming middleware/usability study for the NAO robot; not a robot-learning research contribution."
+        },
+        {
+          "title": "Comprehensive Analysis of Path Planning Algorithms for Autonomous Navigation of Humanoid Robots",
+          "doi_or_arxiv": "10.1109/adsssc67751.2026.11582074",
+          "reason": "Comparative benchmark/analysis of existing classical path-planning algorithms with no novel method proposed."
+        },
+        {
+          "title": "Current status and future trends on the vision and motion planning of the robots: progress on bipedal humanoid robotics",
+          "doi_or_arxiv": "10.1109/mrai70020.2026.11621150",
+          "reason": "Explicit review/thesis-style survey of vision and motion-planning models for bipedal humanoids."
+        }
+      ]
+    },
+    {
+      "kind": "candidate-source-blocked",
+      "reason": "During the 2026-09-24 PM scheduled run's verification pass, these candidates could not be read from a primary source well enough to record a verbatim abstract (IEEE Xplore blocking automated fetching with no arXiv twin found, publisher pages returning 403, or no abstract text available from any indexed source), so they were left out of README.md rather than added on a paraphrase.",
+      "detected_on": "2026-09-24",
+      "items": [
+        {
+          "title": "A Whole-Body Control Framework for Humanoid Robots via Inertial Parameter Modulation",
+          "doi_or_arxiv": "10.5281/zenodo.21886079",
+          "reason": "Zenodo record carries no abstract/description; the PDF returned undecodable binary content."
+        },
+        {
+          "title": "Reinforcement Learning-Based Trajectory Generation and Whole Body Control for Humanoid Robots",
+          "doi_or_arxiv": "10.1109/cyber71431.2026.11695405",
+          "reason": "IEEE Xplore only, blocks automated fetching; no arXiv twin found."
+        },
+        {
+          "title": "LNP: Liquid Network Policy for Humanoid Whole-Body Motion Tracking",
+          "doi_or_arxiv": "10.1109/lra.2026.3732845",
+          "reason": "IEEE Xplore only (RA-L), blocks automated fetching; no arXiv twin found."
+        },
+        {
+          "title": "A Subsystem-Level Validation and Simulation Framework for a 12-DoF Biped Robot with Deep Reinforcement Learning Locomotion",
+          "doi_or_arxiv": "10.3390/fi18090498",
+          "reason": "Verification agent reported reading this MDPI page, but a direct re-fetch of https://www.mdpi.com/1999-5903/18/9/498 by the maintainer run returned HTTP 403, matching the prior 2026-09-24 AM run's finding that this same page is blocked. Not added pending a reproducible read; a human should retry when the block lifts."
+        },
+        {
+          "title": "A Compact 48-V Dual-Stator Single-Rotor Axial-flux PM Motor for Humanoid-Robot Elbow Actuators",
+          "doi_or_arxiv": "10.1109/intermagshortpapers68882.2026.11596519",
+          "reason": "IEEE Xplore only, blocks automated fetching; no arXiv twin found despite this being a plausible Hardware Design candidate."
+        },
+        {
+          "title": "A LiDAR-Inertial Localization and Mapping System for Humanoid Robots Based on FAST-LIO",
+          "doi_or_arxiv": "10.1109/iseae69422.2026.11544866",
+          "reason": "IEEE Xplore only, blocks automated fetching; no arXiv twin found."
+        },
+        {
+          "title": "A perception-to-control computational pipeline for humanoid robot-based construction surface finishing via attention-based normal refinement and residual reinforcement learning",
+          "doi_or_arxiv": "10.1016/j.cacaie.2026.100168",
+          "reason": "No abstract available anywhere: ScienceDirect 403, Semantic Scholar/OpenAlex list null abstract, no arXiv twin found."
+        },
+        {
+          "title": "Agile Wheel-Bipedal Loco-Manipulation With Active Force Rejection",
+          "doi_or_arxiv": "10.1109/lra.2026.3712640",
+          "reason": "IEEE Xplore only, blocks automated fetching; no arXiv twin found despite search."
+        },
+        {
+          "title": "Biological characteristic-guided multi-objective optimal trajectory planning for humanoid robots",
+          "doi_or_arxiv": "10.1016/j.aei.2026.105088",
+          "reason": "No abstract available anywhere: Elsevier page unreadable, OpenAlex/Semantic Scholar list null abstract."
+        },
+        {
+          "title": "Continuous Mobile Manipulation for Wheeled Humanoid Robots via Head-Mounted Egocentric Vision",
+          "doi_or_arxiv": "10.1109/ur69537.2026.11626804",
+          "reason": "IEEE Xplore only, blocks automated fetching; no arXiv twin found."
+        },
+        {
+          "title": "Curriculum-Based Deep Reinforcement Learning for Robust Biped Push Recovery",
+          "doi_or_arxiv": "10.1109/aim65483.2026.11658159",
+          "reason": "IEEE Xplore only, blocks automated fetching; no arXiv twin found."
+        }
+      ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Candidates read and judged out of scope during the 2026-09-24 PM scheduled run verification pass over data/discovery-candidates.json indices 20-39.",
+      "detected_on": "2026-09-24",
+      "items": [
+        {
+          "title": "Robot in a crib: How a playing robot helps us understand sensorimotor contingency learning",
+          "doi_or_arxiv": "10.1126/scirobotics.aed4106",
+          "reason": "Developmental-robotics/cognitive-science study of sensorimotor contingency learning on the iCub interacting with a mobile toy; not a manipulation, locomotion, navigation or other task covered by any of the 12 list sections."
+        },
+        {
+          "title": "Securing the Humanoid Ecosystem",
+          "doi_or_arxiv": "10.1201/9788743810704-10",
+          "reason": "Cybersecurity best-practices book chapter/opinion piece with no research contribution or experiments."
+        },
+        {
+          "title": "Sim-to-Real Transfer Learning for Humanoid Robot Control: A Mini-Review",
+          "doi_or_arxiv": "10.1109/cscwd68734.2026.11582160",
+          "reason": "Explicitly a survey/mini-review synthesizing existing sim-to-real paradigms, not a novel research contribution."
+        },
+        {
+          "title": "Sliding Mode Control for Stable Bipedal Locomotion: Reference Trajectory Design and Stable Analysis",
+          "doi_or_arxiv": "10.1142/s175882512650064x",
+          "reason": "Biomechanics/structural-engineering study of a human pedestrian point-mass model under footbridge ground vibrations; no humanoid robot involved."
+        },
+        {
+          "title": "VIRTUAL REALLIK SAHNALARIDA KO'P ISHTIROKCHILI HOLISTIK HARAKATNI REAL VAQT REJIMIDA KUZATISH VA KO'P AGENTLI SKELETNI RETARGETING QILISH",
+          "doi_or_arxiv": "10.5281/zenodo.21929401",
+          "reason": "Multi-person motion-capture retargeting to virtual Unity 'Humanoid' avatars for VR; no physical robot."
+        }
+      ]
+    },
+    {
+      "kind": "candidate-source-blocked",
+      "reason": "Candidates from indices 20-39 that could not be read from a primary source during the 2026-09-24 PM run: IEEE Xplore blocking automated fetch with no arXiv twin, Springer/Nature pages behind a login wall, or empty publisher pages.",
+      "detected_on": "2026-09-24",
+      "items": [
+        {
+          "title": "Adaptive Gait Control for Humanoid Robots Using Deep Reinforcement Learning in Dynamic Environments",
+          "doi_or_arxiv": "10.1109/aiea70743.2026.11633108",
+          "reason": "IEEE Xplore blocks automated fetch; no arXiv twin found."
+        },
+        {
+          "title": "Closed-Chain Sim2Sim Gait Transfer for Linear-Actuator Driven Humanoid Robot on Complex Terrains",
+          "doi_or_arxiv": "10.1109/icca69928.2026.11618175",
+          "reason": "IEEE Xplore blocks automated fetch; no arXiv twin found."
+        },
+        {
+          "title": "Frequency-Based Gait Synthesis for Humanoid Robots: Extension from 2D to 3D",
+          "doi_or_arxiv": "10.1109/siu71813.2026.11636595",
+          "reason": "IEEE Xplore blocks automated fetch; no abstract available anywhere; no arXiv twin found."
+        },
+        {
+          "title": "Hip vertical motion effects on walking gait for biped robots",
+          "doi_or_arxiv": "10.1038/s41598-026-70222-0",
+          "reason": "nature.com redirected to a login wall on every fetch attempt; no arXiv twin exists."
+        },
+        {
+          "title": "Humanoid Robot Jumping Control Based on Centroid Trajectory and Sparse Key Limb Pose Guidance",
+          "doi_or_arxiv": "10.1007/s42235-026-00931-9",
+          "reason": "Springer idp.springer.com login wall on every fetch attempt; only a cached snippet obtainable, not a direct primary-source read."
+        },
+        {
+          "title": "Practical Implementation of Analytical Walking Patterns in Open-Loop Humanoid Robots: Calibration and Compensation Strategies",
+          "doi_or_arxiv": "10.1007/978-3-032-30258-8_32",
+          "reason": "Springer book-chapter page blocked by login wall; no abstract obtainable and no arXiv twin found."
+        },
+        {
+          "title": "LLM-Guided Adaptive Gait Control for Humanoid Robots via Multi-Modal State Reasoning",
+          "doi_or_arxiv": "10.1109/iscer70245.2026.11681325",
+          "reason": "IEEE Xplore blocks automated fetch; no arXiv twin found."
+        },
+        {
+          "title": "Research on Waist-Arm Coordinated Motion Planning for a Humanoid Robot Based on Null-Space Projection",
+          "doi_or_arxiv": "10.1109/spccs69331.2026.11588663",
+          "reason": "IEEE Xplore blocks automated fetch; no arXiv twin found."
+        },
+        {
+          "title": "ST-MAP: Spatiotemporal Multimodal Alignment for Personality-Conditioned Humanoid Motion Synthesis",
+          "doi_or_arxiv": "10.1109/icce70609.2026.11658432",
+          "reason": "IEEE Xplore blocks automated fetch; no arXiv twin found."
+        },
+        {
+          "title": "Teleoperation Mapping and Safety Control for Humanoid Robots in Power Grid Inspection and Operation Tasks",
+          "doi_or_arxiv": "10.1109/iccir70228.2026.11633305",
+          "reason": "IEEE Xplore blocks automated fetch; no arXiv twin found."
+        },
+        {
+          "title": "Reinforcement Learning-based Impact Forces-Optimized Gait Control for Humanoid Locomotion",
+          "doi_or_arxiv": "10.1109/ur69537.2026.11626674",
+          "reason": "IEEE Xplore blocks automated fetch; no arXiv twin found."
+        },
+        {
+          "title": "Teleoperation of Humanoid Robots Based on Chiral Mapping and Vision-Language Model Assistance",
+          "doi_or_arxiv": "10.1360/sst-2025-0325",
+          "reason": "sciengine.com page returned empty content on fetch; only background context found via search, not the actual abstract; no arXiv twin available."
+        }
+      ]
+    },
+    {
+      "kind": "borderline-scope",
+      "reason": "'Progressive Reinforcement Learning for Whole-Body Humanoid Manipulation' (Klemen Jakob Kastrevc, MSc thesis, University of Ljubljana, 2026, https://repozitorij.uni-lj.si/IzpisGradiva.php?id=186726) trains a Talos humanoid in IsaacLab with a staged-reward PPO curriculum for whole-body reach-grasp-lift manipulation, which would otherwise fit Loco-Manipulation and Whole-Body-Control. Not added because (1) this list has no precedent for including an MSc thesis (only journal/conference/preprint entries, one prior review-manual finding explicitly rejected self-published Zenodo theses as non-credible), and (2) the thesis's own abstract on the repository page is in Slovenian only, with no English abstract available, which would be inconsistent with every other entry on this list. A human should decide whether university-repository MSc theses are in scope for this list at all, and if so whether a non-English-only abstract is acceptable.",
+      "detected_on": "2026-09-24",
+      "items": [
+        {
+          "title": "Progressive Reinforcement Learning for Whole-Body Humanoid Manipulation",
+          "url": "https://repozitorij.uni-lj.si/IzpisGradiva.php?id=186726"
+        }
+      ]
     }
   ]
 }
