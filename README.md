@@ -26,11 +26,16 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- 🌟 [arXiv 2026.09](https://arxiv.org/abs/2609.28378), ForgetMimic: Motion Unlearning for Reinforcement Learning Humanoid Control, [code](https://github.com/Zili1000/ForgetMimic)
+- [arXiv 2026.09](https://arxiv.org/abs/2609.27269), Banana Kick: Response-Informed Skill Evolution for Humanoid Soccer, [website](https://haozhang-thu.github.io/bananakick/)
+- [arXiv 2026.09](https://arxiv.org/abs/2609.25754), PLAT: Sparse Timed Keyframe Motion Tracking for Humanoid Control via Privileged Latent Transition Learning
+- [arXiv 2026.09](https://arxiv.org/abs/2609.25363), HOTICE: Whole-Body Humanoid Object Transportation in Cluttered Environments
 - [arXiv 2026.09](https://arxiv.org/abs/2609.24840), PredActor: Predictive Action Diffusion for Steerable Onboard Humanoid Control
 - [arXiv 2026.09](https://arxiv.org/abs/2609.23968), Opt2VLA: Force-Aware Vision-Language-Action for Contact-Rich Humanoid Whole-Body Manipulation, [website](https://opt2vla.github.io/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.23483), STRIDER: Stepping-Enabled Multi-Gait Hierarchical 3D Loco-Manipulation Framework for Humanoid Robots
 - [arXiv 2026.09](https://arxiv.org/abs/2609.22829), Whole-Body UMI: Transferring UMI Manipulation Skills to Humanoid Whole-Body Manipulation via Real-Time Motion Generation, [website](https://wholebody-umi.github.io/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.22611), HIGenNTO: Scalable Humanoid Interaction Generation via Noise-Space Trajectory Optimization
+- [arXiv 2026.09](https://arxiv.org/abs/2609.22538), FRAMES: Failure Recovery And Monitoring of Embodied Skills for Humanoid Loco-Manipulation
 - [arXiv 2026.09](https://arxiv.org/abs/2609.22274), CHOREO: Every Humanoid Skill as a Trajectory
 - [arXiv 2026.09](https://arxiv.org/abs/2609.21467), Learning Distance-Conditioned Object Transport for Humanoid Loco-Manipulation from a Single Motion Clip
 - [arXiv 2026.09](https://arxiv.org/abs/2609.20558), Learning Slope-Adaptive Whole-Body Locomotion for Humanoid Robots in Roofing Construction
@@ -311,6 +316,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.08](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/), VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters, [website](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/)
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
+- [arXiv 2026.09](https://arxiv.org/abs/2609.25486), Brace Yourself: Task-Conditioned Environmental Bracing for Forceful Humanoid Manipulation
 - [arXiv 2026.09](https://arxiv.org/abs/2609.17824), Learning Multi-Humanoid Pickup and Transport via Decentralized Object-Centric Control, [website](http://decmht.github.io)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.29242), AnyWorld: Factorized Egocentric World Models for Cross-Embodiment Generalization, [website](https://xpeng-robotics.github.io/anyworld/)
 - 🌟 [arXiv 2026.08](https://arxiv.org/abs/2608.27550), Beyond Data Scaling: Representation-Centric Continued Pre-training for Vision-Language-Action Models, [website](https://starvla.github.io/VLAct) / [code](https://github.com/starVLA/VLAct)
@@ -446,6 +452,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.09](https://arxiv.org/abs/2609.27003), Learning Expressive Humanoid Locomotion from Monocular Runway Videos for Robot Fashion Shows
+- [arXiv 2026.09](https://arxiv.org/abs/2609.27001), Humanoid Locomotion with a Fly-Inspired Recurrent Controller
 - [arXiv 2026.09](https://arxiv.org/abs/2609.24552), Smoothness as a Constraint for Stable Humanoid Locomotion
 - [arXiv 2026.09](https://arxiv.org/abs/2609.23666), UniPoint: Unified Point-Level Sensor Fusion for Humanoid Locomotion Across Challenging Terrains
 - [arXiv 2026.09](https://arxiv.org/abs/2609.21447), FootQuery: Future-Touchdown-Guided Retrieval from Depth History for Perceptive Humanoid Locomotion
@@ -612,6 +620,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [Biomimetics 2026](https://doi.org/10.3390/biomimetics11090644), Passive-Active Cooperative Design Method for Fall Protection in Humanoid Robot
 - [arXiv 2026.09](https://arxiv.org/abs/2609.22075), LIMBO: Learning and Internalizing Model-Free Barrier Objectives for Agile and Safe Whole-Body Control
 - [arXiv 2026.09](https://arxiv.org/abs/2609.15988), ResSafe: Learning Safety Filtering with Residual Reinforcement Learning for Humanoids
+- [arXiv 2026.09](https://arxiv.org/abs/2609.07288), How Long Until Your Robot Ignores You? A Safety Benchmark for LLM Orchestrators in Human-Humanoid Collaboration
 - [arXiv 2026.08](https://arxiv.org/abs/2608.10220), Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References
 - [arXiv 2026.08](https://arxiv.org/abs/2608.02809) / arXiv 2026.08, Toward Certified Functional Safety for Industrial Humanoid Robots: The Fail-Passive Gap and a Feasibility Study
 - [arXiv 2026.07](https://arxiv.org/abs/2607.28623), PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball, [website](https://lzyang2000.github.io/perceptive_cbf_rl/)
@@ -647,8 +656,10 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Navigation
 - [arXiv 2026.09](https://arxiv.org/abs/2609.19272), Learning Safe Humanoid Navigation from Reduced Order Models, [website](https://wdc3iii.github.io/rom-nav/)
+- [arXiv 2026.09](https://arxiv.org/abs/2609.15195), HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness, [website](https://agibot-harnessvln.netlify.app/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.09158), TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model
 - [Robotica 2026](https://doi.org/10.1017/s0263574726103865), Adaptive Dragonfly Algorithm for AI-enabled path planning of humanoid robots in obstacle-constrained environments
+- [arXiv 2026.08](https://arxiv.org/abs/2608.25642), EgoNav: Bridging Learned Waypoints and Geometry-Aware Local Control for Robust Indoor Navigation
 - [arXiv 2026.07](https://arxiv.org/abs/2607.27180), HumanCLAW: Can Vision-Language Models Act Through a Body?, [website](https://human-claw.github.io)
 - 🌟 [arXiv 2026.07](https://arxiv.org/abs/2607.20061), ReferTrack: Referring Then Tracking for Embodied Visual Tracking, [code](https://github.com/MedlarTea/referTrack)
 - [arXiv 2026.07](https://arxiv.org/abs/2607.18200), Learning Adaptive Safety Margins for Visual Navigation
@@ -813,7 +824,9 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Physics-Based Character Animation
 - [SIGGRAPH 2010](https://dl.acm.org/doi/abs/10.1145/1833349.1778770?casa_token=j3esx-hx0GAAAAAA:OvRU6YYrNo2ZP9IyXGVDryWJqHmvU-oVhnzog8RFKKySQJjganzaAmHff6CQ4a0qzfJZu-J6Buf4Ug), Spatial relationship preserving character motion adaptation
+- [arXiv 2026.09](https://arxiv.org/abs/2609.26420), Sample, Simulate, Select: Physics-in-the-Loop Text-to-Motion for Humanoids Without Training
 - [arXiv 2026.09](https://arxiv.org/abs/2609.19688), LYRIC: Language-Driven Physics-Based Character Control for Contact-Rich Whole-Body Object Interaction, [website](https://neu-vi.github.io/LYRIC/)
+- [arXiv 2026.09](https://arxiv.org/abs/2609.17682), DSD: Learning Diverse and Reusable Motor Skills via Diffusion Skill Discovery
 - [arXiv 2026.09](https://arxiv.org/abs/2609.06591), Unifying Physics-Based Humanoid Interaction with a Context-Conditioned Interaction Prior, [website](https://jiann-li.github.io/chip-project/)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.23258), Progressively Learning Heterogeneous Skills in a Unified Latent Space
 - [arXiv 2026.08](https://arxiv.org/abs/2608.03528), Tired Actor: Fatigue-Informed Character Control

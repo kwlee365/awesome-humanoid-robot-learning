@@ -1778,6 +1778,49 @@
           "url": "https://repozitorij.uni-lj.si/IzpisGradiva.php?id=186726"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read from the arXiv abstract during the 2026-09-26 queue pass and judged outside this list. Recorded so the discovery sweep stops re-proposing them: scripts/discover.py treats an arXiv id listed under this kind as already decided.",
+      "detected_on": "2026-09-26",
+      "items": [
+        {
+          "arxiv_id": "2609.25674",
+          "title": "Teaching Reinforcement Learning and Humanoid Robotics to High-School Students: An Expert-Validated Curriculum Design on a Low-Cost Open Platform",
+          "note": "an educational curriculum-design paper (pedagogical framework, expert-validated course structure); no novel robot control or learning method, fits none of the 12 sections"
+        },
+        {
+          "arxiv_id": "2609.03255",
+          "title": "Establishing a Dynamic Multimodal HRI Dataset for Engagement Analysis with a Humanoid Robot",
+          "note": "a data-collection protocol proposal for an HRI engagement dataset (physiological signals, behavioral data, self-report); no robot learning or control contribution"
+        },
+        {
+          "arxiv_id": "2608.10387",
+          "title": "Hip Energized Monopedal Hopping",
+          "note": "classical PD + feedforward hip-energizing controller for the Penn Jerboa monoped, analyzed via hybrid averaging; not a humanoid platform and not learning-based"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "The 2026-09-26 scheduled run's scripts/discover.py sweep again failed to query the arXiv API directly for both the 2026-09 and 2026-08 windows: export.arxiv.org returned HTTP 406 Not Acceptable to both, the same failure mode seen continuously since 2026-09-20 AM (see entries above), now a sixth consecutive run. Crossref and OpenAlex both succeeded for 2026-09 and 2026-08 (258+348 and 1792+1757 records respectively) and 7 venue-only candidates were resolved to an arXiv twin, so venue-published and much arXiv-adjacent work was still covered. As a compensating spot-check, arxiv.org/list/cs.RO/2026-09 (the web listing, not the export API) was fetched by hand via WebFetch and was not blocked; the two humanoid-titled entries on its first page (ADAPT, Unified Motion Retargeting for Humanoids) were already present in data/papers.json. This spot-check only covers the oldest entries of the month (the listing is not reverse-chronological) and is not exhaustive, so a late-September arXiv-only preprint invisible to Crossref/OpenAlex could still have been missed.",
+      "detected_on": "2026-09-26",
+      "items": [
+        {
+          "window": "2026-08-01..2026-09-26",
+          "note": "export.arxiv.org HTTP 406 on both months for a sixth consecutive run; Crossref/OpenAlex covered the gap partially, spot-check of arxiv.org/list/cs.RO/2026-09 page 1 found no misses but was not exhaustive"
+        }
+      ]
+    },
+    {
+      "kind": "enrichment-source-blocked",
+      "reason": "The 2026-09-26 scheduled run's scripts/discover.py --refresh pass (step 4: refreshing authors/abstracts and checking preprint-to-published promotions for 717 listed arXiv records) failed outright with an uncaught HTTP 406 Not Acceptable from export.arxiv.org on its very first batched metadata request, the same standing block affecting this run's discover.py sweep (see the 2026-09-26 discovery-coverage-gap entry above) and previously seen on 2026-09-13, 2026-09-20 and 2026-09-24. No metadata-refresh.json was produced, so apply_promotions.py and scripts/enrich.py --apply were not run this pass; no promotions were checked and no enrichment fields were refreshed. A later run, ideally once export.arxiv.org stops rejecting the submittedDate/batched-id request shape, should retry step 4.",
+      "detected_on": "2026-09-26",
+      "items": [
+        {
+          "note": "scripts/discover.py --refresh crashed with HTTPError 406 before producing metadata-refresh.json; apply_promotions.py and enrich.py --apply both skipped this run"
+        }
+      ]
     }
   ]
 }
