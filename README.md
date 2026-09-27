@@ -26,7 +26,9 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.09](https://arxiv.org/abs/2609.29850), BeyondRetarget: Learning Executable Humanoid Motions Directly from Monocular Video
 - 🌟 [arXiv 2026.09](https://arxiv.org/abs/2609.28378), ForgetMimic: Motion Unlearning for Reinforcement Learning Humanoid Control, [code](https://github.com/Zili1000/ForgetMimic)
+- [arXiv 2026.09](https://arxiv.org/abs/2609.28175), DAVIS: A Depth-Only End-to-End Active-Vision Framework for Humanoid Soccer Skills, [website](https://thusi-lab.github.io/DAVIS/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.27269), Banana Kick: Response-Informed Skill Evolution for Humanoid Soccer, [website](https://haozhang-thu.github.io/bananakick/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.25754), PLAT: Sparse Timed Keyframe Motion Tracking for Humanoid Control via Privileged Latent Transition Learning
 - [arXiv 2026.09](https://arxiv.org/abs/2609.25363), HOTICE: Whole-Body Humanoid Object Transportation in Cluttered Environments
@@ -38,6 +40,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.09](https://arxiv.org/abs/2609.22538), FRAMES: Failure Recovery And Monitoring of Embodied Skills for Humanoid Loco-Manipulation
 - [arXiv 2026.09](https://arxiv.org/abs/2609.22274), CHOREO: Every Humanoid Skill as a Trajectory
 - [arXiv 2026.09](https://arxiv.org/abs/2609.21467), Learning Distance-Conditioned Object Transport for Humanoid Loco-Manipulation from a Single Motion Clip
+- [arXiv 2026.09](https://arxiv.org/abs/2609.21100), Dynamics-Induced Commitment in Learning-Based Robotic Penalty Kicks
 - [arXiv 2026.09](https://arxiv.org/abs/2609.20558), Learning Slope-Adaptive Whole-Body Locomotion for Humanoid Robots in Roofing Construction
 - [arXiv 2026.09](https://arxiv.org/abs/2609.19340), ViLoMan: Learning Visual-Proprioceptive Whole-Body Loco-Manipulation Skills for Humanoid Robots, [website](https://viloman-anonymous.pages.dev)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.18930), Learning Holistic Whole-Body Loco-Manipulation with a Bipedal Mobile Manipulator
@@ -67,6 +70,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.08](https://arxiv.org/abs/2608.17584), HODAgent: Towards On-Demand, Responsive Humanoids for Physical World Human Interaction
 - [arXiv 2026.08](https://arxiv.org/abs/2608.17027), FetchMan: Learning Visual Humanoid Loco-Manipulation Policies from Simulated Experiences, [website](https://orayyan.com/fetchman)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.16837), HAF: Adapting Generalist VLAs to Humanoid Whole-Body Loco-manipulation via Hierarchical Action Flow and Spectral Latent RL, [website](https://grange007.github.io/HAF)
+- [arXiv 2026.08](https://arxiv.org/abs/2608.16195), RoboStriker: Latent-Space Strategic Games for Autonomous Humanoid Boxing
 - [arXiv 2026.08](https://arxiv.org/abs/2608.12063), Learning Loco-Manipulation From SMPC Demonstrations With Sparse Offline-to-Online RL
 - [arXiv 2026.08](https://arxiv.org/abs/2608.10220), Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References
 - [arXiv 2026.08](https://arxiv.org/abs/2608.07746), LUCID: Latent-Skill Unified Control via Imagined Dynamics for Long-Horizon Humanoid Loco-Manipulation
@@ -107,6 +111,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - 🌟 [arXiv 2026.06](https://arxiv.org/abs/2606.22174), OpenHLM: An Empirical Recipe for Whole-Body Humanoid Loco-Manipulation, [website](https://openhlm-project.github.io/) / [code](https://github.com/OpenHLM-project/OpenHLM)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.20705), MotionPyramid: Hierarchical Motion Representation and Residual Interfaces
 - [arXiv 2026.06](https://arxiv.org/abs/2606.19935), PhysDrift: Bridging the Embodiment Gap in Humanoid Co-Speech Motion Generation
+- [arXiv 2026.06](https://arxiv.org/abs/2606.19233), Mobile Pedipulation for Object Sliding via Hierarchical Control on a Wheeled Bipedal Robot
 - [arXiv 2026.06](https://arxiv.org/abs/2606.18772), HALOMI: Learning Humanoid Loco-Manipulation with Active Perception from Human Demonstrations, [website](https://halomi-humanoid.github.io)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.16696), VENOM: Versatile Embodied Network for Omni-bodied Motion tracking
 - [arXiv 2026.06](https://arxiv.org/abs/2606.13232), WT-UMI: Tactile-based Whole-Body Manipulation via Force-Supervised Contact-Aware Planning
@@ -133,6 +138,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [MIDA 2026](https://doi.org/10.3233/atde260449), Energy-Efficient Multi-Joint Cooperative Motion Planning for Unitree G1 Humanoid Robot in Complex Dance Scenarios
 - [ISARC 2026](https://doi.org/10.22260/isarc2026/0003), Learning Humanoid Loco-Manipulation for Transporting Unwieldy Construction Objects
 - [Journal of Mechanisms and Robotics 2026](https://doi.org/10.1115/1.4072208), Energy-Aware Trajectory Optimization Using Deep Reinforcement Learning in Humanoid Robot Through Via-Point Learning
+- [arXiv 2026.06](https://arxiv.org/abs/2606.01851), PHASOR: Phase-Anchored Universal Action Representations for Humanoid Embodiments
 - [arXiv 2026.05](https://arxiv.org/abs/2606.00252), HOIST: Humanoid Optimized with Imitation and Sample-efficient Tuning for Manipulating Suspended Loads
 - [arXiv 2026.05](https://arxiv.org/abs/2605.27724), HumanoidMimicGen: Data Generation for Loco-Manipulation via Whole-Body Planning, [website](https://humanoidmimicgen.github.io/)
 - [arXiv 2026.05](https://arxiv.org/abs/2605.23762), Direct Dynamic Retargeting for Humanoid Imitation Learning from Videos
@@ -316,8 +322,10 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.08](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/), VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters, [website](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/)
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
+- 🌟 [arXiv 2026.09](https://arxiv.org/abs/2609.30247), Rolling-WAM: World Action Models with Rolling Imagination, [website](https://rolling-wam.github.io) / [code](https://github.com/zyinghua/Rolling-WAM)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.25486), Brace Yourself: Task-Conditioned Environmental Bracing for Forceful Humanoid Manipulation
 - [arXiv 2026.09](https://arxiv.org/abs/2609.17824), Learning Multi-Humanoid Pickup and Transport via Decentralized Object-Centric Control, [website](http://decmht.github.io)
+- [arXiv 2026.09](https://arxiv.org/abs/2609.17372), XPACE: Joint World and Action Modeling from Heterogeneous Experience
 - [arXiv 2026.08](https://arxiv.org/abs/2608.29242), AnyWorld: Factorized Egocentric World Models for Cross-Embodiment Generalization, [website](https://xpeng-robotics.github.io/anyworld/)
 - 🌟 [arXiv 2026.08](https://arxiv.org/abs/2608.27550), Beyond Data Scaling: Representation-Centric Continued Pre-training for Vision-Language-Action Models, [website](https://starvla.github.io/VLAct) / [code](https://github.com/starVLA/VLAct)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.25308), V-Link: Recovering Lost Visual Representations in Action DiT for Vision-Language-Action Models
@@ -423,7 +431,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2025.10](https://arxiv.org/abs/2510.13594), Development of an Intuitive GUI for Non-Expert Teleoperation of Humanoid Robots
 - [arXiv 2025.10](https://arxiv.org/abs/2510.04353) / RA-L 2025, Stability-Aware Retargeting for Humanoid Multi-Contact Teleoperation
 - [arXiv 2025.10](https://arxiv.org/abs/2510.03529), LapSurgie: Humanoid Robots Performing Surgery via Teleoperated Handheld Laparoscopy
-- [arXiv 2025.08](https://arxiv.org/abs/2508.09846), Whole-Body Bilateral Teleoperation with Multi-Stage Object Parameter Estimation for Wheeled Humanoid Locomanipulation
+- [arXiv 2025.08](https://arxiv.org/abs/2508.09846) / T-RO 2026, Whole-Body Bilateral Teleoperation with Multi-Stage Object Parameter Estimation for Wheeled Humanoid Locomanipulation
 - [arXiv 2025.08](https://arxiv.org/abs/2508.00162) / Humanoids 2025, CHILD: a Whole-Body Humanoid Teleoperation System
 - [arXiv 2025.06](https://arxiv.org/abs/2506.08931), CLONE: Closed-Loop Whole-Body Humanoid Teleoperation for Long-Horizon Tasks
 - [arXiv 2025.05](https://arxiv.org/abs/2505.19530) / Humanoids 2025, Heavy lifting tasks via haptic teleoperation of a wheeled humanoid
@@ -452,6 +460,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.09](https://arxiv.org/abs/2609.28960), Echo in the Steps: Learning Perceptive Humanoid Parkour with Gated Memory
+- [arXiv 2026.09](https://arxiv.org/abs/2609.28959), TactileStep: Sole Tactile Learning for Regulating Foot-Terrain Interaction in Humanoid Locomotion
 - [arXiv 2026.09](https://arxiv.org/abs/2609.27003), Learning Expressive Humanoid Locomotion from Monocular Runway Videos for Robot Fashion Shows
 - [arXiv 2026.09](https://arxiv.org/abs/2609.27001), Humanoid Locomotion with a Fly-Inspired Recurrent Controller
 - [arXiv 2026.09](https://arxiv.org/abs/2609.24552), Smoothness as a Constraint for Stable Humanoid Locomotion
@@ -465,6 +475,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.09](https://arxiv.org/abs/2609.14432), EMoG: Emotion-Modulated Gait Generation for Expressive Humanoid Locomotion
 - [arXiv 2026.09](https://arxiv.org/abs/2609.12347), DWMP: Leveraging Dual World Models for Humanoid Obstacle Traversal
 - [arXiv 2026.09](https://arxiv.org/abs/2609.11553), CAP: Continuously Adaptive Perception-Blind Humanoid Locomotion via Learned Denoising
+- [arXiv 2026.09](https://arxiv.org/abs/2609.10286), GM-Loco: Terrain-Adaptive Humanoid Locomotion on Granular Media, [website](https://humanoid-gm-locomotion.github.io/HUMANOID-GM/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.10283), SwingBot: Learning Whole-Body Brachiation for Humanoid Robots
 - [arXiv 2026.09](https://arxiv.org/abs/2609.07544), Anti-Gravity Walking by a Flying Humanoid Robot via Thrust-Rate Input Whole-Body Model Predictive Control
 - [arXiv 2026.09](https://arxiv.org/abs/2609.07096), RoboDreamer: Anticipatory Humanoid Locomotion with Predictive State-Space Models
@@ -503,7 +514,9 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [Robot Learning 2026](https://doi.org/10.55092/rl20260023), Impact-aware compliant foot placement for quiet humanoid locomotion via reinforcement learning
 - [Scientific Reports 2026](https://doi.org/10.1038/s41598-026-63117-7), Stability analysis of the zero moment point–center of pressure algorithm for biped robots in unstructured environments
 - [arXiv 2026.06](https://arxiv.org/abs/2606.31807) / IROS 2026, Reinforcement Learning-Based Control for an Inline Skating Humanoid Robot
+- 🌟 [arXiv 2026.06](https://arxiv.org/abs/2606.31691), FastDSAC: Enhancing Policy Plasticity via Constrained Exploration for Scalable Humanoid Locomotion, [code](https://github.com/luge66/FastDSAC)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.27813), Booster Lab: A Data-Centric Pipeline for Learning Deployable Humanoid Locomotion Policies
+- [arXiv 2026.06](https://arxiv.org/abs/2606.24089), DynaWM: Dynamics-Aware Distillation with World Model and Momentum Targets for Smooth Locomotion over Continuous Stairs
 - [arXiv 2026.06](https://arxiv.org/abs/2606.20645), TACT-ful: Multi-Channel Terrain Affordance and Compliance Training for Payload-Robust Perceptive Humanoid Locomotion, [website](https://fai-rl-tech.github.io/tact-locomotion.github.io/)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.16542), ADAPT: Analytical Disturbance-Aware Policy Training for Humanoid Locomotion
 - [arXiv 2026.06](https://arxiv.org/abs/2606.10449), GuideWalk: Learning Unified Autonomous Navigation and Locomotion for Humanoid Robots across Versatile Terrains, [website](https://GuideWalk.github.io)
@@ -513,6 +526,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.06](https://arxiv.org/abs/2606.08064), Cooperative Long Rope Skipping via Multi-Agent Reinforcement Learning
 - [arXiv 2026.06](https://arxiv.org/abs/2606.07083), Predictive Style Matching: Natural and Robust Humanoid Locomotion
 - [arXiv 2026.06](https://arxiv.org/abs/2606.06944), T-GMP: Terrain-conditioned Generative Motion Priors for Versatile and Natural Humanoid Locomotion
+- [arXiv 2026.06](https://arxiv.org/abs/2606.05880), TAGA: Terrain-aware Active Gaze Learning for Generalizable Agile Humanoid Locomotion
 - [arXiv 2026.06](https://arxiv.org/abs/2606.05873), LadderMan: Learning Humanoid Perceptive Ladder Climbing
 - [arXiv 2026.06](https://arxiv.org/abs/2606.04718), CoRe-MoE: Contrastive Reweighted Mixture of Experts for Multi-Terrain Humanoid Locomotion with Gait Adaptation
 - [IJECES 2026](https://doi.org/10.32985/ijeces.17.6.2), Optimization of humanoid robot locomotion behavior using hybrid technique combines between preview control algorithm and discrete algebraic Riccati equation (DARE)
@@ -619,8 +633,10 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ## Safety-Critical Control
 - [Biomimetics 2026](https://doi.org/10.3390/biomimetics11090644), Passive-Active Cooperative Design Method for Fall Protection in Humanoid Robot
 - [arXiv 2026.09](https://arxiv.org/abs/2609.22075), LIMBO: Learning and Internalizing Model-Free Barrier Objectives for Agile and Safe Whole-Body Control
+- [arXiv 2026.09](https://arxiv.org/abs/2609.21130), SAGE: Safety-Aligned Gradient Enforcement for Human-Robot Collaboration
 - [arXiv 2026.09](https://arxiv.org/abs/2609.15988), ResSafe: Learning Safety Filtering with Residual Reinforcement Learning for Humanoids
 - [arXiv 2026.09](https://arxiv.org/abs/2609.07288), How Long Until Your Robot Ignores You? A Safety Benchmark for LLM Orchestrators in Human-Humanoid Collaboration
+- [arXiv 2026.09](https://arxiv.org/abs/2609.02358), Humanoid Safe Stop via Learned Stoppability Value
 - [arXiv 2026.08](https://arxiv.org/abs/2608.10220), Whole-Body Planning for Humanoids Navigating Confined Spaces via Self-Collision Avoidance References
 - [arXiv 2026.08](https://arxiv.org/abs/2608.02809) / arXiv 2026.08, Toward Certified Functional Safety for Industrial Humanoid Robots: The Fail-Passive Gap and a Feasibility Study
 - [arXiv 2026.07](https://arxiv.org/abs/2607.28623), PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball, [website](https://lzyang2000.github.io/perceptive_cbf_rl/)
@@ -687,6 +703,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - arXiv 2025.07, LOVON: Legged Open-Vocabulary Object Navigator, [website](https://daojiepeng.github.io/LOVON/)
 
 ## State Estimation
+- [arXiv 2026.09](https://arxiv.org/abs/2609.25561), Formal verification of tilt estimation using the Rocq prover
 - [arXiv 2026.09](https://arxiv.org/abs/2609.19582), OmniCalib: Target-Free, Task-Structured Self-Calibration for Humanoid Robots
 - [arXiv 2026.09](https://arxiv.org/abs/2609.02306), Contact-Constrained Lower-Limb Joint-Offset Calibration for Humanoid Robots
 - [arXiv 2026.09](https://arxiv.org/abs/2609.02222), FOCUS: Foot Observation Confidence for Robust Humanoid Proprioceptive Odometry
