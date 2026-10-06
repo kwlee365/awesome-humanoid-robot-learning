@@ -1890,6 +1890,30 @@
           "note": "openreview.net verification wall blocked WebFetch"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.33311",
+      "reason": "Read on arXiv abs page 2026-10-06: co-speech gesture generation for humanoid (SocialHumanoid); no section fits."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.39575",
+      "reason": "Read on arXiv abs page 2026-10-06: co-speech gesture generation (ECHO-G); no section fits."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2610.06153",
+      "reason": "Read on arXiv abs page 2026-10-06: conversational face/gesture/speech agent framework (TRABot); no section fits."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.39384",
+      "reason": "Read on arXiv abs page 2026-10-06: agent-based surgical task planning, demonstrated in simulation (RoboAssist); no section fits."
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "2026-10-06 run: openalex returned HTTP 429 for windows 2026-10 and 2026-09; those windows were not marked swept for openalex. arXiv and Crossref covered both months. No manual search of the openalex-only long tail was done."
     }
   ]
 }
