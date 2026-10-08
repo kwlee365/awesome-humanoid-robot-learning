@@ -26,6 +26,10 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.09479), Precise SE(3) End-Effector Tracking in Whole-Body Humanoid Control, [website](https://resgac.github.io/ResGAC-website/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.09117), Workhorse: Learning Robust Whole-Body Humanoid Loco-Manipulation from Human Data, [website](https://hsb0508.github.io/workhorse/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.09055), MimicX: Policy-in-the-Loop Supervision Refinement for Video-Driven Humanoid Motion Tracking, [website](https://nebulis-lab.com/MimicX)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.08970), HULK: Learning Whole-Body Forceful Loco-Manipulation for Humanoids
 - [arXiv 2026.10](https://arxiv.org/abs/2610.08381), From Legs to Wheels: Embodiment-Aware Human Motion Retargeting for Mobile-Base Humanoids
 - [arXiv 2026.10](https://arxiv.org/abs/2610.08320), Humanoid Horizon: Extending Task Horizon in Whole-Body Loco-Manipulation via Parallel Training, Dynamic Starting, and Reward Gating, [website](https://haozhuo-zhang.github.io/Humanoid-Horizon-project-page/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.08120), iGPC: Generative Motion Priors for Object-Aware Humanoid Interaction
@@ -48,6 +52,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.09](https://arxiv.org/abs/2609.38172), Counterfactual Video Generation Enables Scalable Humanoid Loco-Manipulation
 - [arXiv 2026.09](https://arxiv.org/abs/2609.38087), CrossBFM: Distilling a Shared Latent Behavior Space Across Humanoid Embodiments, [website](https://dotandung.github.io/crossbfm/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.38046), EgoAlign: Bridging the Human-Humanoid Gap for Long-Range Loco-Manipulation, [website](https://lambdahumanoid.github.io/EgoAlign/)
+- [arXiv 2026.09](https://arxiv.org/abs/2609.37677), Learning Expressive and Compositional Motion Representation via Spectral Skills, [website](https://spectral-skill.github.io)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.37181), EgoHumanoid-V2: Human-to-Humanoid Transfer of Coordinated Whole-Body Skills for Loco-Manipulation
 - [arXiv 2026.09](https://arxiv.org/abs/2609.36924), Track-and-Complete: Learning Humanoid Skills from a Single Failed Human Video, [website](https://tracc-humanoid.github.io)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.36602), OTRetarget: Joint Robot and Object Motion Retargeting via Optimal Transport
@@ -359,6 +364,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.08](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/), VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters, [website](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/)
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.08119), AutodidactWAM: Cross-Modal Self-Distillation from Generated Video to Robot Actions
+- [arXiv 2026.10](https://arxiv.org/abs/2610.07511), MobileVISTA: Generative Data Augmentation for Pose Generalization in Mobile Manipulation, [website](https://mobilevista.github.io)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.02089), HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution, [website](https://snu-pi.github.io/HumanoidToolBench/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.39403), IronMind: Scaling Humanoid Dexterous Manipulation via Camera-Space Ego-Centric Pretraining
 - [arXiv 2026.09](https://arxiv.org/abs/2609.30735), Praxis: Distilling Physical Interaction Priors from Egocentric Videos for Generalizable Whole-Body Manipulation
@@ -505,6 +512,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.10](https://arxiv.org/abs/2610.10489), HuMBLE: Human Motion-Driven Behavior Learning for Embodied Locomotion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.05855), Hierarchical Reinforcement Learning for Collision-Free Locomotion of an Underactuated Biped
 - [arXiv 2026.09](https://arxiv.org/abs/2609.38852), Locomotion-Grounded Humanoid Soccer: Task-Gated Reinforcement Learning of a Multi-Directional Kicking Library
 - [arXiv 2026.09](https://arxiv.org/abs/2609.35935), Passive-Dynamic-Walking-Inspired Dynamics Guidance for Energy-Efficient Humanoid Locomotion
@@ -782,6 +790,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Sim-to-Real
 - [Preprints.org 2026](https://doi.org/10.20944/preprints202609.0605.v1), A Validated Modelling and Simulation Framework for a 12-DoF Biped Robot with Deep Reinforcement Learning Locomotion
+- [arXiv 2026.09](https://arxiv.org/abs/2609.30951), Bundled Contact Gradients: Stabilizing Differentiable Simulation for Deployable Dynamic Tasks, [website](https://bundledcontactgradients.github.io/)
 - [arXiv 2026.07](https://arxiv.org/abs/2607.18210) / ICANN 2026, Optimization of sim-to-real transfer in the humanoid robot NICO
 - [arXiv 2026.07](https://arxiv.org/abs/2607.18154), World Translation: Minimizing Sim-to-Real Gap with Backward Dynamics Extraction and Unpaired Domain Translation
 - [arXiv 2026.07](https://arxiv.org/abs/2607.02205), Actuator Reality Shaping for Zero-Shot Sim-to-Real Robot Learning, [website](https://syamamori.github.io/ActuatorRealityShaping.github.io/)

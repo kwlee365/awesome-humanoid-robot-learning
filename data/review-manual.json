@@ -1937,6 +1937,75 @@
   {
    "kind": "enrichment-note",
    "reason": "2026-10-07 run: discover.py --refresh aborted (export.arxiv.org rate-limited); no promotions or enrichment refresh applied this run."
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2609.39575",
+   "reason": "2026-10-08: read abstract; co-speech gesture generation; no whole-body/learning-control section fits."
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2610.06153",
+   "reason": "2026-10-08: read abstract; social gesture/face conversational agent framework; HRI, outside scope."
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2609.39384",
+   "reason": "2026-10-08: read abstract; LLM-agent surgical-assistance planning; outside scope."
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2609.22289",
+   "reason": "2026-10-08: read abstract; construction demonstration specification; not humanoid learning."
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2609.33354",
+   "reason": "2026-10-08: read abstract; sign-language retargeting benchmark; motion retargeting data, outside scope."
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2610.08862",
+   "reason": "2026-10-08: read abstract; household LLM task planning; not humanoid-specific."
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2609.23414",
+   "reason": "2026-10-08: read abstract; VLM gesture selection for social robots; outside scope."
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2610.05964",
+   "reason": "2026-10-08: read abstract; social-robot agentic reasoning framework (Sophia); outside scope."
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2609.24742",
+   "reason": "2026-10-08: read abstract; LLM conversational assistant; outside scope."
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2609.33269",
+   "reason": "2026-10-08: read abstract; quantization of world action models; not humanoid."
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2610.03196",
+   "reason": "2026-10-08: read abstract; position/essay on proxy divergence in RL pipeline; no method or robot results in abstract."
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2609.24547",
+   "reason": "2026-10-08: read abstract; full-duplex dialogue and gesture companion; outside scope."
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2610.05695",
+   "reason": "2026-10-08: read abstract; virtual model control on a force-controlled arm; borderline, not learning-based."
+  },
+  {
+   "kind": "enrichment-note",
+   "reason": "2026-10-08 run: real_robot for 2610.09055 (MimicX) left unset; abstract does not state hardware experiments. Code repositories not verified for any added paper, so no stars. discover.py reported 0 channel failures."
   }
  ]
 }
