@@ -2015,6 +2015,66 @@
     {
       "kind": "discovery-coverage-gap",
       "reason": "2026-10-09 run: export.arxiv.org rate-limited windows 2026-10 and 2026-09; not marked swept for arxiv. Crossref and OpenAlex covered both. No manual arXiv search of those windows was done."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.33354",
+      "reason": "2026-10-10: read abstract; sign-language benchmarking; HRI, outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.32250",
+      "reason": "2026-10-10: read abstract; sign language translation; HRI, outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.36558",
+      "reason": "2026-10-10: read abstract; tactile skin sensor hardware; no robot learning."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.29176",
+      "reason": "2026-10-10: read abstract; soft anthropomimetic forearm; not a humanoid learning paper."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.24742",
+      "reason": "2026-10-10: read abstract; LLM chatbot for MyBuddy; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2608.20433",
+      "reason": "2026-10-10: read abstract; position paper on musical robots and emotion; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2610.05964",
+      "reason": "2026-10-10: read abstract; social-robot agentic HRI framework; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2610.03873",
+      "reason": "2026-10-10: read abstract; pure human motion generation, no robot; no section."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.26872",
+      "reason": "2026-10-10: read abstract; musculoskeletal motor-control benchmark; not humanoid robot."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.23414",
+      "reason": "2026-10-10: read abstract; co-speech/emotion gesture generation for HRI; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.39575",
+      "reason": "2026-10-10: read abstract; co-speech gesture generation; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2610.06153",
+      "reason": "2026-10-10: read abstract; speech/face/gesture HRI; outside scope."
     }
   ]
 }

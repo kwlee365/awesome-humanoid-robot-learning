@@ -26,6 +26,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.12435), VioLA: Learning Generalist Humanoid Control Policies from Human Data
+- [arXiv 2026.10](https://arxiv.org/abs/2610.11283), Being-M0.7: A Latent World-Action Model for Humanoid Robots
 - [arXiv 2026.10](https://arxiv.org/abs/2610.09479), Precise SE(3) End-Effector Tracking in Whole-Body Humanoid Control, [website](https://resgac.github.io/ResGAC-website/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.09117), Workhorse: Learning Robust Whole-Body Humanoid Loco-Manipulation from Human Data, [website](https://hsb0508.github.io/workhorse/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.09055), MimicX: Policy-in-the-Loop Supervision Refinement for Video-Driven Humanoid Motion Tracking, [website](https://nebulis-lab.com/MimicX)
@@ -512,6 +514,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.10](https://arxiv.org/abs/2610.11505), DAMP: Humanoid Locomotion via Denoised Belief Learning and Adversarial Motion Priors
 - [arXiv 2026.10](https://arxiv.org/abs/2610.10489), HuMBLE: Human Motion-Driven Behavior Learning for Embodied Locomotion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.05855), Hierarchical Reinforcement Learning for Collision-Free Locomotion of an Underactuated Biped
 - [arXiv 2026.09](https://arxiv.org/abs/2609.38852), Locomotion-Grounded Humanoid Soccer: Task-Gated Reinforcement Learning of a Multi-Directional Kicking Library
@@ -591,7 +594,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.05](https://arxiv.org/abs/2605.09944), Explicit Stair Geometry Conditioning for Robust Humanoid Locomotion
 - [arXiv 2026.04](https://arxiv.org/abs/2604.17335) / RA-L 2026, Learning Whole-Body Humanoid Locomotion via Motion Generation and Motion Tracking
 - [arXiv 2026.03](https://arxiv.org/abs/2603.29452) / RA-L 2026, CReF: Cross-modal and Recurrent Fusion for Depth-conditioned Humanoid Locomotion
-- [arXiv 2026.03](https://arxiv.org/abs/2603.03067), CMoE: Contrastive Mixture of Experts for Motion Control and Terrain Adaptation of Humanoid Robots
+- [arXiv 2026.03](https://arxiv.org/abs/2603.03067) / ICRA 2026, CMoE: Contrastive Mixture of Experts for Motion Control and Terrain Adaptation of Humanoid Robots
 - [arXiv 2026.02](https://arxiv.org/abs/2602.21666), Biomechanical Comparisons Reveal Divergence of Human and Humanoid Gaits
 - [arXiv 2026.02](https://arxiv.org/abs/2602.11143), APEX: Learning Adaptive High-Platform Traversal for Humanoid Robots, [website](https://apex-humanoid.github.io/)
 - 🌟 [arXiv 2026.02](https://arxiv.org/abs/2602.06445) / T-ASE 2026, ECO: Energy-Constrained Optimization with Reinforcement Learning for Humanoid Walking, [website](https://sites.google.com/view/eco-humanoid) / [code](https://github.com/bigai-ai/ECO-humanoid)
@@ -732,6 +735,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2022.12](https://arxiv.org/abs/2212.00541), Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo
 
 ## Navigation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.10748), TAPNAV: Humanoid Navigation through Tactile Active Perception
 - [arXiv 2026.10](https://arxiv.org/abs/2610.07396), What the Elevation Map Cannot See: Semantic-Aware Locomotion and Execution-Aware Navigation for Humanoid Robot
 - [arXiv 2026.09](https://arxiv.org/abs/2609.19272), Learning Safe Humanoid Navigation from Reduced Order Models, [website](https://wdc3iii.github.io/rom-nav/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.15195), HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness, [website](https://agibot-harnessvln.netlify.app/)
