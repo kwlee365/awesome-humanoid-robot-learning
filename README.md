@@ -366,6 +366,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.08](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/), VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters, [website](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/)
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.12026), Humanoid World Action Model With Joint State--Action Generation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.08119), AutodidactWAM: Cross-Modal Self-Distillation from Generated Video to Robot Actions
 - [arXiv 2026.10](https://arxiv.org/abs/2610.07511), MobileVISTA: Generative Data Augmentation for Pose Generalization in Mobile Manipulation, [website](https://mobilevista.github.io)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.02089), HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution, [website](https://snu-pi.github.io/HumanoidToolBench/)
@@ -796,6 +797,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ## Sim-to-Real
 - [Preprints.org 2026](https://doi.org/10.20944/preprints202609.0605.v1), A Validated Modelling and Simulation Framework for a 12-DoF Biped Robot with Deep Reinforcement Learning Locomotion
 - [arXiv 2026.09](https://arxiv.org/abs/2609.30951), Bundled Contact Gradients: Stabilizing Differentiable Simulation for Deployable Dynamic Tasks, [website](https://bundledcontactgradients.github.io/)
+- [arXiv 2026.09](https://arxiv.org/abs/2609.28878), Online Sim-to-Real Adaptation via Closed-Loop System Modeling, [website](http://generalroboticslab.com/OSRAM)
 - [arXiv 2026.07](https://arxiv.org/abs/2607.18210) / ICANN 2026, Optimization of sim-to-real transfer in the humanoid robot NICO
 - [arXiv 2026.07](https://arxiv.org/abs/2607.18154), World Translation: Minimizing Sim-to-Real Gap with Backward Dynamics Extraction and Unpaired Domain Translation
 - [arXiv 2026.07](https://arxiv.org/abs/2607.02205), Actuator Reality Shaping for Zero-Shot Sim-to-Real Robot Learning, [website](https://syamamori.github.io/ActuatorRealityShaping.github.io/)
@@ -913,6 +915,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Physics-Based Character Animation
 - [SIGGRAPH 2010](https://dl.acm.org/doi/abs/10.1145/1833349.1778770?casa_token=j3esx-hx0GAAAAAA:OvRU6YYrNo2ZP9IyXGVDryWJqHmvU-oVhnzog8RFKKySQJjganzaAmHff6CQ4a0qzfJZu-J6Buf4Ug), Spatial relationship preserving character motion adaptation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.10322), From Digital Human Interactions to Physics-Based Humanoid Skills: Physics-Grounded Post-Training of Interaction Generators
 - [arXiv 2026.09](https://arxiv.org/abs/2609.26420), Sample, Simulate, Select: Physics-in-the-Loop Text-to-Motion for Humanoids Without Training
 - [arXiv 2026.09](https://arxiv.org/abs/2609.19688), LYRIC: Language-Driven Physics-Based Character Control for Contact-Rich Whole-Body Object Interaction, [website](https://neu-vi.github.io/LYRIC/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.17682), DSD: Learning Diverse and Reusable Motor Skills via Diffusion Skill Discovery
