@@ -4,13 +4,43 @@
   "findings": [
     {
       "kind": "out-of-scope",
+      "arxiv_id": "2606.24466",
+      "reason": "2026-10-11: read abstract; fault-tolerant control for legged manipulator (quadruped arm); not humanoid."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2606.29940",
+      "reason": "2026-10-11: read abstract; retargeting for wheeled mobile manipulation; not humanoid."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2607.16095",
+      "reason": "2026-10-11: read abstract; whole-body teleoperation of a mobile manipulator; not humanoid."
+    },
+    {
+      "kind": "out-of-scope",
       "arxiv_id": "2608.20433",
       "reason": "2026-10-10: read abstract; position paper on musical robots and emotion; outside scope."
     },
     {
       "kind": "out-of-scope",
+      "arxiv_id": "2609.06434",
+      "reason": "2026-10-11: read abstract; agency-perception user study of social teleoperation; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.12384",
+      "reason": "2026-10-11: read abstract; TIAGo mobile manipulator teleoperation user study; not humanoid."
+    },
+    {
+      "kind": "out-of-scope",
       "arxiv_id": "2609.22289",
       "reason": "2026-10-08: read abstract; construction demonstration specification; not humanoid learning."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.22809",
+      "reason": "2026-10-11: read abstract; UMI-style handheld capture kit; no humanoid."
     },
     {
       "kind": "out-of-scope",
@@ -39,6 +69,11 @@
     },
     {
       "kind": "out-of-scope",
+      "arxiv_id": "2609.24742",
+      "reason": "2026-10-11: read abstract; LLM conversational assistant for MyBuddy; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
       "arxiv_id": "2609.26872",
       "reason": "2026-10-10: read abstract; musculoskeletal motor-control benchmark; not humanoid robot."
     },
@@ -64,6 +99,16 @@
     },
     {
       "kind": "out-of-scope",
+      "arxiv_id": "2609.32250",
+      "reason": "2026-10-11: read abstract; sign language translation; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.33174",
+      "reason": "2026-10-11: read abstract; Cassie biped controller, no humanoid upper body; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
       "arxiv_id": "2609.33269",
       "reason": "2026-10-08: read abstract; quantization of world action models; not humanoid."
     },
@@ -81,6 +126,11 @@
       "kind": "out-of-scope",
       "arxiv_id": "2609.33354",
       "reason": "2026-10-10: read abstract; sign-language benchmarking; HRI, outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.33354",
+      "reason": "2026-10-11: read abstract; sign language benchmarking; outside scope."
     },
     {
       "kind": "out-of-scope",
@@ -129,6 +179,11 @@
     },
     {
       "kind": "out-of-scope",
+      "arxiv_id": "2610.04529",
+      "reason": "2026-10-11: read abstract; text-driven motion editing across skeletons for animation; no robot control."
+    },
+    {
+      "kind": "out-of-scope",
       "arxiv_id": "2610.05695",
       "reason": "2026-10-08: read abstract; virtual model control on a force-controlled arm; borderline, not learning-based."
     },
@@ -164,8 +219,18 @@
     },
     {
       "kind": "out-of-scope",
+      "arxiv_id": "2610.08789",
+      "reason": "2026-10-11: read abstract; generic flow-policy RL algorithm, not humanoid-specific."
+    },
+    {
+      "kind": "out-of-scope",
       "arxiv_id": "2610.08862",
       "reason": "2026-10-08: read abstract; household LLM task planning; not humanoid-specific."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2610.10905",
+      "reason": "2026-10-11: read abstract; generic sim-to-real system identification, not humanoid-specific."
     },
     {
       "kind": "possible-title-mismatch",
@@ -3501,6 +3566,18 @@
           "key": "loco-manipulation-and-whole-body-control::wholebodyvla-towards-unified-latent-vla-for-whole-body-loco-manipulation-control",
           "title": "WholeBodyVLA: Towards Unified Latent VLA for Whole-body Loco-manipulation Control",
           "line": "- [arXiv 2025.12](https://opendrivelab.com/WholeBodyVLA/static/pdf/WholeBodyVLA.pdf), WholeBodyVLA: Towards Unified Latent VLA for Whole-body Loco-manipulation Control"
+        }
+      ],
+      "detected_on": "2026-10-11"
+    },
+    {
+      "kind": "date-mismatch",
+      "reason": "arXiv id 2610.00823 implies 2026-10 but the entry says 2026-09 (arXiv entries must use the first submission month)",
+      "items": [
+        {
+          "key": "loco-manipulation-and-whole-body-control::reactive-humanoid-multi-contact-using-learned-stability-models",
+          "title": "Reactive Humanoid Multi-Contact Using Learned Stability Models",
+          "line": "- [arXiv 2026.09](https://arxiv.org/abs/2610.00823), Reactive Humanoid Multi-Contact Using Learned Stability Models"
         }
       ],
       "detected_on": "2026-10-11"

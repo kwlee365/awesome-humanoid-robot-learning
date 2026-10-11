@@ -11,18 +11,18 @@
     "openalex"
   ],
   "counts": {
-    "raw": 7873,
-    "relevant": 1011,
-    "merged": 1198,
-    "new": 999,
+    "raw": 7899,
+    "relevant": 1014,
+    "merged": 1201,
+    "new": 998,
     "similar_to_listed": 1,
-    "already_listed": 198,
-    "carried_over": 1003
+    "already_listed": 202,
+    "carried_over": 1000
   },
   "per_channel_raw": {
     "arxiv": 3159,
     "crossref": 597,
-    "openalex": 4117
+    "openalex": 4143
   },
   "failures": [],
   "candidates": [
@@ -1373,61 +1373,6 @@
       "seen_on": "2026-10-11"
     },
     {
-      "title": "FAITH: Feasibility-Aware Safety-Filtered RL for High-Dimensional Systems",
-      "authors": [
-        "Songyuan Zhang",
-        "Baljeet Singh",
-        "Sarthak Ranjeet Kaingade",
-        "Chuchu Fan",
-        "Bryan Trinh"
-      ],
-      "abstract": "Safe reinforcement learning commonly places safety and task performance in the same policy objective, where they can introduce competing updates. Safety filters separate them at action execution, but classical designs require an analytic safety function and dynamics model, and standard minimal-intervention filters are myopic to long-horizon task return because they minimize only instantaneous action deviation. Hard projections are also undefined when no safe action exists. We present FAITH, a feasibility-aware, model-free framework that approximates the optimal state-action safety value and amortizes minimal-intervention filtering with a feedforward network. The task policy optimizes the task return through the filtered dynamics, which recovers the feasible constrained problem without a competing safety term in the task-policy update. When no action satisfies the learned safety condition, the same filter approaches the action with minimum predicted peak harm. On a double integrator example and a Safety Gym environment, FAITH achieves the highest return among methods with no feasible-start violations and matches the lowest harm from infeasible starts. On a 29-DoF humanoid, it reaches a 99.95% safety rate while retaining 97% of the unfiltered return in Walking-Avoid, and obtains the highest measured safety rate in Push-Avoid by learning to sacrifice balancing and fall away from the protected region. The same policies are also demonstrated on a real-world Unitree G1 humanoid.",
-      "abstract_source": "https://arxiv.org/abs/2610.12432",
-      "arxiv_id": "2610.12432",
-      "doi": "10.48550/arxiv.2610.12432",
-      "paper_url": "https://arxiv.org/abs/2610.12432",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "arxiv_comment": "8 pages, 7 figures",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 107,
-        "core": [
-          "humanoid",
-          "unitree g1",
-          "g1 humanoid"
-        ],
-        "task": [],
-        "body": [
-          "walking"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv",
-        "openalex"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.12432",
-        "https://doi.org/10.48550/arxiv.2610.12432"
-      ],
-      "carried_over_since": "2026-10-10",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-11"
-    },
-    {
       "title": "From Form to Footstep: A Taxonomy for Teaching a Humanoid Robot Chen-Style Taiji, a Two-Brain Control Architecture, and Taiji Walking as a Gait Primitive for Robots and Exoskeletons",
       "authors": [
         "J Newman"
@@ -1738,59 +1683,6 @@
         "https://arxiv.org/abs/2609.33354"
       ],
       "carried_over_since": "2026-10-05",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-11"
-    },
-    {
-      "title": "Virtual model control for compliant reaching under uncertainties",
-      "authors": [
-        "Yi Zhang",
-        "Daniel Larby",
-        "Fumiya Iida",
-        "Fulvio Forni"
-      ],
-      "abstract": "Virtual Model Control (VMC) is an approach to design a controller for force-controlled robots in complex uncertain environments. While this method was primarily investigated for legged robot locomotion in the past, it can be more generally applicable to other types of robotic systems. This paper investigates the VMC framework for reaching tasks in a force-controlled robotic arm. We propose six different approaches to designing virtual models in order to achieve reaching tasks in environments with obstacles and uncertainties. A force-controlled 8 degree-of-freedom humanoid robot was used to validate the proposed approach in the real world. We conducted three experiments to test the performance of VMC controllers in terms of predictability, sensitivity to external force, and adaptability against known and unknown obstacles. Experimental analyses show that, even though the proposed approach needs to sacrifice accuracy and trajectory optimality, it enables us to design complex reaching motions under uncertainties, in an intuitive and extendable manner.",
-      "abstract_source": "https://arxiv.org/abs/2610.05695",
-      "arxiv_id": "2610.05695",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.05695",
-      "venue": "arXiv",
-      "venue_hint": "Y. Zhang, D. Larby, F. Iida and F. Forni, \"Virtual model control for compliant reaching under uncertainties,\" Proc. IEEE/RSJ Int. Conf. Intell. Robots Syst. (IROS), 2024, pp. 795-801, doi: 10.1109/IROS58592.2024.10801592",
-      "arxiv_comment": null,
-      "publication_status": "published",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 107,
-        "core": [
-          "humanoid",
-          "humanoid robot"
-        ],
-        "task": [],
-        "body": [
-          "legged",
-          "legged robot",
-          "locomotion"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.05695"
-      ],
-      "carried_over_since": "2026-10-06",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-11"
@@ -2815,57 +2707,6 @@
       "seen_on": "2026-10-11"
     },
     {
-      "title": "Beyond Reward Hacking: Proxy Divergence Across Four Layers of a Staged Humanoid Learning Pipeline",
-      "authors": [
-        "Arunabh Bora"
-      ],
-      "abstract": "A reinforcement-learning (RL) pipeline for a legged robot is assembled from proxies. A reward stands in for intended behaviour, a curriculum gate stands in for competence, an evaluation statistic stands in for robustness, and a reference motion stands in for an achievable skill. The traditional view treats only the first of these as optimised against, and so locates specification failure (reward hacking) in the reward alone. I argue that all four are proxies in the same formal sense, that each has a characteristic divergence mechanism, and that each admits a reformulation that closes it. For every layer I state the traditional formulation, derive the condition under which it diverges from its target, and give the alternative: first-order (L1) costs where quadratic kernels are flat, peak and outcome statistics where curriculum gates average, gate reachability and information checks, deterministic and phase-desynchronised evaluation, curriculum state treated as part of the model, feasibility-first reference design with residual feed-forward, and function-preserving input widening that lets one policy grow instead of being retrained. The arguments are illustrated by measurements from one continuous lineage of a PPO policy for a simulated 1.91 m humanoid, grown over four stages and 13,500 iterations on a single laptop GPU. Among them, a curriculum gate built on averaged error advanced at its rate limit on every check while the skill it gated was absent, and a batched push test whose synchronised resets aliased the gait phase ranked a 0.5 m/s push as more dangerous than a 2.0 m/s one.",
-      "abstract_source": "https://arxiv.org/abs/2610.03196",
-      "arxiv_id": "2610.03196",
-      "doi": "10.48550/arxiv.2610.03196",
-      "paper_url": "https://arxiv.org/abs/2610.03196",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 105,
-        "core": [
-          "humanoid"
-        ],
-        "task": [],
-        "body": [
-          "legged",
-          "legged robot",
-          "gait"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv",
-        "openalex"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.03196",
-        "https://doi.org/10.48550/arxiv.2610.03196"
-      ],
-      "carried_over_since": "2026-10-05",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-11"
-    },
-    {
       "title": "Closed-Chain Sim2Sim Gait Transfer for Linear-Actuator Driven Humanoid Robot on Complex Terrains",
       "authors": [
         "Tao Ding",
@@ -2916,63 +2757,6 @@
         "https://doi.org/10.1109/icca69928.2026.11618175"
       ],
       "carried_over_since": "2026-09-18",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-11"
-    },
-    {
-      "title": "CSF: Contextual Safety Filtering for Motion Generators",
-      "authors": [
-        "Lizhi Yang",
-        "Yiling Hou",
-        "Yao Tang",
-        "Junheng Li",
-        "Daniel Weng",
-        "Blake Werner",
-        "Aaron D. Ames"
-      ],
-      "abstract": "Text-conditioned motion generators produce trackable whole-body motion, but they have no notion of scene-dependent safety: the same action may target an object or a person. Existing safeguards either inspect the prompt, require labeled motion data, or enforce geometric constraints; therefore, they do not directly account for how scene context changes a motion's meaning. We introduce contextual safety filtering (CSF), a training-free filter that grounds natural-language safety rules in safe and unsafe reference trajectories produced by the generator. For each active rule, safe and unsafe reference trajectories define an affine safety value that a safe reference tracking CBF-QP enforces. Across four pretrained generators with different architectures, CSF activates the intended rules in all explicit and scene-triggered unsafe cases and reduces the danger-event rate by up to 90%, while preserving 88-100% of benign motions. We demonstrate the complete system on a real-world Unitree G1, where it successfully prevents unsafe motions in a variety of scenarios, including interactions with humans and objects.",
-      "abstract_source": "https://arxiv.org/abs/2610.12467",
-      "arxiv_id": "2610.12467",
-      "doi": "10.48550/arxiv.2610.12467",
-      "paper_url": "https://arxiv.org/abs/2610.12467",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "arxiv_comment": "8 pages, 6 figures, website at https://lzyang2000.github.io/csf/",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 105,
-        "core": [
-          "unitree g1"
-        ],
-        "task": [
-          "whole body motion"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv",
-        "openalex"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.12467",
-        "https://doi.org/10.48550/arxiv.2610.12467"
-      ],
-      "carried_over_since": "2026-10-10",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-11"
@@ -18907,6 +18691,48 @@
       "carried_over_since": "2026-09-03"
     },
     {
+      "title": "Non-Commutative Rough Humanoid & Robotics Dynamics (NC-RHRD) Subsuming Physical Data Scarcity and Energy-Mass-Thermal Coupling via UROA, STCT, and RQIG",
+      "authors": [
+        "Seonggil Lee"
+      ],
+      "abstract": "Humanoid and robotics learning data scarcity, along with energy-mass-thermal bottlenecks, are conventionally treated as isolated engineering hurdles in control and material science. This paper supersedes independent views by establishing Non-Commutative Rough Humanoid & Robotics Dynamics (NC-RHRD) within the SMA-∞ Topos. By integrating Universal Rough Operator Algebra (UROA), the Seonggil Theory of Composite Torsion (STCT), and Rough Quantum Information Geometry (RQIG), we strictly prove that interaction data scarcity and mass-power feedback loops are macroscopic topological manifestations of manifold sparsity and torsional shear stress. Furthermore, synthetic data generation and elastic energy recovery actuators are formally derived as geodesic optimization sub-loops protecting the physical-digital manifold.",
+      "abstract_source": "https://doi.org/10.5281/zenodo.23277212",
+      "arxiv_id": null,
+      "doi": "10.5281/zenodo.23277212",
+      "paper_url": "https://doi.org/10.5281/zenodo.23277212",
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "venue_hint": "Zenodo (CERN European Organization for Nuclear Research)",
+      "publication_status": "preprint",
+      "first_public_date": "2026-10",
+      "date_basis": "openalex-publication-date",
+      "window": "2026-10",
+      "relevance": {
+        "keep": true,
+        "path": "core",
+        "why": "humanoid platform named",
+        "score": 102,
+        "core": [
+          "humanoid"
+        ],
+        "task": [],
+        "body": [],
+        "method": [],
+        "control": [],
+        "sim": [],
+        "hard_negative": [],
+        "soft_negative": []
+      },
+      "sources": [
+        "openalex"
+      ],
+      "urls": [
+        "https://doi.org/10.5281/zenodo.23277212"
+      ],
+      "dedupe": "new",
+      "dedupe_note": "",
+      "seen_on": "2026-10-11"
+    },
+    {
       "title": "On the Attainment of Cyber-Physical Immortality: The Unified Theory of Hypersonic Humanoid Aerial Dynamics and Topological Execution Matrices (Phase V)",
       "authors": [
         "Mohammad Shahbaaz Ahmed"
@@ -27062,6 +26888,60 @@
       "seen_on": "2026-10-11"
     },
     {
+      "title": "Full-Body Motion Capture Dataset of Hospital Laundry and Kitchen Logistics Operations in Real-World Environments",
+      "authors": [
+        "Anna Bucchieri",
+        "Noëmie Forest",
+        "Pauline Maurice",
+        "Khalid El Madiani",
+        "Steve Jamis",
+        "Loïc Becker",
+        "Thomas Thockler",
+        "Nicla Settembre",
+        "Serena Ivaldi"
+      ],
+      "abstract": "International audience",
+      "abstract_source": "https://hal.science/hal-05785599",
+      "arxiv_id": null,
+      "doi": null,
+      "paper_url": "https://hal.science/hal-05785599",
+      "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+      "venue_hint": "HAL (Le Centre pour la Communication Scientifique Directe)",
+      "publication_status": "preprint",
+      "first_public_date": "2026-10",
+      "date_basis": "openalex-publication-date",
+      "window": "2026-10",
+      "relevance": {
+        "keep": true,
+        "path": "task",
+        "why": "a task specific to a humanoid body",
+        "score": 84,
+        "core": [],
+        "task": [
+          "full body motion"
+        ],
+        "body": [
+          "full body"
+        ],
+        "method": [
+          "motion capture"
+        ],
+        "control": [],
+        "sim": [],
+        "hard_negative": [],
+        "soft_negative": []
+      },
+      "sources": [
+        "openalex"
+      ],
+      "urls": [
+        "https://hal.science/hal-05785599"
+      ],
+      "dedupe": "new",
+      "dedupe_note": "",
+      "seen_on": "2026-10-11"
+    },
+    {
       "title": "Generalized Audio-Driven Synthesis of Precise Drummer Motion",
       "authors": [
         "Álvaro G. Iñesta",
@@ -32559,6 +32439,49 @@
       "dedupe_note": "",
       "seen_on": "2026-10-11",
       "carried_over_since": "2026-09-03"
+    },
+    {
+      "title": "Task-priority-aware MPPI control for human–multi-robot collaborative assembly",
+      "authors": [
+        "Satoshi Nakamura"
+      ],
+      "abstract": null,
+      "abstract_source": "https://doi.org/10.1186/s40648-026-00357-2",
+      "arxiv_id": null,
+      "doi": "10.1186/s40648-026-00357-2",
+      "paper_url": "https://doi.org/10.1186/s40648-026-00357-2",
+      "venue": "ROBOMECH Journal",
+      "venue_hint": "ROBOMECH Journal",
+      "publication_status": "published",
+      "first_public_date": "2026-10",
+      "date_basis": "openalex-publication-date",
+      "window": "2026-10",
+      "relevance": {
+        "keep": true,
+        "path": "method",
+        "why": "sampling-based predictive control",
+        "score": 72,
+        "core": [],
+        "task": [],
+        "body": [],
+        "method": [],
+        "control": [
+          "mppi"
+        ],
+        "sim": [],
+        "hard_negative": [],
+        "soft_negative": []
+      },
+      "sources": [
+        "openalex",
+        "s2"
+      ],
+      "urls": [
+        "https://doi.org/10.1186/s40648-026-00357-2"
+      ],
+      "dedupe": "new",
+      "dedupe_note": "",
+      "seen_on": "2026-10-11"
     },
     {
       "title": "Unified Optimality Conditions for Stochastic Optimal Control in the Rough Path and Itô Frameworks",
@@ -39716,10 +39639,10 @@
         "Petros Maragos"
       ],
       "abstract": "Off-policy actor--critic methods control overestimation bias by taking the minimum of two critics. This uses the same aggregation rule everywhere, regardless of how the critics disagree. We propose \\textbf{GeZo-SAC}, which uses auxiliary geometric representations to adapt critic pessimism to the state and action. Alongside its scalar value, each critic predicts a set of generators defining a zonotope. Probing this zonotope along sampled directions provides a geometric width, \"subtracted from each critic value as a pessimistic offset, and a measure of disagreement between the two critics, aggregated with log-sum-exp. This disagreement controls how the critics are combined, moving from a width-weighted average toward the usual minimum as disagreement increases. At inference, the deployed policy is an unmodified SAC actor, since the generators are used only on the critic side during training.Across four MuJoCo-v5 locomotion benchmarks and six off-policy baselines, GeZo-SAC achieves the highest mean return on Ant-v5 and Hopper-v5 and remains competitive with other methods on the remaining tasks. Our analysis further shows that GeZo-SAC achieves the lowest average actuator work and action effort per metre among the evaluated methods, while maintaining near-zero measured overestimation frequency across all four environments.",
-      "abstract_source": "https://doi.org/10.48550/arxiv.2610.12113",
-      "arxiv_id": null,
+      "abstract_source": "https://arxiv.org/abs/2610.12113",
+      "arxiv_id": "2610.12113",
       "doi": "10.48550/arxiv.2610.12113",
-      "paper_url": "https://doi.org/10.48550/arxiv.2610.12113",
+      "paper_url": "https://arxiv.org/abs/2610.12113",
       "venue": "arXiv (Cornell University)",
       "venue_hint": "arXiv (Cornell University)",
       "publication_status": "preprint",
@@ -39748,6 +39671,7 @@
         "openalex"
       ],
       "urls": [
+        "https://arxiv.org/abs/2610.12113",
         "https://doi.org/10.48550/arxiv.2610.12113"
       ],
       "carried_over_since": "2026-10-10",
