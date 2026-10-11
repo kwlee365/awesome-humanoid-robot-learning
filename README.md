@@ -369,6 +369,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.10](https://arxiv.org/abs/2610.12026), Humanoid World Action Model With Joint State--Action Generation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.08119), AutodidactWAM: Cross-Modal Self-Distillation from Generated Video to Robot Actions
 - [arXiv 2026.10](https://arxiv.org/abs/2610.07511), MobileVISTA: Generative Data Augmentation for Pose Generalization in Mobile Manipulation, [website](https://mobilevista.github.io)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.05695) / IROS 2024, Virtual model control for compliant reaching under uncertainties
 - [arXiv 2026.10](https://arxiv.org/abs/2610.02089), HumanoidToolBench: Benchmarking Humanoid Tool Use from Selection to Mobile Execution, [website](https://snu-pi.github.io/HumanoidToolBench/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.39403), IronMind: Scaling Humanoid Dexterous Manipulation via Camera-Space Ego-Centric Pretraining
 - [arXiv 2026.09](https://arxiv.org/abs/2609.30735), Praxis: Distilling Physical Interaction Priors from Egocentric Videos for Generalizable Whole-Body Manipulation
@@ -518,6 +519,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.10](https://arxiv.org/abs/2610.11505), DAMP: Humanoid Locomotion via Denoised Belief Learning and Adversarial Motion Priors
 - [arXiv 2026.10](https://arxiv.org/abs/2610.10489), HuMBLE: Human Motion-Driven Behavior Learning for Embodied Locomotion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.05855), Hierarchical Reinforcement Learning for Collision-Free Locomotion of an Underactuated Biped
+- [arXiv 2026.10](https://arxiv.org/abs/2610.03196), Beyond Reward Hacking: Proxy Divergence Across Four Layers of a Staged Humanoid Learning Pipeline
 - [arXiv 2026.09](https://arxiv.org/abs/2609.38852), Locomotion-Grounded Humanoid Soccer: Task-Gated Reinforcement Learning of a Multi-Directional Kicking Library
 - [arXiv 2026.09](https://arxiv.org/abs/2609.35935), Passive-Dynamic-Walking-Inspired Dynamics Guidance for Energy-Efficient Humanoid Locomotion
 - [arXiv 2026.09](https://arxiv.org/abs/2609.31577), Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators, [website](https://zolkin1.github.io/generate-track-improve/)
@@ -694,6 +696,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Safety-Critical Control
 - [Biomimetics 2026](https://doi.org/10.3390/biomimetics11090644), Passive-Active Cooperative Design Method for Fall Protection in Humanoid Robot
+- [arXiv 2026.10](https://arxiv.org/abs/2610.12467), CSF: Contextual Safety Filtering for Motion Generators, [website](https://lzyang2000.github.io/csf/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.12432), FAITH: Feasibility-Aware Safety-Filtered RL for High-Dimensional Systems
 - [arXiv 2026.10](https://arxiv.org/abs/2610.02341), Filter-Aware Fine-Tuning for Safe Humanoid Whole-Body Tracking
 - [arXiv 2026.10](https://arxiv.org/abs/2610.01397), Continue, Abort, or Fall: Viability-Aware Policy Selection (VAPS) for Safe Humanoid Acrobatics, [website](https://vaps-r-al.github.io/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.34486), Model-Informed Safe Reinforcement Learning for Bipedal Locomotion via Step-to-Step Prediction
