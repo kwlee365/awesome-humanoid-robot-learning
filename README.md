@@ -197,6 +197,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.05](https://arxiv.org/abs/2605.23762), Direct Dynamic Retargeting for Humanoid Imitation Learning from Videos
 - 🌟 [arXiv 2026.05](https://arxiv.org/abs/2605.20373), SUGAR: A Scalable Human-Video-Driven Generalizable Humanoid Loco-Manipulation Learning Framework, [website](https://tianshuwu.github.io/sugar-humanoid/) / [code](https://github.com/tianshuwu/SUGAR)
 - [arXiv 2026.05](https://arxiv.org/abs/2605.06593) / SIGGRAPH 2026, ReActor: Reinforcement Learning for Physics-Aware Motion Retargeting
+- [arXiv 2026.04](https://arxiv.org/abs/2604.14834) / ICRA 2026, Switch: Learning Agile Skills Switching for Humanoid Robots
 - [arXiv 2026.03](https://arxiv.org/abs/2603.27756), Heracles: Bridging Precise Tracking and Generative Synthesis for General Humanoid Control
 - [arXiv 2026.03](https://arxiv.org/abs/2603.23983), SafeFlow: Real-Time Text-Driven Humanoid Whole-Body Control via Physics-Guided Rectified Flow and Selective Safety Gating, [website](https://hanbyelcho.info/safeflow/)
 - [arXiv 2026.03](https://arxiv.org/abs/2603.13707) / RA-L 2026, REFINE-DP: Diffusion Policy Fine-tuning for Humanoid Loco-manipulation via Reinforcement Learning, [website](https://refine-dp.github.io/REFINE-DP/)
@@ -411,7 +412,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.06](https://arxiv.org/abs/2606.15918), Energy-Efficient Arm Reaching for a Humanoid Robot via Deep Reinforcement Learning with Identified Power Models
 - [arXiv 2026.06](https://arxiv.org/abs/2606.03834), Let the Dynamics Flow: Stable Flow Matching Dynamical Systems, [website](https://let-the-dynamics-flow.github.io/SFMDS/)
 - 🌟 [arXiv 2026.03](https://arxiv.org/abs/2603.12260), HumDex: Humanoid Dexterous Manipulation Made Easy
-- 🌟 [arXiv 2026.03](https://arxiv.org/abs/2603.08142), Multifingered force-aware control for humanoid robots, [code](https://github.com/hsp-iit/multifingered-force-aware-control)
+- 🌟 [arXiv 2026.03](https://arxiv.org/abs/2603.08142) / ICRA 2026, Multifingered force-aware control for humanoid robots, [code](https://github.com/hsp-iit/multifingered-force-aware-control)
 - [arXiv 2026.03](https://arxiv.org/abs/2603.05493), cuRoboV2: Dynamics-Aware Motion Generation with Depth-Fused Distance Fields for High-DoF Robots
 - [arXiv 2026.02](https://arxiv.org/abs/2602.06949), DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos, [website](https://dreamdojo-world.github.io/)
 - [arXiv 2026.01](https://arxiv.org/abs/2601.14874), HumanoidVLM: Vision-Language-Guided Impedance Control for Contact-Rich Humanoid Manipulation
@@ -529,10 +530,12 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ## Locomotion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.11505), DAMP: Humanoid Locomotion via Denoised Belief Learning and Adversarial Motion Priors
 - [arXiv 2026.10](https://arxiv.org/abs/2610.10489), HuMBLE: Human Motion-Driven Behavior Learning for Embodied Locomotion
+- [arXiv 2026.10](https://arxiv.org/abs/2610.08789), QF3: Fast Flow RL with Filtered Q-Gradients, [website](https://qf3-rl.github.io/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.05855), Hierarchical Reinforcement Learning for Collision-Free Locomotion of an Underactuated Biped
 - [arXiv 2026.10](https://arxiv.org/abs/2610.03196), Beyond Reward Hacking: Proxy Divergence Across Four Layers of a Staged Humanoid Learning Pipeline
 - [arXiv 2026.09](https://arxiv.org/abs/2609.38852), Locomotion-Grounded Humanoid Soccer: Task-Gated Reinforcement Learning of a Multi-Directional Kicking Library
 - [arXiv 2026.09](https://arxiv.org/abs/2609.35935), Passive-Dynamic-Walking-Inspired Dynamics Guidance for Energy-Efficient Humanoid Locomotion
+- [arXiv 2026.09](https://arxiv.org/abs/2609.33174), Multi-Terrain Mastery: A Comprehensive Controller for Bipedal Locomotion
 - [arXiv 2026.09](https://arxiv.org/abs/2609.31577), Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators, [website](https://zolkin1.github.io/generate-track-improve/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.28960), Echo in the Steps: Learning Perceptive Humanoid Parkour with Gated Memory
 - [arXiv 2026.09](https://arxiv.org/abs/2609.28959), TactileStep: Sole Tactile Learning for Regulating Foot-Terrain Interaction in Humanoid Locomotion
@@ -743,6 +746,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2019.09](https://arxiv.org/abs/1909.09233) / RA-L 2020, Robust Humanoid Contact Planning with Learned Zero- and One-Step Capturability Prediction
 
 ## Sampling-based MPC
+- 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.07772), Model-Based Geometry-Aware Generative Optimization for Constrained Locomotion Planning, [code](https://github.com/hhhhzl/genedynamics)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.19443), Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control
 - [arXiv 2026.08](https://arxiv.org/abs/2608.07573), Projection-Retraction MPPI: Exact Constraint-Manifold Control for Manipulators, [website](https://rcilab.github.io/prmppi)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.25123), RGB: RL Guided Whole-Body MPPI for Humanoid Control
@@ -889,6 +893,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [TRO 2017](https://ieeexplore.ieee.org/document/7827048), Proprioceptive actuator design in the MIT Cheetah: Impact mitigation and high‑bandwidth physical interaction for dynamic legged robots
 
 ## Simulation Benchmark
+- [arXiv 2026.10](https://arxiv.org/abs/2610.10198), Benchmarking Behavioral Steerability in Behavior Foundation Models
 - [arXiv 2026.10](https://arxiv.org/abs/2610.07594), BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation
 - [arXiv 2026.09](https://arxiv.org/abs/2609.38216), Fiatlux: A Long-Horizon Benchmark for Humanoid Ladder Climbing and Light-Bulb Replacement, [website](https://fiatlux-bench.github.io)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.34782), CoHuB: A Simulation Benchmark for Multi-Humanoid Collaboration, [website](https://meat124.github.io/CoHuB/)
@@ -935,6 +940,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.09](https://arxiv.org/abs/2609.26420), Sample, Simulate, Select: Physics-in-the-Loop Text-to-Motion for Humanoids Without Training
 - [arXiv 2026.09](https://arxiv.org/abs/2609.19688), LYRIC: Language-Driven Physics-Based Character Control for Contact-Rich Whole-Body Object Interaction, [website](https://neu-vi.github.io/LYRIC/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.17682), DSD: Learning Diverse and Reusable Motor Skills via Diffusion Skill Discovery
+- [arXiv 2026.09](https://arxiv.org/abs/2609.09821) / SIGGRAPH Asia 2026, InstantMimic: A High Performance System for Learning Physics-based Skills in Seconds, [website](https://scripter36.github.io/projects/instantmimic/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.06591), Unifying Physics-Based Humanoid Interaction with a Context-Conditioned Interaction Prior, [website](https://jiann-li.github.io/chip-project/)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.23258), Progressively Learning Heterogeneous Skills in a Unified Latent Space
 - [arXiv 2026.08](https://arxiv.org/abs/2608.03528), Tired Actor: Fatigue-Informed Character Control

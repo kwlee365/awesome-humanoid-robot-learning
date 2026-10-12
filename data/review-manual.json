@@ -2229,6 +2229,83 @@
     {
       "kind": "refresh-skipped",
       "reason": "2026-10-12: discover.py --refresh aborted, export.arxiv.org rate-limited this run; no promotions or enrichment applied. A later run should retry."
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read from the arXiv abstract (and, where noted, the HTML paper) during the 2026-10-12 PM queue pass and judged outside this list. Recorded so the discovery sweep stops re-proposing them. Delete an entry here to put that paper back in the queue.",
+      "detected_on": "2026-10-12",
+      "items": [
+        {
+          "arxiv_id": "2609.39575",
+          "title": "ECHO-G: Embodied Co-speech Humanoid mOtion Generation",
+          "note": "co-speech gesture generation for social interaction; not a locomotion/manipulation/whole-body control contribution"
+        },
+        {
+          "arxiv_id": "2609.06434",
+          "title": "Can People Distinguish Human and AI Agency in Humanoid Teleoperation?",
+          "note": "3-page UIST poster on agency perception of voice/face/gesture; HRI user study, no learning or control contribution"
+        },
+        {
+          "arxiv_id": "2610.04529",
+          "title": "TAME: Topology-Aware Text-Driven Motion Editing across Heterogeneous Humanoid Skeletons",
+          "note": "pure animation motion editing; no robot or physics"
+        },
+        {
+          "arxiv_id": "2609.12384",
+          "title": "Understanding Whole-Body Robot Teleoperation Strategies Under Diverse Task Objectives and Constraints",
+          "note": "user study on a TIAGo wheeled mobile manipulator, not a humanoid"
+        },
+        {
+          "arxiv_id": "2609.35761",
+          "title": "DexRoam: Learning Mobile Bimanual Dexterous Manipulation from Egocentric Whole-Body Human Demonstrations",
+          "note": "platform is the Astribot-XHand wheeled mobile bimanual robot, which the paper does not call a humanoid"
+        },
+        {
+          "arxiv_id": "2609.17832",
+          "title": "Adaptive-MHE: A Sampling-Based Adaptive MPC for Legged Loco-Manipulation via Moving Horizon Estimation",
+          "note": "hardware is a Unitree Go1 quadruped; no humanoid"
+        },
+        {
+          "arxiv_id": "2609.22809",
+          "title": "Kinematic Interface for the Wild: Modular Bimanual Loco-Manipulation Capture from 360 Cameras Alone",
+          "note": "handheld UMI-style capture kit; no humanoid"
+        },
+        {
+          "arxiv_id": "2609.07859",
+          "title": "M3-Tele: A Unified Multimodal Teleoperational Framework for Compliant Whole-Body Mobile Manipulation",
+          "note": "abstract names mobile manipulation, no humanoid platform"
+        },
+        {
+          "arxiv_id": "2609.03889",
+          "title": "FWBC-VLA: Force-Aware Whole-Body Compensation for Contact-Rich Loco-Manipulation",
+          "note": "wheeled-legged robot, not a humanoid"
+        },
+        {
+          "arxiv_id": "2609.13779",
+          "title": "Force-Aware Reinforcement Learning with Hybrid Sensorless Force Estimation for Wheeled-Legged Loco-Manipulation",
+          "note": "wheeled-legged robot, not a humanoid"
+        },
+        {
+          "arxiv_id": "2609.06958",
+          "title": "Mind the Phase: Effective Rank and Representation Health in Legged Locomotion",
+          "note": "hardware is a Spot quadruped; no humanoid"
+        },
+        {
+          "arxiv_id": "2609.15770",
+          "title": "JEPLO: Joint-Embedding Predictive Learning for LiDAR-Based Legged Locomotion",
+          "note": "legged-robot (quadruped) perceptive locomotion; abstract names no humanoid"
+        },
+        {
+          "arxiv_id": "2609.21572",
+          "title": "SABER: Learning Attention-based Semantic Affordance for Legged Locomotion",
+          "note": "industrial legged (quadruped) locomotion; abstract names no humanoid"
+        },
+        {
+          "arxiv_id": "2610.01612",
+          "title": "ReCo: Response-Consistent Locomotion with Policy-Aware MPC for Legged Manipulation",
+          "note": "legged manipulator; abstract names no humanoid"
+        }
+      ]
     }
   ]
 }

@@ -11,18 +11,18 @@
     "openalex"
   ],
   "counts": {
-    "raw": 7998,
-    "relevant": 1029,
-    "merged": 1214,
-    "new": 1008,
+    "raw": 8009,
+    "relevant": 1028,
+    "merged": 1213,
+    "new": 999,
     "similar_to_listed": 1,
-    "already_listed": 205,
-    "carried_over": 999
+    "already_listed": 213,
+    "carried_over": 1009
   },
   "per_channel_raw": {
     "arxiv": 3258,
-    "crossref": 597,
-    "openalex": 4143
+    "crossref": 603,
+    "openalex": 4148
   },
   "failures": [],
   "candidates": [
@@ -137,68 +137,6 @@
       "seen_on": "2026-10-12"
     },
     {
-      "title": "PanTact: Teaching Whole-Body Dexterity with a Wearable Contact Interface",
-      "authors": [
-        "Xiaomeng Xu",
-        "Han Zhang",
-        "Zhian Ruan",
-        "Xiaofeng Guo",
-        "Jinkun Cao",
-        "Ruihan Yang",
-        "Carmelo Sferrazza",
-        "Shuran Song",
-        "Guanya Shi"
-      ],
-      "abstract": "Humanoid robots have many degrees of freedom and contact surfaces, yet most loco-manipulation research restricts manipulation to the hands and avoids other body contacts with the environment. To extend manipulation beyond the hands, we present PanTact, a system that learns humanoid whole-body dexterity, the capability to manipulate with any suitable body surface, directly from robot-free human demonstrations. Our key idea is to use contact as manipulation-centric information that transfers across embodiments. Contact locations and timing specify the interactions needed to accomplish a task, while the robot chooses how to coordinate its body to realize them within its own physical constraints. Specifically, PanTact captures, learns, and executes whole-body contact via: 1) a wearable, robot-free data collection interface that augments egocentric vision and bimanual UMI grippers with whole-body modular contact patches to record body contact locations and states; 2) a visuomotor policy that mitigates the egocentric observation gap and predicts whole-body contact goals; and 3) contact-aware whole-body control formulations that realize active contact goals using suitable robot surfaces. We deploy PanTact on a Unitree G1 humanoid without additional body contact sensors, demonstrating whole-body dexterity involving body support, pushing, sweeping, and load-sharing. Website: https://pantact.github.io",
-      "abstract_source": "https://arxiv.org/abs/2610.12558",
-      "arxiv_id": "2610.12558",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.12558",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 114,
-        "core": [
-          "humanoid",
-          "humanoid robots",
-          "unitree g1",
-          "g1 humanoid"
-        ],
-        "task": [
-          "loco manipulation",
-          "whole body control"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [
-          "human demonstrations"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.12558"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-12"
-    },
-    {
       "title": "Dual‐View Representation Learning for Deployable Humanoid Whole‐Body Control",
       "authors": [
         "Haolin Song",
@@ -308,67 +246,6 @@
         "https://doi.org/10.26233/heallink.tuc.105948"
       ],
       "carried_over_since": "2026-10-10",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-12"
-    },
-    {
-      "title": "Reflex: Visually Grounded Reactive Humanoid Control",
-      "authors": [
-        "Taoyang Jia",
-        "Weikai Huang",
-        "Linxin Song",
-        "Jared Darlington",
-        "Jieyu Zhao",
-        "Yue Wang",
-        "Jiafei Duan",
-        "Zhongzheng Ren",
-        "Ranjay Krishna"
-      ],
-      "abstract": "Humans effortlessly react to the world; they adeptly return a tennis shot, catch a falling cup, step aside from a passing cart, or pass a box tossed during truck unloading. These everyday actions require anticipating a moving target and reflexively responding with the whole body within about a second. Such visual reactive whole-body control remains challenging for humanoids, which must (1) coordinate whole-body control, (2) react to object dynamics in real time, and (3) ground perception in egocentric vision. We study catching thrown boxes as a representative task that demands all three capabilities; existing systems cover only part of it, relying on end-effectors, motion capture, or marked objects. We present Reflex, a three-stage framework that learns these capabilities stage by stage while connecting them through a compact representation of object dynamics. First, a state-based policy learns whole-body catching with reinforcement learning. Second, the policy learns to infer the dynamics of a moving box from delayed and incomplete observations. Third, an egocentric RGB-D encoder learns to recover this dynamics representation directly from visual observations while keeping the whole-body controller fixed. This decomposition provides each capability with a direct training signal and makes visual learning substantially more scalable. In simulation, Reflex achieves 85.7% catch success from egocentric RGB-D, compared with 87.9% when given privileged box observations. Temporal visual history is critical: removing it reduces success by 35.6 and 39.8 points on centered and laterally offset throws. On a real Unitree G1, Reflex catches human-thrown boxes with 65% and 40% success at 2.5 and 5 m, reaching 76% and 59% of human catchers' success at the same distances.",
-      "abstract_source": "https://arxiv.org/abs/2610.12772",
-      "arxiv_id": "2610.12772",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.12772",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "12 pages, 5 figures",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 112,
-        "core": [
-          "humanoid",
-          "humanoids",
-          "unitree g1"
-        ],
-        "task": [
-          "whole body control",
-          "whole body controller"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [
-          "motion capture"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.12772"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-12"
@@ -652,60 +529,6 @@
       "seen_on": "2026-10-12"
     },
     {
-      "title": "VICAR: Video Imitation with Contact-Aware Retargeting for Humanoid Interactive Skills",
-      "authors": [
-        "Dvij Kalaria",
-        "Bike Zhang",
-        "S. Shankar Sastry"
-      ],
-      "abstract": "Third-person human videos offer a scalable alternative to task-specific reward engineering, teleoperation, and manually scripted demonstrations for humanoid loco-manipulation. Recent video-to-humanoid systems have shown that noisy human motion, object trajectories, and contacts can be extracted from unstructured videos and refined into deployable skills. However, a key gap remains for contact-rich imitation: the task is often defined by world-frame contacts whose poses, timing, and speed must survive embodiment mismatch and runtime scene changes. Towards this, we present VICAR (Video Imitation with Contact-Aware Retargeting), a pipeline for learning humanoid interactive skills from third-person human videos. The system first recovers human motion, reconstructs task-relevant obstacles from monocular video, and then retargets the motion to a humanoid while preserving global contact poses, motion speed, and collision clearance. Unlike retargeting methods that only remove penetration or preserve local interaction geometry, our formulation represents user-specified contact poses and collision clearance as high-priority Lagrangian penalty terms and optimizes the full motion to remain smooth through contact-rich transitions. The resulting motions are used to train a contact-conditioned motion generator whose inputs include movable contact points enabling runtime adaptation to new contact positions. We demonstrate the framework on ten diverse third-person video skills, including six table-tennis serves, three object-pickup tasks, and ladder climbing, and deploy the learned skills on hardware. These results suggest that contact-preserving retargeting is a practical step toward humanoids that learn useful interactive behavior by watching humans.",
-      "abstract_source": "https://arxiv.org/abs/2610.13079",
-      "arxiv_id": "2610.13079",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.13079",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 110,
-        "core": [
-          "humanoid",
-          "humanoids"
-        ],
-        "task": [
-          "loco manipulation"
-        ],
-        "body": [],
-        "method": [
-          "retargeting",
-          "human motion",
-          "human videos",
-          "teleoperation"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.13079"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-12"
-    },
-    {
       "title": "What the Reward Curve Didn't Show: Silent Failures in DeepMimic-Style Imitation on the Unitree H1",
       "authors": [
         "Bhargav Oza"
@@ -811,188 +634,6 @@
         "https://doi.org/10.1109/ascc70886.2026.11702297"
       ],
       "carried_over_since": "2026-10-05",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-12"
-    },
-    {
-      "title": "ATHLETE: Learning Reactive Humanoid Tennis via Trajectory-Guided Motion Matching",
-      "authors": [
-        "Zhihao Tian",
-        "Zifan Wang",
-        "Enzheng Zhu",
-        "Xun Yang",
-        "Jialong Qin",
-        "Mengbo Wang",
-        "Junwei Liang"
-      ],
-      "abstract": "Humanoid tennis requires reactive whole-body coordination under rapidly changing ball dynamics, yet collecting task-specific motion-capture demonstrations that cover diverse approach states, contact locations, and timing conditions is costly. Inspired by how humans acquire new skills by combining reusable motor experience with task-specific demonstrations, we present ATHLETE, a framework for learning reactive humanoid tennis from generic locomotion data and ordinary tennis videos. ATHLETE combines LAFAN1 locomotion with video-derived striking motions and uses Trajectory-Guided Motion Matching (TGMM) to construct diverse task-conditioned whole-body references. These references are transformed into a reactive policy through physics-based teacher--student learning with online DAgger distillation, followed by PPO fine-tuning for the tennis task. The resulting policy responds directly to robot and ball observations without requiring reference-motion inputs at deployment. On a real humanoid robot, ATHLETE achieves forehand and backhand hit rates of $90.00\\%$ and $86.67\\%$, respectively, and enables multi-shot rallies with human players. These results demonstrate that ATHLETE can learn dynamic humanoid tennis skills from reusable locomotion data and video demonstrations. Result videos and code can be found at https://anonymous.4open.science/w/ATHLETE2027/.",
-      "abstract_source": "https://arxiv.org/abs/2610.13572",
-      "arxiv_id": "2610.13572",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.13572",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "projectpage:https://hazintihoa.github.io/athlete.github.io/#overview",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 109,
-        "core": [
-          "humanoid",
-          "humanoid robot"
-        ],
-        "task": [
-          "motion matching"
-        ],
-        "body": [
-          "locomotion",
-          "whole body"
-        ],
-        "method": [
-          "motion capture"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.13572"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-12"
-    },
-    {
-      "title": "Belief-Overlap Partial Inversion: Object-Centric Flow Replanning for Humanoid Loco-Manipulation",
-      "authors": [
-        "Chen Yu",
-        "Sudarshan S Harithas",
-        "Juan Borbon",
-        "Dingqi Zhang",
-        "Jiuguang Wang"
-      ],
-      "abstract": "People often learn how an unfamiliar object moves through a small exploratory push, using its response to guide their next motion. Inspired by this behavior, we study humanoids pushing carts whose mass and caster stiffness are initially unknown. Our object-centric framework closes online estimation, flow-based planning, and whole-body control into a loop, creating a tension: replacing the plan whenever the belief shifts disrupts the maneuver under way, while keeping it strands the robot on a path its evidence has ruled out. Belief-Overlap Partial Inversion (BOPI) scales revision to agreement, inverting the flow under the old belief only as far as the beliefs disagree before reconstructing under the new one. Across 18 simulated goals it lowers pooled final position and yaw error by roughly 33% and 47% against fixed-depth replanning, and on hardware it translates and turns a non-holonomic cart.",
-      "abstract_source": "https://arxiv.org/abs/2610.13087",
-      "arxiv_id": "2610.13087",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.13087",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 109,
-        "core": [
-          "humanoid",
-          "humanoids"
-        ],
-        "task": [
-          "loco manipulation",
-          "whole body control"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.13087"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-12"
-    },
-    {
-      "title": "PartiGen: Part-Aware Representations for Language-Conditioned Humanoid Motion Generation",
-      "authors": [
-        "Chuxuan Huang",
-        "Zhanxiang Cao",
-        "Tianyue Zhan",
-        "Haoyang Li",
-        "Yang Zhang",
-        "Liyun Yan",
-        "Chenlin Ming",
-        "Keqi Zhu",
-        "Yizhi Chen",
-        "Shengcheng Fu",
-        "Zihao Zhou",
-        "Xinyi Peng",
-        "Kaixuan Zhang",
-        "Boyang Xing",
-        "Jiawei Bao",
-        "Yang Yang",
-        "Yue Gao"
-      ],
-      "abstract": "Translating language into humanoid motion requires coordinating body parts, determining motion duration, and producing references suitable for robot execution. We introduce PartiGen, a part-aware latent diffusion framework that incorporates anatomical structure into a shared whole-body motion representation. Part-specific attention processes anatomically masked frame features, and its outputs are fused to combine local limb information with whole-body context. Conditioned on text and motion history, the model generates motion primitives autoregressively. Forward-kinematics supervision encourages kinematic consistency, while a learned end-of-sequence predictor selects a frame-level endpoint after generation. On HumanML3D retargeted to the Unitree G1, PartiGen achieves a segment-level FID of 3.165, a 16.8% reduction over TextOp, and improves R@1 by 1.4 percentage points. In the duration study with 16-frame primitives, endpoint prediction reduces mean absolute duration error from 12.471 to 3.080 frames compared with a fixed-length cutoff. We further evaluate robot execution using a pretrained, frozen GRIT tracker: 409 of 500 generated references (81.8%) pass the posture-based stability screen in MuJoCo. Following simulation screening and manual selection, 26 of 27 attempted motions are judged successful on the real G1.",
-      "abstract_source": "https://arxiv.org/abs/2610.13373",
-      "arxiv_id": "2610.13373",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.13373",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 109,
-        "core": [
-          "humanoid",
-          "unitree g1"
-        ],
-        "task": [
-          "whole body motion"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [
-          "retargeted",
-          "motion generation"
-        ],
-        "control": [],
-        "sim": [
-          "mujoco"
-        ],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.13373"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-12"
@@ -1524,62 +1165,6 @@
       "seen_on": "2026-10-12"
     },
     {
-      "title": "PriMoRetarget: Humanoid Motion Transfer Through Prioritized Motion Retargeting",
-      "authors": [
-        "Nicholas Ioannidis",
-        "Dun Yang",
-        "Max Smith",
-        "Tue Vu",
-        "Ziyu Zhang",
-        "Shayegan Omidshafiei",
-        "Xue Bin Peng"
-      ],
-      "abstract": "Motion retargeting is a critical preprocessing step for transferring human motion data to humanoid robots. While existing methods are effective for single-character motions, interactions involving multiple characters and objects introduce additional contacts and spatial relationships that must be preserved. Retargeting is commonly formulated as a weighted multi-objective optimization problem, where conflicting objectives can require careful tuning of relative weights and can still compromise important motion characteristics. We introduce PriMoRetarget, a prioritized motion-retargeting framework that replaces relative objective weighting with an explicit priority hierarchy. Lower-priority updates are constrained to preserve higher-priority objectives, allowing critical characteristics such as foot placement and interaction contacts to take precedence over lower-priority pose objectives. The method is evaluated on four datasets spanning single-character motion, character-object manipulation, and character-character interactions. The resulting motions better preserve task-relevant interactions and provide reference trajectories that can be tracked more reliably than those produced by widely used retargeting methods.",
-      "abstract_source": "https://arxiv.org/abs/2610.12642",
-      "arxiv_id": "2610.12642",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.12642",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 108,
-        "core": [
-          "humanoid",
-          "humanoid robots"
-        ],
-        "task": [
-          "motion retargeting"
-        ],
-        "body": [],
-        "method": [
-          "retargeting",
-          "human motion"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.12642"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-12"
-    },
-    {
       "title": "Scooter-Driving Humanoid Robot: Sim-to-Real Transfer Through Deep Reinforcement Learning",
       "authors": [
         "Ugo Richard Roux",
@@ -1676,65 +1261,6 @@
         "https://doi.org/10.5281/zenodo.21885699"
       ],
       "carried_over_since": "2026-09-01",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-12"
-    },
-    {
-      "title": "Adaptive Whole-Body MPC with Optimal Posture Planning for Humanoid Robots under Unknown Payloads",
-      "authors": [
-        "Manh Cuong Nguyen",
-        "Duc Cuong Vu",
-        "Viet Anh Vu",
-        "Duc Tuan Pham",
-        "Toan Nguyen",
-        "Minh Hiep Phung",
-        "Ngo Anh Vien",
-        "Minh Nhat Vu"
-      ],
-      "abstract": "Humanoid robots performing lifting and material-handling tasks must maintain balance despite unknown and varying payloads. However, payload uncertainty significantly affects whole-body dynamics and may destabilize conventional controllers. We propose an adaptive whole-body control architecture that integrates three components: (i) a centroidal model predictive controller (MPC) that generates dynamically feasible reference motions, (ii) an adaptive fuzzy balance controller that compensates for payload-induced model mismatch by generating corrective torques distributed across the supporting-leg joints, and (iii) a waypoint-based optimal posture planner built on a triple-integrator model that produces smooth sit-to-stand and stand-to-sit trajectories satisfying center-of-mass (CoM) stability constraints, joint limits, and whole-body feasibility requirements. Together, these components enable stable lowering, grasping, lifting, carrying, and placing behaviors under significant payload uncertainty. Extensive simulation and hardware experiments demonstrate that the proposed framework improves balance robustness and reduces tracking degradation during posture transitions and lifting tasks compared to non-adaptive baselines.",
-      "abstract_source": "https://arxiv.org/abs/2610.12972",
-      "arxiv_id": "2610.12972",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.12972",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "Accepted for presentation at the 25th IEEE RAS International Conference on Humanoid Robots (Humanoids2026)",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 107,
-        "core": [
-          "humanoid",
-          "humanoid robots"
-        ],
-        "task": [
-          "whole body control"
-        ],
-        "body": [
-          "whole body",
-          "balance controller"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": [
-          "grasping"
-        ]
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.12972"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-12"
@@ -2870,6 +2396,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.13195"
       ],
+      "carried_over_since": "2026-10-12",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-12"
@@ -3339,7 +2866,7 @@
     {
       "title": "Design and posture-stability analysis of a three-point stable-support automatic docking-and-charging mechanism for high-center-of-gravity humanoid robots",
       "authors": [
-        "Hongfan Gui",
+        "Gui Hongfan",
         "Qi Yuan",
         "Mingxun Li"
       ],
@@ -7536,7 +7063,7 @@
       "title": "LaserAttention: Vision-language models for joint attention in human-robot interaction",
       "authors": [
         "Dionis Totsila",
-        "Krauss, Clemente, Donoso",
+        "Clemente Donoso",
         "Quentin Rouxel",
         "Jean-Baptiste Mouret",
         "Serena Ivaldi"
@@ -7934,56 +7461,6 @@
       "dedupe_note": "",
       "seen_on": "2026-10-12",
       "carried_over_since": "2026-09-01"
-    },
-    {
-      "title": "Multifingered force-aware control for humanoid robots",
-      "authors": [
-        "Pasquale Marra",
-        "Gabriele M. Caddeo",
-        "Ugo Pattacini",
-        "Lorenzo Natale"
-      ],
-      "abstract": "In this paper, we address force-aware control and force distribution in robotic platforms with multi-fingered hands. Given a target goal and force estimates from tactile sensors, we design a controller that adapts the motion of the torso, arm, wrist, and fingers, redistributing forces to maintain stable contact with objects of varying mass distribution or unstable contacts. To estimate forces, we collect a dataset of tactile signals and ground-truth force measurements using five Xela magnetic sensors interacting with indenters, and train force estimators. We then introduce a model-based control scheme that minimizes the distance between the Center of Pressure (CoP) and the centroid of the fingertips contact polygon. Since our method relies on estimated forces rather than raw tactile signals, it has the potential to be applied to any sensor capable of force estimation. We validate our framework on a balancing task with five objects, achieving a 82.7% success rate, and further evaluate it in multi-object scenarios, achieving 80% accuracy. Code and data can be found here https://github.com/hsp-iit/multifingered-force-aware-control.",
-      "abstract_source": "https://arxiv.org/abs/2603.08142",
-      "arxiv_id": "2603.08142",
-      "doi": "10.1109/icra57385.2026.11696121",
-      "paper_url": "https://ieeexplore.ieee.org/document/11696121/",
-      "venue": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
-      "venue_hint": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
-      "publication_status": "published",
-      "first_public_date": "2026-10",
-      "date_basis": "crossref-created",
-      "crossref_type": "proceedings-article",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 104,
-        "core": [
-          "humanoid",
-          "humanoid robots"
-        ],
-        "task": [],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "crossref",
-        "s2"
-      ],
-      "urls": [
-        "https://ieeexplore.ieee.org/document/11696121/",
-        "https://arxiv.org/abs/2603.08142"
-      ],
-      "carried_over_since": "2026-10-08",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-12"
     },
     {
       "title": "Multilevel dynamics of the brain, hormones, mind, and behavior in social human-robot interaction",
@@ -17675,6 +17152,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.12609"
       ],
+      "carried_over_since": "2026-10-12",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-12"
@@ -18262,10 +17740,10 @@
     {
       "title": "Integrating LLMs and reinforcement learning to create a humanoid waiter Introduction Architecture",
       "authors": [
-        "Luis Prieto López",
+        "Luis Prieto-López",
         "Sergio Sánchez de la Fuente",
-        "Miguel Ángel González Santamarta",
-        "Lidia Sánchez González",
+        "Miguel Á. González-Santamarta",
+        "Lídia Sánchez-González",
         "Francico J Rodríguez Lera",
         "Ángel Manuel",
         "Guerrero Higueras",
@@ -22395,7 +21873,7 @@
         "Tian Jiarui",
         "Aolan Sun",
         "Qu Xiaoyang",
-        "Zhang Xulong",
+        "Xulong Zhang",
         "Fu Jia",
         "Ye Zhiwei",
         "Wang Jianzong"
@@ -27309,10 +26787,10 @@
         "Serena Ivaldi"
       ],
       "abstract": "International audience",
-      "abstract_source": "https://hal.science/hal-05785599",
+      "abstract_source": "https://hal.science/hal-05785599v1",
       "arxiv_id": null,
       "doi": null,
-      "paper_url": "https://hal.science/hal-05785599",
+      "paper_url": "https://hal.science/hal-05785599v1",
       "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
       "venue_hint": "HAL (Le Centre pour la Communication Scientifique Directe)",
       "publication_status": "preprint",
@@ -27343,6 +26821,7 @@
         "openalex"
       ],
       "urls": [
+        "https://hal.science/hal-05785599v1",
         "https://hal.science/hal-05785599"
       ],
       "carried_over_since": "2026-10-11",
@@ -27408,7 +26887,7 @@
         "Vansh Sinha",
         "G. Sai Madhavan",
         "Subhajeet Lahiri",
-        "Rahulraj B R",
+        "Rahulraj B. R.",
         "Vaishnavi Josyula",
         "Dinesh Babu Jayagopi",
         "Raj Tumuluri",
@@ -28357,15 +27836,15 @@
       "title": "IKLayer: A Differentiable Inverse Kinematics Layer for Whole-Body Control",
       "authors": [
         "Mathis Scheffler",
-        "Yann de Mont-Marin",
+        "Yann Dubois de Mont-Marin",
         "Cordelia Schmid",
         "Justin Carpentier"
       ],
       "abstract": "International audience",
-      "abstract_source": "https://hal.science/hal-05778276",
+      "abstract_source": "https://hal.science/hal-05778276v1",
       "arxiv_id": null,
       "doi": null,
-      "paper_url": "https://hal.science/hal-05778276",
+      "paper_url": "https://hal.science/hal-05778276v1",
       "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
       "venue_hint": "HAL (Le Centre pour la Communication Scientifique Directe)",
       "publication_status": "preprint",
@@ -28394,6 +27873,7 @@
         "openalex"
       ],
       "urls": [
+        "https://hal.science/hal-05778276v1",
         "https://hal.science/hal-05778276"
       ],
       "carried_over_since": "2026-10-09",
@@ -30466,6 +29946,53 @@
       "carried_over_since": "2026-09-03"
     },
     {
+      "title": "Task-priority-aware MPPI control for human–multi-robot collaborative assembly",
+      "authors": [
+        "Satoshi Nakamura"
+      ],
+      "abstract": "We propose a task-priority-aware motion-control method that links task progress to online modification of model predictive path integral (MPPI) control parameters. Human–robot collaborative assembly with multiple robotic arms requires both task-level coordination and reactive motion generation in a shared workspace. A task planner can determine which robot should proceed first, whereas a motion controller must continuously respond to the positions of the human and the other robot. However, if these functions are designed independently, fixed avoidance settings can cause symmetric yielding, deadlock, or unnecessary suspension of robot motion in spatially conflicting tasks. Therefore, we propose a method in which a task-management layer determines the current priority relation between two robotic arms and updates selected goal-tracking and collision-related cost weights, together with the scales of the robot collision models used by the local MPPI controllers. This mechanism creates task-dependent asymmetric yielding while retaining reactive avoidance of the operator and the other robot. The method does not jointly optimize the trajectories of all controllers; instead, each robot computes its motion locally under task-level priority coordination. The proposed method was implemented in a collaborative assembly-support system involving one operator and two robotic arms. The experiments demonstrate inter-robot conflict resolution, avoidance of an unexpected human approach, and concurrent task execution during human-guided positioning of a heavy object. In the demonstrated task, the mean completion time was 203.7 s under the proposed control condition and 255.4 s under manual sequential control, corresponding to a 20.2% reduction for this specific experimental workflow. Finally, we discuss the practical implementation requirements, current limitations, and scope of applicability of the proposed framework. The current method relies on predefined task sequences, event-based sequence detection, and task-specific parameter design.",
+      "abstract_source": "https://doi.org/10.1186/s40648-026-00357-2",
+      "arxiv_id": null,
+      "doi": "10.1186/s40648-026-00357-2",
+      "paper_url": "https://doi.org/10.1186/s40648-026-00357-2",
+      "venue": "ROBOMECH Journal",
+      "venue_hint": "ROBOMECH Journal",
+      "publication_status": "published",
+      "first_public_date": "2026-10",
+      "date_basis": "openalex-publication-date",
+      "window": "2026-10",
+      "relevance": {
+        "keep": true,
+        "path": "method",
+        "why": "sampling-based predictive control",
+        "score": 75,
+        "core": [],
+        "task": [],
+        "body": [],
+        "method": [
+          "motion generation"
+        ],
+        "control": [
+          "model predictive path integral",
+          "mppi"
+        ],
+        "sim": [],
+        "hard_negative": [],
+        "soft_negative": []
+      },
+      "sources": [
+        "openalex",
+        "s2"
+      ],
+      "urls": [
+        "https://doi.org/10.1186/s40648-026-00357-2"
+      ],
+      "carried_over_since": "2026-10-11",
+      "dedupe": "new",
+      "dedupe_note": "",
+      "seen_on": "2026-10-12"
+    },
+    {
       "title": "Adaptive and Smooth Model Predictive Path Integral Control for Highly Dynamic Legged Locomotion",
       "authors": [
         "Xiantao Sun",
@@ -32106,7 +31633,7 @@
       "title": "GEM-MPC: Balancing Exploration and Exploitation through Expert-Guided Planning",
       "authors": [
         "Álvaro Serra-Gómez",
-        "Thomas Moerland"
+        "Thomas M. Moerland"
       ],
       "abstract": "Effective exploration in high-dimensional continuous control remains a central challenge in reinforcement learning. Planning-based methods address this by combining online planning with learned policies and value functions, but their components can become misaligned during training: learned sampling policies may diverge from planner behavior, while planning distributions stored in replay become stale as the model and value function evolve. Reanalysis can refresh these targets, but at substantial computational cost. We propose GEM-MPC, an MPPI-based reinforcement learning method that improves the interaction between planning and learning. GEM-MPC uses MPPI to combine a policy trained to clone the planner with a KL-regularized policy that explores around it, providing complementary exploitation and guided exploration within planning. We further introduce Gated Prior Distillation, which selectively learns from stored planning distributions only when they provide a better target than the current prior, reducing the impact of stale planning data without requiring full reanalysis. Across continuous-control benchmarks, GEM-MPC consistently outperforms existing planning-based baselines under lower computational budgets.",
       "abstract_source": "https://arxiv.org/abs/2609.21735",
@@ -32843,6 +32370,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.12910"
       ],
+      "carried_over_since": "2026-10-12",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-12"
@@ -32894,50 +32422,6 @@
       "dedupe_note": "",
       "seen_on": "2026-10-12",
       "carried_over_since": "2026-09-03"
-    },
-    {
-      "title": "Task-priority-aware MPPI control for human–multi-robot collaborative assembly",
-      "authors": [
-        "Satoshi Nakamura"
-      ],
-      "abstract": "We propose a task-priority-aware motion-control method that links task progress to online modification of model predictive path integral (MPPI) control parameters. Human–robot collaborative assembly with multiple robotic arms requires both task-level coordination and reactive motion generation in a shared workspace. A task planner can determine which robot should proceed first, whereas a motion controller must continuously respond to the positions of the human and the other robot. However, if these functions are designed independently, fixed avoidance settings can cause symmetric yielding, deadlock, or unnecessary suspension of robot motion in spatially conflicting tasks. Therefore, we propose a method in which a task-management layer determines the current priority relation between two robotic arms and updates selected goal-tracking and collision-related cost weights, together with the scales of the robot collision models used by the local MPPI controllers. This mechanism creates task-dependent asymmetric yielding while retaining reactive avoidance of the operator and the other robot. The method does not jointly optimize the trajectories of all controllers; instead, each robot computes its motion locally under task-level priority coordination. The proposed method was implemented in a collaborative assembly-support system involving one operator and two robotic arms. The experiments demonstrate inter-robot conflict resolution, avoidance of an unexpected human approach, and concurrent task execution during human-guided positioning of a heavy object. In the demonstrated task, the mean completion time was 203.7 s under the proposed control condition and 255.4 s under manual sequential control, corresponding to a 20.2% reduction for this specific experimental workflow. Finally, we discuss the practical implementation requirements, current limitations, and scope of applicability of the proposed framework. The current method relies on predefined task sequences, event-based sequence detection, and task-specific parameter design.",
-      "abstract_source": "https://doi.org/10.1186/s40648-026-00357-2",
-      "arxiv_id": null,
-      "doi": "10.1186/s40648-026-00357-2",
-      "paper_url": "https://doi.org/10.1186/s40648-026-00357-2",
-      "venue": "ROBOMECH Journal",
-      "venue_hint": "ROBOMECH Journal",
-      "publication_status": "published",
-      "first_public_date": "2026-10",
-      "date_basis": "openalex-publication-date",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "method",
-        "why": "sampling-based predictive control",
-        "score": 72,
-        "core": [],
-        "task": [],
-        "body": [],
-        "method": [],
-        "control": [
-          "mppi"
-        ],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "openalex",
-        "s2"
-      ],
-      "urls": [
-        "https://doi.org/10.1186/s40648-026-00357-2"
-      ],
-      "carried_over_since": "2026-10-11",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-12"
     },
     {
       "title": "Unified Optimality Conditions for Stochastic Optimal Control in the Rough Path and Itô Frameworks",
@@ -39110,7 +38594,7 @@
     {
       "title": "GRALP: A Generative Representation Framework for Action Refinement and Latent Planning in Offline Robotic Control",
       "authors": [
-        "Talha Zaidi",
+        "Syed Muhammad Talha Zaidi",
         "Arslan Munir",
         "Sardar Ali Abbas"
       ],
@@ -48178,6 +47662,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.13118"
       ],
+      "carried_over_since": "2026-10-12",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-12"
@@ -48840,6 +48325,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.13643"
       ],
+      "carried_over_since": "2026-10-12",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-12"
@@ -49077,7 +48563,7 @@
     {
       "title": "EASA: Embedded Action Selection Architecture -- a basal ganglia robot model under realistic contact physics",
       "authors": [
-        "Fernando Montes González"
+        "Fernando Montes-González"
       ],
       "abstract": "A Python/PyBullet port of the basal ganglia model by Prescott et al. (2006), implementing the Embedded Action Selection Architecture (EASA) with the real geometry of the Khepera I robot and its gripper, running the original foraging task under a modern rigid-body physics engine.",
       "abstract_source": "https://doi.org/10.5281/zenodo.22898109",
@@ -49698,7 +49184,7 @@
     {
       "title": "Una aproximación preliminar al despliegue asíncrono de software de aprendizaje por refuerzo en sistemas físicos",
       "authors": [
-        "Adrián Bañuls Arias",
+        "Adrián Bañuls-Arias",
         "Diego Caruana-Montes",
         "Ana Cruz‐Martín",
         "Vicente Arévalo",
