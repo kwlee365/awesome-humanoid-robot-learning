@@ -2140,6 +2140,95 @@
       "kind": "out-of-scope",
       "arxiv_id": "2609.33354",
       "reason": "2026-10-11: read abstract; sign language benchmarking; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.39575",
+      "reason": "2026-10-12: read abstract; co-speech gesture generation for social interaction; outside the 12 sections."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2610.06153",
+      "reason": "2026-10-12: read abstract; conversational gesture/face agent framework; social HRI, outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.39384",
+      "reason": "2026-10-12: read abstract; LLM-agent surgical-assistance task planning, evaluated in simulation; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.22289",
+      "reason": "2026-10-12: read abstract; construction demonstration capture interface; no humanoid control."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2610.08862",
+      "reason": "2026-10-12: read abstract; LLM instruction-reconciliation planning for household agents; high-level planning, outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.23414",
+      "reason": "2026-10-12: read abstract; VLM emotion-aware gesture generation; social HRI, outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2610.05964",
+      "reason": "2026-10-12: read abstract; social-reasoning agentic HRI framework; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.24742",
+      "reason": "2026-10-12: read abstract; LLM conversational assistant for MyBuddy; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.33269",
+      "reason": "2026-10-12: read abstract; quantization of world action models; no humanoid focus."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.24547",
+      "reason": "2026-10-12: read abstract; full-duplex companion dialogue/gesture; social HRI, outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.26872",
+      "reason": "2026-10-12: read abstract; musculoskeletal-model control benchmark, not a humanoid robot; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2610.03873",
+      "reason": "2026-10-12: read abstract; pure human motion generation; section removed."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.36558",
+      "reason": "2026-10-12: read abstract; tactile sensor material paper; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2609.29176",
+      "reason": "2026-10-12: read abstract; anthropomimetic wrist biomechanics study; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2608.20433",
+      "reason": "2026-10-12: read abstract; position paper on musical robots and emotion; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2607.18737",
+      "reason": "2026-10-12: read abstract; SOM motor-primitive recognition on NICO in simulation; outside scope."
+    },
+    {
+      "kind": "out-of-scope",
+      "arxiv_id": "2607.01574",
+      "reason": "2026-10-12: read abstract; quadruped wall-assisted bipedal MPC, simulation only; not humanoid."
+    },
+    {
+      "kind": "refresh-skipped",
+      "reason": "2026-10-12: discover.py --refresh aborted, export.arxiv.org rate-limited this run; no promotions or enrichment applied. A later run should retry."
     }
   ]
 }

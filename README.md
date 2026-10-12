@@ -26,6 +26,14 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.13572), ATHLETE: Learning Reactive Humanoid Tennis via Trajectory-Guided Motion Matching, [website](https://hazintihoa.github.io/athlete.github.io/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.13373), PartiGen: Part-Aware Representations for Language-Conditioned Humanoid Motion Generation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.13087), Belief-Overlap Partial Inversion: Object-Centric Flow Replanning for Humanoid Loco-Manipulation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.13079), VICAR: Video Imitation with Contact-Aware Retargeting for Humanoid Interactive Skills
+- [arXiv 2026.10](https://arxiv.org/abs/2610.12972), Adaptive Whole-Body MPC with Optimal Posture Planning for Humanoid Robots under Unknown Payloads
+- [arXiv 2026.10](https://arxiv.org/abs/2610.12772), Reflex: Visually Grounded Reactive Humanoid Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.12642), PriMoRetarget: Humanoid Motion Transfer Through Prioritized Motion Retargeting
+- [arXiv 2026.10](https://arxiv.org/abs/2610.12558), PanTact: Teaching Whole-Body Dexterity with a Wearable Contact Interface, [website](https://pantact.github.io)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.12435), VioLA: Learning Generalist Humanoid Control Policies from Human Data
 - [arXiv 2026.10](https://arxiv.org/abs/2610.11283), Being-M0.7: A Latent World-Action Model for Humanoid Robots
 - [arXiv 2026.10](https://arxiv.org/abs/2610.09479), Precise SE(3) End-Effector Tracking in Whole-Body Humanoid Control, [website](https://resgac.github.io/ResGAC-website/)
@@ -403,6 +411,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.06](https://arxiv.org/abs/2606.15918), Energy-Efficient Arm Reaching for a Humanoid Robot via Deep Reinforcement Learning with Identified Power Models
 - [arXiv 2026.06](https://arxiv.org/abs/2606.03834), Let the Dynamics Flow: Stable Flow Matching Dynamical Systems, [website](https://let-the-dynamics-flow.github.io/SFMDS/)
 - 🌟 [arXiv 2026.03](https://arxiv.org/abs/2603.12260), HumDex: Humanoid Dexterous Manipulation Made Easy
+- 🌟 [arXiv 2026.03](https://arxiv.org/abs/2603.08142), Multifingered force-aware control for humanoid robots, [code](https://github.com/hsp-iit/multifingered-force-aware-control)
 - [arXiv 2026.03](https://arxiv.org/abs/2603.05493), cuRoboV2: Dynamics-Aware Motion Generation with Depth-Fused Distance Fields for High-DoF Robots
 - [arXiv 2026.02](https://arxiv.org/abs/2602.06949), DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos, [website](https://dreamdojo-world.github.io/)
 - [arXiv 2026.01](https://arxiv.org/abs/2601.14874), HumanoidVLM: Vision-Language-Guided Impedance Control for Contact-Rich Humanoid Manipulation
