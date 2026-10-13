@@ -411,6 +411,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.06](https://arxiv.org/abs/2606.21600), VQActFlow: Vector-Quantized Action Mode Steering for Multi-Task Robot Manipulation
 - [arXiv 2026.06](https://arxiv.org/abs/2606.17011), ROVE: Unlocking Human Interventions for Humanoid Manipulation via Reinforcement Learning
 - [arXiv 2026.06](https://arxiv.org/abs/2606.15918), Energy-Efficient Arm Reaching for a Humanoid Robot via Deep Reinforcement Learning with Identified Power Models
+- [arXiv 2026.06](https://arxiv.org/abs/2606.08152), Vision-Guided Dual-Arm Humanoid Robotic Disassembly of End-of-Life 18650 Lithium-ion Battery Packs
 - [arXiv 2026.06](https://arxiv.org/abs/2606.03834), Let the Dynamics Flow: Stable Flow Matching Dynamical Systems, [website](https://let-the-dynamics-flow.github.io/SFMDS/)
 - 🌟 [arXiv 2026.03](https://arxiv.org/abs/2603.12260), HumDex: Humanoid Dexterous Manipulation Made Easy
 - 🌟 [arXiv 2026.03](https://arxiv.org/abs/2603.08142) / ICRA 2026, Multifingered force-aware control for humanoid robots, [code](https://github.com/hsp-iit/multifingered-force-aware-control)
@@ -770,6 +771,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.07](https://arxiv.org/abs/2607.15701), RAVEN: Reinforcement-Adaptive Visibility-Graph Planning for Robust Humanoid Navigation with Collision-Free MPC
 - [arXiv 2026.07](https://arxiv.org/abs/2607.11638), DA-Nav: Direction-Aware City-Scale Vision-Language Navigation
 - [arXiv 2026.06](https://arxiv.org/abs/2606.23249), LP-NavOA: Integrated Local Navigation and Obstacle Avoidance for Humanoid Robots under Limited Perception
+- [arXiv 2026.06](https://arxiv.org/abs/2606.22971), Humanoid-OmniOcc: Stereo-Based Full-View Occupancy Dataset for Embodied AI, [website](https://d-robotics-ai-lab.github.io/humanoid-omniocc)
 - [arXiv 2026.03](https://arxiv.org/abs/2603.28691) / RA-L 2026, DRIVE-Nav: Directional Reasoning, Inspection, and Verification for Efficient Open-Vocabulary Navigation
 - [arXiv 2026.02](https://arxiv.org/abs/2602.04515), EgoActor: Grounding Task Planning into Spatial-aware Egocentric Actions for Humanoid Robots via Visual-Language Models
 - [arXiv 2026.01](https://arxiv.org/abs/2601.12790), FocusNav: Spatial Selective Attention with Waypoint Guidance for Humanoid Local Navigation

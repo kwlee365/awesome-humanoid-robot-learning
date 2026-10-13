@@ -2286,6 +2286,60 @@
     },
     {
       "kind": "out-of-scope",
+      "reason": "Read on the arXiv abs page / API abstract during the 2026-10-13 PM pass. Delete an entry to put the paper back in the queue.",
+      "detected_on": "2026-10-13",
+      "items": [
+        {
+          "arxiv_id": "2606.24466",
+          "title": "FT-WBC: Learning Fault-Tolerant Whole-Body Control for Legged Loco-Manipulation",
+          "note": "legged manipulator (arm on legged base), no humanoid"
+        },
+        {
+          "arxiv_id": "2608.20114",
+          "title": "DECOWAM: Decoupled Whole-Body World-Action Model for Legged Mobile Manipulation",
+          "note": "legged mobile manipulator, no humanoid"
+        },
+        {
+          "arxiv_id": "2606.29940",
+          "title": "WARP: Whole-Body Retargeting for Learning from Offline Human Demonstrations",
+          "note": "wheeled/mobile whole-body manipulation; abstract does not name a humanoid"
+        },
+        {
+          "arxiv_id": "2607.16095",
+          "title": "Let the Body Follow: Coupled Egocentric Control for Whole-Body Robot Teleoperation",
+          "note": "mobile manipulator teleoperation (torso+base), not humanoid"
+        },
+        {
+          "arxiv_id": "2608.02257",
+          "title": "Learning Panorama-Aware VLA for Mobile Manipulation with Whole-Body Teleoperation",
+          "note": "mobile base + arms, not humanoid"
+        },
+        {
+          "arxiv_id": "2609.33096",
+          "title": "Humanoids for Robot-Assisted Surgery: Bimanual Base Placement and Tool-Mount Optimization via Capability Maps",
+          "note": "kinematic reachability analysis for surgery; no learning or control contribution"
+        },
+        {
+          "arxiv_id": "2610.05792",
+          "title": "DASH: A da Vinci Adapter for Serial-link and Humanoid Robots as an Accessible Platform for Surgical Robotics Research",
+          "note": "instrument adapter hardware for surgery; abstract does not centre a humanoid learning method"
+        }
+      ]
+    },
+    {
+      "kind": "date-mismatch",
+      "reason": "2609.19041 (Loco-Loco-RL, humanoid terrain RL, accepted NAECON 2026, DOI 10.1109/naecon70028.2026.11675020) is a clear in-scope paper, but its id month (2609) disagrees with the abs page's v1 date (2026/07/21), so the README month cannot be stated without tripping the arXiv-id/month check. Not added; a human should decide which date to record.",
+      "detected_on": "2026-10-13",
+      "items": [
+        {
+          "arxiv_id": "2609.19041",
+          "title": "Loco-Loco-RL: Low-Cost Terrain Mapping for Humanoid Locomotion with Reinforcement Learning",
+          "note": "needs human date decision"
+        }
+      ]
+    },
+    {
+      "kind": "out-of-scope",
       "reason": "Judged out of scope from the title and the arXiv-API abstract carried on the discovery candidate during the 2026-10-13 queue pass. Delete an entry to put the paper back in the queue.",
       "detected_on": "2026-10-13",
       "items": [

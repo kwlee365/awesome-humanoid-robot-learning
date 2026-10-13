@@ -11,18 +11,18 @@
     "openalex"
   ],
   "counts": {
-    "raw": 8009,
-    "relevant": 1028,
-    "merged": 1213,
-    "new": 960,
+    "raw": 8135,
+    "relevant": 1040,
+    "merged": 1216,
+    "new": 963,
     "similar_to_listed": 1,
     "already_listed": 252,
-    "carried_over": 980
+    "carried_over": 961
   },
   "per_channel_raw": {
     "arxiv": 3258,
     "crossref": 603,
-    "openalex": 4148
+    "openalex": 4274
   },
   "failures": [],
   "candidates": [
@@ -3456,6 +3456,52 @@
       "dedupe_note": "",
       "seen_on": "2026-10-13",
       "carried_over_since": "2026-09-03"
+    },
+    {
+      "title": "Ultra-range, precise and predictable robotic leaping via parabolic trajectory regulation under thrust-induced hypogravity",
+      "authors": [
+        "Zijie Sun"
+      ],
+      "abstract": "The exploration of robotic jumping locomotion stands at the frontier of engineering and biomimicry. Jumping specialists in the animal kingdom can achieve superior jumping ranges, cope with dynamic environmental uncertainties via predictive jumping, and stably land onto confined target areas. However, for robotics, the pursuit of extended leap range also leads to an inherent compromise of leap precision, predictability, and landing stability and safety. Achieving animal-level jumping performance remains a research challenge. Conquering this trade-off to reach animal-level jumping performance with trajectory predictability, landing precision and stability, and ultra-broad range remains a challenging issue. The Earth's gravity's inherent constraints necessitate robotic designs to prioritize powerful actuators and lightweight bodies for maximal jumping elevation. Moreover, while vast designs excel in static environments, achieving precise and predictable jumps in dynamic settings may remain a key challenge issue. This thesis presents a 370 g robotic prototype and addresses these challenges via thrust-induced hypogravity, together with leaping trajectory regulation by tracking time-coupled parabolic trajectories (TCPTs). The Hypogravity jumping extends the robot's leap trajectory multifold (peak height reached 6.9 m, around 46 times its body height) with sharply reduced leg energy demand (6%) and landing impact (25%) compared to an equivalent Earth-gravity jump, enabling the bipedal robot to traverse multi-level stairs, leap onto a 1.6-meter-high wall, over 2.35-meter-high wall, and across a wide stream (3 m). The robot can conduct directional jumps including forward-backward jumping using the proposed pre-tilt method or lateral jumping via the phase difference of leg extension. During pretilt jumping, the robot controls the launch angle, speed, and a constant gravity, and utilizes air thrust force to regulate the leap parabolic trajectories by tracking time-coupled parabolic trajectory (TCPT). This strategy ensures the predictability of forthcoming aerial/landing positions and corresponding timing before jumping, allowing leaps in dynamic scenarios: jumping through a fast-moving window (3.8 m/s), onto shifting, area-confined targets (0.33m×0.3m), and against wind disturbance (3.5 m/s) before targeted landing. Statistical tests were conducted to analyze the precision of jumping. After precise control of leap trajectory, a stable landing is the crucial final procedure. This thesis investigates two stable landing techniques: (1) Passive Damping (PD) for cases with high landing impact. (2) Active-legged Damping (AD) for bounce-free landing. Both PD and AD demonstrate balanced landings, whereas AD reveals superiority in cases with confined target region. In summary, this research paves the way for a newer class of ultra-range, precise, and predictable robotic jumping via self-generated hypogravity and leap trajectory regulation.",
+      "abstract_source": "http://hdl.handle.net/10397/121293",
+      "arxiv_id": null,
+      "doi": null,
+      "paper_url": "http://hdl.handle.net/10397/121293",
+      "venue": "PolyU Institutional Research Archive (Hong Kong Polytechnic University)",
+      "venue_hint": "PolyU Institutional Research Archive (Hong Kong Polytechnic University)",
+      "publication_status": "published",
+      "first_public_date": "2026-09",
+      "date_basis": "openalex-publication-date",
+      "window": "2026-09",
+      "relevance": {
+        "keep": true,
+        "path": "core",
+        "why": "humanoid platform named",
+        "score": 105,
+        "core": [
+          "bipedal"
+        ],
+        "task": [],
+        "body": [
+          "legged",
+          "locomotion",
+          "jumping"
+        ],
+        "method": [],
+        "control": [],
+        "sim": [],
+        "hard_negative": [],
+        "soft_negative": []
+      },
+      "sources": [
+        "openalex"
+      ],
+      "urls": [
+        "http://hdl.handle.net/10397/121293"
+      ],
+      "dedupe": "new",
+      "dedupe_note": "",
+      "seen_on": "2026-10-13"
     },
     {
       "title": "VIRTUAL REALLIK SAHNALARIDA KO'P ISHTIROKCHILI HOLISTIK HARAKATNI REAL VAQT REJIMIDA KUZATISH VA KO'P AGENTLI SKELETNI RETARGETING QILISH",
@@ -19314,6 +19360,52 @@
       "seen_on": "2026-10-13"
     },
     {
+      "title": "Towards human-like manipulation of robotic arms using reinforcement learning and stereo vision",
+      "authors": [
+        "Narcis Dumea",
+        "Serkan Ergun",
+        "Tobias Mitterer",
+        "Hyosang Lee",
+        "Hubert Zangl"
+      ],
+      "abstract": "In recent years, a shift from classic fixed arm robotic manipulators towards mobile platforms with manipulators has been observed due to the increase in flexibility of tasks. More recently, the focus has shifted towards humanoid robotics. Whereas the dynamics of the legs and self stabilization of such bi-petal robots have been solved, the behavior of the humanoid arms needs further improvement to move more naturally and human-like. To overcome the hurdle of lack of natural arm movement, as a human does subconsciously, to keep balance while moving different parts of the body, we propose an experimental setup to collect arm and hand movement data from humans using a set of Color (RGB) and Color and Depth (RGBD) cameras via MediaPipe, but without needing any markers. A robotic arm manipulator with a custom soft robotics hand then mimics the movement and shows direct output for validation. In this way, several daily human manipulation tasks can be mimicked, recorded and used for training to eventually enable full autonomy in the future. We conducted experiments to quantify the accuracy of the mimicked pose, focusing on the end-effector pose (position and orientation) while monitoring the joint configuration. In our experiments, an accuracy of ±2.5cm was observed in all three axes (x,y,z); the orientation accuracy lies within ±10°. The demonstrator has been tested during several internal lab dry runs (for data collection) and public demos (showcasing robustness and longterm stability, e.g. during the Long night of research in Austria). Our work will serve as a basis for future multi-arm tracking and mimicking approaches.",
+      "abstract_source": "https://doi.org/10.1117/12.3134277",
+      "arxiv_id": null,
+      "doi": "10.1117/12.3134277",
+      "paper_url": "https://doi.org/10.1117/12.3134277",
+      "venue": null,
+      "venue_hint": null,
+      "publication_status": "published",
+      "first_public_date": "2026-10",
+      "date_basis": "openalex-publication-date",
+      "window": "2026-10",
+      "relevance": {
+        "keep": true,
+        "path": "core",
+        "why": "humanoid platform named",
+        "score": 102,
+        "core": [
+          "humanoid"
+        ],
+        "task": [],
+        "body": [],
+        "method": [],
+        "control": [],
+        "sim": [],
+        "hard_negative": [],
+        "soft_negative": []
+      },
+      "sources": [
+        "openalex"
+      ],
+      "urls": [
+        "https://doi.org/10.1117/12.3134277"
+      ],
+      "dedupe": "new",
+      "dedupe_note": "",
+      "seen_on": "2026-10-13"
+    },
+    {
       "title": "Traceable World State: A Provenance-Aware State Representation and Deterministic Replay Framework for Robotic Systems",
       "authors": [
         "Zoe Li"
@@ -26857,6 +26949,48 @@
       "dedupe_note": "",
       "seen_on": "2026-10-13",
       "carried_over_since": "2026-09-03"
+    },
+    {
+      "title": "AnimBridge: User Study and Animation Evaluation Dataset",
+      "authors": [
+        "Pengfei Zhang"
+      ],
+      "abstract": "This dataset accompanies the paper \"AnimBridge: Bridging AI-Generated Motion and 3D Character Animation Workflows.\"It contains anonymized data from a user study with 16 participants, including task completion times, operation counts, questionnaire responses, and expert ratings of animation quality.Animation results and visual comparisons are available at https://zpfhnu.github.io/AnimBridge/.",
+      "abstract_source": "https://doi.org/10.6084/m9.figshare.34353108",
+      "arxiv_id": null,
+      "doi": "10.6084/m9.figshare.34353108",
+      "paper_url": "https://doi.org/10.6084/m9.figshare.34353108",
+      "venue": "Figshare",
+      "venue_hint": "Figshare",
+      "publication_status": "published",
+      "first_public_date": "2026-10",
+      "date_basis": "openalex-publication-date",
+      "window": "2026-10",
+      "relevance": {
+        "keep": true,
+        "path": "task",
+        "why": "a task specific to a humanoid body",
+        "score": 82,
+        "core": [],
+        "task": [
+          "character animation"
+        ],
+        "body": [],
+        "method": [],
+        "control": [],
+        "sim": [],
+        "hard_negative": [],
+        "soft_negative": []
+      },
+      "sources": [
+        "openalex"
+      ],
+      "urls": [
+        "https://doi.org/10.6084/m9.figshare.34353108"
+      ],
+      "dedupe": "new",
+      "dedupe_note": "",
+      "seen_on": "2026-10-13"
     },
     {
       "title": "Bunraku: Turning a Single Illustration into an Editable Live2D Character",
@@ -46164,10 +46298,10 @@
       "abstract": "Automating biological laboratories requires robots to perform dexterous tool interactions under realistic visual conditions while handling dynamic experimental phenomena, presenting significant challenges for robotic manipulation. To enable systematic evaluation under these conditions, we introduce AutoBio+, a simulation benchmark and framework for dexterous manipulation in realistic biological laboratory environments. AutoBio+ comprises 14 tasks across 4 robot embodiments, spanning functional tool use, precision manipulation, language-conditioned visual grounding, and instrument operation. We introduce controllable dynamic experimental phenomena, including flames, vapor, and bubbles, to capture the evolving visual conditions of laboratory procedures. To further enhance environmental realism, we develop a hybrid rendering pipeline that integrates interactive simulated foreground objects with Gaussian-splatting backgrounds reconstructed from 6 real laboratory scenes. For efficient large-scale data generation and evaluation, we further build a parallel simulation framework on top of mjlab, proposing Parallel Finite-State Machine (PFSM) and integrating batched rendering with decoupled trajectory replay for demonstration generation and model-independent closed-loop policy evaluation. Our evaluation reveals substantial variation in policy performance across tasks, exposing distinct strengths and weaknesses of current manipulation policies. Real-world experiments further demonstrate a reduced sim-to-real gap, supporting the validity of AutoBio+ for realistic manipulation evaluation. Supplementary materials are available at https://autobio-plus.github.io/AutoBioPlus.",
       "abstract_source": "https://arxiv.org/abs/2610.13643",
       "arxiv_id": "2610.13643",
-      "doi": null,
+      "doi": "10.48550/arxiv.2610.13643",
       "paper_url": "https://arxiv.org/abs/2610.13643",
-      "venue": "arXiv",
-      "venue_hint": null,
+      "venue": "arXiv (Cornell University)",
+      "venue_hint": "arXiv (Cornell University)",
       "arxiv_comment": null,
       "publication_status": "preprint",
       "first_public_date": "2026-10",
@@ -46196,10 +46330,12 @@
         ]
       },
       "sources": [
-        "arxiv"
+        "arxiv",
+        "openalex"
       ],
       "urls": [
-        "https://arxiv.org/abs/2610.13643"
+        "https://arxiv.org/abs/2610.13643",
+        "https://doi.org/10.48550/arxiv.2610.13643"
       ],
       "carried_over_since": "2026-10-12",
       "dedupe": "new",
