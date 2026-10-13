@@ -2306,6 +2306,98 @@
           "note": "legged manipulator; abstract names no humanoid"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Judged out of scope from the title and the arXiv-API abstract carried on the discovery candidate during the 2026-10-13 queue pass. Delete an entry to put the paper back in the queue.",
+      "detected_on": "2026-10-13",
+      "items": [
+        {
+          "arxiv_id": "2609.33354",
+          "title": "Traceable Human-to-Humanoid Sign Language Benchmarking",
+          "note": "sign-language HRI benchmark; no learning/control contribution"
+        },
+        {
+          "arxiv_id": "2609.24742",
+          "title": "LLM-based Conversational AI Knowledge Assistant for MyBuddy Humanoid Robot",
+          "note": "conversational assistant; no locomotion/manipulation"
+        },
+        {
+          "arxiv_id": "2609.24547",
+          "title": "MIRA: Real-Time Full-Duplex Human-Robot Interaction for Embodied Companions",
+          "note": "dialogue HRI"
+        },
+        {
+          "arxiv_id": "2609.26872",
+          "title": "MSK-Bench: Benchmarking Full-Body Musculoskeletal Motor Control Across Tasks, Control Paradigms, and Physiological Conditions",
+          "note": "musculoskeletal model benchmark, not a robot"
+        },
+        {
+          "arxiv_id": "2610.04266",
+          "title": "Real-Time Conformal-Seeded Hybrid Inverse Kinematics for Offset Redundant Manipulators",
+          "note": "arm IK; no humanoid contribution"
+        },
+        {
+          "arxiv_id": "2602.07506",
+          "title": "VividFace: Real-Time and Realistic Facial Expression Shadowing for Humanoid Robots",
+          "note": "facial expression, not body control"
+        },
+        {
+          "arxiv_id": "2609.23414",
+          "title": "EmoPose: Vision-Language Model Guided Emotion-Aware Gesture Generation for Humanoid Robots",
+          "note": "social gesture generation"
+        },
+        {
+          "arxiv_id": "2610.05964",
+          "title": "From Social Reasoning to Embodied Interaction: An Agentic Framework for Social Robots",
+          "note": "social-robot agent framework"
+        },
+        {
+          "arxiv_id": "2609.32250",
+          "title": "RoboSTAR: Next-Scale Autoregressive Sign Language Translation for Humanoid Robots",
+          "note": "sign-language translation"
+        },
+        {
+          "arxiv_id": "2610.06153",
+          "title": "Talk, Render, Act: Integrating Social Gesture and Digital Face with Synchronized Speech for Conversational Humanoid Robot",
+          "note": "conversational gesture/face HRI"
+        },
+        {
+          "arxiv_id": "2609.33269",
+          "title": "Q-WAM: 4-Bit Quantization of World Action Models with Action-Subspace Protection",
+          "note": "model quantization; no humanoid-specific contribution"
+        },
+        {
+          "arxiv_id": "2610.13195",
+          "title": "PATACON: GPU-Parallel Tangent-Bundle RRT-Connect for Constrained Motion Planning",
+          "note": "generic motion planner"
+        },
+        {
+          "arxiv_id": "2609.12749",
+          "title": "SCQ: Stabilizing Conservative Q-Learning with Sigmoid-Bounded Entropy",
+          "note": "generic offline RL algorithm"
+        },
+        {
+          "arxiv_id": "2609.37311",
+          "title": "ReMem: Rethinking Perception and Memory in Long-Context Recommendation Agents",
+          "note": "recommendation agents, not robotics"
+        },
+        {
+          "arxiv_id": "2609.18789",
+          "title": "AdaGeoVLN: Selective Geometry Across Representation Depth and Navigation Time for Vision-Language Navigation",
+          "note": "generic VLN, no humanoid"
+        },
+        {
+          "arxiv_id": "2610.03873",
+          "title": "Streaming Multi-Track Timeline Control for 3D Human Motion Generation",
+          "note": "pure human-motion generation"
+        },
+        {
+          "arxiv_id": "2609.33095",
+          "title": "REALM: A Coarse-to-Fine Generative Framework for Embodied Reactive Listening",
+          "note": "listener-behaviour generation, no robot control"
+        }
+      ]
     }
   ]
 }

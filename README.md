@@ -197,6 +197,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.05](https://arxiv.org/abs/2605.23762), Direct Dynamic Retargeting for Humanoid Imitation Learning from Videos
 - 🌟 [arXiv 2026.05](https://arxiv.org/abs/2605.20373), SUGAR: A Scalable Human-Video-Driven Generalizable Humanoid Loco-Manipulation Learning Framework, [website](https://tianshuwu.github.io/sugar-humanoid/) / [code](https://github.com/tianshuwu/SUGAR)
 - [arXiv 2026.05](https://arxiv.org/abs/2605.06593) / SIGGRAPH 2026, ReActor: Reinforcement Learning for Physics-Aware Motion Retargeting
+- [arXiv 2026.04](https://arxiv.org/abs/2604.21355) / ICRA 2026, RPG: Robust Policy Gating for Smooth Multi-Skill Transitions in Humanoid Fighting
 - [arXiv 2026.04](https://arxiv.org/abs/2604.14834) / ICRA 2026, Switch: Learning Agile Skills Switching for Humanoid Robots
 - [arXiv 2026.03](https://arxiv.org/abs/2603.27756), Heracles: Bridging Precise Tracking and Generative Synthesis for General Humanoid Control
 - [arXiv 2026.03](https://arxiv.org/abs/2603.23983), SafeFlow: Real-Time Text-Driven Humanoid Whole-Body Control via Physics-Guided Rectified Flow and Selective Safety Gating, [website](https://hanbyelcho.info/safeflow/)
@@ -618,6 +619,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.02](https://arxiv.org/abs/2602.06382), Now You See That: Learning End-to-End Humanoid Locomotion from Raw Pixels
 - [arXiv 2026.02](https://arxiv.org/abs/2602.05855), A Hybrid Autoencoder for Robust Heightmap Generation from Fused Lidar and Depth Data for Humanoid Robot Locomotion
 - [arXiv 2026.02](https://arxiv.org/abs/2602.05791), Scalable and General Whole-Body Control for Cross-Humanoid Locomotion
+- [arXiv 2026.02](https://arxiv.org/abs/2602.05596) / ICRA 2026, TOLEBI: Learning Fault-Tolerant Bipedal Locomotion via Online Status Estimation and Fallibility Rewards
 - [arXiv 2026.02](https://arxiv.org/abs/2602.04412), HoRD: Robust Humanoid Control via History-Conditioned Reinforcement Learning and Online Distillation
 - [arXiv 2026.02](https://arxiv.org/abs/2602.03511), CMR: Contractive Mapping Embeddings for Robust Humanoid Locomotion on Unstructured Terrains
 - [arXiv 2026.02](https://arxiv.org/abs/2602.03002), RPL: Learning Robust Humanoid Perceptive Locomotion on Challenging Terrains
