@@ -57,6 +57,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.09](https://arxiv.org/abs/2610.00823), Reactive Humanoid Multi-Contact Using Learned Stability Models
 - [arXiv 2026.09](https://arxiv.org/abs/2610.00438), Towards a General Humanoid Loco-Manipulation Model via Egocentric Whole-Body Human Data Pretraining
 - 🌟 [arXiv 2026.09](https://arxiv.org/abs/2610.00198), HumanoidTTT: Test-Time Capability Reuse for Efficient Humanoid Control, [website](https://aigeeksgroup.github.io/HumanoidTTT) / [code](https://github.com/AIGeeksGroup/HumanoidTTT)
+- [arXiv 2026.09](https://arxiv.org/abs/2609.39384), RoboAssist: Interactive Human-Humanoid Planning for Long-Horizon Surgical Assistance, [website](https://roboassist.github.io)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.38709), CEER2: Directional and Tunable End-Effector and Root Compliance for Humanoid Loco-Manipulation
 - [arXiv 2026.09](https://arxiv.org/abs/2609.38617), Dense Temporal Motion Retargeting for Legged Robots
 - [arXiv 2026.09](https://arxiv.org/abs/2609.38400), GestAdapt: Workspace-Conditioned Co-Speech Gesture Generation for Humanoid Robots
@@ -819,6 +820,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Sim-to-Real
 - [Preprints.org 2026](https://doi.org/10.20944/preprints202609.0605.v1), A Validated Modelling and Simulation Framework for a 12-DoF Biped Robot with Deep Reinforcement Learning Locomotion
+- [arXiv 2026.10](https://arxiv.org/abs/2610.10905), Informationally Decoupled Trajectory Design for Sim-to-Real System Identification
 - [arXiv 2026.09](https://arxiv.org/abs/2609.30951), Bundled Contact Gradients: Stabilizing Differentiable Simulation for Deployable Dynamic Tasks, [website](https://bundledcontactgradients.github.io/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.28878), Online Sim-to-Real Adaptation via Closed-Loop System Modeling, [website](http://generalroboticslab.com/OSRAM)
 - [arXiv 2026.07](https://arxiv.org/abs/2607.18210) / ICANN 2026, Optimization of sim-to-real transfer in the humanoid robot NICO

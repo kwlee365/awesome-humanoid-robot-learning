@@ -2452,6 +2452,113 @@
           "note": "needs human date decision"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Judged out of scope from the title and the arXiv-API abstract carried on the discovery candidate during the 2026-10-14 queue pass. Delete an entry to put the paper back in the queue.",
+      "detected_on": "2026-10-14",
+      "items": [
+        {
+          "arxiv_id": "2607.01574",
+          "title": "Multi-Rate Nonlinear Model Predictive Control for Wall-Supported Bipedal Locomotion of Quadrupedal Robots",
+          "note": "quadruped wall-supported biped gait, not a humanoid"
+        },
+        {
+          "arxiv_id": "2609.39751",
+          "title": "Beyond Policy Alignment: Closing the Planning-Learning Loop for Robot Control with Learned World Models",
+          "note": "general TD-MPC variant on HumanoidBench; not humanoid-specific, IIWA arm for real robot"
+        },
+        {
+          "arxiv_id": "2606.22971",
+          "title": "Humanoid-OmniOcc: Stereo-Based Full-View Occupancy Dataset for Embodied AI",
+          "note": "occupancy perception dataset, no control/learning of humanoid motion"
+        },
+        {
+          "arxiv_id": "2607.18737",
+          "title": "Motion Primitive Discovery in a Humanoid Robot via Self-Organising Maps for Phase Recognition",
+          "note": "SOM motor-primitive recognition for NICO, cognitive-science focus"
+        },
+        {
+          "arxiv_id": "2606.08152",
+          "title": "Vision-Guided Dual-Arm Humanoid Robotic Disassembly of End-of-Life 18650 Lithium-ion Battery Packs",
+          "note": "dual-arm battery disassembly; not humanoid learning"
+        },
+        {
+          "arxiv_id": "2609.11014",
+          "title": "Topological Necessities: Mechanism-Invariant Strategic Subgoals for Cross-Embodiment Goal-Conditioned Control",
+          "note": "generic goal-conditioned RL; humanoid only a benchmark"
+        },
+        {
+          "arxiv_id": "2608.20433",
+          "title": "Humanoid Musical Robots as Experimental Interfaces for Music-Evoked Emotion",
+          "note": "humanoid music-emotion HRI study"
+        },
+        {
+          "arxiv_id": "2607.24190",
+          "title": "Not Forgotten: Implementation and Evaluation of a Personalized Episodic Memory for the Humanoid Robot Head Kim",
+          "note": "episodic memory HRI"
+        },
+        {
+          "arxiv_id": "2606.16600",
+          "title": "WaveSync: Constrained Wavefront Optimization for Synchronized Co-Speech Gestures in Humanoid Robots",
+          "note": "co-speech gestures HRI"
+        },
+        {
+          "arxiv_id": "2609.05361",
+          "title": "Development of a Humanoid Robot Prototype for Multimodal Human-Robot Interaction",
+          "note": "HRI prototype"
+        },
+        {
+          "arxiv_id": "2607.24113",
+          "title": "A Case Study on the Acceptance of a Humanoid Robotic Head Employed in Three Public Spaces",
+          "note": "robot head acceptance study"
+        },
+        {
+          "arxiv_id": "2609.33096",
+          "title": "Humanoids for Robot-Assisted Surgery: Bimanual Base Placement and Tool-Mount Optimization via Capability Maps",
+          "note": "surgical base placement optimisation, no learning"
+        },
+        {
+          "arxiv_id": "2610.05792",
+          "title": "DASH: A da Vinci Adapter for Serial-link and Humanoid Robots as an Accessible Platform for Surgical Robotics Research",
+          "note": "surgical adapter hardware"
+        },
+        {
+          "arxiv_id": "2607.07972",
+          "title": "In vivo feasibility study of humanoid robots in surgery",
+          "note": "in vivo surgical feasibility study"
+        },
+        {
+          "arxiv_id": "2609.07440",
+          "title": "Open-Set Ego-Noise Separation for Legged-Robot Audition via Annotation-Free Adaptation and Pretrained-Model Transfer",
+          "note": "legged-robot audition"
+        },
+        {
+          "arxiv_id": "2607.28952",
+          "title": "Advances, challenges, and opportunities for legged robots",
+          "note": "legged robot survey"
+        },
+        {
+          "arxiv_id": "2609.30506",
+          "title": "Tactile Sensing Array for Multi-Phalanx Sensing in Humanoid Hands",
+          "note": "tactile array hardware"
+        },
+        {
+          "arxiv_id": "2606.08043",
+          "title": "OmniFaceRig: Fully Automatic Inner-Mouth-Aware Face Rigging Across Diverse 3D Character Topologies",
+          "note": "3D face rigging, no robot"
+        },
+        {
+          "arxiv_id": "2609.38537",
+          "title": "Systematically Exploring the Capabilities of GPT-6 Astra as Embodied Policies",
+          "note": "VLM capability probing"
+        },
+        {
+          "arxiv_id": "2609.29176",
+          "title": "Anthropomimetic Soft Robotic Forearm with Independently Articulated Carpal Bones Enabling Human-Like Adaptive Stiffness Modulability",
+          "note": "soft forearm hardware, not humanoid learning"
+        }
+      ]
     }
   ]
 }
