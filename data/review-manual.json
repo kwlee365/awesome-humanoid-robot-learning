@@ -2559,6 +2559,60 @@
           "note": "soft forearm hardware, not humanoid learning"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read on the arXiv abs page during the 2026-10-14 PM run and judged out of scope or borderline. Delete an entry to put the paper back in the queue.",
+      "detected_on": "2026-10-14",
+      "items": [
+        {
+          "arxiv_id": "2610.15274",
+          "title": "Embodiment-Aware Inference-Time Search for Human Reaction Selection in Humanoid Retargeting",
+          "note": "human-human reaction generation with retargeting feasibility scoring, simulation only; no section fits"
+        },
+        {
+          "arxiv_id": "2610.14042",
+          "title": "Reinforcement Learning from Real-Robot Interaction without High-Quality State Estimates",
+          "note": "NAO soccer-dribbling on-robot RL; state-representation contribution, not humanoid whole-body/locomotion"
+        },
+        {
+          "arxiv_id": "2610.15073",
+          "title": "Modeling and Control of a Rigid-soft Hybrid-link Humanoid Robot",
+          "note": "classical flexible-link IK/compliance control, no learning; no section fits"
+        },
+        {
+          "arxiv_id": "2610.18872",
+          "title": "EgoExplorer: A Vision-Motion-Touch Observatory for Human Loco-Manipulation In Situ",
+          "note": "human wearable-capture dataset; humanoid retargeting only preliminary (pure human-motion data)"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "2026-10-14 PM run: arxiv channel rate-limited (HTTP 429) for 2026-10 and 2026-09, and openalex returned HTTP 401 for both months. Those windows are not marked swept in the ledger and need re-sweeping; Crossref worked. Candidates were verified from the carried-over queue only.",
+      "detected_on": "2026-10-14",
+      "items": [
+        {
+          "channel": "arxiv",
+          "months": [
+            "2026-10",
+            "2026-09"
+          ]
+        },
+        {
+          "channel": "openalex",
+          "months": [
+            "2026-10",
+            "2026-09"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "refresh-skipped",
+      "reason": "2026-10-14 PM run: discover.py --refresh aborted on export.arxiv.org HTTP 429; no promotions or enrichment were applied this run.",
+      "detected_on": "2026-10-14",
+      "items": []
     }
   ]
 }

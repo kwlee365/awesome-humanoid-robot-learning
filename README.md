@@ -26,6 +26,11 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.17999), TRACE: Efficient Transfer Learning for Neural Whole-Body Control Across Humanoid Embodiments
+- 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.15833), P-BFM: Perceptive Behavioral Foundation Models for Humanoid Control via Unsupervised Reinforcement Learning, [website](https://roboparty.github.io/P-BFM/) / [code](https://github.com/Roboparty/P-BFM)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.14896), Test-Time Compute for Humanoid Behavior Foundation Models, [website](https://bfm-ttc.github.io/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.14561), From Video to Vision: Learning Generalizable Humanoid Carrying from Human Motion
+- [arXiv 2026.10](https://arxiv.org/abs/2610.14033), OIL: An Object Interaction Layer for Humanoid Whole-Body Control
 - [arXiv 2026.10](https://arxiv.org/abs/2610.13572), ATHLETE: Learning Reactive Humanoid Tennis via Trajectory-Guided Motion Matching, [website](https://hazintihoa.github.io/athlete.github.io/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.13373), PartiGen: Part-Aware Representations for Language-Conditioned Humanoid Motion Generation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.13087), Belief-Overlap Partial Inversion: Object-Centric Flow Replanning for Humanoid Loco-Manipulation
@@ -477,6 +482,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [1999](https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(99)01327-3), Is imitation learning the route to humanoid robots?
 
 ## Teleoperation
+- 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.16855), Human-Like Redundancy Resolution for Real-Time Bimanual Humanoid Teleoperation, [website](https://human-like-redundancy.github.io/) / [code](https://github.com/IAIE-PhysicalAI/Bimanual-Teleoperation)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.07891), Beyond Retargeting: Low-Latency and Robust Humanoid Whole-Body Teleoperation with Learned Atomic Motion Primitives
 - [arXiv 2026.09](https://arxiv.org/abs/2610.00718), Toward Humanoid Robots in Construction: A Teleoperation Feasibility Study
 - [arXiv 2026.09](https://arxiv.org/abs/2609.39000), NEXUS: Perceptive Whole-Body Control for Terrain-Adaptive Teleoperation, [website](https://nexus-humanoid.github.io/)
@@ -531,6 +537,9 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.10](https://arxiv.org/abs/2610.15735), Geometry-Aware Predictive Control for Walk-to-Run Bipedal Obstacle Crossing
+- [arXiv 2026.10](https://arxiv.org/abs/2610.14840), Push the Limit: Learning High-Speed Sprinting and Aggressive Cornering on a Full-Scale Humanoid
+- [arXiv 2026.10](https://arxiv.org/abs/2610.14061), Terrain Traversal Without Motion Priors: Expert-Routed Humanoid Locomotion at Deployment Fidelity, [website](https://fai-rl-tech.github.io/moe-perceptive/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.11505), DAMP: Humanoid Locomotion via Denoised Belief Learning and Adversarial Motion Priors
 - [arXiv 2026.10](https://arxiv.org/abs/2610.10489), HuMBLE: Human Motion-Driven Behavior Learning for Embodied Locomotion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.08789), QF3: Fast Flow RL with Filtered Q-Gradients, [website](https://qf3-rl.github.io/)
@@ -759,6 +768,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2022.12](https://arxiv.org/abs/2212.00541), Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo
 
 ## Navigation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.17232), LiDAR-based Humanoid Navigation in Dynamic, Non-Convex Environments via Spatio-Temporal Safe Corridors
 - [arXiv 2026.10](https://arxiv.org/abs/2610.10748), TAPNAV: Humanoid Navigation through Tactile Active Perception
 - [arXiv 2026.10](https://arxiv.org/abs/2610.07396), What the Elevation Map Cannot See: Semantic-Aware Locomotion and Execution-Aware Navigation for Humanoid Robot
 - [arXiv 2026.09](https://arxiv.org/abs/2609.19272), Learning Safe Humanoid Navigation from Reduced Order Models, [website](https://wdc3iii.github.io/rom-nav/)
@@ -843,6 +853,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2019.01](https://arxiv.org/abs/1901.08652) / Science Robotics 2019, Learning Agile and Dynamic Motor Skills for Legged Robots
 
 ## Hardware Design
+- [arXiv 2026.10](https://arxiv.org/abs/2610.16604), Design and Analysis of a Nonlinear Parallel Mechanism Coupling for Dynamic Humanoid Legs
 - [arXiv 2026.10](https://arxiv.org/abs/2610.08737), PhoneBot: A Low-Cost Open Humanoid Robot Platform Reusing Smartphones
 - [arXiv 2026.09](https://arxiv.org/abs/2609.08905), Visible-Reachable Workspace for Perception-Aware Humanoid Design, [website](https://generalroboticslab.com/DukeHumanoidv2)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.03497), BRIDGE: An Open-Source Humanoid Platform via Morphology-Control Co-Design for Physical AI, [website](https://sites.google.com/view/bridgerobot)
@@ -941,6 +952,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Physics-Based Character Animation
 - [SIGGRAPH 2010](https://dl.acm.org/doi/abs/10.1145/1833349.1778770?casa_token=j3esx-hx0GAAAAAA:OvRU6YYrNo2ZP9IyXGVDryWJqHmvU-oVhnzog8RFKKySQJjganzaAmHff6CQ4a0qzfJZu-J6Buf4Ug), Spatial relationship preserving character motion adaptation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.18147), Walk Like This: Stylized Locomotion for Physics-Based Characters through Example-Driven Diffusion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.10322), From Digital Human Interactions to Physics-Based Humanoid Skills: Physics-Grounded Post-Training of Interaction Generators
 - [arXiv 2026.10](https://arxiv.org/abs/2610.09291), Co{}^{2}Skill: Whole-Body Control via Skill Composition for Long-Horizon Human-Environment Interaction
 - [arXiv 2026.09](https://arxiv.org/abs/2609.26420), Sample, Simulate, Select: Physics-in-the-Loop Text-to-Motion for Humanoids Without Training
