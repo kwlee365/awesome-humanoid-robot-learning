@@ -26,6 +26,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.20579), PingpongDuo: Agile Humanoid Table Tennis Doubles with Safe Team Coordination
 - [arXiv 2026.10](https://arxiv.org/abs/2610.20552), KinoGen: Customizable Humanoid Loco-Manipulation References via Kinematically Grounded Video Generation, [website](https://kinogen-humanoid.github.io/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.19393), Beyond Kinematic Tracking: Preserving Expressive Characteristics in Humanoid Whole-Body Control
 - [arXiv 2026.10](https://arxiv.org/abs/2610.18950), λ_0: Scaling Open-World Egocentric Human Data for Humanoid Loco-Manipulation, [website](https://lambdahumanoid.github.io/)
@@ -33,6 +34,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.15833), P-BFM: Perceptive Behavioral Foundation Models for Humanoid Control via Unsupervised Reinforcement Learning, [website](https://roboparty.github.io/P-BFM/) / [code](https://github.com/Roboparty/P-BFM)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.14896), Test-Time Compute for Humanoid Behavior Foundation Models, [website](https://bfm-ttc.github.io/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.14561), From Video to Vision: Learning Generalizable Humanoid Carrying from Human Motion
+- [arXiv 2026.10](https://arxiv.org/abs/2610.14067), From Hitter to Player: Separating Motor Execution and Strategy in Competitive Humanoid Table Tennis
 - [arXiv 2026.10](https://arxiv.org/abs/2610.14033), OIL: An Object Interaction Layer for Humanoid Whole-Body Control
 - [arXiv 2026.10](https://arxiv.org/abs/2610.13572), ATHLETE: Learning Reactive Humanoid Tennis via Trajectory-Guided Motion Matching, [website](https://hazintihoa.github.io/athlete.github.io/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.13373), PartiGen: Part-Aware Representations for Language-Conditioned Humanoid Motion Generation
@@ -664,6 +666,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2025.09](https://arxiv.org/abs/2509.20696), RuN: Residual Policy for Natural Humanoid Locomotion
 - [arXiv 2025.09](https://arxiv.org/abs/2509.19573), Chasing Stability: Humanoid Running via Control Lyapunov Function Guided RL
 - [arXiv 2025.09](https://arxiv.org/abs/2509.19023), Reduced-Order Model-Guided RL for Demonstration-Free Humanoid Locomotion
+- [arXiv 2025.09](https://arxiv.org/abs/2509.18466) / ICRA 2026, RL-augmented Adaptive Model Predictive Control for Bipedal Locomotion over Challenging Terrain
 - [arXiv 2025.09](https://arxiv.org/abs/2509.18046) / CIS-RAM 2026, HuMam: Humanoid Motion Control via End-to-End Deep RL with Mamba
 - [arXiv 2025.09](https://arxiv.org/abs/2509.05581) / Humanoids 2025, Learning to Walk in Costume: Adversarial Motion Priors for Aesthetically Constrained Humanoids
 - [arXiv 2025.08](https://arxiv.org/abs/2508.20661), Traversing Narrow Paths: A Two-Stage RL Framework for Robust and Safe Humanoid Walking

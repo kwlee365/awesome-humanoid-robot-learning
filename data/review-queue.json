@@ -2592,6 +2592,19 @@
       ]
     },
     {
+      "kind": "candidate-held-for-review",
+      "reason": "2026-10-15 PM run: not added. 2609.19041 (Loco-Loco-RL) - arXiv id is 2609 but the abs page gives citation_date 2026/07/21, so the first-public month is inconsistent; 2506.01141 (Standing Tall) - Digit fall prediction, category unclear (Safety-Critical Control vs Locomotion), 2025-06 date. Resolve by hand.",
+      "detected_on": "2026-10-15",
+      "items": [
+        {
+          "arxiv_id": "2609.19041"
+        },
+        {
+          "arxiv_id": "2506.01141"
+        }
+      ]
+    },
+    {
       "kind": "out-of-scope",
       "reason": "Read via the arXiv-API abstract in the candidate queue during the 2026-10-15 AM run and judged out of scope. Delete an entry to put the paper back in the queue.",
       "detected_on": "2026-10-15",
