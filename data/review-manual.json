@@ -2613,6 +2613,87 @@
       "reason": "2026-10-14 PM run: discover.py --refresh aborted on export.arxiv.org HTTP 429; no promotions or enrichment were applied this run.",
       "detected_on": "2026-10-14",
       "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read via the arXiv-API abstract in the candidate queue during the 2026-10-15 AM run and judged out of scope. Delete an entry to put the paper back in the queue.",
+      "detected_on": "2026-10-15",
+      "items": [
+        {
+          "arxiv_id": "2609.22289",
+          "title": "OJOx: Specification-Conditioned Demonstrations for Embodied AI in Construction",
+          "note": "construction-domain demonstration specification; not humanoid learning"
+        },
+        {
+          "arxiv_id": "2610.08862",
+          "title": "CIRRA: Dual-Level Continual Instruction Reconciliation with Ongoing Execution for Embodied Robot Agents in Interactive Household Tasks",
+          "note": "LLM instruction reconciliation for embodied agents; no humanoid control"
+        },
+        {
+          "arxiv_id": "2610.14237",
+          "title": "Composable Dynamics for Cooperative Humanoids: A RoboCompiler Extension",
+          "note": "multi-robot dynamics compiler extension; no section fits"
+        },
+        {
+          "arxiv_id": "2610.19635",
+          "title": "Eye, Robot: Learning Expressive Gaze Dynamics via a VLM-Guided Transformer-VAE",
+          "note": "facial gaze generation for expressive robot; no section fits"
+        },
+        {
+          "arxiv_id": "2609.36558",
+          "title": "A robust single-sensing-element tactile sensor for concurrent pressure and tackiness detection with real-time signal decoupling capability",
+          "note": "tactile sensor hardware; no section fits"
+        },
+        {
+          "arxiv_id": "2609.39207",
+          "title": "ASENA: Self-evolving Agents for Embodied Navigation",
+          "note": "embodied navigation agents with LLM; not humanoid-specific"
+        },
+        {
+          "arxiv_id": "2610.14733",
+          "title": "B-Human '26 - Scalable Team Play up to 11 vs. 11",
+          "note": "RoboCup team-play system description; no section fits"
+        },
+        {
+          "arxiv_id": "2610.18774",
+          "title": "GreenWAM: A World Foundation Model for Robotics",
+          "note": "generic robotics world foundation model; not humanoid-specific"
+        },
+        {
+          "arxiv_id": "2608.00775",
+          "title": "ORCESTRA: VLM-driven Visual Robot programming in Mixed Reality",
+          "note": "mixed-reality robot programming; no section fits"
+        },
+        {
+          "arxiv_id": "2609.10372",
+          "title": "PACE: Perceived-Latency-Aware Cascading Service Routing and Filler Control for QoE-Efficient Retrieval-Augmented Dialogue Serving",
+          "note": "network service routing for retrieval; unrelated"
+        },
+        {
+          "arxiv_id": "2610.07117",
+          "title": "R2RI: A Multi-View Event and RGB Dataset for Robot-to-Robot Interaction",
+          "note": "event/RGB robot-to-robot interaction dataset; no section fits"
+        },
+        {
+          "arxiv_id": "2610.20606",
+          "title": "Modeling and Understanding Neural Weights of Humanoid Policies with Diffusion",
+          "note": "weight-space diffusion over policies; no section fits"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "2026-10-15 run: openalex returned HTTP 401 for 2026-10 and 2026-09; those windows are not marked swept and need re-sweeping. arXiv and Crossref completed.",
+      "detected_on": "2026-10-15",
+      "items": [
+        {
+          "channel": "openalex",
+          "months": [
+            "2026-10",
+            "2026-09"
+          ]
+        }
+      ]
     }
   ]
 }

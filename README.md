@@ -26,6 +26,9 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.20552), KinoGen: Customizable Humanoid Loco-Manipulation References via Kinematically Grounded Video Generation, [website](https://kinogen-humanoid.github.io/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.19393), Beyond Kinematic Tracking: Preserving Expressive Characteristics in Humanoid Whole-Body Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.18950), λ_0: Scaling Open-World Egocentric Human Data for Humanoid Loco-Manipulation, [website](https://lambdahumanoid.github.io/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.17999), TRACE: Efficient Transfer Learning for Neural Whole-Body Control Across Humanoid Embodiments
 - 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.15833), P-BFM: Perceptive Behavioral Foundation Models for Humanoid Control via Unsupervised Reinforcement Learning, [website](https://roboparty.github.io/P-BFM/) / [code](https://github.com/Roboparty/P-BFM)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.14896), Test-Time Compute for Humanoid Behavior Foundation Models, [website](https://bfm-ttc.github.io/)
@@ -830,6 +833,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Sim-to-Real
 - [Preprints.org 2026](https://doi.org/10.20944/preprints202609.0605.v1), A Validated Modelling and Simulation Framework for a 12-DoF Biped Robot with Deep Reinforcement Learning Locomotion
+- [arXiv 2026.10](https://arxiv.org/abs/2610.18991), Contact-UAN: Unsupervised Actuator Networks as a Residual World Model for Humanoid Control, [website](https://contact-uan.csail.mit.edu/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.10905), Informationally Decoupled Trajectory Design for Sim-to-Real System Identification
 - [arXiv 2026.09](https://arxiv.org/abs/2609.30951), Bundled Contact Gradients: Stabilizing Differentiable Simulation for Deployable Dynamic Tasks, [website](https://bundledcontactgradients.github.io/)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.28878), Online Sim-to-Real Adaptation via Closed-Loop System Modeling, [website](http://generalroboticslab.com/OSRAM)
