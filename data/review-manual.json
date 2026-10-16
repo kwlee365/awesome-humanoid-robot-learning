@@ -2707,6 +2707,93 @@
           "arxiv_id": "2506.01141"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "2026-10-16 AM/PM run: read abstracts, judged outside humanoid robot learning (HRI/social studies, generic RL or time-series methods, libraries, reviews, planar-biped modelling without learning, humanoid video generation).",
+      "detected_on": "2026-10-16",
+      "items": [
+        {
+          "arxiv_id": "2606.28469"
+        },
+        {
+          "arxiv_id": "2609.07930"
+        },
+        {
+          "arxiv_id": "2609.28377"
+        },
+        {
+          "arxiv_id": "2604.12274"
+        },
+        {
+          "arxiv_id": "2607.16428"
+        },
+        {
+          "arxiv_id": "2604.11981"
+        },
+        {
+          "arxiv_id": "2610.14564"
+        },
+        {
+          "arxiv_id": "2609.13876"
+        },
+        {
+          "arxiv_id": "2607.00642"
+        },
+        {
+          "arxiv_id": "2609.35728"
+        },
+        {
+          "arxiv_id": "2606.23565"
+        },
+        {
+          "arxiv_id": "2606.08029"
+        },
+        {
+          "arxiv_id": "2608.05989"
+        },
+        {
+          "arxiv_id": "2606.16572"
+        },
+        {
+          "arxiv_id": "2610.05350"
+        },
+        {
+          "arxiv_id": "2607.13768"
+        },
+        {
+          "arxiv_id": "2610.12464"
+        },
+        {
+          "arxiv_id": "2609.18111"
+        },
+        {
+          "arxiv_id": "2607.08620"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "2026-10-16 run: discover.py reported arXiv rate-limited for 2026-09 and 2026-10 and OpenAlex HTTP 401 for 2026-09 and 2026-10. Those windows are incomplete and stay unmarked in the ledger; swept by hand only via the carried queue, not exhaustively.",
+      "detected_on": "2026-10-16",
+      "items": [
+        {
+          "channel": "arxiv",
+          "month": "2026-09"
+        },
+        {
+          "channel": "arxiv",
+          "month": "2026-10"
+        },
+        {
+          "channel": "openalex",
+          "month": "2026-09"
+        },
+        {
+          "channel": "openalex",
+          "month": "2026-10"
+        }
+      ]
     }
   ]
 }

@@ -789,6 +789,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.07](https://arxiv.org/abs/2607.11638), DA-Nav: Direction-Aware City-Scale Vision-Language Navigation
 - [arXiv 2026.06](https://arxiv.org/abs/2606.23249), LP-NavOA: Integrated Local Navigation and Obstacle Avoidance for Humanoid Robots under Limited Perception
 - [arXiv 2026.06](https://arxiv.org/abs/2606.22971), Humanoid-OmniOcc: Stereo-Based Full-View Occupancy Dataset for Embodied AI, [website](https://d-robotics-ai-lab.github.io/humanoid-omniocc)
+- [arXiv 2026.04](https://arxiv.org/abs/2604.00416), Learning Humanoid Navigation from Human Data, [website](https://egonav.weizhuowang.com)
 - [arXiv 2026.03](https://arxiv.org/abs/2603.28691) / RA-L 2026, DRIVE-Nav: Directional Reasoning, Inspection, and Verification for Efficient Open-Vocabulary Navigation
 - [arXiv 2026.02](https://arxiv.org/abs/2602.04515), EgoActor: Grounding Task Planning into Spatial-aware Egocentric Actions for Humanoid Robots via Visual-Language Models
 - [arXiv 2026.01](https://arxiv.org/abs/2601.12790), FocusNav: Spatial Selective Attention with Waypoint Guidance for Humanoid Local Navigation
@@ -877,6 +878,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [Engineering Research Express 2026](https://doi.org/10.1088/2631-8695/ae76e7), Dynamic modeling and prototype design for underactuated takeoff of a humanoid robot
 - [Biomimetics 2026](https://doi.org/10.3390/biomimetics11060412), Comparative Analysis of High-Torque-Density Permanent Magnet Motors Having Similar Slot and Pole Numbers for Humanoid Robot Applications
 - [arXiv 2026.05](https://arxiv.org/abs/2605.26991) / Nature Machine Intelligence 2026, Towards Shared Embodied Intelligence in Humanoid Robots through Optimization Development and Testing of the Human Aware ergoCub Robot
+- [arXiv 2026.04](https://arxiv.org/abs/2604.08636), LEGO: Latent-space Exploration for Geometry-aware Optimization of Humanoid Kinematic Design
 - [arXiv 2026.02](https://arxiv.org/abs/2602.08518), Characteristics, Management, and Utilization of Muscles in Musculoskeletal Humanoids
 - [arXiv 2026.01](https://arxiv.org/abs/2601.18963), Fauna Sprout: A lightweight, approachable, developer-ready humanoid robot
 - [arXiv 2025.12](https://arxiv.org/abs/2512.24657), Antagonistic Bowden-Cable Actuation of a Lightweight Robotic Hand: Toward Dexterous Manipulation for Payload Constrained Humanoids
