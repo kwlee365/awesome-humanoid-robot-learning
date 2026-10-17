@@ -2784,6 +2784,88 @@
     },
     {
       "kind": "out-of-scope",
+      "reason": "Read from the arXiv abstract during the 2026-10-17 PM queue pass and judged outside this list.",
+      "detected_on": "2026-10-17",
+      "items": [
+        {
+          "arxiv_id": "2609.40244",
+          "title": "StreamRig: Exploiting Intra-Rig Geometry for Streaming Multi-Camera Odometry",
+          "note": "multi-camera odometry for mobile robots/vehicles; no humanoid"
+        },
+        {
+          "arxiv_id": "2610.19896",
+          "title": "Active Perception of Upper-Limb Functional Mobility through Human-Robot Handovers",
+          "note": "assistive handover perception; not humanoid learning"
+        },
+        {
+          "arxiv_id": "2609.03557",
+          "title": "Building Pretraining Data for World Models: An Unreal Engine-Based Pipeline for Action-Conditioned Video Generation",
+          "note": "video-generation data pipeline; no humanoid robot"
+        },
+        {
+          "arxiv_id": "2609.07430",
+          "title": "CALM: Configuration-Aware Human Intervention Boundaries During Robot Approach",
+          "note": "social HRI"
+        },
+        {
+          "arxiv_id": "2607.07390",
+          "title": "Communicative Efficiency of Single vs. Multi-Axis Robot Neck Motion",
+          "note": "social HRI"
+        },
+        {
+          "arxiv_id": "2607.02799",
+          "title": "Conversational Human Audio-visual Talking Dialogue Generation",
+          "note": "non-robot talking-head generation"
+        },
+        {
+          "arxiv_id": "2610.14231",
+          "title": "Defective, Amplified, Contested: Folk Conceptualizations of AI Slop",
+          "note": "not robotics"
+        },
+        {
+          "arxiv_id": "2609.23828",
+          "title": "From Biological Precursors to Artificial Cognition: Consciousness, Embodiment, and the MEM Architecture",
+          "note": "cognition essay; fits none of the twelve sections"
+        },
+        {
+          "arxiv_id": "2606.26507",
+          "title": "DanceDuo: Bridging Human Movement and AI Choreography",
+          "note": "pure human-motion/choreography; no robot"
+        },
+        {
+          "arxiv_id": "2610.14269",
+          "title": "RoboFake: Are Deepfake Detectors Ready for Humanoid Face Robots?",
+          "note": "deepfake detection; no control or learning of a humanoid"
+        },
+        {
+          "arxiv_id": "2608.14243",
+          "title": "Zero-Shot Skeleton-Based Action Anticipation",
+          "note": "human action recognition; no robot"
+        },
+        {
+          "arxiv_id": "2608.23279",
+          "title": "Spatiotemporally Decoupled Autoregressive Diffusion Model for Human Motion Generation",
+          "note": "pure human-motion synthesis; no robot"
+        },
+        {
+          "arxiv_id": "2608.20312",
+          "title": "Inter-X++: A Comprehensive Benchmark for Multimodal Human-Human Interaction Analysis",
+          "note": "human motion dataset; no robot"
+        },
+        {
+          "arxiv_id": "2607.07109",
+          "title": "Certifying Ghosts: How Cybersecurity AI Agents Break the EU Cyber Resilience Act",
+          "note": "cybersecurity policy"
+        },
+        {
+          "arxiv_id": "2610.04364",
+          "title": "A Bird's-Eye View of Iterative Reward Design",
+          "note": "generic reward design; no humanoid"
+        }
+      ]
+    },
+    {
+      "kind": "out-of-scope",
       "reason": "2026-10-17 AM run: abstracts read on arxiv.org/abs. 2610.06641 is a wheeled dual-arm cloth co-transport planner, 2610.19594 a wheeled whole-body mobile-manipulation teleop platform, 2603.02443 a legged-arm (quadruped) loco-manipulation controller; none is humanoid.",
       "detected_on": "2026-10-17",
       "items": [
@@ -4733,6 +4815,16 @@
         }
       ],
       "detected_on": "2026-10-17"
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "2026-10-17 PM run: discover.py reported 4 channel failures - arxiv for 2026-10 and 2026-09 was rate-limited (export.arxiv.org, backed off), and openalex for 2026-10 and 2026-09 returned HTTP 401. Coverage of those months is incomplete; they were left unmarked in the ledger for re-sweep. Also noted: the queue is dominated by low-quality OpenAlex items and the relevance score saturates near 102, so the top of the queue is a poor guide; only ~4 humanoid-relevant arXiv candidates were found among the top 100 read. The fetch tool cannot return abstracts verbatim, so abstracts were taken from discover.py's arXiv API text.",
+      "detected_on": "2026-10-17",
+      "items": [
+        {
+          "note": "re-sweep 2026-09 and 2026-10 on arxiv and openalex"
+        }
+      ]
     },
     {
       "kind": "discovery-coverage-gap",

@@ -264,6 +264,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2025.11](https://arxiv.org/abs/2511.20275), HAFO: A Force-Adaptive Control Framework for Humanoid Robots in Intense Interaction Environments
 - [arXiv 2025.11](https://arxiv.org/abs/2511.19236), SENTINEL: A Fully End-to-End Language-Action Model for Humanoid Whole Body Control
 - [arXiv 2025.11](https://arxiv.org/abs/2511.18509), SafeFall: Learning Protective Control for Humanoid Robots
+- [arXiv 2025.11](https://arxiv.org/abs/2511.17925) / CVPR 2026, Switch-JustDance: Benchmarking Whole-Body Motion Tracking Controllers Using a Commercial Console Game
 - [arXiv 2025.11](https://arxiv.org/abs/2511.17373) / ICRA 2026, Agility Meets Stability: Versatile Humanoid Control with Heterogeneous Data
 - [arXiv 2025.11](https://arxiv.org/abs/2511.15200), VIRAL: Visual Sim-to-Real at Scale for Humanoid Loco-Manipulation
 - [arXiv 2025.11](https://arxiv.org/abs/2511.14756) / ICRA 2026, HMC: Learning Heterogeneous Meta-Control for Contact-Rich Loco-Manipulation
@@ -564,6 +565,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.09](https://arxiv.org/abs/2609.21185), When to Waddle: A Comparative Study of Bipedal Torso-Stabilization on Low-Friction Surfaces
 - [arXiv 2026.09](https://arxiv.org/abs/2609.21107), Learning Scene-Aware Humanoid Locomotion through 3D Clutter from Immersive Human Demonstrations
 - [arXiv 2026.09](https://arxiv.org/abs/2609.20570), Walking on the Slope: Stable Bipedal Gaits with Genetic-Algorithm-Optimized Trajectories
+- [arXiv 2026.09](https://arxiv.org/abs/2609.19041), Loco-Loco-RL: Low-Cost Terrain Mapping for Humanoid Locomotion with Reinforcement Learning
 - [arXiv 2026.09](https://arxiv.org/abs/2609.18732), PASSAGE: Scaling Scene-Aligned Motion Learning for Perceptive Humanoid Traversal in Cluttered Environments
 - [arXiv 2026.09](https://arxiv.org/abs/2609.15631), Flow-Matched Motion Priors: Online Optimal-Transport Rewards for Imitation Learning
 - [arXiv 2026.09](https://arxiv.org/abs/2609.14432), EMoG: Emotion-Modulated Gait Generation for Expressive Humanoid Locomotion
@@ -683,6 +685,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2025.06](https://arxiv.org/abs/2506.12095) / RA-L 2025, DoublyAware: Dual Planning and Policy Awareness for Temporal Difference Learning in Humanoid Locomotion
 - [arXiv 2025.06](https://arxiv.org/abs/2506.08840), MoRE: Mixture of Residual Experts for Humanoid Lifelike Gaits Learning on Complex Terrains, [website](https://more-humanoid.github.io/)
 - [arXiv 2025.06](https://arxiv.org/abs/2506.08416), A Gait Driven RL Framework for Humanoid Robots
+- [arXiv 2025.06](https://arxiv.org/abs/2506.01141) / ICRA 2026, Standing Tall: Sim to Real Fall Classification and Lead Time Prediction for Bipedal Robots
 - [arXiv 2025.06](https://arxiv.org/abs/2506.00305) / Communications Engineering 2025, Learning Aerodynamics for the Control of Flying Humanoid Robots
 - [arXiv 2025.05](https://arxiv.org/abs/2505.22642), FastTD3: Simple, Fast, and Capable Reinforcement Learning for Humanoid Control, [website](https://younggyo.me/fast_td3/)
 - [arXiv 2025.05](https://arxiv.org/abs/2505.20619) / Humanoids 2025, Gait-Conditioned RL with Multi-Phase Curriculum for Humanoid Locomotion
@@ -789,13 +792,14 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.07](https://arxiv.org/abs/2607.11638), DA-Nav: Direction-Aware City-Scale Vision-Language Navigation
 - [arXiv 2026.06](https://arxiv.org/abs/2606.23249), LP-NavOA: Integrated Local Navigation and Obstacle Avoidance for Humanoid Robots under Limited Perception
 - [arXiv 2026.06](https://arxiv.org/abs/2606.22971), Humanoid-OmniOcc: Stereo-Based Full-View Occupancy Dataset for Embodied AI, [website](https://d-robotics-ai-lab.github.io/humanoid-omniocc)
-- [arXiv 2026.04](https://arxiv.org/abs/2604.00416), Learning Humanoid Navigation from Human Data, [website](https://egonav.weizhuowang.com)
+- [arXiv 2026.04](https://arxiv.org/abs/2604.00416) / RA-L 2026, Learning Humanoid Navigation from Human Data, [website](https://egonav.weizhuowang.com)
 - [arXiv 2026.03](https://arxiv.org/abs/2603.28691) / RA-L 2026, DRIVE-Nav: Directional Reasoning, Inspection, and Verification for Efficient Open-Vocabulary Navigation
 - [arXiv 2026.02](https://arxiv.org/abs/2602.04515), EgoActor: Grounding Task Planning into Spatial-aware Egocentric Actions for Humanoid Robots via Visual-Language Models
 - [arXiv 2026.01](https://arxiv.org/abs/2601.12790), FocusNav: Spatial Selective Attention with Waypoint Guidance for Humanoid Local Navigation
 - 🌟 [arXiv 2025.12](https://arxiv.org/abs/2506.01046) / RA-L 2025, STATE-NAV: Stability-Aware Traversability Estimation for Bipedal Navigation on Rough Terrain, [code](https://github.com/yzwfromk/STATE-NAV)
 - [arXiv 2025.11](https://arxiv.org/abs/2511.20351), Thinking in 360: Humanoid Visual Search in the Wild
 - [arXiv 2025.11](https://arxiv.org/abs/2511.14625), Gallant: Voxel Grid-based Humanoid Locomotion and Local-navigation across 3D Constrained Terrains
+- [arXiv 2025.10](https://arxiv.org/abs/2510.07725) / ICRA 2026, Probabilistically-Safe Bipedal Navigation over Uncertain Terrain via Conformal Prediction and Contraction Analysis
 - [arXiv 2025.09](https://arxiv.org/abs/2509.11388), Quantum deep reinforcement learning for humanoid robot navigation task
 - [arXiv 2025.08](https://arxiv.org/abs/2508.06779) / Humanoids 2025, Learning Social Navigation from Positive and Negative Demonstrations and Rule-Based Specifications
 - [arXiv 2025.08](https://arxiv.org/abs/2508.14466) / ICCV 2025, LookOut: Real-World Humanoid Egocentric Navigation
@@ -878,7 +882,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [Engineering Research Express 2026](https://doi.org/10.1088/2631-8695/ae76e7), Dynamic modeling and prototype design for underactuated takeoff of a humanoid robot
 - [Biomimetics 2026](https://doi.org/10.3390/biomimetics11060412), Comparative Analysis of High-Torque-Density Permanent Magnet Motors Having Similar Slot and Pole Numbers for Humanoid Robot Applications
 - [arXiv 2026.05](https://arxiv.org/abs/2605.26991) / Nature Machine Intelligence 2026, Towards Shared Embodied Intelligence in Humanoid Robots through Optimization Development and Testing of the Human Aware ergoCub Robot
-- [arXiv 2026.04](https://arxiv.org/abs/2604.08636), LEGO: Latent-space Exploration for Geometry-aware Optimization of Humanoid Kinematic Design
+- [arXiv 2026.04](https://arxiv.org/abs/2604.08636) / ICRA 2026, LEGO: Latent-space Exploration for Geometry-aware Optimization of Humanoid Kinematic Design
 - [arXiv 2026.02](https://arxiv.org/abs/2602.08518), Characteristics, Management, and Utilization of Muscles in Musculoskeletal Humanoids
 - [arXiv 2026.01](https://arxiv.org/abs/2601.18963), Fauna Sprout: A lightweight, approachable, developer-ready humanoid robot
 - [arXiv 2025.12](https://arxiv.org/abs/2512.24657), Antagonistic Bowden-Cable Actuation of a Lightweight Robotic Hand: Toward Dexterous Manipulation for Payload Constrained Humanoids

@@ -13,11 +13,11 @@
   "counts": {
     "raw": 631,
     "relevant": 156,
-    "merged": 1018,
-    "new": 950,
-    "similar_to_listed": 4,
-    "already_listed": 64,
-    "carried_over": 966
+    "merged": 1000,
+    "new": 943,
+    "similar_to_listed": 1,
+    "already_listed": 56,
+    "carried_over": 954
   },
   "per_channel_raw": {
     "crossref": 631
@@ -2181,8 +2181,8 @@
         "Wenhui Huang",
         "Huasong Min"
       ],
-      "abstract": null,
-      "abstract_source": null,
+      "abstract": "Motion retargeting for humanoid robots based on monocular videos faces significant practical deployment challenges due to perception noise, morphological gaps, and strict requirements for control continuity. Therefore, we propose an Adaptive Manifold Smoothing and Morphological Alignment (AMSMAR) method for motion retargeting of humanoid robots. By structurally converting visual sequences into executable instructions, this approach strictly adheres to the safety boundaries of whole-body control (WBC). The pipeline incorporates three key modules: 1) Robust SO(3) Manifold Smoothing (RSMS) architecture, which filters out high-frequency artifacts while preserving highly dynamic motion characteristics through topological unwrapping and adaptive fusion; 2) Morphological Alignment and Dynamic Constraints (MADC) mechanism, which uses dynamic constraints and the 1st percentile robust statistics to achieve robust ground anchoring, and incorporates an artificial repulsive potential field to build a joint limit defense system; 3) Adaptive Frequency and Minimum-Jerk Control (AFMC) algorithm, which ensures trajectories satisfy $C^{\\mathrm{2}}$ continuity to block physical impacts. Experimental results demonstrate that this research effectively bridges the dynamics consistency gap between visual perception and physical execution, significantly enhancing the motion stability and long-term hardware safety of humanoid robots under complex, highly dynamic tasks.",
+      "abstract_source": "https://doi.org/10.1109/ccris71163.2026.11721685",
       "arxiv_id": null,
       "doi": "10.1109/ccris71163.2026.11721685",
       "paper_url": "https://ieeexplore.ieee.org/document/11721685/",
@@ -2218,7 +2218,8 @@
         "s2"
       ],
       "urls": [
-        "https://ieeexplore.ieee.org/document/11721685/"
+        "https://ieeexplore.ieee.org/document/11721685/",
+        "https://doi.org/10.1109/ccris71163.2026.11721685"
       ],
       "carried_over_since": "2026-10-14",
       "dedupe": "new",
@@ -6638,53 +6639,6 @@
       "carried_over_since": "2026-09-03"
     },
     {
-      "title": "Not Forgotten: Implementation and Evaluation of a Personalized Episodic Memory for the Humanoid Robot Head Kim",
-      "authors": [
-        "Steve Aschenbrenner",
-        "Marcel Heisler",
-        "Thomas Sievers",
-        "Christian Becker–Asano"
-      ],
-      "abstract": null,
-      "abstract_source": null,
-      "arxiv_id": null,
-      "doi": "10.1109/ro-man72286.2026.11714800",
-      "paper_url": "https://ieeexplore.ieee.org/document/11714800/",
-      "venue": "2026 IEEE 35th International Conference on Robot and Human Interactive Communication (RO-MAN)",
-      "venue_hint": "2026 IEEE 35th International Conference on Robot and Human Interactive Communication (RO-MAN)",
-      "publication_status": "published",
-      "first_public_date": "2026-10",
-      "date_basis": "crossref-created",
-      "crossref_type": "proceedings-article",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 104,
-        "core": [
-          "humanoid",
-          "humanoid robot"
-        ],
-        "task": [],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "crossref"
-      ],
-      "urls": [
-        "https://ieeexplore.ieee.org/document/11714800/"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-17"
-    },
-    {
       "title": "O-RACES: Proactive AI-driven Scheduling in Open RAN for 6G-Networked Humanoid Robots",
       "authors": [
         "Niklas A. Wagner",
@@ -8448,53 +8402,6 @@
         "https://doi.org/10.1142/s0219843626400268"
       ],
       "carried_over_since": "2026-09-01",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-17"
-    },
-    {
-      "title": "VividFace: Real-Time and Realistic Facial Expression Shadowing for Humanoid Robots",
-      "authors": [
-        "Peizhen Li",
-        "Longbing Cao",
-        "Xiao-Ming Wu",
-        "Yang Zhang"
-      ],
-      "abstract": null,
-      "abstract_source": null,
-      "arxiv_id": null,
-      "doi": "10.1109/icra57385.2026.11696970",
-      "paper_url": "https://ieeexplore.ieee.org/document/11696970/",
-      "venue": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
-      "venue_hint": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
-      "publication_status": "published",
-      "first_public_date": "2026-10",
-      "date_basis": "crossref-created",
-      "crossref_type": "proceedings-article",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 104,
-        "core": [
-          "humanoid",
-          "humanoid robots"
-        ],
-        "task": [],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "crossref"
-      ],
-      "urls": [
-        "https://ieeexplore.ieee.org/document/11696970/"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-17"
@@ -11206,51 +11113,6 @@
       "seen_on": "2026-10-17"
     },
     {
-      "title": "A Case Study on the Acceptance of a Humanoid Robotic Head Employed in Three Public Spaces",
-      "authors": [
-        "Marcel Heisler",
-        "Luca Randecker",
-        "Christian Becker-Asano"
-      ],
-      "abstract": null,
-      "abstract_source": null,
-      "arxiv_id": null,
-      "doi": "10.1109/ro-man72286.2026.11714920",
-      "paper_url": "https://ieeexplore.ieee.org/document/11714920/",
-      "venue": "2026 IEEE 35th International Conference on Robot and Human Interactive Communication (RO-MAN)",
-      "venue_hint": "2026 IEEE 35th International Conference on Robot and Human Interactive Communication (RO-MAN)",
-      "publication_status": "published",
-      "first_public_date": "2026-10",
-      "date_basis": "crossref-created",
-      "crossref_type": "proceedings-article",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 102,
-        "core": [
-          "humanoid"
-        ],
-        "task": [],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "crossref"
-      ],
-      "urls": [
-        "https://ieeexplore.ieee.org/document/11714920/"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-17"
-    },
-    {
       "title": "A Constraint-Aware QP Mapping Layer for Humanoid Balance on Position-Controlled Platforms",
       "authors": [
         "Chouaib Fedsi",
@@ -11303,8 +11165,8 @@
         "Wenxi Yao",
         "Wuhua Li"
       ],
-      "abstract": null,
-      "abstract_source": null,
+      "abstract": "Humanoid robots performing dynamic motions require compact, high-current joint drives. This paper presents a 48-V Gallium Nitride (GaN) motor inverter designed for space-constrained robotic joints. A 10-layer PCB with high-frequency decoupling capacitors positioned adjacent to the GaN switches minimizes the high-frequency commutation-loop area, yielding an extracted PCB-only loop inductance of approximately 0.36 nH. Under natural convection at an ambient temperature of 22 °C and without an external heatsink, the bare-board prototype sustains an rms phase current of 40 A, while the measured PCB temperature stabilizes at 107 °C. Closed-loop joint experiments demonst-rate rapid motion reversals with bidirectional peak output torques of ±130 N·m. The results validate the proposed electrothermal design as a compact solution for high-power-density humanoid-ro-bot joint drives. The assembled drive measures 72 mm in diameter and 17 mm in height, corresponding to an estimated volumetric power density of approximately 37.7 kW/L based on the calculated 2.6 kW active-power capability.",
+      "abstract_source": "https://doi.org/10.1109/zpec70170.2026.11722919",
       "arxiv_id": null,
       "doi": "10.1109/zpec70170.2026.11722919",
       "paper_url": "https://ieeexplore.ieee.org/document/11722919/",
@@ -11336,7 +11198,8 @@
         "s2"
       ],
       "urls": [
-        "https://ieeexplore.ieee.org/document/11722919/"
+        "https://ieeexplore.ieee.org/document/11722919/",
+        "https://doi.org/10.1109/zpec70170.2026.11722919"
       ],
       "carried_over_since": "2026-10-15",
       "dedupe": "new",
@@ -11770,11 +11633,13 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
         "https://ieeexplore.ieee.org/document/11727864/"
       ],
+      "carried_over_since": "2026-10-17",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-17"
@@ -15816,60 +15681,6 @@
       "seen_on": "2026-10-17"
     },
     {
-      "title": "PACE: Physics Augmentation for Coordinated End-to-end Reinforcement Learning toward Versatile Humanoid Table Tennis",
-      "authors": [
-        "Muqun Hu",
-        "Wenxi Chen",
-        "Wenjing Li",
-        "Falak Mandali",
-        "Zijian He",
-        "Renhong Zhang",
-        "Praveen Krisna",
-        "Katherine Christian",
-        "Leo Benaharon",
-        "Dizhi Ma",
-        "Karthik Ramani",
-        "Yan Gu"
-      ],
-      "abstract": null,
-      "abstract_source": null,
-      "arxiv_id": null,
-      "doi": "10.1109/icra57385.2026.11696333",
-      "paper_url": "https://ieeexplore.ieee.org/document/11696333/",
-      "venue": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
-      "venue_hint": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
-      "publication_status": "published",
-      "first_public_date": "2026-10",
-      "date_basis": "crossref-created",
-      "crossref_type": "proceedings-article",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 102,
-        "core": [
-          "humanoid"
-        ],
-        "task": [],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "crossref"
-      ],
-      "urls": [
-        "https://ieeexplore.ieee.org/document/11696333/"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-17"
-    },
-    {
       "title": "PEBRE: An Open-Hardware Compute and Perception Add-On for the Pepper Robot",
       "authors": [
         "Malte Kuhlmann",
@@ -17301,11 +17112,13 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
         "https://ieeexplore.ieee.org/document/11725208/"
       ],
+      "carried_over_since": "2026-10-17",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-17"
@@ -21201,67 +21014,6 @@
       "seen_on": "2026-10-17"
     },
     {
-      "title": "Physics Residual Dynamics and Reduced Order Whole-Body Planning for Obstacle Aware Human Robot Cloth CoTransportation",
-      "authors": [
-        "Moein Forouhar",
-        "Kosar Behnia",
-        "Anirvan Dutta",
-        "Hamid Sadeghian",
-        "Ville Kyrki",
-        "Sami Haddadin",
-        "Gokhan Alcan",
-        "Eckehard Steinbach"
-      ],
-      "abstract": "Human--robot co-transportation of deformable objects requires predicting object deformation during motion, since obstacle clearance depends on both the grasp points and the unactuated interior. We present a hierarchical planning framework that combines a learned cloth model with a reduced-order whole-body model of a dual-arm mobile manipulator. A physics-residual conditional recurrent variational autoencoder (p-cRVAE) predicts the full cloth configuration from grasp-point observations by learning a residual correction to a computationally efficient linearized physics model, limiting error accumulation over 40-step planning horizon. The predicted cloth dynamics are embedded in a model predictive path integral (MPPI) planner using a reduced-order representation of a dual-arm mobile manipulator that preserves the non-holonomic base constraint and arm workspace limits. An MPC layer subsequently refines the sampled motion into smooth, executable references for whole-body control. The reduced-order formulation achieves tracking performance comparable to the full 17-DoF model while reducing computation time by approximately 80%. Across four co-transportation scenarios and two carrying speeds, the proposed framework maintains cloth-obstacle clearance where a corner-following baseline results in collisions, while whole-body refinement reduces final cloth deformation from 0.93\\,m to 0.28\\,m.",
-      "abstract_source": "https://arxiv.org/abs/2610.06641",
-      "arxiv_id": "2610.06641",
-      "doi": "10.48550/arxiv.2610.06641",
-      "paper_url": "https://arxiv.org/abs/2610.06641",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 86,
-        "core": [],
-        "task": [
-          "whole body control"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [],
-        "control": [
-          "model predictive path integral",
-          "mppi"
-        ],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": [
-          "dual arm"
-        ]
-      },
-      "sources": [
-        "arxiv",
-        "openalex"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.06641",
-        "https://doi.org/10.48550/arxiv.2610.06641"
-      ],
-      "carried_over_since": "2026-10-06",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-17"
-    },
-    {
       "title": "Robust Brachiation on a Life-Sized Dual-Arm Robot Using Waypoint-Guided Reinforcement Learning",
       "authors": [
         "Ayumu Iwata",
@@ -22141,115 +21893,6 @@
         "https://arxiv.org/abs/2608.28219"
       ],
       "carried_over_since": "2026-09-01",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-17"
-    },
-    {
-      "title": "RoboSpan: Learning Modular Coordination Policies for High-DoF Whole-Body Mobile Manipulation with Teleoperation",
-      "authors": [
-        "Keqiang Ren",
-        "Xuecheng Ye",
-        "Hanyu Liu",
-        "Zhihua Wang",
-        "Tao Jian",
-        "Yunsheng Ma",
-        "Jiayi Wen",
-        "Xinran Li",
-        "Zhigong Song"
-      ],
-      "abstract": "Whole-body mobile manipulation suffers from two fundamental challenges: inherent motion heterogeneity across locomotion, arm, and hand modules, and progressive error accumulation over long-horizon multi-stage tasks. Existing teleoperation platforms also lack integrated dexterous tactile sensing to support coordinated whole-body decision-making. This paper presents RoboSpan, a high-DoF whole-body teleoperation and demonstration platform, and the Hierarchical Modular Framework (HMF) for learning modular coordination policies. HMF functionally decouples the 29-DoF action space into fine hand manipulation, arm pose adjustment, and mobile-base spatial configuration branches, and introduces the Coordinated Modular Embodied Transformer (COMET) with inter-modular cross-attention to enable dynamic information exchange and action coordination. Vision-language model driven hierarchical task decomposition structurally suppresses temporal error propagation, while a full-palm 2D tactile representation encodes distributed contact signals for cross-module tactile empowerment. Experiments on a physical 29-DoF robot demonstrate that the proposed method achieves over 20\\% higher task success rate than mainstream baselines across a range of long-horizon whole-body tasks, markedly improving stability and robustness in contact-rich manipulation.",
-      "abstract_source": "https://arxiv.org/abs/2610.19594",
-      "arxiv_id": "2610.19594",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.19594",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 85,
-        "core": [],
-        "task": [
-          "whole body teleoperation"
-        ],
-        "body": [
-          "locomotion",
-          "whole body"
-        ],
-        "method": [
-          "teleoperation"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.19594"
-      ],
-      "carried_over_since": "2026-10-15",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-17"
-    },
-    {
-      "title": "Safe Whole-Body Loco-Manipulation via Combined Model and Learning-based Control",
-      "authors": [
-        "Alexander Schperberg",
-        "Yeping Wang",
-        "Stefano Di Cairano"
-      ],
-      "abstract": "Simultaneous locomotion and manipulation enables robots to interact with their environment beyond the constraints of a fixed base. However, coordinating legged locomotion with arm manipulation, while considering safety and compliance during contact interaction remains challenging. To this end, we propose a whole-body controller that combines a model-based admittance control for the manipulator arm with a Reinforcement Learning (RL) policy for legged locomotion. The admittance controller maps external wrenches—such as those applied by a human during physical interaction—into desired end-effector velocities, allowing for compliant behavior. The velocities are tracked jointly by the arm and leg controllers, enabling a unified 6-DoF force response. The model-based design permits accurate force control and safety guarantees via a Reference Governor (RG), while robustness is further improved by a Kalman filter enhanced with neural networks for reliable base velocity estimation. We validate our approach in both simulation and hardware using the Unitree Go2 quadruped robot with a 6-DoF arm and wrist-mounted 6-DoF Force/Torque sensor. Results demonstrate accurate tracking of interaction-driven velocities, compliant behavior, and safe, reliable performance in dynamic settings.",
-      "abstract_source": "https://arxiv.org/abs/2603.02443",
-      "arxiv_id": "2603.02443",
-      "doi": "10.1109/icra57385.2026.11697564",
-      "paper_url": "https://ieeexplore.ieee.org/document/11697564/",
-      "venue": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
-      "venue_hint": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
-      "publication_status": "published",
-      "first_public_date": "2026-10",
-      "date_basis": "crossref-created",
-      "crossref_type": "proceedings-article",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 85,
-        "core": [],
-        "task": [
-          "loco manipulation",
-          "whole body loco"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "crossref",
-        "s2"
-      ],
-      "urls": [
-        "https://ieeexplore.ieee.org/document/11697564/",
-        "https://arxiv.org/abs/2603.02443"
-      ],
-      "carried_over_since": "2026-10-08",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-17"
@@ -48524,156 +48167,6 @@
       "carried_over_since": "2026-09-18",
       "dedupe": "similar",
       "dedupe_note": "looks like the listed 'Bionic Human-Motion Style Transfer for Physically Executable Whole-Body Control of Humanoid Robots'",
-      "seen_on": "2026-10-17"
-    },
-    {
-      "title": "KungfuBot2: Learning Versatile Motion Skills for Humanoid Whole-Body Control",
-      "authors": [
-        "Jinrui Han",
-        "Weiji Xie",
-        "Jiakun Zheng",
-        "Jiyuan Shi",
-        "Weinan Zhang",
-        "Ting Xiao",
-        "Chenjia Bai"
-      ],
-      "abstract": null,
-      "abstract_source": null,
-      "arxiv_id": null,
-      "doi": "10.1109/icra57385.2026.11696508",
-      "paper_url": "https://ieeexplore.ieee.org/document/11696508/",
-      "venue": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
-      "venue_hint": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
-      "publication_status": "published",
-      "first_public_date": "2026-10",
-      "date_basis": "crossref-created",
-      "crossref_type": "proceedings-article",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 105,
-        "core": [
-          "humanoid"
-        ],
-        "task": [
-          "whole body control"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "crossref"
-      ],
-      "urls": [
-        "https://ieeexplore.ieee.org/document/11696508/"
-      ],
-      "dedupe": "similar",
-      "dedupe_note": "looks like the listed 'KungfuBot 2: Learning Versatile Motion Skills for Humanoid Whole-Body Control'",
-      "seen_on": "2026-10-17"
-    },
-    {
-      "title": "Control of Humanoid Robots with Parallel Mechanisms using Differential Actuation Models",
-      "authors": [
-        "Victor Lutz",
-        "Ludovic De Matteïs",
-        "Virgile Batto",
-        "Nicolas Mansard"
-      ],
-      "abstract": null,
-      "abstract_source": null,
-      "arxiv_id": null,
-      "doi": "10.1109/icra57385.2026.11696573",
-      "paper_url": "https://ieeexplore.ieee.org/document/11696573/",
-      "venue": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
-      "venue_hint": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
-      "publication_status": "published",
-      "first_public_date": "2026-10",
-      "date_basis": "crossref-created",
-      "crossref_type": "proceedings-article",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 104,
-        "core": [
-          "humanoid",
-          "humanoid robots"
-        ],
-        "task": [],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "crossref"
-      ],
-      "urls": [
-        "https://ieeexplore.ieee.org/document/11696573/"
-      ],
-      "dedupe": "similar",
-      "dedupe_note": "looks like the listed 'Control of Humanoid Robots with Parallel Mechanisms using Kinematic Actuation Models'",
-      "seen_on": "2026-10-17"
-    },
-    {
-      "title": "COLA: Learning Human-Humanoid Coordination for Collaborative Object Carrying",
-      "authors": [
-        "Yushi Du",
-        "Yixuan Li",
-        "Baoxiong Jia",
-        "Yutang Lin",
-        "Pei Zhou",
-        "Wei Liang",
-        "Yanchao Yang",
-        "Siyuan Huang"
-      ],
-      "abstract": null,
-      "abstract_source": null,
-      "arxiv_id": null,
-      "doi": "10.1109/icra57385.2026.11696713",
-      "paper_url": "https://ieeexplore.ieee.org/document/11696713/",
-      "venue": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
-      "venue_hint": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
-      "publication_status": "published",
-      "first_public_date": "2026-10",
-      "date_basis": "crossref-created",
-      "crossref_type": "proceedings-article",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 102,
-        "core": [
-          "humanoid"
-        ],
-        "task": [],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "crossref"
-      ],
-      "urls": [
-        "https://ieeexplore.ieee.org/document/11696713/"
-      ],
-      "dedupe": "similar",
-      "dedupe_note": "looks like the listed 'Learning Human-Humanoid Coordination for Collaborative Object Carrying'",
       "seen_on": "2026-10-17"
     }
   ]
