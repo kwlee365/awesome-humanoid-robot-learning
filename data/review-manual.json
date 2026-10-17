@@ -2794,6 +2794,55 @@
           "month": "2026-10"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "2026-10-17 AM run: abstracts read on arxiv.org/abs. 2610.06641 is a wheeled dual-arm cloth co-transport planner, 2610.19594 a wheeled whole-body mobile-manipulation teleop platform, 2603.02443 a legged-arm (quadruped) loco-manipulation controller; none is humanoid.",
+      "detected_on": "2026-10-17",
+      "items": [
+        {
+          "arxiv_id": "2610.06641"
+        },
+        {
+          "arxiv_id": "2610.19594"
+        },
+        {
+          "arxiv_id": "2603.02443"
+        }
+      ]
+    },
+    {
+      "kind": "candidate-held-for-review",
+      "reason": "2026-10-17 AM run: 2609.19041 (Loco-Loco-RL, humanoid locomotion, NAECON 2026) is in scope, but its arXiv abs page shows v1 on 2026-07-21 while the id says 2609; the id/date mismatch cannot be resolved from the page, so it was not added. Needs a human check of the first-submission month.",
+      "detected_on": "2026-10-17",
+      "items": [
+        {
+          "arxiv_id": "2609.19041"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "2026-10-17 AM run: discover.py again got arXiv rate-limited (2026-09, 2026-10) and OpenAlex HTTP 401 (2026-09, 2026-10); Crossref ran. Coverage incomplete; Semantic Scholar twin resolution also hit HTTP 429. Fewer than 15 candidates were cleared: the top of the queue is mostly OpenAlex/Zenodo-style records with no arXiv page, and many arXiv-id candidates have ids older than their stated month (published versions of 2025 preprints), which need venue verification.",
+      "detected_on": "2026-10-17",
+      "items": [
+        {
+          "channel": "arxiv",
+          "month": "2026-09"
+        },
+        {
+          "channel": "arxiv",
+          "month": "2026-10"
+        },
+        {
+          "channel": "openalex",
+          "month": "2026-09"
+        },
+        {
+          "channel": "openalex",
+          "month": "2026-10"
+        }
+      ]
     }
   ]
 }
