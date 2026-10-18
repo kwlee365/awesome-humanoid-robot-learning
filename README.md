@@ -26,6 +26,9 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.22184), Whole-Body Dexterity
+- [arXiv 2026.10](https://arxiv.org/abs/2610.22119), Compliant GMT: Making General Motion Tracking Compliant via Residual Reference Adaptation, [website](https://venki1899.github.io/c-gmt/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.21152), KODA: Kinematics--Observation Data Alignment for Humanoid Learning from Human Egocentric Demonstration
 - [arXiv 2026.10](https://arxiv.org/abs/2610.20579), PingpongDuo: Agile Humanoid Table Tennis Doubles with Safe Team Coordination
 - [arXiv 2026.10](https://arxiv.org/abs/2610.20552), KinoGen: Customizable Humanoid Loco-Manipulation References via Kinematically Grounded Video Generation, [website](https://kinogen-humanoid.github.io/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.19393), Beyond Kinematic Tracking: Preserving Expressive Characteristics in Humanoid Whole-Body Control
@@ -488,6 +491,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [1999](https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(99)01327-3), Is imitation learning the route to humanoid robots?
 
 ## Teleoperation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.22176), Inertially Significant Humanoid Teleoperation via Whole Body Model Predictive Control and Online Parameter Estimation
 - 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.16855), Human-Like Redundancy Resolution for Real-Time Bimanual Humanoid Teleoperation, [website](https://human-like-redundancy.github.io/) / [code](https://github.com/IAIE-PhysicalAI/Bimanual-Teleoperation)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.07891), Beyond Retargeting: Low-Latency and Robust Humanoid Whole-Body Teleoperation with Learned Atomic Motion Primitives
 - [arXiv 2026.09](https://arxiv.org/abs/2610.00718), Toward Humanoid Robots in Construction: A Teleoperation Feasibility Study
@@ -965,6 +969,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Physics-Based Character Animation
 - [SIGGRAPH 2010](https://dl.acm.org/doi/abs/10.1145/1833349.1778770?casa_token=j3esx-hx0GAAAAAA:OvRU6YYrNo2ZP9IyXGVDryWJqHmvU-oVhnzog8RFKKySQJjganzaAmHff6CQ4a0qzfJZu-J6Buf4Ug), Spatial relationship preserving character motion adaptation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.21515), TRACE: Typed Reference-Aware Conversational Editing for Humanoid Motion Diffusion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.18147), Walk Like This: Stylized Locomotion for Physics-Based Characters through Example-Driven Diffusion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.10322), From Digital Human Interactions to Physics-Based Humanoid Skills: Physics-Grounded Post-Training of Interaction Generators
 - [arXiv 2026.10](https://arxiv.org/abs/2610.09291), Co{}^{2}Skill: Whole-Body Control via Skill Composition for Long-Horizon Human-Environment Interaction

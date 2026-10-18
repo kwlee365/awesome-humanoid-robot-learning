@@ -2935,6 +2935,93 @@
           "note": "re-sweep 2026-09 and 2026-10 on arxiv and openalex"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "2026-10-18 AM run: abstracts read (taken from discover.py's arXiv API text) and judged outside this list.",
+      "detected_on": "2026-10-18",
+      "items": [
+        {
+          "arxiv_id": "2610.20936",
+          "title": "LEAP",
+          "note": "generic contact-constrained trajectory-optimization solver; humanoid only one benchmark platform"
+        },
+        {
+          "arxiv_id": "2607.12181",
+          "title": "Analysis of Mutual and Referential Human and Robot Gazes",
+          "note": "social HRI gaze study, NAO"
+        },
+        {
+          "arxiv_id": "2609.27381",
+          "title": "CoPRE",
+          "note": "contact detection for low-cost robot arms"
+        },
+        {
+          "arxiv_id": "2610.07081",
+          "title": "Demo: VLM-Guided Online Calibration of an EM Digital Twin",
+          "note": "EM digital twin calibration; G1 only a mobile carrier"
+        },
+        {
+          "arxiv_id": "2609.38873",
+          "title": "DODGER",
+          "note": "generic CBF-RL navigation among dynamic obstacles; not humanoid-specific"
+        },
+        {
+          "arxiv_id": "2610.04494",
+          "title": "DreamTest",
+          "note": "testing of DRL agents; not humanoid"
+        },
+        {
+          "arxiv_id": "2606.15133",
+          "title": "DragMesh-2",
+          "note": "dexterous hand-object interaction; hand only"
+        },
+        {
+          "arxiv_id": "2609.32471",
+          "title": "GlowTact",
+          "note": "tactile sensor hardware, not humanoid learning"
+        },
+        {
+          "arxiv_id": "2610.22342",
+          "title": "Spark-0",
+          "note": "tabletop tactile dexterous manipulation VLA, not humanoid-specific"
+        },
+        {
+          "arxiv_id": "2607.11603",
+          "title": "WarpMPC",
+          "note": "generic GPU MPC solver; not a sampling scheme or humanoid method"
+        },
+        {
+          "arxiv_id": "2610.21140",
+          "title": "Manifold Generative Annealing",
+          "note": "generic contact-rich impedance control; not humanoid"
+        },
+        {
+          "arxiv_id": "2606.12112",
+          "title": "PEBRE",
+          "note": "Pepper social-robot hardware add-on"
+        },
+        {
+          "arxiv_id": "2607.16318",
+          "title": "The World According to a Social Robot",
+          "note": "social-robot VLM dialogue"
+        },
+        {
+          "arxiv_id": "2606.23339",
+          "title": "When Robots Rate Their Own Interactions",
+          "note": "HRI evaluation methodology"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "2026-10-18 run: openalex returned HTTP 401 for 2026-10 and 2026-09; those windows stay unmarked for that channel. arXiv and Crossref swept fully (arXiv 2026-09 window split because >2000 results). Backfill paused (943 queued). Not manually searched. Queue top is dominated by non-arXiv OpenAlex/Zenodo items and saturated scores.",
+      "detected_on": "2026-10-18",
+      "items": [
+        {
+          "note": "re-sweep openalex 2026-09 and 2026-10"
+        }
+      ]
     }
   ]
 }
