@@ -3022,6 +3022,103 @@
           "note": "re-sweep openalex 2026-09 and 2026-10"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read from the arXiv abstract during the 2026-10-18 AM queue pass and judged outside this list.",
+      "detected_on": "2026-10-18",
+      "items": [
+        {
+          "arxiv_id": "2610.19615",
+          "title": "PolyMorph: Learning Locomotion Policy for Cross-Embodiment Adaptation",
+          "note": "legged cross-embodiment (bi/tri/quadruped); real-robot only on quadrupeds; not humanoid"
+        },
+        {
+          "arxiv_id": "2610.12609",
+          "title": "Graph-Based Heuristics for Minimum Constraint Removal in Cluttered Robot Motion Planning",
+          "note": "classical motion-planning heuristic; humanoid only mentioned as motivation"
+        },
+        {
+          "arxiv_id": "2606.18625",
+          "title": "SRL: Combining SLIP Model and Reinforcement Learning for Agile Robotic Jumping",
+          "note": "jumping for generic bipedal/quadrupedal sims; no humanoid focus"
+        },
+        {
+          "arxiv_id": "2508.17481",
+          "title": "SoK: Cybersecurity Assessment of Humanoid Ecosystem",
+          "note": "cybersecurity survey; not learning/control"
+        },
+        {
+          "arxiv_id": "2608.07002",
+          "title": "A Haptic Robot Finger Designed for Guqin Instrument Playing",
+          "note": "instrument-playing finger hardware"
+        },
+        {
+          "arxiv_id": "2609.24133",
+          "title": "Phrase-Level Robotic Guqin Performance: Bimanual Motion Planning and Audio-Tactile Interaction Monitoring",
+          "note": "instrument playing; no humanoid learning"
+        },
+        {
+          "arxiv_id": "2609.21504",
+          "title": "DPed-VLN: A Benchmark for Socially Compliant Vision-and-Language Navigation in Dynamic Pedestrian Environments",
+          "note": "VLN benchmark; humanoid incidental"
+        },
+        {
+          "arxiv_id": "2606.29820",
+          "title": "Dual-Flow Reinforcement Learning with State-Aware Exploration",
+          "note": "generic RL algorithm"
+        },
+        {
+          "arxiv_id": "2606.08107",
+          "title": "Ego-Pi: VLA Fine-Tuning for Ego-Centric Human and Robot Data",
+          "note": "tabletop VLA"
+        },
+        {
+          "arxiv_id": "2608.00613",
+          "title": "From Failures to Supervision: DynamicEnvPlan for Robust Long-Horizon Embodied Planning",
+          "note": "embodied task planning; no humanoid"
+        },
+        {
+          "arxiv_id": "2610.07028",
+          "title": "Identifiable World Models from Pretrained Diffusion Representations",
+          "note": "world-model theory"
+        },
+        {
+          "arxiv_id": "2610.09369",
+          "title": "Immiscible Diffusion Policy: Preserving Multimodal Robot Actions through Label-Free Noise Assignment",
+          "note": "generic diffusion policy"
+        },
+        {
+          "arxiv_id": "2610.20241",
+          "title": "Learning Navigation from Multimodal Demonstrations with Geometric Candidate Modes",
+          "note": "generic navigation imitation"
+        },
+        {
+          "arxiv_id": "2610.20009",
+          "title": "Outperforming 1000 Euclidean Layers With Hyperbolic Goal-Conditioned RL",
+          "note": "generic goal-conditioned RL"
+        },
+        {
+          "arxiv_id": "2606.21086",
+          "title": "ReFPO: Reflow Regularization for Flow Matching Policy Gradients",
+          "note": "generic RL algorithm"
+        },
+        {
+          "arxiv_id": "2606.15260",
+          "title": "Trust-Region Diffusion Policies for Massively Parallel On-Policy RL",
+          "note": "generic RL algorithm"
+        },
+        {
+          "arxiv_id": "2606.24039",
+          "title": "TurboMPC: Fast, Scalable, and Differentiable Model Predictive Control on the GPU",
+          "note": "generic GPU MPC solver; humanoid incidental"
+        },
+        {
+          "arxiv_id": "2609.31720",
+          "title": "LatentReRig: An SDF-Based VAE with Dual Decoders for Latent-Space Deformation Conditioning",
+          "note": "character rigging/geometry; no robot"
+        }
+      ]
     }
   ]
 }
