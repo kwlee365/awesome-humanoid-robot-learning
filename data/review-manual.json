@@ -3119,6 +3119,124 @@
           "note": "character rigging/geometry; no robot"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "2026-10-19 AM run: abstracts read (arXiv API text from discover.py) and judged outside this list.",
+      "detected_on": "2026-10-19",
+      "items": [
+        {
+          "arxiv_id": "2610.23849",
+          "title": "Blind Precise Assembly: Proprioceptive Sim-to-Real Peg-in-Hole for Diverse Parts",
+          "note": "arm peg-in-hole assembly; humanoid only motivation"
+        },
+        {
+          "arxiv_id": "2610.22496",
+          "title": "Scaling Online Exploration for Robot Agents",
+          "note": "generic coding-agent robot exploration framework"
+        },
+        {
+          "arxiv_id": "2610.22471",
+          "title": "Has GPT-6-Astra Achieved Embodied Intelligence?",
+          "note": "GPT-6-Astra general embodied evaluation report; not humanoid-specific"
+        },
+        {
+          "arxiv_id": "2609.25696",
+          "title": "The Cartesian Hand: In-Hand Manipulation with All-Linear Fingers",
+          "note": "7-DoF end-effector hardware; not humanoid"
+        },
+        {
+          "arxiv_id": "2610.16969",
+          "title": "UniLAP: A Unified Latent Action Policy for Cross-Embodiment Manipulation",
+          "note": "cross-embodiment tabletop latent-action policy"
+        },
+        {
+          "arxiv_id": "2609.13679",
+          "title": "How to Better Train VLAs: Lessons Learned From the REAL-I Challenge at ICRA 2026",
+          "note": "VLA challenge report on a dual-arm platform; not humanoid-specific learning"
+        },
+        {
+          "arxiv_id": "2608.00600",
+          "title": "Grasp Execution Without a Planner: Configuration-Space Grasp Distance Fields wit",
+          "note": "grasp distance fields for arm grasping"
+        },
+        {
+          "arxiv_id": "2606.26829",
+          "title": "Identifying the Unknown: Prompt-Free Open Vocabulary Anomaly Recognition for Rob",
+          "note": "open-vocabulary anomaly recognition on tabletop NICOL"
+        },
+        {
+          "arxiv_id": "2610.10528",
+          "title": "Long-WAM: Scaling the Context of World-Action Models",
+          "note": "generic world-action model context scaling"
+        },
+        {
+          "arxiv_id": "2609.18669",
+          "title": "M$^3$P-R1: Reinforcement Learning for Large Language Model Guided Multi-Modal Mo",
+          "note": "LLM-guided motion planning, no humanoid"
+        },
+        {
+          "arxiv_id": "2610.19262",
+          "title": "MIND: Instruction-Conditioned Incremental Grounding for Robots",
+          "note": "instruction grounding, no humanoid"
+        },
+        {
+          "arxiv_id": "2608.01826",
+          "title": "Multi-View Unified Camera Fields: Geometry-Shaped Action-Facing Representations ",
+          "note": "multi-camera VLA representation; humanoid only an add-on experiment"
+        },
+        {
+          "arxiv_id": "2608.13923",
+          "title": "OpenBelief-Nav: Evidence-Preserving Object Memory for Open-Vocabulary Language-G",
+          "note": "object-memory language navigation, no humanoid"
+        },
+        {
+          "arxiv_id": "2609.33765",
+          "title": "Principal Steering Subspaces for Online Adaptation of Frozen Generative Robot Po",
+          "note": "generic frozen-policy steering; humanoid only one deployment"
+        },
+        {
+          "arxiv_id": "2608.06827",
+          "title": "R2S-EGO: Dual-Proxy Refinement for Sparse-Capture Real-to-Sim",
+          "note": "real-to-sim reconstruction, no humanoid"
+        },
+        {
+          "arxiv_id": "2609.10895",
+          "title": "ReactHuman: A Physics-Grounded Benchmark for Human-Like Reactive Decision-Making",
+          "note": "MLLM reactive-decision benchmark, not humanoid control learning"
+        },
+        {
+          "arxiv_id": "2609.23910",
+          "title": "ReVeal: A Reconstruction-Aware Real-to-Sim Framework for VLA Policy Evaluation",
+          "note": "real-to-sim VLA evaluation; generic reconstruction pipeline"
+        },
+        {
+          "arxiv_id": "2609.23432",
+          "title": "RopeFormer: Cross-Trial Adaptation from Interaction History for Dynamic Rope Man",
+          "note": "rope manipulation, no humanoid"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "2026-10-19 run: openalex returned HTTP 401 for 2026-10 and 2026-09 again; arXiv and Crossref swept (arXiv 2026-09 window split, >2000 results). Semantic Scholar twin resolution hit HTTP 429, 118 candidates stay venue-only. Backfill paused (919 queued). Not manually searched.",
+      "detected_on": "2026-10-19",
+      "items": [
+        {
+          "note": "re-sweep openalex 2026-09 and 2026-10"
+        }
+      ]
+    },
+    {
+      "kind": "candidate-held-for-review",
+      "reason": "2026-10-19: CoEvolve (2610.23288) is multi-robot code-policy coordination titled for humanoids; abstract does not clearly show humanoid learning. Left in queue.",
+      "detected_on": "2026-10-19",
+      "items": [
+        {
+          "arxiv_id": "2610.23288",
+          "title": "CoEvolve"
+        }
+      ]
     }
   ]
 }
