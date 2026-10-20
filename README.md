@@ -26,6 +26,13 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.26855), Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience, [website](https://ropedia.github.io/ropedia-w0/) / [code](https://github.com/Ropedia/ropedia-w0)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.26584), HAF-VLA: Hierarchical Action Flow Framework for Humanoid Vision-Language-Action Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.26043), OmniInteract: Towards Unified Whole-Body Interaction Control for Dual Humanoids, [website](https://calvinyhli.github.io/omniinteract.github.io/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.25711), SWAP: Test-Time Steerable Humanoid Whole-Body Collision Avoidance, [website](https://iscoyizj.github.io/SWAP-steerable-humanoid-oa-website/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.25628), Humanoid SRL: Augmenting Humanoids with Supernumerary Limbs for Coordinated Loco-Manipulation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.24847), DiPLO: Self-distilled Diffusion Planning for Loco-manipulation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.24675), Action-Aligned Latent Planning for Versatile Humanoid Loco-Manipulation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.23127), BeJEPA: A Goal-Conditioned Humanoid Behavior World Model via Unsupervised RL, [website](https://ylyem9x.github.io/BeJEPA-project)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.22184), Whole-Body Dexterity
 - [arXiv 2026.10](https://arxiv.org/abs/2610.22119), Compliant GMT: Making General Motion Tracking Compliant via Residual Reference Adaptation, [website](https://venki1899.github.io/c-gmt/)
@@ -68,6 +75,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.10](https://arxiv.org/abs/2610.03388), KungfuAthleteBot: learning high-dynamic humanoid motion from video with unified robust recovery
 - [arXiv 2026.10](https://arxiv.org/abs/2610.02196), InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation, [website](https://sirui-xu.github.io/InterEvolve)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.01102), MASkillBlender: Decentralized Whole-Body Coordination for Multi-Humanoid Loco-Manipulation via Skill Blending
+- [arXiv 2026.09](https://arxiv.org/abs/2610.23894), Language-Forcing: Advancing Humanoid Loco-Manipulation via Semantic Alignment of Whole-Body World Action Models
+- [arXiv 2026.09](https://arxiv.org/abs/2610.23872), DUET: Decoupled Upper- and Lower-Body Execution for Task-Agnostic Humanoid Loco-Manipulation
 - [arXiv 2026.09](https://arxiv.org/abs/2610.00823), Reactive Humanoid Multi-Contact Using Learned Stability Models
 - [arXiv 2026.09](https://arxiv.org/abs/2610.00438), Towards a General Humanoid Loco-Manipulation Model via Egocentric Whole-Body Human Data Pretraining
 - 🌟 [arXiv 2026.09](https://arxiv.org/abs/2610.00198), HumanoidTTT: Test-Time Capability Reuse for Efficient Humanoid Control, [website](https://aigeeksgroup.github.io/HumanoidTTT) / [code](https://github.com/AIGeeksGroup/HumanoidTTT)
@@ -393,6 +402,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.08](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/), VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters, [website](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/)
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.26170), Data-Efficient Learning from Demonstration for Humanoid Robots via Feature-Level Perception and Prompt-Based Object Detection
 - [arXiv 2026.10](https://arxiv.org/abs/2610.12026), Humanoid World Action Model With Joint State--Action Generation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.08119), AutodidactWAM: Cross-Modal Self-Distillation from Generated Video to Robot Actions
 - [arXiv 2026.10](https://arxiv.org/abs/2610.07511), MobileVISTA: Generative Data Augmentation for Pose Generalization in Mobile Manipulation, [website](https://mobilevista.github.io)
@@ -556,6 +566,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.10](https://arxiv.org/abs/2610.08789), QF3: Fast Flow RL with Filtered Q-Gradients, [website](https://qf3-rl.github.io/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.05855), Hierarchical Reinforcement Learning for Collision-Free Locomotion of an Underactuated Biped
 - [arXiv 2026.10](https://arxiv.org/abs/2610.03196), Beyond Reward Hacking: Proxy Divergence Across Four Layers of a Staged Humanoid Learning Pipeline
+- [arXiv 2026.09](https://arxiv.org/abs/2610.23879), Adaptive Rejection of Unknown Hybrid Sinusoidal Disturbances with Application to Humanoid Walking under Unknown Ground Motion
 - [arXiv 2026.09](https://arxiv.org/abs/2609.38852), Locomotion-Grounded Humanoid Soccer: Task-Gated Reinforcement Learning of a Multi-Directional Kicking Library
 - [arXiv 2026.09](https://arxiv.org/abs/2609.35935), Passive-Dynamic-Walking-Inspired Dynamics Guidance for Energy-Efficient Humanoid Locomotion
 - [arXiv 2026.09](https://arxiv.org/abs/2609.33174), Multi-Terrain Mastery: A Comprehensive Controller for Bipedal Locomotion
@@ -820,6 +831,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - arXiv 2025.07, LOVON: Legged Open-Vocabulary Object Navigator, [website](https://daojiepeng.github.io/LOVON/)
 
 ## State Estimation
+- 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.25288), Vision as Proprioception: Estimating Humanoid Robot Pose from Video, [code](https://github.com/eth-siplab/HumanoidPose)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.25561), Formal verification of tilt estimation using the Rocq prover
 - [arXiv 2026.09](https://arxiv.org/abs/2609.23610), PRIMO: Prior-Informed Odometry from Human-Motion Tracking for Humanoid Robots
 - [arXiv 2026.09](https://arxiv.org/abs/2609.19582), OmniCalib: Target-Free, Task-Structured Self-Calibration for Humanoid Robots

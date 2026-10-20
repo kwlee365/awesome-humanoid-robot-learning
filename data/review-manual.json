@@ -3237,6 +3237,38 @@
           "title": "CoEvolve"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "2026-10-20 AM run: abstracts read (arXiv API text) and judged outside this list.",
+      "detected_on": "2026-10-20",
+      "items": [
+        {
+          "arxiv_id": "2610.24312",
+          "title": "Beyond Human-Derived Motion: Exploring Robot-Specific Execution for Construction Humanoids",
+          "note": "construction-task motion comparison; no learning method"
+        },
+        {
+          "arxiv_id": "2610.26414",
+          "title": "RoboMMT: Learning Stable Tracking of Modulated Expressive and Interactive Robot Motion",
+          "note": "real-robot validation on a quadruped only"
+        },
+        {
+          "arxiv_id": "2610.25701",
+          "title": "Validation of Human Motor Development Scales with Humanoid Robots",
+          "note": "developmental-scale validation; not humanoid control learning"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "2026-10-20 AM: OpenAlex returned HTTP 401 for 2026-10 and 2026-09, and Semantic Scholar arXiv-twin lookup got HTTP 429 (122 candidates venue-only). OpenAlex coverage for those months is incomplete and left unmarked in the ledger for re-sweep.",
+      "detected_on": "2026-10-20",
+      "items": [
+        {
+          "title": "openalex 2026-10, 2026-09"
+        }
+      ]
     }
   ]
 }
