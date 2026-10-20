@@ -3238,6 +3238,17 @@
       ]
     },
     {
+      "kind": "borderline-scope",
+      "reason": "2026-10-20: read abs page; VLM-agent co-action benchmark (mostly multiple-choice QA) with a physical humanoid demo only; no code released. Held, not added.",
+      "detected_on": "2026-10-20",
+      "items": [
+        {
+          "title": "SocialCoAct: Enabling and Benchmarking Egocentric Social Co-Action for VLM-Based Humanoid Robots",
+          "arxiv_id": "2610.24559"
+        }
+      ]
+    },
+    {
       "kind": "cross-section-listing",
       "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
       "items": [
@@ -5189,6 +5200,16 @@
     {
       "kind": "discovery-coverage-gap",
       "reason": "2026-10-20 AM: OpenAlex returned HTTP 401 for 2026-10 and 2026-09, and Semantic Scholar arXiv-twin lookup got HTTP 429 (122 candidates venue-only). OpenAlex coverage for those months is incomplete and left unmarked in the ledger for re-sweep.",
+      "detected_on": "2026-10-20",
+      "items": [
+        {
+          "title": "openalex 2026-10, 2026-09"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "2026-10-20 PM: OpenAlex returned HTTP 401 again for 2026-10 and 2026-09; Semantic Scholar returned HTTP 429 during --refresh (84 preprints not checked for a venue). Coverage for those channels is incomplete.",
       "detected_on": "2026-10-20",
       "items": [
         {

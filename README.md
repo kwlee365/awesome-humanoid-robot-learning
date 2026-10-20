@@ -33,6 +33,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.10](https://arxiv.org/abs/2610.25628), Humanoid SRL: Augmenting Humanoids with Supernumerary Limbs for Coordinated Loco-Manipulation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.24847), DiPLO: Self-distilled Diffusion Planning for Loco-manipulation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.24675), Action-Aligned Latent Planning for Versatile Humanoid Loco-Manipulation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.23288), CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots
 - [arXiv 2026.10](https://arxiv.org/abs/2610.23127), BeJEPA: A Goal-Conditioned Humanoid Behavior World Model via Unsupervised RL, [website](https://ylyem9x.github.io/BeJEPA-project)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.22184), Whole-Body Dexterity
 - [arXiv 2026.10](https://arxiv.org/abs/2610.22119), Compliant GMT: Making General Motion Tracking Compliant via Residual Reference Adaptation, [website](https://venki1899.github.io/c-gmt/)
@@ -403,6 +404,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.26170), Data-Efficient Learning from Demonstration for Humanoid Robots via Feature-Level Perception and Prompt-Based Object Detection
+- [arXiv 2026.10](https://arxiv.org/abs/2610.26169), Compositional Humanoid Manipulation through Isomorphic Teleoperation and Independent Skill Routing
 - [arXiv 2026.10](https://arxiv.org/abs/2610.12026), Humanoid World Action Model With Joint State--Action Generation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.08119), AutodidactWAM: Cross-Modal Self-Distillation from Generated Video to Robot Actions
 - [arXiv 2026.10](https://arxiv.org/abs/2610.07511), MobileVISTA: Generative Data Augmentation for Pose Generalization in Mobile Manipulation, [website](https://mobilevista.github.io)
@@ -502,6 +504,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [1999](https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(99)01327-3), Is imitation learning the route to humanoid robots?
 
 ## Teleoperation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.24257), Evaluating Lightweight Contact Feedback in Dual-Operator Collaborative Humanoid Teleoperation, [website](https://xrt-teleop.github.io)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.22176), Inertially Significant Humanoid Teleoperation via Whole Body Model Predictive Control and Online Parameter Estimation
 - 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.16855), Human-Like Redundancy Resolution for Real-Time Bimanual Humanoid Teleoperation, [website](https://human-like-redundancy.github.io/) / [code](https://github.com/IAIE-PhysicalAI/Bimanual-Teleoperation)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.07891), Beyond Retargeting: Low-Latency and Robust Humanoid Whole-Body Teleoperation with Learned Atomic Motion Primitives
