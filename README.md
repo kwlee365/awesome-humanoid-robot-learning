@@ -26,6 +26,9 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.28523), VLM-Guided Contact Retargeting and Generative Partner Modeling for Humanoid-Human Interaction, [website](https://yutoshibata07.github.io/REACT/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.28480), SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model, [website](https://supermimic.github.io)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.28470), Fast Motion Retargeting Pipeline for Scalable Humanoid Robot Learning
 - 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.26855), Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience, [website](https://ropedia.github.io/ropedia-w0/) / [code](https://github.com/Ropedia/ropedia-w0)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.26584), HAF-VLA: Hierarchical Action Flow Framework for Humanoid Vision-Language-Action Control
 - [arXiv 2026.10](https://arxiv.org/abs/2610.26043), OmniInteract: Towards Unified Whole-Body Interaction Control for Dual Humanoids, [website](https://calvinyhli.github.io/omniinteract.github.io/)
@@ -796,6 +799,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2022.12](https://arxiv.org/abs/2212.00541), Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo
 
 ## Navigation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.27688), Adaptive Traversal Tubes for Posture-Aware Navigation of Bipedal Humanoids
 - [arXiv 2026.10](https://arxiv.org/abs/2610.17232), LiDAR-based Humanoid Navigation in Dynamic, Non-Convex Environments via Spatio-Temporal Safe Corridors
 - [arXiv 2026.10](https://arxiv.org/abs/2610.10748), TAPNAV: Humanoid Navigation through Tactile Active Perception
 - [arXiv 2026.10](https://arxiv.org/abs/2610.07396), What the Elevation Map Cannot See: Semantic-Aware Locomotion and Execution-Aware Navigation for Humanoid Robot

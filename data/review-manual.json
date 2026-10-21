@@ -3290,6 +3290,113 @@
           "arxiv_id": "2610.24559"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "2026-10-21 AM run: abstracts read (arXiv API text from discover.py) and judged outside this list.",
+      "detected_on": "2026-10-21",
+      "items": [
+        {
+          "arxiv_id": "2610.27162",
+          "title": "Visual Task Modeling and Automated Planning for Humanoid Robots in Education of ",
+          "note": "Nao educational robot for autism tasks; PDDL planning, not humanoid learning"
+        },
+        {
+          "arxiv_id": "2610.24559",
+          "title": "SocialCoAct: Enabling and Benchmarking Egocentric Social Co-Action for VLM-Based",
+          "note": "VLM social-interaction benchmark/agent; not humanoid control learning"
+        },
+        {
+          "arxiv_id": "2610.23891",
+          "title": "When to Make a Decision: Task-Sufficient Active Perception for Mobile Manipulato",
+          "note": "neuro-symbolic active perception for mobile manipulators; humanoid incidental"
+        },
+        {
+          "arxiv_id": "2610.28431",
+          "title": "Plausible Future, Wrong Choice: Steering World-Action Models toward Intended Fut",
+          "note": "generic world-action model for manipulation"
+        },
+        {
+          "arxiv_id": "2606.03994",
+          "title": "SimuScene: Simulation-Ready Compositional 3D Scene Reconstruction from a Single ",
+          "note": "single-image scene reconstruction for manipulation"
+        },
+        {
+          "arxiv_id": "2610.02360",
+          "title": "SocialVLA: A Social Perception Gateway for Human-Reaction-Based Failure Detectio",
+          "note": "VLA failure detection from human reaction; tabletop manipulation"
+        },
+        {
+          "arxiv_id": "2606.19774",
+          "title": "Start Right, Arrive Right: Asynchronous Execution via Initial Noise Selection",
+          "note": "generic async action-chunk execution"
+        },
+        {
+          "arxiv_id": "2609.24682",
+          "title": "Think Like a World Model, Act Like a VLA: Distilling World-Model Representations",
+          "note": "generic VLA distillation"
+        },
+        {
+          "arxiv_id": "2609.09925",
+          "title": "Time-Frequency Geometric Cross-Attention for Chunked Vision-Language-Action Mode",
+          "note": "generic chunked-VLA architecture"
+        },
+        {
+          "arxiv_id": "2610.12033",
+          "title": "Traceable World State: A Provenance-Aware State Representation and Deterministic",
+          "note": "world-state provenance representation, no humanoid"
+        },
+        {
+          "arxiv_id": "2607.21025",
+          "title": "ZONDA: Zero-shot Object Navigation with Dynamic Avoidance in Multi-floor Environ",
+          "note": "object-goal navigation, no humanoid"
+        },
+        {
+          "arxiv_id": "2610.04391",
+          "title": "AgenticTactileVLA: Contact-Guided Execution-Time Supervision for Generalizable D",
+          "note": "tactile VLA supervision, no humanoid"
+        },
+        {
+          "arxiv_id": "2610.07969",
+          "title": "EmbodiedSmith: Scaling Embodied Data through Recursive Self-Improvement Flywheel",
+          "note": "generic simulation data generation pipeline"
+        },
+        {
+          "arxiv_id": "2610.28432",
+          "title": "Physical AI for Intralogistics: Benchmarking the NVIDIA Sim-to-Real Ecosystem fo",
+          "note": "intralogistics navigation benchmark, not humanoid"
+        },
+        {
+          "arxiv_id": "2610.10453",
+          "title": "RFPO: Rectified Flow Policy Optimization for Embodied Control",
+          "note": "generic flow policy optimization"
+        },
+        {
+          "arxiv_id": "2610.25476",
+          "title": "CusADi2: Latency-Optimized Batch Computation of Robot Kinematics, Jacobians, and",
+          "note": "GPU kinematics computation library; humanoid incidental"
+        },
+        {
+          "arxiv_id": "2610.27616",
+          "title": "EchoNav: Evidential BEV Completion from Historical Observations for Visual Navig",
+          "note": "visual navigation BEV completion, no humanoid focus"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "2026-10-21 AM run: openalex returned HTTP 401 for 2026-09 and 2026-10, and the S2 arXiv-twin lookup got HTTP 429 (129 candidates stay venue-only). Coverage of venue-published work for those months is incomplete; not searched by hand this run.",
+      "detected_on": "2026-10-21",
+      "items": [
+        {
+          "channel": "openalex",
+          "month": "2026-09"
+        },
+        {
+          "channel": "openalex",
+          "month": "2026-10"
+        }
+      ]
     }
   ]
 }
