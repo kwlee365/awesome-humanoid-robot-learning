@@ -3397,6 +3397,111 @@
           "month": "2026-10"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read from the arXiv abstract during the 2026-10-22 PM queue pass and judged outside this list. discover.py treats an arXiv id listed here as already decided.",
+      "detected_on": "2026-10-22",
+      "items": [
+        {
+          "arxiv_id": "2606.16564",
+          "title": "Elastic ODYN: Differentiable Optimization for Infeasible Control and Learning in Robotics",
+          "note": "differentiable QP solver; method paper, not humanoid-specific"
+        },
+        {
+          "arxiv_id": "2609.40137",
+          "title": "Game-Guided Skill Discovery through Self-Play for Playable Agent Control",
+          "note": "playable skill discovery in games; no humanoid robot"
+        },
+        {
+          "arxiv_id": "2606.28813",
+          "title": "Human2Any: Human-to-Robot Transfer via Constraint-Aware Compositional Planning",
+          "note": "human-video to robot manipulation; not humanoid"
+        },
+        {
+          "arxiv_id": "2606.24815",
+          "title": "MANGO: Automated Multi-Agent Test Oracle Generation for Vision-Language-Action Models",
+          "note": "VLA testing oracle"
+        },
+        {
+          "arxiv_id": "2609.39017",
+          "title": "OccluDex: Hierarchical 3D Visuo-Tactile Representation Learning for Egocentric Dexterous Manipulation under Self-Occlusion",
+          "note": "dexterous hand tactile; not humanoid"
+        },
+        {
+          "arxiv_id": "2608.22657",
+          "title": "Physical Agentic AI: An Architecture for Orchestrating a Robot Crew with LLMs",
+          "note": "LLM robot-crew orchestration"
+        },
+        {
+          "arxiv_id": "2610.26711",
+          "title": "PVBench: Quantifying Physical Plausibility in Video Generation with Object-Level Physical Measurements",
+          "note": "video generation benchmark"
+        },
+        {
+          "arxiv_id": "2610.26545",
+          "title": "ReInsVLN: Revisiting Historical Evidence for Training-Free Vision-and-Language Navigation",
+          "note": "vision-language navigation, no humanoid"
+        },
+        {
+          "arxiv_id": "2606.02745",
+          "title": "SeeTraceAct: Visibility-Aware Latent Planning from Cross-Embodiment Demonstration Videos",
+          "note": "demo-conditioned VLA, not humanoid"
+        },
+        {
+          "arxiv_id": "2606.10903",
+          "title": "AgniNav: Configuration-Driven Cross-Embodiment Local Planning for Robot Navigation",
+          "note": "wheeled/legged cross-embodiment navigation, not humanoid"
+        },
+        {
+          "arxiv_id": "2609.05415",
+          "title": "UniMate: One Unified Model to Animate Diverse Skeletons",
+          "note": "skeleton animation, no robot"
+        },
+        {
+          "arxiv_id": "2608.22341",
+          "title": "TransHands: Repurposing Human Pose Encoders as Hand Pose Encoders",
+          "note": "hand pose estimation, no robot"
+        },
+        {
+          "arxiv_id": "2608.14754",
+          "title": "EEG2MOTION: Towards Open-Vocabulary Human Motion Synthesis from Non-invasive Brain Signals",
+          "note": "EEG human motion synthesis, no robot"
+        }
+      ]
+    },
+    {
+      "kind": "borderline-scope",
+      "reason": "2026-10-22 PM pass: abstract read, left out pending a human call.",
+      "detected_on": "2026-10-22",
+      "items": [
+        {
+          "arxiv_id": "2610.28712",
+          "title": "Warping the Workspace: Expanding Visual Access with Adjustable Reach Mapping for Humanoid Teleoperation",
+          "note": "teleoperation interface user study (N=8); abstract does not name a humanoid platform or real-robot run"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "2026-10-22 PM run: OpenAlex returned HTTP 401 for 2026-09 and 2026-10, so that channel's coverage is incomplete; those months are left unmarked for re-sweep. Not hand-searched in this run. Also: no code repository could be verified for the added papers, so none carries a star.",
+      "detected_on": "2026-10-22",
+      "items": []
+    },
+    {
+      "kind": "candidate-held-for-review",
+      "reason": "2026-10-22 PM pass: date_basis is crossref-created and paper_url is IEEE (ieeexplore blocks fetch); the carried arXiv ids (2605/2606) disagree with the listed 2026-10 date, so first public date and venue could not be verified. Not added.",
+      "detected_on": "2026-10-22",
+      "items": [
+        {
+          "arxiv_id": "2606.00637",
+          "title": "Global-Local Attention Decomposition for Terrain Encoding in Humanoid Perceptive Locomotion"
+        },
+        {
+          "arxiv_id": "2605.28549",
+          "title": "SPRINT: Efficient Spectral Priors for Humanoid Athletic Sprints"
+        }
+      ]
     }
   ]
 }

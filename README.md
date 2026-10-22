@@ -26,6 +26,10 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.30061), Test-Time Motion Steering for Perceptive Humanoid Fall Recovery, [website](https://osheraz.github.io/RISE/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.30044), SP-HLM: Sparse-Pose-Driven Motion Generation and Whole-Body Control for Humanoid Loco-Manipulation, [website](https://sp-hlm.github.io/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.29169), SMR: Learning streaming motion retargeting for humanoids from human semantic, [website](https://logosroboticsgroup.github.io/SMR/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.28925), One Policy, Many Styles: Where to Aggregate Preferences for Steerable Humanoid Control?
 - [arXiv 2026.10](https://arxiv.org/abs/2610.28523), VLM-Guided Contact Retargeting and Generative Partner Modeling for Humanoid-Human Interaction, [website](https://yutoshibata07.github.io/REACT/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.28480), SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model, [website](https://supermimic.github.io)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.28470), Fast Motion Retargeting Pipeline for Scalable Humanoid Robot Learning
@@ -406,6 +410,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.08](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/), VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters, [website](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/)
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.27242), EmbodyHOI: Embodiment-Aware Generation of Hand-Object Interactions for Humanoid Dexterous Manipulation, [website](https://embodyhoi.github.io/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.26170), Data-Efficient Learning from Demonstration for Humanoid Robots via Feature-Level Perception and Prompt-Based Object Detection
 - [arXiv 2026.10](https://arxiv.org/abs/2610.26169), Compositional Humanoid Manipulation through Isomorphic Teleoperation and Independent Skill Routing
 - [arXiv 2026.10](https://arxiv.org/abs/2610.12026), Humanoid World Action Model With Joint State--Action Generation
@@ -507,6 +512,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [1999](https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(99)01327-3), Is imitation learning the route to humanoid robots?
 
 ## Teleoperation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.29903), HuMiT: Low-Latency Whole-Body Humanoid Teleoperation via Compact Reference Tracking, [website](https://xiaohu-art.github.io/Track/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.24257), Evaluating Lightweight Contact Feedback in Dual-Operator Collaborative Humanoid Teleoperation, [website](https://xrt-teleop.github.io)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.22176), Inertially Significant Humanoid Teleoperation via Whole Body Model Predictive Control and Online Parameter Estimation
 - 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.16855), Human-Like Redundancy Resolution for Real-Time Bimanual Humanoid Teleoperation, [website](https://human-like-redundancy.github.io/) / [code](https://github.com/IAIE-PhysicalAI/Bimanual-Teleoperation)
@@ -564,6 +570,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.10](https://arxiv.org/abs/2610.30080), Do Earth-Trained Humanoid Controllers Walk on the Moon? Gravity, Terrain, and Soil Transfer
+- [arXiv 2026.10](https://arxiv.org/abs/2610.29612), Watch Your Step: Anticipated Perception for Humanoid Locomotion, [website](https://leggedrobotics.github.io/watch-your-step)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.15735), Geometry-Aware Predictive Control for Walk-to-Run Bipedal Obstacle Crossing
 - [arXiv 2026.10](https://arxiv.org/abs/2610.14840), Push the Limit: Learning High-Speed Sprinting and Aggressive Cornering on a Full-Scale Humanoid
 - [arXiv 2026.10](https://arxiv.org/abs/2610.14061), Terrain Traversal Without Motion Priors: Expert-Routed Humanoid Locomotion at Deployment Fidelity, [website](https://fai-rl-tech.github.io/moe-perceptive/)
@@ -889,6 +897,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2019.01](https://arxiv.org/abs/1901.08652) / Science Robotics 2019, Learning Agile and Dynamic Motor Skills for Legged Robots
 
 ## Hardware Design
+- [arXiv 2026.10](https://arxiv.org/abs/2610.29030), PHD-Hand: A Printable Humanoid Dexterous Hand with Linkage-Driven 3-DOA Digits
 - [arXiv 2026.10](https://arxiv.org/abs/2610.16604), Design and Analysis of a Nonlinear Parallel Mechanism Coupling for Dynamic Humanoid Legs
 - [arXiv 2026.10](https://arxiv.org/abs/2610.08737), PhoneBot: A Low-Cost Open Humanoid Robot Platform Reusing Smartphones
 - [arXiv 2026.09](https://arxiv.org/abs/2609.08905), Visible-Reachable Workspace for Perception-Aware Humanoid Design, [website](https://generalroboticslab.com/DukeHumanoidv2)
