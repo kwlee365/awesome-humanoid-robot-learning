@@ -26,6 +26,10 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.31166), Memory before Goal: Role of Pre-History Memory for Humanoid Loco-Manipulation, [website](https://memory-before-goal.github.io)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.30876), LocoManiLab: A Unified Testbed for Data, Policies, Controllers, and Deployment in Humanoid Loco-Manipulation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.30817), Robot Motion Transition with Human Motion Prior, [website](https://childtoy.github.io/STAMP-project)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.30540), Motion Retargeting with Spatiotemporal Preferences for Humanoid Loco-Manipulation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.30061), Test-Time Motion Steering for Perceptive Humanoid Fall Recovery, [website](https://osheraz.github.io/RISE/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.30044), SP-HLM: Sparse-Pose-Driven Motion Generation and Whole-Body Control for Humanoid Loco-Manipulation, [website](https://sp-hlm.github.io/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.29169), SMR: Learning streaming motion retargeting for humanoids from human semantic, [website](https://logosroboticsgroup.github.io/SMR/)
@@ -513,6 +517,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Teleoperation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.29903), HuMiT: Low-Latency Whole-Body Humanoid Teleoperation via Compact Reference Tracking, [website](https://xiaohu-art.github.io/Track/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.28712), Warping the Workspace: Expanding Visual Access with Adjustable Reach Mapping for Humanoid Teleoperation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.24257), Evaluating Lightweight Contact Feedback in Dual-Operator Collaborative Humanoid Teleoperation, [website](https://xrt-teleop.github.io)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.22176), Inertially Significant Humanoid Teleoperation via Whole Body Model Predictive Control and Online Parameter Estimation
 - 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.16855), Human-Like Redundancy Resolution for Real-Time Bimanual Humanoid Teleoperation, [website](https://human-like-redundancy.github.io/) / [code](https://github.com/IAIE-PhysicalAI/Bimanual-Teleoperation)
@@ -570,6 +575,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.10](https://arxiv.org/abs/2610.31608), Humanoid Mobility via Attention-based Contacts
+- [arXiv 2026.10](https://arxiv.org/abs/2610.30334), MPBRS: Multi-Potential-Based Reward Shaping for Unified Reward Configuration in Humanoid Locomotion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.30080), Do Earth-Trained Humanoid Controllers Walk on the Moon? Gravity, Terrain, and Soil Transfer
 - [arXiv 2026.10](https://arxiv.org/abs/2610.29612), Watch Your Step: Anticipated Perception for Humanoid Locomotion, [website](https://leggedrobotics.github.io/watch-your-step)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.15735), Geometry-Aware Predictive Control for Walk-to-Run Bipedal Obstacle Crossing
