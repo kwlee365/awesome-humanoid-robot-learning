@@ -13,11 +13,11 @@
   "counts": {
     "raw": 5083,
     "relevant": 772,
-    "merged": 1332,
-    "new": 912,
+    "merged": 1324,
+    "new": 903,
     "similar_to_listed": 1,
-    "already_listed": 419,
-    "carried_over": 921
+    "already_listed": 420,
+    "carried_over": 913
   },
   "per_channel_raw": {
     "arxiv": 4326,
@@ -36,72 +36,6 @@
     }
   ],
   "candidates": [
-    {
-      "title": "Motion Retargeting with Spatiotemporal Preferences for Humanoid Loco-Manipulation",
-      "authors": [
-        "Xiongbo Shi",
-        "Shihang Du",
-        "Zongyou Yu",
-        "Ao Zhou",
-        "Xudong Zhang",
-        "Ziyu Lin",
-        "Haodong Zhang",
-        "Junqiao Zhao",
-        "Guang Chen"
-      ],
-      "abstract": "Human motion retargeting bridges the embodiment gap between humans and humanoid robots by converting human demonstrations into reference trajectories for whole-body control and loco-manipulation. For object-interaction tasks, successful execution depends on accurately preserving body--object relations at critical stages. However, uniform per-frame iteration budgets do not account for these localized accuracy requirements, limiting the computational efficiency of retargeting. To address this limitation, we present Spatiotemporal Retargeting (STR), which uses keyframes and key body parts to allocate optimization effort. Specifically, a vision-language model selects relevant motion signals and body parts, and keyframes are identified from changes in the selected signals. Based on these selections, STR assigns additional solver iterations to keyframes and higher interaction weights to the selected parts. To further improve contact fidelity, we introduce Mechanics-Aware Contact Anchoring (MCA) to refine object-surface contact positions using an approximate object-wrench model while retaining the selected surface directions. Building on the resulting references, we develop Spatiotemporal Reinforcement Learning (STRL), which combines adaptive key-stage sampling with a contact reward based on target proximity and object contact forces for downstream control. Simulation experiments on a Unitree G1 and real-world experiments on a Unitree R1 demonstrate that STR improves geometric contact coverage and continuity at lower computational cost, while the resulting references improve downstream task completion across diverse object-interaction motions.",
-      "abstract_source": "https://arxiv.org/abs/2610.30540",
-      "arxiv_id": "2610.30540",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.30540",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 120,
-        "core": [
-          "humanoid",
-          "humanoid robots",
-          "unitree g1",
-          "unitree r1"
-        ],
-        "task": [
-          "loco manipulation",
-          "whole body control",
-          "motion retargeting",
-          "human motion retargeting"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [
-          "retargeting",
-          "human motion",
-          "human demonstrations"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.30540"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-23"
-    },
     {
       "title": "Bipedal Navigation and Locomotion Control Algorithms for Humanoid Robots",
       "authors": [
@@ -322,67 +256,6 @@
         "https://doi.org/10.26233/heallink.tuc.105948"
       ],
       "carried_over_since": "2026-10-10",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-23"
-    },
-    {
-      "title": "Robot Motion Transition with Human Motion Prior",
-      "authors": [
-        "Taehyun Byun",
-        "Taemoon Jeong",
-        "Yoonbyung Chai",
-        "Woojin Wie",
-        "Insu Park",
-        "Kyungjae Lee",
-        "Sungjoon Choi"
-      ],
-      "abstract": "Humanoid motion-tracking policies can reproduce diverse behaviors, yet connecting independently acquired motions into a continuous sequence remains challenging. Interpolation connects boundary poses without considering whether their relative position, heading, and timing provide suitable conditions for a transition. A generative motion prior can produce richer motion, but poorly arranged boundaries may cause it to generate excessive locomotion, turning, or another unintended action. We present Spatio-Temporal Alignment with a Motion Prior (STAMP), a framework for connecting independently acquired humanoid motions through a Robot-to-Human-to-Robot process. STAMP uses human motion space to draw on rich motion priors and reuse transition knowledge across robot embodiments. Its key component is a learned alignment model that determines the boundary conditions for motion inbetweening. Given the two motions retargeted to a human rig, the alignment model ranks candidate positions, headings, and transition durations for the following motion. A human motion prior generates the transition under the selected alignment. The completed sequence is retargeted to the robot and used as a reference to train a motion-tracking policy. We evaluate the tracking success of the generated transitions on Unitree~G1 and~ROBOTIS K1. Physical robot demonstrations further show that STAMP connects independently acquired motions into long-horizon sequences. Project page: https://childtoy.github.io/STAMP-project",
-      "abstract_source": "https://arxiv.org/abs/2610.30817",
-      "arxiv_id": "2610.30817",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.30817",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "9 pages, 4 figures",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 112,
-        "core": [
-          "humanoid",
-          "unitree g1"
-        ],
-        "task": [
-          "motion tracking policy"
-        ],
-        "body": [
-          "locomotion"
-        ],
-        "method": [
-          "retargeted",
-          "motion tracking",
-          "motion prior",
-          "motion priors",
-          "human motion"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.30817"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-23"
@@ -657,68 +530,6 @@
         "https://doi.org/10.1109/ascc70886.2026.11702297"
       ],
       "carried_over_since": "2026-10-05",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-23"
-    },
-    {
-      "title": "LocoManiLab: A Unified Testbed for Data, Policies, Controllers, and Deployment in Humanoid Loco-Manipulation",
-      "authors": [
-        "Dewei Wang",
-        "Jinrui Han",
-        "Jiyuan Shi",
-        "Chenyun Zhang",
-        "Xianbo Lu",
-        "Jiabao Wu",
-        "Jiqin Feng",
-        "Jipeng Kong",
-        "Ping Luo",
-        "Chenjia Bai",
-        "Xuelong Li"
-      ],
-      "abstract": "Humanoid robots must coordinate locomotion and manipulation in everyday environments, yet progress is difficult to assess across differing policies, controllers, and task settings. LocoManiLab provides an integrated testbed spanning data collection and generation, policy training, evaluation, and physical deployment. Its task suite covers 234 atomic and compositional tasks across five household scene categories, supported by 51.5 hours of simulated teleoperation. The evaluation covers twelve policies with a shared controller across task and scene splits and perturbation levels, two policies across five controllers, and studies of demonstration scale and data-source mixtures. Success rates fall on unseen tasks and scenes and generally decline as visual perturbations increase, with differences in generalization and robustness across policies. For data generation, a humanoid motion generation model is fine-tuned for loco-manipulation to study the alignment of its outputs with task execution requirements and its integration into the data generation pipeline. Three simulated loco-manipulation tasks closely match real-world setups, enabling evaluation of three policies in both domains. Similar policy rankings support the reliability of simulation-based evaluation.",
-      "abstract_source": "https://arxiv.org/abs/2610.30876",
-      "arxiv_id": "2610.30876",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.30876",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 109,
-        "core": [
-          "humanoid",
-          "humanoid robots"
-        ],
-        "task": [
-          "loco manipulation"
-        ],
-        "body": [
-          "locomotion"
-        ],
-        "method": [
-          "motion generation",
-          "teleoperation"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.30876"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-23"
@@ -1497,66 +1308,6 @@
       "seen_on": "2026-10-23"
     },
     {
-      "title": "Humanoid Mobility via Attention-based Contacts",
-      "authors": [
-        "Junzhe He",
-        "Kehan Wen",
-        "Chong Zhang",
-        "Clemens Schwarke",
-        "Zewei Zhang",
-        "Kaixian Qu",
-        "Siyuan Hu",
-        "Matthias Müller",
-        "Vladlen Koltun",
-        "Marco Hutter"
-      ],
-      "abstract": "Humanoid mobility over complex terrain requires accurate foot placement and coordinated whole-body motion capable of robust adaptation. Reinforcement learning (RL) policies trained without motion references generalize well across terrains, yet eliciting effective whole-body coordination through reward design and exploration alone remains challenging. In contrast, reference-based methods yield natural motions but struggle to adapt beyond the predefined trajectories in their training data. We introduce a learning framework that bridges these two approaches by using motion data strictly as a training prior. An explicit, self-supervised, attention-based contact planner predicts future body-environment contacts, while a contact-conditioned tracker translates these plans into coordinated whole-body motion. Together, they establish contact as an interface between sensory observations and control actions. This abstraction allows the policy to internalize the contact-aware structure of locomotion rather than directly replicating kinematics. Consequently, a single policy can exploit data-driven motion priors for natural whole-body coordination while retaining the flexibility to discover environment-dependent behaviors through reinforcement learning. Building on the learned contact planner and tracker, a subsequent fine-tuning stage bootstraps their acquired capabilities to explore environment variations beyond those covered by the original motion data. Operating entirely from onboard observations without any reference inputs at deployment, this framework enables versatile humanoid mobility in challenging environments.",
-      "abstract_source": "https://arxiv.org/abs/2610.31608",
-      "arxiv_id": "2610.31608",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.31608",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "under review",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 107,
-        "core": [
-          "humanoid"
-        ],
-        "task": [
-          "whole body motion"
-        ],
-        "body": [
-          "locomotion",
-          "whole body"
-        ],
-        "method": [
-          "motion priors"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.31608"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-23"
-    },
-    {
       "title": "Humanoid Robot Motion Tracking Control Method Integrating Adaptive PID, Kalman Filtering and Feedforward Compensation",
       "authors": [
         "Jinhui Li",
@@ -1603,113 +1354,6 @@
         "https://doi.org/10.9734/jerr/2026/v28i81983"
       ],
       "carried_over_since": "2026-09-18",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-23"
-    },
-    {
-      "title": "Memory before Goal: Role of Pre-History Memory for Humanoid Loco-Manipulation",
-      "authors": [
-        "Chenyuan Chen",
-        "Ran Ding",
-        "Lechen Zhang",
-        "Zewen He",
-        "Yoshihiko Nakamura"
-      ],
-      "abstract": "Humanoid loco-manipulation in dynamic scenes is non-Markovian: cues vanish as objects change or are hidden, or leave the view as the robot turns and walks, yet whole-body vision-language-action (VLA) policies see only the present. We present WholeBodyMem, an object-guided perceptual memory that keeps the pre-history of object events seen before the robot acts on its goal. SAM3 tracks the task objects, and their events causally select key frames within an adaptive budget, which the action expert reads by cross-attention together with object tokens encoding appearance, geometry and time. We also contribute HuMeGo, a humanoid memory benchmark with six simulated and six real-world Unitree G1 tasks. Keeping the right frames rather than more frames, WholeBodyMem surpasses memoryless and uniform-memory baselines, raising its base policy's success from 29.1% to 72.6% in simulation and from 36.7% to 88.3% on the real robot, while also improving the standard SIMPLE tasks (70.2% to 86.9%).",
-      "abstract_source": "https://arxiv.org/abs/2610.31166",
-      "arxiv_id": "2610.31166",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.31166",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "8 pages, 4 figures, 5 tables. Submitted to IEEE Robotics and Automation Letters (RA-L). Project page: https://memory-before-goal.github.io",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 107,
-        "core": [
-          "humanoid",
-          "unitree g1"
-        ],
-        "task": [
-          "loco manipulation"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.31166"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-23"
-    },
-    {
-      "title": "PhysibleMDM: Enforcing Inference-Time Physical Feasibility Constraints on Motion Diffusion Models via Noise Optimization",
-      "authors": [
-        "Maximilian Stölzle",
-        "David Müller",
-        "Agon Serifi",
-        "Ruben Grandia",
-        "Espen Knoop",
-        "Moritz Bächer"
-      ],
-      "abstract": "Motion Diffusion Models (MDMs) can generate diverse and visually appealing human motion; yet, the resulting trajectories frequently violate physical constraints, limiting their downstream use in simulation and control. We present PhysibleMDM, a framework that promotes physical feasibility of MDM output by optimizing at inference time the diffusion noise without retraining the generative model. We introduce a set of surrogate feasibility constraints that can be evaluated without full trajectory simulation. These constraints combine kinematic checks (e.g., ground penetration, slip, and self-collision) with dynamic feasibility tests computed via an inverse-dynamics inner loop formulated as a cone program. We solve the resulting black-box noise optimization problem using the Separable Covariance Matrix Adaptation Evolution Strategy (Sep-CMA-ES), thereby avoiding reliance on computationally expensive and discontinuous gradients. An autoregressive scheme then chains optimized segments to synthesize long motion sequences. Across 100 motion styles on an SMPL humanoid, PhysibleMDM reduces mean ground penetration, self-collision penetration, and ground slip by 75%, 92%, and 74%, respectively, relative to unoptimized diffusion output. Across 11 sequences for a custom bipedal robot, it achieves median reductions of 89.5% in per-sequence mean acceleration-reconstruction error and 79.5% in the mean inverse-dynamics residual.",
-      "abstract_source": "https://arxiv.org/abs/2610.30500",
-      "arxiv_id": "2610.30500",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.30500",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 107,
-        "core": [
-          "humanoid",
-          "bipedal"
-        ],
-        "task": [],
-        "body": [],
-        "method": [
-          "smpl",
-          "human motion",
-          "motion diffusion"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.30500"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-23"
@@ -3240,54 +2884,6 @@
         "https://doi.org/10.1109/icra57385.2026.11697574"
       ],
       "carried_over_since": "2026-10-08",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-23"
-    },
-    {
-      "title": "MPBRS: Multi-Potential-Based Reward Shaping for Unified Reward Configuration in Humanoid Locomotion",
-      "authors": [
-        "Van Chung Nguyen",
-        "Hung Manh La"
-      ],
-      "abstract": "Designing and tuning reward functions remains one of the main challenges in building effective reinforcement learning (RL) pipelines for humanoid locomotion. While shaping rewards can accelerate learning, naively formulated terms often conflict with the desired behavior, overfit to a specific robot, or become unstable under small weight changes. Potential-Based Reward Shaping (PBRS) offers an alternative solution: shaping the reward via differences of a potential function to guide exploration without changing the optimal policy. In this paper, we study Multi-PBRS for humanoid locomotion and propose a unified reward configuration. We then evaluate the same reward structure and weights across nine humanoid robots, requiring only robot-specific metadata (joint/link mappings and default poses) rather than per-robot reward redesign. Our experiments show that, compared to standard shaping, MPBRS provides more consistent scaling behavior and reduced tuning sensitivity across robots, making it easier to tune without altering the optimal policy.",
-      "abstract_source": "https://arxiv.org/abs/2610.30334",
-      "arxiv_id": "2610.30334",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.30334",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 105,
-        "core": [
-          "humanoid",
-          "humanoid robots"
-        ],
-        "task": [],
-        "body": [
-          "locomotion"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.30334"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-23"
@@ -5540,6 +5136,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11745975/"
       ],
+      "carried_over_since": "2026-10-23",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-23"
@@ -11875,56 +11472,6 @@
       "seen_on": "2026-10-23"
     },
     {
-      "title": "Warping the Workspace: Expanding Visual Access with Adjustable Reach Mapping for Humanoid Teleoperation",
-      "authors": [
-        "Keigo Minamida",
-        "Koya Dendo",
-        "Yuto Nakamura",
-        "Jun Rekimoto"
-      ],
-      "abstract": "First-person humanoid teleoperation ties access to side and rear targets to operator rotation. We present coupled visual--motor remapping, pairing a panoramic azimuth warp with its inverse upper-limb yaw transform. A working prototype implements Global Zoom (GZ) and Focus+Context (F+C). In a within-subject study (N=8); 72 trials), GZ had the largest completion count (23/24; Fixed: 20/24; F+C: 21/24), whereas F+C was preferred by 6/8 participants. Therefore, completion and preference favored different mappings in this sample.",
-      "abstract_source": "https://arxiv.org/abs/2610.28712",
-      "arxiv_id": "2610.28712",
-      "doi": "10.1145/3830397.3841893",
-      "paper_url": "https://arxiv.org/abs/2610.28712",
-      "venue": "arXiv",
-      "venue_hint": "ACM UIST 2026",
-      "arxiv_comment": null,
-      "publication_status": "published",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 103,
-        "core": [
-          "humanoid"
-        ],
-        "task": [],
-        "body": [],
-        "method": [
-          "teleoperation"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.28712"
-      ],
-      "carried_over_since": "2026-10-22",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-23"
-    },
-    {
       "title": "A Bipedal Robot For Stair Transportation Based on Multimodal Perception",
       "authors": [
         "Wenhao Shao",
@@ -12741,54 +12288,6 @@
       "carried_over_since": "2026-09-03"
     },
     {
-      "title": "Continuous-Time Motion Planning and Steering with Global Convergence",
-      "authors": [
-        "Mohsen Amiri",
-        "Sima Didari",
-        "Davoud Ataee Tarzanagh",
-        "Hankyu Moon",
-        "Yeongdae Kwon"
-      ],
-      "abstract": "Motion planning is central to robotics, and it is increasingly used to correct the motions proposed by learned planners and policies. In both uses, constraints must hold at every instant of the motion, not only at sampled times. To our knowledge, no algorithm provably converges to a globally optimal motion once a smoothness cost is combined with such constraints. We cast planning and steering as a single continuous-time program: robots avoid one another and static or moving obstacles, and a learned proposal is steered by keeping the motion close to it. The program is elementary to state, yet nonconvex. We propose GlobMP (Global Motion Planning), a gradient projection method over piecewise-polynomial curves, on which each constraint is one polynomial per piece that must stay nonnegative over the whole motion; it alternates cost reduction with feasibility restoration. Under mild assumptions, we show that, from a fine grid start, its cost approaches the global optimum as the number of polynomial pieces grows, with every constraint met to any chosen tolerance, or exactly on stable instances. We demonstrate its superior performance over strong baselines in real and synthetic experiments, including teams of up to $200$ robots, multi-robot planning on the Robotarium testbed and an extended benchmark, maze navigation, and steering tactile-reactive policies on a bimanual humanoid.",
-      "abstract_source": "https://arxiv.org/abs/2610.30607",
-      "arxiv_id": "2610.30607",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.30607",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 102,
-        "core": [
-          "humanoid"
-        ],
-        "task": [],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.30607"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-23"
-    },
-    {
       "title": "Cost of Transport Analysis of Capture Point-Based Balancing Strategies for a Payload-Bearing Humanoid",
       "authors": [
         "Nurberdi Myrzabay",
@@ -13219,6 +12718,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11736544/"
       ],
+      "carried_over_since": "2026-10-23",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-23"
@@ -21921,6 +21421,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.30810"
       ],
+      "carried_over_since": "2026-10-23",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-23"
@@ -24187,6 +23688,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.30839"
       ],
+      "carried_over_since": "2026-10-23",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-23"
@@ -29406,6 +28908,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.31156"
       ],
+      "carried_over_since": "2026-10-23",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-23"
@@ -32762,6 +32265,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.30519"
       ],
+      "carried_over_since": "2026-10-23",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-23"

@@ -1005,9 +1005,12 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Physics-Based Character Animation
 - [SIGGRAPH 2010](https://dl.acm.org/doi/abs/10.1145/1833349.1778770?casa_token=j3esx-hx0GAAAAAA:OvRU6YYrNo2ZP9IyXGVDryWJqHmvU-oVhnzog8RFKKySQJjganzaAmHff6CQ4a0qzfJZu-J6Buf4Ug), Spatial relationship preserving character motion adaptation
+- 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.30033), RLMuscle: Muscle-Driven Character Animation via Reinforcement Learning, [website](https://chunleili.github.io/project-page-rlmuscle/) / [code](https://github.com/chunleili/rlmuscleV2)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.26278), Bringing physics-based controller policies to virtual reality
 - [arXiv 2026.10](https://arxiv.org/abs/2610.21515), TRACE: Typed Reference-Aware Conversational Editing for Humanoid Motion Diffusion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.18147), Walk Like This: Stylized Locomotion for Physics-Based Characters through Example-Driven Diffusion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.14911), Scalable Multi-Human Cooperative Manipulation via Commander-Executor Coordination
+- [arXiv 2026.10](https://arxiv.org/abs/2610.11722), From Solo to Ensemble: A Hierarchical Framework for Composable Multi-Agent Human-Object Interaction
 - [arXiv 2026.10](https://arxiv.org/abs/2610.10322), From Digital Human Interactions to Physics-Based Humanoid Skills: Physics-Grounded Post-Training of Interaction Generators
 - [arXiv 2026.10](https://arxiv.org/abs/2610.09291), Co{}^{2}Skill: Whole-Body Control via Skill Composition for Long-Horizon Human-Environment Interaction
 - [arXiv 2026.09](https://arxiv.org/abs/2609.26420), Sample, Simulate, Select: Physics-in-the-Loop Text-to-Motion for Humanoids Without Training

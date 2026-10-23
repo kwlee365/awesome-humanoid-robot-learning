@@ -3487,6 +3487,12 @@
       "items": []
     },
     {
+      "kind": "discovery-coverage-gap",
+      "reason": "2026-10-23 PM run: openalex returned HTTP 401 again for 2026-10 and 2026-09; those windows were not swept by OpenAlex (arXiv and Crossref completed). Left unmarked in the ledger for re-sweep. Only ~8 candidates were cleared this run; the top of the queue is dominated by unverified non-arXiv OpenAlex/Crossref records that need primary-source reading.",
+      "detected_on": "2026-10-23",
+      "items": []
+    },
+    {
       "kind": "out-of-scope",
       "reason": "Read from the arXiv abstract during the 2026-10-23 AM pass and judged outside this list.",
       "detected_on": "2026-10-23",
@@ -3500,6 +3506,38 @@
           "arxiv_id": "2610.30607",
           "title": "Continuous-Time Motion Planning and Steering with Global Convergence",
           "note": "generic motion planning; not humanoid"
+        }
+      ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read from the arXiv abstract during the 2026-10-23 PM pass and judged outside this list.",
+      "detected_on": "2026-10-23",
+      "items": [
+        {
+          "arxiv_id": "2610.30810",
+          "title": "Adaptive Aerial Loco-Manipulation Policy Learning via LLM-Assisted Proactive Task Generation",
+          "note": "aerial manipulator, not humanoid"
+        },
+        {
+          "arxiv_id": "2610.18848",
+          "title": "Contact Trajectory Prompting: In-Context Transfer of Contact-Rich Behaviors from a Single Demonstration",
+          "note": "generic tabletop contact-rich manipulation; no humanoid"
+        },
+        {
+          "arxiv_id": "2610.17750",
+          "title": "Learning Robot Policies for Whole-Body Mobility Assistance via Dynamic Human Motion Generation",
+          "note": "assistive care robot, not humanoid"
+        },
+        {
+          "arxiv_id": "2610.17748",
+          "title": "I3L: Iterative Interactive Imitation Learning for Whole-Body Mobile Manipulation",
+          "note": "wheeled mobile manipulator, not humanoid"
+        },
+        {
+          "arxiv_id": "2610.28948",
+          "title": "COWBOY: A Scalable Sim-to-Real Framework for Learning Contextual Whole-Body Manipulation",
+          "note": "mobile manipulator with dexterous hand; no humanoid body stated in abstract"
         }
       ]
     },
