@@ -3563,6 +3563,204 @@
       "reason": "2026-10-23 PM run: openalex returned HTTP 401 again for 2026-10 and 2026-09; those windows were not swept by OpenAlex (arXiv and Crossref completed). Left unmarked in the ledger for re-sweep. Only ~8 candidates were cleared this run; the top of the queue is dominated by unverified non-arXiv OpenAlex/Crossref records that need primary-source reading.",
       "detected_on": "2026-10-23",
       "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read from the arXiv abstract during the 2026-10-24 AM pass and judged outside this list.",
+      "detected_on": "2026-10-24",
+      "items": [
+        {
+          "arxiv_id": "2606.30552",
+          "title": "Training Vision-Language-Action Models with Dense Embodied Chain-of-Thought Supervision",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2606.18243",
+          "title": "MOCHI: Motion Enhancement of Collaborative Human-object Interactions",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2607.13154",
+          "title": "Worlds in One Demo: A Synthetic Data Engine for Learning Open-World Mobile Manipulation",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2607.18361",
+          "title": "Physical Self-Supervised Learning: IMU Sensing without Manual Labels",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2609.06251",
+          "title": "MobileVLA-R1 2.0: RL-Enhanced Reasoning for Mobile Robot Control",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2608.09177",
+          "title": "Intuitive Directional Sense Presentation to the Torso Using McKibben-Based Surface Haptic Sensation in Immersive Space",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2606.10743",
+          "title": "Hand-centric Human-to-Robot Trajectory Transfer from Video Demonstrations via Object Category-agnostic Temporal Localization",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2609.23797",
+          "title": "MoSAT: Human Motion Generation from Spatial Audio and Textual Description",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2610.25988",
+          "title": "SSIO: Self-Supervised Inertial Odometry",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2607.03828",
+          "title": "ObjRetarget: An Object-Aware Motion Retargeting Framework with Anthropomorphic Arm Constraints and Polyhedral Hand Modeling",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2609.04552",
+          "title": "Continual Field-Adaptive Models (CFAMs) for Post-Deployment Physical AI",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2608.22403",
+          "title": "LD4WAM: Learning Latent Dynamics from Human Videos for World Action Models",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2610.01849",
+          "title": "FlashDexRetarget: Accelerating Dexterous Manipulation Data Generation through Multi-Motion Retargeting",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2607.07880",
+          "title": "GIRAF: Towards Generalizable Human Interactions with Articulated Objects",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2607.26460",
+          "title": "RLMM-Flow: A Flow-based Mobile Manipulation Framework with Latent-Space Reinforcement Learning",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2609.37776",
+          "title": "Geometry-Preserving Human-to-Robot Upper-Body Motion Retargeting from Monocular Video",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2610.26762",
+          "title": "DexOAK: Object-Aware Kinematic Retargeting",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2606.30514",
+          "title": "3D Scene-Adaptive Trajectory-Controllable Human Image Animation with Camera Movement",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2609.21909",
+          "title": "Beyond Kinematics: Benchmarking Simulation Fidelity for Muscle-Driven Imitation Learning",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2607.07491",
+          "title": "Smooth Operator: A Real-Time Sampling-Based Algorithm for Kinematic Hand Retargeting",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2608.03158",
+          "title": "Surface Keypoint Representation for Multi-Object and Articulated Human-Object Interaction Generation",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2608.00880",
+          "title": "Bicycle Acrobatics with Reinforcement Learning",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2609.10457",
+          "title": "AnimateCanvas: Learning Implicit Motion Planning from Composable Kinematic Cues",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2609.30521",
+          "title": "Aerial Manipulation in the Wild with Onboard Perception, Policy Learning, and Whole-Body Control",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2607.08341",
+          "title": "AnyDexRT: Calibration-Free Dexterous Hand Retargeting with Few-Shot Human Guidance",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2607.00033",
+          "title": "Learning Dexterous Manipulation Using Contact Wrench Guidance From Human Demonstration",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2608.28219",
+          "title": "RASA: Disentangled Spatial-Motional Priors for Cross-Identity Character Animation",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2610.06331",
+          "title": "DexForge: High-Fidelity Physics-Informed Dexterous Retargeting",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2608.17320",
+          "title": "Robust Brachiation on a Life-Sized Dual-Arm Robot Using Waypoint-Guided Reinforcement Learning",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2609.37004",
+          "title": "World2Motion: Turning Video World Models into 3D Human Motion Generators",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2607.25219",
+          "title": "SONG: A Photorealistic 3D Gaussian Simulation Platform for Benchmarking Social Navigation",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2609.06517",
+          "title": "Skinned Motion Retargeting via Artifact-driven Kinematic Prior Refinement",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2607.05883",
+          "title": "DexTele: A Dual-Arm Dexterous Teleoperation System Based on Motion Retargeting and Adaptive Force Control",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2608.16556",
+          "title": "DeepInsight II: One Trace from Benchmark to Robot",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2610.24522",
+          "title": "MOMO: Human Motion from Moving Sounds",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2606.06565",
+          "title": "AI Level of Detail: Distance-Aware ML Model Precision Selection for Real-Time Human Motion Prediction in Games",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        },
+        {
+          "arxiv_id": "2609.16319",
+          "title": "ConGraspXL: Controllable Constraint-Conditioned Dexterous Grasping Motion Synthesis",
+          "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "reason": "2026-10-24 AM run: openalex returned HTTP 401 for 2026-10 and 2026-09 (not swept; left unmarked for re-sweep); Semantic Scholar twin lookup hit HTTP 429. arXiv and Crossref completed. Candidates dated by index (openalex/crossref) were not reached.",
+      "detected_on": "2026-10-24",
+      "items": []
     }
   ]
 }

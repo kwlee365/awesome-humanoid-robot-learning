@@ -664,6 +664,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.06](https://arxiv.org/abs/2606.04718), CoRe-MoE: Contrastive Reweighted Mixture of Experts for Multi-Terrain Humanoid Locomotion with Gait Adaptation
 - [IJECES 2026](https://doi.org/10.32985/ijeces.17.6.2), Optimization of humanoid robot locomotion behavior using hybrid technique combines between preview control algorithm and discrete algebraic Riccati equation (DARE)
 - [Scientia Sinica Technologica 2026](https://doi.org/10.1360/sst-2025-0267), Multi-terrain adaptive walking control of bipedal robots using passive artificial tendons
+- [arXiv 2026.05](https://arxiv.org/abs/2606.00637) / RA-L 2026, Global-Local Attention Decomposition for Terrain Encoding in Humanoid Perceptive Locomotion
+- [arXiv 2026.05](https://arxiv.org/abs/2605.28549) / RA-L 2026, SPRINT: Efficient Spectral Priors for Humanoid Athletic Sprints
 - [arXiv 2026.05](https://arxiv.org/abs/2605.09944), Explicit Stair Geometry Conditioning for Robust Humanoid Locomotion
 - [arXiv 2026.04](https://arxiv.org/abs/2604.17335) / RA-L 2026, Learning Whole-Body Humanoid Locomotion via Motion Generation and Motion Tracking
 - [arXiv 2026.03](https://arxiv.org/abs/2603.29452) / RA-L 2026, CReF: Cross-modal and Recurrent Fusion for Depth-conditioned Humanoid Locomotion
@@ -922,6 +924,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [Engineering Research Express 2026](https://doi.org/10.1088/2631-8695/ae76e7), Dynamic modeling and prototype design for underactuated takeoff of a humanoid robot
 - [Biomimetics 2026](https://doi.org/10.3390/biomimetics11060412), Comparative Analysis of High-Torque-Density Permanent Magnet Motors Having Similar Slot and Pole Numbers for Humanoid Robot Applications
 - [arXiv 2026.05](https://arxiv.org/abs/2605.26991) / Nature Machine Intelligence 2026, Towards Shared Embodied Intelligence in Humanoid Robots through Optimization Development and Testing of the Human Aware ergoCub Robot
+- [arXiv 2026.04](https://arxiv.org/abs/2604.21541) / RA-L 2026, X2-N: A Transformable Wheel-legged Humanoid Robot with Dual-mode Locomotion and Manipulation
 - [arXiv 2026.04](https://arxiv.org/abs/2604.08636) / ICRA 2026, LEGO: Latent-space Exploration for Geometry-aware Optimization of Humanoid Kinematic Design
 - [arXiv 2026.02](https://arxiv.org/abs/2602.08518), Characteristics, Management, and Utilization of Muscles in Musculoskeletal Humanoids
 - [arXiv 2026.01](https://arxiv.org/abs/2601.18963), Fauna Sprout: A lightweight, approachable, developer-ready humanoid robot
