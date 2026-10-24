@@ -3548,6 +3548,99 @@
       "items": []
     },
     {
+      "kind": "discovery-coverage-gap",
+      "reason": "2026-10-24 PM run: openalex returned HTTP 401 for 2026-10 and 2026-09 again (not swept; left unmarked). arXiv and Crossref completed. No humanoid-focused candidate survived verification; index-dated (openalex/crossref) candidates were not individually verified.",
+      "detected_on": "2026-10-24",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Read during the 2026-10-24 PM pass (arXiv abstract; 2608.28140 and 2610.08653 also the abs page): humanoid/whole-body keyword hit but robot is not a humanoid (quadruped, mobile manipulator, continuum, musculoskeletal or human motion).",
+      "detected_on": "2026-10-24",
+      "items": [
+        {
+          "arxiv_id": "2510.19789",
+          "title": "OmniMotion-X: Versatile Multimodal Whole-Body Motion Generation",
+          "note": "not humanoid-focused"
+        },
+        {
+          "arxiv_id": "2506.01185",
+          "title": "HoMeR: Learning In-the-Wild Mobile Manipulation via Hybrid Imitation and Whole-Body Control",
+          "note": "not humanoid-focused"
+        },
+        {
+          "arxiv_id": "2503.14637",
+          "title": "KINESIS: Motion Imitation for Human Musculoskeletal Locomotion",
+          "note": "not humanoid-focused"
+        },
+        {
+          "arxiv_id": "2609.25351",
+          "title": "Learning from Humans for Proactive Assistance in Human-Robot Collaborative Transport",
+          "note": "not humanoid-focused"
+        },
+        {
+          "arxiv_id": "2509.04094",
+          "title": "Object-Reconstruction-Aware Whole-Body Control of Mobile Manipulators",
+          "note": "not humanoid-focused"
+        },
+        {
+          "arxiv_id": "2608.27221",
+          "title": "Tensegrity Continuum Robots Enable Task-Adaptive Morphologies for Cooperative Behaviors",
+          "note": "not humanoid-focused"
+        },
+        {
+          "arxiv_id": "2608.28140",
+          "title": "Contact-Guided Exploration for Non-Prehensile Locomanipulation With Multi-Critic RL",
+          "note": "not humanoid-focused"
+        },
+        {
+          "arxiv_id": "2606.25295",
+          "title": "DynaMOMA: Instantaneous Prediction of Grasp Poses for Mobile Manipulation of Dynamic Objects",
+          "note": "not humanoid-focused"
+        },
+        {
+          "arxiv_id": "2610.12069",
+          "title": "LIVIN: Benchmarking Spatial and Embodied Intelligence in Digital Twins of Lived-In Homes",
+          "note": "not humanoid-focused"
+        },
+        {
+          "arxiv_id": "2610.21349",
+          "title": "CQDC-Warp: GPU-Accelerated Differentiable Quasi-Dynamic Simulation for Contact-Rich Manipulation",
+          "note": "not humanoid-focused"
+        },
+        {
+          "arxiv_id": "2610.00220",
+          "title": "Real-Time Whole-Body Safe Motion Generation for Multi-Segment Tendon-Driven Continuum Robots",
+          "note": "not humanoid-focused"
+        },
+        {
+          "arxiv_id": "2607.01201",
+          "title": "Sensorless Four-Channel Control Architecture Using Inverse Dynamics Modeling for Human-Scale Bilateral Teleoperation",
+          "note": "not humanoid-focused"
+        },
+        {
+          "arxiv_id": "2610.08653",
+          "title": "Magnet-Aware Control of Legged Robots",
+          "note": "not humanoid-focused"
+        },
+        {
+          "arxiv_id": "2606.22397",
+          "title": "Do Rigid-Body Simulators Dream of Soft Robots? Learning Contact-Rich Manipulation for Tendon-Driven Continuum Robots",
+          "note": "not humanoid-focused"
+        },
+        {
+          "arxiv_id": "2606.13394",
+          "title": "GeoHAT: Geometry-Adaptive Hybrid Action Transformer for Mobile Manipulation",
+          "note": "not humanoid-focused"
+        },
+        {
+          "arxiv_id": "2610.08441",
+          "title": "Safe Multi-Robot Collaborative Transport Using Density Functions",
+          "note": "not humanoid-focused"
+        }
+      ]
+    },
+    {
       "kind": "out-of-scope",
       "reason": "Read from the arXiv abstract during the 2026-10-24 AM pass and judged outside this list.",
       "detected_on": "2026-10-24",
@@ -3736,6 +3829,16 @@
           "arxiv_id": "2609.16319",
           "title": "ConGraspXL: Controllable Constraint-Conditioned Dexterous Grasping Motion Synthesis",
           "note": "read arXiv abstract; not humanoid-focused or no robot (retargeting/dexterous hand/human motion/mobile manipulator/generic)"
+        }
+      ]
+    },
+    {
+      "kind": "promotion-suspect",
+      "reason": "2026-10-24 PM: apply_promotions proposed 'IROS 2024' for arXiv 2610.05678 (Dataset-Free Compliant Humanoid Loco-Manipulation with Dynamic Online Posture), first submitted 2026-10. Venue year predates the preprint; reverted, needs a human to check the DOI/match.",
+      "detected_on": "2026-10-24",
+      "items": [
+        {
+          "arxiv_id": "2610.05678"
         }
       ]
     },
