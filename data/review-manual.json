@@ -3864,6 +3864,58 @@
           "arxiv_id": "2610.05678"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-10-25",
+      "reason": "Read from the arXiv abstract during the 2026-10-25 PM queue pass; recorded so discover.py stops re-proposing them.",
+      "items": [
+        {
+          "arxiv_id": "2609.32068",
+          "title": "ReFM: Semantic-Aware Refinement Flow Model for Motion Retargeting",
+          "note": "character-skeleton motion retargeting; no robot, no physics-based control"
+        },
+        {
+          "arxiv_id": "2601.01409",
+          "title": "Sampling Strategy Design for Model Predictive Path Integral Control on Legged Robot Locomotion",
+          "note": "quadruped-only simulation; no humanoid"
+        },
+        {
+          "arxiv_id": "2608.05975",
+          "title": "TRACE: Learned Proprioceptive Odometry for Legged Robots under Unreliable Contact Conditions",
+          "note": "legged odometry; abstract names no humanoid"
+        },
+        {
+          "arxiv_id": "2609.39179",
+          "title": "LocoWM: High-Precision Locomotion through World-Model-Guided Residual Adaptation",
+          "note": "abstract names no humanoid platform"
+        }
+      ]
+    },
+    {
+      "kind": "borderline-scope",
+      "detected_on": "2026-10-25",
+      "reason": "arXiv 2605.11369 'Dynamic Full-body Motion Agent with Object Interaction via Blending Pre-trained Modular Controllers' (v1 2026-05-12, arXiv comments say CVPR Findings 2026) is a simulated human-object-interaction imitation agent; it could fit Physics-Based Character Animation but was not added because the venue is only stated in arXiv comments and no humanoid robot is involved. A human should decide.",
+      "items": [
+        {
+          "arxiv_id": "2605.11369"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "detected_on": "2026-10-25",
+      "reason": "OpenAlex returned HTTP 401 for 2026-10 and 2026-09, and Semantic Scholar twin resolution hit HTTP 429 (127 candidates stay venue-only). Coverage of those OpenAlex windows is incomplete; arXiv and Crossref swept fine. No manual search was done this run. Of the 858-candidate backlog, only ~5 were cleared; the top of the queue is dominated by low-quality OpenAlex records without arXiv ids.",
+      "items": [
+        {
+          "channel": "openalex",
+          "month": "2026-10"
+        },
+        {
+          "channel": "openalex",
+          "month": "2026-09"
+        }
+      ]
     }
   ]
 }
