@@ -26,6 +26,9 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.32966), ViT-H: Generative Video-To-Humanoid Control with Motion Tracking Feedback, [website](https://awfuact.github.io/vit-h/)
+- 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.32909), HoloBoxing: A Simple Recipe for Humanoid Boxing with 7 Minutes of Single-GPU Training, [code](https://github.com/HorizonRobotics/HoloMotion/tree/master/holoboxing)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.32460), CoCarry: Contact-Support-Structured Retargeting for Dual-Humanoid Cooperative Carrying
 - [arXiv 2026.10](https://arxiv.org/abs/2610.31166), Memory before Goal: Role of Pre-History Memory for Humanoid Loco-Manipulation, [website](https://memory-before-goal.github.io)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.30876), LocoManiLab: A Unified Testbed for Data, Policies, Controllers, and Deployment in Humanoid Loco-Manipulation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.30817), Robot Motion Transition with Human Motion Prior, [website](https://childtoy.github.io/STAMP-project)
@@ -771,6 +774,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Safety-Critical Control
 - [Biomimetics 2026](https://doi.org/10.3390/biomimetics11090644), Passive-Active Cooperative Design Method for Fall Protection in Humanoid Robot
+- [arXiv 2026.10](https://arxiv.org/abs/2610.31923), Not an Accident: Exploiting Safety Filter Inadequacy in Humanoid Robots
 - [arXiv 2026.10](https://arxiv.org/abs/2610.12467), CSF: Contextual Safety Filtering for Motion Generators, [website](https://lzyang2000.github.io/csf/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.12432), FAITH: Feasibility-Aware Safety-Filtered RL for High-Dimensional Systems
 - [arXiv 2026.10](https://arxiv.org/abs/2610.02341), Filter-Aware Fine-Tuning for Safe Humanoid Whole-Body Tracking
@@ -882,6 +886,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Sim-to-Real
 - [Preprints.org 2026](https://doi.org/10.20944/preprints202609.0605.v1), A Validated Modelling and Simulation Framework for a 12-DoF Biped Robot with Deep Reinforcement Learning Locomotion
+- [arXiv 2026.10](https://arxiv.org/abs/2610.32277), Delay Randomization Widens the Delay Margin of Learned Humanoid Motion Trackers
 - [arXiv 2026.10](https://arxiv.org/abs/2610.18991), Contact-UAN: Unsupervised Actuator Networks as a Residual World Model for Humanoid Control, [website](https://contact-uan.csail.mit.edu/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.10905), Informationally Decoupled Trajectory Design for Sim-to-Real System Identification
 - [arXiv 2026.09](https://arxiv.org/abs/2609.30951), Bundled Contact Gradients: Stabilizing Differentiable Simulation for Deployable Dynamic Tasks, [website](https://bundledcontactgradients.github.io/)

@@ -3916,6 +3916,108 @@
           "month": "2026-09"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-10-26",
+      "reason": "Read from the arXiv abstract during the 2026-10-26 AM queue pass; recorded so discover.py stops re-proposing them.",
+      "items": [
+        {
+          "arxiv_id": "2610.31891",
+          "title": "Move, don't think: sample-efficient collision avoidance with lossy proximity sensors",
+          "note": "simulated humanoid dodgeball sensor-representation study; generic learning, no humanoid-specific control contribution"
+        },
+        {
+          "arxiv_id": "2610.32971",
+          "title": "RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms",
+          "note": "generic robust-RL library; humanoid only one benchmark domain"
+        },
+        {
+          "arxiv_id": "2608.19055",
+          "title": "Generalized Audio-Driven Synthesis of Precise Drummer Motion",
+          "note": "audio-driven character animation; no robot"
+        },
+        {
+          "arxiv_id": "2607.04554",
+          "title": "HUGS: Guiding Unified Dexterous Grasp Synthesis Across Modes and Scales via Learned Human Priors",
+          "note": "dexterous grasp synthesis; no humanoid"
+        },
+        {
+          "arxiv_id": "2609.37495",
+          "title": "MotionMaestro: Masked Tokenization for Unified Motion Generation",
+          "note": "human motion generation; no robot"
+        },
+        {
+          "arxiv_id": "2606.06556",
+          "title": "Robots Need More than VLA and World Models",
+          "note": "position paper on VLA/world models; no humanoid"
+        },
+        {
+          "arxiv_id": "2606.23675",
+          "title": "IMAGIN-4D: Image-Guided Controllable Interaction Generation",
+          "note": "human-object interaction generation; no robot"
+        },
+        {
+          "arxiv_id": "2608.29547",
+          "title": "Module Number Adaptive Visual Shape Control for Serial Modular Soft Robots",
+          "note": "soft-robot shape control"
+        },
+        {
+          "arxiv_id": "2607.27348",
+          "title": "Bunraku: Turning a Single Illustration into an Editable Live2D Character",
+          "note": "Live2D character animation"
+        },
+        {
+          "arxiv_id": "2608.21697",
+          "title": "Emotion Intensity Matters: Generating Realistic Expressions in Virtual Humans with CVAEs",
+          "note": "virtual-human facial expressions"
+        },
+        {
+          "arxiv_id": "2609.00732",
+          "title": "Inverse Rig Optimization from Line Drawings",
+          "note": "character rig inversion"
+        },
+        {
+          "arxiv_id": "2607.13415",
+          "title": "MultiAnimate: A Unified Framework for Controllable Multi-Character Animation",
+          "note": "character image animation video"
+        },
+        {
+          "arxiv_id": "2607.10370",
+          "title": "Neural Motion Blending Across Arbitrary Character Topologies",
+          "note": "character-skeleton motion blending; no physics/robot"
+        },
+        {
+          "arxiv_id": "2609.05918",
+          "title": "PAI-Actor: Cinematic Multi-Character Replacement in Dynamic Scenes",
+          "note": "video character replacement"
+        },
+        {
+          "arxiv_id": "2606.08186",
+          "title": "Propeller-Assisted Robust 3D Hopping Robot with Hierarchical Force Allocation",
+          "note": "monopedal hopping robot"
+        },
+        {
+          "arxiv_id": "2606.13304",
+          "title": "ReFree: Towards Realistic Co-Speech Video Generation via Reward-Free RL and Multilevel Speech Guidance",
+          "note": "co-speech video generation"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "detected_on": "2026-10-26",
+      "reason": "OpenAlex returned HTTP 401 again for 2026-10 and 2026-09; arXiv and Crossref swept fine. No manual search was done. Queue pass was limited to arXiv-id candidates (5 added, 16 rejected); the top of the queue is still dominated by low-quality OpenAlex records without arXiv ids.",
+      "items": [
+        {
+          "channel": "openalex",
+          "month": "2026-10"
+        },
+        {
+          "channel": "openalex",
+          "month": "2026-09"
+        }
+      ]
     }
   ]
 }
