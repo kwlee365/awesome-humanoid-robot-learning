@@ -4018,6 +4018,108 @@
           "month": "2026-09"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-10-26",
+      "reason": "Read from candidate abstract data during the 2026-10-26 PM queue pass (abs page fetched for 2610.12316); none concerns humanoids. Recorded so discover.py stops re-proposing them.",
+      "items": [
+        {
+          "arxiv_id": "2610.15769",
+          "title": "Hand2Robot: Object-Centric 4D Hand Reconstruction from Human Demonstrations for Robotics",
+          "note": "object-centric 4D hand reconstruction for manipulation; no humanoid"
+        },
+        {
+          "arxiv_id": "2609.36870",
+          "title": "VidAct: Learning Manipulation from In-the-Wild Videos with Object-Centric 3D Awareness",
+          "note": "video-based manipulation learning; no humanoid"
+        },
+        {
+          "arxiv_id": "2610.12316",
+          "title": "Controllable Exaggeration for Generative Motion Models via Training-Time Adaptation and Inference-Time Guidance",
+          "note": "text-to-motion exaggeration; pure character animation, no robot (abs page read)"
+        },
+        {
+          "arxiv_id": "2610.12470",
+          "title": "Dex-One2Many: Learning Dexterous Manipulation from a Single Human Demonstration",
+          "note": "dexterous hand manipulation from one demo; hand-only"
+        },
+        {
+          "arxiv_id": "2609.20649",
+          "title": "DexTouch-WM: Learning Action-Conditioned Tactile World Models from Human Touch for Dexterous Robot Manipulation",
+          "note": "tactile world model for dexterous hands; hand-only"
+        },
+        {
+          "arxiv_id": "2610.20904",
+          "title": "EgoJEPA: Beyond Retargeting for Dexterous Manipulation from Egocentric Videos",
+          "note": "egocentric video to dexterous hand; hand-only"
+        },
+        {
+          "arxiv_id": "2609.38578",
+          "title": "Retargeting Motions to Diverse Skeletons via Learnable Flattening",
+          "note": "skeleton motion retargeting; no robot"
+        },
+        {
+          "arxiv_id": "2610.14848",
+          "title": "Learning Dynamic Grasping",
+          "note": "dynamic grasping; hand/arm only"
+        },
+        {
+          "arxiv_id": "2610.14379",
+          "title": "OATH: Object-Agnostic Tracking for Dexterous Hands, Enabling Rapid Physics-based Retargeting",
+          "note": "dexterous hand tracking/retargeting; hand-only"
+        },
+        {
+          "arxiv_id": "2607.09190",
+          "title": "TactiDex: A Real-World Tactile-Guided Benchmark for Human-Like Dexterous Manipulation",
+          "note": "tactile dexterous benchmark; hand-only"
+        },
+        {
+          "arxiv_id": "2606.03268",
+          "title": "EaDex: A Cross-Embodiment Dexterous Manipulation Framework from Low-Cost Demonstrations",
+          "note": "cross-embodiment dexterous hands; hand-only"
+        },
+        {
+          "arxiv_id": "2607.22434",
+          "title": "Robot Learning to Communicate through Projected Visual Abstractions",
+          "note": "robot communication via projection; no humanoid"
+        },
+        {
+          "arxiv_id": "2606.10804",
+          "title": "SCAIL-2: Unifying Controlled Character Animation with End-to-End In-Context Conditioning",
+          "note": "video character animation; no robot"
+        },
+        {
+          "arxiv_id": "2608.06009",
+          "title": "Wan-Animate-2: Pushing the Application Boundaries of Character Animation",
+          "note": "video character animation; no robot"
+        },
+        {
+          "arxiv_id": "2610.23887",
+          "title": "ContactKernels: Adaptive Proposals using Geometry-COnditioned Wrenches for Contact-Rich Manipulation",
+          "note": "contact-rich manipulation proposals; not humanoid"
+        },
+        {
+          "arxiv_id": "2609.08958",
+          "title": "Model Predictive Control of Tensegrity Robots via Contact-Aware Graph Neural Dynamics Model",
+          "note": "tensegrity robot MPC; not humanoid"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "detected_on": "2026-10-26",
+      "reason": "OpenAlex returned HTTP 401 for 2026-10 and 2026-09 again (PM run); arXiv and Crossref swept fine. No manual search done. No verified humanoid paper found in this pass; top of queue is OpenAlex records without arXiv ids, unverifiable from a primary source.",
+      "items": [
+        {
+          "channel": "openalex",
+          "month": "2026-10"
+        },
+        {
+          "channel": "openalex",
+          "month": "2026-09"
+        }
+      ]
     }
   ]
 }

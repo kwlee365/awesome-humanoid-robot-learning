@@ -13,11 +13,11 @@
   "counts": {
     "raw": 5164,
     "relevant": 783,
-    "merged": 1307,
-    "new": 845,
+    "merged": 1305,
+    "new": 824,
     "similar_to_listed": 1,
-    "already_listed": 461,
-    "carried_over": 853
+    "already_listed": 480,
+    "carried_over": 846
   },
   "per_channel_raw": {
     "arxiv": 4391,
@@ -87,70 +87,6 @@
         "https://doi.org/10.54254/2755-2721/2026.37515"
       ],
       "carried_over_since": "2026-10-10",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26"
-    },
-    {
-      "title": "CoCarry: Contact-Support-Structured Retargeting for Dual-Humanoid Cooperative Carrying",
-      "authors": [
-        "Ziyu Lin",
-        "Shihang Du",
-        "Tianhang Wang",
-        "Xiaodong Liu",
-        "Runze Zhang",
-        "Zongyou Yu",
-        "Haodong Zhang",
-        "Alois Knoll",
-        "Guang Chen"
-      ],
-      "abstract": "Recent advances in large-scale human motion data, motion retargeting, and motion imitation have enabled increasingly capable whole-body control for individual humanoids. Cooperative carrying is more challenging because successful coordination requires not only plausible individual motions, but also consistent cross-agent and agent-object relations, including shared grasp, relative configuration, and whole-body support. We introduce CoCarry, a cooperative-carrying dataset containing 220 synchronized two-person sequences across 21 task schemes, five shared-object geometries, four terrain types, and approximately 61 minutes of motion. We further propose Contact-Support-Structured Retargeting, which starts from nominal individual motions and jointly refines both humanoids around the same prescribed object trajectory. Cooperation-aware object-local hand anchors preserve compatible four-hand grasp relations, while complementary upper object-interaction and lower support structures retain object-relative geometry and coordinated support. Across all 220 CoCarry sequences retargeted to two A3 humanoids, our method achieves 0.9995 contact preservation, reduces penetration duration by 67.0% and 71.0% relative to GMR and OmniRetarget, respectively, and maintains a 100% retargeting success rate. On CORE4D with Unitree G1 humanoids, it achieves 0.9906 contact preservation with zero measured sliding. We further validate the generated references through physics simulation and multiple real-world cooperative carrying experiments on two physical A3 humanoids, demonstrating their usability for downstream dual-humanoid control.",
-      "abstract_source": "https://arxiv.org/abs/2610.32460",
-      "arxiv_id": "2610.32460",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.32460",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "8 pages, 6 figures, 2 tables",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 116,
-        "core": [
-          "humanoid",
-          "humanoids",
-          "unitree g1"
-        ],
-        "task": [
-          "whole body control",
-          "motion retargeting",
-          "motion imitation"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [
-          "retargeting",
-          "retargeted",
-          "human motion"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.32460"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-26"
@@ -484,68 +420,6 @@
         "https://doi.org/10.5281/zenodo.21982375"
       ],
       "carried_over_since": "2026-09-01",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26"
-    },
-    {
-      "title": "ViT-H: Generative Video-To-Humanoid Control with Motion Tracking Feedback",
-      "authors": [
-        "Zimo He",
-        "Tianyi Bian",
-        "Zizhong Yang",
-        "Hongjie Li",
-        "Nan Jiang",
-        "Jieming Cui",
-        "Baoxiong Jia",
-        "Yizhou Wang",
-        "Siyuan Huang",
-        "Yixin Zhu"
-      ],
-      "abstract": "Learning humanoid control from monocular human videos offers a scalable way to acquire diverse whole-body behaviors. Yet, existing reconstruction-retargeting-tracking pipelines are limited in system-level scalability by separately optimized intermediate stages and cannot directly optimize reference motion executability using downstream tracking feedback. We present ViT-H, a video-to-humanoid control framework following a generation-and-tracking paradigm. ViT-H directly generates humanoid reference motions from videos with a diffusion model, bypassing human motion reconstruction and retargeting, and uses motion-tracking outcomes to post-train the generator with direct preference optimization. We further introduce an autoregressive variant that enables real-time humanoid video teleoperation with sub-400 ms latency. Extensive experiments on the Unitree G1 demonstrate that ViT-H outperforms state-of-the-art reconstruction-retargeting-tracking pipelines in both motion quality and executability. We further show that ViT-H scales favorably with model size and with both pre-training and post-training data scale, while motion-tracking feedback consistently improves executability across different motion trackers.",
-      "abstract_source": "https://arxiv.org/abs/2610.32966",
-      "arxiv_id": "2610.32966",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.32966",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "The first four authors contributed equally. Project website: https://awfuact.github.io/vit-h/",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 110,
-        "core": [
-          "humanoid",
-          "unitree g1"
-        ],
-        "task": [],
-        "body": [
-          "whole body"
-        ],
-        "method": [
-          "retargeting",
-          "motion tracking",
-          "human motion",
-          "human videos",
-          "teleoperation"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.32966"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-26"
@@ -1486,60 +1360,6 @@
       "seen_on": "2026-10-26"
     },
     {
-      "title": "HoloBoxing: A Simple Recipe for Humanoid Boxing with 7 Minutes of Single-GPU Training",
-      "authors": [
-        "Xihan Ma",
-        "Bo Zhang",
-        "Boxiong Li",
-        "Yuhan Bao",
-        "Ziyue Liu",
-        "Yucheng Wang"
-      ],
-      "abstract": "HoloBoxing presents a simple recipe for learning humanoid boxing by building on a pretrained whole-body controller. The recipe separates reusable motor skills from task decisions: a compact planner requests future body-point targets, while the frozen controller handles joint-level execution. A learned decoder maps 32-dimensional actions to structured target windows, and measured-state imitation initializes the planner before reinforcement learning. Task learning then refines interaction behavior while reusing the decoder and controller, avoiding the need to relearn whole-body control. This combination keeps task optimization focused on a compact upper policy and supplies an initial behavior before reward-driven exploration. Starting from that available controller, the recipe accounts for about seven minutes of additional training, including reused representation fitting and a single-GPU task run. This excludes controller pretraining, data preparation, evaluation, and search. Simulated boxing experiments and component controls evaluate the resulting behavior and the roles of imitation initialization and the target representation.",
-      "abstract_source": "https://arxiv.org/abs/2610.32909",
-      "arxiv_id": "2610.32909",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.32909",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 107,
-        "core": [
-          "humanoid"
-        ],
-        "task": [
-          "whole body control",
-          "whole body controller"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.32909"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26"
-    },
-    {
       "title": "Humanoid Robot Motion Tracking Control Method Integrating Adaptive PID, Kalman Filtering and Feedforward Compensation",
       "authors": [
         "Jinhui Li",
@@ -2243,8 +2063,8 @@
         "Alexander Arutiunian",
         "Sergey Shchanikov"
       ],
-      "abstract": null,
-      "abstract_source": null,
+      "abstract": "This paper presents a pipeline for controlling the Unitree G1 humanoid robot using natural language commands. The system converts operator voice or text input into executable JSON motion programs through retrieval-augmented generation (RAG), a locally fine-tuned large language model with LoRA/QLoRA adaptation, and a validation block that checks motion feasibility using inverse kinematics. For visual verification, a lightweight vision-language model (nanoVLM) is employed for multiple-choice quality assessment. A curated corpus of 1,626 schema-valid JSON motion examples was constructed (1,401/148/77 train/validation/reserved). The complete pipeline is demonstrated in simulation and on the real Unitree G1 robot.",
+      "abstract_source": "https://doi.org/10.1109/dcna72004.2026.11733377",
       "arxiv_id": null,
       "doi": "10.1109/dcna72004.2026.11733377",
       "paper_url": "https://ieeexplore.ieee.org/document/11733377/",
@@ -2278,7 +2098,8 @@
         "s2"
       ],
       "urls": [
-        "https://ieeexplore.ieee.org/document/11733377/"
+        "https://ieeexplore.ieee.org/document/11733377/",
+        "https://doi.org/10.1109/dcna72004.2026.11733377"
       ],
       "carried_over_since": "2026-10-22",
       "dedupe": "new",
@@ -3054,58 +2875,6 @@
         "https://doi.org/10.1109/icra57385.2026.11697574"
       ],
       "carried_over_since": "2026-10-08",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26"
-    },
-    {
-      "title": "Move, don't think: sample-efficient collision avoidance with lossy proximity sensors",
-      "authors": [
-        "Carson Kohlbrenner",
-        "Niraj Pudasaini",
-        "William Xie",
-        "Naren Sivagnanadasan",
-        "Nikolaus Correll",
-        "Alessandro Roncone"
-      ],
-      "abstract": "Data-driven robots must learn to avoid collisions with as few demonstrations as possible to avoid collecting large datasets of destructive collision examples. We explore whole-body proximity sensors as inductive biases for learning reflexive collision-dodging behavior and find that lossy sensors with low resolution were stronger biases than high-resolution coverage. We also found that, perhaps unintuitively, anticipating when and where contact happens on the body of a robot reduced its learning sample efficiency. We investigated eight candidate representations in a reinforcement learning environment, which included latent compression, future contact anticipation, lossy corruption, and privileged state estimation. The candidate representations were tested by training over 200 humanoid robots to play a simplified version of dodgeball end-to-end under an intentionally constrained sample and compute budget.",
-      "abstract_source": "https://arxiv.org/abs/2610.31891",
-      "arxiv_id": "2610.31891",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.31891",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 105,
-        "core": [
-          "humanoid",
-          "humanoid robots"
-        ],
-        "task": [],
-        "body": [
-          "whole body"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.31891"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-26"
@@ -5317,57 +5086,6 @@
       "seen_on": "2026-10-26"
     },
     {
-      "title": "Delay Randomization Widens the Delay Margin of Learned Humanoid Motion Trackers",
-      "authors": [
-        "Shaoqin Li",
-        "Yi Sun"
-      ],
-      "abstract": "Learned humanoid controllers are usually trained in one simulator and then checked in a second one before they go near hardware. We ask what that check says about command delay. We train motion-tracking policies for a 24-joint humanoid on five motions taken from monocular video and test them in an independent CPU MuJoCo harness, which we first verify against the training model. Every policy completes its motion in at least 26 of 30 episodes under the training randomization. With 40 ms of constant command delay, however, survival drops to 15% on average (0% - 45%), and the delay margin is only 20 - 30 ms. Randomizing the delay during training (0 - 50 ms) lifts survival at 40 ms to 95% on average (75% - 100%) and moves the margin to 50 - 70 ms. A control arm trained for the same number of extra iterations without delay does not improve, so the gain comes from the randomization itself. This holds for all five motions with three training seeds each, and a policy trained in PhysX behaves the same way. The price is slightly looser tracking (0.02 - 0.06 rad on four motions) and, for the most dynamic motion, less robustness to other perturbations. We also show that the first sim-to-sim gap we saw came from the harness, a missing floor and a wrong timestep, and not from the physics engines. The 0 - 20 ms delay ranges common in locomotion training lie inside the margin an unrandomized tracker already has. The benefit comes from randomizing beyond it, so the range should be set from the robot's measured latency, and delay margin belongs next to other sim-to-sim metrics.",
-      "abstract_source": "https://arxiv.org/abs/2610.32277",
-      "arxiv_id": "2610.32277",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.32277",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "8 pages, 1 figure",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 104,
-        "core": [
-          "humanoid"
-        ],
-        "task": [],
-        "body": [
-          "locomotion"
-        ],
-        "method": [
-          "motion tracking"
-        ],
-        "control": [],
-        "sim": [
-          "mujoco"
-        ],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.32277"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26"
-    },
-    {
       "title": "Design and Control of a Spherical Dexterous Robotic Eye for Humanoid Robot Applications",
       "authors": [
         "Chenjie Liu",
@@ -5404,7 +5122,8 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
         "https://ieeexplore.ieee.org/document/11745975/"
@@ -7364,59 +7083,6 @@
       "dedupe_note": "",
       "seen_on": "2026-10-26",
       "carried_over_since": "2026-09-03"
-    },
-    {
-      "title": "Not an Accident: Exploiting Safety Filter Inadequacy in Humanoid Robots",
-      "authors": [
-        "Tiffany Bao",
-        "Shangtao Li",
-        "Yifan Sun",
-        "Mengwen He",
-        "Bowei Li",
-        "Alden Wang",
-        "Changliu Liu",
-        "Ruoyu Wang",
-        "David Brumley"
-      ],
-      "abstract": "As humanoid robots move from research laboratories toward deployment in human-centered environments such as homes, hospitals, and warehouses, safe operation around nearby people and objects becomes a fundamental requirement. Safety filters have emerged as a promising technique to address this challenge by providing mathematical guarantees that generated control actions do not result in collisions. This paper shows that these guarantees hold only when the safety parameters are configured correctly. However, correct parameter configurations are task- and environment-specific, and no general method exists to determine them across diverse deployments. As a result, safety filters shipped with humanoid robots can fail after deployment in specific scenarios. We show that attackers can exploit these failures through only normal user interactions without any additional privileges or capabilities. To demonstrate this risk, we present goal insertion attacks and develop SIREN, an automated tool that identifies vulnerable inserting goals for a given task and environment. Experimental results show that SIREN identifies attacks in all vulnerable scenarios in the SPARK dataset. Compared with a baseline approach, SIREN discovers three times as many attacks. We also show that SIREN is able to generate attacks against a real humanoid and cause it to collide while executing tasks. These results demonstrate that current safety filters introduce exploitable vulnerabilities that can cause safety violations, which reveals that existing safety mechanisms can themselves become a source of safety risk for humanoid robots.",
-      "abstract_source": "https://arxiv.org/abs/2610.31923",
-      "arxiv_id": "2610.31923",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.31923",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.CR",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 104,
-        "core": [
-          "humanoid",
-          "humanoid robots"
-        ],
-        "task": [],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.31923"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26"
     },
     {
       "title": "O-RACES: Proactive AI-driven Scheduling in Open RAN for 6G-Networked Humanoid Robots",
@@ -13003,8 +12669,8 @@
         "S Vijay Kumar",
         "G Bindu Sagar M"
       ],
-      "abstract": null,
-      "abstract_source": null,
+      "abstract": "Locomotion is the mechanical and control basis of a wheeled humanoid robot in which stability and accuracy is particularly important in which precise motion plays a very important role. The design and experimentation of a differential drive robot with a narrow control surface that was manufactured at a lower cost. The height of the robot from its base to the top is 1524mm that can be defined as the overall height of the robotic platform, it has a width of 630mm that gives more space for further upgrades and better way for communication with humans to keep a low center of gravity. Two wheels drive through a connection of bevel gears for motion and it was driven with DC motors including encoders. This was controlled using ESP32 Devkit v1 that has no problem getting the real time motion commands and monitored over the Wi-Fi. The encoders which were used by the motors had a feedback resolution of 600 pulses per revolution which was used to measure the wheel speed for best motion parameters. The wheel had an outer diameter of 120 mm which was required for smooth motion and a ground clearance of 100 mm so that it could go through any rough or complex areas. The robot was powered using a 12 V battery for better body to weight ratio and to improve energy efficiency it was made to best operate in an indoor environment.",
+      "abstract_source": "https://doi.org/10.1109/iconica70605.2026.11736544",
       "arxiv_id": null,
       "doi": "10.1109/iconica70605.2026.11736544",
       "paper_url": "https://ieeexplore.ieee.org/document/11736544/",
@@ -13039,7 +12705,8 @@
         "s2"
       ],
       "urls": [
-        "https://ieeexplore.ieee.org/document/11736544/"
+        "https://ieeexplore.ieee.org/document/11736544/",
+        "https://doi.org/10.1109/iconica70605.2026.11736544"
       ],
       "carried_over_since": "2026-10-23",
       "dedupe": "new",
@@ -14840,7 +14507,8 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
         "https://ieeexplore.ieee.org/document/11743874/"
@@ -15328,57 +14996,6 @@
       "dedupe_note": "",
       "seen_on": "2026-10-26",
       "carried_over_since": "2026-09-03"
-    },
-    {
-      "title": "RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms",
-      "authors": [
-        "Xi Chen",
-        "Fengqi Hu",
-        "Zeyu Shen",
-        "Jiaying Xu",
-        "Shangding Gu",
-        "Pan Xu",
-        "Anqi Liu",
-        "Laixi Shi"
-      ],
-      "abstract": "Robust reinforcement learning (RL) is critical for reliable real-world deployment, where policies may fail under diverse shifts and disruptions. Existing robust RL algorithms offer a rich set of mechanisms and principles, yet two major barriers limit their broader potential: limited algorithm reusability and an unclear empirical capability boundary. We introduce RobustRLlib, an algorithm-centric library and benchmark that addresses both challenges. It integrates 17 representative robust online, offline, and safe RL algorithms under a unified interface for substantially improved reusability, together with an enhanced evaluation platform spanning diverse real-world shifts and advanced humanoid and vision-language-action tasks. Systematic evaluation over 273 perturbation configurations provides an up-to-date capability map of current robust RL algorithms, revealing where they remain effective and where substantial robustness gaps persist. As an open-source, user-friendly platform, RobustRLlib offers a reproducible and extensible codebase for applying existing methods to new problems and developing new robust RL algorithms.",
-      "abstract_source": "https://arxiv.org/abs/2610.32971",
-      "arxiv_id": "2610.32971",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.32971",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "Project page, code, and tutorial: https://robustrl-lib.github.io/",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.LG",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 102,
-        "core": [
-          "humanoid"
-        ],
-        "task": [],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.32971"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26"
     },
     {
       "title": "Spatiotemporal Joint Optimal Path Planning for Embodied Bipedal Robots via Reinforcement Learning-Guided RRT* with Dynamics Constraints",
@@ -17579,56 +17196,6 @@
       "seen_on": "2026-10-26"
     },
     {
-      "title": "Generalized Audio-Driven Synthesis of Precise Drummer Motion",
-      "authors": [
-        "Álvaro G. Iñesta",
-        "Mattia Ryffel",
-        "Amit Haim Bermano",
-        "Robert Sumner",
-        "Martin Guay"
-      ],
-      "abstract": "Music-driven character animation enables and enhances transformative applications in entertainment and interactive education. However, synthesizing realistic drumming motion from audio remains challenging due to the inherent tension between high-acceleration dynamics and the need for extreme spatial-temporal precision. Existing approaches, often reliant on motion matching or MIDI input, struggle with generalizing to diverse real-world audio. Moreover, the field lacks standardized evaluation metrics capable of distinguishing precise drumming from noisy motion. In this paper, we introduce a generative diffusion framework featuring a dual-objective loss function that decouples skeletal integrity from drumstick precision, thus enabling centimeter-level stick precision without sacrificing natural body dynamics. Additionally, leveraging our own dataset and data augmentation strategy, the model generalizes to non-curated, in-the-wild audio. To rigorously evaluate performance, we propose two novel metrics: an impact-to-target distance to quantify spatial precision and an audio-motion correlation score to assess temporal alignment. Our quantitative analysis and user studies demonstrate that our system generates high-quality motion that is often indistinguishable from ground-truth performances.",
-      "abstract_source": "https://arxiv.org/abs/2608.19055",
-      "arxiv_id": "2608.19055",
-      "doi": "10.48550/arxiv.2608.19055",
-      "paper_url": "https://arxiv.org/abs/2608.19055",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "publication_status": "preprint",
-      "first_public_date": "2026-08",
-      "date_basis": "arxiv-v1",
-      "window": "2026-08",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 84,
-        "core": [],
-        "task": [
-          "character animation",
-          "motion matching"
-        ],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "openalex",
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2608.19055"
-      ],
-      "arxiv_category": "cs.CV",
-      "carried_over_since": "2026-09-01",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26"
-    },
-    {
       "title": "HAAS: Holistic Attention-free Animation from Speech using Mamba",
       "authors": [
         "Laxmi Narayen Nagarajan Venkatesan",
@@ -17743,66 +17310,6 @@
       "seen_on": "2026-10-26"
     },
     {
-      "title": "HUGS: Guiding Unified Dexterous Grasp Synthesis Across Modes and Scales via Learned Human Priors",
-      "authors": [
-        "Mingrui Yu",
-        "Yongpeng Jiang",
-        "Yongyi Jia",
-        "Kangchen Lv",
-        "Li Huang",
-        "Yi Ren",
-        "Xiang Li"
-      ],
-      "abstract": "Dexterous grasping across diverse object scales requires contact modes ranging from two-finger pinches to bimanual grasps. Existing dexterous grasp synthesis methods reduce the high-dimensional optimization space with manually designed expected contacts and initialization heuristics, which struggle to balance synthesis success rate and diversity. We present HUGS (Human-prior-guided Unified Dexterous Grasp Synthesis), a human-prior-guided framework for unified dexterous grasp synthesis across modes and scales. Instead of directly retargeting human demonstrations, HUGS learns an object-conditioned human prior that captures human grasp preferences and guides downstream force-closure-aware optimization. The prior is trained on a compact self-collected human grasp dataset with 1.8K grasps over 304 objects, providing broad coverage of object scales and contact modes. During synthesis, HUGS adaptively proposes contact modes and wrist initializations, substantially improving the balance between contact-mode coverage and synthesis success rate over heuristic-based methods. With HUGS, we synthesize 3.2M robotic grasps over 157K scenes, spanning object half-diagonal lengths from 2 cm to 30 cm and modes from two-finger to bimanual grasps. Models trained on the synthesized dataset autonomously select appropriate contact modes in the real world, enabling grasping from screws to large boxes.",
-      "abstract_source": "https://arxiv.org/abs/2607.04554",
-      "arxiv_id": "2607.04554",
-      "doi": "10.48550/arxiv.2607.04554",
-      "paper_url": "https://arxiv.org/abs/2607.04554",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "publication_status": "preprint",
-      "first_public_date": "2026-07",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-07",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 84,
-        "core": [],
-        "task": [
-          "retargeting human"
-        ],
-        "body": [],
-        "method": [
-          "retargeting",
-          "human demonstrations"
-        ],
-        "motion": [
-          "retargeting"
-        ],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": [
-          "dexterous grasp",
-          "grasping"
-        ]
-      },
-      "sources": [
-        "arxiv",
-        "openalex"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2607.04554",
-        "https://doi.org/10.48550/arxiv.2607.04554"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26",
-      "carried_over_since": "2026-09-01"
-    },
-    {
       "title": "LA-WBC: Learning-Driven Adaptation of Whole-Body Control for Safe Locomotion on Uncertain Terrain",
       "authors": [
         "Hanbin Jang",
@@ -17847,57 +17354,6 @@
         "https://ieeexplore.ieee.org/document/11740650/"
       ],
       "carried_over_since": "2026-10-20",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26"
-    },
-    {
-      "title": "MotionMaestro: Masked Tokenization for Unified Motion Generation",
-      "authors": [
-        "Yun Chen",
-        "Munchurl Kim",
-        "Jeonghyeok Do"
-      ],
-      "abstract": "Human motion generation plays an important role in applications such as character animation, virtual environments, and embodied interaction. While existing approaches have achieved remarkable progress, many of them are developed for individual tasks, including text-to-motion, pose-conditioned generation, and trajectory control. Although these tasks involve different types of conditions, a unified framework capable of handling them within a common representation would greatly simplify motion generation systems. We observe that diverse motion conditions can be naturally formulated as different observation patterns over motion sequences, where each task corresponds to a specific masking strategy. Based on this insight, we introduce MotionMaestro, a unified motion generation framework that learns a shared representation for complete motions and heterogeneous partial observations through masked motion tokenization. MotionMaestro employs a three-stage training strategy that first learns a masked motion tokenizer, then refines its reconstruction ability on clean motions, and finally trains a conditional flow-matching generator in the learned latent space. Furthermore, we introduce an observation map and an observation loss to explicitly preserve provided motion conditions during generation. With this unified representation and conditioning mechanism, MotionMaestro supports text-guided and unconditional synthesis, pose conditioning and partial completion, temporal interpolation, trajectory control, and motion continuation. Experiments on the large-scale RoMo and MotionMillion datasets show state-of-the-art performance across diverse motion generation tasks.",
-      "abstract_source": "https://arxiv.org/abs/2609.37495",
-      "arxiv_id": "2609.37495",
-      "doi": "10.48550/arxiv.2609.37495",
-      "paper_url": "https://arxiv.org/abs/2609.37495",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "arxiv_comment": "Please visit our project page https://kaist-viclab.github.io/MotionMaestro_site/",
-      "publication_status": "preprint",
-      "first_public_date": "2026-09",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.CV",
-      "window": "2026-09",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 84,
-        "core": [],
-        "task": [
-          "character animation"
-        ],
-        "body": [],
-        "method": [
-          "human motion",
-          "motion generation"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv",
-        "openalex"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2609.37495"
-      ],
-      "carried_over_since": "2026-10-05",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-26"
@@ -17950,62 +17406,6 @@
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-26"
-    },
-    {
-      "title": "Robots Need More than VLA and World Models",
-      "authors": [
-        "Elis Karcini",
-        "Faisal Mehrban",
-        "Quang Nguyen",
-        "Mac Schwager",
-        "Arash Ajoudani",
-        "Cesar Cadena",
-        "Jan Peters",
-        "Marco Hutter",
-        "Haitham Bou-Ammar"
-      ],
-      "abstract": "Generalist robot intelligence is often framed as a policy-scaling problem: collect more robot demonstrations, train larger Vision-Language-Action (VLA) models, and expect broader generalisation. In this position paper, we argue that this framing is incomplete. The central bottleneck is not only policy learning, but the absence of mechanisms that convert the world's abundant unstructured behavioural data into grounded robot supervision. Human motion, internet video, simulation rollouts, and interactive demonstrations contain rich information about tasks, goals, contacts, failures, and physical constraints, yet most of this information is not directly usable by robot policies because it lacks embodiment-specific action labels, task semantics, and reward structure. We identify four missing components for the next generation of robotics: data interfaces for autolabelling unstructured behaviour, embodiment interfaces for retargeting human motion to robot actions, world-model interfaces for physics-grounded 3D reasoning, and reward interfaces for inferring task progress and success from video and language. We survey recent progress in robot foundation models, cross-embodiment datasets, learning from video, world models, and reward modelling, and propose a research agenda for building robotics systems that can learn not only from robot demonstrations, but from the broader physical world.",
-      "abstract_source": "https://arxiv.org/abs/2606.06556",
-      "arxiv_id": "2606.06556",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2606.06556",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-06",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-06",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 84,
-        "core": [],
-        "task": [
-          "retargeting human"
-        ],
-        "body": [],
-        "method": [
-          "retargeting",
-          "human motion"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2606.06556"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26",
-      "carried_over_since": "2026-09-03"
     },
     {
       "title": "Unreal – Additional Character Animation",
@@ -18549,63 +17949,6 @@
       "seen_on": "2026-10-26"
     },
     {
-      "title": "IMAGIN-4D: Image-Guided Controllable Interaction Generation",
-      "authors": [
-        "Sai Kumar Dwivedi",
-        "Federica Bogo",
-        "Buğra Tekin",
-        "Chenhongyi Yang",
-        "Nadine Bertsch",
-        "Tomas Hodan",
-        "Michael J. Black",
-        "Dimitrios Tzionas",
-        "Shreyas Hampali"
-      ],
-      "abstract": "Generating human-object interactions (HOI) is central to character animation, robotics, AR/VR, and embodied AI. Recent HOI generation methods synthesize motion from text, object geometry, and sparse waypoints, controlling action semantics and object trajectories. However, these signals underspecify interaction: the same prompt and trajectory can produce different grasps, approach directions, body poses, object poses, contacts, and body-object layouts. We address this ambiguity with a reference image as a visual specification of the desired interaction snapshot. However, a single global image representation conflates distinct cues and conditions all frames on identical visual evidence. We therefore introduce IMAGIN-4D, a diffusion-based HOI generator that decomposes image conditioning spatio-temporally. For spatial conditioning, IMAGIN-4D extracts supervised interaction-state tokens for body pose, object pose, body-object contact, and spatial relationships at the depicted frame. For temporal conditioning, it computes frame-aware tokens by querying image patches per generated frame, allowing sequence segments to attend to different visual cues from the same image. To balance image, text, and waypoint cues, IMAGIN-4D uses role-aware conditioning: text, waypoints, and interaction-state tokens use separate AdaLN streams, while frame-aware visual tokens cross-attend with motion tokens. Since HOI motion datasets lack paired images, we build a synthetic motion-to-image rendering pipeline from FullBodyManipulation (FBM) and introduce an image-adherence metric to evaluate whether generated motions match the reference snapshot. Experiments on FBM and BEHAVE show that IMAGIN-4D improves fine-grained interaction control over single-token and uniformly image-conditioned baselines while preserving waypoint-following and motion quality. Code and models will be released at https://imagin4d.github.io.",
-      "abstract_source": "https://arxiv.org/abs/2606.23675",
-      "arxiv_id": "2606.23675",
-      "doi": "10.48550/arxiv.2606.23675",
-      "paper_url": "https://arxiv.org/abs/2606.23675",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "arxiv_comment": "15 pages, 8 figures. Project page: https://imagin4d.github.io",
-      "publication_status": "preprint",
-      "first_public_date": "2026-06",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.CV",
-      "window": "2026-06",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 83,
-        "core": [],
-        "task": [
-          "character animation"
-        ],
-        "body": [
-          "body pose"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv",
-        "openalex"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2606.23675",
-        "https://doi.org/10.48550/arxiv.2606.23675"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26",
-      "carried_over_since": "2026-09-03"
-    },
-    {
       "title": "Innovative Development of a Circleg Robot With Multi-Modal Locomotion and Autonomous Fall Recovery",
       "authors": [
         "Zhiguo Lu",
@@ -18658,56 +18001,6 @@
         "https://doi.org/10.1109/lra.2026.3741794"
       ],
       "carried_over_since": "2026-10-09",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26"
-    },
-    {
-      "title": "Module Number Adaptive Visual Shape Control for Serial Modular Soft Robots",
-      "authors": [
-        "Kyohei Akamine",
-        "Takato Horii",
-        "Yusuke Sakaue",
-        "Hiroki Ishizuka"
-      ],
-      "abstract": "Image based shape control provides a simple means of controlling the whole body configuration of soft robots. However, existing data driven approaches are typically developed for fixed robot structures and require new control data when the number of modules changes. This paper presents a module number adaptive visual shape control method for serial modular soft pneumatic robots. A controller trained only on single module actuation shape data is reused for robots with one to five modules by decomposing whole body camera images into local module patches. A single common module segmenter localizes individual modules across all tested configurations, while the same local controller is applied to every extracted patch. Geometric data augmentation improves transferability to downstream modules, and a lightweight mask reconstruction network reconstructs a synthetically removed actuator mask channel. Experiments on physical robots demonstrate shape control across varying numbers of modules and under environmental changes and payload loading. The results show that single module control learning enables scalable whole body control without configuration specific control data collection.",
-      "abstract_source": "https://arxiv.org/abs/2608.29547",
-      "arxiv_id": "2608.29547",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2608.29547",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "9 pages, 7 figures. This articles has been submitted to a IEEE Journal",
-      "publication_status": "preprint",
-      "first_public_date": "2026-08",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-08",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 83,
-        "core": [],
-        "task": [
-          "whole body control"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2608.29547"
-      ],
-      "carried_over_since": "2026-09-01",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-26"
@@ -19000,60 +18293,6 @@
       "seen_on": "2026-10-26"
     },
     {
-      "title": "Bunraku: Turning a Single Illustration into an Editable Live2D Character",
-      "authors": [
-        "Junhao Chen",
-        "Jingjia Mao",
-        "Dayong Li",
-        "Chenghai Li",
-        "Saining Zhang",
-        "Zhihao Li",
-        "Hao Zhao",
-        "Yufei Wang",
-        "Ruqi Huang"
-      ],
-      "abstract": "Live2D is the dominant 2D character-animation format for anime characters and virtual avatars, representing each character as a stack of RGBA layers driven by per-layer mesh deformation. Despite its wide use in virtual streaming, mobile games, and interactive characters, authoring a Live2D model still demands weeks of manual layer separation, occlusion completion, mesh placement, and keyframing, and no prior generative method produces such a structured asset end-to-end. We present the first system that, from a single illustration, generates all the structured information a Live2D runtime consumes: ordered RGBA layers, a deformation mesh per layer, and the parameter-driven keypose vertex offsets that make the character move. Stage 1 casts layered decomposition as a layered diffusion process under a Live2D-aware organ-level taxonomy, producing an ordered RGBA stack with hidden-region completion. Stage 2 builds a content-conforming triangle mesh for each layer from its alpha channel alone, then predicts the keypose displacement field of all layers jointly: every vertex of every layer is one token, self-attention spans layer boundaries, and each displacement is factorised into a bounded direction and a log-magnitude. Joint rather than independent prediction is what makes the result a coherent character instead of separately plausible parts, and is our largest gain; scaling the network 112x yields none. On 50 held-out characters, under true generation with no teacher forcing, Stage 2 attains a per-vertex direction cosine of 0.768 (median 0.828). Because a layer's mesh derives from its alpha channel, a clothing layer can be re-textured from a natural-language instruction while the mesh and predicted animation are reused byte-for-byte. We further contribute Live2D-Bench, the first standardized benchmark for the task, and an 8,884-model Live2D corpus with layer and animation supervision.",
-      "abstract_source": "https://arxiv.org/abs/2607.27348",
-      "arxiv_id": "2607.27348",
-      "doi": "10.48550/arxiv.2607.27348",
-      "paper_url": "https://arxiv.org/abs/2607.27348",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "publication_status": "preprint",
-      "first_public_date": "2026-07",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.CV",
-      "window": "2026-07",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 82,
-        "core": [],
-        "task": [
-          "character animation"
-        ],
-        "body": [],
-        "method": [],
-        "motion": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv",
-        "openalex"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2607.27348",
-        "https://doi.org/10.48550/arxiv.2607.27348"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26",
-      "carried_over_since": "2026-09-01"
-    },
-    {
       "title": "Character Animations",
       "authors": [
         "William Culbertson"
@@ -19092,101 +18331,6 @@
         "https://doi.org/10.1201/9781003754176-9"
       ],
       "carried_over_since": "2026-09-27",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26"
-    },
-    {
-      "title": "Emotion Intensity Matters: Generating Realistic Expressions in Virtual Humans with CVAEs",
-      "authors": [
-        "Vitor Miguel Xavier Peres",
-        "Lara Volpato",
-        "Gabriel Ferri Scnheider",
-        "Soraia Raupp Musse"
-      ],
-      "abstract": "Generating expressive facial behavior in virtual humans (VHs) remains a central challenge in affective computing and character animation. This paper presents a novel approach based on Conditional Variational Autoencoders (CVAEs), trained on real human facial expression data, to synthesize controllable emotional expressions at varying intensities. Using a dataset comprising six basic emotions represented at two intensity levels (low and high), we train a CVAE model to generate synthetic facial expression data while preserving semantic consistency with real human expressions. Despite the limited amount of training data (only 7,680 facial expression samples), the proposed approach learns meaningful latent representations and generates coherent emotional variations. Our method enables control over emotional intensity, making it suitable for animating virtual characters without requiring actor performances or manual artistic intervention. Our research aimed to evaluate whether the method (CVAE) preserves the characteristics associated with the different intensity levels present in the dataset. Results show that the proposed model preserves key expressive characteristics across intensity levels while supporting generalization across emotional intensity levels, contributing to the creation of emotionally expressive virtual characters from relatively small datasets.",
-      "abstract_source": "https://arxiv.org/abs/2608.21697",
-      "arxiv_id": "2608.21697",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2608.21697",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-08",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.CV",
-      "window": "2026-08",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 82,
-        "core": [],
-        "task": [
-          "character animation"
-        ],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2608.21697"
-      ],
-      "carried_over_since": "2026-09-01",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26"
-    },
-    {
-      "title": "Inverse Rig Optimization from Line Drawings",
-      "authors": [
-        "Zihao Zhu",
-        "Yuki Koyama"
-      ],
-      "abstract": "Stylized 3D character animation is largely hand-authored, with animators authoring rig parameters one keyframe at a time to find the best pose. Because stylized work reads chiefly through contour lines, drawing contours in the camera view is the most direct and precise way to express artistic intent. This mismatch between the rig controls and the artist's goal forces a laborious trial-and-error workflow, with animators repeatedly manipulating rig controls against the rendered view to match the desired contour. To address this, we propose a method that recovers rig parameters from screen-space contour strokes, enabling effective keyframing from sketches. Given strokes that redraw the current contour, our method optimizes the high-level rig parameters defined in the DCC tool. The key is to use a pre-trained MLP rig surrogate that provides a differentiable map from rig parameters to mesh vertices, replacing the original black-box rig within the optimization process. We match user-drawn lines to mesh contour lines and backpropagate the resulting screen-space error through the surrogate to update the rig parameters. Our results demonstrate that the method works for diverse characters and practical scenarios.",
-      "abstract_source": "https://arxiv.org/abs/2609.00732",
-      "arxiv_id": "2609.00732",
-      "doi": "10.48550/arxiv.2609.00732",
-      "paper_url": "https://arxiv.org/abs/2609.00732",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "arxiv_comment": "Pacific Graphics 2026",
-      "publication_status": "preprint",
-      "first_public_date": "2026-09",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.GR",
-      "window": "2026-09",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 82,
-        "core": [],
-        "task": [
-          "character animation"
-        ],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv",
-        "openalex"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2609.00732"
-      ],
-      "carried_over_since": "2026-09-04",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-26"
@@ -19242,108 +18386,6 @@
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-26"
-    },
-    {
-      "title": "MultiAnimate: A Unified Framework for Controllable Multi-Character Animation",
-      "authors": [
-        "Zhongyi Zhang",
-        "Guangyuan Wang",
-        "Li Hu",
-        "Wenbo Zhou",
-        "Peng Zhang",
-        "Tianyi Wei",
-        "Weiming Zhang",
-        "Bang Zhang",
-        "Nenghai Yu"
-      ],
-      "abstract": "Recent advances in generative models and technological innovations have significantly addressed the fundamental challenges of character image animation. However, existing approaches predominantly focus on character animation from a single reference image, substantially limiting their applicability in scenarios such as multiple character interaction animation. To fill this gap, this paper introduces MultiAnimate, a comprehensive framework that enables concurrent animation of multiple characters within a shared environment while preserving both identity consistency and spatial relationships. The framework achieves these objectives through multiple well-designed mechanisms. First, we incorporate an identity-specific reference net that enables appearance extraction from multiple reference images, distinguishing MultiAnimate from existing approaches constrained to single reference inputs. Second, we implement an identity-aware pose encoder to address the character-pose binding challenge, wherein an attention mechanism enables the network to accurately differentiate and process multiple pose sequences during generation. Third, we introduce an interaction guider module that enhances the framework's capability to handle complex inter-character interactions by leveraging character-specific mask information, serving as an optional component that refines the pose sequences. Extensive experiments and ablation analyses demonstrate our framework's superiority in multiple character animation, particularly in scenarios involving complex motion sequences.",
-      "abstract_source": "https://arxiv.org/abs/2607.13415",
-      "arxiv_id": "2607.13415",
-      "doi": "10.48550/arxiv.2607.13415",
-      "paper_url": "https://arxiv.org/abs/2607.13415",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "publication_status": "preprint",
-      "first_public_date": "2026-07",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.CV",
-      "window": "2026-07",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 82,
-        "core": [],
-        "task": [
-          "character animation"
-        ],
-        "body": [],
-        "method": [],
-        "motion": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv",
-        "openalex"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2607.13415",
-        "https://doi.org/10.48550/arxiv.2607.13415"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26",
-      "carried_over_since": "2026-09-01"
-    },
-    {
-      "title": "Neural Motion Blending Across Arbitrary Character Topologies",
-      "authors": [
-        "Luca Cazzola",
-        "Giulia Martinelli",
-        "Nicola Conci"
-      ],
-      "abstract": "Motion blending in character animation enables the synthesis of new motions by interpolating between existing examples. Current methods are typically restricted to fixed skeleton topologies, requiring identical or near-identical skeletal structures across characters. We present a novel framework for motion blending across heterogeneous skeletons. The proposed architecture combines a semantic encoder, which extracts per-frame latent representations of the motion state, with a diffusion-based decoder, which reconstructs character-specific motion conditioned on this latent code. At inference, blended motions are obtained by interpolating the latent representations of two input motions. We train and evaluate the method on the Truebones Zoo dataset using motions defined on both same and distinct skeleton topologies, demonstrating the ability to achieve smooth and plausible blending in a variety of scenarios.",
-      "abstract_source": "https://arxiv.org/abs/2607.10370",
-      "arxiv_id": "2607.10370",
-      "doi": "10.48550/arxiv.2607.10370",
-      "paper_url": "https://arxiv.org/abs/2607.10370",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "publication_status": "preprint",
-      "first_public_date": "2026-07",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.CV",
-      "window": "2026-07",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 82,
-        "core": [],
-        "task": [
-          "character animation"
-        ],
-        "body": [],
-        "method": [],
-        "motion": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv",
-        "openalex"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2607.10370",
-        "https://doi.org/10.48550/arxiv.2607.10370"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26",
-      "carried_over_since": "2026-09-01"
     },
     {
       "title": "OATH: Object-Agnostic Tracking for Dexterous Hands, Enabling Rapid Physics-based Retargeting",
@@ -19445,160 +18487,6 @@
       "dedupe_note": "",
       "seen_on": "2026-10-26",
       "carried_over_since": "2026-09-01"
-    },
-    {
-      "title": "PAI-Actor: Cinematic Multi-Character Replacement in Dynamic Scenes",
-      "authors": [
-        "Bangxun Tang",
-        "Heyuan Gao",
-        "Yiren Song",
-        "Guian Fang",
-        "Zijian He",
-        "Jie Yang",
-        "Mike Zheng Shou"
-      ],
-      "abstract": "We present PAI-Actor, a cinematic multi-character animation framework for character replacement in dynamic movie scenes. Unlike conventional animation systems that mainly drive a single static image or a single subject, our goal is to replace and animate multiple characters within real video clips while preserving the original scene dynamics, camera motion, and background content. This setting is particularly challenging because the generated characters must remain consistent with the source performance in motion and interaction, while also matching the surrounding background in lighting, shadow, composition, and overall cinematic appearance. To address this, we formulate multi-character animation as a structure-guided human recovery problem and build a movie-driven training pipeline from high-quality film data. Furthermore, to support practical cinematic production, we introduce a bidirectional-to-autoregressive distillation framework: we first train a bidirectional diffusion transformer for high-quality short-clip generation at 1080P resolution, and then distill it into an autoregressive video-to-video model for efficient inference and longer video generation. Experiments show that PAI-Actor enables high-fidelity multi-character animation with strong scene consistency, cinematic visual quality, and efficient long-form generation.",
-      "abstract_source": "https://arxiv.org/abs/2609.05918",
-      "arxiv_id": "2609.05918",
-      "doi": "10.48550/arxiv.2609.05918",
-      "paper_url": "https://arxiv.org/abs/2609.05918",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-09",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.CV",
-      "window": "2026-09",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 82,
-        "core": [],
-        "task": [
-          "character animation"
-        ],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv",
-        "openalex"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2609.05918",
-        "https://doi.org/10.48550/arxiv.2609.05918"
-      ],
-      "carried_over_since": "2026-09-10",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26"
-    },
-    {
-      "title": "Propeller-Assisted Robust 3D Hopping Robot with Hierarchical Force Allocation",
-      "authors": [
-        "Chuhan Zhang",
-        "Hongbo Zhang",
-        "Yanlin Chen",
-        "Yunxi Tang",
-        "Yun-Hui Liu",
-        "Mingyi Liu",
-        "Xiangyu Chu"
-      ],
-      "abstract": "Monopedal hopping robots are conceptually simple but highly dynamic and inherently unstable. Achieving robust 3D hopping is still difficult because ground reaction forces are available only during the short stance phase, while the robot is underactuated in flight. A key unresolved issue is how to improve flight-phase control authority. Propeller assistance provides a promising solution, but it requires careful coordination of leg-generated contact forces and propeller thrusts across stance and flight. This paper presents Pro-OMEGA2, a propeller-assisted 3D monopedal hopping robot with an active 3-RSR parallel leg and a trunk-mounted tri-rotor for auxiliary attitude regulation. To address the force coordination challenge, we propose a Hierarchical Force Allocation (HFA) framework based on a single rigid body (SRB) model. The leg generates the main stance contact wrench, while the tri-rotor provides auxiliary attitude regulation, compensating the residual attitude moment in stance and maintaining attitude during flight. Real-robot experiments in indoor and outdoor scenarios demonstrate sustained 3D hopping, including terrain transitions and impulsive push recovery, validating robustness under unmodeled contact and external disturbances.",
-      "abstract_source": "https://arxiv.org/abs/2606.08186",
-      "arxiv_id": "2606.08186",
-      "doi": "10.48550/arxiv.2606.08186",
-      "paper_url": "https://arxiv.org/abs/2606.08186",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "arxiv_comment": "8 pages, 9 figures, 1 table. Accepted to the 2026 IEEE International Conference on Automation Science and Engineering (CASE)",
-      "publication_status": "preprint",
-      "first_public_date": "2026-06",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-06",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 82,
-        "core": [],
-        "task": [
-          "push recovery"
-        ],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv",
-        "openalex"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2606.08186",
-        "https://doi.org/10.48550/arxiv.2606.08186"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26",
-      "carried_over_since": "2026-09-03"
-    },
-    {
-      "title": "ReFree: Towards Realistic Co-Speech Video Generation via Reward-Free RL and Multilevel Speech Guidance",
-      "authors": [
-        "Salaheldin Mohamed",
-        "M. Hamza Mughal",
-        "Rishabh Dabral",
-        "Christian Theobalt"
-      ],
-      "abstract": "Speech-driven talking character animation seeks to generate life-like portrait videos that convey natural conversation behavior, aligning facial motion with spoken audio. Although recent advances in video generation have substantially improved realism in video-based animation, achieving both accurate lip articulation and expressive behavior remains challenging. Existing approaches typically trade off precise phoneme-to-lip synchronization against dynamic facial expressions and head motion, yielding animations that are either accurate yet rigid, or expressive but poorly synchronized. We address this challenge by proposing ReFree-S2V, a flow-matching speech-to-portrait animation framework that builds upon a pretrained video generation model to achieve fine-grained speech articulation and high-level expressive cues in speech-driven portrait animation. This model introduces a multi-level speech representation capturing phonetic and prosodic information at both local and global granularities. These representations are selectively injected into transformer blocks via learnable level selectors, enabling both accurate lip synchronization and natural expressive motion. To achieve natural head movements, we further introduce a novel reward-free reinforcement learning scheme into flow-matching training to discourage perceptually implausible motion without relying on handcrafted synchronization metrics or reward models, or the high cost of human preference annotation. Extensive experiments demonstrate that ReFree-S2V achieves state-of-the-art performance, significantly outperforming existing methods in both quantitative lip-sync accuracy and qualitative human evaluations of naturalness and expressivity.",
-      "abstract_source": "https://arxiv.org/abs/2606.13304",
-      "arxiv_id": "2606.13304",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2606.13304",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-06",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.CV",
-      "window": "2026-06",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 82,
-        "core": [],
-        "task": [
-          "character animation"
-        ],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2606.13304"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-26",
-      "carried_over_since": "2026-09-03"
     },
     {
       "title": "Rigging the Warhorse Knight",
@@ -19736,7 +18624,8 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
         "https://ieeexplore.ieee.org/document/11743902/"
@@ -21894,7 +20783,8 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
         "https://ieeexplore.ieee.org/document/11743892/"
@@ -31124,6 +30014,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.32855"
       ],
+      "carried_over_since": "2026-10-26",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-26"
