@@ -26,6 +26,11 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.35862), Learning Force-Reactive Humanoid Loco-Manipulation, [website](https://louis-leee.github.io/FLoRe/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.35075), Zero-HLM: Generalizable Humanoid Loco-Manipulation without Real Robot Data, [website](https://young-bit.github.io/zero-hlm/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.34126) / CoRL 2026, HumanoidNDM: Closing the Training-Deployment Gap of Motion Tracking via Humanoid Neural Dynamics Model
+- [arXiv 2026.10](https://arxiv.org/abs/2610.33508), MimicAll: Structured Embodiment Conditioning for Cross-Humanoid Whole-Body Motion Tracking
+- [arXiv 2026.10](https://arxiv.org/abs/2610.33446), MOTIO: Agentic Skill Engineering for Reality-Grounded Humanoid Loco-Manipulation, [website](https://iiiiqiiii.github.io/motio/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.32966), ViT-H: Generative Video-To-Humanoid Control with Motion Tracking Feedback, [website](https://awfuact.github.io/vit-h/)
 - 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.32909), HoloBoxing: A Simple Recipe for Humanoid Boxing with 7 Minutes of Single-GPU Training, [code](https://github.com/HorizonRobotics/HoloMotion/tree/master/holoboxing)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.32460), CoCarry: Contact-Support-Structured Retargeting for Dual-Humanoid Cooperative Carrying
@@ -82,7 +87,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.10](https://arxiv.org/abs/2610.07052), BRACE: Adapting Whole-Body References for Force and Terrain Aware Humanoid Motion Tracking, [website](https://multiplylabs.github.io/brace/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.06850), InterMimicGen: Scaling Humanoid Loco-Manipulation through Self-Evolving Motion Imitation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.06129), I-BFM: Reward-Conditioned Robust Humanoid Interaction via Unsupervised Reinforcement Learning
-- [arXiv 2026.10](https://arxiv.org/abs/2610.05678), Dataset-Free Compliant Humanoid Loco-Manipulation with Dynamic Online Posture, [website](https://oclo-humanoid.github.io/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.05678) / IROS 2024, Dataset-Free Compliant Humanoid Loco-Manipulation with Dynamic Online Posture, [website](https://oclo-humanoid.github.io/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.05324), CoDance: Learning Reactive and Compliant Human-Humanoid Interaction from Video, [website](https://generalroboticslab.com/CoDance)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.04609), Exploiting Hierarchical Controller Structure in Contextual Parameter Learning for Humanoid Loco-Manipulation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.04238), Humanoid Rickshaw Pulling: Whole-Body Locomotion under Coupled Wheeled Loads
@@ -417,6 +422,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.08](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/), VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters, [website](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/)
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.34186), HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience
 - [arXiv 2026.10](https://arxiv.org/abs/2610.27242), EmbodyHOI: Embodiment-Aware Generation of Hand-Object Interactions for Humanoid Dexterous Manipulation, [website](https://embodyhoi.github.io/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.26170), Data-Efficient Learning from Demonstration for Humanoid Robots via Feature-Level Perception and Prompt-Based Object Detection
 - [arXiv 2026.10](https://arxiv.org/abs/2610.26169), Compositional Humanoid Manipulation through Isomorphic Teleoperation and Independent Skill Routing
@@ -774,6 +780,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Safety-Critical Control
 - [Biomimetics 2026](https://doi.org/10.3390/biomimetics11090644), Passive-Active Cooperative Design Method for Fall Protection in Humanoid Robot
+- [arXiv 2026.10](https://arxiv.org/abs/2610.33317), Active Reachability Learning for Humanoid Recoverability Monitoring
 - [arXiv 2026.10](https://arxiv.org/abs/2610.31923), Not an Accident: Exploiting Safety Filter Inadequacy in Humanoid Robots
 - [arXiv 2026.10](https://arxiv.org/abs/2610.12467), CSF: Contextual Safety Filtering for Motion Generators, [website](https://lzyang2000.github.io/csf/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.12432), FAITH: Feasibility-Aware Safety-Filtered RL for High-Dimensional Systems

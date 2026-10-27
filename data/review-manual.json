@@ -4120,6 +4120,103 @@
           "month": "2026-09"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-10-27",
+      "reason": "Read from verbatim arXiv abstracts in the 2026-10-27 queue pass; recorded so discover.py stops re-proposing them.",
+      "items": [
+        {
+          "arxiv_id": "2610.34740",
+          "title": "Networked Humanoid Intelligence: Communication, Coordination, Collaboration, and Social Interaction",
+          "note": "survey of networked/fleet humanoid communication; abs page read, networking survey not a learning method"
+        },
+        {
+          "arxiv_id": "2610.34370",
+          "title": "ThinkLocoManip: A Whole-Body Control Agentic Harness for Legged Loco-Manipulation",
+          "note": "agentic harness for legged (quadruped-style) loco-manipulation; no humanoid in abstract"
+        },
+        {
+          "arxiv_id": "2610.33565",
+          "title": "WorldFailBench: Do World Models Understand Policy Failures?",
+          "note": "world-model policy-failure benchmark; not humanoid-specific"
+        },
+        {
+          "arxiv_id": "2610.35462",
+          "title": "DEX-PHD: A Dexterous Portable Handheld Device for Multimodal Data Collection",
+          "note": "handheld dexterous data-collection device; hand-only"
+        },
+        {
+          "arxiv_id": "2610.33172",
+          "title": "RAIWAY: A Large-Wheeled Bipedal Robot with Contact-Informed Blind Locomotion",
+          "note": "wheeled bipedal robot, not humanoid"
+        },
+        {
+          "arxiv_id": "2610.33807",
+          "title": "RoboWorM: Evaluating Movement Realism, Consistency and Acceleration Affects in Embodied Video World Models",
+          "note": "video world model benchmark for manipulation; no humanoid"
+        },
+        {
+          "arxiv_id": "2610.34519",
+          "title": "TRIAGE: Efficient Vision-Language-Action Inference Needs Both Reuse and Pruning",
+          "note": "VLA inference efficiency; generic manipulation"
+        },
+        {
+          "arxiv_id": "2606.25344",
+          "title": "Follow Your Track: Precise Skeleton Animation Controlled by 3D Trajectories",
+          "note": "3D skeleton animation generation; no robot"
+        },
+        {
+          "arxiv_id": "2610.33852",
+          "title": "AdaDexTrack: Dynamic Modulation for Adaptive and Generalizable Dexterous Manipulation Tracking",
+          "note": "dexterous hand-object tracking; hand-only"
+        },
+        {
+          "arxiv_id": "2606.12019",
+          "title": "MPPI-based Informative Trajectory Planning for Search and Capture of Drifting Targets with ASVs",
+          "note": "MPPI for surface vehicles; not humanoid"
+        },
+        {
+          "arxiv_id": "2609.00941",
+          "title": "ProxPI: Proximal Prior Injection for Sampling-Based MPC under Learned-Prior Mismatch",
+          "note": "sampling MPC prior injection; no humanoid"
+        },
+        {
+          "arxiv_id": "2610.14064",
+          "title": "Do My Samples Help? Compute Budget Allocation for Real-World Sampling-Based MPC in Contact-Rich Manipulation",
+          "note": "sampling MPC budget for manipulation; no humanoid"
+        },
+        {
+          "arxiv_id": "2610.21239",
+          "title": "CLIS-MPPI: Closed-Loop Model Predictive Path Integral Control With Initial-State Sampling Under Execution Delay",
+          "note": "MPPI variant for generic robotics; no humanoid"
+        },
+        {
+          "arxiv_id": "2609.35619",
+          "title": "CollisionSplatting: Collision-Aware Motion Planning in 3DGS Scenes with Image-Conditioned Objectives and Adjustable Conservatism",
+          "note": "3DGS motion planning; no humanoid"
+        },
+        {
+          "arxiv_id": "2605.11369",
+          "title": "Dynamic Full-Body Motion Agent with Object Interaction via Blending Pre-Trained Modular Controllers",
+          "note": "HOI character full-body agent (CVPR Findings); no robot in abstract"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "detected_on": "2026-10-27",
+      "reason": "OpenAlex returned HTTP 401 for 2026-10 and 2026-09 again; arXiv and Crossref swept fine. No manual search done. Top non-arXiv queue items (OpenAlex/Crossref without arXiv ids) were not verifiable from a primary source and were left in the queue.",
+      "items": [
+        {
+          "channel": "openalex",
+          "month": "2026-10"
+        },
+        {
+          "channel": "openalex",
+          "month": "2026-09"
+        }
+      ]
     }
   ]
 }
