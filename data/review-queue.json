@@ -4099,6 +4099,123 @@
       ]
     },
     {
+      "kind": "out-of-scope",
+      "detected_on": "2026-10-27",
+      "reason": "Read from arXiv abstracts in the 2026-10-27 PM queue pass; recorded so discover.py stops re-proposing them.",
+      "items": [
+        {
+          "arxiv_id": "2609.26238",
+          "title": "Manipulation of Deformable Linear Objects Using Model Predictive Path Integral Control with Bidirectional Long Short-Term Memory Learning",
+          "note": "deformable linear object MPPI manipulation; no humanoid"
+        },
+        {
+          "arxiv_id": "2609.28325",
+          "title": "Motoneuron-Inspired Sampling for Model Predictive Path Integral Control",
+          "note": "generic MPPI sampling method; no humanoid/legged use"
+        },
+        {
+          "arxiv_id": "2608.08323",
+          "title": "MPPI Planning with Gaussian-Based Human Cost Function for Social Navigation",
+          "note": "MPPI social navigation cost; mobile robot, not humanoid"
+        },
+        {
+          "arxiv_id": "2608.25666",
+          "title": "PRISM: Projection-Integrated Sampling-Based MPC with Bayesian Cost Tuning for Bimanual Manipulation",
+          "note": "sampling-based MPC for bimanual arms; no humanoid"
+        },
+        {
+          "arxiv_id": "2610.30839",
+          "title": "ProTrav: Probabilistic Traversability with Elevation Uncertainty Propagation for Risk-aware Off-road Navigation",
+          "note": "off-road traversability; wheeled/vehicle"
+        },
+        {
+          "arxiv_id": "2609.02020",
+          "title": "Real-Time Dynamics-Based Torque-Sampling MPPI for Compliant and Force Aware Manipulation",
+          "note": "torque-sampling MPPI for arm manipulation; no humanoid"
+        },
+        {
+          "arxiv_id": "2609.40158",
+          "title": "Rethinking Legibility in Social Robot Hallway Navigation: Impact of Intent Representation and Human Distraction",
+          "note": "social hallway navigation legibility study; not humanoid"
+        },
+        {
+          "arxiv_id": "2608.23972",
+          "title": "Safety-aware Model Predictive Path Integral Control with Signal Temporal Logic",
+          "note": "generic MPPI with STL; no humanoid"
+        },
+        {
+          "arxiv_id": "2608.03978",
+          "title": "Stochastic Multiple Shooting Trajectory Optimization via Sequential Local Policy Evaluation",
+          "note": "generic stochastic trajectory optimization; no humanoid"
+        },
+        {
+          "arxiv_id": "2609.19378",
+          "title": "Task-Oriented Active Learning of Residual Dynamics for Model Predictive Path Integral Control",
+          "note": "generic residual-dynamics MPPI; no humanoid"
+        },
+        {
+          "arxiv_id": "2609.21122",
+          "title": "MetaPusher: Meta Learning and Planning for Nonprehensile Manipulation of Unseen Objects with Rapid Online Adaption",
+          "note": "nonprehensile pushing meta-learning; arm manipulation"
+        },
+        {
+          "arxiv_id": "2609.39105",
+          "title": "Occlusion-Aware, Quasi-Static, Stability-Oriented Trajectory Planning on Uneven Terrain",
+          "note": "uneven-terrain planning for wheeled/tracked platform"
+        },
+        {
+          "arxiv_id": "2609.01756",
+          "title": "A Study of Conditional Diffusion Models for Open-Loop Control under Dry Friction and Stiction",
+          "note": "diffusion open-loop control under friction; not humanoid"
+        },
+        {
+          "arxiv_id": "2610.03563",
+          "title": "A Unified Framework for Empowerment and Predictive Control",
+          "note": "generic empowerment/predictive control theory"
+        },
+        {
+          "arxiv_id": "2609.27580",
+          "title": "Action-Directed Information for Distributed Control and Agentic Interaction",
+          "note": "information-theoretic distributed control theory"
+        },
+        {
+          "arxiv_id": "2610.08123",
+          "title": "Beyond Waypoint Regression: Query-Based Cost Learning over Reachable Ego Futures for End-to-End Driving",
+          "note": "autonomous driving planning"
+        },
+        {
+          "arxiv_id": "2610.01319",
+          "title": "Cross-entropy optimization with prioritized constraints",
+          "note": "generic constrained cross-entropy optimization"
+        },
+        {
+          "arxiv_id": "2610.03898",
+          "title": "MOSAIC-SV: Real-Time Adaptive Identification of Vessel Dynamics for the Control and Deployment of Aquatic Robots",
+          "note": "aquatic vessel dynamics identification"
+        },
+        {
+          "arxiv_id": "2610.12440",
+          "title": "Generative Neural Retargeting for Human-to-Robot Dexterous Manipulation",
+          "note": "dexterous hand retargeting; hand-only"
+        },
+        {
+          "arxiv_id": "2608.15560",
+          "title": "ReForce: Learning Force-aware Retargeting for Dexterous Manipulation",
+          "note": "dexterous hand force-aware retargeting; hand-only"
+        },
+        {
+          "arxiv_id": "2609.15399",
+          "title": "Dynamics-Informed Reinforcement Learning for Agile and Energy-Efficient Locomotion of a Monopedal Hopping Quadcopter",
+          "note": "monopedal hopping quadcopter; not humanoid (abs page read)"
+        },
+        {
+          "arxiv_id": "2606.08099",
+          "title": "Cybernetic Android Avatar \"Yui\": System Integration, Field Deployment, and Evaluation",
+          "note": "teleoperated social android avatar on mobile platform; no learning method (abs page read)"
+        }
+      ]
+    },
+    {
       "kind": "promotion-suspect",
       "detected_on": "2026-10-27",
       "reason": "apply_promotions.py wrote 'IROS 2024' onto 2610.05678 (arXiv 2026.10), a year earlier than the preprint itself; reverted by hand. DOI/venue match needs a human check.",
@@ -5454,6 +5571,21 @@
       "kind": "discovery-coverage-gap",
       "detected_on": "2026-10-27",
       "reason": "OpenAlex returned HTTP 401 for 2026-10 and 2026-09 again; arXiv and Crossref swept fine. No manual search done. Top non-arXiv queue items (OpenAlex/Crossref without arXiv ids) were not verifiable from a primary source and were left in the queue.",
+      "items": [
+        {
+          "channel": "openalex",
+          "month": "2026-10"
+        },
+        {
+          "channel": "openalex",
+          "month": "2026-09"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "detected_on": "2026-10-27",
+      "reason": "PM run: OpenAlex returned HTTP 401 again for 2026-10 and 2026-09; arXiv and Crossref swept. No manual search done. Non-arXiv OpenAlex/Crossref items at the top of the queue (e.g. reviews, vendor/blueprint documents, unverifiable) were not opened at a primary source and remain queued.",
       "items": [
         {
           "channel": "openalex",

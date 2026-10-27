@@ -870,7 +870,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.09](https://arxiv.org/abs/2609.25561), Formal verification of tilt estimation using the Rocq prover
 - [arXiv 2026.09](https://arxiv.org/abs/2609.23610), PRIMO: Prior-Informed Odometry from Human-Motion Tracking for Humanoid Robots
 - [arXiv 2026.09](https://arxiv.org/abs/2609.19582), OmniCalib: Target-Free, Task-Structured Self-Calibration for Humanoid Robots
-- [arXiv 2026.09](https://arxiv.org/abs/2609.02306), Contact-Constrained Lower-Limb Joint-Offset Calibration for Humanoid Robots
+- [arXiv 2026.09](https://arxiv.org/abs/2609.02306) / RA-L 2026, Contact-Constrained Lower-Limb Joint-Offset Calibration for Humanoid Robots
 - [arXiv 2026.09](https://arxiv.org/abs/2609.02222), FOCUS: Foot Observation Confidence for Robust Humanoid Proprioceptive Odometry
 - [Research Square 2026](https://doi.org/10.21203/rs.3.rs-8936961/v1), Approach to Robust Visual Relocalization for Humanoid Robots via Mixture-of-Experts with Hierarchical Distillation
 - [arXiv 2026.08](https://arxiv.org/abs/2608.05647) / T-MECH 2026, KILVO: Kinematic-Inertial-LiDAR-Visual Odometry with Robust Multimodal Adaptation for Humanoid Robots
@@ -1037,6 +1037,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.08](https://arxiv.org/abs/2608.03528), Tired Actor: Fatigue-Informed Character Control
 - [arXiv 2026.08](https://arxiv.org/abs/2608.03227), PFM-HR: Pose Flow Matching for Humanoid Robots
 - [arXiv 2026.07](https://arxiv.org/abs/2607.06438) / ECCV 2026, WristMimic: Full-Body Humanoid Control with Wrist-Guided Manipulation
+- [arXiv 2026.07](https://arxiv.org/abs/2607.02034), ComplexMimic: Human-Scene Interaction Imitation in Complex 3D Environments
 - [arXiv 2026.06](https://arxiv.org/abs/2606.29148), GPC: Large-Scale Generative Pretraining for Transferable Motor Control
 - [arXiv 2026.06](https://arxiv.org/abs/2606.25056), BFMTrack: Latent Sequence Optimization for Physics-Based Motion Tracking with Behavioral Foundation Models
 - [arXiv 2026.04](https://arxiv.org/abs/2604.24833) / ACM TOG 2026, MotionBricks: Scalable Real-Time Motions with Modular Latent Generative Model and Smart Primitives, [website](https://nvlabs.github.io/motionbricks/)
