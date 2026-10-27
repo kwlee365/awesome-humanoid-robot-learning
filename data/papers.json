@@ -3206,11 +3206,11 @@
       "id": "2610.05678",
       "slug": "dataset-free-compliant-humanoid-loco-manipulation-with-dynamic-online-posture",
       "title": "Dataset-Free Compliant Humanoid Loco-Manipulation with Dynamic Online Posture",
-      "alt_venue": "IROS 2024",
+      "alt_venue": null,
       "raw": {
         "star": "",
         "head": "[arXiv 2026.10](https://arxiv.org/abs/2610.05678)",
-        "sep": " / IROS 2024, ",
+        "sep": ", ",
         "title": "Dataset-Free Compliant Humanoid Loco-Manipulation with Dynamic Online Posture, ",
         "links": "[website](https://oclo-humanoid.github.io/)"
       },
@@ -3242,7 +3242,7 @@
       "verified_on": "2026-10-06",
       "related": [],
       "readme_order": 61,
-      "readme_line": "- [arXiv 2026.10](https://arxiv.org/abs/2610.05678) / IROS 2024, Dataset-Free Compliant Humanoid Loco-Manipulation with Dynamic Online Posture, [website](https://oclo-humanoid.github.io/)",
+      "readme_line": "- [arXiv 2026.10](https://arxiv.org/abs/2610.05678), Dataset-Free Compliant Humanoid Loco-Manipulation with Dynamic Online Posture, [website](https://oclo-humanoid.github.io/)",
       "extra_links": [],
       "venue": "arXiv",
       "venue_raw": "arXiv 2026.10",

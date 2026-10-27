@@ -87,7 +87,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.10](https://arxiv.org/abs/2610.07052), BRACE: Adapting Whole-Body References for Force and Terrain Aware Humanoid Motion Tracking, [website](https://multiplylabs.github.io/brace/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.06850), InterMimicGen: Scaling Humanoid Loco-Manipulation through Self-Evolving Motion Imitation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.06129), I-BFM: Reward-Conditioned Robust Humanoid Interaction via Unsupervised Reinforcement Learning
-- [arXiv 2026.10](https://arxiv.org/abs/2610.05678) / IROS 2024, Dataset-Free Compliant Humanoid Loco-Manipulation with Dynamic Online Posture, [website](https://oclo-humanoid.github.io/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.05678), Dataset-Free Compliant Humanoid Loco-Manipulation with Dynamic Online Posture, [website](https://oclo-humanoid.github.io/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.05324), CoDance: Learning Reactive and Compliant Human-Humanoid Interaction from Video, [website](https://generalroboticslab.com/CoDance)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.04609), Exploiting Hierarchical Controller Structure in Contextual Parameter Learning for Humanoid Loco-Manipulation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.04238), Humanoid Rickshaw Pulling: Whole-Body Locomotion under Coupled Wheeled Loads

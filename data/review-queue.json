@@ -4099,6 +4099,16 @@
       ]
     },
     {
+      "kind": "promotion-suspect",
+      "detected_on": "2026-10-27",
+      "reason": "apply_promotions.py wrote 'IROS 2024' onto 2610.05678 (arXiv 2026.10), a year earlier than the preprint itself; reverted by hand. DOI/venue match needs a human check.",
+      "items": [
+        {
+          "arxiv_id": "2610.05678"
+        }
+      ]
+    },
+    {
       "kind": "out-of-scope",
       "detected_on": "2026-10-27",
       "reason": "Read from verbatim arXiv abstracts in the 2026-10-27 queue pass; recorded so discover.py stops re-proposing them.",
