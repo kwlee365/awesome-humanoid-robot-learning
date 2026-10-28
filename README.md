@@ -26,6 +26,10 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.36615), Mimetic Embodiment Transfer of Human-Humanoid Interaction from In-the-Wild Videos
+- [arXiv 2026.10](https://arxiv.org/abs/2610.36507), GRAFT: Geometry-Aware Residual Adaptation for Foundation Trackers, [website](https://graft-humanoid.github.io/)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.36452), Whole-Body Humanoid Control via Stochastic Motion Tokenization
+- [arXiv 2026.10](https://arxiv.org/abs/2610.36270), Learning Multi-Phase Robot Loco-Manipulation via Phase-Conditioned Policy Optimization
 - [arXiv 2026.10](https://arxiv.org/abs/2610.35862), Learning Force-Reactive Humanoid Loco-Manipulation, [website](https://louis-leee.github.io/FLoRe/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.35075), Zero-HLM: Generalizable Humanoid Loco-Manipulation without Real Robot Data, [website](https://young-bit.github.io/zero-hlm/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.34126) / CoRL 2026, HumanoidNDM: Closing the Training-Deployment Gap of Motion Tracking via Humanoid Neural Dynamics Model
@@ -584,6 +588,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.10](https://arxiv.org/abs/2610.36825), HC2Robot: Hyper-Connection Transformers with Predicted Foresight for Multi-Terrain Humanoid Parkour
+- [arXiv 2026.10](https://arxiv.org/abs/2610.36546), REACH: An RL-based Hierarchical Humanoid Crawling Framework for Adaptable Confined Space Traversal, [website](https://aislab-sustech.github.io/REACH/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.31608), Humanoid Mobility via Attention-based Contacts
 - [arXiv 2026.10](https://arxiv.org/abs/2610.30334), MPBRS: Multi-Potential-Based Reward Shaping for Unified Reward Configuration in Humanoid Locomotion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.30080), Do Earth-Trained Humanoid Controllers Walk on the Moon? Gravity, Terrain, and Soil Transfer
