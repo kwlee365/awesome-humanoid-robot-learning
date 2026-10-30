@@ -4614,6 +4614,50 @@
           "note": "re-checked 2026-10-29, unchanged"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-10-30",
+      "reason": "Read on arXiv abs pages in the 2026-10-30 AM pass; recorded so discover.py stops re-proposing them.",
+      "items": [
+        {
+          "arxiv_id": "2604.14565",
+          "title": "Model-Based Reinforcement Learning Exploits Passive Body Dynamics for High-Performance Biped Robot Locomotion",
+          "note": "simulation-only simple biped model, no humanoid"
+        },
+        {
+          "arxiv_id": "2609.14868",
+          "title": "Primitive-Informed Sampling-Based MPC for Multi-Fingered Dexterous Manipulation",
+          "note": "Allegro hand, no humanoid"
+        },
+        {
+          "arxiv_id": "2610.39429",
+          "title": "ScheduleGen: Demonstration Generation via Skill Scheduling for Multi-Arm Imitation Learning",
+          "note": "multi-arm demo generation; humanoid only named as an example platform, none stated in evaluation"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "detected_on": "2026-10-30",
+      "reason": "openalex channel returned HTTP 401 Unauthorized for 2026-10 and 2026-09 in the 2026-10-30 AM run, so those months are unmarked in the ledger and will be re-swept. arXiv and Crossref covered both windows, but OpenAlex-only venue papers may be missing.",
+      "items": [
+        {
+          "note": "openalex 2026-10 and 2026-09: HTTP 401"
+        }
+      ]
+    },
+    {
+      "kind": "candidate-held-for-review",
+      "detected_on": "2026-10-30",
+      "reason": "arXiv abs 2610.37330 still shows the title/abstract mismatch (AFIL VLA abstract under a human-humanoid transfer title); not added.",
+      "items": [
+        {
+          "arxiv_id": "2610.37330",
+          "title": "Tokens of Motion: Primitive Motion Learning for Human-Humanoid Skill Transfer",
+          "note": "re-checked 2026-10-30, unchanged"
+        }
+      ]
     }
   ]
 }

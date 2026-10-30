@@ -26,6 +26,9 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.10](https://arxiv.org/abs/2610.40003), Humanoid Dodgeball: Learning Fast Dynamic Obstacle Avoidance Motions for Humanoids
+- [arXiv 2026.10](https://arxiv.org/abs/2610.39327), SONIC-K1: Porting a Universal Humanoid Motion Tracker to a Small Humanoid on a Single GPU, [website](https://kyry.me/sonic-k1)
+- [arXiv 2026.10](https://arxiv.org/abs/2610.38027), METATRON: A Promptable Whole-Body Execution Layer for Humanoids, [website](https://research.nvidia.com/labs/par/projects/metatron/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.36615), Mimetic Embodiment Transfer of Human-Humanoid Interaction from In-the-Wild Videos
 - [arXiv 2026.10](https://arxiv.org/abs/2610.36507), GRAFT: Geometry-Aware Residual Adaptation for Foundation Trackers, [website](https://graft-humanoid.github.io/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.36452), Whole-Body Humanoid Control via Stochastic Motion Tokenization
@@ -426,6 +429,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.08](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/), VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters, [website](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/)
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.39044), Catch It All!: Generalizable Dynamic Catching with a Dexterous Hand
 - [arXiv 2026.10](https://arxiv.org/abs/2610.34186), HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience
 - [arXiv 2026.10](https://arxiv.org/abs/2610.27242), EmbodyHOI: Embodiment-Aware Generation of Hand-Object Interactions for Humanoid Dexterous Manipulation, [website](https://embodyhoi.github.io/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.26170), Data-Efficient Learning from Demonstration for Humanoid Robots via Feature-Level Perception and Prompt-Based Object Detection
@@ -529,6 +533,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [1999](https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(99)01327-3), Is imitation learning the route to humanoid robots?
 
 ## Teleoperation
+- [arXiv 2026.10](https://arxiv.org/abs/2610.37801), An Empirical Study of Wrist-Target Construction and Joint-Angle Limits in Humanoid Arm Retargeting
 - [arXiv 2026.10](https://arxiv.org/abs/2610.29903), HuMiT: Low-Latency Whole-Body Humanoid Teleoperation via Compact Reference Tracking, [website](https://xiaohu-art.github.io/Track/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.28712), Warping the Workspace: Expanding Visual Access with Adjustable Reach Mapping for Humanoid Teleoperation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.24257), Evaluating Lightweight Contact Feedback in Dual-Operator Collaborative Humanoid Teleoperation, [website](https://xrt-teleop.github.io)
@@ -588,6 +593,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.10](https://arxiv.org/abs/2610.37974), FORGE: Feasible Online Reduced-Order Reference Generation and Whole-Body Execution for Agile Humanoid Locomotion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.36825), HC2Robot: Hyper-Connection Transformers with Predicted Foresight for Multi-Terrain Humanoid Parkour
 - [arXiv 2026.10](https://arxiv.org/abs/2610.36546), REACH: An RL-based Hierarchical Humanoid Crawling Framework for Adaptable Confined Space Traversal, [website](https://aislab-sustech.github.io/REACH/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.31608), Humanoid Mobility via Attention-based Contacts
