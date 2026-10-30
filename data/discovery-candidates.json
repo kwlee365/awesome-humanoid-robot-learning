@@ -13,11 +13,11 @@
   "counts": {
     "raw": 5636,
     "relevant": 841,
-    "merged": 1331,
-    "new": 773,
+    "merged": 1311,
+    "new": 764,
     "similar_to_listed": 1,
-    "already_listed": 557,
-    "carried_over": 779
+    "already_listed": 546,
+    "carried_over": 774
   },
   "per_channel_raw": {
     "arxiv": 4776,
@@ -142,123 +142,6 @@
         "https://doi.org/10.1007/s10514-026-10263-6"
       ],
       "carried_over_since": "2026-10-05",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-30"
-    },
-    {
-      "title": "FORGE: Feasible Online Reduced-Order Reference Generation and Whole-Body Execution for Agile Humanoid Locomotion",
-      "authors": [
-        "Adrian B. Ghansah",
-        "Yujin An",
-        "Jeeseop Kim",
-        "Soon-Jo Chung"
-      ],
-      "abstract": "This paper presents a two-stage learning framework for versatile and agile humanoid locomotion that couples online reduced-order model (ROM) reference generation with whole-body tracking control. In the first stage, we train a command-conditioned whole-body reference generator using single rigid body dynamics combined with full humanoid kinematics. In the second stage, the frozen ROM policy is rolled out online to generate references for training a whole-body tracking policy on the full-order dynamics model. Learning a kino-dynamically consistent reference generator in the simplified ROM space enables us to generate references over a broad command space and over multiple locomotion strategies using a single unified framework. We demonstrate the approach on a Unitree G1 humanoid robot, achieving longitudinal velocities from -2.0 m/s to 2.8 m/s, lateral velocities up to +-1.0 m/s, angular velocities up to +-3.0 rad/s, one-legged hopping, and continuous transitions across the commands, all using one unified reference policy and one whole-body tracking policy.",
-      "abstract_source": "https://arxiv.org/abs/2610.37974",
-      "arxiv_id": "2610.37974",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.37974",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "8 pages, 6 figures. Accepted to the 2026 IEEE-RAS 25th International Conference on Humanoid Robots (Humanoids)",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 113,
-        "core": [
-          "humanoid",
-          "humanoid robot",
-          "unitree g1",
-          "g1 humanoid"
-        ],
-        "task": [
-          "whole body tracking"
-        ],
-        "body": [
-          "legged",
-          "locomotion",
-          "whole body"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.37974"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-30"
-    },
-    {
-      "title": "METATRON: A Promptable Whole-Body Execution Layer for Humanoids",
-      "authors": [
-        "Chen Tessler",
-        "Yifeng Jiang",
-        "Alec Otto",
-        "Yi Shi",
-        "Umar Iqbal",
-        "Gal Chechik",
-        "Xue Bin Peng"
-      ],
-      "abstract": "Humanoid controllers often require task-specific training despite sharing the need for balance and whole-body coordination. We present Metatron, a promptable whole-body execution layer combining a generative base policy with a programmable skill layer. The base policy receives partial goals, collectively called a prompt, that can combine timed body-part targets, velocity commands, and style cues. It produces diverse whole-body motions consistent with these goals. Training combines motion capture, synthetic recovery trajectories, and retargeted scene-interaction motions. After training, the policy is frozen. Stateful programs called skills express task intent as prompts at each control step, drawing rough geometric sketches that the policy turns into coordinated movement. Skills are ordinary code, refined by coding agents that analyze motion data and fit compact rules without task-specific policy training. On the physical Unitree G1, one frozen checkpoint supports walking, recovery, teleoperated object pickup, and sitting on furniture. Comparative evaluations show higher reaching success and push robustness than the tested reference-tracking pipelines. The same recipe produces climbing and acrobatics on a simulated character. Metatron enables coding agents to turn learned motor capabilities into new skills through code, without further policy training.",
-      "abstract_source": "https://arxiv.org/abs/2610.38027",
-      "arxiv_id": "2610.38027",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.38027",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "Project page: https://research.nvidia.com/labs/par/projects/metatron/",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 113,
-        "core": [
-          "humanoid",
-          "humanoids",
-          "unitree g1"
-        ],
-        "task": [
-          "simulated character"
-        ],
-        "body": [
-          "walking",
-          "whole body"
-        ],
-        "method": [
-          "retargeted",
-          "motion capture",
-          "teleoperated"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.38027"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-30"
@@ -647,61 +530,6 @@
         "https://doi.org/10.1109/ascc70886.2026.11702297"
       ],
       "carried_over_since": "2026-10-05",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-30"
-    },
-    {
-      "title": "SONIC-K1: Porting a Universal Humanoid Motion Tracker to a Small Humanoid on a Single GPU",
-      "authors": [
-        "Kyrylo Kolesnichenko",
-        "Jong-Hoon Kim"
-      ],
-      "abstract": "We present SONIC-K1, to our knowledge the first open-weights whole-body motion tracker for the Booster K1 humanoid, obtained by adapting the SONIC framework to this smaller robot. The policy is trained from scratch on a single shared GPU with a small fraction of the compute reported for SONIC. In MuJoCo simulation, it tracks nearly all held-out motion clips and performs well on external benchmarks under SONIC's success criterion. On the real K1, it tracks upper-body and slow motions, while stepping and turning remain less reliable, and simulation experiments show a sensitivity to action latency. These results show broad motion-tracking capability on a modest training budget and point to quantitative hardware evaluation as the main next step. Code, policy weights and evaluation tools are publicly available.",
-      "abstract_source": "https://arxiv.org/abs/2610.39327",
-      "arxiv_id": "2610.39327",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.39327",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "Project page: https://kyry.me/sonic-k1",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 109,
-        "core": [
-          "humanoid",
-          "booster k1"
-        ],
-        "task": [
-          "whole body motion"
-        ],
-        "body": [
-          "whole body",
-          "upper body"
-        ],
-        "method": [
-          "motion tracking"
-        ],
-        "control": [],
-        "sim": [
-          "mujoco"
-        ],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.39327"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-30"
@@ -1126,63 +954,6 @@
       "carried_over_since": "2026-10-05"
     },
     {
-      "title": "Humanoid Dodgeball: Learning Fast Dynamic Obstacle Avoidance Motions for Humanoids",
-      "authors": [
-        "Aoqian Zhang",
-        "Chunzheng Wang",
-        "Haoran Chen",
-        "Annan Tang",
-        "Cheng Xiang",
-        "Fan Shi",
-        "Shuzhi Sam Ge"
-      ],
-      "abstract": "Humanoids have become increasingly agile and capable in real-world environments. To operate safely in dynamic scenarios, they must rapidly evade fast-moving obstacles while maintaining stability and physically feasible whole-body motion. Learning such behaviors remains challenging due to the high-dimensional dynamics of humanoid systems and the need to jointly balance reactive obstacle avoidance, motion naturalness, and control robustness. In this work, we present Humanoid Dodgeball, a reinforcement learning (RL) framework for agile dynamic obstacle avoidance in humanoids. Our method enables highly dynamic whole-body evasive maneuvers against incoming projectiles through threat-aware reward shaping, while multiple direction-specific adversarial motion priors regularize the learned behaviors toward stable and diverse human-like motions. Extensive simulation and hardware experiments demonstrate that the proposed framework substantially improves dynamic obstacle avoidance performance across diverse obstacle speeds and launch distances, while preserving robust and physically plausible humanoid motions.",
-      "abstract_source": "https://arxiv.org/abs/2610.40003",
-      "arxiv_id": "2610.40003",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.40003",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 108,
-        "core": [
-          "humanoid",
-          "humanoids"
-        ],
-        "task": [
-          "whole body motion"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [
-          "motion priors"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.40003"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-30"
-    },
-    {
       "title": "Humanoid Robots 2026: A Comprehensive Review of Technical Foundations, Market Dynamics, and Research Challenges",
       "authors": [
         "Nan Wang",
@@ -1376,55 +1147,6 @@
         "https://doi.org/10.5281/zenodo.21885699"
       ],
       "carried_over_since": "2026-09-01",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-30"
-    },
-    {
-      "title": "An Empirical Study of Wrist-Target Construction and Joint-Angle Limits in Humanoid Arm Retargeting",
-      "authors": [
-        "MinJun Chang"
-      ],
-      "abstract": "Motion retargeting maps a demonstrated human movement onto a robot to compute its joint motion. This study examines how the construction of the desired wrist position affects whether computed arm joint angles reach their permitted limits on a Unitree H1-2. A reconstructed target is formed from demonstrated arm directions and robot segment lengths, so its shoulder-to-wrist distance depends on the demonstrated angle between the segments even when no posture-matching preference is applied. A reach-normalized target retains that direction while rescaling the distance, using the same processed demonstrations and the same joint-angle method. Across a forward-reach sweep the reconstructed target places a joint angle at a bound in 10 of 20 repetitions and the reach-normalized target in none. Across 25 recordings from one participant the corresponding counts are 8 and 6 on the reaching arm and 14 and 5 on the supporting arm, and a second participant repeats the bricklaying and lifting comparison. In hardware replay a joint is commanded to a bound in 12 of 16 direction-matching arm-records and in none of the 16 normalized records, and within the eligible records both tracking error and executed torque at those frames exceed their values elsewhere in the same run. Cross-body reach and arm-to-arm clearance identify limits of radial adjustment. The findings support treating target construction and posture matching as separate retargeting decisions, and evaluating both alongside the wrist positions and clearance that manipulation requires.",
-      "abstract_source": "https://arxiv.org/abs/2610.37801",
-      "arxiv_id": "2610.37801",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.37801",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "Submitted to ICRA2027 under process",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 107,
-        "core": [
-          "humanoid",
-          "unitree h1"
-        ],
-        "task": [
-          "motion retargeting"
-        ],
-        "body": [],
-        "method": [
-          "retargeting"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.37801"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-30"
@@ -1893,61 +1615,6 @@
         "https://doi.org/10.5281/zenodo.22827681"
       ],
       "carried_over_since": "2026-09-20",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-30"
-    },
-    {
-      "title": "Catch It All!: Generalizable Dynamic Catching with a Dexterous Hand",
-      "authors": [
-        "Arth Shukla",
-        "Kehlani Fay",
-        "Huaze Liu",
-        "Darin Djapri",
-        "Alexiy Buynitsky",
-        "Nicklas Hansen"
-      ],
-      "abstract": "Catching arbitrary objects requires generalization to novel projectiles and real-time adaptation to unpredictable contact dynamics under noisy visual observations. This paper presents Catch It All!, a sim-to-real catching framework for humanoid robots that generalizes and adapts to unseen objects with variable physical properties for underhand and overhand catches, using only one egocentric camera. We learn policies which generalize to unseen objects with varying geometry, deformability, elasticity, and physical properties. Effective grasps which adapt real-time to object poses and shapes are learned through careful grasp reward design. We provide safety-aware curricula which enable safe, high-frequency action execution near hardware limits, including wrist torque limits as low as 5 Nm. We validate our system by deploying zero-shot on a Unitree G1. With only one egocentric camera, Catch It All! successfully performs underhand and overhand catches on 9 unseen objects not seen during training, including low-rebound plushes, semi-deformable toys and chip bags, and rigid-elastic objects with high rebound on contact.",
-      "abstract_source": "https://arxiv.org/abs/2610.39044",
-      "arxiv_id": "2610.39044",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.39044",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 106,
-        "core": [
-          "humanoid",
-          "humanoid robots",
-          "unitree g1"
-        ],
-        "task": [],
-        "body": [],
-        "method": [
-          "sim to real"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": [
-          "dexterous hand"
-        ]
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.39044"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-30"
@@ -3671,58 +3338,6 @@
         "https://doi.org/10.1109/ro-man72286.2026.11714844"
       ],
       "carried_over_since": "2026-10-09",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-30"
-    },
-    {
-      "title": "ScheduleGen: Demonstration Generation via Skill Scheduling for Multi-Arm Imitation Learning",
-      "authors": [
-        "Neel Jawale",
-        "Stephan Pleines",
-        "Soha Pouya",
-        "Yuke Zhu",
-        "Ajay Mandlekar",
-        "Caelan Garrett"
-      ],
-      "abstract": "Multi-arm robot platforms, including bimanual and humanoid robots, have the capability to complete tasks with lower cycle times than single-arm systems, but they are more difficult to safely control due to the presence of multi-arm constraints. The paradigm of training generalist robot policies from massive datasets is a promising approach to address general-purpose multi-arm manipulation, but the acquisition of large multi-arm manipulation datasets remains a bottleneck. Automated demonstration generation can alleviate this burden by synthesizing new demonstrations from a handful of source demonstrations, but existing algorithms ignore multi-arm constraints and as a result often induce unsafe and unsuccessful behaviors. We address this limitation by introducing ScheduleGen, an integrated planning & scheduling algorithm for multi-arm demonstration generation. We evaluate ScheduleGen on 28 simulation task variants, including seven externally authored RoboDojo tasks and settings inaccessible to prior systems; it achieves 79.6% mean data-generation success and trains policies with 65.5% mean success. ScheduleGen policies outperform those trained on a state-of-the-art data generation baseline, and achieve 50-80% success across eight real-world variants through zero-shot sim-to-real and real-to-sim-to-real transfer. Videos and more at: https://schedulegen.github.io/",
-      "abstract_source": "https://arxiv.org/abs/2610.39429",
-      "arxiv_id": "2610.39429",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.39429",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "22 pages, 9 figures, 5 tables. Project website and videos: https://schedulegen.github.io/",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 105,
-        "core": [
-          "humanoid",
-          "humanoid robots"
-        ],
-        "task": [],
-        "body": [],
-        "method": [
-          "sim to real"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.39429"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-30"
@@ -10892,56 +10507,6 @@
       "seen_on": "2026-10-30"
     },
     {
-      "title": "Model-Based Reinforcement Learning Exploits Passive Body Dynamics for High-Performance Biped Robot Locomotion",
-      "authors": [
-        "Tomoya Kamimura",
-        "Haruka Washiyama",
-        "Akihito Sano"
-      ],
-      "abstract": "Embodiment is an important concept in embodied AI, yet the influence of passive body dynamics on learning remains insufficiently explored. This study investigates how passive properties of the body affect model-based deep reinforcement learning for bipedal locomotion. We compared two simulation models: a “passive model” incorporating elastic elements and high backdrivability, and a “torque model” representing conventional humanoids. Our results show that while the passive model required more time to maximize rewards due to the influence of physical attractors, it achieved significantly faster convergence to stable limit cycles. Furthermore, the obtained locomotion in the passive model was more energy-efficient and robust against terrain variations, such as slopes, compared to the torque model. These findings demonstrate that integrating passive properties allows robots to exploit stable limit cycles for high-performance locomotion, highlighting the importance of hardware-software co-design in future embodied AI.",
-      "abstract_source": "https://arxiv.org/abs/2604.14565",
-      "arxiv_id": "2604.14565",
-      "doi": "10.23919/sicefes71276.2026.11739175",
-      "paper_url": "https://ieeexplore.ieee.org/document/11739175/",
-      "venue": "2026 SICE Festival with Annual Conference (SICE FES)",
-      "venue_hint": "2026 SICE Festival with Annual Conference (SICE FES)",
-      "publication_status": "published",
-      "first_public_date": "2026-10",
-      "date_basis": "crossref-created",
-      "crossref_type": "proceedings-article",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 103,
-        "core": [
-          "biped"
-        ],
-        "task": [],
-        "body": [
-          "locomotion"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "crossref",
-        "s2"
-      ],
-      "urls": [
-        "https://ieeexplore.ieee.org/document/11739175/",
-        "https://arxiv.org/abs/2604.14565"
-      ],
-      "carried_over_since": "2026-10-27",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-30"
-    },
-    {
       "title": "Motion Generator of Efficient Long-stride Knee-stretched Walking for Position-controlled Humanoids",
       "authors": [
         "Zelin Huang",
@@ -14729,6 +14294,7 @@
       "urls": [
         "https://arxiv.org/abs/2609.19906"
       ],
+      "carried_over_since": "2026-10-30",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-30"
@@ -17214,6 +16780,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.38153"
       ],
+      "carried_over_since": "2026-10-30",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-30"
@@ -18284,6 +17851,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.38144"
       ],
+      "carried_over_since": "2026-10-30",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-30"
@@ -19101,6 +18669,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.38731"
       ],
+      "carried_over_since": "2026-10-30",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-30"
@@ -20018,6 +19587,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.37686"
       ],
+      "carried_over_since": "2026-10-30",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-30"
@@ -20078,65 +19648,6 @@
       "dedupe_note": "",
       "seen_on": "2026-10-30",
       "carried_over_since": "2026-09-03"
-    },
-    {
-      "title": "Primitive-Informed Sampling-Based MPC for Multi-Fingered Dexterous Manipulation",
-      "authors": [
-        "Emek Barış Küçüktabak",
-        "Karankumar Patel",
-        "Jinda Cui",
-        "Zhaodong Yang",
-        "Kazuhiro Sasabuchi",
-        "Jun Takamatsu"
-      ],
-      "abstract": "We present a primitive-informed sampling-based model predictive control (MPC) framework for multi-fingered dexterous manipulation. Sampling-based MPC evaluates candidate control trajectories through forward simulation without requiring gradients through complex contact dynamics. However, directly sampling these trajectories in the high-dimensional joint space of a dexterous hand is inefficient and makes performance strongly dependent on the sampling distribution. Our framework biases sampling using low-dimensional manipulation primitives that encode coordinated finger motions, while simultaneously optimizing joint-level residuals to adapt these motions to the current hand-object configuration. Task-related rollout constraints reject infeasible trajectories during forward simulation, improving the effective use of the sampling budget. We evaluate the approach on a 16 DoF Allegro hand using a synchronized MuJoCo digital twin. Ablations show that both the primitive and residual are necessary for reliable continuous in-hand rotation, that increasing the sampling budget alone does not recover this coordination, and that rollout constraints substantially improve success rate. A primitive extracted for one object size transfers to other sizes and remains effective under model mismatch. The framework further supports grasping, object reorientation, and coordinated arm-hand manipulation, using primitives extracted from both a simulation-trained policy and human hand-motion data.",
-      "abstract_source": "https://arxiv.org/abs/2609.14868",
-      "arxiv_id": "2609.14868",
-      "doi": "10.48550/arxiv.2609.14868",
-      "paper_url": "https://arxiv.org/abs/2609.14868",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-09",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-09",
-      "relevance": {
-        "keep": true,
-        "path": "method",
-        "why": "sampling-based predictive control",
-        "score": 71,
-        "core": [],
-        "task": [],
-        "body": [],
-        "method": [],
-        "control": [
-          "sampling based mpc",
-          "sampling based model predictive"
-        ],
-        "sim": [
-          "mujoco"
-        ],
-        "hard_negative": [],
-        "soft_negative": [
-          "dexterous manipulation",
-          "in hand",
-          "grasping"
-        ]
-      },
-      "sources": [
-        "arxiv",
-        "openalex"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2609.14868",
-        "https://doi.org/10.48550/arxiv.2609.14868"
-      ],
-      "carried_over_since": "2026-09-18",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-10-30"
     },
     {
       "title": "Real-World Reinforcement Learning with MPC Scaffolding for Dexterous Manipulation",
@@ -23848,6 +23359,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.38657"
       ],
+      "carried_over_since": "2026-10-30",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-30"
@@ -29478,6 +28990,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.37865"
       ],
+      "carried_over_since": "2026-10-30",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-30"
@@ -35476,6 +34989,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.37799"
       ],
+      "carried_over_since": "2026-10-30",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-30"
@@ -37334,6 +36848,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.40285"
       ],
+      "carried_over_since": "2026-10-30",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-30"
@@ -38900,6 +38415,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.40429"
       ],
+      "carried_over_since": "2026-10-30",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-30"

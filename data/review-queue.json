@@ -5887,6 +5887,25 @@
       "detected_on": "2026-10-30"
     },
     {
+      "kind": "discovery-coverage-gap",
+      "detected_on": "2026-10-30",
+      "reason": "2026-10-30 PM run: openalex returned HTTP 401 for 2026-10 and 2026-09, so coverage of those windows is incomplete (arXiv and Crossref were swept). The months are left unmarked for a later re-sweep. Also, WebFetch could not return abstracts verbatim, so no candidate was added this run; 2609.19906 (Unitree G1 validation, in scope) was read but left in the queue.",
+      "items": [
+        {
+          "channel": "openalex",
+          "month": "2026-10"
+        },
+        {
+          "channel": "openalex",
+          "month": "2026-09"
+        },
+        {
+          "arxiv_id": "2609.19906",
+          "title": "Learning and Transferring Closed-Loop Robot Software"
+        }
+      ]
+    },
+    {
       "kind": "undated-entry",
       "reason": "entry has no venue/date prefix, so it cannot be sorted or dated",
       "items": [
