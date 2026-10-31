@@ -4677,6 +4677,27 @@
           "title": "Learning and Transferring Closed-Loop Robot Software"
         }
       ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "detected_on": "2026-10-31",
+      "reason": "2026-10-31 run: openalex returned HTTP 401 for 2026-10 and 2026-09 again; coverage of those windows is incomplete (arXiv and Crossref swept). Months left unmarked for re-sweep. WebFetch returns summaries, not verbatim abstracts, so nothing could be verified for addition. 2610.37330 still shows the AFIL-VLA abstract under a human-humanoid title (not added). 2609.19906 (Unitree G1 validation only, main experiments RoboCasa sim) read, left in queue. Remaining top candidates are OpenAlex-only venue/Zenodo items with no primary source read; none rejected as out-of-scope this run.",
+      "items": [
+        {
+          "channel": "openalex",
+          "month": "2026-10"
+        },
+        {
+          "channel": "openalex",
+          "month": "2026-09"
+        },
+        {
+          "arxiv_id": "2610.37330"
+        },
+        {
+          "arxiv_id": "2609.19906"
+        }
+      ]
     }
   ]
 }
