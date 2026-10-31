@@ -35174,11 +35174,11 @@
       "id": "2601.08485",
       "slug": "ame-2-agile-and-generalized-legged-locomotion-via-attention-based-neural-map-enc",
       "title": "AME-2: Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding",
-      "alt_venue": null,
+      "alt_venue": "T-RO 2026",
       "raw": {
         "star": "",
         "head": "[arXiv 2026.01](https://arxiv.org/abs/2601.08485)",
-        "sep": ", ",
+        "sep": " / T-RO 2026, ",
         "title": "AME-2: Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding",
         "links": ""
       },
@@ -35209,7 +35209,7 @@
       "verified_on": "2026-08-20",
       "related": [],
       "readme_order": 670,
-      "readme_line": "- [arXiv 2026.01](https://arxiv.org/abs/2601.08485), AME-2: Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding",
+      "readme_line": "- [arXiv 2026.01](https://arxiv.org/abs/2601.08485) / T-RO 2026, AME-2: Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding",
       "extra_links": [],
       "venue": "arXiv",
       "venue_raw": "arXiv 2026.01",

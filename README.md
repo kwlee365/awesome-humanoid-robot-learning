@@ -703,7 +703,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.02](https://arxiv.org/abs/2602.03002), RPL: Learning Robust Humanoid Perceptive Locomotion on Challenging Terrains
 - [arXiv 2026.02](https://arxiv.org/abs/2602.00678), Toward Reliable Sim-to-Real Predictability for MoE-based Robust Quadrupedal Locomotion
 - [arXiv 2026.01](https://arxiv.org/abs/2601.10365) / RA-L 2026, FastStair: Learning to Run Up Stairs with Humanoid Robots
-- [arXiv 2026.01](https://arxiv.org/abs/2601.08485), AME-2: Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding
+- [arXiv 2026.01](https://arxiv.org/abs/2601.08485) / T-RO 2026, AME-2: Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding
 - [arXiv 2026.01](https://arxiv.org/abs/2601.06286), Walk the PLANC: Physics-Guided RL for Agile Humanoid Locomotion on Constrained Footholds, [website](https://caltech-amber.github.io/planc/)
 - [arXiv 2026.01](https://arxiv.org/abs/2601.04948), SKATER: Synthesized Kinematics for Advanced Traversing Efficiency on a Humanoid Robot via Roller Skate Swizzles
 - [arXiv 2025.12](https://arxiv.org/abs/2512.23650), Do You Have Freestyle? Expressive Humanoid Locomotion via Audio Control

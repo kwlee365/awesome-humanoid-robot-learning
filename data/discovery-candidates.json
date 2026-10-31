@@ -17,7 +17,7 @@
     "new": 767,
     "similar_to_listed": 1,
     "already_listed": 546,
-    "carried_over": 765
+    "carried_over": 768
   },
   "per_channel_raw": {
     "arxiv": 4776,
@@ -2199,11 +2199,13 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
         "https://ieeexplore.ieee.org/document/11739120/"
       ],
+      "carried_over_since": "2026-10-31",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-31"
@@ -5277,11 +5279,13 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
         "https://ieeexplore.ieee.org/document/11743720/"
       ],
+      "carried_over_since": "2026-10-31",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-31"
@@ -14827,8 +14831,8 @@
         "Yongling Fu",
         "Jian Sun"
       ],
-      "abstract": null,
-      "abstract_source": null,
+      "abstract": "Humanoid arms must combine human-compatible geometry, payload capacity, and physical compliance despite competing structural and actuator demands. This paper presents the Optimized Compliant Humanoid Robotic Arm (OCHRA), an integrated framework coupling configuration search, lightweight skeletal design, a compact parallel-axis wrist, and series elastic actuation. Candidate configurations are evaluated using workspace, dynamic joint-torque demand, and orientation dexterity, followed by multi-load-case topology optimization and actuator allocation. The resulting 12.45 kg, 7-DoF prototype sustained a 15 kg static flange load, corresponding to an arm-only payload-to-weight ratio of 1.205. It also executed an outbound-and-return motion with the same load without exceeding continuous torque ratings. Intrinsic joint-torque sensing captured directional changes in estimated end-effector wrenches and distinguished nominal 0.2 N quasi-static load increments at three fixed postures without a wrist force/torque sensor. Together, these results demonstrate integrated payload, compliance, and intrinsic sensing functions under the reported test conditions.",
+      "abstract_source": "https://doi.org/10.1109/lra.2026.3746164",
       "arxiv_id": null,
       "doi": "10.1109/lra.2026.3746164",
       "paper_url": "https://ieeexplore.ieee.org/document/11743874/",
@@ -14860,7 +14864,8 @@
         "s2"
       ],
       "urls": [
-        "https://ieeexplore.ieee.org/document/11743874/"
+        "https://ieeexplore.ieee.org/document/11743874/",
+        "https://doi.org/10.1109/lra.2026.3746164"
       ],
       "carried_over_since": "2026-10-22",
       "dedupe": "new",
@@ -15283,11 +15288,13 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
         "https://ieeexplore.ieee.org/document/11738499/"
       ],
+      "carried_over_since": "2026-10-31",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-10-31"

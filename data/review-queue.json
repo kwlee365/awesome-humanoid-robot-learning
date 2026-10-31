@@ -4656,6 +4656,129 @@
       ]
     },
     {
+      "kind": "out-of-scope",
+      "detected_on": "2026-10-31",
+      "reason": "Read in the 2026-10-31 AM pass (abs page); recorded so discover.py stops re-proposing them.",
+      "items": [
+        {
+          "arxiv_id": "2609.19906",
+          "title": "Learning and Transferring Closed-Loop Robot Software",
+          "note": "coding-agent policy code transfer evaluated in RoboCasa; Unitree G1 only a physical validation, not humanoid-centred"
+        },
+        {
+          "arxiv_id": "2610.38153",
+          "title": "StepControl: Long-Horizon Human Motion Generation from Foot-Contact Schedules",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2610.38144",
+          "title": "Decompose, Don't Expand: Capability-Independent AI Systems by Construction",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2610.38731",
+          "title": "Value Function-Guided MPPI for Hierarchical Planning and Control in Off-Road Autonomous Navigation",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2609.35603",
+          "title": "Control-Geometry Straightening for Sampling-Based Latent Planning",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2606.15359",
+          "title": "DiRecT: Safe Diffusion-Based Planning via Receding-Horizon Denoising",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2609.35138",
+          "title": "FlexiWorld: Learning and Planning via Flexible Action Chunks Across Multiple Time Scales",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2610.03361",
+          "title": "Follow the Winners: Conservative Policy Improvement with the Cross-Entropy Method for Critic-Free RFT",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2609.21735",
+          "title": "GEM-MPC: Balancing Exploration and Exploitation through Expert-Guided Planning",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2609.03294",
+          "title": "Latent Energy Action Planning with World Models",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2608.01151",
+          "title": "Learning-Based Stochastic Optimal Control with Infinite-Horizon Probabilistic Constraints",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2608.22589",
+          "title": "On the Optimality of Markovian Policies for Chance-Constrained Covariance Steering",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2610.08627",
+          "title": "Parallel Predictive World Models for Accurate and Efficient Long-Horizon Planning",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2608.10777",
+          "title": "Path Integral Value Matching for Linear Quadratic Stochastic Optimal Control",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2606.22630",
+          "title": "Scalable Maximum Entropy Reinforcement Learning for Diffusion Policies via Adjoint Matching",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2610.37686",
+          "title": "Where Planning Changes the Outcome of Orbital Games",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2606.05699",
+          "title": "DexFuture: Hierarchical Future-State Visuomotor Targeting for Bimanual Dexterous Tool Use",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2609.14878",
+          "title": "Real-World Reinforcement Learning with MPC Scaffolding for Dexterous Manipulation",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2607.01990",
+          "title": "Training-free Controllable Human Motion Generation under Heterogeneous Constraints",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2608.11958",
+          "title": "Synchronized AMG and EMG Dataset of Lower-limb Muscle Activities in Everyday Training",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        },
+        {
+          "arxiv_id": "2609.22619",
+          "title": "GaitVista: Reliability-Aware AI Measurement toward Accessible Longitudinal Gait Assessment",
+          "note": "abstract read from the arXiv abs page; no humanoid, or not humanoid-relevant, in abstract (generic planning/control/manipulation/human-motion/non-robot)"
+        }
+      ]
+    },
+    {
+      "kind": "possible-title-mismatch",
+      "detected_on": "2026-10-31",
+      "reason": "arXiv 2610.37330 abs page: title is \"Tokens of Motion: Primitive Motion Learning for Human-Humanoid Skill Transfer\" but the abstract describes AFIL, a failure-informed VLA manipulation method. Not added; a human should check whether the listing is wrong or revised.",
+      "items": [
+        {
+          "arxiv_id": "2610.37330",
+          "title": "Tokens of Motion: Primitive Motion Learning for Human-Humanoid Skill Transfer"
+        }
+      ]
+    },
+    {
       "kind": "cross-section-listing",
       "reason": "same paper listed in several sections - keep only if it is a major contribution to each",
       "items": [
@@ -6636,6 +6759,11 @@
         }
       ],
       "detected_on": "2026-10-31"
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "detected_on": "2026-10-31",
+      "reason": "openalex returned HTTP 401 Unauthorized for months 2026-10 and 2026-09, so venue-published coverage from that channel is incomplete this run; those months stay unmarked in the ledger and will be re-swept. Remaining OpenAlex-only candidates (no arXiv id, mostly low-quality) were not verified."
     },
     {
       "kind": "discovery-coverage-gap",
