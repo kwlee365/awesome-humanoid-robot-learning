@@ -4826,6 +4826,98 @@
       "kind": "discovery-coverage-gap",
       "detected_on": "2026-10-31",
       "reason": "openalex returned HTTP 401 Unauthorized for months 2026-10 and 2026-09, so venue-published coverage from that channel is incomplete this run; those months stay unmarked in the ledger and will be re-swept. Remaining OpenAlex-only candidates (no arXiv id, mostly low-quality) were not verified."
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-01",
+      "reason": "abstract read from the arXiv abs page (machine-fetched); human-motion/wearable/avatar/clinical-gait work with no humanoid robot in it. Rejected.",
+      "items": [
+        {
+          "arxiv_id": "2607.11341",
+          "title": "The In-Car Sign Language Corpus (ICSL): A Multi-Modal Resource for Constrained-Space Sign Language Recognition"
+        },
+        {
+          "arxiv_id": "2608.12145",
+          "title": "Autonomous Telerehabilitation via Skeletal Motion Prediction and Joint-Level Performance Assessment"
+        },
+        {
+          "arxiv_id": "2608.23345",
+          "title": "Beyond the Mirror: Balancing Interaction Modality and Avatar Fidelity in Public 3D Virtual Try-On Systems"
+        },
+        {
+          "arxiv_id": "2610.31156",
+          "title": "Calibration-free IMU-based Relative Orientation Estimation under Dynamic Human Motion"
+        },
+        {
+          "arxiv_id": "2608.21388",
+          "title": "Gimbal-Based Human Tracking for Companion Robots Using Continual Learning"
+        },
+        {
+          "arxiv_id": "2609.34430",
+          "title": "HUMAN-TCI: Hierarchical Multi-Stream Motion-Aware Network with Torso-Centered Interaction for Text-to-Motion Retrieval"
+        },
+        {
+          "arxiv_id": "2606.28604",
+          "title": "IMU-HOI: A Symbiotic Framework for Coherent Human-Object Interaction and Motion Capture via Contact-Conscious Inertial Fusion"
+        },
+        {
+          "arxiv_id": "2606.05624",
+          "title": "KV-Control: Parameter-Efficient K/V Injection for Trajectory-Controlled Text-to-Motion"
+        },
+        {
+          "arxiv_id": "2610.05552",
+          "title": "Monocular markerless biomechanics for clinically interpretable gait assessment in spinal cord injury"
+        },
+        {
+          "arxiv_id": "2607.23517",
+          "title": "Real-Time Human-Centric World Modeling for Upper-Body Human-Object Interaction"
+        },
+        {
+          "arxiv_id": "2607.09780",
+          "title": "Towards Real-World Wearable Motion Reconstruction"
+        },
+        {
+          "arxiv_id": "2609.10187",
+          "title": "3rd Place Solution to Human Motion Challenges in Real-World and Clinical Settings (MoCha) @ECCV2026: Language-Aligned Motion Representations for Domain-Generalizable UPDRS-Gait Severity Estimation"
+        },
+        {
+          "arxiv_id": "2606.03506",
+          "title": "AvatarMix: Identity-Preserving Cross-Avatar Composition for Outfit Personalization"
+        },
+        {
+          "arxiv_id": "2606.01951",
+          "title": "Co-training with Ego-centric Video and Demonstration for Robot Navigation Task"
+        },
+        {
+          "arxiv_id": "2610.20596",
+          "title": "CoWear: Towards Collaborative Wearable Inertial Localization with Multiple Smart Devices"
+        },
+        {
+          "arxiv_id": "2606.28026",
+          "title": "EMOSH: Expressive Motion and Shape Disentanglement for Human Animation"
+        },
+        {
+          "arxiv_id": "2606.22876",
+          "title": "Full-Body Golf Swing Kinematic Reconstruction From a Smartwatch IMU"
+        },
+        {
+          "arxiv_id": "2609.11439",
+          "title": "Multi-Modal Controlled Coherent Motion Generation"
+        },
+        {
+          "arxiv_id": "2610.19857",
+          "title": "OmniPoser: Flexible Human Motion Recovery in the Wild with Masked Flow Matching"
+        },
+        {
+          "arxiv_id": "2609.22519",
+          "title": "The Choreographic Genome: Amplifying the Silent Structure of Text into Dance"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "detected_on": "2026-11-01",
+      "reason": "openalex returned HTTP 401 Unauthorized for 2026-10, so venue-only coverage from that channel is incomplete; month left unmarked for re-sweep. The OpenAlex-only top-ranked candidates (no arXiv id, mostly low-quality/self-published, e.g. Zenodo-style items) were not verified and no paper was added this run. Backlog 746 candidates; backfill paused."
     }
   ]
 }
