@@ -4981,6 +4981,17 @@
           "title": "Tokens of Motion: Primitive Motion Learning for Human-Humanoid Skill Transfer"
         }
       ]
+    },
+    {
+      "kind": "candidate-held-for-review",
+      "detected_on": "2026-11-02",
+      "reason": "2026-11-02 PM pass: 739 candidates queued (210 with arXiv v1 dates; mostly backlog). Read 2610.41540 (FOCUS, simulated musculoskeletal humanoid in DFlex) - abstract could not be captured verbatim through the fetch tool and no real robot, so not added; 2610.37330 still shows title/abstract mismatch. OpenAlex 401 for 2026-10 again; Semantic Scholar 429 left 400 listed records unchecked for venue and 22 preprint promotions unapplied (DOI does not corroborate venue/year). No paper verified, README unchanged.",
+      "items": [
+        {
+          "arxiv_id": "2610.41540",
+          "title": "FOCUS: First-Order Control Using Optimal Transport Supervision for Imitation from Observations"
+        }
+      ]
     }
   ]
 }

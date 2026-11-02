@@ -11,18 +11,18 @@
     "openalex"
   ],
   "counts": {
-    "raw": 3042,
-    "relevant": 518,
-    "merged": 1079,
-    "new": 755,
+    "raw": 3076,
+    "relevant": 521,
+    "merged": 1065,
+    "new": 739,
     "similar_to_listed": 4,
-    "already_listed": 320,
-    "carried_over": 747
+    "already_listed": 322,
+    "carried_over": 759
   },
   "per_channel_raw": {
     "arxiv": 2432,
-    "crossref": 609,
-    "openalex": 1
+    "crossref": 623,
+    "openalex": 21
   },
   "failures": [
     {
@@ -309,61 +309,6 @@
         "https://doi.org/10.1016/j.robot.2026.105746"
       ],
       "carried_over_since": "2026-09-18",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02"
-    },
-    {
-      "title": "$\\nabla$Mimic: Ultra-Efficient Humanoid Control with Differentiable Simulation",
-      "authors": [
-        "Weyl Lu",
-        "Yubei Chen"
-      ],
-      "abstract": "Robot policy learning is dominated by zeroth-order methods such as PPO, which treat the simulator as a black box and pay for it with enormous sample counts. First-order policy learning differentiates through the dynamics, but on contact-rich whole-body control it has rarely worked: its gradients explode. A recent world-model method showed that derivative information can make humanoid motion tracking far more efficient, using surrogate gradients of a learned model. We show that exact gradients of the simulator itself do better, once two obstacles are removed. Exact gradients contain rare unbounded samples, because contact dynamics is not differentiable everywhere and its derivative diverges near some events; and they are expensive, because the simulator's adjoint has to replay the contact solve. $\\nabla$Mimic bounds these samples with median-relative per-sample gradient clipping at every step of the backward pass, and reuses each costly simulated window by multistep regression onto gradient-derived action targets, which bounds every action target independently of the gradient scale. NablaEngine, a differentiable GPU simulation engine for the Unitree G1, removes the cost: it computes MuJoCo's full contact dynamics with fused per-world kernels and the adjoint of a whole control step as a single megakernel, with analytic gradients that match float64 finite differences, $11.5\\times$ faster than the available MuJoCo Warp adjoint. On whole-body tracking of all 40 LAFAN1 clips with one policy on one GPU, $\\nabla$Mimic reaches the score reported by the state-of-the-art world-model method, 0.82, in 20 minutes instead of 1.2 h, and 0.874 in 1.8 h. SHAC, the standard first-order baseline, stops on exploding gradients within minutes. We release NablaEngine and $\\nabla$Mimic as open-source infrastructure for first-order humanoid policy learning.",
-      "abstract_source": "https://arxiv.org/abs/2610.41654",
-      "arxiv_id": "2610.41654",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.41654",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "26 pages, 7 figures",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 110,
-        "core": [
-          "humanoid",
-          "unitree g1"
-        ],
-        "task": [
-          "whole body control",
-          "whole body tracking"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [
-          "motion tracking"
-        ],
-        "control": [],
-        "sim": [
-          "mujoco"
-        ],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.41654"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -801,61 +746,6 @@
       "seen_on": "2026-11-02"
     },
     {
-      "title": "DiffWBC: Unlocking Steerable General Humanoid Motion Tracking via One-Step Diffusion Whole-Body Control",
-      "authors": [
-        "Yifei Huang",
-        "Yazhao Yang",
-        "Weijia Li",
-        "Zhiheng Ma",
-        "Dian Shen"
-      ],
-      "abstract": "General humanoid motion trackers typically rely on deterministic policies that cannot adapt online without brittle reference editing or costly retraining. We present DiffWBC, shifting whole-body control to a generative paradigm via a one-step diffusion model. By modeling distributions over future trajectories, DiffWBC unifies general tracking, test-time steering, and simulation-free failure discovery within a single controller: (1) Generative general tracking: DiffWBC requires a single forward pass per 50 Hz control step and can be distilled from an RL teacher or trained from scratch via model-based RL, achieving the lowest local tracking error among six general trackers on held-out benchmarks (20.1 mm on BONES) and deploying on a physical Unitree G1. (2) Zero-shot test-time steering: differentiable cost gradients and body-group masks modulate the frozen controller online, substantially outperforming kinematic reference editing (0.84 clean pass at 1.25 m ceiling vs. 0.10) and zero-shot generalizing across hurdles, spatial reaching, actuator faults, and tray balancing. (3) Simulation-free failure discovery: plan dispersion across generation noise effectively identifies physical tracking failures (91% precision in top 2%) without physics simulations; targeted fine-tuning on flagged clips resolves 50% of failure cases. Videos and interactive demonstrations are available at https://diffwbc.github.io/#selfassess.",
-      "abstract_source": "https://arxiv.org/abs/2610.41354",
-      "arxiv_id": "2610.41354",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.41354",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 108,
-        "core": [
-          "humanoid",
-          "unitree g1"
-        ],
-        "task": [
-          "whole body control"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [
-          "motion tracking"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.41354"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02"
-    },
-    {
       "title": "Evolution of humanoid locomotion control",
       "authors": [
         "Yan Gu",
@@ -957,61 +847,6 @@
         "https://doi.org/10.5281/zenodo.21964663"
       ],
       "carried_over_since": "2026-09-01",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02"
-    },
-    {
-      "title": "Geometry-Aware Humanoid Retargeting via Manifold ODEs",
-      "authors": [
-        "Pengyu Zhu",
-        "Heye Wang",
-        "Xi Wang",
-        "Xuyang Wu",
-        "He Kong",
-        "Guodong Shi"
-      ],
-      "abstract": "In this paper, we focus on interaction-preserving motion retargeting, which transfers human demonstrations to humanoids while maintaining spatial relationships with objects and terrain. Previous work, such as OmniRetarget, addresses this task through temporally coupled constrained optimization, requiring repeated sequential quadratic programming (SQP) iterations at each frame. We study this problem from an ordinary differential equation (ODE) perspective by modeling the continuous-time limit of its framewise Karush-Kuhn-Tucker (KKT) conditions as an ODE on the robot configuration manifold. This viewpoint offers two benefits: (i) it connects OmniRetarget's SQP iterations to a backward discretization of the ODE, enabling us to establish their local convergence under suitable regularity assumptions; and (ii) it leads to TaSP-KKT (tangent-space parametrization for KKT flow), a new retargeting method based on a forward discretization of the KKT flow. The proposed method achieves the same first-order convergence to the ODE solution as the corresponding backward scheme while requiring only one weighted tangent-cone projection and a closed-form manifold update per step, thereby avoiding repeated inner SQP iterations. Numerical experiments show that TaSP-KKT achieves retargeting quality comparable to, though slightly lower than, that of OmniRetarget while running approximately twice as fast.",
-      "abstract_source": "https://arxiv.org/abs/2610.41349",
-      "arxiv_id": "2610.41349",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.41349",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 108,
-        "core": [
-          "humanoid",
-          "humanoids"
-        ],
-        "task": [
-          "motion retargeting"
-        ],
-        "body": [],
-        "method": [
-          "retargeting",
-          "human demonstrations"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.41349"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -1522,69 +1357,6 @@
       "seen_on": "2026-11-02"
     },
     {
-      "title": "HIPC: Humanoid Iterative Planning and Control via Goal-Conditioned Motion Closure",
-      "authors": [
-        "Yi Han",
-        "Xingyu Chen",
-        "Zixuan Lang",
-        "Qianyang Wu",
-        "Yuhang Lin",
-        "Ji Ma",
-        "Liang Li",
-        "Dongting Li",
-        "Xinpeng Liu",
-        "Ruoli Dai",
-        "Hesheng Wang",
-        "Renjing Xu",
-        "Lei Han"
-      ],
-      "abstract": "Recent generative models are widely used to provide whole-body motion for humanoid tracking. Current methods combine motion generators with controllers in an open-loop paradigm, which leads to critical issues: tracking errors can accumulate into spatial drift, and the planner cannot adapt to unexpected physical disturbances without feedback from physical execution. However, directly feeding realized states back to the planner in a closed loop can cause discontinuities, resulting in physical jitter and even falls, since such states are out of distribution during training. To bridge this gap, we propose HIPC, a real-time Humanoid Iterative Planning and Control framework that couples a generative model with motion tracking into a unified planning-and-control paradigm. HIPC introduces a goal-conditioned motion planning trained with a canonical motion representation that avoids gimbal-lock singularities under extreme orientations and supports motion generation on diverse geometric and semantic conditions. Then, HIPC adopts two strategies, deviation-decayed recovery and history re-anchoring, to mitigate the out-of-distribution shift caused by realized-state feedback. Finally, HIPC operates a real-time asynchronous planning-and-control system, with latency compensation to reduce temporal mismatch for inference delay. Extensive experiments confirm the effectiveness of HIPC under switching and composition of diverse conditions. Results show that HIPC achieves state-of-the-art goal-reaching accuracy among existing methods while simultaneously demonstrating robustness to physical perturbations and the ability to recover from falls.",
-      "abstract_source": "https://arxiv.org/abs/2610.41334",
-      "arxiv_id": "2610.41334",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.41334",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "Website: https://hipc-humanoid.github.io/",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 107,
-        "core": [
-          "humanoid"
-        ],
-        "task": [
-          "whole body motion"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [
-          "motion tracking",
-          "motion generation"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.41334"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02"
-    },
-    {
       "title": "Humanoid Robot Motion Tracking Control Method Integrating Adaptive PID, Kalman Filtering and Feedforward Compensation",
       "authors": [
         "Jinhui Li",
@@ -1686,6 +1458,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.42053"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -1740,62 +1513,6 @@
         "https://doi.org/10.1109/cyber71431.2026.11695405"
       ],
       "carried_over_since": "2026-09-24",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02"
-    },
-    {
-      "title": "ROOF: Learning Humanoid Fall Recovery under Overhead Constraints",
-      "authors": [
-        "Yidan Lu",
-        "Jiayuan Yu",
-        "Zongrui Cai",
-        "Jingwen Sun",
-        "Jinrui Han",
-        "Jing Wang",
-        "Ping Luo",
-        "Peng Lu"
-      ],
-      "abstract": "A fallen humanoid beneath an overhead obstacle faces a coupled recovery problem. It must create clearance while organizing support for a stable rise, since attempting to stand before making room can further increase obstruction. We introduce a reinforcement learning method with contact-supported geometric escape guidance, which rewards incremental reduction of robot-obstacle overlap without prescribing an escape path. To achieve this, a learned motion prior, together with posture-dependent support and joint-stall costs, is proposed to shape a single policy that learns when to clear the obstacle, how to establish support, and when to complete the rise, all using proprioception alone. In simulation, it recovers in 88.5% of trials beneath plates that can only be lifted, compared with 18.9% without geometric guidance, and in 98.6% of trials beneath free plates with randomized size, mass and placement. On a Unitree G1, the deployed policy recovered in 95 of 150 attempts across seven real-world obstacle scenes, including furniture and multi-object arrangements absent from training. Project page: https://lu-yidan.github.io/ROOF/",
-      "abstract_source": "https://arxiv.org/abs/2610.42097",
-      "arxiv_id": "2610.42097",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.42097",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "8 pages, 4 figures",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 107,
-        "core": [
-          "humanoid",
-          "unitree g1"
-        ],
-        "task": [
-          "fall recovery"
-        ],
-        "body": [],
-        "method": [
-          "motion prior"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.42097"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -2245,78 +1962,6 @@
         "https://doi.org/10.5281/zenodo.23188084"
       ],
       "carried_over_since": "2026-10-07",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02"
-    },
-    {
-      "title": "Movens-Zero: Scaling Humanoid Motion Foundation Models with Large-Scale Human Videos",
-      "authors": [
-        "Wendong Bu",
-        "Tinghong Ye",
-        "Qizhou Wang",
-        "Jiacheng Li",
-        "Zhiqi Ge",
-        "Yuze Lin",
-        "Zhongqi Yue",
-        "Yi Su",
-        "Jingyu Wang",
-        "Kai Shen",
-        "Jingdong Liu",
-        "Chengyuan Deng",
-        "Xiaoxuan Chen",
-        "Xin Tan",
-        "Jiaming Ji",
-        "Wenqiao Zhang",
-        "Chenghong Jiang",
-        "Tuoyu Li",
-        "Siliang Tang",
-        "Jun Xiao",
-        "Tat-Seng Chua",
-        "Yueting Zhuang",
-        "Xingxing Wang",
-        "Juncheng Li"
-      ],
-      "abstract": "Scaling humanoid motion foundation models is constrained by the scarcity of diverse, robot-executable data and by the difficulty of jointly learning from heterogeneous multimodal inputs while supporting real-time closed-loop control. We present Movens-5M, constructed from raw Internet videos through clip generation, quality filtering, semantic annotation, motion recovery, and physical refinement with humanoid retargeting and execution verification. It contains 15 million human-motion sequences and 5 million physically executable humanoid-motion sequences spanning over 10,000 hours, aligned with text, RGB video, speech, and music. Building on this data, we introduce Movens-Zero, a scalable understanding-generation-execution architecture that supports joint learning across modalities and real-time closed-loop execution. Task-mixed flow-matching training jointly optimizes a single action expert across seven generation tasks, enabling direct motion generation from text, speech, music, and video. Multimodal Real-Time Chunking connects overlapping chunks under continuously updated instructions and robot states for continuous closed-loop execution. We further introduce Movens-Intent, a four-track benchmark with 8,192 expert-verified condition-motion pairs across text, speech, music, and video. Experiments show consistent gains across all four modalities when scaling execution-verified data from 1% to 100% and action-expert capacity from 64M to 911M parameters, while demonstrating that data quality and cross-modal supervision improve generation and execution.",
-      "abstract_source": "https://arxiv.org/abs/2610.41877",
-      "arxiv_id": "2610.41877",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.41877",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "Technical report. 86 pages, 31 figures, 15 tables. Project page: https://movens-zero.github.io",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 106,
-        "core": [
-          "humanoid"
-        ],
-        "task": [],
-        "body": [],
-        "method": [
-          "retargeting",
-          "human motion",
-          "human videos",
-          "motion generation"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.41877"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -6142,58 +5787,6 @@
       "carried_over_since": "2026-09-01"
     },
     {
-      "title": "DyCraft: An Agentic System for Long-Horizon 4D Scene Generation",
-      "authors": [
-        "Jeff Tan",
-        "Hang Dai",
-        "Zeqian Long",
-        "Yanzhe Lyu",
-        "R. Kenny Jones",
-        "Shangzhe Wu",
-        "Chen Geng",
-        "Jiajun Wu"
-      ],
-      "abstract": "While frontier coding agents can generate high-quality 3D scenes and articulated assets, they struggle to create coherent long-horizon animations. When equipped with general-purpose harnesses, they frequently produce physically implausible outputs, generating objects that interpenetrate, lack physical support, or move unnaturally. Such bare agents struggle to repair these errors because they default to scripting the full animation in one pass, making it difficult to verify their work and disentangle complex spatiotemporal constraints. Drawing on the practice of human animators, we introduce DyCraft, a system for animated 3D scene generation that breaks animation into steps that coding agents can more reliably solve. DyCraft first expands the user's prompt into a detailed plan and builds a static scene. It then creates a 3D storyboard of key animation poses, where each frame is a static 3D scene that the agent can build and debug in isolation. Storyboarding decomposes the problem into pairs of verified start and end states, allowing the agent to author local motion between them with a collection of motion authoring tools. We evaluate DyCraft on 24 long-horizon, multi-shot animation tasks covering humanoid robots, human and animal characters, and physical mechanisms. Compared with a native GPT-6 agent in Codex and prior agentic baselines, DyCraft substantially reduces physical violations and generates higher-quality animated 3D scenes that are more often preferred by human raters.",
-      "abstract_source": "https://arxiv.org/abs/2610.40754",
-      "arxiv_id": "2610.40754",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.40754",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "Project page: https://dy-craft.github.io/",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.CV",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 104,
-        "core": [
-          "humanoid",
-          "humanoid robots"
-        ],
-        "task": [],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.40754"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02"
-    },
-    {
       "title": "Ear-Shaped Broadband WHEMS Antenna for Humanoid Robot Applications",
       "authors": [
         "Lingxiao Xie",
@@ -6381,6 +5974,51 @@
       "dedupe_note": "",
       "seen_on": "2026-11-02",
       "carried_over_since": "2026-09-01"
+    },
+    {
+      "title": "Enhancing Human–Robot Communication: A Real-World Evaluation of Conversational Humanoid Robots",
+      "authors": [
+        "Akansha Bhatia",
+        "Sameer Kishore"
+      ],
+      "abstract": null,
+      "abstract_source": null,
+      "arxiv_id": null,
+      "doi": "10.1109/icrca69813.2026.11749848",
+      "paper_url": "https://ieeexplore.ieee.org/document/11749848/",
+      "venue": "2026 10th International Conference on Robotics, Control and Automation (ICRCA)",
+      "venue_hint": "2026 10th International Conference on Robotics, Control and Automation (ICRCA)",
+      "publication_status": "published",
+      "first_public_date": "2026-11",
+      "date_basis": "crossref-created",
+      "crossref_type": "proceedings-article",
+      "window": "2026-11",
+      "relevance": {
+        "keep": true,
+        "path": "core",
+        "why": "humanoid platform named",
+        "score": 104,
+        "core": [
+          "humanoid",
+          "humanoid robots"
+        ],
+        "task": [],
+        "body": [],
+        "method": [],
+        "control": [],
+        "sim": [],
+        "hard_negative": [],
+        "soft_negative": []
+      },
+      "sources": [
+        "crossref"
+      ],
+      "urls": [
+        "https://ieeexplore.ieee.org/document/11749848/"
+      ],
+      "dedupe": "new",
+      "dedupe_note": "",
+      "seen_on": "2026-11-02"
     },
     {
       "title": "Enhancing Imitation Learning for Humanoid Robots Using Vision Transformers and Time Contrastive Networks",
@@ -7791,6 +7429,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11714800/"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -9508,6 +9147,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11696970/"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -9954,6 +9594,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11697158/"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -10058,6 +9699,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11696564/"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -10550,6 +10192,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.41540"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -11345,6 +10988,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11739175/"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -12554,6 +12198,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11714920/"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -15710,6 +15355,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11696333/"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -18225,6 +17871,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11697564/"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -18652,6 +18299,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11697659/"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -18797,56 +18445,6 @@
       "carried_over_since": "2026-09-03"
     },
     {
-      "title": "CuPIQP: A Batched and Differentiable QP Solver on GPUs for Robot Learning and Control",
-      "authors": [
-        "Fenglong Song",
-        "Roland Schwan",
-        "Yuwen Chen",
-        "Yuning Jiang",
-        "Colin N. Jones"
-      ],
-      "abstract": "Quadratic programs (QPs) are fundamental building blocks of many robotic tasks such as inverse kinematics, whole-body control, and model predictive control. Extending these methods to large-scale robot learning and control requires solving many QPs concurrently and, for end-to-end learning, differentiating through their solutions. Efficient batched optimization is therefore essential to bringing established model-based methods into GPU-based robotics pipelines. We present \\textsc{cuPIQP}, a batched and differentiable QP solver on GPUs based on a proximal interior-point method, with unified support for dense, sparse, and multistage problems. The solver exploits parallelism across independent QPs and their internal structure while preserving per-problem numerical updates and termination decisions. Benchmarks with up to 16384 QPs per batch demonstrate solve-time speedups of up to $18.8\\times$ over \\textsc{Moreau} and $4.26\\times$ over eight-core \\textsc{PIQP}. In an end-to-end learning task, \\textsc{cuPIQP} accelerates training by $4.6\\times$ over \\textsc{QPAX} and $7.8\\times$ over \\textsc{Moreau}. By reducing the computational cost, \\textsc{cuPIQP} provides efficient, reusable infrastructure for integrating model-based optimization into large-scale robot learning and control.",
-      "abstract_source": "https://arxiv.org/abs/2610.41021",
-      "arxiv_id": "2610.41021",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.41021",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "math.OC",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 83,
-        "core": [],
-        "task": [
-          "whole body control"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.41021"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02"
-    },
-    {
       "title": "DexTele: A Dual-Arm Dexterous Teleoperation System Based on Motion Retargeting and Adaptive Force Control",
       "authors": [
         "Yuanchuan Lai",
@@ -18895,6 +18493,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11695926/"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -18943,6 +18542,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11698241/"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -19046,6 +18646,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11696261/"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -19199,57 +18800,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11695763/"
       ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02"
-    },
-    {
-      "title": "Online Learning of Heterogeneous Locomotion Dynamics under Reinforcement Learning Policies for Precise Loco-Manipulation",
-      "authors": [
-        "Tianlin Zhang",
-        "Weipeng Xia",
-        "Lingwei Zhang",
-        "Yiyang Shao",
-        "Zhongyu Li",
-        "Yun-Hui Liu"
-      ],
-      "abstract": "How to reuse a pretrained locomotion policy for precise loco-manipulation is still an open problem. We propose an online method to learn the closed-loop dynamics under a frozen locomotion policy. The learned model predicts floating-base motion and improves loco-manipulation accuracy. However, unobserved latent conditions of the policy introduce heterogeneous responses, meaning that the same observed state will lead to different motions. Direct learning without accounting for this heterogeneity introduces bias and fluctuations into dynamics estimates, degrading floating-base prediction and end-effector tracking. To address this problem, a contaminated Gaussian model is proposed to approximate the effects of latent conditions. The model uses two Gaussian components to approximate predictable and unpredictable responses under the same observed state. Then, the contaminated Gaussian model is combined with a Gaussian process to construct an online learner using random Fourier features (RFFs). The learner estimates each response's probability of belonging to the predictable component and uses it to weight online updates, capturing predictable responses while reducing bias and fluctuations caused by heterogeneous observations. With consistent and unbiased dynamics estimates, model predictive control (MPC) predicts floating-base motion accurately and enables precise loco-manipulation. A finite-sample error bound is established to ensure uniform convergence in online learning. Simulation and hardware experiments demonstrate consistent end-effector tracking across different manipulator configurations and tasks, with errors of 0.01 m.",
-      "abstract_source": "https://arxiv.org/abs/2610.41892",
-      "arxiv_id": "2610.41892",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.41892",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "18 pages, 15 figures. Supplementary video: https://youtu.be/H-u8buk86C0",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 83,
-        "core": [],
-        "task": [
-          "loco manipulation"
-        ],
-        "body": [
-          "locomotion"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.41892"
-      ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -19530,63 +19081,6 @@
         "https://doi.org/10.1201/9781003754176-9"
       ],
       "carried_over_since": "2026-09-27",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02"
-    },
-    {
-      "title": "HandMimicX: Learning Human-Like Dexterous Manipulation via an Object-Centric Policy from Egocentric Videos",
-      "authors": [
-        "Zihan Gao",
-        "Yufei Liu",
-        "Yuhong Zhang",
-        "Zhen Yu",
-        "Xinhao Huang",
-        "Zhinan You",
-        "Kai W. Ho",
-        "Zipeng Ye",
-        "Peng Jiao",
-        "Haoqian Wang"
-      ],
-      "abstract": "Learning dexterous manipulation from human videos remains an open challenge, particularly in the context of transferring a single demonstration into a spatially generalizable robotic skill and maintaining physically plausible human-like interactions. Unlike prior works that emphasize hand-motion imitation, we introduce an object-centric framework for acquiring dexterous skills from egocentric human RGB-D videos. Within our framework, we formulate the reinforcement learning (RL) objective in terms of object motion to decouple the underlying skill from the specific hand trajectory and impose constraints on hand-object interaction states to promote more anatomically natural hand configurations. Extensive experiments in simulation and on real robots demonstrate that our method enables efficient learning from human videos and generalizable skill transfer across novel spatial configurations.",
-      "abstract_source": "https://arxiv.org/abs/2610.41336",
-      "arxiv_id": "2610.41336",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.41336",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "task",
-        "why": "a task specific to a humanoid body",
-        "score": 82,
-        "core": [],
-        "task": [
-          "motion imitation"
-        ],
-        "body": [],
-        "method": [
-          "human videos"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": [
-          "dexterous manipulation"
-        ]
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.41336"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -21514,6 +21008,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.41330"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -22172,158 +21667,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.40972"
       ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02"
-    },
-    {
-      "title": "VolHuMe: a High-Resolution Large Scale Dataset of Volumetric Human Meshes",
-      "authors": [
-        "Giulia Martinelli",
-        "Niccolò Bisagno",
-        "Nicola Garau",
-        "Esa Rahtu",
-        "Nicola Conci"
-      ],
-      "abstract": "We introduce VolHuMe, a dataset of high-quality 4D human scans captured with a state-of-the-art volumetric studio using 64 RGB and 32 depth cameras. VolHuMe contains individual captures of 104 subjects and provides extensive ground truth, including SMPL-X, high-resolution meshes, multi-view RGB/depth images, rigged meshes, point clouds, garment segmentation, and detailed hand and facial geometry. Unlike prior datasets that primarily rely on full-body imagery, VolHuMe uses a close-range, high-resolution capture setup that preserves fine-grained body-part details, improving geometric fidelity and texture resolution. We benchmark VolHuMe on state-of-the-art methods across 3D and 4D human reconstruction tasks, showcasing the dataset's quality and exposing the limitations of current evaluation testbeds.",
-      "abstract_source": "https://arxiv.org/abs/2606.23062",
-      "arxiv_id": "2606.23062",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2606.23062",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-06",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.GR",
-      "window": "2026-06",
-      "relevance": {
-        "keep": true,
-        "path": "axis-a+b",
-        "why": "a full body, and our method vocabulary",
-        "score": 53,
-        "core": [],
-        "task": [],
-        "body": [
-          "full body"
-        ],
-        "method": [
-          "smpl",
-          "smpl x"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2606.23062"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02",
-      "carried_over_since": "2026-09-03"
-    },
-    {
-      "title": "A-Live: Passive Liveness Detection via Neuromuscular Micro-Motion Signatures on Commodity Sensors",
-      "authors": [
-        "Mohammed Gharib",
-        "Sam Burns",
-        "Martin Zizi"
-      ],
-      "abstract": "Liveness detection has evolved from a safeguard against presentation and replay attacks in biometric authentication to a broader requirement for distinguishing human users from non-human agents in modern digital systems. The emergence of generative and agentic AI further amplifies this need, positioning liveness as a fundamental security primitive. Existing approaches face key limitations, including reliance on explicit user interaction, specialized hardware, vulnerability to increasingly realistic spoofing, and limited scalability in real-world deployments. We present A-Live, a passive liveness detection framework that operates solely on inertial measurement unit (IMU) signals available in commodity devices. A-Live is based on the observation that neuromuscular micro-motions inherent to human motor control produce subtle but measurable signatures in inertial data, which are often treated as noise in prior work. We design a lightweight feature extraction pipeline and a compact classifier suitable for real-time on-device deployment, and introduce a controllable physical micro-motion platform to evaluate robustness against engineered non-human motion. Extensive evaluation across Android and iOS devices, including both automated and real-user settings, shows that A-Live achieves over 99.5\\% accuracy with low false acceptance and rejection rates. Our results demonstrate that neuromuscular micro-motion signatures provide a scalable and passive foundation for liveness detection under emerging AI-driven threat models.",
-      "abstract_source": "https://arxiv.org/abs/2606.05126",
-      "arxiv_id": "2606.05126",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2606.05126",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-06",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.CR",
-      "window": "2026-06",
-      "relevance": {
-        "keep": true,
-        "path": "axis-a+b",
-        "why": "a full body, and our method vocabulary",
-        "score": 52,
-        "core": [],
-        "task": [],
-        "body": [
-          "android"
-        ],
-        "method": [
-          "human motion"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2606.05126"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02",
-      "carried_over_since": "2026-09-03"
-    },
-    {
-      "title": "Adaptive Gait Biofeedback With Participant-Held-Out Modeling and Participant-Specific Updating in Chronic Ankle Instability",
-      "authors": [
-        "Jaeyoon Kim",
-        "Veronika Lebisova",
-        "Jeniya Sultana",
-        "Jaeyoung Cho",
-        "Jaeho Jang"
-      ],
-      "abstract": "Adaptive gait biofeedback may support repeated practice in chronic ankle instability, but its evaluation must address model performance and human response. We evaluated a temporal convolutional classifier on protocol-defined, angle-derived GOOD/BAD gait-cycle labels using participant-held-out leave-one-subject-out (LOSO) cross-validation in 20 participants. Seven participants in the adaptive-intervention group completed nine sessions over three weeks, with one motion-capture recording analyzed per session. Models updated after failed sessions were compared offline with their parent models on the same-session validation subset used for candidate selection and the first subsequent adaptive-session recording. Frontal-plane ankle angle was compared between the adaptive group and 10 sequentially enrolled controls at Baseline, Post, and 7-day Retention. Across 20 held-out folds, mean fold-level area under the receiver operating characteristic curve (AUROC) was 0.948, sensitivity for angle-threshold-exceeding BAD cycles was 0.941, and specificity for angle-threshold-meeting GOOD cycles was 0.366. Mean BAD-class F1 was higher in candidate models by 0.187 on the same-session subset and 0.118 on the first subsequent recording. At Post, the adaptive group had a baseline-adjusted frontal-plane ankle angle 5.168 degrees lower than controls (95% confidence interval, 1.766-8.569 degrees lower); the Retention contrast was uncertain. These findings characterize population-model discrimination and offline participant-specific updating during repeated biofeedback use, alongside a nonrandomized Post frontal-plane ankle angle association. They do not establish independent clinical gait classification or a causal benefit of updating.",
-      "abstract_source": "https://arxiv.org/abs/2610.07428",
-      "arxiv_id": "2610.07428",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2610.07428",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "28 pages (14-page main manuscript and 14-page supplementary material), 5 main figures",
-      "publication_status": "preprint",
-      "first_public_date": "2026-10",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.AI",
-      "window": "2026-10",
-      "relevance": {
-        "keep": true,
-        "path": "axis-a+b",
-        "why": "a full body, and our method vocabulary",
-        "score": 52,
-        "core": [],
-        "task": [],
-        "body": [
-          "gait"
-        ],
-        "method": [
-          "motion capture"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2610.07428"
-      ],
-      "carried_over_since": "2026-10-07",
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -22435,57 +21779,6 @@
       "dedupe_note": "",
       "seen_on": "2026-11-02",
       "carried_over_since": "2026-09-03"
-    },
-    {
-      "title": "AVTR-1: Open Stack for Real-Time Interactive Avatars",
-      "authors": [
-        "Артем Кравцов",
-        "Dmitrii Ziganshin",
-        "Vsevolod Poletaev",
-        "Gleb Balitskiy",
-        "A. O. Tikhonova",
-        "Egor Burkov",
-        "Vadim Lebedev"
-      ],
-      "abstract": "Talking-head and dyadic models now achieve real-time inference, yet fast motion generation alone does not produce an interactive conversation. A live system must synchronize the model's output with speech from an external voice agent, schedule video frames for playback, and handle interruptions. We introduce AVTR-1, an open stack for real-time interactive avatar conversations, built around a compact 153M-parameter autoregressive flow-matching motion generator conditioned on both participants' audio. We adapt its audio encoder for streaming through self-distillation. The stack turns the model's chunk-based generation into a continuous, synchronized audio-video stream driven by an external voice agent, and we analytically derive its contribution to the user-facing latencies and validate the resulting bounds with two commercial voice agents. Further experiments demonstrate that AVTR-1 leads the compared dyadic systems on all reported visual-quality metrics and most conventional listening-motion metrics while remaining competitive in lip synchronization. Its inference runtime operates in real time on data-center and consumer GPUs. However, conventional listening metrics do not establish whether the paired speaker's speech contributes to generated motion. We therefore introduce the Reference-Based Directed Granger Gain (R-DGG), which measures the additional predictive information carried by speaker speech after accounting for listener history and speaker motion. R-DGG finds statistically supported predictive dependence for recorded listeners and all evaluated dyadic systems, but not for talking-head generators without paired audio or mismatched speaker-listener pairs. We release the model weights, renderer, and serving backend under component-specific licenses.",
-      "abstract_source": "https://arxiv.org/abs/2609.22913",
-      "arxiv_id": "2609.22913",
-      "doi": "10.48550/arxiv.2609.22913",
-      "paper_url": "https://arxiv.org/abs/2609.22913",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "publication_status": "preprint",
-      "first_public_date": "2026-09",
-      "date_basis": "openalex-publication-date",
-      "window": "2026-09",
-      "relevance": {
-        "keep": true,
-        "path": "axis-a+b",
-        "why": "a full body, and our method vocabulary",
-        "score": 52,
-        "core": [],
-        "task": [],
-        "body": [
-          "avatar"
-        ],
-        "method": [
-          "motion generation"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "openalex"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2609.22913"
-      ],
-      "carried_over_since": "2026-10-07",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02"
     },
     {
       "title": "Bridging the Sim-to-Real Gap in Parallel-Link Leg Mechanisms via Simulator-Side Dynamics Normalization",
@@ -22633,157 +21926,6 @@
         "https://doi.org/10.1109/ijcnn69854.2026.11729200"
       ],
       "carried_over_since": "2026-10-20",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02"
-    },
-    {
-      "title": "Dissociable Spatial and Temporal Effects of Interaction Latency in Virtual Reality",
-      "authors": [
-        "Xiaoye Michael Wang",
-        "Catherine M. Sabiston",
-        "Timothy N. Welsh"
-      ],
-      "abstract": "Motion-to-photon latency is inherent in immersive virtual reality (VR) systems and can arise from multiple sensorimotor loops, including view-contingent latency between head movement and display update and interaction latency between hand movement and the virtual effector. Although prior work shows that interaction latency can impair VR performance, it remains unclear whether common spatial, temporal, and efficiency measures reveal the same latency-related disruption. This study addressed this question by experimentally imposing delays between the physical and virtual hands during manual pointing in VR. Participants pointed to targets on a horizontal surface in VR and in the physical environment as an unmediated baseline. In VR, pointing was performed with a virtual hand avatar controlled by a motion capture pipeline, and additional delays (0-500 ms) were imposed between the participant's hand movement and the rendered movement of the virtual hand. Relative to the baseline, performance in VR showed greater endpoint error, longer movement time, greater endpoint variability, and lower throughput. Within VR, added interaction latency further increased endpoint error and variability, reduced throughput, and altered movement time, but these effects followed different profiles: endpoint error increased even at the shortest delays, whereas movement time remained stable at short delays and increased primarily at longer delays. These findings show that interaction latency produces dissociable spatial and temporal consequences in immersive VR, such that endpoint accuracy revealed disruption before movement time or throughput. Thus, latency-sensitive VR interactions cannot be fully evaluated using movement time or efficiency measures alone. Instead, HCI evaluations should assess both spatial and temporal performance, particularly when VR tasks involve visually guided manual actions.",
-      "abstract_source": "https://arxiv.org/abs/2606.25681",
-      "arxiv_id": "2606.25681",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2606.25681",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-06",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.HC",
-      "window": "2026-06",
-      "relevance": {
-        "keep": true,
-        "path": "axis-a+b",
-        "why": "a full body, and our method vocabulary",
-        "score": 52,
-        "core": [],
-        "task": [],
-        "body": [
-          "avatar"
-        ],
-        "method": [
-          "motion capture"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2606.25681"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02",
-      "carried_over_since": "2026-09-03"
-    },
-    {
-      "title": "EgoNeMo: Transferable Map of Pedestrian Dynamics via Egocentric LiDAR Scan",
-      "authors": [
-        "Azusa Sawada",
-        "Allan Wang",
-        "Hideo Saito",
-        "Aaron Steinfeld"
-      ],
-      "abstract": "This paper proposes a transferable Map of Dynamics (MoD) framework that generalizes to unknown environments using only egocentric 3D LiDAR point clouds to overcome the long-standing limitation of traditional MoD methods. While MoDs are essential for encoding human motion characteristics to enable accurate pedestrian trajectory prediction or safe robot navigation, traditional approaches suffer from site-specificity, requiring exhaustive trajectory accumulation at every new location. Extending recent advances in neural implicit modeling, our framework trains a continuous, LiDAR-based MoD estimator across diverse environments. To mitigate the inherent sparsity and temporal bias of real-world trajectory data, we introduce a position-balanced sampling strategy and a multi-task learning architecture that jointly predicts motion distributions and a spatial frequency score map. The latter is further augmented by visibility-aware losses to compensate for incomplete observation data. Comprehensive experiments demonstrate that our method effectively reconstructs underlying motion maps even in unknown locations from a single instantaneous LiDAR scan, despite highly sparse training data. Finally, we show that our improvements enhance the reliability of downstream trajectory prediction.",
-      "abstract_source": "https://arxiv.org/abs/2609.06195",
-      "arxiv_id": "2609.06195",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2609.06195",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "16 pages, 9 figures",
-      "publication_status": "preprint",
-      "first_public_date": "2026-09",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.LG",
-      "window": "2026-09",
-      "relevance": {
-        "keep": true,
-        "path": "axis-a+b",
-        "why": "a full body, and our method vocabulary",
-        "score": 52,
-        "core": [],
-        "task": [],
-        "body": [
-          "standing"
-        ],
-        "method": [
-          "human motion"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2609.06195"
-      ],
-      "carried_over_since": "2026-09-10",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-02"
-    },
-    {
-      "title": "EvolvingAvatar: Interactive 3D Head Generation That Adapts as Conversations Unfold",
-      "authors": [
-        "Junjie Chen",
-        "Fei Wang",
-        "Kun Li",
-        "Yiqi Nie",
-        "Xun Yang",
-        "Yanbin Hao",
-        "Linfeng Zhang",
-        "Meng Wang"
-      ],
-      "abstract": "Interactive 3D head generation requires coordinated speaking and listening motion that responds to an evolving conversation. Existing generators use incoming observations as context but keep their parameters fixed, leaving conversational patterns unused as a learning signal. We introduce EvolvingAvatar, a causal generator that uses test-time training to adapt to user face video and dyadic audio during interaction. Its dyadic context prediction objective provides a self-supervised learning signal from audiovisual context without target motion labels at test time. Persistent fast weights accumulate these updates within each conversation to guide motion generation, while transient jaw adaptation responds to current audiovisual context. Predicted speech activity controls how persistent adaptation guides motion. We also introduce InterHead-Bench, a unified 455.95-hour benchmark built from single-view and dual-view conversation videos. Experiments show improved conversational motion statistics over strong baselines. On the hardest out-of-distribution split, generation improves as conversations unfold, reducing mismatch with recorded user-avatar expression statistics by up to 11.1% from the first interval.",
-      "abstract_source": "https://arxiv.org/abs/2609.35616",
-      "arxiv_id": "2609.35616",
-      "doi": "10.48550/arxiv.2609.35616",
-      "paper_url": "https://arxiv.org/abs/2609.35616",
-      "venue": "arXiv (Cornell University)",
-      "venue_hint": "arXiv (Cornell University)",
-      "publication_status": "preprint",
-      "first_public_date": "2026-09",
-      "date_basis": "openalex-publication-date",
-      "window": "2026-09",
-      "relevance": {
-        "keep": true,
-        "path": "axis-a+b",
-        "why": "a full body, and our method vocabulary",
-        "score": 52,
-        "core": [],
-        "task": [],
-        "body": [
-          "avatar"
-        ],
-        "method": [
-          "motion generation"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "openalex"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2609.35616"
-      ],
-      "carried_over_since": "2026-10-07",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -29270,6 +28412,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.40902"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -34108,6 +33251,7 @@
       "urls": [
         "https://arxiv.org/abs/2610.41857"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-02"
@@ -38154,6 +37298,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11696508/"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "similar",
       "dedupe_note": "looks like the listed 'KungfuBot 2: Learning Versatile Motion Skills for Humanoid Whole-Body Control'",
       "seen_on": "2026-11-02"
@@ -38201,6 +37346,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11696573/"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "similar",
       "dedupe_note": "looks like the listed 'Control of Humanoid Robots with Parallel Mechanisms using Kinematic Actuation Models'",
       "seen_on": "2026-11-02"
@@ -38251,6 +37397,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11696713/"
       ],
+      "carried_over_since": "2026-11-02",
       "dedupe": "similar",
       "dedupe_note": "looks like the listed 'Learning Human-Humanoid Coordination for Collaborative Object Carrying'",
       "seen_on": "2026-11-02"
