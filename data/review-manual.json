@@ -4918,6 +4918,69 @@
       "kind": "discovery-coverage-gap",
       "detected_on": "2026-11-01",
       "reason": "openalex returned HTTP 401 Unauthorized for 2026-10, so venue-only coverage from that channel is incomplete; month left unmarked for re-sweep. The OpenAlex-only top-ranked candidates (no arXiv id, mostly low-quality/self-published, e.g. Zenodo-style items) were not verified and no paper was added this run. Backlog 746 candidates; backfill paused."
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-02",
+      "reason": "abstract read from the arXiv abs page (machine-fetched); not humanoid robot learning (scene generation, general QP solver, non-humanoid hand, or human/VR/avatar/clinical work). Rejected.",
+      "items": [
+        {
+          "arxiv_id": "2610.40754",
+          "title": "DyCraft: An Agentic System for Long-Horizon 4D Scene Generation"
+        },
+        {
+          "arxiv_id": "2610.41021",
+          "title": "CuPIQP: A Batched and Differentiable QP Solver on GPUs for Robot Learning and Control"
+        },
+        {
+          "arxiv_id": "2610.41336",
+          "title": "HandMimicX: Learning Human-Like Dexterous Manipulation via an Object-Centric Policy from Egocentric Videos"
+        },
+        {
+          "arxiv_id": "2606.23062",
+          "title": "VolHuMe: a High-Resolution Large Scale Dataset of Volumetric Human Meshes"
+        },
+        {
+          "arxiv_id": "2606.05126",
+          "title": "A-Live: Passive Liveness Detection via Neuromuscular Micro-Motion Signatures on Commodity Sensors"
+        },
+        {
+          "arxiv_id": "2606.25681",
+          "title": "Dissociable Spatial and Temporal Effects of Interaction Latency in Virtual Reality"
+        },
+        {
+          "arxiv_id": "2609.22913",
+          "title": "AVTR-1: Open Stack for Real-Time Interactive Avatars"
+        },
+        {
+          "arxiv_id": "2609.35616",
+          "title": "EvolvingAvatar: Interactive 3D Head Generation That Adapts as Conversations Unfold"
+        },
+        {
+          "arxiv_id": "2609.06195",
+          "title": "EgoNeMo: Transferable Map of Pedestrian Dynamics via Egocentric LiDAR Scan"
+        },
+        {
+          "arxiv_id": "2610.07428",
+          "title": "Adaptive Gait Biofeedback With Participant-Held-Out Modeling and Participant-Specific Updating in Chronic Ankle Instability"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-coverage-gap",
+      "detected_on": "2026-11-02",
+      "reason": "openalex returned HTTP 401 Unauthorized for 2026-10, and arXiv twin resolution hit HTTP 429 (125 venue-only candidates unresolved); coverage from OpenAlex is incomplete, month stays unmarked for re-sweep."
+    },
+    {
+      "kind": "possible-title-mismatch",
+      "detected_on": "2026-11-02",
+      "reason": "candidate 2610.37330 'Tokens of Motion: Primitive Motion Learning for Human-Humanoid Skill Transfer' carries an abstract about failure-informed VLA training (AFIL); title and abstract disagree, not added.",
+      "items": [
+        {
+          "arxiv_id": "2610.37330",
+          "title": "Tokens of Motion: Primitive Motion Learning for Human-Humanoid Skill Transfer"
+        }
+      ]
     }
   ]
 }
