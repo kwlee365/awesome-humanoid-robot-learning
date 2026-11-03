@@ -26,6 +26,11 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.02968), ReContact: Reconstruct and Retarget Human Contacts from Video for Contact-Rich Humanoid Manipulation
+- [arXiv 2026.11](https://arxiv.org/abs/2611.02871), ReGATE: Recurrent Gated Visual Fusion for Reactive Humanoid-Object Interaction
+- [arXiv 2026.11](https://arxiv.org/abs/2611.01748), CompliantBot: Learning Whole-Body Compliance across Task Interfaces for Humanoid Control
+- [arXiv 2026.10](https://arxiv.org/abs/2611.01197), Learning Agile Humanoid Dodgeball with Onboard Monocular Vision
+- [arXiv 2026.10](https://arxiv.org/abs/2611.00193), Anchor 1: Precise and Stable Humanoid Control for Whole-Body Manipulation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.42097), ROOF: Learning Humanoid Fall Recovery under Overhead Constraints, [website](https://lu-yidan.github.io/ROOF/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.41892), Online Learning of Heterogeneous Locomotion Dynamics under Reinforcement Learning Policies for Precise Loco-Manipulation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.41877), Movens-Zero: Scaling Humanoid Motion Foundation Models with Large-Scale Human Videos, [website](https://movens-zero.github.io)
@@ -436,6 +441,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.08](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/), VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters, [website](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/)
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
+- [arXiv 2026.11](https://arxiv.org/abs/2611.01659), HuG: Learning Humanoid Whole-Body Affordance-Aware Grasping with Active Perception, [website](https://xuanbinpeng.com/hug)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.39044), Catch It All!: Generalizable Dynamic Catching with a Dexterous Hand
 - [arXiv 2026.10](https://arxiv.org/abs/2610.34186), HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience
 - [arXiv 2026.10](https://arxiv.org/abs/2610.27242), EmbodyHOI: Embodiment-Aware Generation of Hand-Object Interactions for Humanoid Dexterous Manipulation, [website](https://embodyhoi.github.io/)
