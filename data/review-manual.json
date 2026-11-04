@@ -5120,6 +5120,27 @@
           "title": "Pixel-UMI"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-04",
+      "reason": "2026-11-04 PM pass: abstract read on arXiv; no humanoid named (mobile manipulator / general agentic manipulation).",
+      "items": [
+        {
+          "arxiv_id": "2611.03647",
+          "title": "Pixel-UMI"
+        },
+        {
+          "arxiv_id": "2611.00513",
+          "title": "WorldSketch"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-channel-failure",
+      "detected_on": "2026-11-04",
+      "reason": "2026-11-04 PM run: OpenAlex returned HTTP 401 for 2026-10 and 2026-11, and the arXiv 2026-10 window was split because of its size (2241 results). OpenAlex coverage for both months is incomplete and left unmarked in the ledger for a later sweep. Only a thin pass was made of the queue; most candidates were not read.",
+      "items": []
     }
   ]
 }

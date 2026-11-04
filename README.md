@@ -31,6 +31,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.11](https://arxiv.org/abs/2611.04424), ReflexArc: Bottom-Up Integration of Instantaneous Tactile Reflexes into Whole-Body Humanoid Control, [website](https://minusmodulo.github.io/reflexarc-website/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.02968), ReContact: Reconstruct and Retarget Human Contacts from Video for Contact-Rich Humanoid Manipulation
 - [arXiv 2026.11](https://arxiv.org/abs/2611.02871), ReGATE: Recurrent Gated Visual Fusion for Reactive Humanoid-Object Interaction
+- [arXiv 2026.11](https://arxiv.org/abs/2611.02613), MAPO: Mixture of Experts with Alternating Policy Optimization for Universal Humanoid Motion Tracking, [website](https://mapo-corl2026.github.io/MAPO/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.02546), Energy-Based Policy Orchestration, [website](https://yewr.github.io/epo)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.01748), CompliantBot: Learning Whole-Body Compliance across Task Interfaces for Humanoid Control
 - [arXiv 2026.10](https://arxiv.org/abs/2611.01197), Learning Agile Humanoid Dodgeball with Onboard Monocular Vision
@@ -484,7 +485,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.07](https://arxiv.org/abs/2607.08857), AgenticFocus: Object-Preserving Mixed Reality Synthesis from Human FPV Video for Dexterous Humanoid Learning
 - [arXiv 2026.06](https://arxiv.org/abs/2606.31836), RoboTacDex: A Dexterous Visual-Tactile-Action Dataset for Humanoid Manipulation
 - [arXiv 2026.06](https://arxiv.org/abs/2606.22480), ARP: Enhancing Quantized Skill Abstractions via Visual Alignment and Iterative Refinement for Robotic Manipulation
-- [arXiv 2026.06](https://arxiv.org/abs/2606.21600), VQActFlow: Vector-Quantized Action Mode Steering for Multi-Task Robot Manipulation
+- [arXiv 2026.06](https://arxiv.org/abs/2606.21600) / RA-L 2026, VQActFlow: Vector-Quantized Action Mode Steering for Multi-Task Robot Manipulation
 - [arXiv 2026.06](https://arxiv.org/abs/2606.17011), ROVE: Unlocking Human Interventions for Humanoid Manipulation via Reinforcement Learning
 - [arXiv 2026.06](https://arxiv.org/abs/2606.15918), Energy-Efficient Arm Reaching for a Humanoid Robot via Deep Reinforcement Learning with Identified Power Models
 - [arXiv 2026.06](https://arxiv.org/abs/2606.08152), Vision-Guided Dual-Arm Humanoid Robotic Disassembly of End-of-Life 18650 Lithium-ion Battery Packs
