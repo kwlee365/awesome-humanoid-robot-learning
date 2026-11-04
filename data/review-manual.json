@@ -5042,6 +5042,84 @@
           "title": "Pixel-UMI"
         }
       ]
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-04",
+      "reason": "2026-11-04 AM pass: abstract read (arXiv API); not humanoid-specific (tabletop/general manipulation, non-humanoid hand, general planner/solver/benchmark, OR agent).",
+      "items": [
+        {
+          "arxiv_id": "2611.00499",
+          "title": "Knowing Where to Look"
+        },
+        {
+          "arxiv_id": "2611.04096",
+          "title": "Online HJ Reachability"
+        },
+        {
+          "arxiv_id": "2611.01729",
+          "title": "ODE Policy"
+        },
+        {
+          "arxiv_id": "2611.05163",
+          "title": "RoboTryOn"
+        },
+        {
+          "arxiv_id": "2611.05302",
+          "title": "PACT"
+        },
+        {
+          "arxiv_id": "2611.02555",
+          "title": "Sequential Recovery Updates"
+        },
+        {
+          "arxiv_id": "2611.03584",
+          "title": "TAMPAgent"
+        },
+        {
+          "arxiv_id": "2610.37330",
+          "title": "Tokens of Motion"
+        },
+        {
+          "arxiv_id": "2610.41540",
+          "title": "FOCUS"
+        },
+        {
+          "arxiv_id": "2610.42053",
+          "title": "REA"
+        },
+        {
+          "arxiv_id": "2611.05023",
+          "title": "HiLo-WAM"
+        },
+        {
+          "arxiv_id": "2611.02497",
+          "title": "RoboColosseum"
+        },
+        {
+          "arxiv_id": "2611.00539",
+          "title": "Faster Imitation by Re-timing"
+        },
+        {
+          "arxiv_id": "2611.04255",
+          "title": "ActOR"
+        }
+      ]
+    },
+    {
+      "kind": "candidate-held-for-review",
+      "detected_on": "2026-11-04",
+      "reason": "2026-11-04 AM pass: 9 added. Still held: 2611.02613 MAPO and 2611.03647 Pixel-UMI (real-robot not confirmable from abs page). Coverage incomplete: OpenAlex 2026-10 returned HTTP 401, left unmarked for re-sweep. 2611.05113 HLO-AMP abs comment says accepted at CoRL 2026; listed as arXiv until publication is confirmed. RAIPAL comment claims RA-L 2026; no DOI seen, kept as arXiv.",
+      "items": [
+        {
+          "arxiv_id": "2611.02613",
+          "title": "MAPO"
+        },
+        {
+          "arxiv_id": "2611.03647",
+          "title": "Pixel-UMI"
+        }
+      ]
     }
   ]
 }

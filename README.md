@@ -26,10 +26,15 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.05113), HLO-AMP: Hierarchical Loco-Manipulation from Object-Aware Motion Priors
+- [arXiv 2026.11](https://arxiv.org/abs/2611.04839), Coordinating Humanoid Loco-Manipulation through Action-Conditioned Latent Foresight, [website](https://ju6276.github.io/Action-Grounded-Foresight/)
+- [arXiv 2026.11](https://arxiv.org/abs/2611.04424), ReflexArc: Bottom-Up Integration of Instantaneous Tactile Reflexes into Whole-Body Humanoid Control, [website](https://minusmodulo.github.io/reflexarc-website/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.02968), ReContact: Reconstruct and Retarget Human Contacts from Video for Contact-Rich Humanoid Manipulation
 - [arXiv 2026.11](https://arxiv.org/abs/2611.02871), ReGATE: Recurrent Gated Visual Fusion for Reactive Humanoid-Object Interaction
+- [arXiv 2026.11](https://arxiv.org/abs/2611.02546), Energy-Based Policy Orchestration, [website](https://yewr.github.io/epo)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.01748), CompliantBot: Learning Whole-Body Compliance across Task Interfaces for Humanoid Control
 - [arXiv 2026.10](https://arxiv.org/abs/2611.01197), Learning Agile Humanoid Dodgeball with Onboard Monocular Vision
+- [arXiv 2026.10](https://arxiv.org/abs/2611.00951), Why Koopman Structure Does Not Help Differentiable World Models for Humanoid Whole-Body Tracking
 - [arXiv 2026.10](https://arxiv.org/abs/2611.00193), Anchor 1: Precise and Stable Humanoid Control for Whole-Body Manipulation
 - [arXiv 2026.10](https://arxiv.org/abs/2610.42097), ROOF: Learning Humanoid Fall Recovery under Overhead Constraints, [website](https://lu-yidan.github.io/ROOF/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.41892), Online Learning of Heterogeneous Locomotion Dynamics under Reinforcement Learning Policies for Precise Loco-Manipulation
@@ -441,6 +446,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.08](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/), VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters, [website](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/)
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
+- [arXiv 2026.11](https://arxiv.org/abs/2611.03648), Pixel: A Co-Designed Full-Stack Robot System for Learning General-Purpose Mobile Manipulation, [website](https://pixel-robot.com/pixel)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.01659), HuG: Learning Humanoid Whole-Body Affordance-Aware Grasping with Active Perception, [website](https://xuanbinpeng.com/hug)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.39044), Catch It All!: Generalizable Dynamic Catching with a Dexterous Hand
 - [arXiv 2026.10](https://arxiv.org/abs/2610.34186), HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience
@@ -512,7 +518,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2025.06](https://arxiv.org/abs/2506.22827), Hierarchical Vision-Language Planning for Multi-Step Humanoid Manipulation
 - [arXiv 2025.06](https://arxiv.org/abs/2506.15666), Vision in Action: Learning Active Perception from Human Demonstrations
 - [arXiv 2025.05](https://arxiv.org/abs/2505.12705), DreamGen: Unlocking Generalization in Robot Learning through Neural Trajectories
-- [arXiv 2025.05](https://arxiv.org/abs/2505.11709), EgoDex: Learning Dexterous Manipulation from Large-Scale Egocentric Video
+- [arXiv 2025.05](https://arxiv.org/abs/2505.11709) / ICLR 2026, EgoDex: Learning Dexterous Manipulation from Large-Scale Egocentric Video
 - [arXiv 2025.03](https://arxiv.org/abs/2503.24361), Sim-and-Real Co-Training: A Simple Recipe for Vision-Based Robotic Manipulation, [website](https://co-training.github.io/)
 - [arXiv 2025.03](https://arxiv.org/abs/2503.14734), GR00T N1: An Open Foundation Model for Generalist Humanoid Robots
 - [arXiv 2025.03](https://arxiv.org/abs/2503.13441), Humanoid Policy ~ Human Policy, [website](https://human-as-robot.github.io/)
@@ -606,6 +612,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.11](https://arxiv.org/abs/2611.04204), Online iLQR-MPC with Whole-Body Control for Robust Humanoid Locomotion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.37974), FORGE: Feasible Online Reduced-Order Reference Generation and Whole-Body Execution for Agile Humanoid Locomotion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.36825), HC2Robot: Hyper-Connection Transformers with Predicted Foresight for Multi-Terrain Humanoid Parkour
 - [arXiv 2026.10](https://arxiv.org/abs/2610.36546), REACH: An RL-based Hierarchical Humanoid Crawling Framework for Adaptable Confined Space Traversal, [website](https://aislab-sustech.github.io/REACH/)
@@ -852,6 +859,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2022.12](https://arxiv.org/abs/2212.00541), Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo
 
 ## Navigation
+- [arXiv 2026.11](https://arxiv.org/abs/2611.04972), Caging Vision-Language Navigation for Legged Robots via Barrier-Certified Safety Architecture
 - [arXiv 2026.10](https://arxiv.org/abs/2610.27688), Adaptive Traversal Tubes for Posture-Aware Navigation of Bipedal Humanoids
 - [arXiv 2026.10](https://arxiv.org/abs/2610.17232), LiDAR-based Humanoid Navigation in Dynamic, Non-Convex Environments via Spatio-Temporal Safe Corridors
 - [arXiv 2026.10](https://arxiv.org/abs/2610.10748), TAPNAV: Humanoid Navigation through Tactile Active Perception
@@ -943,6 +951,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2019.01](https://arxiv.org/abs/1901.08652) / Science Robotics 2019, Learning Agile and Dynamic Motor Skills for Legged Robots
 
 ## Hardware Design
+- [arXiv 2026.11](https://arxiv.org/abs/2611.04334) / RA-L 2026, RAIPAL: A Powerful and Agile Humanoid Arm for Human Tasks
 - [arXiv 2026.10](https://arxiv.org/abs/2610.29030), PHD-Hand: A Printable Humanoid Dexterous Hand with Linkage-Driven 3-DOA Digits
 - [arXiv 2026.10](https://arxiv.org/abs/2610.16604), Design and Analysis of a Nonlinear Parallel Mechanism Coupling for Dynamic Humanoid Legs
 - [arXiv 2026.10](https://arxiv.org/abs/2610.08737), PhoneBot: A Low-Cost Open Humanoid Robot Platform Reusing Smartphones
