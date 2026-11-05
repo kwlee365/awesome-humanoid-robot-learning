@@ -26,6 +26,9 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.06564), Playing Soccer Like Humans Do: Learning Versatile and Agile Humanoid Soccer via Latent Motion Priors
+- [arXiv 2026.11](https://arxiv.org/abs/2611.06523), H^2MARL: Hierarchical Heterogeneous Multi-agent Reinforcement Learning for Humanoid Robot Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.05507), Ctrl-F: Force as an Interface for Humanoid Loco-Manipulation, [website](https://forcectrl.github.io/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.05113), HLO-AMP: Hierarchical Loco-Manipulation from Object-Aware Motion Priors
 - [arXiv 2026.11](https://arxiv.org/abs/2611.04839), Coordinating Humanoid Loco-Manipulation through Action-Conditioned Latent Foresight, [website](https://ju6276.github.io/Action-Grounded-Foresight/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.04424), ReflexArc: Bottom-Up Integration of Instantaneous Tactile Reflexes into Whole-Body Humanoid Control, [website](https://minusmodulo.github.io/reflexarc-website/)

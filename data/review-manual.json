@@ -5141,6 +5141,26 @@
       "detected_on": "2026-11-04",
       "reason": "2026-11-04 PM run: OpenAlex returned HTTP 401 for 2026-10 and 2026-11, and the arXiv 2026-10 window was split because of its size (2241 results). OpenAlex coverage for both months is incomplete and left unmarked in the ledger for a later sweep. Only a thin pass was made of the queue; most candidates were not read.",
       "items": []
+    },
+    {
+      "kind": "discovery-channel-failure",
+      "detected_on": "2026-11-05",
+      "reason": "2026-11-05 AM run: OpenAlex returned HTTP 401 for 2026-10 and 2026-11; coverage incomplete, months left unmarked for a later sweep. Only the top arXiv-sourced candidates were read; the OpenAlex/Crossref-sourced backlog (many non-arXiv, low-quality or non-paper items) was not read.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-05",
+      "arxiv_id": "2611.05754",
+      "reason": "GRASP: physics-based retargeting method for dexterous hands and humanoids; primary subject is retargeting/trajectory optimization, humanoid only partly. Not added; left for human scope decision.",
+      "items": []
+    },
+    {
+      "kind": "date-mismatch",
+      "detected_on": "2026-11-05",
+      "arxiv_id": "2611.05585",
+      "reason": "Contact-Implicit Whole-Body Trajectory Optimization (ergoCub): arXiv v1 2026-11 is an author-corrected version of an RA-L Nov 2025 article; venue/date need human decision, not added.",
+      "items": []
     }
   ]
 }
