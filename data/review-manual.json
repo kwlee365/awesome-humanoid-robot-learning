@@ -5161,6 +5161,83 @@
       "arxiv_id": "2611.05585",
       "reason": "Contact-Implicit Whole-Body Trajectory Optimization (ergoCub): arXiv v1 2026-11 is an author-corrected version of an RA-L Nov 2025 article; venue/date need human decision, not added.",
       "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-06",
+      "arxiv_id": "2611.05954",
+      "reason": "urban robot persona perceptions; not humanoid learning. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-06",
+      "arxiv_id": "2611.06214",
+      "reason": "mobile continuum robot obstacle avoidance; no humanoid. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-06",
+      "arxiv_id": "2611.06734",
+      "reason": "smartphone VR exergames; no robot. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-06",
+      "arxiv_id": "2611.08342",
+      "reason": "mmWave radar rendering; no robot learning. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-06",
+      "arxiv_id": "2611.06900",
+      "reason": "mmWave human mobility sensing; no robot. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-06",
+      "arxiv_id": "2609.19840",
+      "reason": "3D talking face benchmark; pure human/face, no robot. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-06",
+      "arxiv_id": "2610.38657",
+      "reason": "rover adaptation; not humanoid. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-06",
+      "arxiv_id": "2610.27066",
+      "reason": "HOI synthesis, pure character motion with no robot. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-06",
+      "arxiv_id": "2606.08133",
+      "reason": "contact dynamics from human motion; no robot. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-06",
+      "arxiv_id": "2601.03959",
+      "reason": "human body+hands motion prior; pure human-motion, no section. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "discovery-channel-failure",
+      "detected_on": "2026-11-06",
+      "arxiv_id": null,
+      "reason": "OpenAlex returned HTTP 401 for 2026-10 and 2026-11; coverage of venue-published work incomplete for those months and left unmarked for re-sweep. Not hand-searched this run.",
+      "items": []
     }
   ]
 }

@@ -26,6 +26,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.08039), HITCH: Teaching a Vision-Language Model to Operate a Humanoid through a Whole-Body Harness, [website](https://hitch.axell.top/)
+- [arXiv 2026.11](https://arxiv.org/abs/2611.06908), Perceptive Humanoid Motion from Simulation, [website](https://apple-aiml-research.github.io/ml-halo/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.06564), Playing Soccer Like Humans Do: Learning Versatile and Agile Humanoid Soccer via Latent Motion Priors
 - [arXiv 2026.11](https://arxiv.org/abs/2611.06523), H^2MARL: Hierarchical Heterogeneous Multi-agent Reinforcement Learning for Humanoid Robot Control
 - [arXiv 2026.11](https://arxiv.org/abs/2611.05507), Ctrl-F: Force as an Interface for Humanoid Loco-Manipulation, [website](https://forcectrl.github.io/)
@@ -616,6 +618,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.11](https://arxiv.org/abs/2611.08097), STEP: Spatiotemporal Training with Explicit Prediction for Perceptive Humanoid Locomotion
 - [arXiv 2026.11](https://arxiv.org/abs/2611.04204), Online iLQR-MPC with Whole-Body Control for Robust Humanoid Locomotion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.37974), FORGE: Feasible Online Reduced-Order Reference Generation and Whole-Body Execution for Agile Humanoid Locomotion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.36825), HC2Robot: Hyper-Connection Transformers with Predicted Foresight for Multi-Terrain Humanoid Parkour
