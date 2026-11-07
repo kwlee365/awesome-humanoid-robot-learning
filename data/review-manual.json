@@ -5238,6 +5238,118 @@
       "arxiv_id": null,
       "reason": "OpenAlex returned HTTP 401 for 2026-10 and 2026-11; coverage of venue-published work incomplete for those months and left unmarked for re-sweep. Not hand-searched this run.",
       "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-07",
+      "arxiv_id": "2611.05954",
+      "reason": "urban-robot perception study with MLLM personas; not humanoid robot learning. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-07",
+      "arxiv_id": "2611.06214",
+      "reason": "mobile continuum robot planning; not humanoid. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-07",
+      "arxiv_id": "2610.41330",
+      "reason": "cross-embodiment planning, no humanoid. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-07",
+      "arxiv_id": "2611.06734",
+      "reason": "VR exergame pose estimation; human-only. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-07",
+      "arxiv_id": "2611.08342",
+      "reason": "mmWave radar rendering; no robot. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-07",
+      "arxiv_id": "2610.27066",
+      "reason": "text-driven human-object interaction synthesis; pure human motion. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-07",
+      "arxiv_id": "2610.38657",
+      "reason": "planetary rover adaptation; not humanoid. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-07",
+      "arxiv_id": "2611.06900",
+      "reason": "mmWave human sensing; no robot. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-07",
+      "arxiv_id": "2606.25083",
+      "reason": "multi-IMU articulated-body filter, no humanoid in abstract. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-07",
+      "arxiv_id": "2609.19840",
+      "reason": "3D talking face benchmark. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-07",
+      "arxiv_id": "2606.08610",
+      "reason": "generic agentic RL framework, not humanoid-specific. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "detected_on": "2026-11-07",
+      "arxiv_id": "2609.21761",
+      "reason": "general contact simulator with manipulation demos only. Read abstract; rejected.",
+      "items": []
+    },
+    {
+      "kind": "borderline-scope",
+      "detected_on": "2026-11-07",
+      "arxiv_id": "2611.05585",
+      "reason": "Contact-implicit trajectory optimisation (ErgoCub). arXiv v1 is 2026-11 but the author comment says it is an author-corrected version of RA-L vol.10 no.11, Nov 2025; venue/date need a human to settle (RA-L 2025.11 vs arXiv 2026.11). Not added.",
+      "items": []
+    },
+    {
+      "kind": "borderline-scope",
+      "detected_on": "2026-11-07",
+      "arxiv_id": "2608.01697",
+      "reason": "Parallel-link leg sim-to-real normalisation; abstract does not say humanoid. Not added.",
+      "items": []
+    },
+    {
+      "kind": "borderline-scope",
+      "detected_on": "2026-11-07",
+      "arxiv_id": "2611.07560",
+      "reason": "Calibration of wheeled humanoid dual-arm waist; hardware/calibration, not learning. Not added.",
+      "items": []
+    },
+    {
+      "kind": "discovery-channel-failure",
+      "detected_on": "2026-11-07",
+      "arxiv_id": null,
+      "reason": "OpenAlex HTTP 401 again for 2026-10 and 2026-11; venue-published coverage incomplete, months left unmarked. Not hand-searched this run.",
+      "items": []
     }
   ]
 }

@@ -26,7 +26,9 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.08407), Social Humanoid: Socially Responsive Human-Humanoid Interaction, [website](https://von31.github.io/social-humanoid/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.08039), HITCH: Teaching a Vision-Language Model to Operate a Humanoid through a Whole-Body Harness, [website](https://hitch.axell.top/)
+- [arXiv 2026.11](https://arxiv.org/abs/2611.07268), CRISP: Constraint-Resolved Interactions between Subsystems for Predictive Whole-Body Cooperation
 - [arXiv 2026.11](https://arxiv.org/abs/2611.06908), Perceptive Humanoid Motion from Simulation, [website](https://apple-aiml-research.github.io/ml-halo/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.06564), Playing Soccer Like Humans Do: Learning Versatile and Agile Humanoid Soccer via Latent Motion Priors
 - [arXiv 2026.11](https://arxiv.org/abs/2611.06523), H^2MARL: Hierarchical Heterogeneous Multi-agent Reinforcement Learning for Humanoid Robot Control
@@ -452,6 +454,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.08](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/), VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters, [website](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/)
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
+- [arXiv 2026.11](https://arxiv.org/abs/2611.07712), AffectiveVLA: Safe and Intent-Aware VLA Control for Human-Humanoid Social Interaction
 - [arXiv 2026.11](https://arxiv.org/abs/2611.03648), Pixel: A Co-Designed Full-Stack Robot System for Learning General-Purpose Mobile Manipulation, [website](https://pixel-robot.com/pixel)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.01659), HuG: Learning Humanoid Whole-Body Affordance-Aware Grasping with Active Perception, [website](https://xuanbinpeng.com/hug)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.39044), Catch It All!: Generalizable Dynamic Catching with a Dexterous Hand
@@ -619,6 +622,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Locomotion
 - [arXiv 2026.11](https://arxiv.org/abs/2611.08097), STEP: Spatiotemporal Training with Explicit Prediction for Perceptive Humanoid Locomotion
+- [arXiv 2026.11](https://arxiv.org/abs/2611.08056), Terrain-Indexed Motion Priors and Geometric Support for Extreme Humanoid Parkour
+- [arXiv 2026.11](https://arxiv.org/abs/2611.07679), PhySA: Decoupling Aesthetic and Physical Rewards for Humanoid Locomotion
 - [arXiv 2026.11](https://arxiv.org/abs/2611.04204), Online iLQR-MPC with Whole-Body Control for Robust Humanoid Locomotion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.37974), FORGE: Feasible Online Reduced-Order Reference Generation and Whole-Body Execution for Agile Humanoid Locomotion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.36825), HC2Robot: Hyper-Connection Transformers with Predicted Foresight for Multi-Terrain Humanoid Parkour
@@ -857,6 +862,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2019.09](https://arxiv.org/abs/1909.09233) / RA-L 2020, Robust Humanoid Contact Planning with Learned Zero- and One-Step Capturability Prediction
 
 ## Sampling-based MPC
+- [arXiv 2026.11](https://arxiv.org/abs/2611.05754), GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting, [website](https://computationalrobotics.seas.harvard.edu/GRASP/)
 - 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.07772), Model-Based Geometry-Aware Generative Optimization for Constrained Locomotion Planning, [code](https://github.com/hhhhzl/genedynamics)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.19443), Hybrid Feedback Sampling for Sample-Efficient Model Predictive Control
 - [arXiv 2026.08](https://arxiv.org/abs/2608.07573), Projection-Retraction MPPI: Exact Constraint-Manifold Control for Manipulators, [website](https://rcilab.github.io/prmppi)
