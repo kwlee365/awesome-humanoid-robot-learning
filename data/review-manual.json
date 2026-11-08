@@ -5350,6 +5350,13 @@
       "arxiv_id": null,
       "reason": "OpenAlex HTTP 401 again for 2026-10 and 2026-11; venue-published coverage incomplete, months left unmarked. Not hand-searched this run.",
       "items": []
+    },
+    {
+      "kind": "discovery-channel-failure",
+      "detected_on": "2026-11-08",
+      "arxiv_id": null,
+      "reason": "OpenAlex HTTP 401 again for 2026-10 and 2026-11; coverage incomplete, months left unmarked. Not hand-searched this run. Only 1 candidate (2611.05585) was verified; rest of queue not read.",
+      "items": []
     }
   ]
 }

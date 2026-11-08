@@ -345,7 +345,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2025.11](https://arxiv.org/abs/2511.02832) / ICRA 2026, TWIST2: Scalable, Portable, and Holistic Humanoid Data Collection System
 - [arXiv 2025.10](https://arxiv.org/abs/2510.26280), Thor: Towards Human-Level Whole-Body Reactions for Intense Contact-Rich Environments
 - [arXiv 2025.10](https://arxiv.org/abs/2510.25241), One-shot Humanoid Whole-body Motion Learning
-- [arXiv 2025.10](https://arxiv.org/abs/2510.18002), Humanoid Goalkeeper: Learning from Position Conditioned Task-Motion Constraints
+- [arXiv 2025.10](https://arxiv.org/abs/2510.18002) / RA-L 2026, Humanoid Goalkeeper: Learning from Position Conditioned Task-Motion Constraints
 - [arXiv 2025.10](https://arxiv.org/abs/2510.17792) / ICRA 2026, SoftMimic: Learning Compliant Whole-body Control from Examples
 - [arXiv 2025.10](https://arxiv.org/abs/2510.14952), From Language to Locomotion: Retargeting-free Humanoid Control via Motion Latent Guidance
 - [arXiv 2025.10](https://arxiv.org/abs/2510.14454) / ICRA 2026, Towards Adaptable Humanoid Control via Adaptive Motion Tracking
@@ -624,6 +624,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.11](https://arxiv.org/abs/2611.08097), STEP: Spatiotemporal Training with Explicit Prediction for Perceptive Humanoid Locomotion
 - [arXiv 2026.11](https://arxiv.org/abs/2611.08056), Terrain-Indexed Motion Priors and Geometric Support for Extreme Humanoid Parkour
 - [arXiv 2026.11](https://arxiv.org/abs/2611.07679), PhySA: Decoupling Aesthetic and Physical Rewards for Humanoid Locomotion
+- [arXiv 2026.11](https://arxiv.org/abs/2611.05585) / RA-L 2025, Contact-Implicit Whole-Body Trajectory Optimization for Dynamic Humanoid Locomotion on Parameterizable Uneven Terrain
 - [arXiv 2026.11](https://arxiv.org/abs/2611.04204), Online iLQR-MPC with Whole-Body Control for Robust Humanoid Locomotion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.37974), FORGE: Feasible Online Reduced-Order Reference Generation and Whole-Body Execution for Agile Humanoid Locomotion
 - [arXiv 2026.10](https://arxiv.org/abs/2610.36825), HC2Robot: Hyper-Connection Transformers with Predicted Foresight for Multi-Terrain Humanoid Parkour
@@ -886,7 +887,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - 🌟 [arXiv 2026.07](https://arxiv.org/abs/2607.20061), ReferTrack: Referring Then Tracking for Embodied Visual Tracking, [code](https://github.com/MedlarTea/referTrack)
 - [arXiv 2026.07](https://arxiv.org/abs/2607.18200), Learning Adaptive Safety Margins for Visual Navigation
 - [arXiv 2026.07](https://arxiv.org/abs/2607.15701), RAVEN: Reinforcement-Adaptive Visibility-Graph Planning for Robust Humanoid Navigation with Collision-Free MPC
-- [arXiv 2026.07](https://arxiv.org/abs/2607.11638), DA-Nav: Direction-Aware City-Scale Vision-Language Navigation
+- [arXiv 2026.07](https://arxiv.org/abs/2607.11638) / RA-L 2026, DA-Nav: Direction-Aware City-Scale Vision-Language Navigation
 - [arXiv 2026.06](https://arxiv.org/abs/2606.23249), LP-NavOA: Integrated Local Navigation and Obstacle Avoidance for Humanoid Robots under Limited Perception
 - [arXiv 2026.06](https://arxiv.org/abs/2606.22971), Humanoid-OmniOcc: Stereo-Based Full-View Occupancy Dataset for Embodied AI, [website](https://d-robotics-ai-lab.github.io/humanoid-omniocc)
 - [arXiv 2026.04](https://arxiv.org/abs/2604.00416) / RA-L 2026, Learning Humanoid Navigation from Human Data, [website](https://egonav.weizhuowang.com)
