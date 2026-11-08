@@ -521,6 +521,13 @@
       "items": []
     },
     {
+      "kind": "discovery-channel-failure",
+      "detected_on": "2026-11-08",
+      "arxiv_id": null,
+      "reason": "OpenAlex HTTP 401 again for 2026-10 and 2026-11; coverage incomplete, months left unmarked. Not hand-searched this run. Only 1 candidate (2611.05585) was verified; rest of queue not read.",
+      "items": []
+    },
+    {
       "kind": "possible-title-mismatch",
       "reason": "During the 2026-08-14 enrichment pass the abstract fetched from the arXiv page did not read like the title recorded in the README. This may be a wrong arXiv id in the README entry, a renamed paper, or an artefact of how the abstract page was fetched (the fetcher returns abstract text only, not the title header), so it must be confirmed by opening the arXiv page by hand before anything is changed.",
       "detected_on": "2026-08-14",
@@ -5327,6 +5334,113 @@
       "detected_on": "2026-11-05",
       "reason": "2026-11-05 AM run: OpenAlex returned HTTP 401 for 2026-10 and 2026-11; coverage incomplete, months left unmarked for a later sweep. Only the top arXiv-sourced candidates were read; the OpenAlex/Crossref-sourced backlog (many non-arXiv, low-quality or non-paper items) was not read.",
       "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Judged outside this list from the arXiv abstract in the candidate queue (2611.07560 and 2608.01697 also from the abs page) during the 2026-11-08 PM pass.",
+      "detected_on": "2026-11-08",
+      "items": [
+        {
+          "arxiv_id": "2611.07560",
+          "title": "Whole-Body Elasto-Geometrical Calibration of Wheeled Humanoid Robots Using a Shared-Waist Dual-Chain Model",
+          "note": "kinematic/elastic calibration of wheeled humanoid arms (read abs page); no learning, fits none of the twelve sections. Real-robot yes but not a learning paper"
+        },
+        {
+          "arxiv_id": "2611.05954",
+          "title": "Robots in the City: Persona-Based Perceptions of Urban Robots",
+          "note": "persona-based perceptions of urban robots; HRI/social study"
+        },
+        {
+          "arxiv_id": "2611.06214",
+          "title": "Riemannian Optimization-based Whole-body Obstacle Avoidance for Mobile Continuum Robots in Cluttered Environme",
+          "note": "whole-body obstacle avoidance for mobile continuum robots; not humanoid"
+        },
+        {
+          "arxiv_id": "2610.41330",
+          "title": "Cross-Embodiment Motion Planning by Coupling Body-Agnostic World Model with Differentiable Ego-Dynamics",
+          "note": "cross-embodiment motion planning with a body-agnostic world model; not humanoid-specific"
+        },
+        {
+          "arxiv_id": "2611.06734",
+          "title": "Smartphone-Aided VR Exergames for HIIT: Gamifying Fitness with Real-Time Pose Estimation",
+          "note": "smartphone VR exergames; human pose estimation, no robot"
+        },
+        {
+          "arxiv_id": "2611.08342",
+          "title": "4D Point Splatting for mmWave Radar Micro-Doppler Differentiable Rendering",
+          "note": "mmWave radar rendering; no robot"
+        },
+        {
+          "arxiv_id": "2608.01697",
+          "title": "Bridging the Sim-to-Real Gap in Parallel-Link Leg Mechanisms via Simulator-Side Dynamics Normalization",
+          "note": "sim-to-real for parallel-link leg mechanism, 2-DoF validation (read abs page); not stated humanoid"
+        },
+        {
+          "arxiv_id": "2610.27066",
+          "title": "BUMP: Body-driven Unified Multi-object Physics for HOI Synthesis",
+          "note": "human-object interaction synthesis; pure human-motion, no robot"
+        },
+        {
+          "arxiv_id": "2610.38657",
+          "title": "Explore Where It Matters: Targeted Exploration for Efficient Rover Adaptation",
+          "note": "rover adaptation; not humanoid"
+        },
+        {
+          "arxiv_id": "2601.03959",
+          "title": "FUSION: Full-body Unified Motion Prior for Body and Hands via Diffusion",
+          "note": "human full-body/hands motion prior; pure human-motion"
+        },
+        {
+          "arxiv_id": "2606.08133",
+          "title": "Gravity-guided Contact Dynamics Estimation from 3D Human Motions",
+          "note": "contact dynamics estimation from human 3D motion; pure human-motion"
+        },
+        {
+          "arxiv_id": "2606.08610",
+          "title": "HARBOR: A Harness Framework for Agentic Robot Reinforcement Learning",
+          "note": "agentic robot RL harness; not humanoid-specific"
+        },
+        {
+          "arxiv_id": "2611.06900",
+          "title": "Human Mobility Sensing Using Wall-Reflected Beamformed Millimeter-Wave Communication Signals",
+          "note": "mmWave human mobility sensing; no robot"
+        },
+        {
+          "arxiv_id": "2606.25083",
+          "title": "Invariant Kalman filtering for extended pose estimation in multi-IMU articulated rigid-body systems",
+          "note": "multi-IMU articulated rigid-body pose estimation; no robot"
+        },
+        {
+          "arxiv_id": "2609.19840",
+          "title": "KoUniTalk: A Lightweight Articulation-Centered Korean-English 3D Talking Face Benchmark",
+          "note": "Korean-English talking-face benchmark; no robot"
+        },
+        {
+          "arxiv_id": "2609.30344",
+          "title": "Learning coarse-step dynamics and internal mechanical response with graph networks",
+          "note": "graph-network dynamics learning; not humanoid"
+        },
+        {
+          "arxiv_id": "2609.37476",
+          "title": "Learning Social Navigation from Internet Videos in the Policy State Space",
+          "note": "social navigation from internet videos; not humanoid-specific"
+        },
+        {
+          "arxiv_id": "2609.37167",
+          "title": "Length-varying Neural Motion Stitching via Cluster Transition Graph",
+          "note": "neural motion stitching; pure character/human motion"
+        },
+        {
+          "arxiv_id": "2609.38466",
+          "title": "PAMI: Part Anchored Motion for Text to Human-Object Interaction Generation",
+          "note": "text-to-HOI motion generation; pure human-motion"
+        },
+        {
+          "arxiv_id": "2610.37619",
+          "title": "Perceiving and Predicting Dynamic Sports: Spatiotemporal Intelligence in Vision Models for Egocentric Tennis V",
+          "note": "sports vision models; no robot"
+        }
+      ]
     },
     {
       "kind": "cross-section-listing",

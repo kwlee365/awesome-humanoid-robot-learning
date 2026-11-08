@@ -952,7 +952,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.02](https://arxiv.org/abs/2602.08594), MOSAIC: Bridging the Sim-to-Real Gap in Generalist Humanoid Motion Tracking and Teleoperation with Rapid Residual Adaptation
 - [arXiv 2026.02](https://arxiv.org/abs/2602.01515), RAPT: Model-Predictive Out-of-Distribution Detection and Failure Diagnosis for Sim-to-Real Humanoid Robots
 - [arXiv 2026.02](https://arxiv.org/abs/2602.00401), ZEST: Zero-shot Embodied Skill Transfer for Athletic Robot Control
-- 🌟 [arXiv 2026.01](https://arxiv.org/abs/2601.21363), Towards Bridging the Gap between Large-Scale Pretraining and Efficient Finetuning for Humanoid Control, [website](https://lift-humanoid.github.io/) / [code](https://github.com/bigai-ai/LIFT-humanoid)
+- 🌟 [arXiv 2026.01](https://arxiv.org/abs/2601.21363) / ICLR 2026, Towards Bridging the Gap between Large-Scale Pretraining and Efficient Finetuning for Humanoid Control, [website](https://lift-humanoid.github.io/) / [code](https://github.com/bigai-ai/LIFT-humanoid)
 - [arXiv 2025.10](https://arxiv.org/abs/2510.01708), PolySim: Bridging the Sim-to-Real Gap for Humanoid Control via Multi-Simulator Dynamics Randomization
 - [arXiv 2025.09](https://arxiv.org/abs/2509.12858), Contrastive Representation Learning for Robust Sim-to-Real Transfer of Adaptive Humanoid Locomotion
 - [arXiv 2025.09](https://arxiv.org/abs/2509.06342) / IJRR 2026, Towards bridging the gap: Systematic sim-to-real transfer for diverse legged robots
@@ -1091,7 +1091,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.04](https://arxiv.org/abs/2604.24833) / ACM TOG 2026, MotionBricks: Scalable Real-Time Motions with Modular Latent Generative Model and Smart Primitives, [website](https://nvlabs.github.io/motionbricks/)
 - [arXiv 2026.02](https://arxiv.org/abs/2602.21599), Iterative Closed-Loop Motion Synthesis for Scaling the Capabilities of Humanoid Control
 - [arXiv 2026.02](https://arxiv.org/abs/2602.06035), InterPrior: Scaling Generative Control for Physics-Based Human-Object Interactions
-- [arXiv 2025.12](https://arxiv.org/abs/2512.14696), CRISP: Contact-Guided Real2Sim from Monocular Video with Planar Scene Primitives
+- [arXiv 2025.12](https://arxiv.org/abs/2512.14696) / ICLR 2026, CRISP: Contact-Guided Real2Sim from Monocular Video with Planar Scene Primitives
 - [arXiv 2025.12](https://arxiv.org/abs/2512.08500), Learning to Control Physically-simulated 3D Characters via Generating and Mimicking 2D Motions
 - 🌟 [arXiv 2025.12](https://arxiv.org/abs/2512.03028) / SIGGRAPH 2026, SMP: Reusable Score-Matching Motion Priors for Physics-Based Character Control, [website](https://xbpeng.github.io/projects/SMP/index.html) / [code](https://github.com/xbpeng/MimicKit)
 - [arXiv 2025.10](https://arxiv.org/abs/2510.02566), PhysHMR: Learning Humanoid Control Policies from Vision for Physically Plausible Human Motion Reconstruction
