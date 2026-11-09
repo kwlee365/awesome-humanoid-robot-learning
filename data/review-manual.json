@@ -5464,6 +5464,35 @@
      "note": "sports vision models; no robot"
     }
    ]
+  },
+  {
+   "kind": "out-of-scope",
+   "reason": "Judged outside this list from the arXiv abs page during the 2026-11-09 PM pass.",
+   "detected_on": "2026-11-09",
+   "items": [
+    {
+     "arxiv_id": "2611.09864",
+     "title": "Grasp-TAGS: Task-Aware Grasp Selection via Critic Distillation for Prehensile Loco-Manipulation",
+     "note": "mobile manipulator large-object rearrangement; not humanoid"
+    },
+    {
+     "arxiv_id": "2611.08872",
+     "title": "Lodos: A Lightweight Simulator Designed for Contact-Rich Interactions with Detailed Meshes",
+     "note": "general mesh-contact simulator; no humanoid focus"
+    },
+    {
+     "arxiv_id": "2611.09670",
+     "title": "Goodhart in the Planner: Sampling-Based Control Exploits Rewards Learned from Human Preferences",
+     "note": "MPPI vs learned preference rewards on HalfCheetah/Hopper/Meta-World; not humanoid"
+    }
+   ]
+  },
+  {
+   "kind": "discovery-channel-failure",
+   "detected_on": "2026-11-09",
+   "arxiv_id": null,
+   "reason": "OpenAlex HTTP 401 again for 2026-10 and 2026-11; coverage incomplete, months left unmarked, not hand-searched this run. Only 7 arXiv candidates read (4 added, 3 rejected), below the 15-per-run target; rest of queue (~740 backlog) not read.",
+   "items": []
   }
  ]
 }
