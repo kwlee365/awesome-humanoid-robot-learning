@@ -26,6 +26,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.11554), Kimodo-Policy: Learning Kinematic Action Models for Humanoid Loco-Manipulation, [website](https://kimodo-policy.github.io/)
+- [arXiv 2026.11](https://arxiv.org/abs/2611.11127), From Festival Video to the Stage: A Sim-to-Real Ladder for Long-Horizon Expressive Whole-Body Dance on a Commercial Humanoid
 - 🌟 [arXiv 2026.11](https://arxiv.org/abs/2611.09605), DKWBC: Decoupling Motion Tracking and Balancing for Humanoid Whole-Body Control, [website](https://robbyant-research.github.io/DKWBC/) / [code](https://github.com/robbyant-research/DKWBC)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.09266), SUGARv2: Learning Diverse Visual Humanoid Loco-Manipulation Skills from Synthesized Interaction References, [website](https://tianshuwu.github.io/sugarv2-humanoid/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.08664), ForPC: Force-Aware Whole-Body Control for Precise Humanoid Cart Pushing, [website](https://roboforpc.github.io/)
@@ -457,6 +459,9 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.08](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/), VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters, [website](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/)
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
+- [arXiv 2026.11](https://arxiv.org/abs/2611.12409), Bridging Task Planning and Execution for Language-Conditioned Bimanual Manipulation, [website](https://advrhumanoids.github.io/bridging-planning-execution/)
+- [arXiv 2026.11](https://arxiv.org/abs/2611.11854), Decoupled Asynchronous System for Humanoids (DASH): Latency-Agnostic Scaling of Vision-Language-Action Models for Humanoid Manipulation
+- [arXiv 2026.11](https://arxiv.org/abs/2611.10872), DreamVLA: From Generated Human Motions to Humanoid Vision-Language-Action Policies, [website](https://ember-center-berkeley.github.io/DreamVLA)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.07712), AffectiveVLA: Safe and Intent-Aware VLA Control for Human-Humanoid Social Interaction
 - [arXiv 2026.11](https://arxiv.org/abs/2611.03648), Pixel: A Co-Designed Full-Stack Robot System for Learning General-Purpose Mobile Manipulation, [website](https://pixel-robot.com/pixel)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.01659), HuG: Learning Humanoid Whole-Body Affordance-Aware Grasping with Active Perception, [website](https://xuanbinpeng.com/hug)
@@ -624,6 +629,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.11](https://arxiv.org/abs/2611.10169), Capturability-Aware Footstep Planning in Cluttered Environments: A Recursively Feasible Sequential MPC on Axis-Aligned Safe Corridors
 - [arXiv 2026.11](https://arxiv.org/abs/2611.08857), STRIDE: Learning Humanoid Locomotion in Minutes with Acceleration-Based Rewards
 - [arXiv 2026.11](https://arxiv.org/abs/2611.08097), STEP: Spatiotemporal Training with Explicit Prediction for Perceptive Humanoid Locomotion
 - [arXiv 2026.11](https://arxiv.org/abs/2611.08056), Terrain-Indexed Motion Priors and Geometric Support for Extreme Humanoid Parkour
@@ -877,6 +883,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2022.12](https://arxiv.org/abs/2212.00541), Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo
 
 ## Navigation
+- [arXiv 2026.11](https://arxiv.org/abs/2611.12136), LHNav: Long-Horizon Humanoid Navigation via Multirate Coordination and Physics-Grounded Action Data, [website](https://robbyant-research.github.io/LHNav/)
+- [arXiv 2026.11](https://arxiv.org/abs/2611.11665), HINT-VLM: Humanoid Interactive Navigation over Rough Terrain with Embodiment-Grounded Vision-Language Model
 - [arXiv 2026.11](https://arxiv.org/abs/2611.04972), Caging Vision-Language Navigation for Legged Robots via Barrier-Certified Safety Architecture
 - [arXiv 2026.10](https://arxiv.org/abs/2610.27688), Adaptive Traversal Tubes for Posture-Aware Navigation of Bipedal Humanoids
 - [arXiv 2026.10](https://arxiv.org/abs/2610.17232), LiDAR-based Humanoid Navigation in Dynamic, Non-Convex Environments via Spatio-Temporal Safe Corridors
@@ -917,6 +925,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - arXiv 2025.07, LOVON: Legged Open-Vocabulary Object Navigator, [website](https://daojiepeng.github.io/LOVON/)
 
 ## State Estimation
+- [arXiv 2026.11](https://arxiv.org/abs/2611.10137), A Unified Inertial Encoder for Human and Humanoid Motion
 - 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.25288), Vision as Proprioception: Estimating Humanoid Robot Pose from Video, [code](https://github.com/eth-siplab/HumanoidPose)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.25561), Formal verification of tilt estimation using the Rocq prover
 - [arXiv 2026.09](https://arxiv.org/abs/2609.23610), PRIMO: Prior-Informed Odometry from Human-Motion Tracking for Humanoid Robots
