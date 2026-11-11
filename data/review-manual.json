@@ -5574,6 +5574,80 @@
       "arxiv_id": "2611.11665",
       "reason": "HINT-VLM added from the abs page; whether real-robot experiments were run is not stated in the abstract, so real_robot left null.",
       "items": []
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Judged outside this list from the arXiv abstract in the candidate queue during the 2026-11-11 AM pass.",
+      "detected_on": "2026-11-11",
+      "items": [
+        {
+          "arxiv_id": "2611.14247",
+          "title": "Personalized Affective Perception via Continual Learning in Human-Agent Negotiation",
+          "note": "human-agent negotiation affect model; no robot"
+        },
+        {
+          "arxiv_id": "2611.14186",
+          "title": "Koopman Model-Based Reinforcement Learning",
+          "note": "generic Koopman MBRL; not humanoid"
+        },
+        {
+          "arxiv_id": "2611.13766",
+          "title": "FAME-QP: A GPU-Accelerated Quadratic-Programming Solver for Real-Time Model Predictive Control",
+          "note": "GPU QP solver for linear MPC; not humanoid-specific nor sampling-based"
+        },
+        {
+          "arxiv_id": "2611.11579",
+          "title": "Descriptor: UWB Anchor Self-Calibration Dataset (UWB-ASC)",
+          "note": "UWB anchor calibration dataset"
+        },
+        {
+          "arxiv_id": "2611.08797",
+          "title": "MotionBench-XAI: Benchmarking What Shapes Shapley Explanations in Spatiotemporal Machine Learning",
+          "note": "Shapley explanations for human motion ML; no robot"
+        },
+        {
+          "arxiv_id": "2611.08795",
+          "title": "MotionDecipher: LLM-Assisted Clinical Interpretation of Human Motion Signals for Efficient Gait Analysis",
+          "note": "LLM clinical gait interpretation; no robot"
+        },
+        {
+          "arxiv_id": "2609.35764",
+          "title": "Reliability-Gated Fusion of Consumer Head and Foot IMUs for Lower-Body 3D Pose",
+          "note": "IMU human pose estimation; no robot"
+        },
+        {
+          "arxiv_id": "2610.24129",
+          "title": "Rollbot 2: Agile Locomotion by a Single-Actuator Spherical Robot",
+          "note": "single-actuator spherical robot"
+        },
+        {
+          "arxiv_id": "2609.38225",
+          "title": "SynIL: Leveraging Synergy for Offline Imitation Learning from Imperfect Demonstration Datasets",
+          "note": "generic offline imitation learning; not humanoid"
+        },
+        {
+          "arxiv_id": "2609.38653",
+          "title": "TERRA: Terrain-Aware Reconstruction, Retargeting and Control for Musculoskeletal Locomotion",
+          "note": "musculoskeletal human locomotion, pure human-motion"
+        },
+        {
+          "arxiv_id": "2610.30519",
+          "title": "Unified Trajectory and 3D Pose Forecasting for Multi-Agent Sports Analysis",
+          "note": "sports pose forecasting; human motion only"
+        },
+        {
+          "arxiv_id": "2609.18667",
+          "title": "Video-Based Markerless Motion Capture for Clinical and Rehabilitation Biomechanics: A PRISMA-ScR Scoping Review of Validated Architectures, Clinical Readiness, and Emerging Methods",
+          "note": "clinical markerless mocap review; human motion only"
+        }
+      ]
+    },
+    {
+      "kind": "discovery-channel-failure",
+      "detected_on": "2026-11-11",
+      "arxiv_id": null,
+      "reason": "OpenAlex HTTP 401 for 2026-10 and 2026-11; coverage incomplete, months left unmarked, not hand-searched this run. 3 added + 12 rejected = 15 candidates cleared; ~735 backlog remains, mostly venue-only OpenAlex/Crossref items not yet read.",
+      "items": []
     }
   ]
 }
