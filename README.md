@@ -295,7 +295,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.02](https://arxiv.org/abs/2602.23843), OmniXtreme: Breaking the Generality Barrier in High-Dynamic Humanoid Control
 - [arXiv 2026.02](https://arxiv.org/abs/2602.21723), LessMimic: Long-Horizon Humanoid Interaction with Unified Distance Field Representations, [website](https://yzhu.io/preprint/humanoid2026lessmimic/)
 - [arXiv 2026.02](https://arxiv.org/abs/2602.16705), Learning Humanoid End-Effector Control for Open-Vocabulary Visual Loco-Manipulation
-- [arXiv 2026.02](https://arxiv.org/abs/2602.16511), VIGOR: Visual Goal-In-Context Inference for Unified Humanoid Fall Safety
+- [arXiv 2026.02](https://arxiv.org/abs/2602.16511) / RA-L 2026, VIGOR: Visual Goal-In-Context Inference for Unified Humanoid Fall Safety
 - [arXiv 2026.02](https://arxiv.org/abs/2602.15827), Perceptive Humanoid Parkour: Chaining Dynamic Human Skills via Motion Matching, [website](https://php-parkour.github.io/)
 - [arXiv 2026.02](https://arxiv.org/abs/2602.15733), MeshMimic: Geometry-Aware Humanoid Motion Learning through 3D Scene Reconstruction
 - [arXiv 2026.02](https://arxiv.org/abs/2602.13850), Humanoid Hanoi: Investigating Shared Whole-Body Control for Skill-Based Box Rearrangement
@@ -860,7 +860,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.04](https://arxiv.org/abs/2604.11447) / arXiv 2026.04, Safe Human-to-Humanoid Motion Imitation Using Control Barrier Functions
 - 🌟 [arXiv 2026.03](https://arxiv.org/abs/2603.23995) / arXiv 2026.03, MIRROR: Visual Motion Imitation via Real-time Retargeting and TeleOperation with Parallel Differential Inverse Kinematics, [website](https://caltech-amber.github.io/mirror/) / [code](https://github.com/junhengl/mirror)
 - [arXiv 2026.03](https://arxiv.org/abs/2603.08619), Embedding Classical Balance Control Principles in Reinforcement Learning for Humanoid Recovery
-- [arXiv 2026.02](https://arxiv.org/abs/2602.16511), VIGOR: Visual Goal-In-Context Inference for Unified Humanoid Fall Safety
+- [arXiv 2026.02](https://arxiv.org/abs/2602.16511) / RA-L 2026, VIGOR: Visual Goal-In-Context Inference for Unified Humanoid Fall Safety
 - [arXiv 2025.11](https://arxiv.org/abs/2511.18509), SafeFall: Learning Protective Control for Humanoid Robots
 - [arXiv 2025.11](https://arxiv.org/abs/2511.07407) / ICRA 2026, Unified Humanoid Fall-Safety Policy from a Few Demonstrations
 - [arXiv 2025.10](https://arxiv.org/abs/2510.14959) / ICRA 2026, CBF-RL: Safety Filtering Reinforcement Learning in Training with Control Barrier Functions
