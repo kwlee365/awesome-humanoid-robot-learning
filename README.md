@@ -241,7 +241,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.06](https://arxiv.org/abs/2606.26741), PressMimic: Pressure-Guided Motion Capture and Control for Humanoid Robot Imitation, [website](https://yeelou.github.io/PressMimic/)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.26215), TaskNPoint: How to Teach Your Humanoid to Hit a Backhand in Minutes
 - [arXiv 2026.06](https://arxiv.org/abs/2606.26201), OmniContact: Chaining Meta-Skills via Contact Flow for Generalizable Humanoid Loco-Manipulation
-- [arXiv 2026.06](https://arxiv.org/abs/2606.25706), Learning Asynchronous Upper-body Task-space Trajectory Tracking Policy for Humanoid Robots
+- [arXiv 2026.06](https://arxiv.org/abs/2606.25706) / RA-L 2026, Learning Asynchronous Upper-body Task-space Trajectory Tracking Policy for Humanoid Robots
 - [arXiv 2026.06](https://arxiv.org/abs/2606.25591), WOLF-VLA: Whole-Body Humanoid Optimal Locomotion Framework for Vision-Language-Action Learning
 - [arXiv 2026.06](https://arxiv.org/abs/2606.23680), CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation, [website](https://skevinci.github.io/coordex/)
 - [arXiv 2026.06](https://arxiv.org/abs/2606.22998), TEXEDO : Test Time Scaling for Controller-aware Language-conditioned Humanoid Motion Generation

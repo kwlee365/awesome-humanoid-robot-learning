@@ -11301,11 +11301,11 @@
       "id": "2606.25706",
       "slug": "learning-asynchronous-upper-body-task-space-trajectory-tracking-policy-for-human",
       "title": "Learning Asynchronous Upper-body Task-space Trajectory Tracking Policy for Humanoid Robots",
-      "alt_venue": null,
+      "alt_venue": "RA-L 2026",
       "raw": {
         "star": "",
         "head": "[arXiv 2026.06](https://arxiv.org/abs/2606.25706)",
-        "sep": ", ",
+        "sep": " / RA-L 2026, ",
         "title": "Learning Asynchronous Upper-body Task-space Trajectory Tracking Policy for Humanoid Robots",
         "links": ""
       },
@@ -11333,7 +11333,7 @@
       "verified_on": "2026-09-03",
       "related": [],
       "readme_order": 215,
-      "readme_line": "- [arXiv 2026.06](https://arxiv.org/abs/2606.25706), Learning Asynchronous Upper-body Task-space Trajectory Tracking Policy for Humanoid Robots",
+      "readme_line": "- [arXiv 2026.06](https://arxiv.org/abs/2606.25706) / RA-L 2026, Learning Asynchronous Upper-body Task-space Trajectory Tracking Policy for Humanoid Robots",
       "extra_links": [],
       "venue": "arXiv",
       "venue_raw": "arXiv 2026.06",

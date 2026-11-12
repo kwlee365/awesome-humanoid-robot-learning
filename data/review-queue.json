@@ -556,6 +556,13 @@
       "items": []
     },
     {
+      "kind": "discovery-channel-failure",
+      "detected_on": "2026-11-12",
+      "arxiv_id": null,
+      "reason": "OpenAlex HTTP 401 for 2026-10 and 2026-11; coverage incomplete, months left unmarked, not hand-searched this run. 25 arXiv-id candidates read and rejected, 0 added; ~733 backlog remains, mostly venue-only OpenAlex/Crossref items without a primary source read.",
+      "items": []
+    },
+    {
       "kind": "possible-title-mismatch",
       "reason": "During the 2026-08-14 enrichment pass the abstract fetched from the arXiv page did not read like the title recorded in the README. This may be a wrong arXiv id in the README entry, a renamed paper, or an artefact of how the abstract page was fetched (the fetcher returns abstract text only, not the title header), so it must be confirmed by opening the arXiv page by hand before anything is changed.",
       "detected_on": "2026-08-14",
@@ -5623,6 +5630,138 @@
           "arxiv_id": "2609.18667",
           "title": "Video-Based Markerless Motion Capture for Clinical and Rehabilitation Biomechanics: A PRISMA-ScR Scoping Review of Validated Architectures, Clinical Readiness, and Emerging Methods",
           "note": "clinical markerless mocap review; human motion only"
+        }
+      ]
+    },
+    {
+      "kind": "out-of-scope",
+      "reason": "Judged outside this list from the arXiv abstract (API read, 5 via API fetch, rest from verbatim queue abstract) during the 2026-11-12 pass.",
+      "detected_on": "2026-11-12",
+      "items": [
+        {
+          "arxiv_id": "2603.25646",
+          "title": "A Mentalistic Interface for Probing Folk-Psychological Attribution to Non-Humanoid Robots",
+          "note": "non-humanoid robot attribution study"
+        },
+        {
+          "arxiv_id": "2607.11041",
+          "title": "PAKE: Learning Whole-Body Loco-Manipulation With Partial Kinematic Embeddings",
+          "note": "quadruped with arm, not humanoid (RA-L 2026)"
+        },
+        {
+          "arxiv_id": "2606.22726",
+          "title": "Text Dictates, Music Decorates: Energy-based Attention for Editable Dance Motion Generation",
+          "note": "text/music dance motion generation, no robot"
+        },
+        {
+          "arxiv_id": "2606.11525",
+          "title": "Learning Object Manipulation from Scratch via Contrastive Interaction",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2609.18174",
+          "title": "TacBPM: A Tactile-conditioned Behavior Prior Model for Dexterous Reorientation",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2606.20712",
+          "title": "Real-World Deployment of Massively Parallel Sampling-Based MPC for Contact-Rich Manipulation",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2607.09519",
+          "title": "DemoBridge: A Simulation-in-the-Loop Toolkit for Single-View Human Demonstration Retargeting",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2610.28880",
+          "title": "Real2Sem2Real: 3D Semantic Augmentations for Robot Learning from a Single Human RGB Demonstration",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2608.04842",
+          "title": "RORA: Realistic Object Reconstruction with Articulation",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2607.21960",
+          "title": "Adaptive undulatory locomotion of snake-like robots in dynamic viscous environments via deep reinforcement lea",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2608.25664",
+          "title": "AffectSim: A Controllable Interactive 3D Simulation Benchmark for Embodied Affective Perception",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2610.20838",
+          "title": "Persistent Profile-Guided Reset-Free Recovery Improves Final Gait Selection after Irreversible Leg Damage",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2606.22806",
+          "title": "Policy-as-Data: Learning Generalizable HOI Diffusion Models from Simulated Physics",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2609.21650",
+          "title": "SynthDemo-RL: Breaking the Zero-Reward Barrier in VLA Adaptation with LLM-Guided Synthetic Demonstrations",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2609.25614",
+          "title": "A Deployable Four-Finger Payload for Teleoperated Free-Flying Manipulation with Astrobee",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2610.12113",
+          "title": "A Geometric Approach to Soft Actor-Critic with Zonotopes for Locomotion Learning",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2610.10479",
+          "title": "Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2611.07261",
+          "title": "An Empirical Study of Reinforcement Learning for Keypoint Positioning of Deformable Linear Objects",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2609.38733",
+          "title": "Code to Control: Synthesizing Parameterized Reactive Controllers",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2606.22116",
+          "title": "DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2610.22576",
+          "title": "Embodiment-Classifier Guidance: Transferring Frozen VLAs Across Robot Dynamics without Demonstrations",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2606.25504",
+          "title": "GROVE: Grounded Pedestrian Simulation via Natural Language for Interactive Social Robot Navigation",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2609.13234",
+          "title": "Harnessing human expertise for high-precision robotic assembly in industrialized construction: A sample-effici",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2611.07515",
+          "title": "LMGN: A Unified Policy Learning Model for Last-Mile Grasp-Navigation",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
+        },
+        {
+          "arxiv_id": "2606.31993",
+          "title": "OopsieVerse: A Safety Benchmark with Damage-Aware Simulation for Robot Manipulation",
+          "note": "abstract has no humanoid robot focus (generic/other-morphology manipulation, locomotion or simulation)"
         }
       ]
     },

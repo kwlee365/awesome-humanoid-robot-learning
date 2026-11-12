@@ -13,11 +13,11 @@
   "counts": {
     "raw": 3895,
     "relevant": 644,
-    "merged": 1173,
+    "merged": 1169,
     "new": 733,
     "similar_to_listed": 2,
-    "already_listed": 438,
-    "carried_over": 749
+    "already_listed": 434,
+    "carried_over": 735
   },
   "per_channel_raw": {
     "arxiv": 3174,
@@ -756,8 +756,8 @@
         "Alvaro Pumasupa-Osco",
         "Miguel Lara-Quispe"
       ],
-      "abstract": null,
-      "abstract_source": null,
+      "abstract": "The production of yellow-pitahaya snacks requires raw materials with consistent external color and size characteristics. This paper presents a computer-vision and conveyor-feedback pipeline for yellow pitahaya intended for later integration with a Unitree G1 humanoid robot. A set of 2,458 still images from 18 fruits was curated by fruit identity and annotated with Segment Anything Model 3-assisted masks. The masks were converted to one-class detection boxes for a YOLO11n baseline. On the held-out test split, the detector recorded 351 true detections, two false positives, and no false negatives. Manual metadata recorded color notes, dimensions, and Brix measurements for project validation. A detector-assisted hue-saturation-value color-state module classified the still-image set into yellow, semi-green, and green outputs. Under real conveyor conditions, 154 Unitree-camera images produced 300 fruit detections and 21 no-detection cases; manual review confirmed all detections and no-detection cases, and 287 color outputs matched manual labels. The Unitree G1 sent conveyor commands to an ESP32 through a wireless UDP link, and the conveyor responded correctly to fruit count and zone changes. The current scope is limited to vision and conveyor feedback; RGB-D localization, arm handling, and end-to-end physical sorting remain future work.",
+      "abstract_source": "https://doi.org/10.1109/intercon71992.2026.11768157",
       "arxiv_id": null,
       "doi": "10.1109/intercon71992.2026.11768157",
       "paper_url": "https://ieeexplore.ieee.org/document/11768157/",
@@ -792,7 +792,8 @@
         "s2"
       ],
       "urls": [
-        "https://ieeexplore.ieee.org/document/11768157/"
+        "https://ieeexplore.ieee.org/document/11768157/",
+        "https://doi.org/10.1109/intercon71992.2026.11768157"
       ],
       "carried_over_since": "2026-11-09",
       "dedupe": "new",
@@ -4220,9 +4221,9 @@
         "Lorenzo Pollini",
         "Mario G. C. A. Cimino"
       ],
-      "abstract": null,
-      "abstract_source": null,
-      "arxiv_id": null,
+      "abstract": "This paper presents an experimental platform for studying intentional-state attribution toward a non-humanoid robot. The system combines a simulated robot, realistic task environments, and large language model-based explanatory layers that can express the same behavior in mentalistic, teleological, or mechanistic terms. By holding behavior constant while varying the explanatory frame, the platform provides a controlled way to investigate how language and framing shape the adoption of the intentional stance in robotics.",
+      "abstract_source": "https://arxiv.org/abs/2603.25646",
+      "arxiv_id": "2603.25646",
       "doi": "10.1109/eais69050.2026.11759729",
       "paper_url": "https://ieeexplore.ieee.org/document/11759729/",
       "venue": "2026 IEEE International Conference on Evolving and Adaptive Intelligent Systems (EAIS)",
@@ -4250,10 +4251,12 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
-        "https://ieeexplore.ieee.org/document/11759729/"
+        "https://ieeexplore.ieee.org/document/11759729/",
+        "https://arxiv.org/abs/2603.25646"
       ],
       "carried_over_since": "2026-11-11",
       "dedupe": "new",
@@ -6932,6 +6935,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11789711/"
       ],
+      "carried_over_since": "2026-11-12",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-12"
@@ -9422,8 +9426,8 @@
         "Ayrton Nieves",
         "José Becerra"
       ],
-      "abstract": null,
-      "abstract_source": null,
+      "abstract": "Persistent semantic missions in known yet changing indoor environments require a robot to remember objects and rooms across sessions, relocalize against a stored map, verify whether its memories remain valid, and stop when critical information is missing or ambiguous. We present Yanapaq, an agentic system for a Unitree G1 humanoid that integrates 3D mapping, persistent semantic memory, cross-session relocalization, open-vocabulary YOLOE detection, selective visual verification with a VLM, and Model Context Protocol (MCP) tools that turn natural-language instructions into high-level actions. The MCP agent calls memory, perception, and navigation tools, while low-level motion stays in the navigation and locomotion stack; a conservative fail-quiet policy keeps the robot stationary under missing or ambiguous evidence. We evaluate Yanapaq with YanaBench-MemoryNav, a 468-episode multi-session protocol across three indoor environments covering known places, moved or absent objects, room goals, dynamic routes, and restarts, including operational absence verification with explicit visual coverage. Yanapaq reached 89.7% mission success in the primary environment and 87.6% in aggregate (84.8% verified), with 96.6% relocalization success and a mean completion time of 73.4 s. Ablations show that persistent, updatable memory reduces time and improves verification relative to no memory, static memory, or unstructured VLM use. The results support updatable semantic memory for humanoid indoor navigation, although generalization to buildings held out from development, other robotic platforms and sensors, and manipulation tasks remains future work.",
+      "abstract_source": "https://doi.org/10.1109/intercon71992.2026.11768144",
       "arxiv_id": null,
       "doi": "10.1109/intercon71992.2026.11768144",
       "paper_url": "https://ieeexplore.ieee.org/document/11768144/",
@@ -9456,7 +9460,8 @@
         "s2"
       ],
       "urls": [
-        "https://ieeexplore.ieee.org/document/11768144/"
+        "https://ieeexplore.ieee.org/document/11768144/",
+        "https://doi.org/10.1109/intercon71992.2026.11768144"
       ],
       "carried_over_since": "2026-11-09",
       "dedupe": "new",
@@ -10415,8 +10420,8 @@
         "Jinoh Lee",
         "Hae-Won Park"
       ],
-      "abstract": null,
-      "abstract_source": null,
+      "abstract": "Footstep planning for humanoid robots requires simultaneously reasoning over discrete stepping sequences and continuous foot placements under strict time budgets. In this paper, we propose a graph-based optimization approach for humanoid footstep planning within the Graphs of Convex Sets (GCS) framework. We first formulate a nonconvex quadratically constrained quadratic program (QCQP) that captures terrain feasibility and kinematic reachability. We then construct a mode-aware graph, where each node represents a kinematically feasible convex region associated with a locomotion mode and each edge encodes a feasible transition. By integrating the QCQP formulation with the graph structure, we cast the planning problem within the GCS framework and apply semidefinite programming to obtain a convex relaxation that does not require an initial discrete path or initial values for the continuous variables. We validate the proposed planner through real-world deployment on the torque-controlled humanoid robot in a rhythm-based stepping scenario, where footsteps must be planned within strict timing constraints. These results show that the method can compute high-quality footstep plans within real-time budgets, enabling reliable execution and validation on humanoid hardware.",
+      "abstract_source": "https://doi.org/10.1109/lra.2026.3746865",
       "arxiv_id": null,
       "doi": "10.1109/lra.2026.3746865",
       "paper_url": "https://ieeexplore.ieee.org/document/11749579/",
@@ -10450,7 +10455,8 @@
         "s2"
       ],
       "urls": [
-        "https://ieeexplore.ieee.org/document/11749579/"
+        "https://ieeexplore.ieee.org/document/11749579/",
+        "https://doi.org/10.1109/lra.2026.3746865"
       ],
       "carried_over_since": "2026-10-24",
       "dedupe": "new",
@@ -16031,8 +16037,8 @@
         "Gabriel Tijerina",
         "Mohamed Gharib"
       ],
-      "abstract": null,
-      "abstract_source": null,
+      "abstract": "Humanoid robotics technology has advanced rapidly in recent years; however, accessible educational systems remain limited due to high costs and a lack of structured learning modules. This paper presents a low-cost, low-code Humanoid Arm Manipulators (HAMs) designed to replicate the appearance and fundamental functionality of human arms for educational purposes. Two HAMs were designed, fabricated, and programmed; one left and one right, each featuring seven degrees of freedom. The systems are constructed from commercially available, lowcost components accessible via standard online retailers, lowering the barrier to entry for educational institutions. The left arm utilizes a commercial robotics control hub, enabling straight-forward demonstration of basic motion functionalities suitable for secondary education. The right arm employs a custom Raspberry Pi-based Robot Controller (PRC) designed for college-level coursework. The PRC leverages Python to provide individual motor control, forward kinematics, and PID control systems exposing students to foundational concepts in embedded systems and control theory. Performance validation was conducted by commanding the PRC to drive the HAM through a series of target poses defined by specific joint angle configurations. A corresponding 3D simulation model was developed using identical joint parameters, enabling a quantitative accuracy comparison between simulated and physical system behavior. The proposed HAM platforms demonstrate promise as a scalable, cost-effective tool for introducing students at multiple educational levels to humanoid robotics, embedded control, and kinematic principles.",
+      "abstract_source": "https://doi.org/10.1109/icelie71255.2026.11763200",
       "arxiv_id": null,
       "doi": "10.1109/icelie71255.2026.11763200",
       "paper_url": "https://ieeexplore.ieee.org/document/11763200/",
@@ -16060,10 +16066,12 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
-        "https://ieeexplore.ieee.org/document/11763200/"
+        "https://ieeexplore.ieee.org/document/11763200/",
+        "https://doi.org/10.1109/icelie71255.2026.11763200"
       ],
       "carried_over_since": "2026-11-11",
       "dedupe": "new",
@@ -17580,9 +17588,9 @@
         "Jemin Hwangbo",
         "Jie Song"
       ],
-      "abstract": null,
-      "abstract_source": null,
-      "arxiv_id": null,
+      "abstract": "Loco-manipulation has recently shown promising capabilities; however, achieving high-precision control, managing the high-dimensional action space induced by many degrees of freedom (DoFs), and fully exploiting the inherent redundancy of whole-body systems remain challenging. In this paper, we propose a novel whole-body control framework that effectively addresses these challenges by decomposing the complex loco-manipulation problem into partial reference motion generation and low-level imitation control. We introduce a new Kinematic Normalizing Flow (KNF) model, trained on a large-scale kinematic dataset, that generates diverse partial kinematic references. A high-level controller is then trained to navigate the KNF's latent space to exploit redundant solutions, while a low-level controller learns dynamically consistent motion execution. We validate our approach on the quadrupedal robot equipped with a six-DoF robotic arm. In simulation, PAKE outperforms the evaluated baselines in tracking accuracy and feasible workspace coverage on the 4,000-target benchmark. For hardware deployment, we evaluate the system over 24 episodes across 8 different mobile loco-manipulation tasks. The system achieves end-effector pose-tracking errors of 4.5 cm and 0.14 rd, while maintaining accurate locomotion tracking with linear and angular velocity errors of 0.1 m/s and 0.01 rd/s, respectively. Our method represents a practical and powerful solution for accurate and generalized whole-body loco-manipulation in high-DoF robotic systems, with promising potential for diverse downstream robotic tasks.",
+      "abstract_source": "https://arxiv.org/abs/2607.11041",
+      "arxiv_id": "2607.11041",
       "doi": "10.1109/lra.2026.3747622",
       "paper_url": "https://ieeexplore.ieee.org/document/11753872/",
       "venue": "IEEE Robotics and Automation Letters",
@@ -17612,10 +17620,12 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
-        "https://ieeexplore.ieee.org/document/11753872/"
+        "https://ieeexplore.ieee.org/document/11753872/",
+        "https://arxiv.org/abs/2607.11041"
       ],
       "carried_over_since": "2026-10-27",
       "dedupe": "new",
@@ -18722,8 +18732,8 @@
         "Jia Pan",
         "Ruigang Yang"
       ],
-      "abstract": null,
-      "abstract_source": null,
+      "abstract": "Continuous, highly dynamic, closed-loop manipulation of deformable objects has received limited attention; prior work has focused mainly on folding and smoothing, while dynamic approaches often use short, open-loop actions such as flinging. We study handkerchief spinning, where a 6-DOF arm keeps cloth aloft, spread, and rotating at high angular velocity over extended periods using visual feedback. We present SpinSoft, a two-phase reinforcement learning framework that decouples the problem into a proprioceptive motion prior and a vision-conditioned residual correction. Phase 1 learns a cyclic base policy from an expert-demonstrated reference trajectory in rigid-body simulation via motion imitation. Phase 2 freezes this cyclic base policy and trains a bounded residual policy in deformable-cloth simulation, using PointNet-encoded point clouds and an asymmetric actor-critic with privileged simulation state. To improve sim-to-real transfer, we model actuator delays, add noise to the observations, and randomize cloth material properties during training. When deployed on a real Piper arm without real-world fine-tuning, SpinSoft increases the fraction of trials sustaining spinning for at least 7 s from 30.3% under Mimic Only to 63.6%, achieves a mean partial spinning duration of 22.7 s, and transfers zero-shot across handkerchiefs of varying material and geometry.",
+      "abstract_source": "https://doi.org/10.1109/lra.2026.3746034",
       "arxiv_id": null,
       "doi": "10.1109/lra.2026.3746034",
       "paper_url": "https://ieeexplore.ieee.org/document/11743902/",
@@ -18755,7 +18765,8 @@
         "s2"
       ],
       "urls": [
-        "https://ieeexplore.ieee.org/document/11743902/"
+        "https://ieeexplore.ieee.org/document/11743902/",
+        "https://doi.org/10.1109/lra.2026.3746034"
       ],
       "carried_over_since": "2026-10-22",
       "dedupe": "new",
@@ -19357,6 +19368,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11792585/"
       ],
+      "carried_over_since": "2026-11-12",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-12"
