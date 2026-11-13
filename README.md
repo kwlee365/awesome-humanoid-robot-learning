@@ -26,6 +26,10 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.17142), FORGE: Force-Aware Multi-Granularity Control for Efficient Humanoid Loco-Manipulation, [website](https://bb0928.github.io/forge/)
+- 🌟 [arXiv 2026.11](https://arxiv.org/abs/2611.16422), BlinkMimic: Training a Humanoid Motion Tracker in Minutes on a Single GPU, [code](https://github.com/fuyichen0725/blinkmimic)
+- [arXiv 2026.11](https://arxiv.org/abs/2611.16188), PERA: Plug-in Experts for Robotic Actions in Continual Whole-Body Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.14985), ILA: A Transferable Interface-Level Adapter for Compliant Humanoid Motion Tracking
 - [arXiv 2026.11](https://arxiv.org/abs/2611.14049), RedirectMimic: Local Motion Content Redaction for Humanoid Whole-Body Control, [website](https://xiaopeng-whu.github.io/RedirectMimic/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.13929), ReACT: Reflection-Consistent Modulation and Cross-Load Consistency for Humanoid Velocity Tracking Under Asymmetric Loads
 - [arXiv 2026.11](https://arxiv.org/abs/2611.13370), AHEADance: Anticipatory Humanoid Dance from Streaming Audio, [website](https://ihcr.github.io/AHEADance)
@@ -838,6 +842,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Safety-Critical Control
 - [Biomimetics 2026](https://doi.org/10.3390/biomimetics11090644), Passive-Active Cooperative Design Method for Fall Protection in Humanoid Robot
+- [arXiv 2026.11](https://arxiv.org/abs/2611.15928), Runtime Safety and Emergency Stops on a Full-Size Humanoid: Deployment Lessons and a Case for Graduated Force Authority
 - [arXiv 2026.10](https://arxiv.org/abs/2610.33317), Active Reachability Learning for Humanoid Recoverability Monitoring
 - [arXiv 2026.10](https://arxiv.org/abs/2610.31923), Not an Accident: Exploiting Safety Filter Inadequacy in Humanoid Robots
 - [arXiv 2026.10](https://arxiv.org/abs/2610.12467), CSF: Contextual Safety Filtering for Motion Generators, [website](https://lzyang2000.github.io/csf/)
