@@ -30,6 +30,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - 🌟 [arXiv 2026.11](https://arxiv.org/abs/2611.16422), BlinkMimic: Training a Humanoid Motion Tracker in Minutes on a Single GPU, [code](https://github.com/fuyichen0725/blinkmimic)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.16188), PERA: Plug-in Experts for Robotic Actions in Continual Whole-Body Control
 - [arXiv 2026.11](https://arxiv.org/abs/2611.14985), ILA: A Transferable Interface-Level Adapter for Compliant Humanoid Motion Tracking
+- [arXiv 2026.11](https://arxiv.org/abs/2611.14981), From a Single RGB Image to Robot Execution: Metric Scene Alignment and Contact-Guided Retargeting
 - [arXiv 2026.11](https://arxiv.org/abs/2611.14049), RedirectMimic: Local Motion Content Redaction for Humanoid Whole-Body Control, [website](https://xiaopeng-whu.github.io/RedirectMimic/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.13929), ReACT: Reflection-Consistent Modulation and Cross-Load Consistency for Humanoid Velocity Tracking Under Asymmetric Loads
 - [arXiv 2026.11](https://arxiv.org/abs/2611.13370), AHEADance: Anticipatory Humanoid Dance from Streaming Audio, [website](https://ihcr.github.io/AHEADance)
@@ -636,6 +637,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.11](https://arxiv.org/abs/2611.18003), Reusing Locomotion Training Recipes Across Humanoids via Body-Aligned Virtual Joints
 - [arXiv 2026.11](https://arxiv.org/abs/2611.10169), Capturability-Aware Footstep Planning in Cluttered Environments: A Recursively Feasible Sequential MPC on Axis-Aligned Safe Corridors
 - [arXiv 2026.11](https://arxiv.org/abs/2611.08857), STRIDE: Learning Humanoid Locomotion in Minutes with Acceleration-Based Rewards
 - [arXiv 2026.11](https://arxiv.org/abs/2611.08097), STEP: Spatiotemporal Training with Explicit Prediction for Perceptive Humanoid Locomotion
@@ -891,6 +893,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2022.12](https://arxiv.org/abs/2212.00541), Predictive Sampling: Real-time Behaviour Synthesis with MuJoCo
 
 ## Navigation
+- [arXiv 2026.11](https://arxiv.org/abs/2611.17598), X-Nav Technical Report: Real-World Long-Horizon Indoor-to-Outdoor Navigation on a Humanoid Robot
 - [arXiv 2026.11](https://arxiv.org/abs/2611.12136), LHNav: Long-Horizon Humanoid Navigation via Multirate Coordination and Physics-Grounded Action Data, [website](https://robbyant-research.github.io/LHNav/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.11665), HINT-VLM: Humanoid Interactive Navigation over Rough Terrain with Embodiment-Grounded Vision-Language Model
 - [arXiv 2026.11](https://arxiv.org/abs/2611.04972), Caging Vision-Language Navigation for Legged Robots via Barrier-Certified Safety Architecture
