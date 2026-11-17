@@ -5931,6 +5931,57 @@
   {
    "kind": "discovery-channel-failure",
    "reason": "2026-11-16 run: OpenAlex returned HTTP 401 for 2026-10 and 2026-11; Semantic Scholar twin resolution hit HTTP 429 (138 candidates venue-only); coverage incomplete."
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.15101",
+   "reason": "2026-11-17 AM run: read arXiv abstract; audio-text-to-motion gesture synthesis; pure motion generation, no humanoid control",
+   "detected_on": "2026-11-17"
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.15112",
+   "reason": "2026-11-17 AM run: read arXiv abstract; elastic-body simulation framework; not humanoid-focused",
+   "detected_on": "2026-11-17"
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.18894",
+   "reason": "2026-11-17 AM run: read arXiv abstract; human mesh recovery dataset; no robot",
+   "detected_on": "2026-11-17"
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.15524",
+   "reason": "2026-11-17 AM run: read arXiv abstract; card-game state detection dataset; tabletop perception, not humanoid learning",
+   "detected_on": "2026-11-17"
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.14853",
+   "reason": "2026-11-17 AM run: read arXiv abstract; social-force group model for service robots; not humanoid learning",
+   "detected_on": "2026-11-17"
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.16867",
+   "reason": "2026-11-17 AM run: read arXiv abstract; LLM-agent control-design benchmark; not humanoid",
+   "detected_on": "2026-11-17"
+  },
+  {
+   "kind": "discovery-channel-failure",
+   "reason": "2026-11-17 AM run: OpenAlex returned HTTP 401 for 2026-11 and 2026-10, so those windows lack OpenAlex coverage this run; Semantic Scholar batch hit HTTP 429 in --refresh (400 records not venue-checked). Not hand-searched this run.",
+   "detected_on": "2026-11-17",
+   "items": [
+    {
+     "channel": "openalex",
+     "month": "2026-11"
+    },
+    {
+     "channel": "openalex",
+     "month": "2026-10"
+    }
+   ]
   }
  ]
 }

@@ -26,8 +26,15 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.20888), Driving the Style: Velocity-Conditioned Whole-Body Control from Motion Demonstrations
+- [arXiv 2026.11](https://arxiv.org/abs/2611.20791), QTOP: Scaling Humanoid Motion Tracking with Quantile Critics
+- [arXiv 2026.11](https://arxiv.org/abs/2611.20452), XMimic and XSoma: Learning Humanoid Motion Tracking and Locomotion in Under a Minute
+- [arXiv 2026.11](https://arxiv.org/abs/2611.19998), MoViC: Real-Time Humanoid Whole-Body Control from Monocular Video Streams, [website](https://movicproject.github.io/)
+- [arXiv 2026.11](https://arxiv.org/abs/2611.19196), Ego2Sim2Humanoid: Agentic Real-to-Sim for Learning Loco-Manipulation VLAs without Robot Demonstrations, [website](https://robonana.github.io/ego2sim2humanoid/)
+- [arXiv 2026.11](https://arxiv.org/abs/2611.19153), ImpedanceMimic: Learned Impedance as Action Space for Force-Accurate Motion Imitation, [website](https://impedancemimic.github.io/ImpedanceMimic/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.17142), FORGE: Force-Aware Multi-Granularity Control for Efficient Humanoid Loco-Manipulation, [website](https://bb0928.github.io/forge/)
 - 🌟 [arXiv 2026.11](https://arxiv.org/abs/2611.16422), BlinkMimic: Training a Humanoid Motion Tracker in Minutes on a Single GPU, [code](https://github.com/fuyichen0725/blinkmimic)
+- [arXiv 2026.11](https://arxiv.org/abs/2611.16346), MotionSkill: From Bipedal Motion Video to Control across Embodiments
 - [arXiv 2026.11](https://arxiv.org/abs/2611.16188), PERA: Plug-in Experts for Robotic Actions in Continual Whole-Body Control
 - [arXiv 2026.11](https://arxiv.org/abs/2611.14985), ILA: A Transferable Interface-Level Adapter for Compliant Humanoid Motion Tracking
 - [arXiv 2026.11](https://arxiv.org/abs/2611.14981), From a Single RGB Image to Robot Execution: Metric Scene Alignment and Contact-Guided Retargeting
@@ -467,6 +474,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.08](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/), VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters, [website](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/)
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
+- [arXiv 2026.11](https://arxiv.org/abs/2611.18976), TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation, [website](http://humanoid-tma.github.io)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.12409), Bridging Task Planning and Execution for Language-Conditioned Bimanual Manipulation, [website](https://advrhumanoids.github.io/bridging-planning-execution/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.11854), Decoupled Asynchronous System for Humanoids (DASH): Latency-Agnostic Scaling of Vision-Language-Action Models for Humanoid Manipulation
 - [arXiv 2026.11](https://arxiv.org/abs/2611.10872), DreamVLA: From Generated Human Motions to Humanoid Vision-Language-Action Policies, [website](https://ember-center-berkeley.github.io/DreamVLA)
@@ -936,6 +944,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - arXiv 2025.07, LOVON: Legged Open-Vocabulary Object Navigator, [website](https://daojiepeng.github.io/LOVON/)
 
 ## State Estimation
+- 🌟 [arXiv 2026.11](https://arxiv.org/abs/2611.20710), SG-ODOM: Event-Driven Proprioceptive State Estimation with Stability-Gated Contact Updates for Legged Robots, [code](https://github.com/ori-drs/SG-ODOM)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.10137), A Unified Inertial Encoder for Human and Humanoid Motion
 - 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.25288), Vision as Proprioception: Estimating Humanoid Robot Pose from Video, [code](https://github.com/eth-siplab/HumanoidPose)
 - [arXiv 2026.09](https://arxiv.org/abs/2609.25561), Formal verification of tilt estimation using the Rocq prover
