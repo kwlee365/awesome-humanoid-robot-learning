@@ -6073,6 +6073,83 @@
    "kind": "refresh-skipped",
    "reason": "2026-11-18 AM run: discover.py --refresh aborted because export.arxiv.org rate-limited the run; no promotions or enrichment refresh applied this run.",
    "detected_on": "2026-11-18"
+  },
+  {
+   "kind": "out-of-scope",
+   "reason": "2026-11-19 AM(KST) run: read arXiv abstract (queue abstract from arXiv API; abs page for 2611.20950 and 2611.22122) and judged outside this list.",
+   "detected_on": "2026-11-19",
+   "items": [
+    {
+     "arxiv_id": "2611.15101",
+     "title": "CFGComposer: Compositional Audio-Text-to-Motion Generation via Copula Score Correction",
+     "note": "audio-text gesture generation; no humanoid control"
+    },
+    {
+     "arxiv_id": "2611.20950",
+     "title": "ROSE: A Shared Cross-Embodiment Facial-Motion Latent Space for Humanoid Robot Expression",
+     "note": "humanoid facial-expression latent space; no section fits (face actuation, not locomotion/manipulation)"
+    },
+    {
+     "arxiv_id": "2611.15112",
+     "title": "Elastra: A Simulation Framework for Elastic Bodies",
+     "note": "elastic-body simulation framework; not humanoid-specific"
+    },
+    {
+     "arxiv_id": "2611.18894",
+     "title": "CISyn: Human Mesh Recovery in Close Interactions with Physics-Simulated Synthetic Data",
+     "note": "human mesh recovery; no robot"
+    },
+    {
+     "arxiv_id": "2611.22122",
+     "title": "Low-speed Limit Cycle Walking of Planar X-shaped Bipedal Robot with Special Properties",
+     "note": "planar passive-walking biped, ICARM 2023 reprint, no learning; not in scope"
+    },
+    {
+     "arxiv_id": "2611.18372",
+     "title": "Vision-Language-Action Models: A Life-Cycle Survey of Design, Training and Deployment",
+     "note": "generic VLA survey"
+    },
+    {
+     "arxiv_id": "2611.15524",
+     "title": "Reading the Table: Sim-to-Real Game State Detection for the Chef's Hat Card Game",
+     "note": "tabletop game state detection"
+    },
+    {
+     "arxiv_id": "2611.14853",
+     "title": "Can I join you? Extended Social Force Based Model with Predictive Control and Barrier Functions for Humanoid Group Repositioning Amidst Obstacles",
+     "note": "social force group formation model; not humanoid"
+    },
+    {
+     "arxiv_id": "2611.16867",
+     "title": "ControlHarbor: A Benchmark for Control Design by Coding Agents",
+     "note": "control-design benchmark for coding agents"
+    },
+    {
+     "arxiv_id": "2611.18346",
+     "title": "VLAN: Vision-Language Accessible Navigation",
+     "note": "accessible-navigation benchmark; not humanoid-specific"
+    },
+    {
+     "arxiv_id": "2611.19047",
+     "title": "Certify, Then Select: Viability-Aware Runtime Steering of Frozen Diffusion Policies",
+     "note": "generic diffusion policy steering"
+    },
+    {
+     "arxiv_id": "2611.18110",
+     "title": "PoliMop: Policy-in-the-Loop Motion Planning in 3D Spaces for Mobile Robots",
+     "note": "generic mobile robot motion planning"
+    },
+    {
+     "arxiv_id": "2611.19187",
+     "title": "A Unified Control Framework, Mathematical Model, and Five-layer Closed-loop Case Study for Embodied Intelligence Control Systems",
+     "note": "generic embodied-control framework"
+    }
+   ]
+  },
+  {
+   "kind": "discovery-channel-failure",
+   "reason": "2026-11-19 run: OpenAlex returned HTTP 401 for 2026-10 and 2026-11, so those windows are incomplete on that channel; arXiv and Crossref swept. Not marked in ledger; later run re-sweeps. Publisher pages for 10.1007/s10514-026-10263-6 (Springer) and 10.3390/s26196324 (MDPI) blocked automated reading (auth redirect / 403), so those two candidates stay in queue unverified.",
+   "detected_on": "2026-11-19"
   }
  ]
 }

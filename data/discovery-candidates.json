@@ -11,17 +11,17 @@
     "openalex"
   ],
   "counts": {
-    "raw": 4429,
-    "relevant": 745,
-    "merged": 1241,
-    "new": 778,
+    "raw": 4431,
+    "relevant": 746,
+    "merged": 1242,
+    "new": 772,
     "similar_to_listed": 2,
-    "already_listed": 461,
-    "carried_over": 768
+    "already_listed": 468,
+    "carried_over": 780
   },
   "per_channel_raw": {
     "arxiv": 3592,
-    "crossref": 837
+    "crossref": 839
   },
   "failures": [
     {
@@ -142,64 +142,6 @@
         "https://doi.org/10.1007/s10514-026-10263-6"
       ],
       "carried_over_since": "2026-10-05",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-18"
-    },
-    {
-      "title": "Leaning Over to Reach Far-Away Objects",
-      "authors": [
-        "Allen Devaraj",
-        "William Xie",
-        "Nikolaus Correll"
-      ],
-      "abstract": "We study supported reaching to extend a humanoid robot's workspace by bracing against the environment for stabilization using a straightforward yet capable whole-body model predictive control (MPC) approach, exclusively with local sensing and fiducial markers. While typical solutions for whole body humanoid control aim at avoiding or accommodating contact, contact is explicitly required to reach objects placed on surfaces far out of normal reach. We employ sampling-based MPC for whole-body leaning, bracing, reaching, and recovery on a Unitree H1-2 humanoid. The controller runs in real-time at 34 Hz on a laptop, transfers sim-to-real, extends reach by about 50 cm beyond the unbraced standing workspace, and sustains the loaded posture for over four minutes, before pose estimation drifts. The controller reaches the commanded target in 89% of trials and completes the full reach-and-recovery cycle in 81%, across 54 trials spanning six targets and three table heights. We further characterize why such a small real-time sampling budget is sufficient, finding that temporal persistence of sampled actions and exploration scale strongly govern success, while CEM provides the widest operating region over planning rate and model mismatch. These results establish a real-world baseline for online, contact-rich humanoid manipulation. Code, videos, and full hardware details are available at https://h12leaner.github.io/",
-      "abstract_source": "https://arxiv.org/abs/2611.19100",
-      "arxiv_id": "2611.19100",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2611.19100",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "8 pages, 9 figures, 1 table. Under review at ICRA 2027. Videos and code at https://h12leaner.github.io/",
-      "publication_status": "preprint",
-      "first_public_date": "2026-11",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-11",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 113,
-        "core": [
-          "humanoid",
-          "humanoid robot",
-          "unitree h1"
-        ],
-        "task": [
-          "whole body humanoid"
-        ],
-        "body": [
-          "whole body",
-          "standing"
-        ],
-        "method": [
-          "sim to real"
-        ],
-        "control": [
-          "sampling based mpc"
-        ],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2611.19100"
-      ],
-      "carried_over_since": "2026-11-17",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -371,120 +313,6 @@
         "https://doi.org/10.1016/j.robot.2026.105746"
       ],
       "carried_over_since": "2026-09-18",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-18"
-    },
-    {
-      "title": "Autonomous Track Racing with a Commercially Available Humanoid: System Design and Real-World Deployment",
-      "authors": [
-        "Koki Inami",
-        "Takashi Sato",
-        "Hiroyuki Oka",
-        "Shota Takizawa",
-        "Yuya Takahashi",
-        "Amon Suzuki",
-        "Hayato Ono",
-        "Kohtaro Ihara",
-        "Yuki Noka",
-        "Shohei Matsugu"
-      ],
-      "abstract": "Learning-based methods now let humanoids run robustly, and they have begun to compete in athletic events. Yet few reports describe a complete autonomous humanoid running system in an actual race, where the robot must follow a lane at a new venue, pace itself within hardware limits, and finish without intervention. We report such a system deployed on the Unitree G1, a commercially available general-purpose humanoid, in the 100 m, 400 m, and 1500 m events of the World Humanoid Robot Games 2026. The system integrates vision-based lane perception, path tracking, and a running policy trained by reinforcement learning with a human motion prior. To address the challenges of humanoid running, we stabilize head-camera images against body motion and use IMU-assisted leg odometry to bridge flight phases. To manage motor heating, we penalize hip-pitch torque during training, add heat-dissipation plates, and apply temperature-based speed limiting with event-specific pacing. The robot placed 13th of 74 in the 100 m, 10th of 44 in the 400 m first round before falling in the semifinal, and seventh of 35 in the 1500 m. In this deployment, thermal margin set the pace in every event, and the semifinal fall followed a lane-detection error.",
-      "abstract_source": "https://arxiv.org/abs/2611.22445",
-      "arxiv_id": "2611.22445",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2611.22445",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "7 pages, 2 figures. Submitted to IEEE Robotics and Automation Practice. Copyright may be transferred without notice, after which this version may no longer be accessible",
-      "publication_status": "preprint",
-      "first_public_date": "2026-11",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-11",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 110,
-        "core": [
-          "humanoid",
-          "humanoids",
-          "humanoid robot",
-          "unitree g1"
-        ],
-        "task": [],
-        "body": [],
-        "method": [
-          "motion prior",
-          "human motion"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2611.22445"
-      ],
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-18"
-    },
-    {
-      "title": "Body Schema Policy: Body as the Vision-Action Interface for Efficient Robot Loco-Manipulation",
-      "authors": [
-        "Lechen Zhang",
-        "Chenyuan Chen",
-        "Muxin Zhou",
-        "Zewen He",
-        "Yoshihiko Nakamura"
-      ],
-      "abstract": "Currently, robots can learn whole-body loco-manipulation through scale: the strongest policies have billions of parameters and still need task-specific fine-tuning. Humans have limited processing capacity, yet learn and act efficiently through a body schema that organizes what they see and how they move. We introduce Body Schema Policy (BSP), an imitation learning policy that builds such a schema into the vision-action interface. Its latent body schema places joint and link tokens on the robot's kinematic tree, where learned screw motions carry features between links. Through body-queried vision, each body part retrieves its own visual evidence, which conditions the denoising of its actions. With this inductive bias, BSP returns an action chunk faster than any policy we compare. Compact, body-specific visual readouts also emerge without spatial supervision: manipulation commands depend strongly on task objects, while locomotion commands respond more broadly to the scene. On nine simulated Unitree G1 whole-body tasks, BSP matches the $Ψ_0$ humanoid foundation model with $75\\times$ fewer parameters and nearly doubles Diffusion Policy's success. The same holds on a real G1 and a Fetch mobile manipulator.",
-      "abstract_source": "https://arxiv.org/abs/2611.22713",
-      "arxiv_id": "2611.22713",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2611.22713",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-11",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-11",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 110,
-        "core": [
-          "humanoid",
-          "unitree g1"
-        ],
-        "task": [
-          "loco manipulation",
-          "whole body loco"
-        ],
-        "body": [
-          "locomotion",
-          "whole body"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2611.22713"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -1439,67 +1267,6 @@
       "seen_on": "2026-11-18"
     },
     {
-      "title": "Towards Probabilistically Safe Reinforcement Learning: Theory and Deployment on Humanoid and Aerial Robots",
-      "authors": [
-        "Pol Mestres",
-        "Varun Gabbita",
-        "Jason H. K. Siu",
-        "Sergio A. Esteban",
-        "Hampus Serneke",
-        "Joel W. Burdick",
-        "Aaron D. Ames"
-      ],
-      "abstract": "Reinforcement learning (RL) enables robots to acquire complex skills, but standard RL formulations do not guarantee that learned policies satisfy safety constraints, which limits their use in safety-critical settings. Existing safe RL methods with provable guarantees typically support only restricted classes of constraints and require unbiased estimators of the objective and constraint functions, which prevents their direct integration with state-of-the-art algorithms such as proximal policy optimization (PPO). In this paper, we extend the recently introduced robust safe gradient flow-based reinforcement learning (RSGF-RL) framework to overcome these limitations. Our formulation accommodates a general class of trajectory-level safety constraints, including chance constraints such as collision avoidance with a prescribed probability, and our analysis allows for biased value and gradient estimators. We show that, with high probability, the constraint violation throughout training is bounded by the estimator bias plus a term that vanishes as the number of rollouts grows, and decays to this level if the initial policy is unsafe. We also establish the convergence properties of the iterates to approximate KKT points of the original safe RL problem. Finally, we show that RSGF-RL implemented with PPO-style estimates enables zero-shot sim-to-real deployment of whole-body control policies on a Unitree G1 humanoid and collision-free waypoint navigation on a Crazyflie drone.",
-      "abstract_source": "https://arxiv.org/abs/2611.19616",
-      "arxiv_id": "2611.19616",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2611.19616",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-11",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-11",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 108,
-        "core": [
-          "humanoid",
-          "unitree g1",
-          "g1 humanoid"
-        ],
-        "task": [
-          "whole body control"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [
-          "sim to real"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [
-          "drone"
-        ],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2611.19616"
-      ],
-      "carried_over_since": "2026-11-17",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-18"
-    },
-    {
       "title": "A Whole-Body Control Framework for Humanoid Robots via Inertial Parameter Modulation",
       "authors": [
         "Tom liu"
@@ -1544,63 +1311,6 @@
         "https://doi.org/10.5281/zenodo.21885699"
       ],
       "carried_over_since": "2026-09-01",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-18"
-    },
-    {
-      "title": "ALERT: Extending Humanoid Motion Trackers with a General and Lightweight Human Avoidance Pipeline",
-      "authors": [
-        "Zhaoyang Li",
-        "Chiyu Zhang",
-        "Chengxin Xu",
-        "Peng Yang",
-        "Zhonghao Guo",
-        "Wanting Li",
-        "Ziyu Chen"
-      ],
-      "abstract": "Whole-body motion tracking has enabled humanoid dancing, athletic motions, and teleoperation, providing a foundation for capability demonstrations and manipulation data collection. However, existing tracking policies lack awareness of nearby humans and proactive avoidance capabilities, while motion substitution and local constraint-based corrections may compromise reference motion integrity and tracking continuity. We propose ALERT, a general lightweight pipeline for extending motion tracking to shared human-robot environments. Through lightweight adaptation, it integrates human perception and proactive avoidance into pretrained tracking policies, balancing avoidance demands with reference motion tracking while preserving existing motion capabilities. Simulation and real-world experiments across tracking backbones demonstrate reliable collision-free execution through localized human avoidance, preserving whole-body coordination and enabling rapid recovery of reference tracking, while retaining the ability of pretrained policies to track unseen motions.",
-      "abstract_source": "https://arxiv.org/abs/2611.22258",
-      "arxiv_id": "2611.22258",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2611.22258",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": null,
-      "publication_status": "preprint",
-      "first_public_date": "2026-11",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-11",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 107,
-        "core": [
-          "humanoid"
-        ],
-        "task": [
-          "whole body motion"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [
-          "motion tracking",
-          "teleoperation"
-        ],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2611.22258"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -1810,64 +1520,6 @@
         "https://doi.org/10.1007/978-981-92-2074-8_5"
       ],
       "carried_over_since": "2026-10-07",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-18"
-    },
-    {
-      "title": "Heave-Ho: Decentralized Long-Horizon Multi-Humanoid Collaboration",
-      "authors": [
-        "Ting-Hsuan Chen",
-        "Siheng Zhao",
-        "Han Jiang",
-        "Qi Pan",
-        "Louison Lu",
-        "Jiaheng Luo",
-        "Henghui Bao",
-        "Yiyu Chen",
-        "Quan Nguyen",
-        "Yue Wang"
-      ],
-      "abstract": "Collaboration promises to extend humanoid capabilities beyond what individual robots can achieve. However, realizing this potential requires coordinated whole-body interactions, coherent long-horizon planning, and precise synchronization across robots. We introduce Heave-Ho, a decentralized framework for long-horizon collaborative multi-humanoid loco-manipulation. At the low level, we develop a multi-agent post-training framework that adapts a humanoid foundation tracking model to physically coupled interactions between humanoids, enabling coordinated decentralized control from local observations alone. At the high level, we train a vision-language planner and design a speech-based leader-follower coordination mechanism to synchronize decentralized execution without network communication. Trained with two identical humanoids, our system scales to teams of up to ten robots and generalizes to heterogeneous teams without retraining. To benchmark these capabilities, we introduce HH-Bench, comprising 12 tasks involving teams of 2 to 10 humanoids, including heterogeneous teams. Systematic evaluations show that Heave-Ho consistently outperforms baseline methods, while real-world experiments demonstrate robust decentralized collaboration across challenging tasks.",
-      "abstract_source": "https://arxiv.org/abs/2611.22275",
-      "arxiv_id": "2611.22275",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2611.22275",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "18 pages, 11 figures, 7 tables. Project page: https://heaveho-humanoid.github.io/",
-      "publication_status": "preprint",
-      "first_public_date": "2026-11",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-11",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 107,
-        "core": [
-          "humanoid",
-          "humanoids"
-        ],
-        "task": [
-          "loco manipulation"
-        ],
-        "body": [
-          "whole body"
-        ],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2611.22275"
-      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -3082,7 +2734,8 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
         "https://ieeexplore.ieee.org/document/11765374/"
@@ -3385,6 +3038,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11774758/"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -7850,6 +7504,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11774725/"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -8095,6 +7750,7 @@
       "urls": [
         "https://arxiv.org/abs/2611.22122"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -9090,6 +8746,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11772240/"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -9439,6 +9096,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11774643/"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -10272,56 +9930,6 @@
       "seen_on": "2026-11-18"
     },
     {
-      "title": "When Will You Hand It Over? A Hidden Start Delay Makes Self-Play Handover Robust to Unfamiliar Partners",
-      "authors": [
-        "Mohammad Khoshnazar",
-        "Mike Degany",
-        "Deyuan Qu",
-        "Qing Yang",
-        "Matyas Szanto"
-      ],
-      "abstract": "Cooperative self-play can teach a humanoid to receive an object without any human data, but the partner it meets after training is never the one it trained with; we show that a fluent self-play handover policy breaks with unfamiliar partners, identify the main cause, and repair it. In a physics-based parcel handover between a Unitree G1 and a learned giver, both trained by alternating PPO self-play, the receiver completes 95% and 90% of handovers with its own partner (two training seeds) but only 31% with scripted partners it has never met. Paired interventions isolate the cause: under a shared reward the learned giver always starts its offer at once, so the receiver learns a single rendezvous, and delaying its own partner by one second cuts success from 95% to 6% (87% to 34% in the second seed). We introduce hidden start-delay randomisation (HSD), a one-line rule on the learned partner that the receiver never observes. After 300 further updates, success with unseen scripted partners rises from 31% to 80% in both seeds, against 35--41% for a budget-matched control. The gain holds on a fresh scenario seed, on eleven held-out partner conditions and on partners that start later than any training delay; it cuts high-force contact three- to five-fold and needs no retraining of the partner.",
-      "abstract_source": "https://arxiv.org/abs/2611.18491",
-      "arxiv_id": "2611.18491",
-      "doi": null,
-      "paper_url": "https://arxiv.org/abs/2611.18491",
-      "venue": "arXiv",
-      "venue_hint": null,
-      "arxiv_comment": "CoRL 2026, Human-Centered Robot Learning and Interaction (HumanRLI) Workshop. Code: https://github.com/mkhoshnam/Selfplay-PPO-handover",
-      "publication_status": "preprint",
-      "first_public_date": "2026-11",
-      "date_basis": "arxiv-v1",
-      "arxiv_category": "cs.RO",
-      "window": "2026-11",
-      "relevance": {
-        "keep": true,
-        "path": "core",
-        "why": "humanoid platform named",
-        "score": 104,
-        "core": [
-          "humanoid",
-          "unitree g1"
-        ],
-        "task": [],
-        "body": [],
-        "method": [],
-        "control": [],
-        "sim": [],
-        "hard_negative": [],
-        "soft_negative": []
-      },
-      "sources": [
-        "arxiv"
-      ],
-      "urls": [
-        "https://arxiv.org/abs/2611.18491"
-      ],
-      "carried_over_since": "2026-11-16",
-      "dedupe": "new",
-      "dedupe_note": "",
-      "seen_on": "2026-11-18"
-    },
-    {
       "title": "Wire-driven 4-DOF Elbow-wrist Mechanism Design",
       "authors": [
         "Haneol Lee",
@@ -10615,6 +10223,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11774723/"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -11500,7 +11109,8 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
         "https://ieeexplore.ieee.org/document/11765275/"
@@ -11552,6 +11162,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11774672/"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -11752,7 +11363,8 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
         "https://ieeexplore.ieee.org/document/11765437/"
@@ -13678,6 +13290,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11774550/"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -13971,7 +13584,8 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
         "https://ieeexplore.ieee.org/document/11765492/"
@@ -15699,6 +15313,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11774688/"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -16227,6 +15842,51 @@
         "https://doi.org/10.1109/ccai69603.2026.11642111"
       ],
       "carried_over_since": "2026-09-01",
+      "dedupe": "new",
+      "dedupe_note": "",
+      "seen_on": "2026-11-18"
+    },
+    {
+      "title": "Humanoid Localization Based on Feature Detection and Extended Kalman Filtering",
+      "authors": [
+        "Luis Manuel Leitão",
+        "António Paulo Moreira",
+        "António Fernando Ribeiro"
+      ],
+      "abstract": null,
+      "abstract_source": null,
+      "arxiv_id": null,
+      "doi": "10.1109/controlo67943.2026.11771780",
+      "paper_url": "https://ieeexplore.ieee.org/document/11771780/",
+      "venue": "2026 17th APCA International Conference on Automatic Control and Soft Computing (CONTROLO)",
+      "venue_hint": "2026 17th APCA International Conference on Automatic Control and Soft Computing (CONTROLO)",
+      "publication_status": "published",
+      "first_public_date": "2026-11",
+      "date_basis": "crossref-created",
+      "crossref_type": "proceedings-article",
+      "window": "2026-11",
+      "relevance": {
+        "keep": true,
+        "path": "core",
+        "why": "humanoid platform named",
+        "score": 102,
+        "core": [
+          "humanoid"
+        ],
+        "task": [],
+        "body": [],
+        "method": [],
+        "control": [],
+        "sim": [],
+        "hard_negative": [],
+        "soft_negative": []
+      },
+      "sources": [
+        "crossref"
+      ],
+      "urls": [
+        "https://ieeexplore.ieee.org/document/11771780/"
+      ],
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -18734,6 +18394,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11774694/"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -20345,7 +20006,8 @@
         "soft_negative": []
       },
       "sources": [
-        "crossref"
+        "crossref",
+        "s2"
       ],
       "urls": [
         "https://ieeexplore.ieee.org/document/11765203/"
@@ -20556,6 +20218,7 @@
       "urls": [
         "https://arxiv.org/abs/2611.22200"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -20756,6 +20419,7 @@
       "urls": [
         "https://ieeexplore.ieee.org/document/11774616/"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -21456,6 +21120,7 @@
       "urls": [
         "https://arxiv.org/abs/2611.21905"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -21689,6 +21354,7 @@
       "urls": [
         "https://arxiv.org/abs/2611.22483"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -24285,6 +23951,7 @@
       "urls": [
         "https://arxiv.org/abs/2611.22894"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -34548,6 +34215,7 @@
       "urls": [
         "https://arxiv.org/abs/2611.22291"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"
@@ -34808,6 +34476,7 @@
       "urls": [
         "https://arxiv.org/abs/2611.21789"
       ],
+      "carried_over_since": "2026-11-18",
       "dedupe": "new",
       "dedupe_note": "",
       "seen_on": "2026-11-18"

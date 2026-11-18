@@ -211,6 +211,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.09](https://arxiv.org/abs/2609.02134), Unified Motion Retargeting for Humanoids with Learned Point Cloud Correspondence
 - [arXiv 2026.09](https://arxiv.org/abs/2609.01518), A System for Fast, Resilient, and Adaptable Loco-Manipulation Behaviors on Humanoid Robots
 - [arXiv 2026.09](https://arxiv.org/abs/2609.00677), ADAPT: Agile Diffusion Action Priors for Robust and Steerable Online Text-Driven Humanoid Control, [website](https://wuyan01.github.io/ADAPT-project/)
+- [Frontiers in Neurorobotics 2026](https://doi.org/10.3389/fnbot.2026.1920711), Assisted exploration of difficult transitions in humanoid motion tracking
 - [arXiv 2026.08](https://arxiv.org/abs/2608.29487), Blind Dexterity: Whole-Body Humanoid Manipulation via Pure Proprioception, [website](https://aditya.bhatts.org/BlindDexterity/)
 - [arXiv 2026.08](https://arxiv.org/abs/2608.28693), RoboGesture: Real-Time Semantic-aligned Co-Speech Gestures Generation for Humanoid Interaction
 - [arXiv 2026.08](https://arxiv.org/abs/2608.28213), PAMoR: Parameterized Affective Motion Generation in Real Time for Humanoid Robots
