@@ -26,12 +26,16 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.22713), Body Schema Policy: Body as the Vision-Action Interface for Efficient Robot Loco-Manipulation
+- [arXiv 2026.11](https://arxiv.org/abs/2611.22275), Heave-Ho: Decentralized Long-Horizon Multi-Humanoid Collaboration, [website](https://heaveho-humanoid.github.io/)
+- [arXiv 2026.11](https://arxiv.org/abs/2611.22258), ALERT: Extending Humanoid Motion Trackers with a General and Lightweight Human Avoidance Pipeline
 - [arXiv 2026.11](https://arxiv.org/abs/2611.20888), Driving the Style: Velocity-Conditioned Whole-Body Control from Motion Demonstrations
 - [arXiv 2026.11](https://arxiv.org/abs/2611.20791), QTOP: Scaling Humanoid Motion Tracking with Quantile Critics
 - [arXiv 2026.11](https://arxiv.org/abs/2611.20452), XMimic and XSoma: Learning Humanoid Motion Tracking and Locomotion in Under a Minute
 - [arXiv 2026.11](https://arxiv.org/abs/2611.19998), MoViC: Real-Time Humanoid Whole-Body Control from Monocular Video Streams, [website](https://movicproject.github.io/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.19196), Ego2Sim2Humanoid: Agentic Real-to-Sim for Learning Loco-Manipulation VLAs without Robot Demonstrations, [website](https://robonana.github.io/ego2sim2humanoid/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.19153), ImpedanceMimic: Learned Impedance as Action Space for Force-Accurate Motion Imitation, [website](https://impedancemimic.github.io/ImpedanceMimic/)
+- [arXiv 2026.11](https://arxiv.org/abs/2611.19100), Leaning Over to Reach Far-Away Objects, [website](https://h12leaner.github.io/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.17142), FORGE: Force-Aware Multi-Granularity Control for Efficient Humanoid Loco-Manipulation, [website](https://bb0928.github.io/forge/)
 - 🌟 [arXiv 2026.11](https://arxiv.org/abs/2611.16422), BlinkMimic: Training a Humanoid Motion Tracker in Minutes on a Single GPU, [code](https://github.com/fuyichen0725/blinkmimic)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.16346), MotionSkill: From Bipedal Motion Video to Control across Embodiments
@@ -475,6 +479,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
 - [arXiv 2026.11](https://arxiv.org/abs/2611.18976), TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation, [website](http://humanoid-tma.github.io)
+- 🌟 [arXiv 2026.11](https://arxiv.org/abs/2611.18491), When Will You Hand It Over? A Hidden Start Delay Makes Self-Play Handover Robust to Unfamiliar Partners, [code](https://github.com/mkhoshnam/Selfplay-PPO-handover)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.12409), Bridging Task Planning and Execution for Language-Conditioned Bimanual Manipulation, [website](https://advrhumanoids.github.io/bridging-planning-execution/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.11854), Decoupled Asynchronous System for Humanoids (DASH): Latency-Agnostic Scaling of Vision-Language-Action Models for Humanoid Manipulation
 - [arXiv 2026.11](https://arxiv.org/abs/2611.10872), DreamVLA: From Generated Human Motions to Humanoid Vision-Language-Action Policies, [website](https://ember-center-berkeley.github.io/DreamVLA)
@@ -645,6 +650,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.11](https://arxiv.org/abs/2611.22445), Autonomous Track Racing with a Commercially Available Humanoid: System Design and Real-World Deployment
 - [arXiv 2026.11](https://arxiv.org/abs/2611.18003), Reusing Locomotion Training Recipes Across Humanoids via Body-Aligned Virtual Joints
 - [arXiv 2026.11](https://arxiv.org/abs/2611.10169), Capturability-Aware Footstep Planning in Cluttered Environments: A Recursively Feasible Sequential MPC on Axis-Aligned Safe Corridors
 - [arXiv 2026.11](https://arxiv.org/abs/2611.08857), STRIDE: Learning Humanoid Locomotion in Minutes with Acceleration-Based Rewards
@@ -852,6 +858,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Safety-Critical Control
 - [Biomimetics 2026](https://doi.org/10.3390/biomimetics11090644), Passive-Active Cooperative Design Method for Fall Protection in Humanoid Robot
+- [arXiv 2026.11](https://arxiv.org/abs/2611.19616), Towards Probabilistically Safe Reinforcement Learning: Theory and Deployment on Humanoid and Aerial Robots
 - [arXiv 2026.11](https://arxiv.org/abs/2611.15928), Runtime Safety and Emergency Stops on a Full-Size Humanoid: Deployment Lessons and a Case for Graduated Force Authority
 - [arXiv 2026.10](https://arxiv.org/abs/2610.33317), Active Reachability Learning for Humanoid Recoverability Monitoring
 - [arXiv 2026.10](https://arxiv.org/abs/2610.31923), Not an Accident: Exploiting Safety Filter Inadequacy in Humanoid Robots

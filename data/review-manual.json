@@ -5982,6 +5982,97 @@
      "month": "2026-10"
     }
    ]
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.20950",
+   "reason": "2026-11-18 AM run: read arXiv abstract; humanoid facial-expression latent space; face actuation/graphics, no body control or locomotion/manipulation",
+   "detected_on": "2026-11-18"
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.22122",
+   "reason": "2026-11-18 AM run: read arXiv abstract; planar X-shaped biped limit-cycle walking; classical model analysis (ICARM 2023 paper posted later), no learning",
+   "detected_on": "2026-11-18"
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.19047",
+   "reason": "2026-11-18 AM run: read arXiv abstract; CAST runtime steering of diffusion policies; generic manipulation safety, not humanoid-specific",
+   "detected_on": "2026-11-18"
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.18346",
+   "reason": "2026-11-18 AM run: read arXiv abstract; VLAN accessibility-navigation benchmark across human/legged/wheeled agents; humanoid only one embodiment, borderline-out",
+   "detected_on": "2026-11-18"
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.15101",
+   "reason": "2026-11-18 AM run: read arXiv abstract; audio-text-to-motion generation for human motion; pure human-motion synthesis, no section",
+   "detected_on": "2026-11-18"
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.15112",
+   "reason": "2026-11-18 AM run: read arXiv abstract; Elastra elastic-body simulation framework; not humanoid",
+   "detected_on": "2026-11-18"
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.18894",
+   "reason": "2026-11-18 AM run: read arXiv abstract; human mesh recovery with synthetic data; pure human-pose paper, no robot",
+   "detected_on": "2026-11-18"
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.18372",
+   "reason": "2026-11-18 AM run: read arXiv abstract; general VLA survey; not humanoid-specific",
+   "detected_on": "2026-11-18"
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.15524",
+   "reason": "2026-11-18 AM run: read arXiv abstract; card-game state detection; not humanoid learning",
+   "detected_on": "2026-11-18"
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.18110",
+   "reason": "2026-11-18 AM run: read arXiv abstract; PoliMop mobile-robot motion planning; not humanoid",
+   "detected_on": "2026-11-18"
+  },
+  {
+   "kind": "out-of-scope",
+   "arxiv_id": "2611.18365",
+   "reason": "2026-11-18 AM run: read arXiv abstract; skid-steer loader control; not humanoid",
+   "detected_on": "2026-11-18"
+  },
+  {
+   "kind": "discovery-channel-failure",
+   "reason": "2026-11-18 AM run: OpenAlex returned HTTP 401 for 2026-11 and 2026-10, so those windows lack OpenAlex coverage; arXiv and Crossref swept. Not hand-searched this run.",
+   "detected_on": "2026-11-18",
+   "items": [
+    {
+     "channel": "openalex",
+     "month": "2026-11"
+    },
+    {
+     "channel": "openalex",
+     "month": "2026-10"
+    }
+   ]
+  },
+  {
+   "kind": "code-unverified",
+   "reason": "2026-11-18 AM run: 2611.19100 (Leaning Over) says code is on h12leaner.github.io, but the page links only a paper PDF and a Drive folder; no public repository verified, so no star.",
+   "detected_on": "2026-11-18"
+  },
+  {
+   "kind": "refresh-skipped",
+   "reason": "2026-11-18 AM run: discover.py --refresh aborted because export.arxiv.org rate-limited the run; no promotions or enrichment refresh applied this run.",
+   "detected_on": "2026-11-18"
   }
  ]
 }
