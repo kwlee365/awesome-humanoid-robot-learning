@@ -6150,6 +6150,118 @@
    "kind": "discovery-channel-failure",
    "reason": "2026-11-19 run: OpenAlex returned HTTP 401 for 2026-10 and 2026-11, so those windows are incomplete on that channel; arXiv and Crossref swept. Not marked in ledger; later run re-sweeps. Publisher pages for 10.1007/s10514-026-10263-6 (Springer) and 10.3390/s26196324 (MDPI) blocked automated reading (auth redirect / 403), so those two candidates stay in queue unverified.",
    "detected_on": "2026-11-19"
+  },
+  {
+   "kind": "out-of-scope",
+   "reason": "2026-11-19 PM(KST) run: read arXiv abstracts (queue text from arXiv API) and judged outside this list.",
+   "detected_on": "2026-11-19",
+   "items": [
+    {
+     "arxiv_id": "2611.24310",
+     "title": "Proprioceptive Simultaneous Base and Terrain Elevation Estimation for Legged Robot Locomotion",
+     "note": "quadruped/ANYmal-focused estimator, evaluated in sim and dataset; humanoid only incidentally (bipedal sim)"
+    },
+    {
+     "arxiv_id": "2611.24279",
+     "title": "QDD-MM: Open-Source Muscle Module for Tendon-driven Robots",
+     "note": "tendon-driven actuator module; not humanoid"
+    },
+    {
+     "arxiv_id": "2611.24925",
+     "title": "Render the Robot, Generate the World: One Video World Model Across Embodiments",
+     "note": "generic video world model; no humanoid focus"
+    },
+    {
+     "arxiv_id": "2611.24940",
+     "title": "Z-sight: Unifying Vision-Language-Action and Latent World Modeling",
+     "note": "generic robot foundation model; no humanoid focus"
+    },
+    {
+     "arxiv_id": "2611.23825",
+     "title": "Learning Martial Arts Motion Skills for Animating Opponents in VR Sparring Games",
+     "note": "game character animation; no humanoid robot/physics-based control section fit"
+    },
+    {
+     "arxiv_id": "2611.22200",
+     "title": "MIRAGE: Motion Identity Reduction for Privacy-Preserving Skeleton-based Motion Data",
+     "note": "pure human-motion data privacy"
+    },
+    {
+     "arxiv_id": "2611.20324",
+     "title": "High-Speed Forward and Reverse Tractor-Trailer Driving with Learned Vehicle Dynamics",
+     "note": "vehicle, not humanoid"
+    },
+    {
+     "arxiv_id": "2611.21905",
+     "title": "Agile Monoped Hopping via Kinodynamic Planning with Distilled MPPI Steering",
+     "note": "monoped; planner calls MPPI distilled, not humanoid"
+    },
+    {
+     "arxiv_id": "2611.23620",
+     "title": "How Uncertain Is My Action? Self-Correcting Visual Planning with Frozen World Models",
+     "note": "generic world-model planning"
+    },
+    {
+     "arxiv_id": "2611.22483",
+     "title": "Manufacturing Differential Sparsity: Planner-Hardware Co-Design for World Model Planning",
+     "note": "generic world-model planning"
+    },
+    {
+     "arxiv_id": "2611.18877",
+     "title": "Passage-Focused Soft Coordination for Hierarchical Multi-Robot Navigation",
+     "note": "multi-robot navigation; not humanoid"
+    },
+    {
+     "arxiv_id": "2611.24229",
+     "title": "ProbeShare: Fast World-Model Planning",
+     "note": "generic world-model planning"
+    },
+    {
+     "arxiv_id": "2611.19466",
+     "title": "Successive Convexification in Learned World Models for Safe Offline Planning",
+     "note": "generic planning"
+    },
+    {
+     "arxiv_id": "2611.24470",
+     "title": "When to Refine: Selective Search for Frozen Visual World Models",
+     "note": "generic planning"
+    },
+    {
+     "arxiv_id": "2611.17060",
+     "title": "Ropedia Xperience 2",
+     "note": "human-behavior dataset for physical AI; no humanoid section fit"
+    },
+    {
+     "arxiv_id": "2611.20076",
+     "title": "SGIP: Scene-Grounded Interaction Priors for Human Motion Prediction",
+     "note": "pure human-motion prediction"
+    },
+    {
+     "arxiv_id": "2611.18365",
+     "title": "Heavy Metal Acrobatics: Skid-Steer Loaders",
+     "note": "heavy machinery, not humanoid"
+    },
+    {
+     "arxiv_id": "2611.15966",
+     "title": "Subject-Held-Out Evaluation of Deep Ground Reaction Force Estimators",
+     "note": "human biomechanics"
+    },
+    {
+     "arxiv_id": "2611.22894",
+     "title": "Wear and Go: Calibration Free Sparse Inertial Motion Capture",
+     "note": "human mocap; no robot"
+    }
+   ]
+  },
+  {
+   "kind": "discovery-channel-failure",
+   "reason": "2026-11-19 PM run: OpenAlex returned HTTP 401 for 2026-11 and 2026-10; coverage incomplete for those months on that channel (arXiv and Crossref were complete). Non-arXiv venue-only items in the queue (Zenodo-style records with 'humanoid' in title) were not read and remain queued.",
+   "detected_on": "2026-11-19",
+   "items": [
+    {
+     "note": "openalex 2026-11, 2026-10 unswept; ledger left unmarked"
+    }
+   ]
   }
  ]
 }

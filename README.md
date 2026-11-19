@@ -26,6 +26,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.24074), SemPhys: Semantic-Physical Co-Learning for Humanoid Motion Generation via Differentiable World Models
 - [arXiv 2026.11](https://arxiv.org/abs/2611.22713), Body Schema Policy: Body as the Vision-Action Interface for Efficient Robot Loco-Manipulation
 - [arXiv 2026.11](https://arxiv.org/abs/2611.22275), Heave-Ho: Decentralized Long-Horizon Multi-Humanoid Collaboration, [website](https://heaveho-humanoid.github.io/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.22258), ALERT: Extending Humanoid Motion Trackers with a General and Lightweight Human Avoidance Pipeline
@@ -300,9 +301,11 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2026.05](https://arxiv.org/abs/2605.06593) / SIGGRAPH 2026, ReActor: Reinforcement Learning for Physics-Aware Motion Retargeting
 - [arXiv 2026.04](https://arxiv.org/abs/2604.21355) / ICRA 2026, RPG: Robust Policy Gating for Smooth Multi-Skill Transitions in Humanoid Fighting
 - [arXiv 2026.04](https://arxiv.org/abs/2604.14834) / ICRA 2026, Switch: Learning Agile Skills Switching for Humanoid Robots
+- [arXiv 2026.04](https://arxiv.org/abs/2604.01158) / T-RO 2026, SMASH: Mastering Scalable Whole-Body Skills for Humanoid Ping-Pong With Egocentric Vision
 - [arXiv 2026.03](https://arxiv.org/abs/2603.27756), Heracles: Bridging Precise Tracking and Generative Synthesis for General Humanoid Control
 - [arXiv 2026.03](https://arxiv.org/abs/2603.23983), SafeFlow: Real-Time Text-Driven Humanoid Whole-Body Control via Physics-Guided Rectified Flow and Selective Safety Gating, [website](https://hanbyelcho.info/safeflow/)
 - [arXiv 2026.03](https://arxiv.org/abs/2603.13707) / RA-L 2026, REFINE-DP: Diffusion Policy Fine-tuning for Humanoid Loco-manipulation via Reinforcement Learning, [website](https://refine-dp.github.io/REFINE-DP/)
+- [arXiv 2026.03](https://arxiv.org/abs/2603.05410) / RCAR 2026, PhysiFlow: Physics-Aware Humanoid Whole-Body VLA via Multi-Brain Latent Flow Matching and Robust Tracking
 - 🌟 [website 2026.03](https://zzk273.github.io/LATENT/), LATENT: Learning Athletic Humanoid Tennis Skills from Imperfect Human Motion Data
 - [arXiv 2026.03](https://arxiv.org/abs/2603.12263), Ψ₀: An Open Foundation Model Towards Universal Humanoid Loco-Manipulation
 - [arXiv 2026.03](https://arxiv.org/abs/2603.10306), SteadyTray: Learning Object Balancing Tasks in Humanoid Tray Transport via Residual Reinforcement Learning, [website](https://steadytray.github.io/)
@@ -364,7 +367,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [arXiv 2025.11](https://arxiv.org/abs/2511.07820) / Science Robotics 2026, SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control, [website](https://nvlabs.github.io/SONIC/)
 - [arXiv 2025.11](https://arxiv.org/abs/2511.07407) / ICRA 2026, Unified Humanoid Fall-Safety Policy from a Few Demonstrations
 - [arXiv 2025.11](https://arxiv.org/abs/2511.06371), Towards Adaptive Humanoid Control via Multi-Behavior Distillation and Reinforced Fine-Tuning
-- [arXiv 2025.11](https://arxiv.org/abs/2511.04679), GentleHumanoid: Learning Upper-body Compliance for Contact-rich Human and Object Interaction
+- [arXiv 2025.11](https://arxiv.org/abs/2511.04679) / RA-L 2026, GentleHumanoid: Learning Upper-body Compliance for Contact-rich Human and Object Interaction
 - [arXiv 2025.11](https://arxiv.org/abs/2511.04131), BFM-Zero: A Promptable Behavioral Foundation Model for Humanoid Control Using Unsupervised Reinforcement Learning
 - [arXiv 2025.11](https://arxiv.org/abs/2511.03996) / Science Robotics 2026, Learning Vision-Driven Reactive Soccer Skills for Humanoid Robots
 - [arXiv 2025.11](https://arxiv.org/abs/2511.02832) / ICRA 2026, TWIST2: Scalable, Portable, and Holistic Humanoid Data Collection System
@@ -651,6 +654,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.11](https://arxiv.org/abs/2611.23916), ReLoco: Unified Humanoid Locomotion and Fall Recovery via Behavior-Conditioned Motion Priors
 - [arXiv 2026.11](https://arxiv.org/abs/2611.22445), Autonomous Track Racing with a Commercially Available Humanoid: System Design and Real-World Deployment
 - [arXiv 2026.11](https://arxiv.org/abs/2611.18003), Reusing Locomotion Training Recipes Across Humanoids via Body-Aligned Virtual Joints
 - [arXiv 2026.11](https://arxiv.org/abs/2611.10169), Capturability-Aware Footstep Planning in Cluttered Environments: A Recursively Feasible Sequential MPC on Axis-Aligned Safe Corridors
