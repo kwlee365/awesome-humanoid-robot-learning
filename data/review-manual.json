@@ -6262,6 +6262,58 @@
      "note": "openalex 2026-11, 2026-10 unswept; ledger left unmarked"
     }
    ]
+  },
+  {
+   "kind": "out-of-scope",
+   "reason": "2026-11-22 AM run: candidates read via abstract and judged out of scope",
+   "detected_on": "2026-11-22",
+   "items": [
+    {
+     "arxiv_id": "2611.25801",
+     "title": "Fast and Accurate Body Estimation in Pixels, World Space and Scenes",
+     "note": "human body estimation; no robot"
+    },
+    {
+     "arxiv_id": "2611.26565",
+     "title": "PhyDEX: A Benchmark for Physical Reasoning in Vision-Language-Action Models via Dynamic Extrinsic Dexterity",
+     "note": "tabletop VLA throwing benchmark; not humanoid"
+    },
+    {
+     "arxiv_id": "2611.25166",
+     "title": "CoRelate: Coordinated Human-Object Motion Synthesis through Interaction Relations",
+     "note": "human-object motion synthesis; no robot"
+    },
+    {
+     "arxiv_id": "2611.23364",
+     "title": "Neural Circuit Architectural Priors for Rat Locomotion",
+     "note": "rat locomotion neuroscience model"
+    },
+    {
+     "arxiv_id": "2611.16312",
+     "title": "Alloy: A Multi-Material Physics Engine for Robot Learning",
+     "note": "generic multi-material physics engine; not humanoid"
+    },
+    {
+     "arxiv_id": "2609.08800",
+     "title": "Ostrich: Taking Large Strides Through Stiff Contact in Differentiable Dynamics",
+     "note": "differentiable dynamics; not humanoid-specific"
+    },
+    {
+     "arxiv_id": "2609.27449",
+     "title": "X2Real: an eXtensive simulation benchmark for real-world generalist policies",
+     "note": "generic manipulation sim benchmark; not humanoid"
+    }
+   ]
+  },
+  {
+   "kind": "discovery-channel-failure",
+   "reason": "2026-11-22 run: OpenAlex returned HTTP 401 for 2026-11 and 2026-10; coverage incomplete on that channel (arXiv and Crossref complete). Venue-only non-arXiv items not read; remain queued.",
+   "detected_on": "2026-11-22",
+   "items": [
+    {
+     "note": "openalex 2026-11, 2026-10 unswept; ledger left unmarked"
+    }
+   ]
   }
  ]
 }

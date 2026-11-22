@@ -26,6 +26,10 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.26596), PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation, [website](https://kl-research.github.io/pgx)
+- [arXiv 2026.11](https://arxiv.org/abs/2611.26420), Awaken-HI: Scaling Humanoid Intelligence with Whole-Body Human Experience, [website](https://engineai-robotics.github.io/Awaken-HI)
+- [arXiv 2026.11](https://arxiv.org/abs/2611.25778), ECHO: In-Context Behavior foundation model for Humanoid Whole-Body Control, [website](https://mwondering.github.io/echo-bfm/)
+- [arXiv 2026.11](https://arxiv.org/abs/2611.25251), WEVO: World Model-Enabled VLA Optimization for Whole-Body Loco-Manipulation, [website](https://qianzhong-chen.github.io/wevo.github.io/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.24074), SemPhys: Semantic-Physical Co-Learning for Humanoid Motion Generation via Differentiable World Models
 - [arXiv 2026.11](https://arxiv.org/abs/2611.22713), Body Schema Policy: Body as the Vision-Action Interface for Efficient Robot Loco-Manipulation
 - [arXiv 2026.11](https://arxiv.org/abs/2611.22275), Heave-Ho: Decentralized Long-Horizon Multi-Humanoid Collaboration, [website](https://heaveho-humanoid.github.io/)
@@ -654,6 +658,8 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.11](https://arxiv.org/abs/2611.26074), Controlling the Humanoid Robot H1-2 With a Simulated Biologically Plausible Network
+- [arXiv 2026.11](https://arxiv.org/abs/2611.26054), Reference-Free Humanoid Skateboarding via Termination-Shaped Reinforcement Learning
 - [arXiv 2026.11](https://arxiv.org/abs/2611.23916), ReLoco: Unified Humanoid Locomotion and Fall Recovery via Behavior-Conditioned Motion Priors
 - [arXiv 2026.11](https://arxiv.org/abs/2611.22445), Autonomous Track Racing with a Commercially Available Humanoid: System Design and Real-World Deployment
 - [arXiv 2026.11](https://arxiv.org/abs/2611.18003), Reusing Locomotion Training Recipes Across Humanoids via Body-Aligned Virtual Joints
@@ -1071,6 +1077,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [TRO 2017](https://ieeexplore.ieee.org/document/7827048), Proprioceptive actuator design in the MIT Cheetah: Impact mitigation and high‑bandwidth physical interaction for dynamic legged robots
 
 ## Simulation Benchmark
+- 🌟 [arXiv 2026.11](https://arxiv.org/abs/2611.26293), LocoMuJoCo: A Comprehensive Imitation Learning Benchmark for Whole-Body Control, [code](https://github.com/robfiras/loco-mujoco)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.10198), Benchmarking Behavioral Steerability in Behavior Foundation Models
 - [arXiv 2026.10](https://arxiv.org/abs/2610.07594), BiGym 2.0: Benchmarking Learned and Agent-Developed Policies for Humanoid Household Manipulation
 - [arXiv 2026.09](https://arxiv.org/abs/2609.38216), Fiatlux: A Long-Horizon Benchmark for Humanoid Ladder Climbing and Light-Bulb Replacement, [website](https://fiatlux-bench.github.io)
@@ -1113,6 +1120,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Physics-Based Character Animation
 - [SIGGRAPH 2010](https://dl.acm.org/doi/abs/10.1145/1833349.1778770?casa_token=j3esx-hx0GAAAAAA:OvRU6YYrNo2ZP9IyXGVDryWJqHmvU-oVhnzog8RFKKySQJjganzaAmHff6CQ4a0qzfJZu-J6Buf4Ug), Spatial relationship preserving character motion adaptation
+- [arXiv 2026.11](https://arxiv.org/abs/2611.26218), MixReact: Physics-Based Reactive Humanoid Control from Multimodal Cues via a Discrete-Continuous Mixture of Transformers, [website](https://binlee26.github.io/MixReact_Page/)
 - 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.30033), RLMuscle: Muscle-Driven Character Animation via Reinforcement Learning, [website](https://chunleili.github.io/project-page-rlmuscle/) / [code](https://github.com/chunleili/rlmuscleV2)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.26278), Bringing physics-based controller policies to virtual reality
 - [arXiv 2026.10](https://arxiv.org/abs/2610.21515), TRACE: Typed Reference-Aware Conversational Editing for Humanoid Motion Diffusion
