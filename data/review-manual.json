@@ -6314,6 +6314,83 @@
      "note": "openalex 2026-11, 2026-10 unswept; ledger left unmarked"
     }
    ]
+  },
+  {
+   "kind": "out-of-scope",
+   "reason": "2026-11-23 run: read candidate record (arXiv abstract) and judged out of scope",
+   "detected_on": "2026-11-23",
+   "items": [
+    {
+     "arxiv_id": "2611.27181",
+     "title": "HumanoidPose: Monocular 3D Pose Estimation for Humanoid Robots",
+     "note": "robot pose estimation from monocular images; perception benchmark, not robot learning/control; held out of scope"
+    },
+    {
+     "arxiv_id": "2611.27499",
+     "title": "NavRSI: Recursive Harness Self-Improvement for Vision-and-Language Navigation",
+     "note": "vision-language navigation harness; not humanoid"
+    },
+    {
+     "arxiv_id": "2611.27939",
+     "title": "What Must a Model Tell a Planner? Outcome Interfaces for Risk-Aware Planning After Robot Damage",
+     "note": "generic planner interfaces after robot damage; not humanoid"
+    },
+    {
+     "arxiv_id": "2611.26706",
+     "title": "Latent Space Planning with Sequential Monte Carlo",
+     "note": "generic latent planning with SMC; not humanoid"
+    },
+    {
+     "arxiv_id": "2611.26763",
+     "title": "Search-Informed MPPI for Kinodynamic Motion Planning via Monte Carlo Tree Expansion",
+     "note": "generic kinodynamic MPPI planning; not humanoid"
+    },
+    {
+     "arxiv_id": "2611.26783",
+     "title": "CADENCE:Temporally Coherent Whole-Body Human Mesh Recovery that Preserves Expressive Hand Motion",
+     "note": "pure human mesh recovery; no robot (no section)"
+    },
+    {
+     "arxiv_id": "2606.12936",
+     "title": "Pipette: An Embodied Simulation Platform, Benchmark, and Data-Efficient Augmentation Framework for Wet-Lab Robotics",
+     "note": "no humanoid in scope (title/abstract)"
+    },
+    {
+     "arxiv_id": "2609.30554",
+     "title": "Privacy-Preserving Prompted Policy Search for Robotic Control",
+     "note": "generic robotic control; not humanoid"
+    },
+    {
+     "arxiv_id": "2610.32855",
+     "title": "Regularised RL improves sim-to-real transfer",
+     "note": "generic RL sim-to-real; no humanoid"
+    },
+    {
+     "arxiv_id": "2609.37560",
+     "title": "RoboFin3D: A Sim-to-Real Platform for Robotic Surface Finishing",
+     "note": "surface finishing platform; not humanoid"
+    },
+    {
+     "arxiv_id": "2606.18959",
+     "title": "TactSpace: Learning a Physics-enriched Shared Latent Space for Tactile Sim-to-Real Transfer",
+     "note": "tactile sim-to-real; not humanoid"
+    },
+    {
+     "arxiv_id": "2611.17619",
+     "title": "TouchTwin: Scaling Human Touch Data via Real-to-Sim-to-Real",
+     "note": "human touch data; not humanoid"
+    }
+   ]
+  },
+  {
+   "kind": "discovery-channel-failure",
+   "reason": "2026-11-23 run: OpenAlex returned HTTP 401 for 2026-11 and 2026-10; arXiv/Crossref complete; arXiv twin resolution hit HTTP 429 (122 venue-only candidates unresolved). Venue-only non-arXiv items not read; remain queued.",
+   "detected_on": "2026-11-23",
+   "items": [
+    {
+     "note": "openalex 2026-11, 2026-10 unswept"
+    }
+   ]
   }
  ]
 }

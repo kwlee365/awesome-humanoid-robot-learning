@@ -26,6 +26,11 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.27648), Trust What Repeats: Capped World-Model Policy Gradients for Humanoid Motion Tracking
+- [arXiv 2026.11](https://arxiv.org/abs/2611.27552), S-BFM: A Behavioral Foundation Model for Humanoid Control from Sparse Spatiotemporal Goals
+- [arXiv 2026.11](https://arxiv.org/abs/2611.27397), AnyBodyCodec: A Shared Native Interface for Body-Model Conversion, Extension, and Humanoid Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.27338), Latent Jacobian Steer: Eliciting Contact-Rich Out-of-Distribution Behaviors from Pretrained Humanoid Controllers, [website](https://latent-jacobian-steer.github.io/)
+- [arXiv 2026.11](https://arxiv.org/abs/2611.27047), BeyondEgo: Learning to Act Beyond Egocentric Perception via Humanoid Ego-Exo Foresight
 - [arXiv 2026.11](https://arxiv.org/abs/2611.26596), PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation, [website](https://kl-research.github.io/pgx)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.26420), Awaken-HI: Scaling Humanoid Intelligence with Whole-Body Human Experience, [website](https://engineai-robotics.github.io/Awaken-HI)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.25778), ECHO: In-Context Behavior foundation model for Humanoid Whole-Body Control, [website](https://mwondering.github.io/echo-bfm/)
@@ -869,6 +874,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Safety-Critical Control
 - [Biomimetics 2026](https://doi.org/10.3390/biomimetics11090644), Passive-Active Cooperative Design Method for Fall Protection in Humanoid Robot
+- [arXiv 2026.11](https://arxiv.org/abs/2611.27845), Humanoid robots for safety-critical electrical switching: A perception-informed runtime constraint filter
 - [arXiv 2026.11](https://arxiv.org/abs/2611.19616), Towards Probabilistically Safe Reinforcement Learning: Theory and Deployment on Humanoid and Aerial Robots
 - [arXiv 2026.11](https://arxiv.org/abs/2611.15928), Runtime Safety and Emergency Stops on a Full-Size Humanoid: Deployment Lessons and a Case for Graduated Force Authority
 - [arXiv 2026.10](https://arxiv.org/abs/2610.33317), Active Reachability Learning for Humanoid Recoverability Monitoring
