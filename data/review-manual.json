@@ -6391,6 +6391,88 @@
      "note": "openalex 2026-11, 2026-10 unswept"
     }
    ]
+  },
+  {
+   "kind": "out-of-scope",
+   "reason": "2026-11-24 run: candidates read via abstract and judged out of scope",
+   "detected_on": "2026-11-24",
+   "items": [
+    {
+     "arxiv_id": "2611.30784",
+     "title": "Beyond Domain Randomization: Real-World Policy Adaptation in Learned Dynamics for Legged Robots",
+     "note": "generic legged-robot adaptation; not humanoid-specific"
+    },
+    {
+     "arxiv_id": "2611.30632",
+     "title": "GeoMerge-OPD: Balanced Skill Integration in Vision-Language-Action Models",
+     "note": "VLA skill merging; humanoid not verified from abstract"
+    },
+    {
+     "arxiv_id": "2611.30836",
+     "title": "Can Multimodal Fusion MakeSense for Embodied Vision in Degraded Sensing?",
+     "note": "generic embodied vision fusion"
+    },
+    {
+     "arxiv_id": "2611.30607",
+     "title": "Tri-DNO: Trilateral Diffusion Noise Optimization for 3D Human Object Interaction",
+     "note": "human-object motion synthesis; no robot"
+    },
+    {
+     "arxiv_id": "2611.29609",
+     "title": "JEPA-Shield: Safe Diffusion Planning with Latent World Models via Conformal Shielding",
+     "note": "generic safe diffusion planning"
+    },
+    {
+     "arxiv_id": "2611.28922",
+     "title": "PIAE: Physics-Informed Continuous Autoencoding for Compact 3D Human Motion",
+     "note": "human motion autoencoding; no robot"
+    },
+    {
+     "arxiv_id": "2611.28547",
+     "title": "SBTenv: A Literature-Validated Split-Belt Treadmill Simulation Environment",
+     "note": "treadmill simulation environment; not humanoid"
+    },
+    {
+     "arxiv_id": "2611.29913",
+     "title": "MoMa-NMP: Scene-Scale Neural Motion Planning for Mobile Manipulators",
+     "note": "mobile manipulator motion planning; not humanoid"
+    },
+    {
+     "arxiv_id": "2609.19119",
+     "title": "Track, Articulate, Act: Generating Articulation from Casual Human Videos",
+     "note": "articulation generation from human videos; not humanoid"
+    },
+    {
+     "arxiv_id": "2610.11322",
+     "title": "USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation",
+     "note": "USD asset modeling; not humanoid"
+    },
+    {
+     "arxiv_id": "2608.16572",
+     "title": "ViHaTeleop: A Low-Cost, Lightweight Visual-Haptic Teleoperation System for Dexterous Manipulation Learning",
+     "note": "dexterous teleop system; not humanoid"
+    },
+    {
+     "arxiv_id": "2611.08009",
+     "title": "A Unified Fractal Impedance Control Framework",
+     "note": "generic impedance control"
+    },
+    {
+     "arxiv_id": "2606.30072",
+     "title": "ACPO: Agent-Chained Policy Optimization for Multi-Agent Reinforcement Learning",
+     "note": "generic multi-agent RL"
+    }
+   ]
+  },
+  {
+   "kind": "discovery-channel-failure",
+   "reason": "2026-11-24 run: OpenAlex returned HTTP 401 for 2026-11 and 2026-10; arXiv/Crossref complete. Coverage of venue-only (non-arXiv) papers is incomplete; those candidates were not read and remain queued.",
+   "detected_on": "2026-11-24",
+   "items": [
+    {
+     "note": "openalex 2026-11, 2026-10 unswept"
+    }
+   ]
   }
  ]
 }
