@@ -6473,6 +6473,83 @@
      "note": "openalex 2026-11, 2026-10 unswept"
     }
    ]
+  },
+  {
+   "kind": "out-of-scope",
+   "reason": "2026-11-25 run: candidate records (arXiv abstracts) read and judged out of scope",
+   "detected_on": "2026-11-25",
+   "items": [
+    {
+     "arxiv_id": "2611.32548",
+     "title": "SetCon: Setup-Conditioned IMU-Language Learning from 3D Human Motion",
+     "note": "human motion/IMU; no robot"
+    },
+    {
+     "arxiv_id": "2609.36250",
+     "title": "Action Chunking Proximal Policy Optimization with Feedback Correction",
+     "note": "generic RL; not humanoid"
+    },
+    {
+     "arxiv_id": "2611.29558",
+     "title": "Action Windows Are Inherently Temporal: A Benchmark for Time-Sensitive Robotic Manipulation",
+     "note": "tabletop manipulation benchmark; not humanoid"
+    },
+    {
+     "arxiv_id": "2610.06019",
+     "title": "Adaptive Expert Guidance for Efficient On-Policy Reinforcement Learning",
+     "note": "generic RL"
+    },
+    {
+     "arxiv_id": "2609.29212",
+     "title": "ADM-Planner",
+     "note": "mobile manipulator planning; not humanoid"
+    },
+    {
+     "arxiv_id": "2609.36915",
+     "title": "AeroManip-VLA",
+     "note": "aerial manipulation"
+    },
+    {
+     "arxiv_id": "2609.28973",
+     "title": "AquaMend",
+     "note": "embodied agents, not humanoid"
+    },
+    {
+     "arxiv_id": "2610.06511",
+     "title": "ArtifactArena",
+     "note": "model evaluation; not humanoid"
+    },
+    {
+     "arxiv_id": "2608.30983",
+     "title": "Autonomously Acquiring Robot Manipulation Skills with Language-Driven Quality-Diversity",
+     "note": "not humanoid"
+    },
+    {
+     "arxiv_id": "2610.02274",
+     "title": "Awomo-SimDataEngine",
+     "note": "world generation; not humanoid"
+    },
+    {
+     "arxiv_id": "2607.16123",
+     "title": "BayesContact",
+     "note": "visuo-tactile pose estimation; not humanoid"
+    },
+    {
+     "arxiv_id": "2610.22057",
+     "title": "CBF-Based Control Allocation for Omnidirectional Tiltrotor Aerial Robots",
+     "note": "aerial robots"
+    }
+   ]
+  },
+  {
+   "kind": "discovery-channel-failure",
+   "reason": "2026-11-25 run: OpenAlex returned HTTP 401 for 2026-11 and 2026-10; arXiv/Crossref complete. Venue-only (non-arXiv) candidates not read; remain queued. Added papers have real_robot unset (abstract only, paper body not read).",
+   "detected_on": "2026-11-25",
+   "items": [
+    {
+     "note": "openalex 2026-11, 2026-10 unswept"
+    }
+   ]
   }
  ]
 }

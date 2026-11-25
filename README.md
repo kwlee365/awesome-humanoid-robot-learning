@@ -26,6 +26,9 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.32944), DynaMimic: A Physics-Informed World Model for Humanoid Motion Tracking
+- [arXiv 2026.11](https://arxiv.org/abs/2611.32260), EgoLoAF: Learning Humanoid Loco-Manipulation from Egocentric Demonstrations with Hand-Object Affordances
+- [arXiv 2026.11](https://arxiv.org/abs/2611.31863), Ada-BFM: Adapting Behavior Foundation Models for Humanoid Scene Interaction
 - [arXiv 2026.11](https://arxiv.org/abs/2611.30449), CHAMP: Coordinated Humanoid Loco-Manipulation with Whole-Body Motion Priors
 - [arXiv 2026.11](https://arxiv.org/abs/2611.30077), PushMimic: Learning Adaptive Humanoid Box Pushing via Dynamic Motion Augmentation and Reference Distillation, [website](https://silvery107.github.io/pushmimic/)
 - 🌟 [arXiv 2026.11](https://arxiv.org/abs/2611.29897), Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control, [website](https://aigeeksgroup.github.io/MotionMamba2.0) / [code](https://github.com/AIGeeksGroup/MotionMamba2.0)
@@ -495,6 +498,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 - [2024.08](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/), VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters, [website](https://la.disneyresearch.com/publication/vmp-versatile-motion-priors-for-robustly-tracking-motion-on-physical-characters/)
 - [2024.07](https://la.disneyresearch.com/publication/robot-motion-diffusion-model-motion-generation-for-robotic-characters/), Robot Motion Diffusion Model: Motion Generation for Robotic Characters
 ## Manipulation
+- [arXiv 2026.11](https://arxiv.org/abs/2611.32665), DiffGR00T: Execution-Aware Differentiable Training for Humanoid Whole-Body Vision-Language-Action Models
 - [arXiv 2026.11](https://arxiv.org/abs/2611.29277), ζ_0: A Framework for World Action Models with Joint Scene and Body Foresight in Humanoid Control, [website](https://chenyizhi123.github.io/zeta0-project/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.18976), TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation, [website](http://humanoid-tma.github.io)
 - 🌟 [arXiv 2026.11](https://arxiv.org/abs/2611.18491), When Will You Hand It Over? A Hidden Start Delay Makes Self-Play Handover Robust to Unfamiliar Partners, [code](https://github.com/mkhoshnam/Selfplay-PPO-handover)
@@ -879,6 +883,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Safety-Critical Control
 - [Biomimetics 2026](https://doi.org/10.3390/biomimetics11090644), Passive-Active Cooperative Design Method for Fall Protection in Humanoid Robot
+- [arXiv 2026.11](https://arxiv.org/abs/2611.32642), BARE: Body-Aware Reflexive Evasion for Humanoid Robots
 - [arXiv 2026.11](https://arxiv.org/abs/2611.27845), Humanoid robots for safety-critical electrical switching: A perception-informed runtime constraint filter
 - [arXiv 2026.11](https://arxiv.org/abs/2611.19616), Towards Probabilistically Safe Reinforcement Learning: Theory and Deployment on Humanoid and Aerial Robots
 - [arXiv 2026.11](https://arxiv.org/abs/2611.15928), Runtime Safety and Emergency Stops on a Full-Size Humanoid: Deployment Lessons and a Case for Graduated Force Authority
@@ -1132,6 +1137,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Physics-Based Character Animation
 - [SIGGRAPH 2010](https://dl.acm.org/doi/abs/10.1145/1833349.1778770?casa_token=j3esx-hx0GAAAAAA:OvRU6YYrNo2ZP9IyXGVDryWJqHmvU-oVhnzog8RFKKySQJjganzaAmHff6CQ4a0qzfJZu-J6Buf4Ug), Spatial relationship preserving character motion adaptation
+- [arXiv 2026.11](https://arxiv.org/abs/2611.33011), MESSI: Multi-Expert Soccer Skill Integration for Physics-Based Character Control, [website](https://neu-3dvi.github.io/MESSI/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.29749), CarlHOI: Counterfactual Predictive Imagination for Generalizable Multi-Humanoid Object Interaction under Constrained Environments, [website](https://carlhoi.github.io)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.26218), MixReact: Physics-Based Reactive Humanoid Control from Multimodal Cues via a Discrete-Continuous Mixture of Transformers, [website](https://binlee26.github.io/MixReact_Page/)
 - 🌟 [arXiv 2026.10](https://arxiv.org/abs/2610.30033), RLMuscle: Muscle-Driven Character Animation via Reinforcement Learning, [website](https://chunleili.github.io/project-page-rlmuscle/) / [code](https://github.com/chunleili/rlmuscleV2)
