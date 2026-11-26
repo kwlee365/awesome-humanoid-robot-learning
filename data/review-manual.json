@@ -6550,6 +6550,63 @@
      "note": "openalex 2026-11, 2026-10 unswept"
     }
    ]
+  },
+  {
+   "kind": "out-of-scope",
+   "reason": "2026-11-26 run: candidate records (arXiv abstracts) read and judged out of scope",
+   "detected_on": "2026-11-26",
+   "items": [
+    {
+     "arxiv_id": "2611.33460",
+     "title": "Fast Muscle-Driven Whole-Body Motion Tracking with a Differentiable World Model",
+     "note": "musculoskeletal human model; no humanoid robot"
+    },
+    {
+     "arxiv_id": "2611.34519",
+     "title": "AGLR: Attribute-Guided Latent Refinement for Fine-Grained Humanoid Motion Generation and Editing",
+     "note": "motion generation/editing; no robot execution in abstract"
+    },
+    {
+     "arxiv_id": "2611.34884",
+     "title": "FineDex: Bridging Fine-Grained Human-Object Interaction Generation to Dexterous Humanoid Manipulation",
+     "note": "held: dexterous HOI generation; scope borderline, not read in full"
+    },
+    {
+     "arxiv_id": "2611.34675",
+     "title": "RoboEvo$^2$: Recursive Robot Self-Improvement via Harness-Policy Co-Evolution",
+     "note": "generic VLA/agent; not humanoid"
+    },
+    {
+     "arxiv_id": "2611.33721",
+     "title": "A general-purpose safe manipulator planning framework for diverse environments without retraining",
+     "note": "generic manipulator planning; not humanoid"
+    },
+    {
+     "arxiv_id": "2611.33296",
+     "title": "CoSMo: A Compact Spectral Space of Body Motion in Video",
+     "note": "pure human motion in video; no robot"
+    },
+    {
+     "arxiv_id": "2611.34449",
+     "title": "HoloBrain-0.5 Technical Report",
+     "note": "cross-embodiment manipulation VLA; not humanoid-specific"
+    },
+    {
+     "arxiv_id": "2611.34302",
+     "title": "Co-World Model for Human-Video-to-Robot Transfer via Co-Constructed Shared Latent Dynamics",
+     "note": "human-video-to-robot transfer; humanoid not evident in abstract"
+    }
+   ]
+  },
+  {
+   "kind": "discovery-channel-failure",
+   "reason": "2026-11-26 run: OpenAlex returned HTTP 401 for 2026-11 and 2026-10; arXiv/Crossref complete. Venue-only (non-arXiv) candidates not read; remain queued. Added papers: real_robot set only where the abstract states it (unset for 2611.33407); paper bodies not read.",
+   "detected_on": "2026-11-26",
+   "items": [
+    {
+     "note": "openalex 2026-11, 2026-10 unswept"
+    }
+   ]
   }
  ]
 }

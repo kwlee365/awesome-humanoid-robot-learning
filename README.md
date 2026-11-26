@@ -26,6 +26,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 ---
 
 ## Loco-Manipulation and Whole-Body-Control
+- [arXiv 2026.11](https://arxiv.org/abs/2611.33828), Learning a Whole-Body Pivot-Walking Gait for Heavy-Box Transport with a Humanoid, [website](https://uni963.github.io/pivot-walking/)
 - [arXiv 2026.11](https://arxiv.org/abs/2611.32944), DynaMimic: A Physics-Informed World Model for Humanoid Motion Tracking
 - [arXiv 2026.11](https://arxiv.org/abs/2611.32260), EgoLoAF: Learning Humanoid Loco-Manipulation from Egocentric Demonstrations with Hand-Object Affordances
 - [arXiv 2026.11](https://arxiv.org/abs/2611.31863), Ada-BFM: Adapting Behavior Foundation Models for Humanoid Scene Interaction
@@ -672,6 +673,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 
 ## Locomotion
+- [arXiv 2026.11](https://arxiv.org/abs/2611.33407), An Adversarial Multi-Agent Pursuit Game for Locomotor Agility Pretraining
 - [arXiv 2026.11](https://arxiv.org/abs/2611.26074), Controlling the Humanoid Robot H1-2 With a Simulated Biologically Plausible Network
 - [arXiv 2026.11](https://arxiv.org/abs/2611.26054), Reference-Free Humanoid Skateboarding via Termination-Shaped Reinforcement Learning
 - [arXiv 2026.11](https://arxiv.org/abs/2611.23916), ReLoco: Unified Humanoid Locomotion and Fall Recovery via Behavior-Conditioned Motion Priors
@@ -1007,6 +1009,7 @@ Feel free to pull a request for new papers/codes about humanoid robot learning.
 
 ## Sim-to-Real
 - [Preprints.org 2026](https://doi.org/10.20944/preprints202609.0605.v1), A Validated Modelling and Simulation Framework for a 12-DoF Biped Robot with Deep Reinforcement Learning Locomotion
+- [arXiv 2026.11](https://arxiv.org/abs/2611.34569), Riding the Wave: Sim-to-Real Humanoid Control on Elastic Terrain, [website](https://fly-pigTH.github.io/wave_rider/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.32277), Delay Randomization Widens the Delay Margin of Learned Humanoid Motion Trackers
 - [arXiv 2026.10](https://arxiv.org/abs/2610.18991), Contact-UAN: Unsupervised Actuator Networks as a Residual World Model for Humanoid Control, [website](https://contact-uan.csail.mit.edu/)
 - [arXiv 2026.10](https://arxiv.org/abs/2610.10905), Informationally Decoupled Trajectory Design for Sim-to-Real System Identification
