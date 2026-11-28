@@ -6607,6 +6607,43 @@
      "note": "openalex 2026-11, 2026-10 unswept"
     }
    ]
+  },
+  {
+   "kind": "out-of-scope",
+   "reason": "2026-11-28 run: candidate records (arXiv abstracts) read and judged out of scope",
+   "detected_on": "2026-11-28",
+   "items": [
+    {
+     "arxiv_id": "2607.17769",
+     "title": "From Sign Language Generation to Humanoid Execution: Vision-Language Guided Retargeting with Collision Mitigation",
+     "note": "sign-language motion retargeting; no real-robot or learning-based control in abstract"
+    },
+    {
+     "arxiv_id": "2509.17582",
+     "title": "GeCCo - a Generalist Contact-Conditioned Policy for Loco-Manipulation Skills on Legged Robots",
+     "note": "quadruped only"
+    },
+    {
+     "arxiv_id": "2505.10022",
+     "title": "APEX: Action Priors Enable Efficient Exploration for Robust Motion Tracking on Legged Robots",
+     "note": "hardware on Unitree Go2 quadruped; humanoid only in simulation"
+    }
+   ]
+  },
+  {
+   "kind": "discovery-channel-failure",
+   "reason": "2026-11-28 run: openalex returned HTTP 401 Unauthorized for 2026-11 and 2026-10; those windows not covered by OpenAlex (arxiv and crossref succeeded). Coverage incomplete; ledger leaves them unmarked for re-sweep.",
+   "detected_on": "2026-11-28",
+   "items": [
+    {
+     "channel": "openalex",
+     "month": "2026-11"
+    },
+    {
+     "channel": "openalex",
+     "month": "2026-10"
+    }
+   ]
   }
  ]
 }
